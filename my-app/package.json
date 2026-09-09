@@ -25,6 +25,8 @@
     "test:lexical-ambiguities": "node scripts/generate-lexical-ambiguities.mjs --check",
     "generate:hyphen-units": "node scripts/generate-hyphen-units.mjs",
     "test:hyphen-units": "node scripts/generate-hyphen-units.mjs --check",
+    "generate:internal-quote-units": "node scripts/generate-internal-quote-units.mjs",
+    "test:internal-quote-units": "node scripts/generate-internal-quote-units.mjs --check",
     "test:regression": "node scripts/regression.mjs",
     "preview": "vite preview"
   },

@@ -17,6 +17,7 @@ const corpusText = JSON.parse(fs.readFileSync(new URL("../src/sy.corpus-text.jso
 const wordContract = JSON.parse(fs.readFileSync(new URL("../src/sy.word-contract.json", import.meta.url), "utf8"));
 const lexicalAmbiguities = JSON.parse(fs.readFileSync(new URL("../src/sy.lexical-ambiguities.json", import.meta.url), "utf8"));
 const hyphenUnits = JSON.parse(fs.readFileSync(new URL("../src/sy.hyphen-units.json", import.meta.url), "utf8"));
+const internalQuoteUnits = JSON.parse(fs.readFileSync(new URL("../src/sy.internal-quote-units.json", import.meta.url), "utf8"));
 const failures = [];
 const requireInvariant = (condition, name) => {
   if (!condition) failures.push(name);
@@ -112,6 +113,18 @@ requireInvariant(hyphenUnits.proof.adjacent_punctuation_excluded_and_preserved, 
 requireInvariant(hyphenUnits.proof.exact_corpus_round_trip_after_overlay_removal, "hyphen_units_round_trip");
 requireInvariant(hyphenUnits.proof.no_non_hyphen_words_emitted, "hyphen_units_scope_limit");
 requireInvariant(hyphenUnits.proof.deterministic_output, "hyphen_units_deterministic");
+requireInvariant(internalQuoteUnits.source.sha256 === sourceHash, "internal_quote_units_source_hash");
+requireInvariant(internalQuoteUnits.status === "sealed", "internal_quote_units_sealed");
+requireInvariant(internalQuoteUnits.proof.every_quote_mark_classified_exactly_once, "internal_quote_all_marks_classified");
+requireInvariant(internalQuoteUnits.proof.every_internal_quote_assigned_to_one_word, "internal_quote_unit_assignment");
+requireInvariant(internalQuoteUnits.proof.every_non_internal_quote_remains_unknown, "internal_quote_unknowns_preserved");
+requireInvariant(internalQuoteUnits.proof.every_unit_matches_exact_source_range, "internal_quote_source_ranges");
+requireInvariant(internalQuoteUnits.proof.every_unit_has_hebrew_content_on_both_sides, "internal_quote_both_sides");
+requireInvariant(internalQuoteUnits.proof.adjacent_punctuation_excluded_and_preserved, "internal_quote_punctuation_preserved");
+requireInvariant(internalQuoteUnits.proof.exact_corpus_round_trip_after_overlay_removal, "internal_quote_round_trip");
+requireInvariant(internalQuoteUnits.proof.no_non_internal_quote_words_emitted, "internal_quote_scope_limit");
+requireInvariant(internalQuoteUnits.proof.no_linguistic_subtype_inferred, "internal_quote_no_subtype_inference");
+requireInvariant(internalQuoteUnits.proof.deterministic_output, "internal_quote_deterministic");
 requireInvariant(corpus.validation.valid, "corpus_validation");
 requireInvariant(corpus.input === sourceText, "lossless_source");
 requireInvariant(corpus.stats.occurrences === 1673, "occurrence_count");

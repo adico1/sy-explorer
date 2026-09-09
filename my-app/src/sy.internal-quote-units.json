@@ -1,0 +1,3881 @@
+{
+  "id": "sy.sealed-internal-quote-word-units",
+  "version": "1.0.0",
+  "status": "sealed",
+  "scope": "internal_quote_words_only",
+  "source": {
+    "file": "src/SeferYetzirah.tsx",
+    "sha256": "868e1cadf357fd6b868bfa14d9694e55623186354b1a456dd3a45bb48f4864dd",
+    "corpus_text_sha256": "284add33b3b8a6e4b5f452b3097c07bc13dc7545ffb578697b6f852dc684c348",
+    "word_contract_sha256": "79e9b0d7a113ca0ff83c278dc879cf22ba2aa7841f2de061e1b6a26b059680f9",
+    "lexical_ambiguities_sha256": "eff029f807be27465815ea72f55f70744b9ac5ec6ff665a63f5b3b9be7fde7d8"
+  },
+  "rule": {
+    "statement": "A quote mark internal to a pointed Hebrew letter sequence keeps the complete sequence as one word.",
+    "quote_characters": [
+      "\"",
+      "'",
+      "״",
+      "׳"
+    ],
+    "linguistic_subtype": "unknown_not_every_internal_quote_form_is_asserted_to_be_an_initialism",
+    "surface_preservation": "exact",
+    "attached_prefix_analysis": "not_performed",
+    "non_internal_quote_role": "unknown",
+    "punctuation_role": "unknown_and_excluded_from_the_word"
+  },
+  "proof": {
+    "every_quote_mark_classified_exactly_once": true,
+    "every_internal_quote_assigned_to_one_word": true,
+    "every_non_internal_quote_remains_unknown": true,
+    "every_unit_matches_exact_source_range": true,
+    "every_unit_has_hebrew_content_on_both_sides": true,
+    "adjacent_punctuation_excluded_and_preserved": true,
+    "exact_corpus_round_trip_after_overlay_removal": true,
+    "no_non_internal_quote_words_emitted": true,
+    "no_linguistic_subtype_inferred": true,
+    "deterministic_output": true,
+    "quote_mark_count": 119,
+    "internal_quote_word_count": 86,
+    "unknown_non_internal_quote_count": 33,
+    "adjacent_punctuation_count": 15
+  },
+  "quote_mark_classifications": [
+    {
+      "id": "quote-classification.001",
+      "quote_character": "\"",
+      "classification": "internal_quote_word_connector",
+      "resulting_unit_id": "internal-quote-unit.001",
+      "corpus_fragment_id": "corpus-fragment.0062",
+      "source_node_id": "jsx.00202",
+      "reading_unit_id": "reading-unit.0068",
+      "source_code_unit_range": {
+        "start": 4078,
+        "end": 4079
+      }
+    },
+    {
+      "id": "quote-classification.002",
+      "quote_character": "'",
+      "classification": "unknown_non_internal_quote",
+      "resulting_unit_id": null,
+      "corpus_fragment_id": "corpus-fragment.0065",
+      "source_node_id": "jsx.00209",
+      "reading_unit_id": "reading-unit.0070",
+      "source_code_unit_range": {
+        "start": 4183,
+        "end": 4184
+      }
+    },
+    {
+      "id": "quote-classification.003",
+      "quote_character": "'",
+      "classification": "unknown_non_internal_quote",
+      "resulting_unit_id": null,
+      "corpus_fragment_id": "corpus-fragment.0065",
+      "source_node_id": "jsx.00209",
+      "reading_unit_id": "reading-unit.0070",
+      "source_code_unit_range": {
+        "start": 4223,
+        "end": 4224
+      }
+    },
+    {
+      "id": "quote-classification.004",
+      "quote_character": "\"",
+      "classification": "internal_quote_word_connector",
+      "resulting_unit_id": "internal-quote-unit.002",
+      "corpus_fragment_id": "corpus-fragment.0065",
+      "source_node_id": "jsx.00209",
+      "reading_unit_id": "reading-unit.0070",
+      "source_code_unit_range": {
+        "start": 4235,
+        "end": 4236
+      }
+    },
+    {
+      "id": "quote-classification.005",
+      "quote_character": "'",
+      "classification": "unknown_non_internal_quote",
+      "resulting_unit_id": null,
+      "corpus_fragment_id": "corpus-fragment.0065",
+      "source_node_id": "jsx.00209",
+      "reading_unit_id": "reading-unit.0070",
+      "source_code_unit_range": {
+        "start": 4284,
+        "end": 4285
+      }
+    },
+    {
+      "id": "quote-classification.006",
+      "quote_character": "\"",
+      "classification": "internal_quote_word_connector",
+      "resulting_unit_id": "internal-quote-unit.003",
+      "corpus_fragment_id": "corpus-fragment.0066",
+      "source_node_id": "jsx.00212",
+      "reading_unit_id": "reading-unit.0072",
+      "source_code_unit_range": {
+        "start": 4369,
+        "end": 4370
+      }
+    },
+    {
+      "id": "quote-classification.007",
+      "quote_character": "\"",
+      "classification": "internal_quote_word_connector",
+      "resulting_unit_id": "internal-quote-unit.004",
+      "corpus_fragment_id": "corpus-fragment.0067",
+      "source_node_id": "jsx.00216",
+      "reading_unit_id": "reading-unit.0072",
+      "source_code_unit_range": {
+        "start": 4463,
+        "end": 4464
+      }
+    },
+    {
+      "id": "quote-classification.008",
+      "quote_character": "\"",
+      "classification": "internal_quote_word_connector",
+      "resulting_unit_id": "internal-quote-unit.005",
+      "corpus_fragment_id": "corpus-fragment.0068",
+      "source_node_id": "jsx.00220",
+      "reading_unit_id": "reading-unit.0072",
+      "source_code_unit_range": {
+        "start": 4559,
+        "end": 4560
+      }
+    },
+    {
+      "id": "quote-classification.009",
+      "quote_character": "\"",
+      "classification": "internal_quote_word_connector",
+      "resulting_unit_id": "internal-quote-unit.006",
+      "corpus_fragment_id": "corpus-fragment.0069",
+      "source_node_id": "jsx.00224",
+      "reading_unit_id": "reading-unit.0072",
+      "source_code_unit_range": {
+        "start": 4659,
+        "end": 4660
+      }
+    },
+    {
+      "id": "quote-classification.010",
+      "quote_character": "\"",
+      "classification": "internal_quote_word_connector",
+      "resulting_unit_id": "internal-quote-unit.007",
+      "corpus_fragment_id": "corpus-fragment.0070",
+      "source_node_id": "jsx.00228",
+      "reading_unit_id": "reading-unit.0072",
+      "source_code_unit_range": {
+        "start": 4754,
+        "end": 4755
+      }
+    },
+    {
+      "id": "quote-classification.011",
+      "quote_character": "\"",
+      "classification": "internal_quote_word_connector",
+      "resulting_unit_id": "internal-quote-unit.008",
+      "corpus_fragment_id": "corpus-fragment.0071",
+      "source_node_id": "jsx.00232",
+      "reading_unit_id": "reading-unit.0072",
+      "source_code_unit_range": {
+        "start": 4850,
+        "end": 4851
+      }
+    },
+    {
+      "id": "quote-classification.012",
+      "quote_character": "\"",
+      "classification": "internal_quote_word_connector",
+      "resulting_unit_id": "internal-quote-unit.009",
+      "corpus_fragment_id": "corpus-fragment.0075",
+      "source_node_id": "jsx.00246",
+      "reading_unit_id": "reading-unit.0077",
+      "source_code_unit_range": {
+        "start": 5148,
+        "end": 5149
+      }
+    },
+    {
+      "id": "quote-classification.013",
+      "quote_character": "'",
+      "classification": "unknown_non_internal_quote",
+      "resulting_unit_id": null,
+      "corpus_fragment_id": "corpus-fragment.0075",
+      "source_node_id": "jsx.00246",
+      "reading_unit_id": "reading-unit.0077",
+      "source_code_unit_range": {
+        "start": 5157,
+        "end": 5158
+      }
+    },
+    {
+      "id": "quote-classification.014",
+      "quote_character": "\"",
+      "classification": "internal_quote_word_connector",
+      "resulting_unit_id": "internal-quote-unit.010",
+      "corpus_fragment_id": "corpus-fragment.0075",
+      "source_node_id": "jsx.00246",
+      "reading_unit_id": "reading-unit.0077",
+      "source_code_unit_range": {
+        "start": 5161,
+        "end": 5162
+      }
+    },
+    {
+      "id": "quote-classification.015",
+      "quote_character": "'",
+      "classification": "unknown_non_internal_quote",
+      "resulting_unit_id": null,
+      "corpus_fragment_id": "corpus-fragment.0075",
+      "source_node_id": "jsx.00246",
+      "reading_unit_id": "reading-unit.0077",
+      "source_code_unit_range": {
+        "start": 5175,
+        "end": 5176
+      }
+    },
+    {
+      "id": "quote-classification.016",
+      "quote_character": "\"",
+      "classification": "internal_quote_word_connector",
+      "resulting_unit_id": "internal-quote-unit.011",
+      "corpus_fragment_id": "corpus-fragment.0075",
+      "source_node_id": "jsx.00246",
+      "reading_unit_id": "reading-unit.0077",
+      "source_code_unit_range": {
+        "start": 5181,
+        "end": 5182
+      }
+    },
+    {
+      "id": "quote-classification.017",
+      "quote_character": "\"",
+      "classification": "internal_quote_word_connector",
+      "resulting_unit_id": "internal-quote-unit.012",
+      "corpus_fragment_id": "corpus-fragment.0081",
+      "source_node_id": "jsx.00268",
+      "reading_unit_id": "reading-unit.0084",
+      "source_code_unit_range": {
+        "start": 5474,
+        "end": 5475
+      }
+    },
+    {
+      "id": "quote-classification.018",
+      "quote_character": "\"",
+      "classification": "internal_quote_word_connector",
+      "resulting_unit_id": "internal-quote-unit.013",
+      "corpus_fragment_id": "corpus-fragment.0096",
+      "source_node_id": "jsx.00300",
+      "reading_unit_id": "reading-unit.0101",
+      "source_code_unit_range": {
+        "start": 6090,
+        "end": 6091
+      }
+    },
+    {
+      "id": "quote-classification.019",
+      "quote_character": "\"",
+      "classification": "internal_quote_word_connector",
+      "resulting_unit_id": "internal-quote-unit.014",
+      "corpus_fragment_id": "corpus-fragment.0096",
+      "source_node_id": "jsx.00300",
+      "reading_unit_id": "reading-unit.0101",
+      "source_code_unit_range": {
+        "start": 6096,
+        "end": 6097
+      }
+    },
+    {
+      "id": "quote-classification.020",
+      "quote_character": "\"",
+      "classification": "internal_quote_word_connector",
+      "resulting_unit_id": "internal-quote-unit.015",
+      "corpus_fragment_id": "corpus-fragment.0096",
+      "source_node_id": "jsx.00300",
+      "reading_unit_id": "reading-unit.0101",
+      "source_code_unit_range": {
+        "start": 6102,
+        "end": 6103
+      }
+    },
+    {
+      "id": "quote-classification.021",
+      "quote_character": "\"",
+      "classification": "internal_quote_word_connector",
+      "resulting_unit_id": "internal-quote-unit.016",
+      "corpus_fragment_id": "corpus-fragment.0096",
+      "source_node_id": "jsx.00300",
+      "reading_unit_id": "reading-unit.0101",
+      "source_code_unit_range": {
+        "start": 6109,
+        "end": 6110
+      }
+    },
+    {
+      "id": "quote-classification.022",
+      "quote_character": "\"",
+      "classification": "internal_quote_word_connector",
+      "resulting_unit_id": "internal-quote-unit.017",
+      "corpus_fragment_id": "corpus-fragment.0096",
+      "source_node_id": "jsx.00300",
+      "reading_unit_id": "reading-unit.0101",
+      "source_code_unit_range": {
+        "start": 6116,
+        "end": 6117
+      }
+    },
+    {
+      "id": "quote-classification.023",
+      "quote_character": "\"",
+      "classification": "internal_quote_word_connector",
+      "resulting_unit_id": "internal-quote-unit.018",
+      "corpus_fragment_id": "corpus-fragment.0100",
+      "source_node_id": "jsx.00312",
+      "reading_unit_id": "reading-unit.0107",
+      "source_code_unit_range": {
+        "start": 6300,
+        "end": 6301
+      }
+    },
+    {
+      "id": "quote-classification.024",
+      "quote_character": "\"",
+      "classification": "internal_quote_word_connector",
+      "resulting_unit_id": "internal-quote-unit.019",
+      "corpus_fragment_id": "corpus-fragment.0101",
+      "source_node_id": "jsx.00314",
+      "reading_unit_id": "reading-unit.0108",
+      "source_code_unit_range": {
+        "start": 6376,
+        "end": 6377
+      }
+    },
+    {
+      "id": "quote-classification.025",
+      "quote_character": "\"",
+      "classification": "internal_quote_word_connector",
+      "resulting_unit_id": "internal-quote-unit.020",
+      "corpus_fragment_id": "corpus-fragment.0102",
+      "source_node_id": "jsx.00316",
+      "reading_unit_id": "reading-unit.0109",
+      "source_code_unit_range": {
+        "start": 6440,
+        "end": 6441
+      }
+    },
+    {
+      "id": "quote-classification.026",
+      "quote_character": "\"",
+      "classification": "internal_quote_word_connector",
+      "resulting_unit_id": "internal-quote-unit.021",
+      "corpus_fragment_id": "corpus-fragment.0103",
+      "source_node_id": "jsx.00318",
+      "reading_unit_id": "reading-unit.0110",
+      "source_code_unit_range": {
+        "start": 6506,
+        "end": 6507
+      }
+    },
+    {
+      "id": "quote-classification.027",
+      "quote_character": "\"",
+      "classification": "internal_quote_word_connector",
+      "resulting_unit_id": "internal-quote-unit.022",
+      "corpus_fragment_id": "corpus-fragment.0104",
+      "source_node_id": "jsx.00320",
+      "reading_unit_id": "reading-unit.0111",
+      "source_code_unit_range": {
+        "start": 6575,
+        "end": 6576
+      }
+    },
+    {
+      "id": "quote-classification.028",
+      "quote_character": "\"",
+      "classification": "internal_quote_word_connector",
+      "resulting_unit_id": "internal-quote-unit.023",
+      "corpus_fragment_id": "corpus-fragment.0105",
+      "source_node_id": "jsx.00325",
+      "reading_unit_id": "reading-unit.0113",
+      "source_code_unit_range": {
+        "start": 6663,
+        "end": 6664
+      }
+    },
+    {
+      "id": "quote-classification.029",
+      "quote_character": "'",
+      "classification": "unknown_non_internal_quote",
+      "resulting_unit_id": null,
+      "corpus_fragment_id": "corpus-fragment.0105",
+      "source_node_id": "jsx.00325",
+      "reading_unit_id": "reading-unit.0113",
+      "source_code_unit_range": {
+        "start": 6675,
+        "end": 6676
+      }
+    },
+    {
+      "id": "quote-classification.030",
+      "quote_character": "\"",
+      "classification": "internal_quote_word_connector",
+      "resulting_unit_id": "internal-quote-unit.024",
+      "corpus_fragment_id": "corpus-fragment.0105",
+      "source_node_id": "jsx.00325",
+      "reading_unit_id": "reading-unit.0113",
+      "source_code_unit_range": {
+        "start": 6680,
+        "end": 6681
+      }
+    },
+    {
+      "id": "quote-classification.031",
+      "quote_character": "\"",
+      "classification": "internal_quote_word_connector",
+      "resulting_unit_id": "internal-quote-unit.025",
+      "corpus_fragment_id": "corpus-fragment.0109",
+      "source_node_id": "jsx.00335",
+      "reading_unit_id": "reading-unit.0118",
+      "source_code_unit_range": {
+        "start": 6819,
+        "end": 6820
+      }
+    },
+    {
+      "id": "quote-classification.032",
+      "quote_character": "\"",
+      "classification": "internal_quote_word_connector",
+      "resulting_unit_id": "internal-quote-unit.026",
+      "corpus_fragment_id": "corpus-fragment.0114",
+      "source_node_id": "jsx.00346",
+      "reading_unit_id": "reading-unit.0124",
+      "source_code_unit_range": {
+        "start": 7080,
+        "end": 7081
+      }
+    },
+    {
+      "id": "quote-classification.033",
+      "quote_character": "\"",
+      "classification": "internal_quote_word_connector",
+      "resulting_unit_id": "internal-quote-unit.027",
+      "corpus_fragment_id": "corpus-fragment.0115",
+      "source_node_id": "jsx.00348",
+      "reading_unit_id": "reading-unit.0125",
+      "source_code_unit_range": {
+        "start": 7128,
+        "end": 7129
+      }
+    },
+    {
+      "id": "quote-classification.034",
+      "quote_character": "\"",
+      "classification": "internal_quote_word_connector",
+      "resulting_unit_id": "internal-quote-unit.028",
+      "corpus_fragment_id": "corpus-fragment.0116",
+      "source_node_id": "jsx.00350",
+      "reading_unit_id": "reading-unit.0126",
+      "source_code_unit_range": {
+        "start": 7152,
+        "end": 7153
+      }
+    },
+    {
+      "id": "quote-classification.035",
+      "quote_character": "\"",
+      "classification": "internal_quote_word_connector",
+      "resulting_unit_id": "internal-quote-unit.029",
+      "corpus_fragment_id": "corpus-fragment.0117",
+      "source_node_id": "jsx.00352",
+      "reading_unit_id": "reading-unit.0127",
+      "source_code_unit_range": {
+        "start": 7200,
+        "end": 7201
+      }
+    },
+    {
+      "id": "quote-classification.036",
+      "quote_character": "\"",
+      "classification": "internal_quote_word_connector",
+      "resulting_unit_id": "internal-quote-unit.030",
+      "corpus_fragment_id": "corpus-fragment.0131",
+      "source_node_id": "jsx.00389",
+      "reading_unit_id": "reading-unit.0142",
+      "source_code_unit_range": {
+        "start": 7866,
+        "end": 7867
+      }
+    },
+    {
+      "id": "quote-classification.037",
+      "quote_character": "\"",
+      "classification": "internal_quote_word_connector",
+      "resulting_unit_id": "internal-quote-unit.031",
+      "corpus_fragment_id": "corpus-fragment.0137",
+      "source_node_id": "jsx.00402",
+      "reading_unit_id": "reading-unit.0149",
+      "source_code_unit_range": {
+        "start": 8060,
+        "end": 8061
+      }
+    },
+    {
+      "id": "quote-classification.038",
+      "quote_character": "\"",
+      "classification": "internal_quote_word_connector",
+      "resulting_unit_id": "internal-quote-unit.032",
+      "corpus_fragment_id": "corpus-fragment.0144",
+      "source_node_id": "jsx.00417",
+      "reading_unit_id": "reading-unit.0157",
+      "source_code_unit_range": {
+        "start": 8335,
+        "end": 8336
+      }
+    },
+    {
+      "id": "quote-classification.039",
+      "quote_character": "\"",
+      "classification": "internal_quote_word_connector",
+      "resulting_unit_id": "internal-quote-unit.033",
+      "corpus_fragment_id": "corpus-fragment.0148",
+      "source_node_id": "jsx.00426",
+      "reading_unit_id": "reading-unit.0162",
+      "source_code_unit_range": {
+        "start": 8485,
+        "end": 8486
+      }
+    },
+    {
+      "id": "quote-classification.040",
+      "quote_character": "\"",
+      "classification": "internal_quote_word_connector",
+      "resulting_unit_id": "internal-quote-unit.034",
+      "corpus_fragment_id": "corpus-fragment.0154",
+      "source_node_id": "jsx.00439",
+      "reading_unit_id": "reading-unit.0169",
+      "source_code_unit_range": {
+        "start": 8749,
+        "end": 8750
+      }
+    },
+    {
+      "id": "quote-classification.041",
+      "quote_character": "\"",
+      "classification": "internal_quote_word_connector",
+      "resulting_unit_id": "internal-quote-unit.035",
+      "corpus_fragment_id": "corpus-fragment.0160",
+      "source_node_id": "jsx.00451",
+      "reading_unit_id": "reading-unit.0175",
+      "source_code_unit_range": {
+        "start": 8969,
+        "end": 8970
+      }
+    },
+    {
+      "id": "quote-classification.042",
+      "quote_character": "\"",
+      "classification": "internal_quote_word_connector",
+      "resulting_unit_id": "internal-quote-unit.036",
+      "corpus_fragment_id": "corpus-fragment.0166",
+      "source_node_id": "jsx.00464",
+      "reading_unit_id": "reading-unit.0182",
+      "source_code_unit_range": {
+        "start": 9218,
+        "end": 9219
+      }
+    },
+    {
+      "id": "quote-classification.043",
+      "quote_character": "\"",
+      "classification": "internal_quote_word_connector",
+      "resulting_unit_id": "internal-quote-unit.037",
+      "corpus_fragment_id": "corpus-fragment.0172",
+      "source_node_id": "jsx.00477",
+      "reading_unit_id": "reading-unit.0189",
+      "source_code_unit_range": {
+        "start": 9484,
+        "end": 9485
+      }
+    },
+    {
+      "id": "quote-classification.044",
+      "quote_character": "\"",
+      "classification": "internal_quote_word_connector",
+      "resulting_unit_id": "internal-quote-unit.038",
+      "corpus_fragment_id": "corpus-fragment.0172",
+      "source_node_id": "jsx.00477",
+      "reading_unit_id": "reading-unit.0189",
+      "source_code_unit_range": {
+        "start": 9618,
+        "end": 9619
+      }
+    },
+    {
+      "id": "quote-classification.045",
+      "quote_character": "\"",
+      "classification": "internal_quote_word_connector",
+      "resulting_unit_id": "internal-quote-unit.039",
+      "corpus_fragment_id": "corpus-fragment.0172",
+      "source_node_id": "jsx.00477",
+      "reading_unit_id": "reading-unit.0189",
+      "source_code_unit_range": {
+        "start": 9634,
+        "end": 9635
+      }
+    },
+    {
+      "id": "quote-classification.046",
+      "quote_character": "\"",
+      "classification": "internal_quote_word_connector",
+      "resulting_unit_id": "internal-quote-unit.040",
+      "corpus_fragment_id": "corpus-fragment.0173",
+      "source_node_id": "jsx.00479",
+      "reading_unit_id": "reading-unit.0190",
+      "source_code_unit_range": {
+        "start": 9671,
+        "end": 9672
+      }
+    },
+    {
+      "id": "quote-classification.047",
+      "quote_character": "\"",
+      "classification": "internal_quote_word_connector",
+      "resulting_unit_id": "internal-quote-unit.041",
+      "corpus_fragment_id": "corpus-fragment.0173",
+      "source_node_id": "jsx.00479",
+      "reading_unit_id": "reading-unit.0190",
+      "source_code_unit_range": {
+        "start": 9818,
+        "end": 9819
+      }
+    },
+    {
+      "id": "quote-classification.048",
+      "quote_character": "\"",
+      "classification": "internal_quote_word_connector",
+      "resulting_unit_id": "internal-quote-unit.042",
+      "corpus_fragment_id": "corpus-fragment.0173",
+      "source_node_id": "jsx.00479",
+      "reading_unit_id": "reading-unit.0190",
+      "source_code_unit_range": {
+        "start": 9834,
+        "end": 9835
+      }
+    },
+    {
+      "id": "quote-classification.049",
+      "quote_character": "\"",
+      "classification": "internal_quote_word_connector",
+      "resulting_unit_id": "internal-quote-unit.043",
+      "corpus_fragment_id": "corpus-fragment.0174",
+      "source_node_id": "jsx.00481",
+      "reading_unit_id": "reading-unit.0191",
+      "source_code_unit_range": {
+        "start": 9873,
+        "end": 9874
+      }
+    },
+    {
+      "id": "quote-classification.050",
+      "quote_character": "\"",
+      "classification": "internal_quote_word_connector",
+      "resulting_unit_id": "internal-quote-unit.044",
+      "corpus_fragment_id": "corpus-fragment.0175",
+      "source_node_id": "jsx.00483",
+      "reading_unit_id": "reading-unit.0191",
+      "source_code_unit_range": {
+        "start": 10029,
+        "end": 10030
+      }
+    },
+    {
+      "id": "quote-classification.051",
+      "quote_character": "\"",
+      "classification": "internal_quote_word_connector",
+      "resulting_unit_id": "internal-quote-unit.045",
+      "corpus_fragment_id": "corpus-fragment.0175",
+      "source_node_id": "jsx.00483",
+      "reading_unit_id": "reading-unit.0191",
+      "source_code_unit_range": {
+        "start": 10045,
+        "end": 10046
+      }
+    },
+    {
+      "id": "quote-classification.052",
+      "quote_character": "\"",
+      "classification": "internal_quote_word_connector",
+      "resulting_unit_id": "internal-quote-unit.046",
+      "corpus_fragment_id": "corpus-fragment.0176",
+      "source_node_id": "jsx.00485",
+      "reading_unit_id": "reading-unit.0191",
+      "source_code_unit_range": {
+        "start": 10058,
+        "end": 10059
+      }
+    },
+    {
+      "id": "quote-classification.053",
+      "quote_character": "\"",
+      "classification": "internal_quote_word_connector",
+      "resulting_unit_id": "internal-quote-unit.047",
+      "corpus_fragment_id": "corpus-fragment.0176",
+      "source_node_id": "jsx.00485",
+      "reading_unit_id": "reading-unit.0191",
+      "source_code_unit_range": {
+        "start": 10063,
+        "end": 10064
+      }
+    },
+    {
+      "id": "quote-classification.054",
+      "quote_character": "\"",
+      "classification": "internal_quote_word_connector",
+      "resulting_unit_id": "internal-quote-unit.048",
+      "corpus_fragment_id": "corpus-fragment.0179",
+      "source_node_id": "jsx.00499",
+      "reading_unit_id": "reading-unit.0192",
+      "source_code_unit_range": {
+        "start": 10185,
+        "end": 10186
+      }
+    },
+    {
+      "id": "quote-classification.055",
+      "quote_character": "\"",
+      "classification": "internal_quote_word_connector",
+      "resulting_unit_id": "internal-quote-unit.049",
+      "corpus_fragment_id": "corpus-fragment.0179",
+      "source_node_id": "jsx.00499",
+      "reading_unit_id": "reading-unit.0192",
+      "source_code_unit_range": {
+        "start": 10191,
+        "end": 10192
+      }
+    },
+    {
+      "id": "quote-classification.056",
+      "quote_character": "\"",
+      "classification": "internal_quote_word_connector",
+      "resulting_unit_id": "internal-quote-unit.050",
+      "corpus_fragment_id": "corpus-fragment.0184",
+      "source_node_id": "jsx.00509",
+      "reading_unit_id": "reading-unit.0197",
+      "source_code_unit_range": {
+        "start": 10423,
+        "end": 10424
+      }
+    },
+    {
+      "id": "quote-classification.057",
+      "quote_character": "\"",
+      "classification": "internal_quote_word_connector",
+      "resulting_unit_id": "internal-quote-unit.051",
+      "corpus_fragment_id": "corpus-fragment.0184",
+      "source_node_id": "jsx.00509",
+      "reading_unit_id": "reading-unit.0197",
+      "source_code_unit_range": {
+        "start": 10428,
+        "end": 10429
+      }
+    },
+    {
+      "id": "quote-classification.058",
+      "quote_character": "\"",
+      "classification": "internal_quote_word_connector",
+      "resulting_unit_id": "internal-quote-unit.052",
+      "corpus_fragment_id": "corpus-fragment.0184",
+      "source_node_id": "jsx.00509",
+      "reading_unit_id": "reading-unit.0197",
+      "source_code_unit_range": {
+        "start": 10433,
+        "end": 10434
+      }
+    },
+    {
+      "id": "quote-classification.059",
+      "quote_character": "\"",
+      "classification": "internal_quote_word_connector",
+      "resulting_unit_id": "internal-quote-unit.053",
+      "corpus_fragment_id": "corpus-fragment.0184",
+      "source_node_id": "jsx.00509",
+      "reading_unit_id": "reading-unit.0197",
+      "source_code_unit_range": {
+        "start": 10438,
+        "end": 10439
+      }
+    },
+    {
+      "id": "quote-classification.060",
+      "quote_character": "\"",
+      "classification": "internal_quote_word_connector",
+      "resulting_unit_id": "internal-quote-unit.054",
+      "corpus_fragment_id": "corpus-fragment.0184",
+      "source_node_id": "jsx.00509",
+      "reading_unit_id": "reading-unit.0197",
+      "source_code_unit_range": {
+        "start": 10443,
+        "end": 10444
+      }
+    },
+    {
+      "id": "quote-classification.061",
+      "quote_character": "\"",
+      "classification": "internal_quote_word_connector",
+      "resulting_unit_id": "internal-quote-unit.055",
+      "corpus_fragment_id": "corpus-fragment.0184",
+      "source_node_id": "jsx.00509",
+      "reading_unit_id": "reading-unit.0197",
+      "source_code_unit_range": {
+        "start": 10448,
+        "end": 10449
+      }
+    },
+    {
+      "id": "quote-classification.062",
+      "quote_character": "\"",
+      "classification": "internal_quote_word_connector",
+      "resulting_unit_id": "internal-quote-unit.056",
+      "corpus_fragment_id": "corpus-fragment.0184",
+      "source_node_id": "jsx.00509",
+      "reading_unit_id": "reading-unit.0197",
+      "source_code_unit_range": {
+        "start": 10453,
+        "end": 10454
+      }
+    },
+    {
+      "id": "quote-classification.063",
+      "quote_character": "\"",
+      "classification": "internal_quote_word_connector",
+      "resulting_unit_id": "internal-quote-unit.057",
+      "corpus_fragment_id": "corpus-fragment.0195",
+      "source_node_id": "jsx.00532",
+      "reading_unit_id": "reading-unit.0209",
+      "source_code_unit_range": {
+        "start": 10915,
+        "end": 10916
+      }
+    },
+    {
+      "id": "quote-classification.064",
+      "quote_character": "\"",
+      "classification": "internal_quote_word_connector",
+      "resulting_unit_id": "internal-quote-unit.058",
+      "corpus_fragment_id": "corpus-fragment.0195",
+      "source_node_id": "jsx.00532",
+      "reading_unit_id": "reading-unit.0209",
+      "source_code_unit_range": {
+        "start": 10921,
+        "end": 10922
+      }
+    },
+    {
+      "id": "quote-classification.065",
+      "quote_character": "\"",
+      "classification": "internal_quote_word_connector",
+      "resulting_unit_id": "internal-quote-unit.059",
+      "corpus_fragment_id": "corpus-fragment.0200",
+      "source_node_id": "jsx.00543",
+      "reading_unit_id": "reading-unit.0215",
+      "source_code_unit_range": {
+        "start": 11181,
+        "end": 11182
+      }
+    },
+    {
+      "id": "quote-classification.066",
+      "quote_character": "\"",
+      "classification": "internal_quote_word_connector",
+      "resulting_unit_id": "internal-quote-unit.060",
+      "corpus_fragment_id": "corpus-fragment.0200",
+      "source_node_id": "jsx.00543",
+      "reading_unit_id": "reading-unit.0215",
+      "source_code_unit_range": {
+        "start": 11187,
+        "end": 11188
+      }
+    },
+    {
+      "id": "quote-classification.067",
+      "quote_character": "'",
+      "classification": "unknown_non_internal_quote",
+      "resulting_unit_id": null,
+      "corpus_fragment_id": "corpus-fragment.0201",
+      "source_node_id": "jsx.00545",
+      "reading_unit_id": "reading-unit.0216",
+      "source_code_unit_range": {
+        "start": 11216,
+        "end": 11217
+      }
+    },
+    {
+      "id": "quote-classification.068",
+      "quote_character": "'",
+      "classification": "unknown_non_internal_quote",
+      "resulting_unit_id": null,
+      "corpus_fragment_id": "corpus-fragment.0202",
+      "source_node_id": "jsx.00547",
+      "reading_unit_id": "reading-unit.0217",
+      "source_code_unit_range": {
+        "start": 11250,
+        "end": 11251
+      }
+    },
+    {
+      "id": "quote-classification.069",
+      "quote_character": "\"",
+      "classification": "internal_quote_word_connector",
+      "resulting_unit_id": "internal-quote-unit.061",
+      "corpus_fragment_id": "corpus-fragment.0207",
+      "source_node_id": "jsx.00558",
+      "reading_unit_id": "reading-unit.0223",
+      "source_code_unit_range": {
+        "start": 11496,
+        "end": 11497
+      }
+    },
+    {
+      "id": "quote-classification.070",
+      "quote_character": "\"",
+      "classification": "internal_quote_word_connector",
+      "resulting_unit_id": "internal-quote-unit.062",
+      "corpus_fragment_id": "corpus-fragment.0207",
+      "source_node_id": "jsx.00558",
+      "reading_unit_id": "reading-unit.0223",
+      "source_code_unit_range": {
+        "start": 11502,
+        "end": 11503
+      }
+    },
+    {
+      "id": "quote-classification.071",
+      "quote_character": "'",
+      "classification": "unknown_non_internal_quote",
+      "resulting_unit_id": null,
+      "corpus_fragment_id": "corpus-fragment.0218",
+      "source_node_id": "jsx.00581",
+      "reading_unit_id": "reading-unit.0235",
+      "source_code_unit_range": {
+        "start": 11934,
+        "end": 11935
+      }
+    },
+    {
+      "id": "quote-classification.072",
+      "quote_character": "'",
+      "classification": "unknown_non_internal_quote",
+      "resulting_unit_id": null,
+      "corpus_fragment_id": "corpus-fragment.0219",
+      "source_node_id": "jsx.00583",
+      "reading_unit_id": "reading-unit.0236",
+      "source_code_unit_range": {
+        "start": 12084,
+        "end": 12085
+      }
+    },
+    {
+      "id": "quote-classification.073",
+      "quote_character": "'",
+      "classification": "unknown_non_internal_quote",
+      "resulting_unit_id": null,
+      "corpus_fragment_id": "corpus-fragment.0220",
+      "source_node_id": "jsx.00585",
+      "reading_unit_id": "reading-unit.0237",
+      "source_code_unit_range": {
+        "start": 12215,
+        "end": 12216
+      }
+    },
+    {
+      "id": "quote-classification.074",
+      "quote_character": "'",
+      "classification": "unknown_non_internal_quote",
+      "resulting_unit_id": null,
+      "corpus_fragment_id": "corpus-fragment.0220",
+      "source_node_id": "jsx.00585",
+      "reading_unit_id": "reading-unit.0237",
+      "source_code_unit_range": {
+        "start": 12276,
+        "end": 12277
+      }
+    },
+    {
+      "id": "quote-classification.075",
+      "quote_character": "'",
+      "classification": "unknown_non_internal_quote",
+      "resulting_unit_id": null,
+      "corpus_fragment_id": "corpus-fragment.0221",
+      "source_node_id": "jsx.00587",
+      "reading_unit_id": "reading-unit.0238",
+      "source_code_unit_range": {
+        "start": 12348,
+        "end": 12349
+      }
+    },
+    {
+      "id": "quote-classification.076",
+      "quote_character": "'",
+      "classification": "unknown_non_internal_quote",
+      "resulting_unit_id": null,
+      "corpus_fragment_id": "corpus-fragment.0221",
+      "source_node_id": "jsx.00587",
+      "reading_unit_id": "reading-unit.0238",
+      "source_code_unit_range": {
+        "start": 12406,
+        "end": 12407
+      }
+    },
+    {
+      "id": "quote-classification.077",
+      "quote_character": "'",
+      "classification": "unknown_non_internal_quote",
+      "resulting_unit_id": null,
+      "corpus_fragment_id": "corpus-fragment.0222",
+      "source_node_id": "jsx.00589",
+      "reading_unit_id": "reading-unit.0239",
+      "source_code_unit_range": {
+        "start": 12479,
+        "end": 12480
+      }
+    },
+    {
+      "id": "quote-classification.078",
+      "quote_character": "'",
+      "classification": "unknown_non_internal_quote",
+      "resulting_unit_id": null,
+      "corpus_fragment_id": "corpus-fragment.0222",
+      "source_node_id": "jsx.00589",
+      "reading_unit_id": "reading-unit.0239",
+      "source_code_unit_range": {
+        "start": 12537,
+        "end": 12538
+      }
+    },
+    {
+      "id": "quote-classification.079",
+      "quote_character": "'",
+      "classification": "unknown_non_internal_quote",
+      "resulting_unit_id": null,
+      "corpus_fragment_id": "corpus-fragment.0223",
+      "source_node_id": "jsx.00591",
+      "reading_unit_id": "reading-unit.0240",
+      "source_code_unit_range": {
+        "start": 12610,
+        "end": 12611
+      }
+    },
+    {
+      "id": "quote-classification.080",
+      "quote_character": "'",
+      "classification": "unknown_non_internal_quote",
+      "resulting_unit_id": null,
+      "corpus_fragment_id": "corpus-fragment.0224",
+      "source_node_id": "jsx.00593",
+      "reading_unit_id": "reading-unit.0241",
+      "source_code_unit_range": {
+        "start": 12749,
+        "end": 12750
+      }
+    },
+    {
+      "id": "quote-classification.081",
+      "quote_character": "'",
+      "classification": "unknown_non_internal_quote",
+      "resulting_unit_id": null,
+      "corpus_fragment_id": "corpus-fragment.0236",
+      "source_node_id": "jsx.00618",
+      "reading_unit_id": "reading-unit.0254",
+      "source_code_unit_range": {
+        "start": 13577,
+        "end": 13578
+      }
+    },
+    {
+      "id": "quote-classification.082",
+      "quote_character": "\"",
+      "classification": "internal_quote_word_connector",
+      "resulting_unit_id": "internal-quote-unit.063",
+      "corpus_fragment_id": "corpus-fragment.0242",
+      "source_node_id": "jsx.00639",
+      "reading_unit_id": "reading-unit.0261",
+      "source_code_unit_range": {
+        "start": 14054,
+        "end": 14055
+      }
+    },
+    {
+      "id": "quote-classification.083",
+      "quote_character": "\"",
+      "classification": "internal_quote_word_connector",
+      "resulting_unit_id": "internal-quote-unit.064",
+      "corpus_fragment_id": "corpus-fragment.0242",
+      "source_node_id": "jsx.00639",
+      "reading_unit_id": "reading-unit.0261",
+      "source_code_unit_range": {
+        "start": 14058,
+        "end": 14059
+      }
+    },
+    {
+      "id": "quote-classification.084",
+      "quote_character": "\"",
+      "classification": "internal_quote_word_connector",
+      "resulting_unit_id": "internal-quote-unit.065",
+      "corpus_fragment_id": "corpus-fragment.0242",
+      "source_node_id": "jsx.00639",
+      "reading_unit_id": "reading-unit.0261",
+      "source_code_unit_range": {
+        "start": 14062,
+        "end": 14063
+      }
+    },
+    {
+      "id": "quote-classification.085",
+      "quote_character": "\"",
+      "classification": "internal_quote_word_connector",
+      "resulting_unit_id": "internal-quote-unit.066",
+      "corpus_fragment_id": "corpus-fragment.0242",
+      "source_node_id": "jsx.00639",
+      "reading_unit_id": "reading-unit.0261",
+      "source_code_unit_range": {
+        "start": 14066,
+        "end": 14067
+      }
+    },
+    {
+      "id": "quote-classification.086",
+      "quote_character": "\"",
+      "classification": "internal_quote_word_connector",
+      "resulting_unit_id": "internal-quote-unit.067",
+      "corpus_fragment_id": "corpus-fragment.0242",
+      "source_node_id": "jsx.00639",
+      "reading_unit_id": "reading-unit.0261",
+      "source_code_unit_range": {
+        "start": 14070,
+        "end": 14071
+      }
+    },
+    {
+      "id": "quote-classification.087",
+      "quote_character": "\"",
+      "classification": "internal_quote_word_connector",
+      "resulting_unit_id": "internal-quote-unit.068",
+      "corpus_fragment_id": "corpus-fragment.0242",
+      "source_node_id": "jsx.00639",
+      "reading_unit_id": "reading-unit.0261",
+      "source_code_unit_range": {
+        "start": 14074,
+        "end": 14075
+      }
+    },
+    {
+      "id": "quote-classification.088",
+      "quote_character": "\"",
+      "classification": "internal_quote_word_connector",
+      "resulting_unit_id": "internal-quote-unit.069",
+      "corpus_fragment_id": "corpus-fragment.0250",
+      "source_node_id": "jsx.00656",
+      "reading_unit_id": "reading-unit.0270",
+      "source_code_unit_range": {
+        "start": 14841,
+        "end": 14842
+      }
+    },
+    {
+      "id": "quote-classification.089",
+      "quote_character": "\"",
+      "classification": "internal_quote_word_connector",
+      "resulting_unit_id": "internal-quote-unit.070",
+      "corpus_fragment_id": "corpus-fragment.0250",
+      "source_node_id": "jsx.00656",
+      "reading_unit_id": "reading-unit.0270",
+      "source_code_unit_range": {
+        "start": 14845,
+        "end": 14846
+      }
+    },
+    {
+      "id": "quote-classification.090",
+      "quote_character": "\"",
+      "classification": "internal_quote_word_connector",
+      "resulting_unit_id": "internal-quote-unit.071",
+      "corpus_fragment_id": "corpus-fragment.0250",
+      "source_node_id": "jsx.00656",
+      "reading_unit_id": "reading-unit.0270",
+      "source_code_unit_range": {
+        "start": 14849,
+        "end": 14850
+      }
+    },
+    {
+      "id": "quote-classification.091",
+      "quote_character": "\"",
+      "classification": "internal_quote_word_connector",
+      "resulting_unit_id": "internal-quote-unit.072",
+      "corpus_fragment_id": "corpus-fragment.0250",
+      "source_node_id": "jsx.00656",
+      "reading_unit_id": "reading-unit.0270",
+      "source_code_unit_range": {
+        "start": 14853,
+        "end": 14854
+      }
+    },
+    {
+      "id": "quote-classification.092",
+      "quote_character": "\"",
+      "classification": "internal_quote_word_connector",
+      "resulting_unit_id": "internal-quote-unit.073",
+      "corpus_fragment_id": "corpus-fragment.0250",
+      "source_node_id": "jsx.00656",
+      "reading_unit_id": "reading-unit.0270",
+      "source_code_unit_range": {
+        "start": 14857,
+        "end": 14858
+      }
+    },
+    {
+      "id": "quote-classification.093",
+      "quote_character": "\"",
+      "classification": "internal_quote_word_connector",
+      "resulting_unit_id": "internal-quote-unit.074",
+      "corpus_fragment_id": "corpus-fragment.0250",
+      "source_node_id": "jsx.00656",
+      "reading_unit_id": "reading-unit.0270",
+      "source_code_unit_range": {
+        "start": 14861,
+        "end": 14862
+      }
+    },
+    {
+      "id": "quote-classification.094",
+      "quote_character": "\"",
+      "classification": "internal_quote_word_connector",
+      "resulting_unit_id": "internal-quote-unit.075",
+      "corpus_fragment_id": "corpus-fragment.0254",
+      "source_node_id": "jsx.00664",
+      "reading_unit_id": "reading-unit.0274",
+      "source_code_unit_range": {
+        "start": 15027,
+        "end": 15028
+      }
+    },
+    {
+      "id": "quote-classification.095",
+      "quote_character": "\"",
+      "classification": "internal_quote_word_connector",
+      "resulting_unit_id": "internal-quote-unit.076",
+      "corpus_fragment_id": "corpus-fragment.0254",
+      "source_node_id": "jsx.00664",
+      "reading_unit_id": "reading-unit.0274",
+      "source_code_unit_range": {
+        "start": 15032,
+        "end": 15033
+      }
+    },
+    {
+      "id": "quote-classification.096",
+      "quote_character": "\"",
+      "classification": "internal_quote_word_connector",
+      "resulting_unit_id": "internal-quote-unit.077",
+      "corpus_fragment_id": "corpus-fragment.0254",
+      "source_node_id": "jsx.00664",
+      "reading_unit_id": "reading-unit.0274",
+      "source_code_unit_range": {
+        "start": 15037,
+        "end": 15038
+      }
+    },
+    {
+      "id": "quote-classification.097",
+      "quote_character": "\"",
+      "classification": "internal_quote_word_connector",
+      "resulting_unit_id": "internal-quote-unit.078",
+      "corpus_fragment_id": "corpus-fragment.0254",
+      "source_node_id": "jsx.00664",
+      "reading_unit_id": "reading-unit.0274",
+      "source_code_unit_range": {
+        "start": 15042,
+        "end": 15043
+      }
+    },
+    {
+      "id": "quote-classification.098",
+      "quote_character": "'",
+      "classification": "unknown_non_internal_quote",
+      "resulting_unit_id": null,
+      "corpus_fragment_id": "corpus-fragment.0259",
+      "source_node_id": "jsx.00677",
+      "reading_unit_id": "reading-unit.0281",
+      "source_code_unit_range": {
+        "start": 15690,
+        "end": 15691
+      }
+    },
+    {
+      "id": "quote-classification.099",
+      "quote_character": "'",
+      "classification": "unknown_non_internal_quote",
+      "resulting_unit_id": null,
+      "corpus_fragment_id": "corpus-fragment.0260",
+      "source_node_id": "jsx.00679",
+      "reading_unit_id": "reading-unit.0282",
+      "source_code_unit_range": {
+        "start": 15832,
+        "end": 15833
+      }
+    },
+    {
+      "id": "quote-classification.100",
+      "quote_character": "'",
+      "classification": "unknown_non_internal_quote",
+      "resulting_unit_id": null,
+      "corpus_fragment_id": "corpus-fragment.0261",
+      "source_node_id": "jsx.00681",
+      "reading_unit_id": "reading-unit.0283",
+      "source_code_unit_range": {
+        "start": 15958,
+        "end": 15959
+      }
+    },
+    {
+      "id": "quote-classification.101",
+      "quote_character": "'",
+      "classification": "unknown_non_internal_quote",
+      "resulting_unit_id": null,
+      "corpus_fragment_id": "corpus-fragment.0262",
+      "source_node_id": "jsx.00683",
+      "reading_unit_id": "reading-unit.0284",
+      "source_code_unit_range": {
+        "start": 16089,
+        "end": 16090
+      }
+    },
+    {
+      "id": "quote-classification.102",
+      "quote_character": "'",
+      "classification": "unknown_non_internal_quote",
+      "resulting_unit_id": null,
+      "corpus_fragment_id": "corpus-fragment.0263",
+      "source_node_id": "jsx.00685",
+      "reading_unit_id": "reading-unit.0285",
+      "source_code_unit_range": {
+        "start": 16220,
+        "end": 16221
+      }
+    },
+    {
+      "id": "quote-classification.103",
+      "quote_character": "'",
+      "classification": "unknown_non_internal_quote",
+      "resulting_unit_id": null,
+      "corpus_fragment_id": "corpus-fragment.0264",
+      "source_node_id": "jsx.00687",
+      "reading_unit_id": "reading-unit.0286",
+      "source_code_unit_range": {
+        "start": 16347,
+        "end": 16348
+      }
+    },
+    {
+      "id": "quote-classification.104",
+      "quote_character": "'",
+      "classification": "unknown_non_internal_quote",
+      "resulting_unit_id": null,
+      "corpus_fragment_id": "corpus-fragment.0265",
+      "source_node_id": "jsx.00689",
+      "reading_unit_id": "reading-unit.0287",
+      "source_code_unit_range": {
+        "start": 16481,
+        "end": 16482
+      }
+    },
+    {
+      "id": "quote-classification.105",
+      "quote_character": "'",
+      "classification": "unknown_non_internal_quote",
+      "resulting_unit_id": null,
+      "corpus_fragment_id": "corpus-fragment.0266",
+      "source_node_id": "jsx.00691",
+      "reading_unit_id": "reading-unit.0288",
+      "source_code_unit_range": {
+        "start": 16608,
+        "end": 16609
+      }
+    },
+    {
+      "id": "quote-classification.106",
+      "quote_character": "'",
+      "classification": "unknown_non_internal_quote",
+      "resulting_unit_id": null,
+      "corpus_fragment_id": "corpus-fragment.0267",
+      "source_node_id": "jsx.00693",
+      "reading_unit_id": "reading-unit.0289",
+      "source_code_unit_range": {
+        "start": 16737,
+        "end": 16738
+      }
+    },
+    {
+      "id": "quote-classification.107",
+      "quote_character": "'",
+      "classification": "unknown_non_internal_quote",
+      "resulting_unit_id": null,
+      "corpus_fragment_id": "corpus-fragment.0268",
+      "source_node_id": "jsx.00695",
+      "reading_unit_id": "reading-unit.0290",
+      "source_code_unit_range": {
+        "start": 16859,
+        "end": 16860
+      }
+    },
+    {
+      "id": "quote-classification.108",
+      "quote_character": "'",
+      "classification": "unknown_non_internal_quote",
+      "resulting_unit_id": null,
+      "corpus_fragment_id": "corpus-fragment.0269",
+      "source_node_id": "jsx.00697",
+      "reading_unit_id": "reading-unit.0291",
+      "source_code_unit_range": {
+        "start": 16983,
+        "end": 16984
+      }
+    },
+    {
+      "id": "quote-classification.109",
+      "quote_character": "'",
+      "classification": "unknown_non_internal_quote",
+      "resulting_unit_id": null,
+      "corpus_fragment_id": "corpus-fragment.0270",
+      "source_node_id": "jsx.00699",
+      "reading_unit_id": "reading-unit.0292",
+      "source_code_unit_range": {
+        "start": 17104,
+        "end": 17105
+      }
+    },
+    {
+      "id": "quote-classification.110",
+      "quote_character": "\"",
+      "classification": "internal_quote_word_connector",
+      "resulting_unit_id": "internal-quote-unit.079",
+      "corpus_fragment_id": "corpus-fragment.0278",
+      "source_node_id": "jsx.00717",
+      "reading_unit_id": "reading-unit.0302",
+      "source_code_unit_range": {
+        "start": 17540,
+        "end": 17541
+      }
+    },
+    {
+      "id": "quote-classification.111",
+      "quote_character": "\"",
+      "classification": "internal_quote_word_connector",
+      "resulting_unit_id": "internal-quote-unit.080",
+      "corpus_fragment_id": "corpus-fragment.0284",
+      "source_node_id": "jsx.00738",
+      "reading_unit_id": "reading-unit.0308",
+      "source_code_unit_range": {
+        "start": 17878,
+        "end": 17879
+      }
+    },
+    {
+      "id": "quote-classification.112",
+      "quote_character": "\"",
+      "classification": "internal_quote_word_connector",
+      "resulting_unit_id": "internal-quote-unit.081",
+      "corpus_fragment_id": "corpus-fragment.0291",
+      "source_node_id": "jsx.00752",
+      "reading_unit_id": "reading-unit.0313",
+      "source_code_unit_range": {
+        "start": 18122,
+        "end": 18123
+      }
+    },
+    {
+      "id": "quote-classification.113",
+      "quote_character": "\"",
+      "classification": "internal_quote_word_connector",
+      "resulting_unit_id": "internal-quote-unit.082",
+      "corpus_fragment_id": "corpus-fragment.0298",
+      "source_node_id": "jsx.00766",
+      "reading_unit_id": "reading-unit.0319",
+      "source_code_unit_range": {
+        "start": 18448,
+        "end": 18449
+      }
+    },
+    {
+      "id": "quote-classification.114",
+      "quote_character": "\"",
+      "classification": "internal_quote_word_connector",
+      "resulting_unit_id": "internal-quote-unit.083",
+      "corpus_fragment_id": "corpus-fragment.0299",
+      "source_node_id": "jsx.00768",
+      "reading_unit_id": "reading-unit.0320",
+      "source_code_unit_range": {
+        "start": 18481,
+        "end": 18482
+      }
+    },
+    {
+      "id": "quote-classification.115",
+      "quote_character": "\"",
+      "classification": "internal_quote_word_connector",
+      "resulting_unit_id": "internal-quote-unit.084",
+      "corpus_fragment_id": "corpus-fragment.0300",
+      "source_node_id": "jsx.00770",
+      "reading_unit_id": "reading-unit.0321",
+      "source_code_unit_range": {
+        "start": 18514,
+        "end": 18515
+      }
+    },
+    {
+      "id": "quote-classification.116",
+      "quote_character": "'",
+      "classification": "unknown_non_internal_quote",
+      "resulting_unit_id": null,
+      "corpus_fragment_id": "corpus-fragment.0318",
+      "source_node_id": "jsx.00807",
+      "reading_unit_id": "reading-unit.0340",
+      "source_code_unit_range": {
+        "start": 19217,
+        "end": 19218
+      }
+    },
+    {
+      "id": "quote-classification.117",
+      "quote_character": "\"",
+      "classification": "internal_quote_word_connector",
+      "resulting_unit_id": "internal-quote-unit.085",
+      "corpus_fragment_id": "corpus-fragment.0336",
+      "source_node_id": "jsx.00844",
+      "reading_unit_id": "reading-unit.0359",
+      "source_code_unit_range": {
+        "start": 20005,
+        "end": 20006
+      }
+    },
+    {
+      "id": "quote-classification.118",
+      "quote_character": "\"",
+      "classification": "internal_quote_word_connector",
+      "resulting_unit_id": "internal-quote-unit.086",
+      "corpus_fragment_id": "corpus-fragment.0344",
+      "source_node_id": "jsx.00860",
+      "reading_unit_id": "reading-unit.0367",
+      "source_code_unit_range": {
+        "start": 20254,
+        "end": 20255
+      }
+    },
+    {
+      "id": "quote-classification.119",
+      "quote_character": "'",
+      "classification": "unknown_non_internal_quote",
+      "resulting_unit_id": null,
+      "corpus_fragment_id": "corpus-fragment.0349",
+      "source_node_id": "jsx.00870",
+      "reading_unit_id": "reading-unit.0372",
+      "source_code_unit_range": {
+        "start": 20452,
+        "end": 20453
+      }
+    }
+  ],
+  "units": [
+    {
+      "id": "internal-quote-unit.001",
+      "ordinal": 0,
+      "unit_type": "word",
+      "decision_status": "sealed",
+      "authority": "user",
+      "linguistic_subtype": "unknown",
+      "raw": "יה\"ו",
+      "quote_character": "\"",
+      "component_surface_forms": [
+        "יה",
+        "ו"
+      ],
+      "corpus_fragment_id": "corpus-fragment.0062",
+      "source_node_id": "jsx.00202",
+      "reading_unit_id": "reading-unit.0068",
+      "source_code_unit_range": {
+        "start": 4076,
+        "end": 4080
+      },
+      "quote_source_code_unit_range": {
+        "start": 4078,
+        "end": 4079
+      }
+    },
+    {
+      "id": "internal-quote-unit.002",
+      "ordinal": 1,
+      "unit_type": "word",
+      "decision_status": "sealed",
+      "authority": "user",
+      "linguistic_subtype": "unknown",
+      "raw": "אמ\"ש",
+      "quote_character": "\"",
+      "component_surface_forms": [
+        "אמ",
+        "ש"
+      ],
+      "corpus_fragment_id": "corpus-fragment.0065",
+      "source_node_id": "jsx.00209",
+      "reading_unit_id": "reading-unit.0070",
+      "source_code_unit_range": {
+        "start": 4233,
+        "end": 4237
+      },
+      "quote_source_code_unit_range": {
+        "start": 4235,
+        "end": 4236
+      }
+    },
+    {
+      "id": "internal-quote-unit.003",
+      "ordinal": 2,
+      "unit_type": "word",
+      "decision_status": "sealed",
+      "authority": "user",
+      "linguistic_subtype": "unknown",
+      "raw": "ביה\"ו",
+      "quote_character": "\"",
+      "component_surface_forms": [
+        "ביה",
+        "ו"
+      ],
+      "corpus_fragment_id": "corpus-fragment.0066",
+      "source_node_id": "jsx.00212",
+      "reading_unit_id": "reading-unit.0072",
+      "source_code_unit_range": {
+        "start": 4366,
+        "end": 4371
+      },
+      "quote_source_code_unit_range": {
+        "start": 4369,
+        "end": 4370
+      }
+    },
+    {
+      "id": "internal-quote-unit.004",
+      "ordinal": 3,
+      "unit_type": "word",
+      "decision_status": "sealed",
+      "authority": "user",
+      "linguistic_subtype": "unknown",
+      "raw": "ביו\"ה",
+      "quote_character": "\"",
+      "component_surface_forms": [
+        "ביו",
+        "ה"
+      ],
+      "corpus_fragment_id": "corpus-fragment.0067",
+      "source_node_id": "jsx.00216",
+      "reading_unit_id": "reading-unit.0072",
+      "source_code_unit_range": {
+        "start": 4460,
+        "end": 4465
+      },
+      "quote_source_code_unit_range": {
+        "start": 4463,
+        "end": 4464
+      }
+    },
+    {
+      "id": "internal-quote-unit.005",
+      "ordinal": 4,
+      "unit_type": "word",
+      "decision_status": "sealed",
+      "authority": "user",
+      "linguistic_subtype": "unknown",
+      "raw": "בהי\"ו",
+      "quote_character": "\"",
+      "component_surface_forms": [
+        "בהי",
+        "ו"
+      ],
+      "corpus_fragment_id": "corpus-fragment.0068",
+      "source_node_id": "jsx.00220",
+      "reading_unit_id": "reading-unit.0072",
+      "source_code_unit_range": {
+        "start": 4556,
+        "end": 4561
+      },
+      "quote_source_code_unit_range": {
+        "start": 4559,
+        "end": 4560
+      }
+    },
+    {
+      "id": "internal-quote-unit.006",
+      "ordinal": 5,
+      "unit_type": "word",
+      "decision_status": "sealed",
+      "authority": "user",
+      "linguistic_subtype": "unknown",
+      "raw": "בהו\"י",
+      "quote_character": "\"",
+      "component_surface_forms": [
+        "בהו",
+        "י"
+      ],
+      "corpus_fragment_id": "corpus-fragment.0069",
+      "source_node_id": "jsx.00224",
+      "reading_unit_id": "reading-unit.0072",
+      "source_code_unit_range": {
+        "start": 4656,
+        "end": 4661
+      },
+      "quote_source_code_unit_range": {
+        "start": 4659,
+        "end": 4660
+      }
+    },
+    {
+      "id": "internal-quote-unit.007",
+      "ordinal": 6,
+      "unit_type": "word",
+      "decision_status": "sealed",
+      "authority": "user",
+      "linguistic_subtype": "unknown",
+      "raw": "בוי\"ה",
+      "quote_character": "\"",
+      "component_surface_forms": [
+        "בוי",
+        "ה"
+      ],
+      "corpus_fragment_id": "corpus-fragment.0070",
+      "source_node_id": "jsx.00228",
+      "reading_unit_id": "reading-unit.0072",
+      "source_code_unit_range": {
+        "start": 4751,
+        "end": 4756
+      },
+      "quote_source_code_unit_range": {
+        "start": 4754,
+        "end": 4755
+      }
+    },
+    {
+      "id": "internal-quote-unit.008",
+      "ordinal": 7,
+      "unit_type": "word",
+      "decision_status": "sealed",
+      "authority": "user",
+      "linguistic_subtype": "unknown",
+      "raw": "בוה\"י",
+      "quote_character": "\"",
+      "component_surface_forms": [
+        "בוה",
+        "י"
+      ],
+      "corpus_fragment_id": "corpus-fragment.0071",
+      "source_node_id": "jsx.00232",
+      "reading_unit_id": "reading-unit.0072",
+      "source_code_unit_range": {
+        "start": 4847,
+        "end": 4852
+      },
+      "quote_source_code_unit_range": {
+        "start": 4850,
+        "end": 4851
+      }
+    },
+    {
+      "id": "internal-quote-unit.009",
+      "ordinal": 8,
+      "unit_type": "word",
+      "decision_status": "sealed",
+      "authority": "user",
+      "linguistic_subtype": "unknown",
+      "raw": "שכ\"ב",
+      "quote_character": "\"",
+      "component_surface_forms": [
+        "שכ",
+        "ב"
+      ],
+      "corpus_fragment_id": "corpus-fragment.0075",
+      "source_node_id": "jsx.00246",
+      "reading_unit_id": "reading-unit.0077",
+      "source_code_unit_range": {
+        "start": 5146,
+        "end": 5150
+      },
+      "quote_source_code_unit_range": {
+        "start": 5148,
+        "end": 5149
+      }
+    },
+    {
+      "id": "internal-quote-unit.010",
+      "ordinal": 9,
+      "unit_type": "word",
+      "decision_status": "sealed",
+      "authority": "user",
+      "linguistic_subtype": "unknown",
+      "raw": "כמ\"ש",
+      "quote_character": "\"",
+      "component_surface_forms": [
+        "כמ",
+        "ש"
+      ],
+      "corpus_fragment_id": "corpus-fragment.0075",
+      "source_node_id": "jsx.00246",
+      "reading_unit_id": "reading-unit.0077",
+      "source_code_unit_range": {
+        "start": 5159,
+        "end": 5163
+      },
+      "quote_source_code_unit_range": {
+        "start": 5161,
+        "end": 5162
+      }
+    },
+    {
+      "id": "internal-quote-unit.011",
+      "ordinal": 10,
+      "unit_type": "word",
+      "decision_status": "sealed",
+      "authority": "user",
+      "linguistic_subtype": "unknown",
+      "raw": "וברמ\"ב",
+      "quote_character": "\"",
+      "component_surface_forms": [
+        "וברמ",
+        "ב"
+      ],
+      "corpus_fragment_id": "corpus-fragment.0075",
+      "source_node_id": "jsx.00246",
+      "reading_unit_id": "reading-unit.0077",
+      "source_code_unit_range": {
+        "start": 5177,
+        "end": 5183
+      },
+      "quote_source_code_unit_range": {
+        "start": 5181,
+        "end": 5182
+      }
+    },
+    {
+      "id": "internal-quote-unit.012",
+      "ordinal": 11,
+      "unit_type": "word",
+      "decision_status": "sealed",
+      "authority": "user",
+      "linguistic_subtype": "unknown",
+      "raw": "אמ\"ש",
+      "quote_character": "\"",
+      "component_surface_forms": [
+        "אמ",
+        "ש"
+      ],
+      "corpus_fragment_id": "corpus-fragment.0081",
+      "source_node_id": "jsx.00268",
+      "reading_unit_id": "reading-unit.0084",
+      "source_code_unit_range": {
+        "start": 5472,
+        "end": 5476
+      },
+      "quote_source_code_unit_range": {
+        "start": 5474,
+        "end": 5475
+      }
+    },
+    {
+      "id": "internal-quote-unit.013",
+      "ordinal": 12,
+      "unit_type": "word",
+      "decision_status": "sealed",
+      "authority": "user",
+      "linguistic_subtype": "unknown",
+      "raw": "אחה\"ע",
+      "quote_character": "\"",
+      "component_surface_forms": [
+        "אחה",
+        "ע"
+      ],
+      "corpus_fragment_id": "corpus-fragment.0096",
+      "source_node_id": "jsx.00300",
+      "reading_unit_id": "reading-unit.0101",
+      "source_code_unit_range": {
+        "start": 6087,
+        "end": 6092
+      },
+      "quote_source_code_unit_range": {
+        "start": 6090,
+        "end": 6091
+      }
+    },
+    {
+      "id": "internal-quote-unit.014",
+      "ordinal": 13,
+      "unit_type": "word",
+      "decision_status": "sealed",
+      "authority": "user",
+      "linguistic_subtype": "unknown",
+      "raw": "בומ\"ף",
+      "quote_character": "\"",
+      "component_surface_forms": [
+        "בומ",
+        "ף"
+      ],
+      "corpus_fragment_id": "corpus-fragment.0096",
+      "source_node_id": "jsx.00300",
+      "reading_unit_id": "reading-unit.0101",
+      "source_code_unit_range": {
+        "start": 6093,
+        "end": 6098
+      },
+      "quote_source_code_unit_range": {
+        "start": 6096,
+        "end": 6097
+      }
+    },
+    {
+      "id": "internal-quote-unit.015",
+      "ordinal": 14,
+      "unit_type": "word",
+      "decision_status": "sealed",
+      "authority": "user",
+      "linguistic_subtype": "unknown",
+      "raw": "גיכ\"ק",
+      "quote_character": "\"",
+      "component_surface_forms": [
+        "גיכ",
+        "ק"
+      ],
+      "corpus_fragment_id": "corpus-fragment.0096",
+      "source_node_id": "jsx.00300",
+      "reading_unit_id": "reading-unit.0101",
+      "source_code_unit_range": {
+        "start": 6099,
+        "end": 6104
+      },
+      "quote_source_code_unit_range": {
+        "start": 6102,
+        "end": 6103
+      }
+    },
+    {
+      "id": "internal-quote-unit.016",
+      "ordinal": 15,
+      "unit_type": "word",
+      "decision_status": "sealed",
+      "authority": "user",
+      "linguistic_subtype": "unknown",
+      "raw": "דטלנ\"ת",
+      "quote_character": "\"",
+      "component_surface_forms": [
+        "דטלנ",
+        "ת"
+      ],
+      "corpus_fragment_id": "corpus-fragment.0096",
+      "source_node_id": "jsx.00300",
+      "reading_unit_id": "reading-unit.0101",
+      "source_code_unit_range": {
+        "start": 6105,
+        "end": 6111
+      },
+      "quote_source_code_unit_range": {
+        "start": 6109,
+        "end": 6110
+      }
+    },
+    {
+      "id": "internal-quote-unit.017",
+      "ordinal": 16,
+      "unit_type": "word",
+      "decision_status": "sealed",
+      "authority": "user",
+      "linguistic_subtype": "unknown",
+      "raw": "זסשר\"ץ",
+      "quote_character": "\"",
+      "component_surface_forms": [
+        "זסשר",
+        "ץ"
+      ],
+      "corpus_fragment_id": "corpus-fragment.0096",
+      "source_node_id": "jsx.00300",
+      "reading_unit_id": "reading-unit.0101",
+      "source_code_unit_range": {
+        "start": 6112,
+        "end": 6118
+      },
+      "quote_source_code_unit_range": {
+        "start": 6116,
+        "end": 6117
+      }
+    },
+    {
+      "id": "internal-quote-unit.018",
+      "ordinal": 17,
+      "unit_type": "word",
+      "decision_status": "sealed",
+      "authority": "user",
+      "linguistic_subtype": "unknown",
+      "raw": "אחה\"ע",
+      "quote_character": "\"",
+      "component_surface_forms": [
+        "אחה",
+        "ע"
+      ],
+      "corpus_fragment_id": "corpus-fragment.0100",
+      "source_node_id": "jsx.00312",
+      "reading_unit_id": "reading-unit.0107",
+      "source_code_unit_range": {
+        "start": 6297,
+        "end": 6302
+      },
+      "quote_source_code_unit_range": {
+        "start": 6300,
+        "end": 6301
+      }
+    },
+    {
+      "id": "internal-quote-unit.019",
+      "ordinal": 18,
+      "unit_type": "word",
+      "decision_status": "sealed",
+      "authority": "user",
+      "linguistic_subtype": "unknown",
+      "raw": "בומ\"ף",
+      "quote_character": "\"",
+      "component_surface_forms": [
+        "בומ",
+        "ף"
+      ],
+      "corpus_fragment_id": "corpus-fragment.0101",
+      "source_node_id": "jsx.00314",
+      "reading_unit_id": "reading-unit.0108",
+      "source_code_unit_range": {
+        "start": 6373,
+        "end": 6378
+      },
+      "quote_source_code_unit_range": {
+        "start": 6376,
+        "end": 6377
+      }
+    },
+    {
+      "id": "internal-quote-unit.020",
+      "ordinal": 19,
+      "unit_type": "word",
+      "decision_status": "sealed",
+      "authority": "user",
+      "linguistic_subtype": "unknown",
+      "raw": "גיכ\"ק",
+      "quote_character": "\"",
+      "component_surface_forms": [
+        "גיכ",
+        "ק"
+      ],
+      "corpus_fragment_id": "corpus-fragment.0102",
+      "source_node_id": "jsx.00316",
+      "reading_unit_id": "reading-unit.0109",
+      "source_code_unit_range": {
+        "start": 6437,
+        "end": 6442
+      },
+      "quote_source_code_unit_range": {
+        "start": 6440,
+        "end": 6441
+      }
+    },
+    {
+      "id": "internal-quote-unit.021",
+      "ordinal": 20,
+      "unit_type": "word",
+      "decision_status": "sealed",
+      "authority": "user",
+      "linguistic_subtype": "unknown",
+      "raw": "דטלנ\"ת",
+      "quote_character": "\"",
+      "component_surface_forms": [
+        "דטלנ",
+        "ת"
+      ],
+      "corpus_fragment_id": "corpus-fragment.0103",
+      "source_node_id": "jsx.00318",
+      "reading_unit_id": "reading-unit.0110",
+      "source_code_unit_range": {
+        "start": 6502,
+        "end": 6508
+      },
+      "quote_source_code_unit_range": {
+        "start": 6506,
+        "end": 6507
+      }
+    },
+    {
+      "id": "internal-quote-unit.022",
+      "ordinal": 21,
+      "unit_type": "word",
+      "decision_status": "sealed",
+      "authority": "user",
+      "linguistic_subtype": "unknown",
+      "raw": "וסצר\"ש",
+      "quote_character": "\"",
+      "component_surface_forms": [
+        "וסצר",
+        "ש"
+      ],
+      "corpus_fragment_id": "corpus-fragment.0104",
+      "source_node_id": "jsx.00320",
+      "reading_unit_id": "reading-unit.0111",
+      "source_code_unit_range": {
+        "start": 6571,
+        "end": 6577
+      },
+      "quote_source_code_unit_range": {
+        "start": 6575,
+        "end": 6576
+      }
+    },
+    {
+      "id": "internal-quote-unit.023",
+      "ordinal": 22,
+      "unit_type": "word",
+      "decision_status": "sealed",
+      "authority": "user",
+      "linguistic_subtype": "unknown",
+      "raw": "וע\"ז",
+      "quote_character": "\"",
+      "component_surface_forms": [
+        "וע",
+        "ז"
+      ],
+      "corpus_fragment_id": "corpus-fragment.0105",
+      "source_node_id": "jsx.00325",
+      "reading_unit_id": "reading-unit.0113",
+      "source_code_unit_range": {
+        "start": 6661,
+        "end": 6665
+      },
+      "quote_source_code_unit_range": {
+        "start": 6663,
+        "end": 6664
+      }
+    },
+    {
+      "id": "internal-quote-unit.024",
+      "ordinal": 23,
+      "unit_type": "word",
+      "decision_status": "sealed",
+      "authority": "user",
+      "linguistic_subtype": "unknown",
+      "raw": "הרמ\"ב",
+      "quote_character": "\"",
+      "component_surface_forms": [
+        "הרמ",
+        "ב"
+      ],
+      "corpus_fragment_id": "corpus-fragment.0105",
+      "source_node_id": "jsx.00325",
+      "reading_unit_id": "reading-unit.0113",
+      "source_code_unit_range": {
+        "start": 6677,
+        "end": 6682
+      },
+      "quote_source_code_unit_range": {
+        "start": 6680,
+        "end": 6681
+      }
+    },
+    {
+      "id": "internal-quote-unit.025",
+      "ordinal": 24,
+      "unit_type": "word",
+      "decision_status": "sealed",
+      "authority": "user",
+      "linguistic_subtype": "unknown",
+      "raw": "ברל\"א",
+      "quote_character": "\"",
+      "component_surface_forms": [
+        "ברל",
+        "א"
+      ],
+      "corpus_fragment_id": "corpus-fragment.0109",
+      "source_node_id": "jsx.00335",
+      "reading_unit_id": "reading-unit.0118",
+      "source_code_unit_range": {
+        "start": 6816,
+        "end": 6821
+      },
+      "quote_source_code_unit_range": {
+        "start": 6819,
+        "end": 6820
+      }
+    },
+    {
+      "id": "internal-quote-unit.026",
+      "ordinal": 25,
+      "unit_type": "word",
+      "decision_status": "sealed",
+      "authority": "user",
+      "linguistic_subtype": "unknown",
+      "raw": "אָלֶ\"ף",
+      "quote_character": "\"",
+      "component_surface_forms": [
+        "אָלֶ",
+        "ף"
+      ],
+      "corpus_fragment_id": "corpus-fragment.0114",
+      "source_node_id": "jsx.00346",
+      "reading_unit_id": "reading-unit.0124",
+      "source_code_unit_range": {
+        "start": 7076,
+        "end": 7082
+      },
+      "quote_source_code_unit_range": {
+        "start": 7080,
+        "end": 7081
+      }
+    },
+    {
+      "id": "internal-quote-unit.027",
+      "ordinal": 26,
+      "unit_type": "word",
+      "decision_status": "sealed",
+      "authority": "user",
+      "linguistic_subtype": "unknown",
+      "raw": "אָלֶ\"ף",
+      "quote_character": "\"",
+      "component_surface_forms": [
+        "אָלֶ",
+        "ף"
+      ],
+      "corpus_fragment_id": "corpus-fragment.0115",
+      "source_node_id": "jsx.00348",
+      "reading_unit_id": "reading-unit.0125",
+      "source_code_unit_range": {
+        "start": 7124,
+        "end": 7130
+      },
+      "quote_source_code_unit_range": {
+        "start": 7128,
+        "end": 7129
+      }
+    },
+    {
+      "id": "internal-quote-unit.028",
+      "ordinal": 27,
+      "unit_type": "word",
+      "decision_status": "sealed",
+      "authority": "user",
+      "linguistic_subtype": "unknown",
+      "raw": "בֵּי\"ת",
+      "quote_character": "\"",
+      "component_surface_forms": [
+        "בֵּי",
+        "ת"
+      ],
+      "corpus_fragment_id": "corpus-fragment.0116",
+      "source_node_id": "jsx.00350",
+      "reading_unit_id": "reading-unit.0126",
+      "source_code_unit_range": {
+        "start": 7148,
+        "end": 7154
+      },
+      "quote_source_code_unit_range": {
+        "start": 7152,
+        "end": 7153
+      }
+    },
+    {
+      "id": "internal-quote-unit.029",
+      "ordinal": 28,
+      "unit_type": "word",
+      "decision_status": "sealed",
+      "authority": "user",
+      "linguistic_subtype": "unknown",
+      "raw": "בֵּי\"ת",
+      "quote_character": "\"",
+      "component_surface_forms": [
+        "בֵּי",
+        "ת"
+      ],
+      "corpus_fragment_id": "corpus-fragment.0117",
+      "source_node_id": "jsx.00352",
+      "reading_unit_id": "reading-unit.0127",
+      "source_code_unit_range": {
+        "start": 7196,
+        "end": 7202
+      },
+      "quote_source_code_unit_range": {
+        "start": 7200,
+        "end": 7201
+      }
+    },
+    {
+      "id": "internal-quote-unit.030",
+      "ordinal": 29,
+      "unit_type": "word",
+      "decision_status": "sealed",
+      "authority": "user",
+      "linguistic_subtype": "unknown",
+      "raw": "אמ\"ש",
+      "quote_character": "\"",
+      "component_surface_forms": [
+        "אמ",
+        "ש"
+      ],
+      "corpus_fragment_id": "corpus-fragment.0131",
+      "source_node_id": "jsx.00389",
+      "reading_unit_id": "reading-unit.0142",
+      "source_code_unit_range": {
+        "start": 7864,
+        "end": 7868
+      },
+      "quote_source_code_unit_range": {
+        "start": 7866,
+        "end": 7867
+      }
+    },
+    {
+      "id": "internal-quote-unit.031",
+      "ordinal": 30,
+      "unit_type": "word",
+      "decision_status": "sealed",
+      "authority": "user",
+      "linguistic_subtype": "unknown",
+      "raw": "אמ\"ש",
+      "quote_character": "\"",
+      "component_surface_forms": [
+        "אמ",
+        "ש"
+      ],
+      "corpus_fragment_id": "corpus-fragment.0137",
+      "source_node_id": "jsx.00402",
+      "reading_unit_id": "reading-unit.0149",
+      "source_code_unit_range": {
+        "start": 8058,
+        "end": 8062
+      },
+      "quote_source_code_unit_range": {
+        "start": 8060,
+        "end": 8061
+      }
+    },
+    {
+      "id": "internal-quote-unit.032",
+      "ordinal": 31,
+      "unit_type": "word",
+      "decision_status": "sealed",
+      "authority": "user",
+      "linguistic_subtype": "unknown",
+      "raw": "אמ\"ש",
+      "quote_character": "\"",
+      "component_surface_forms": [
+        "אמ",
+        "ש"
+      ],
+      "corpus_fragment_id": "corpus-fragment.0144",
+      "source_node_id": "jsx.00417",
+      "reading_unit_id": "reading-unit.0157",
+      "source_code_unit_range": {
+        "start": 8333,
+        "end": 8337
+      },
+      "quote_source_code_unit_range": {
+        "start": 8335,
+        "end": 8336
+      }
+    },
+    {
+      "id": "internal-quote-unit.033",
+      "ordinal": 32,
+      "unit_type": "word",
+      "decision_status": "sealed",
+      "authority": "user",
+      "linguistic_subtype": "unknown",
+      "raw": "אמ\"ש",
+      "quote_character": "\"",
+      "component_surface_forms": [
+        "אמ",
+        "ש"
+      ],
+      "corpus_fragment_id": "corpus-fragment.0148",
+      "source_node_id": "jsx.00426",
+      "reading_unit_id": "reading-unit.0162",
+      "source_code_unit_range": {
+        "start": 8483,
+        "end": 8487
+      },
+      "quote_source_code_unit_range": {
+        "start": 8485,
+        "end": 8486
+      }
+    },
+    {
+      "id": "internal-quote-unit.034",
+      "ordinal": 33,
+      "unit_type": "word",
+      "decision_status": "sealed",
+      "authority": "user",
+      "linguistic_subtype": "unknown",
+      "raw": "אמ\"ש",
+      "quote_character": "\"",
+      "component_surface_forms": [
+        "אמ",
+        "ש"
+      ],
+      "corpus_fragment_id": "corpus-fragment.0154",
+      "source_node_id": "jsx.00439",
+      "reading_unit_id": "reading-unit.0169",
+      "source_code_unit_range": {
+        "start": 8747,
+        "end": 8751
+      },
+      "quote_source_code_unit_range": {
+        "start": 8749,
+        "end": 8750
+      }
+    },
+    {
+      "id": "internal-quote-unit.035",
+      "ordinal": 34,
+      "unit_type": "word",
+      "decision_status": "sealed",
+      "authority": "user",
+      "linguistic_subtype": "unknown",
+      "raw": "אמ\"ש",
+      "quote_character": "\"",
+      "component_surface_forms": [
+        "אמ",
+        "ש"
+      ],
+      "corpus_fragment_id": "corpus-fragment.0160",
+      "source_node_id": "jsx.00451",
+      "reading_unit_id": "reading-unit.0175",
+      "source_code_unit_range": {
+        "start": 8967,
+        "end": 8971
+      },
+      "quote_source_code_unit_range": {
+        "start": 8969,
+        "end": 8970
+      }
+    },
+    {
+      "id": "internal-quote-unit.036",
+      "ordinal": 35,
+      "unit_type": "word",
+      "decision_status": "sealed",
+      "authority": "user",
+      "linguistic_subtype": "unknown",
+      "raw": "אמ\"ש",
+      "quote_character": "\"",
+      "component_surface_forms": [
+        "אמ",
+        "ש"
+      ],
+      "corpus_fragment_id": "corpus-fragment.0166",
+      "source_node_id": "jsx.00464",
+      "reading_unit_id": "reading-unit.0182",
+      "source_code_unit_range": {
+        "start": 9216,
+        "end": 9220
+      },
+      "quote_source_code_unit_range": {
+        "start": 9218,
+        "end": 9219
+      }
+    },
+    {
+      "id": "internal-quote-unit.037",
+      "ordinal": 36,
+      "unit_type": "word",
+      "decision_status": "sealed",
+      "authority": "user",
+      "linguistic_subtype": "unknown",
+      "raw": "אָלֶ\"ף",
+      "quote_character": "\"",
+      "component_surface_forms": [
+        "אָלֶ",
+        "ף"
+      ],
+      "corpus_fragment_id": "corpus-fragment.0172",
+      "source_node_id": "jsx.00477",
+      "reading_unit_id": "reading-unit.0189",
+      "source_code_unit_range": {
+        "start": 9480,
+        "end": 9486
+      },
+      "quote_source_code_unit_range": {
+        "start": 9484,
+        "end": 9485
+      }
+    },
+    {
+      "id": "internal-quote-unit.038",
+      "ordinal": 37,
+      "unit_type": "word",
+      "decision_status": "sealed",
+      "authority": "user",
+      "linguistic_subtype": "unknown",
+      "raw": "באמ\"ש",
+      "quote_character": "\"",
+      "component_surface_forms": [
+        "באמ",
+        "ש"
+      ],
+      "corpus_fragment_id": "corpus-fragment.0172",
+      "source_node_id": "jsx.00477",
+      "reading_unit_id": "reading-unit.0189",
+      "source_code_unit_range": {
+        "start": 9615,
+        "end": 9620
+      },
+      "quote_source_code_unit_range": {
+        "start": 9618,
+        "end": 9619
+      }
+    },
+    {
+      "id": "internal-quote-unit.039",
+      "ordinal": 38,
+      "unit_type": "word",
+      "decision_status": "sealed",
+      "authority": "user",
+      "linguistic_subtype": "unknown",
+      "raw": "באש\"ם",
+      "quote_character": "\"",
+      "component_surface_forms": [
+        "באש",
+        "ם"
+      ],
+      "corpus_fragment_id": "corpus-fragment.0172",
+      "source_node_id": "jsx.00477",
+      "reading_unit_id": "reading-unit.0189",
+      "source_code_unit_range": {
+        "start": 9631,
+        "end": 9636
+      },
+      "quote_source_code_unit_range": {
+        "start": 9634,
+        "end": 9635
+      }
+    },
+    {
+      "id": "internal-quote-unit.040",
+      "ordinal": 39,
+      "unit_type": "word",
+      "decision_status": "sealed",
+      "authority": "user",
+      "linguistic_subtype": "unknown",
+      "raw": "מֵ\"ם",
+      "quote_character": "\"",
+      "component_surface_forms": [
+        "מֵ",
+        "ם"
+      ],
+      "corpus_fragment_id": "corpus-fragment.0173",
+      "source_node_id": "jsx.00479",
+      "reading_unit_id": "reading-unit.0190",
+      "source_code_unit_range": {
+        "start": 9669,
+        "end": 9673
+      },
+      "quote_source_code_unit_range": {
+        "start": 9671,
+        "end": 9672
+      }
+    },
+    {
+      "id": "internal-quote-unit.041",
+      "ordinal": 40,
+      "unit_type": "word",
+      "decision_status": "sealed",
+      "authority": "user",
+      "linguistic_subtype": "unknown",
+      "raw": "במא\"ש",
+      "quote_character": "\"",
+      "component_surface_forms": [
+        "במא",
+        "ש"
+      ],
+      "corpus_fragment_id": "corpus-fragment.0173",
+      "source_node_id": "jsx.00479",
+      "reading_unit_id": "reading-unit.0190",
+      "source_code_unit_range": {
+        "start": 9815,
+        "end": 9820
+      },
+      "quote_source_code_unit_range": {
+        "start": 9818,
+        "end": 9819
+      }
+    },
+    {
+      "id": "internal-quote-unit.042",
+      "ordinal": 41,
+      "unit_type": "word",
+      "decision_status": "sealed",
+      "authority": "user",
+      "linguistic_subtype": "unknown",
+      "raw": "במש\"א",
+      "quote_character": "\"",
+      "component_surface_forms": [
+        "במש",
+        "א"
+      ],
+      "corpus_fragment_id": "corpus-fragment.0173",
+      "source_node_id": "jsx.00479",
+      "reading_unit_id": "reading-unit.0190",
+      "source_code_unit_range": {
+        "start": 9831,
+        "end": 9836
+      },
+      "quote_source_code_unit_range": {
+        "start": 9834,
+        "end": 9835
+      }
+    },
+    {
+      "id": "internal-quote-unit.043",
+      "ordinal": 42,
+      "unit_type": "word",
+      "decision_status": "sealed",
+      "authority": "user",
+      "linguistic_subtype": "unknown",
+      "raw": "שִׁי\"ן",
+      "quote_character": "\"",
+      "component_surface_forms": [
+        "שִׁי",
+        "ן"
+      ],
+      "corpus_fragment_id": "corpus-fragment.0174",
+      "source_node_id": "jsx.00481",
+      "reading_unit_id": "reading-unit.0191",
+      "source_code_unit_range": {
+        "start": 9869,
+        "end": 9875
+      },
+      "quote_source_code_unit_range": {
+        "start": 9873,
+        "end": 9874
+      }
+    },
+    {
+      "id": "internal-quote-unit.044",
+      "ordinal": 43,
+      "unit_type": "word",
+      "decision_status": "sealed",
+      "authority": "user",
+      "linguistic_subtype": "unknown",
+      "raw": "בשא\"מ",
+      "quote_character": "\"",
+      "component_surface_forms": [
+        "בשא",
+        "מ"
+      ],
+      "corpus_fragment_id": "corpus-fragment.0175",
+      "source_node_id": "jsx.00483",
+      "reading_unit_id": "reading-unit.0191",
+      "source_code_unit_range": {
+        "start": 10026,
+        "end": 10031
+      },
+      "quote_source_code_unit_range": {
+        "start": 10029,
+        "end": 10030
+      }
+    },
+    {
+      "id": "internal-quote-unit.045",
+      "ordinal": 44,
+      "unit_type": "word",
+      "decision_status": "sealed",
+      "authority": "user",
+      "linguistic_subtype": "unknown",
+      "raw": "בשמ\"א",
+      "quote_character": "\"",
+      "component_surface_forms": [
+        "בשמ",
+        "א"
+      ],
+      "corpus_fragment_id": "corpus-fragment.0175",
+      "source_node_id": "jsx.00483",
+      "reading_unit_id": "reading-unit.0191",
+      "source_code_unit_range": {
+        "start": 10042,
+        "end": 10047
+      },
+      "quote_source_code_unit_range": {
+        "start": 10045,
+        "end": 10046
+      }
+    },
+    {
+      "id": "internal-quote-unit.046",
+      "ordinal": 45,
+      "unit_type": "word",
+      "decision_status": "sealed",
+      "authority": "user",
+      "linguistic_subtype": "unknown",
+      "raw": "כ\"ה",
+      "quote_character": "\"",
+      "component_surface_forms": [
+        "כ",
+        "ה"
+      ],
+      "corpus_fragment_id": "corpus-fragment.0176",
+      "source_node_id": "jsx.00485",
+      "reading_unit_id": "reading-unit.0191",
+      "source_code_unit_range": {
+        "start": 10057,
+        "end": 10060
+      },
+      "quote_source_code_unit_range": {
+        "start": 10058,
+        "end": 10059
+      }
+    },
+    {
+      "id": "internal-quote-unit.047",
+      "ordinal": 46,
+      "unit_type": "word",
+      "decision_status": "sealed",
+      "authority": "user",
+      "linguistic_subtype": "unknown",
+      "raw": "בנ\"י",
+      "quote_character": "\"",
+      "component_surface_forms": [
+        "בנ",
+        "י"
+      ],
+      "corpus_fragment_id": "corpus-fragment.0176",
+      "source_node_id": "jsx.00485",
+      "reading_unit_id": "reading-unit.0191",
+      "source_code_unit_range": {
+        "start": 10061,
+        "end": 10065
+      },
+      "quote_source_code_unit_range": {
+        "start": 10063,
+        "end": 10064
+      }
+    },
+    {
+      "id": "internal-quote-unit.048",
+      "ordinal": 47,
+      "unit_type": "word",
+      "decision_status": "sealed",
+      "authority": "user",
+      "linguistic_subtype": "unknown",
+      "raw": "בג\"ד",
+      "quote_character": "\"",
+      "component_surface_forms": [
+        "בג",
+        "ד"
+      ],
+      "corpus_fragment_id": "corpus-fragment.0179",
+      "source_node_id": "jsx.00499",
+      "reading_unit_id": "reading-unit.0192",
+      "source_code_unit_range": {
+        "start": 10183,
+        "end": 10187
+      },
+      "quote_source_code_unit_range": {
+        "start": 10185,
+        "end": 10186
+      }
+    },
+    {
+      "id": "internal-quote-unit.049",
+      "ordinal": 48,
+      "unit_type": "word",
+      "decision_status": "sealed",
+      "authority": "user",
+      "linguistic_subtype": "unknown",
+      "raw": "כפר\"ת",
+      "quote_character": "\"",
+      "component_surface_forms": [
+        "כפר",
+        "ת"
+      ],
+      "corpus_fragment_id": "corpus-fragment.0179",
+      "source_node_id": "jsx.00499",
+      "reading_unit_id": "reading-unit.0192",
+      "source_code_unit_range": {
+        "start": 10188,
+        "end": 10193
+      },
+      "quote_source_code_unit_range": {
+        "start": 10191,
+        "end": 10192
+      }
+    },
+    {
+      "id": "internal-quote-unit.050",
+      "ordinal": 49,
+      "unit_type": "word",
+      "decision_status": "sealed",
+      "authority": "user",
+      "linguistic_subtype": "unknown",
+      "raw": "ב\"בּ",
+      "quote_character": "\"",
+      "component_surface_forms": [
+        "ב",
+        "בּ"
+      ],
+      "corpus_fragment_id": "corpus-fragment.0184",
+      "source_node_id": "jsx.00509",
+      "reading_unit_id": "reading-unit.0197",
+      "source_code_unit_range": {
+        "start": 10422,
+        "end": 10426
+      },
+      "quote_source_code_unit_range": {
+        "start": 10423,
+        "end": 10424
+      }
+    },
+    {
+      "id": "internal-quote-unit.051",
+      "ordinal": 50,
+      "unit_type": "word",
+      "decision_status": "sealed",
+      "authority": "user",
+      "linguistic_subtype": "unknown",
+      "raw": "ג\"גּ",
+      "quote_character": "\"",
+      "component_surface_forms": [
+        "ג",
+        "גּ"
+      ],
+      "corpus_fragment_id": "corpus-fragment.0184",
+      "source_node_id": "jsx.00509",
+      "reading_unit_id": "reading-unit.0197",
+      "source_code_unit_range": {
+        "start": 10427,
+        "end": 10431
+      },
+      "quote_source_code_unit_range": {
+        "start": 10428,
+        "end": 10429
+      }
+    },
+    {
+      "id": "internal-quote-unit.052",
+      "ordinal": 51,
+      "unit_type": "word",
+      "decision_status": "sealed",
+      "authority": "user",
+      "linguistic_subtype": "unknown",
+      "raw": "ד\"דּ",
+      "quote_character": "\"",
+      "component_surface_forms": [
+        "ד",
+        "דּ"
+      ],
+      "corpus_fragment_id": "corpus-fragment.0184",
+      "source_node_id": "jsx.00509",
+      "reading_unit_id": "reading-unit.0197",
+      "source_code_unit_range": {
+        "start": 10432,
+        "end": 10436
+      },
+      "quote_source_code_unit_range": {
+        "start": 10433,
+        "end": 10434
+      }
+    },
+    {
+      "id": "internal-quote-unit.053",
+      "ordinal": 52,
+      "unit_type": "word",
+      "decision_status": "sealed",
+      "authority": "user",
+      "linguistic_subtype": "unknown",
+      "raw": "כ\"כּ",
+      "quote_character": "\"",
+      "component_surface_forms": [
+        "כ",
+        "כּ"
+      ],
+      "corpus_fragment_id": "corpus-fragment.0184",
+      "source_node_id": "jsx.00509",
+      "reading_unit_id": "reading-unit.0197",
+      "source_code_unit_range": {
+        "start": 10437,
+        "end": 10441
+      },
+      "quote_source_code_unit_range": {
+        "start": 10438,
+        "end": 10439
+      }
+    },
+    {
+      "id": "internal-quote-unit.054",
+      "ordinal": 53,
+      "unit_type": "word",
+      "decision_status": "sealed",
+      "authority": "user",
+      "linguistic_subtype": "unknown",
+      "raw": "פ\"פּ",
+      "quote_character": "\"",
+      "component_surface_forms": [
+        "פ",
+        "פּ"
+      ],
+      "corpus_fragment_id": "corpus-fragment.0184",
+      "source_node_id": "jsx.00509",
+      "reading_unit_id": "reading-unit.0197",
+      "source_code_unit_range": {
+        "start": 10442,
+        "end": 10446
+      },
+      "quote_source_code_unit_range": {
+        "start": 10443,
+        "end": 10444
+      }
+    },
+    {
+      "id": "internal-quote-unit.055",
+      "ordinal": 54,
+      "unit_type": "word",
+      "decision_status": "sealed",
+      "authority": "user",
+      "linguistic_subtype": "unknown",
+      "raw": "ר\"רּ",
+      "quote_character": "\"",
+      "component_surface_forms": [
+        "ר",
+        "רּ"
+      ],
+      "corpus_fragment_id": "corpus-fragment.0184",
+      "source_node_id": "jsx.00509",
+      "reading_unit_id": "reading-unit.0197",
+      "source_code_unit_range": {
+        "start": 10447,
+        "end": 10451
+      },
+      "quote_source_code_unit_range": {
+        "start": 10448,
+        "end": 10449
+      }
+    },
+    {
+      "id": "internal-quote-unit.056",
+      "ordinal": 55,
+      "unit_type": "word",
+      "decision_status": "sealed",
+      "authority": "user",
+      "linguistic_subtype": "unknown",
+      "raw": "ת\"תּ",
+      "quote_character": "\"",
+      "component_surface_forms": [
+        "ת",
+        "תּ"
+      ],
+      "corpus_fragment_id": "corpus-fragment.0184",
+      "source_node_id": "jsx.00509",
+      "reading_unit_id": "reading-unit.0197",
+      "source_code_unit_range": {
+        "start": 10452,
+        "end": 10456
+      },
+      "quote_source_code_unit_range": {
+        "start": 10453,
+        "end": 10454
+      }
+    },
+    {
+      "id": "internal-quote-unit.057",
+      "ordinal": 56,
+      "unit_type": "word",
+      "decision_status": "sealed",
+      "authority": "user",
+      "linguistic_subtype": "unknown",
+      "raw": "בג\"ד",
+      "quote_character": "\"",
+      "component_surface_forms": [
+        "בג",
+        "ד"
+      ],
+      "corpus_fragment_id": "corpus-fragment.0195",
+      "source_node_id": "jsx.00532",
+      "reading_unit_id": "reading-unit.0209",
+      "source_code_unit_range": {
+        "start": 10913,
+        "end": 10917
+      },
+      "quote_source_code_unit_range": {
+        "start": 10915,
+        "end": 10916
+      }
+    },
+    {
+      "id": "internal-quote-unit.058",
+      "ordinal": 57,
+      "unit_type": "word",
+      "decision_status": "sealed",
+      "authority": "user",
+      "linguistic_subtype": "unknown",
+      "raw": "כפר\"ת",
+      "quote_character": "\"",
+      "component_surface_forms": [
+        "כפר",
+        "ת"
+      ],
+      "corpus_fragment_id": "corpus-fragment.0195",
+      "source_node_id": "jsx.00532",
+      "reading_unit_id": "reading-unit.0209",
+      "source_code_unit_range": {
+        "start": 10918,
+        "end": 10923
+      },
+      "quote_source_code_unit_range": {
+        "start": 10921,
+        "end": 10922
+      }
+    },
+    {
+      "id": "internal-quote-unit.059",
+      "ordinal": 58,
+      "unit_type": "word",
+      "decision_status": "sealed",
+      "authority": "user",
+      "linguistic_subtype": "unknown",
+      "raw": "בג\"ד",
+      "quote_character": "\"",
+      "component_surface_forms": [
+        "בג",
+        "ד"
+      ],
+      "corpus_fragment_id": "corpus-fragment.0200",
+      "source_node_id": "jsx.00543",
+      "reading_unit_id": "reading-unit.0215",
+      "source_code_unit_range": {
+        "start": 11179,
+        "end": 11183
+      },
+      "quote_source_code_unit_range": {
+        "start": 11181,
+        "end": 11182
+      }
+    },
+    {
+      "id": "internal-quote-unit.060",
+      "ordinal": 59,
+      "unit_type": "word",
+      "decision_status": "sealed",
+      "authority": "user",
+      "linguistic_subtype": "unknown",
+      "raw": "כפר\"ת",
+      "quote_character": "\"",
+      "component_surface_forms": [
+        "כפר",
+        "ת"
+      ],
+      "corpus_fragment_id": "corpus-fragment.0200",
+      "source_node_id": "jsx.00543",
+      "reading_unit_id": "reading-unit.0215",
+      "source_code_unit_range": {
+        "start": 11184,
+        "end": 11189
+      },
+      "quote_source_code_unit_range": {
+        "start": 11187,
+        "end": 11188
+      }
+    },
+    {
+      "id": "internal-quote-unit.061",
+      "ordinal": 60,
+      "unit_type": "word",
+      "decision_status": "sealed",
+      "authority": "user",
+      "linguistic_subtype": "unknown",
+      "raw": "בג\"ד",
+      "quote_character": "\"",
+      "component_surface_forms": [
+        "בג",
+        "ד"
+      ],
+      "corpus_fragment_id": "corpus-fragment.0207",
+      "source_node_id": "jsx.00558",
+      "reading_unit_id": "reading-unit.0223",
+      "source_code_unit_range": {
+        "start": 11494,
+        "end": 11498
+      },
+      "quote_source_code_unit_range": {
+        "start": 11496,
+        "end": 11497
+      }
+    },
+    {
+      "id": "internal-quote-unit.062",
+      "ordinal": 61,
+      "unit_type": "word",
+      "decision_status": "sealed",
+      "authority": "user",
+      "linguistic_subtype": "unknown",
+      "raw": "כפר\"ת",
+      "quote_character": "\"",
+      "component_surface_forms": [
+        "כפר",
+        "ת"
+      ],
+      "corpus_fragment_id": "corpus-fragment.0207",
+      "source_node_id": "jsx.00558",
+      "reading_unit_id": "reading-unit.0223",
+      "source_code_unit_range": {
+        "start": 11499,
+        "end": 11504
+      },
+      "quote_source_code_unit_range": {
+        "start": 11502,
+        "end": 11503
+      }
+    },
+    {
+      "id": "internal-quote-unit.063",
+      "ordinal": 62,
+      "unit_type": "word",
+      "decision_status": "sealed",
+      "authority": "user",
+      "linguistic_subtype": "unknown",
+      "raw": "ה\"ו",
+      "quote_character": "\"",
+      "component_surface_forms": [
+        "ה",
+        "ו"
+      ],
+      "corpus_fragment_id": "corpus-fragment.0242",
+      "source_node_id": "jsx.00639",
+      "reading_unit_id": "reading-unit.0261",
+      "source_code_unit_range": {
+        "start": 14053,
+        "end": 14056
+      },
+      "quote_source_code_unit_range": {
+        "start": 14054,
+        "end": 14055
+      }
+    },
+    {
+      "id": "internal-quote-unit.064",
+      "ordinal": 63,
+      "unit_type": "word",
+      "decision_status": "sealed",
+      "authority": "user",
+      "linguistic_subtype": "unknown",
+      "raw": "ז\"ח",
+      "quote_character": "\"",
+      "component_surface_forms": [
+        "ז",
+        "ח"
+      ],
+      "corpus_fragment_id": "corpus-fragment.0242",
+      "source_node_id": "jsx.00639",
+      "reading_unit_id": "reading-unit.0261",
+      "source_code_unit_range": {
+        "start": 14057,
+        "end": 14060
+      },
+      "quote_source_code_unit_range": {
+        "start": 14058,
+        "end": 14059
+      }
+    },
+    {
+      "id": "internal-quote-unit.065",
+      "ordinal": 64,
+      "unit_type": "word",
+      "decision_status": "sealed",
+      "authority": "user",
+      "linguistic_subtype": "unknown",
+      "raw": "ט\"י",
+      "quote_character": "\"",
+      "component_surface_forms": [
+        "ט",
+        "י"
+      ],
+      "corpus_fragment_id": "corpus-fragment.0242",
+      "source_node_id": "jsx.00639",
+      "reading_unit_id": "reading-unit.0261",
+      "source_code_unit_range": {
+        "start": 14061,
+        "end": 14064
+      },
+      "quote_source_code_unit_range": {
+        "start": 14062,
+        "end": 14063
+      }
+    },
+    {
+      "id": "internal-quote-unit.066",
+      "ordinal": 65,
+      "unit_type": "word",
+      "decision_status": "sealed",
+      "authority": "user",
+      "linguistic_subtype": "unknown",
+      "raw": "ל\"נ",
+      "quote_character": "\"",
+      "component_surface_forms": [
+        "ל",
+        "נ"
+      ],
+      "corpus_fragment_id": "corpus-fragment.0242",
+      "source_node_id": "jsx.00639",
+      "reading_unit_id": "reading-unit.0261",
+      "source_code_unit_range": {
+        "start": 14065,
+        "end": 14068
+      },
+      "quote_source_code_unit_range": {
+        "start": 14066,
+        "end": 14067
+      }
+    },
+    {
+      "id": "internal-quote-unit.067",
+      "ordinal": 66,
+      "unit_type": "word",
+      "decision_status": "sealed",
+      "authority": "user",
+      "linguistic_subtype": "unknown",
+      "raw": "ס\"ע",
+      "quote_character": "\"",
+      "component_surface_forms": [
+        "ס",
+        "ע"
+      ],
+      "corpus_fragment_id": "corpus-fragment.0242",
+      "source_node_id": "jsx.00639",
+      "reading_unit_id": "reading-unit.0261",
+      "source_code_unit_range": {
+        "start": 14069,
+        "end": 14072
+      },
+      "quote_source_code_unit_range": {
+        "start": 14070,
+        "end": 14071
+      }
+    },
+    {
+      "id": "internal-quote-unit.068",
+      "ordinal": 67,
+      "unit_type": "word",
+      "decision_status": "sealed",
+      "authority": "user",
+      "linguistic_subtype": "unknown",
+      "raw": "צ\"ק",
+      "quote_character": "\"",
+      "component_surface_forms": [
+        "צ",
+        "ק"
+      ],
+      "corpus_fragment_id": "corpus-fragment.0242",
+      "source_node_id": "jsx.00639",
+      "reading_unit_id": "reading-unit.0261",
+      "source_code_unit_range": {
+        "start": 14073,
+        "end": 14076
+      },
+      "quote_source_code_unit_range": {
+        "start": 14074,
+        "end": 14075
+      }
+    },
+    {
+      "id": "internal-quote-unit.069",
+      "ordinal": 68,
+      "unit_type": "word",
+      "decision_status": "sealed",
+      "authority": "user",
+      "linguistic_subtype": "unknown",
+      "raw": "ה\"ו",
+      "quote_character": "\"",
+      "component_surface_forms": [
+        "ה",
+        "ו"
+      ],
+      "corpus_fragment_id": "corpus-fragment.0250",
+      "source_node_id": "jsx.00656",
+      "reading_unit_id": "reading-unit.0270",
+      "source_code_unit_range": {
+        "start": 14840,
+        "end": 14843
+      },
+      "quote_source_code_unit_range": {
+        "start": 14841,
+        "end": 14842
+      }
+    },
+    {
+      "id": "internal-quote-unit.070",
+      "ordinal": 69,
+      "unit_type": "word",
+      "decision_status": "sealed",
+      "authority": "user",
+      "linguistic_subtype": "unknown",
+      "raw": "ז\"ח",
+      "quote_character": "\"",
+      "component_surface_forms": [
+        "ז",
+        "ח"
+      ],
+      "corpus_fragment_id": "corpus-fragment.0250",
+      "source_node_id": "jsx.00656",
+      "reading_unit_id": "reading-unit.0270",
+      "source_code_unit_range": {
+        "start": 14844,
+        "end": 14847
+      },
+      "quote_source_code_unit_range": {
+        "start": 14845,
+        "end": 14846
+      }
+    },
+    {
+      "id": "internal-quote-unit.071",
+      "ordinal": 70,
+      "unit_type": "word",
+      "decision_status": "sealed",
+      "authority": "user",
+      "linguistic_subtype": "unknown",
+      "raw": "ט\"י",
+      "quote_character": "\"",
+      "component_surface_forms": [
+        "ט",
+        "י"
+      ],
+      "corpus_fragment_id": "corpus-fragment.0250",
+      "source_node_id": "jsx.00656",
+      "reading_unit_id": "reading-unit.0270",
+      "source_code_unit_range": {
+        "start": 14848,
+        "end": 14851
+      },
+      "quote_source_code_unit_range": {
+        "start": 14849,
+        "end": 14850
+      }
+    },
+    {
+      "id": "internal-quote-unit.072",
+      "ordinal": 71,
+      "unit_type": "word",
+      "decision_status": "sealed",
+      "authority": "user",
+      "linguistic_subtype": "unknown",
+      "raw": "ל\"נ",
+      "quote_character": "\"",
+      "component_surface_forms": [
+        "ל",
+        "נ"
+      ],
+      "corpus_fragment_id": "corpus-fragment.0250",
+      "source_node_id": "jsx.00656",
+      "reading_unit_id": "reading-unit.0270",
+      "source_code_unit_range": {
+        "start": 14852,
+        "end": 14855
+      },
+      "quote_source_code_unit_range": {
+        "start": 14853,
+        "end": 14854
+      }
+    },
+    {
+      "id": "internal-quote-unit.073",
+      "ordinal": 72,
+      "unit_type": "word",
+      "decision_status": "sealed",
+      "authority": "user",
+      "linguistic_subtype": "unknown",
+      "raw": "ס\"ע",
+      "quote_character": "\"",
+      "component_surface_forms": [
+        "ס",
+        "ע"
+      ],
+      "corpus_fragment_id": "corpus-fragment.0250",
+      "source_node_id": "jsx.00656",
+      "reading_unit_id": "reading-unit.0270",
+      "source_code_unit_range": {
+        "start": 14856,
+        "end": 14859
+      },
+      "quote_source_code_unit_range": {
+        "start": 14857,
+        "end": 14858
+      }
+    },
+    {
+      "id": "internal-quote-unit.074",
+      "ordinal": 73,
+      "unit_type": "word",
+      "decision_status": "sealed",
+      "authority": "user",
+      "linguistic_subtype": "unknown",
+      "raw": "צ\"ק",
+      "quote_character": "\"",
+      "component_surface_forms": [
+        "צ",
+        "ק"
+      ],
+      "corpus_fragment_id": "corpus-fragment.0250",
+      "source_node_id": "jsx.00656",
+      "reading_unit_id": "reading-unit.0270",
+      "source_code_unit_range": {
+        "start": 14860,
+        "end": 14863
+      },
+      "quote_source_code_unit_range": {
+        "start": 14861,
+        "end": 14862
+      }
+    },
+    {
+      "id": "internal-quote-unit.075",
+      "ordinal": 74,
+      "unit_type": "word",
+      "decision_status": "sealed",
+      "authority": "user",
+      "linguistic_subtype": "unknown",
+      "raw": "טש\"ת",
+      "quote_character": "\"",
+      "component_surface_forms": [
+        "טש",
+        "ת"
+      ],
+      "corpus_fragment_id": "corpus-fragment.0254",
+      "source_node_id": "jsx.00664",
+      "reading_unit_id": "reading-unit.0274",
+      "source_code_unit_range": {
+        "start": 15025,
+        "end": 15029
+      },
+      "quote_source_code_unit_range": {
+        "start": 15027,
+        "end": 15028
+      }
+    },
+    {
+      "id": "internal-quote-unit.076",
+      "ordinal": 75,
+      "unit_type": "word",
+      "decision_status": "sealed",
+      "authority": "user",
+      "linguistic_subtype": "unknown",
+      "raw": "סא\"ב",
+      "quote_character": "\"",
+      "component_surface_forms": [
+        "סא",
+        "ב"
+      ],
+      "corpus_fragment_id": "corpus-fragment.0254",
+      "source_node_id": "jsx.00664",
+      "reading_unit_id": "reading-unit.0274",
+      "source_code_unit_range": {
+        "start": 15030,
+        "end": 15034
+      },
+      "quote_source_code_unit_range": {
+        "start": 15032,
+        "end": 15033
+      }
+    },
+    {
+      "id": "internal-quote-unit.077",
+      "ordinal": 76,
+      "unit_type": "word",
+      "decision_status": "sealed",
+      "authority": "user",
+      "linguistic_subtype": "unknown",
+      "raw": "מע\"ק",
+      "quote_character": "\"",
+      "component_surface_forms": [
+        "מע",
+        "ק"
+      ],
+      "corpus_fragment_id": "corpus-fragment.0254",
+      "source_node_id": "jsx.00664",
+      "reading_unit_id": "reading-unit.0274",
+      "source_code_unit_range": {
+        "start": 15035,
+        "end": 15039
+      },
+      "quote_source_code_unit_range": {
+        "start": 15037,
+        "end": 15038
+      }
+    },
+    {
+      "id": "internal-quote-unit.078",
+      "ordinal": 77,
+      "unit_type": "word",
+      "decision_status": "sealed",
+      "authority": "user",
+      "linguistic_subtype": "unknown",
+      "raw": "גד\"ד",
+      "quote_character": "\"",
+      "component_surface_forms": [
+        "גד",
+        "ד"
+      ],
+      "corpus_fragment_id": "corpus-fragment.0254",
+      "source_node_id": "jsx.00664",
+      "reading_unit_id": "reading-unit.0274",
+      "source_code_unit_range": {
+        "start": 15040,
+        "end": 15044
+      },
+      "quote_source_code_unit_range": {
+        "start": 15042,
+        "end": 15043
+      }
+    },
+    {
+      "id": "internal-quote-unit.079",
+      "ordinal": 78,
+      "unit_type": "word",
+      "decision_status": "sealed",
+      "authority": "user",
+      "linguistic_subtype": "unknown",
+      "raw": "הקב\"ה",
+      "quote_character": "\"",
+      "component_surface_forms": [
+        "הקב",
+        "ה"
+      ],
+      "corpus_fragment_id": "corpus-fragment.0278",
+      "source_node_id": "jsx.00717",
+      "reading_unit_id": "reading-unit.0302",
+      "source_code_unit_range": {
+        "start": 17537,
+        "end": 17542
+      },
+      "quote_source_code_unit_range": {
+        "start": 17540,
+        "end": 17541
+      }
+    },
+    {
+      "id": "internal-quote-unit.080",
+      "ordinal": 79,
+      "unit_type": "word",
+      "decision_status": "sealed",
+      "authority": "user",
+      "linguistic_subtype": "unknown",
+      "raw": "נ\"א",
+      "quote_character": "\"",
+      "component_surface_forms": [
+        "נ",
+        "א"
+      ],
+      "corpus_fragment_id": "corpus-fragment.0284",
+      "source_node_id": "jsx.00738",
+      "reading_unit_id": "reading-unit.0308",
+      "source_code_unit_range": {
+        "start": 17877,
+        "end": 17880
+      },
+      "quote_source_code_unit_range": {
+        "start": 17878,
+        "end": 17879
+      }
+    },
+    {
+      "id": "internal-quote-unit.081",
+      "ordinal": 80,
+      "unit_type": "word",
+      "decision_status": "sealed",
+      "authority": "user",
+      "linguistic_subtype": "unknown",
+      "raw": "נ\"א",
+      "quote_character": "\"",
+      "component_surface_forms": [
+        "נ",
+        "א"
+      ],
+      "corpus_fragment_id": "corpus-fragment.0291",
+      "source_node_id": "jsx.00752",
+      "reading_unit_id": "reading-unit.0313",
+      "source_code_unit_range": {
+        "start": 18121,
+        "end": 18124
+      },
+      "quote_source_code_unit_range": {
+        "start": 18122,
+        "end": 18123
+      }
+    },
+    {
+      "id": "internal-quote-unit.082",
+      "ordinal": 81,
+      "unit_type": "word",
+      "decision_status": "sealed",
+      "authority": "user",
+      "linguistic_subtype": "unknown",
+      "raw": "מֵ\"ם",
+      "quote_character": "\"",
+      "component_surface_forms": [
+        "מֵ",
+        "ם"
+      ],
+      "corpus_fragment_id": "corpus-fragment.0298",
+      "source_node_id": "jsx.00766",
+      "reading_unit_id": "reading-unit.0319",
+      "source_code_unit_range": {
+        "start": 18446,
+        "end": 18450
+      },
+      "quote_source_code_unit_range": {
+        "start": 18448,
+        "end": 18449
+      }
+    },
+    {
+      "id": "internal-quote-unit.083",
+      "ordinal": 82,
+      "unit_type": "word",
+      "decision_status": "sealed",
+      "authority": "user",
+      "linguistic_subtype": "unknown",
+      "raw": "שִׁי\"ן",
+      "quote_character": "\"",
+      "component_surface_forms": [
+        "שִׁי",
+        "ן"
+      ],
+      "corpus_fragment_id": "corpus-fragment.0299",
+      "source_node_id": "jsx.00768",
+      "reading_unit_id": "reading-unit.0320",
+      "source_code_unit_range": {
+        "start": 18477,
+        "end": 18483
+      },
+      "quote_source_code_unit_range": {
+        "start": 18481,
+        "end": 18482
+      }
+    },
+    {
+      "id": "internal-quote-unit.084",
+      "ordinal": 83,
+      "unit_type": "word",
+      "decision_status": "sealed",
+      "authority": "user",
+      "linguistic_subtype": "unknown",
+      "raw": "אָלֶ\"ף",
+      "quote_character": "\"",
+      "component_surface_forms": [
+        "אָלֶ",
+        "ף"
+      ],
+      "corpus_fragment_id": "corpus-fragment.0300",
+      "source_node_id": "jsx.00770",
+      "reading_unit_id": "reading-unit.0321",
+      "source_code_unit_range": {
+        "start": 18510,
+        "end": 18516
+      },
+      "quote_source_code_unit_range": {
+        "start": 18514,
+        "end": 18515
+      }
+    },
+    {
+      "id": "internal-quote-unit.085",
+      "ordinal": 84,
+      "unit_type": "word",
+      "decision_status": "sealed",
+      "authority": "user",
+      "linguistic_subtype": "unknown",
+      "raw": "ע\"ה",
+      "quote_character": "\"",
+      "component_surface_forms": [
+        "ע",
+        "ה"
+      ],
+      "corpus_fragment_id": "corpus-fragment.0336",
+      "source_node_id": "jsx.00844",
+      "reading_unit_id": "reading-unit.0359",
+      "source_code_unit_range": {
+        "start": 20004,
+        "end": 20007
+      },
+      "quote_source_code_unit_range": {
+        "start": 20005,
+        "end": 20006
+      }
+    },
+    {
+      "id": "internal-quote-unit.086",
+      "ordinal": 85,
+      "unit_type": "word",
+      "decision_status": "sealed",
+      "authority": "user",
+      "linguistic_subtype": "unknown",
+      "raw": "ב\"ה",
+      "quote_character": "\"",
+      "component_surface_forms": [
+        "ב",
+        "ה"
+      ],
+      "corpus_fragment_id": "corpus-fragment.0344",
+      "source_node_id": "jsx.00860",
+      "reading_unit_id": "reading-unit.0367",
+      "source_code_unit_range": {
+        "start": 20253,
+        "end": 20256
+      },
+      "quote_source_code_unit_range": {
+        "start": 20254,
+        "end": 20255
+      }
+    }
+  ],
+  "adjacent_punctuation_observations": [
+    {
+      "internal_quote_unit_id": "internal-quote-unit.001",
+      "char": ".",
+      "status": "excluded_from_word_role_unknown",
+      "source_code_unit_range": {
+        "start": 4080,
+        "end": 4081
+      }
+    },
+    {
+      "internal_quote_unit_id": "internal-quote-unit.003",
+      "char": ".",
+      "status": "excluded_from_word_role_unknown",
+      "source_code_unit_range": {
+        "start": 4371,
+        "end": 4372
+      }
+    },
+    {
+      "internal_quote_unit_id": "internal-quote-unit.004",
+      "char": ".",
+      "status": "excluded_from_word_role_unknown",
+      "source_code_unit_range": {
+        "start": 4465,
+        "end": 4466
+      }
+    },
+    {
+      "internal_quote_unit_id": "internal-quote-unit.005",
+      "char": ".",
+      "status": "excluded_from_word_role_unknown",
+      "source_code_unit_range": {
+        "start": 4561,
+        "end": 4562
+      }
+    },
+    {
+      "internal_quote_unit_id": "internal-quote-unit.006",
+      "char": ".",
+      "status": "excluded_from_word_role_unknown",
+      "source_code_unit_range": {
+        "start": 4661,
+        "end": 4662
+      }
+    },
+    {
+      "internal_quote_unit_id": "internal-quote-unit.007",
+      "char": ".",
+      "status": "excluded_from_word_role_unknown",
+      "source_code_unit_range": {
+        "start": 4756,
+        "end": 4757
+      }
+    },
+    {
+      "internal_quote_unit_id": "internal-quote-unit.008",
+      "char": ":",
+      "status": "excluded_from_word_role_unknown",
+      "source_code_unit_range": {
+        "start": 4852,
+        "end": 4853
+      }
+    },
+    {
+      "internal_quote_unit_id": "internal-quote-unit.009",
+      "char": ")",
+      "status": "excluded_from_word_role_unknown",
+      "source_code_unit_range": {
+        "start": 5150,
+        "end": 5151
+      }
+    },
+    {
+      "internal_quote_unit_id": "internal-quote-unit.024",
+      "char": ":",
+      "status": "excluded_from_word_role_unknown",
+      "source_code_unit_range": {
+        "start": 6682,
+        "end": 6683
+      }
+    },
+    {
+      "internal_quote_unit_id": "internal-quote-unit.027",
+      "char": ",",
+      "status": "excluded_from_word_role_unknown",
+      "source_code_unit_range": {
+        "start": 7130,
+        "end": 7131
+      }
+    },
+    {
+      "internal_quote_unit_id": "internal-quote-unit.039",
+      "char": ":",
+      "status": "excluded_from_word_role_unknown",
+      "source_code_unit_range": {
+        "start": 9636,
+        "end": 9637
+      }
+    },
+    {
+      "internal_quote_unit_id": "internal-quote-unit.042",
+      "char": ":",
+      "status": "excluded_from_word_role_unknown",
+      "source_code_unit_range": {
+        "start": 9836,
+        "end": 9837
+      }
+    },
+    {
+      "internal_quote_unit_id": "internal-quote-unit.045",
+      "char": ",",
+      "status": "excluded_from_word_role_unknown",
+      "source_code_unit_range": {
+        "start": 10047,
+        "end": 10048
+      }
+    },
+    {
+      "internal_quote_unit_id": "internal-quote-unit.047",
+      "char": ")",
+      "status": "excluded_from_word_role_unknown",
+      "source_code_unit_range": {
+        "start": 10065,
+        "end": 10066
+      }
+    },
+    {
+      "internal_quote_unit_id": "internal-quote-unit.078",
+      "char": ".",
+      "status": "excluded_from_word_role_unknown",
+      "source_code_unit_range": {
+        "start": 15044,
+        "end": 15045
+      }
+    }
+  ]
+}
