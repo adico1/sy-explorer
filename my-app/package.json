@@ -17,6 +17,8 @@
     "test:text-projection": "node scripts/generate-text-projection.mjs --check",
     "generate:text-context": "node scripts/generate-text-context.mjs",
     "test:text-context": "node scripts/generate-text-context.mjs --check",
+    "generate:corpus-scope": "node scripts/generate-corpus-scope.mjs",
+    "test:corpus-scope": "node scripts/generate-corpus-scope.mjs --check",
     "test:regression": "node scripts/regression.mjs",
     "preview": "vite preview"
   },

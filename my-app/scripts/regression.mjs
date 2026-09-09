@@ -12,6 +12,7 @@ const readingUnits = JSON.parse(fs.readFileSync(new URL("../src/sy.reading-units
 const readingHierarchy = JSON.parse(fs.readFileSync(new URL("../src/sy.reading-hierarchy.json", import.meta.url), "utf8"));
 const textProjection = JSON.parse(fs.readFileSync(new URL("../src/sy.text-projection.json", import.meta.url), "utf8"));
 const textContext = JSON.parse(fs.readFileSync(new URL("../src/sy.text-context.json", import.meta.url), "utf8"));
+const corpusScope = JSON.parse(fs.readFileSync(new URL("../src/sy.corpus-scope.json", import.meta.url), "utf8"));
 const failures = [];
 const requireInvariant = (condition, name) => {
   if (!condition) failures.push(name);
@@ -58,6 +59,15 @@ requireInvariant(textContext.proof.every_ancestor_reference_resolves, "text_cont
 requireInvariant(textContext.proof.every_projection_reference_resolves, "text_context_projection_refs");
 requireInvariant(textContext.proof.every_corpus_decision_remains_unset, "text_context_no_scope_invention");
 requireInvariant(textContext.proof.deterministic_output, "text_context_deterministic");
+requireInvariant(corpusScope.source.sha256 === sourceHash, "corpus_scope_source_hash");
+requireInvariant(corpusScope.status === "sealed", "corpus_scope_sealed");
+requireInvariant(corpusScope.proof.every_text_node_decided_exactly_once, "corpus_scope_node_coverage");
+requireInvariant(corpusScope.proof.every_decision_exclusive, "corpus_scope_exclusive");
+requireInvariant(corpusScope.proof.no_unresolved_text_nodes, "corpus_scope_resolved");
+requireInvariant(corpusScope.proof.counts_match_user_decision, "corpus_scope_user_counts");
+requireInvariant(corpusScope.proof.included_source_order_preserved, "corpus_scope_source_order");
+requireInvariant(corpusScope.proof.total_included_count === 362, "corpus_scope_included_count");
+requireInvariant(corpusScope.proof.deterministic_output, "corpus_scope_deterministic");
 requireInvariant(corpus.validation.valid, "corpus_validation");
 requireInvariant(corpus.input === sourceText, "lossless_source");
 requireInvariant(corpus.stats.occurrences === 1673, "occurrence_count");
