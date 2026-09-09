@@ -16,7 +16,7 @@ type Interpretation = {
 
 type Interpretations = Record<string, Interpretation>;
 type Filter = "all" | "repeated" | "single" | "interpreted";
-type View = "names" | "patterns";
+type View = "reading" | "names" | "patterns";
 
 const roleLabels: Record<string, string> = {
   name: "שם",
@@ -48,7 +48,7 @@ export function SYConverter() {
   const [selectedId, setSelectedId] = useState<string>(() => corpus.evidence.names[0]?.id || "");
   const [query, setQuery] = useState("");
   const [filter, setFilter] = useState<Filter>("all");
-  const [view, setView] = useState<View>("patterns");
+  const [view, setView] = useState<View>("reading");
 
   const names = useMemo(() => {
     const needle = query.trim();
@@ -135,8 +135,8 @@ export function SYConverter() {
       </header>
 
       <div className="source-authority">
-        <strong>סמכות המקור: ספריא</strong>
-        <span>העותק המקומי טרם הושווה אוטומטית לנוסח המקוון.</span>
+        <strong>מהדורת העבודה חתומה</strong>
+        <span>נוסח ספריא אומת ידנית; הניקוד וגבולות הקריאה נוספו ואושרו על ידך.</span>
       </div>
 
       <p className="axiom">
@@ -155,10 +155,12 @@ export function SYConverter() {
       </div>
 
       <nav className="mode-tabs">
-        <button aria-pressed={view === "patterns"} onClick={() => setView("patterns")}>תבניות וכפילויות</button>
+        <button aria-pressed={view === "reading"} onClick={() => setView("reading")}>אפיון הקריאה</button>
         <button aria-pressed={view === "names"} onClick={() => setView("names")}>שמות ומופעים</button>
+        <button aria-pressed={view === "patterns"} onClick={() => setView("patterns")}>ניסוי 0.11 שנדחה</button>
       </nav>
 
+      {view === "reading" && <ReadingSpecification corpus={corpus} />}
       {view === "names" && <>
       <div className="name-toolbar">
         <input value={query} onChange={(event) => setQuery(event.target.value)} placeholder="חיפוש שם…" aria-label="חיפוש שם" />
@@ -249,8 +251,8 @@ function PatternExplorer({ corpus }: { corpus: any }) {
   return (
     <div className="pattern-explorer">
       <section className="pattern-summary">
-        <h3>מה נגזר מן הכפילויות</h3>
-        <p>החזרה קובעת מועמדות מבנית בלבד. התפקיד הסופי — קטגוריה, קשר, בקר או ערך — נקבע בפירוש שלך.</p>
+        <h3>ניסוי 0.11 — נדחה כקורא סמנטי</h3>
+        <p>הנתונים נשמרים כאבחון בלבד. ספי שכיחות ו־n-grams אינם קובעים קטגוריה, קשר, בקר או ערך.</p>
         <div>
           <span><b>{candidates.filter((item: any) => item.candidate === "category_relation_or_controller").length}</b> מועמדי מבנה</span>
           <span><b>{candidates.filter((item: any) => item.candidate === "single_unit_value_or_name").length}</b> שמות הקיימים ביחידה אחת</span>
@@ -315,5 +317,42 @@ function PatternExplorer({ corpus }: { corpus: any }) {
         </div>
       </section>
     </div>
+  );
+}
+
+function ReadingSpecification({ corpus }: { corpus: any }) {
+  const reading = corpus.reading_specification;
+  return (
+    <div className="reading-spec">
+      <section className="seal-card">
+        <header><span>SEALED SOURCE</span><strong>מהדורת הקריאה המקומית</strong></header>
+        <dl>
+          <div><dt>SHA-256</dt><dd><code>{corpus.seal.source_sha256}</code></dd></div>
+          <div><dt>אימות נוסח</dt><dd>אומת ידנית מול ספריא על ידך</dd></div>
+          <div><dt>ניקוד</dt><dd>מידע קריאה מוסמך — נשמר לפני כל נרמול</dd></div>
+          <div><dt>כל br</dt><dd>גבול קריאה מוסמך</dd></div>
+          <div><dt>br רצופים</dt><dd>גבול של קבוצת קריאה</dd></div>
+        </dl>
+      </section>
+
+      <RuleGroup title="כללים חתומים" state="sealed" rules={reading.sealed_rules} />
+      <RuleGroup title="כללים בתהליך גילוי" state="discovery" rules={reading.discovery_rules} />
+      <RuleGroup title="מודלי קריאה שנדחו" state="rejected" rules={reading.rejected_rules} />
+    </div>
+  );
+}
+
+function RuleGroup({ title, state, rules }: { title: string; state: string; rules: any[] }) {
+  return (
+    <section className="rule-group">
+      <h3>{title} <span className={`rule-state rule-state--${state}`}>{state}</span></h3>
+      {rules.map((rule) => (
+        <article key={rule.id}>
+          <code>{rule.id}</code>
+          <p>{rule.statement || rule.reason}</p>
+          {rule.pattern && <small>{rule.pattern.join(" → ")}</small>}
+        </article>
+      ))}
+    </section>
   );
 }
