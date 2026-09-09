@@ -1,0 +1,5181 @@
+{
+  "id": "sy.user-defined-corpus-scope",
+  "version": "1.0.0",
+  "status": "sealed",
+  "semantic_status": "scope_only",
+  "source": {
+    "file": "src/SeferYetzirah.tsx",
+    "sha256": "868e1cadf357fd6b868bfa14d9694e55623186354b1a456dd3a45bb48f4864dd",
+    "text_context_sha256": "b63cd1cbbc8c65ac6f653ec4da56fc30f372a9b3a9b21073359678139f6db502"
+  },
+  "policy": {
+    "section_body": {
+      "status": "included",
+      "authority": "user"
+    },
+    "small_text": {
+      "status": "included_temporarily",
+      "authority": "user"
+    },
+    "headings": {
+      "status": "excluded_from_corpus_text",
+      "retained_as": "structural_separators",
+      "purpose": "distinguish_topics_verse_parts_and_subverses",
+      "authority": "user"
+    },
+    "jsx_whitespace": {
+      "status": "excluded",
+      "authority": "user"
+    },
+    "normalization": "none",
+    "tokenization": "forbidden"
+  },
+  "proof": {
+    "every_text_node_decided_exactly_once": true,
+    "every_decision_exclusive": true,
+    "no_unresolved_text_nodes": true,
+    "counts_match_user_decision": true,
+    "included_source_order_preserved": true,
+    "deterministic_output": true,
+    "total_text_node_count": 431,
+    "included_section_body_count": 353,
+    "included_temporarily_small_count": 9,
+    "total_included_count": 362,
+    "excluded_heading_count": 27,
+    "excluded_whitespace_count": 42
+  },
+  "corpus_text_node_ids": [
+    "jsx.00022",
+    "jsx.00024",
+    "jsx.00026",
+    "jsx.00029",
+    "jsx.00031",
+    "jsx.00033",
+    "jsx.00036",
+    "jsx.00038",
+    "jsx.00041",
+    "jsx.00043",
+    "jsx.00046",
+    "jsx.00048",
+    "jsx.00055",
+    "jsx.00057",
+    "jsx.00059",
+    "jsx.00061",
+    "jsx.00063",
+    "jsx.00069",
+    "jsx.00071",
+    "jsx.00073",
+    "jsx.00075",
+    "jsx.00077",
+    "jsx.00083",
+    "jsx.00085",
+    "jsx.00087",
+    "jsx.00089",
+    "jsx.00091",
+    "jsx.00093",
+    "jsx.00099",
+    "jsx.00101",
+    "jsx.00103",
+    "jsx.00105",
+    "jsx.00107",
+    "jsx.00109",
+    "jsx.00111",
+    "jsx.00113",
+    "jsx.00115",
+    "jsx.00117",
+    "jsx.00119",
+    "jsx.00121",
+    "jsx.00127",
+    "jsx.00129",
+    "jsx.00131",
+    "jsx.00133",
+    "jsx.00135",
+    "jsx.00137",
+    "jsx.00143",
+    "jsx.00145",
+    "jsx.00147",
+    "jsx.00149",
+    "jsx.00151",
+    "jsx.00153",
+    "jsx.00159",
+    "jsx.00161",
+    "jsx.00163",
+    "jsx.00165",
+    "jsx.00171",
+    "jsx.00177",
+    "jsx.00183",
+    "jsx.00189",
+    "jsx.00195",
+    "jsx.00202",
+    "jsx.00204",
+    "jsx.00206",
+    "jsx.00209",
+    "jsx.00212",
+    "jsx.00216",
+    "jsx.00220",
+    "jsx.00224",
+    "jsx.00228",
+    "jsx.00232",
+    "jsx.00239",
+    "jsx.00241",
+    "jsx.00244",
+    "jsx.00246",
+    "jsx.00248",
+    "jsx.00259",
+    "jsx.00261",
+    "jsx.00263",
+    "jsx.00265",
+    "jsx.00268",
+    "jsx.00270",
+    "jsx.00272",
+    "jsx.00275",
+    "jsx.00277",
+    "jsx.00279",
+    "jsx.00281",
+    "jsx.00283",
+    "jsx.00285",
+    "jsx.00287",
+    "jsx.00290",
+    "jsx.00292",
+    "jsx.00294",
+    "jsx.00296",
+    "jsx.00298",
+    "jsx.00300",
+    "jsx.00303",
+    "jsx.00305",
+    "jsx.00310",
+    "jsx.00312",
+    "jsx.00314",
+    "jsx.00316",
+    "jsx.00318",
+    "jsx.00320",
+    "jsx.00325",
+    "jsx.00328",
+    "jsx.00331",
+    "jsx.00333",
+    "jsx.00335",
+    "jsx.00337",
+    "jsx.00339",
+    "jsx.00341",
+    "jsx.00344",
+    "jsx.00346",
+    "jsx.00348",
+    "jsx.00350",
+    "jsx.00352",
+    "jsx.00354",
+    "jsx.00356",
+    "jsx.00358",
+    "jsx.00361",
+    "jsx.00363",
+    "jsx.00365",
+    "jsx.00367",
+    "jsx.00369",
+    "jsx.00371",
+    "jsx.00373",
+    "jsx.00375",
+    "jsx.00377",
+    "jsx.00379",
+    "jsx.00389",
+    "jsx.00391",
+    "jsx.00393",
+    "jsx.00395",
+    "jsx.00397",
+    "jsx.00399",
+    "jsx.00402",
+    "jsx.00404",
+    "jsx.00406",
+    "jsx.00408",
+    "jsx.00410",
+    "jsx.00412",
+    "jsx.00414",
+    "jsx.00417",
+    "jsx.00419",
+    "jsx.00421",
+    "jsx.00423",
+    "jsx.00426",
+    "jsx.00428",
+    "jsx.00430",
+    "jsx.00432",
+    "jsx.00434",
+    "jsx.00436",
+    "jsx.00439",
+    "jsx.00441",
+    "jsx.00443",
+    "jsx.00445",
+    "jsx.00447",
+    "jsx.00449",
+    "jsx.00451",
+    "jsx.00453",
+    "jsx.00455",
+    "jsx.00457",
+    "jsx.00459",
+    "jsx.00461",
+    "jsx.00464",
+    "jsx.00466",
+    "jsx.00468",
+    "jsx.00470",
+    "jsx.00472",
+    "jsx.00474",
+    "jsx.00477",
+    "jsx.00479",
+    "jsx.00481",
+    "jsx.00483",
+    "jsx.00485",
+    "jsx.00487",
+    "jsx.00489",
+    "jsx.00499",
+    "jsx.00501",
+    "jsx.00503",
+    "jsx.00505",
+    "jsx.00507",
+    "jsx.00509",
+    "jsx.00511",
+    "jsx.00513",
+    "jsx.00515",
+    "jsx.00517",
+    "jsx.00519",
+    "jsx.00521",
+    "jsx.00523",
+    "jsx.00525",
+    "jsx.00527",
+    "jsx.00529",
+    "jsx.00532",
+    "jsx.00534",
+    "jsx.00536",
+    "jsx.00538",
+    "jsx.00540",
+    "jsx.00543",
+    "jsx.00545",
+    "jsx.00547",
+    "jsx.00549",
+    "jsx.00551",
+    "jsx.00553",
+    "jsx.00555",
+    "jsx.00558",
+    "jsx.00560",
+    "jsx.00562",
+    "jsx.00564",
+    "jsx.00566",
+    "jsx.00568",
+    "jsx.00570",
+    "jsx.00572",
+    "jsx.00574",
+    "jsx.00576",
+    "jsx.00578",
+    "jsx.00581",
+    "jsx.00583",
+    "jsx.00585",
+    "jsx.00587",
+    "jsx.00589",
+    "jsx.00591",
+    "jsx.00593",
+    "jsx.00596",
+    "jsx.00598",
+    "jsx.00600",
+    "jsx.00602",
+    "jsx.00604",
+    "jsx.00606",
+    "jsx.00608",
+    "jsx.00610",
+    "jsx.00612",
+    "jsx.00614",
+    "jsx.00616",
+    "jsx.00618",
+    "jsx.00620",
+    "jsx.00622",
+    "jsx.00624",
+    "jsx.00626",
+    "jsx.00637",
+    "jsx.00639",
+    "jsx.00641",
+    "jsx.00643",
+    "jsx.00645",
+    "jsx.00647",
+    "jsx.00649",
+    "jsx.00651",
+    "jsx.00654",
+    "jsx.00656",
+    "jsx.00658",
+    "jsx.00660",
+    "jsx.00662",
+    "jsx.00664",
+    "jsx.00666",
+    "jsx.00668",
+    "jsx.00670",
+    "jsx.00675",
+    "jsx.00677",
+    "jsx.00679",
+    "jsx.00681",
+    "jsx.00683",
+    "jsx.00685",
+    "jsx.00687",
+    "jsx.00689",
+    "jsx.00691",
+    "jsx.00693",
+    "jsx.00695",
+    "jsx.00697",
+    "jsx.00699",
+    "jsx.00702",
+    "jsx.00704",
+    "jsx.00706",
+    "jsx.00708",
+    "jsx.00710",
+    "jsx.00712",
+    "jsx.00715",
+    "jsx.00717",
+    "jsx.00719",
+    "jsx.00721",
+    "jsx.00723",
+    "jsx.00734",
+    "jsx.00736",
+    "jsx.00738",
+    "jsx.00740",
+    "jsx.00742",
+    "jsx.00744",
+    "jsx.00746",
+    "jsx.00748",
+    "jsx.00750",
+    "jsx.00752",
+    "jsx.00754",
+    "jsx.00756",
+    "jsx.00758",
+    "jsx.00760",
+    "jsx.00762",
+    "jsx.00764",
+    "jsx.00766",
+    "jsx.00768",
+    "jsx.00770",
+    "jsx.00773",
+    "jsx.00775",
+    "jsx.00777",
+    "jsx.00779",
+    "jsx.00781",
+    "jsx.00783",
+    "jsx.00785",
+    "jsx.00787",
+    "jsx.00789",
+    "jsx.00791",
+    "jsx.00793",
+    "jsx.00795",
+    "jsx.00797",
+    "jsx.00799",
+    "jsx.00801",
+    "jsx.00803",
+    "jsx.00805",
+    "jsx.00807",
+    "jsx.00809",
+    "jsx.00811",
+    "jsx.00813",
+    "jsx.00815",
+    "jsx.00817",
+    "jsx.00819",
+    "jsx.00821",
+    "jsx.00823",
+    "jsx.00825",
+    "jsx.00827",
+    "jsx.00829",
+    "jsx.00831",
+    "jsx.00833",
+    "jsx.00835",
+    "jsx.00837",
+    "jsx.00839",
+    "jsx.00842",
+    "jsx.00844",
+    "jsx.00846",
+    "jsx.00848",
+    "jsx.00850",
+    "jsx.00852",
+    "jsx.00854",
+    "jsx.00856",
+    "jsx.00858",
+    "jsx.00860",
+    "jsx.00862",
+    "jsx.00864",
+    "jsx.00866",
+    "jsx.00868",
+    "jsx.00870",
+    "jsx.00872",
+    "jsx.00874",
+    "jsx.00876",
+    "jsx.00878",
+    "jsx.00880",
+    "jsx.00882",
+    "jsx.00884",
+    "jsx.00886",
+    "jsx.00888",
+    "jsx.00890",
+    "jsx.00892",
+    "jsx.00894",
+    "jsx.00896"
+  ],
+  "decisions": [
+    {
+      "id": "scope-decision.0001",
+      "ordinal": 0,
+      "source_node_id": "jsx.00002",
+      "reading_unit_id": "reading-unit.0001",
+      "decision": {
+        "status": "excluded",
+        "class": "jsx_whitespace",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0002",
+      "ordinal": 1,
+      "source_node_id": "jsx.00004",
+      "reading_unit_id": "reading-unit.0001",
+      "decision": {
+        "status": "excluded",
+        "class": "jsx_whitespace",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0003",
+      "ordinal": 2,
+      "source_node_id": "jsx.00006",
+      "reading_unit_id": "reading-unit.0001",
+      "decision": {
+        "status": "excluded",
+        "class": "structural_heading",
+        "authority": "user",
+        "structural_purpose": "distinguish_topics_verse_parts_and_subverses"
+      }
+    },
+    {
+      "id": "scope-decision.0004",
+      "ordinal": 3,
+      "source_node_id": "jsx.00008",
+      "reading_unit_id": "reading-unit.0001",
+      "decision": {
+        "status": "excluded",
+        "class": "jsx_whitespace",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0005",
+      "ordinal": 4,
+      "source_node_id": "jsx.00010",
+      "reading_unit_id": "reading-unit.0001",
+      "decision": {
+        "status": "excluded",
+        "class": "jsx_whitespace",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0006",
+      "ordinal": 5,
+      "source_node_id": "jsx.00012",
+      "reading_unit_id": "reading-unit.0001",
+      "decision": {
+        "status": "excluded",
+        "class": "jsx_whitespace",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0007",
+      "ordinal": 6,
+      "source_node_id": "jsx.00014",
+      "reading_unit_id": "reading-unit.0001",
+      "decision": {
+        "status": "excluded",
+        "class": "jsx_whitespace",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0008",
+      "ordinal": 7,
+      "source_node_id": "jsx.00016",
+      "reading_unit_id": "reading-unit.0001",
+      "decision": {
+        "status": "excluded",
+        "class": "structural_heading",
+        "authority": "user",
+        "structural_purpose": "distinguish_topics_verse_parts_and_subverses"
+      }
+    },
+    {
+      "id": "scope-decision.0009",
+      "ordinal": 8,
+      "source_node_id": "jsx.00018",
+      "reading_unit_id": "reading-unit.0001",
+      "decision": {
+        "status": "excluded",
+        "class": "jsx_whitespace",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0010",
+      "ordinal": 9,
+      "source_node_id": "jsx.00020",
+      "reading_unit_id": "reading-unit.0001",
+      "decision": {
+        "status": "excluded",
+        "class": "structural_heading",
+        "authority": "user",
+        "structural_purpose": "distinguish_topics_verse_parts_and_subverses"
+      }
+    },
+    {
+      "id": "scope-decision.0011",
+      "ordinal": 10,
+      "source_node_id": "jsx.00022",
+      "reading_unit_id": "reading-unit.0001",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0012",
+      "ordinal": 11,
+      "source_node_id": "jsx.00024",
+      "reading_unit_id": "reading-unit.0002",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0013",
+      "ordinal": 12,
+      "source_node_id": "jsx.00026",
+      "reading_unit_id": "reading-unit.0003",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0014",
+      "ordinal": 13,
+      "source_node_id": "jsx.00029",
+      "reading_unit_id": "reading-unit.0005",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0015",
+      "ordinal": 14,
+      "source_node_id": "jsx.00031",
+      "reading_unit_id": "reading-unit.0006",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0016",
+      "ordinal": 15,
+      "source_node_id": "jsx.00033",
+      "reading_unit_id": "reading-unit.0007",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0017",
+      "ordinal": 16,
+      "source_node_id": "jsx.00036",
+      "reading_unit_id": "reading-unit.0009",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0018",
+      "ordinal": 17,
+      "source_node_id": "jsx.00038",
+      "reading_unit_id": "reading-unit.0010",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0019",
+      "ordinal": 18,
+      "source_node_id": "jsx.00041",
+      "reading_unit_id": "reading-unit.0012",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0020",
+      "ordinal": 19,
+      "source_node_id": "jsx.00043",
+      "reading_unit_id": "reading-unit.0013",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0021",
+      "ordinal": 20,
+      "source_node_id": "jsx.00046",
+      "reading_unit_id": "reading-unit.0015",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0022",
+      "ordinal": 21,
+      "source_node_id": "jsx.00048",
+      "reading_unit_id": "reading-unit.0016",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0023",
+      "ordinal": 22,
+      "source_node_id": "jsx.00051",
+      "reading_unit_id": "reading-unit.0018",
+      "decision": {
+        "status": "excluded",
+        "class": "jsx_whitespace",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0024",
+      "ordinal": 23,
+      "source_node_id": "jsx.00053",
+      "reading_unit_id": "reading-unit.0018",
+      "decision": {
+        "status": "excluded",
+        "class": "structural_heading",
+        "authority": "user",
+        "structural_purpose": "distinguish_topics_verse_parts_and_subverses"
+      }
+    },
+    {
+      "id": "scope-decision.0025",
+      "ordinal": 24,
+      "source_node_id": "jsx.00055",
+      "reading_unit_id": "reading-unit.0018",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0026",
+      "ordinal": 25,
+      "source_node_id": "jsx.00057",
+      "reading_unit_id": "reading-unit.0019",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0027",
+      "ordinal": 26,
+      "source_node_id": "jsx.00059",
+      "reading_unit_id": "reading-unit.0020",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0028",
+      "ordinal": 27,
+      "source_node_id": "jsx.00061",
+      "reading_unit_id": "reading-unit.0021",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0029",
+      "ordinal": 28,
+      "source_node_id": "jsx.00063",
+      "reading_unit_id": "reading-unit.0022",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0030",
+      "ordinal": 29,
+      "source_node_id": "jsx.00065",
+      "reading_unit_id": "reading-unit.0023",
+      "decision": {
+        "status": "excluded",
+        "class": "jsx_whitespace",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0031",
+      "ordinal": 30,
+      "source_node_id": "jsx.00067",
+      "reading_unit_id": "reading-unit.0023",
+      "decision": {
+        "status": "excluded",
+        "class": "structural_heading",
+        "authority": "user",
+        "structural_purpose": "distinguish_topics_verse_parts_and_subverses"
+      }
+    },
+    {
+      "id": "scope-decision.0032",
+      "ordinal": 31,
+      "source_node_id": "jsx.00069",
+      "reading_unit_id": "reading-unit.0023",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0033",
+      "ordinal": 32,
+      "source_node_id": "jsx.00071",
+      "reading_unit_id": "reading-unit.0024",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0034",
+      "ordinal": 33,
+      "source_node_id": "jsx.00073",
+      "reading_unit_id": "reading-unit.0025",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0035",
+      "ordinal": 34,
+      "source_node_id": "jsx.00075",
+      "reading_unit_id": "reading-unit.0026",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0036",
+      "ordinal": 35,
+      "source_node_id": "jsx.00077",
+      "reading_unit_id": "reading-unit.0027",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0037",
+      "ordinal": 36,
+      "source_node_id": "jsx.00079",
+      "reading_unit_id": "reading-unit.0028",
+      "decision": {
+        "status": "excluded",
+        "class": "jsx_whitespace",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0038",
+      "ordinal": 37,
+      "source_node_id": "jsx.00081",
+      "reading_unit_id": "reading-unit.0028",
+      "decision": {
+        "status": "excluded",
+        "class": "structural_heading",
+        "authority": "user",
+        "structural_purpose": "distinguish_topics_verse_parts_and_subverses"
+      }
+    },
+    {
+      "id": "scope-decision.0039",
+      "ordinal": 38,
+      "source_node_id": "jsx.00083",
+      "reading_unit_id": "reading-unit.0028",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0040",
+      "ordinal": 39,
+      "source_node_id": "jsx.00085",
+      "reading_unit_id": "reading-unit.0029",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0041",
+      "ordinal": 40,
+      "source_node_id": "jsx.00087",
+      "reading_unit_id": "reading-unit.0030",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0042",
+      "ordinal": 41,
+      "source_node_id": "jsx.00089",
+      "reading_unit_id": "reading-unit.0031",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0043",
+      "ordinal": 42,
+      "source_node_id": "jsx.00091",
+      "reading_unit_id": "reading-unit.0032",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0044",
+      "ordinal": 43,
+      "source_node_id": "jsx.00093",
+      "reading_unit_id": "reading-unit.0033",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0045",
+      "ordinal": 44,
+      "source_node_id": "jsx.00095",
+      "reading_unit_id": "reading-unit.0034",
+      "decision": {
+        "status": "excluded",
+        "class": "jsx_whitespace",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0046",
+      "ordinal": 45,
+      "source_node_id": "jsx.00097",
+      "reading_unit_id": "reading-unit.0034",
+      "decision": {
+        "status": "excluded",
+        "class": "structural_heading",
+        "authority": "user",
+        "structural_purpose": "distinguish_topics_verse_parts_and_subverses"
+      }
+    },
+    {
+      "id": "scope-decision.0047",
+      "ordinal": 46,
+      "source_node_id": "jsx.00099",
+      "reading_unit_id": "reading-unit.0034",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0048",
+      "ordinal": 47,
+      "source_node_id": "jsx.00101",
+      "reading_unit_id": "reading-unit.0035",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0049",
+      "ordinal": 48,
+      "source_node_id": "jsx.00103",
+      "reading_unit_id": "reading-unit.0036",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0050",
+      "ordinal": 49,
+      "source_node_id": "jsx.00105",
+      "reading_unit_id": "reading-unit.0037",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0051",
+      "ordinal": 50,
+      "source_node_id": "jsx.00107",
+      "reading_unit_id": "reading-unit.0038",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0052",
+      "ordinal": 51,
+      "source_node_id": "jsx.00109",
+      "reading_unit_id": "reading-unit.0039",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0053",
+      "ordinal": 52,
+      "source_node_id": "jsx.00111",
+      "reading_unit_id": "reading-unit.0040",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0054",
+      "ordinal": 53,
+      "source_node_id": "jsx.00113",
+      "reading_unit_id": "reading-unit.0041",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0055",
+      "ordinal": 54,
+      "source_node_id": "jsx.00115",
+      "reading_unit_id": "reading-unit.0042",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0056",
+      "ordinal": 55,
+      "source_node_id": "jsx.00117",
+      "reading_unit_id": "reading-unit.0043",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0057",
+      "ordinal": 56,
+      "source_node_id": "jsx.00119",
+      "reading_unit_id": "reading-unit.0044",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0058",
+      "ordinal": 57,
+      "source_node_id": "jsx.00121",
+      "reading_unit_id": "reading-unit.0045",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0059",
+      "ordinal": 58,
+      "source_node_id": "jsx.00123",
+      "reading_unit_id": "reading-unit.0046",
+      "decision": {
+        "status": "excluded",
+        "class": "jsx_whitespace",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0060",
+      "ordinal": 59,
+      "source_node_id": "jsx.00125",
+      "reading_unit_id": "reading-unit.0046",
+      "decision": {
+        "status": "excluded",
+        "class": "structural_heading",
+        "authority": "user",
+        "structural_purpose": "distinguish_topics_verse_parts_and_subverses"
+      }
+    },
+    {
+      "id": "scope-decision.0061",
+      "ordinal": 60,
+      "source_node_id": "jsx.00127",
+      "reading_unit_id": "reading-unit.0046",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0062",
+      "ordinal": 61,
+      "source_node_id": "jsx.00129",
+      "reading_unit_id": "reading-unit.0047",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0063",
+      "ordinal": 62,
+      "source_node_id": "jsx.00131",
+      "reading_unit_id": "reading-unit.0048",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0064",
+      "ordinal": 63,
+      "source_node_id": "jsx.00133",
+      "reading_unit_id": "reading-unit.0049",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0065",
+      "ordinal": 64,
+      "source_node_id": "jsx.00135",
+      "reading_unit_id": "reading-unit.0050",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0066",
+      "ordinal": 65,
+      "source_node_id": "jsx.00137",
+      "reading_unit_id": "reading-unit.0051",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0067",
+      "ordinal": 66,
+      "source_node_id": "jsx.00139",
+      "reading_unit_id": "reading-unit.0052",
+      "decision": {
+        "status": "excluded",
+        "class": "jsx_whitespace",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0068",
+      "ordinal": 67,
+      "source_node_id": "jsx.00141",
+      "reading_unit_id": "reading-unit.0052",
+      "decision": {
+        "status": "excluded",
+        "class": "structural_heading",
+        "authority": "user",
+        "structural_purpose": "distinguish_topics_verse_parts_and_subverses"
+      }
+    },
+    {
+      "id": "scope-decision.0069",
+      "ordinal": 68,
+      "source_node_id": "jsx.00143",
+      "reading_unit_id": "reading-unit.0052",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0070",
+      "ordinal": 69,
+      "source_node_id": "jsx.00145",
+      "reading_unit_id": "reading-unit.0053",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0071",
+      "ordinal": 70,
+      "source_node_id": "jsx.00147",
+      "reading_unit_id": "reading-unit.0054",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0072",
+      "ordinal": 71,
+      "source_node_id": "jsx.00149",
+      "reading_unit_id": "reading-unit.0055",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0073",
+      "ordinal": 72,
+      "source_node_id": "jsx.00151",
+      "reading_unit_id": "reading-unit.0056",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0074",
+      "ordinal": 73,
+      "source_node_id": "jsx.00153",
+      "reading_unit_id": "reading-unit.0057",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0075",
+      "ordinal": 74,
+      "source_node_id": "jsx.00155",
+      "reading_unit_id": "reading-unit.0058",
+      "decision": {
+        "status": "excluded",
+        "class": "jsx_whitespace",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0076",
+      "ordinal": 75,
+      "source_node_id": "jsx.00157",
+      "reading_unit_id": "reading-unit.0058",
+      "decision": {
+        "status": "excluded",
+        "class": "structural_heading",
+        "authority": "user",
+        "structural_purpose": "distinguish_topics_verse_parts_and_subverses"
+      }
+    },
+    {
+      "id": "scope-decision.0077",
+      "ordinal": 76,
+      "source_node_id": "jsx.00159",
+      "reading_unit_id": "reading-unit.0058",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0078",
+      "ordinal": 77,
+      "source_node_id": "jsx.00161",
+      "reading_unit_id": "reading-unit.0059",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0079",
+      "ordinal": 78,
+      "source_node_id": "jsx.00163",
+      "reading_unit_id": "reading-unit.0060",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0080",
+      "ordinal": 79,
+      "source_node_id": "jsx.00165",
+      "reading_unit_id": "reading-unit.0061",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0081",
+      "ordinal": 80,
+      "source_node_id": "jsx.00167",
+      "reading_unit_id": "reading-unit.0062",
+      "decision": {
+        "status": "excluded",
+        "class": "jsx_whitespace",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0082",
+      "ordinal": 81,
+      "source_node_id": "jsx.00169",
+      "reading_unit_id": "reading-unit.0062",
+      "decision": {
+        "status": "excluded",
+        "class": "structural_heading",
+        "authority": "user",
+        "structural_purpose": "distinguish_topics_verse_parts_and_subverses"
+      }
+    },
+    {
+      "id": "scope-decision.0083",
+      "ordinal": 82,
+      "source_node_id": "jsx.00171",
+      "reading_unit_id": "reading-unit.0062",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0084",
+      "ordinal": 83,
+      "source_node_id": "jsx.00173",
+      "reading_unit_id": "reading-unit.0063",
+      "decision": {
+        "status": "excluded",
+        "class": "jsx_whitespace",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0085",
+      "ordinal": 84,
+      "source_node_id": "jsx.00175",
+      "reading_unit_id": "reading-unit.0063",
+      "decision": {
+        "status": "excluded",
+        "class": "structural_heading",
+        "authority": "user",
+        "structural_purpose": "distinguish_topics_verse_parts_and_subverses"
+      }
+    },
+    {
+      "id": "scope-decision.0086",
+      "ordinal": 85,
+      "source_node_id": "jsx.00177",
+      "reading_unit_id": "reading-unit.0063",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0087",
+      "ordinal": 86,
+      "source_node_id": "jsx.00179",
+      "reading_unit_id": "reading-unit.0064",
+      "decision": {
+        "status": "excluded",
+        "class": "jsx_whitespace",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0088",
+      "ordinal": 87,
+      "source_node_id": "jsx.00181",
+      "reading_unit_id": "reading-unit.0064",
+      "decision": {
+        "status": "excluded",
+        "class": "structural_heading",
+        "authority": "user",
+        "structural_purpose": "distinguish_topics_verse_parts_and_subverses"
+      }
+    },
+    {
+      "id": "scope-decision.0089",
+      "ordinal": 88,
+      "source_node_id": "jsx.00183",
+      "reading_unit_id": "reading-unit.0064",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0090",
+      "ordinal": 89,
+      "source_node_id": "jsx.00185",
+      "reading_unit_id": "reading-unit.0065",
+      "decision": {
+        "status": "excluded",
+        "class": "jsx_whitespace",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0091",
+      "ordinal": 90,
+      "source_node_id": "jsx.00187",
+      "reading_unit_id": "reading-unit.0065",
+      "decision": {
+        "status": "excluded",
+        "class": "structural_heading",
+        "authority": "user",
+        "structural_purpose": "distinguish_topics_verse_parts_and_subverses"
+      }
+    },
+    {
+      "id": "scope-decision.0092",
+      "ordinal": 91,
+      "source_node_id": "jsx.00189",
+      "reading_unit_id": "reading-unit.0065",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0093",
+      "ordinal": 92,
+      "source_node_id": "jsx.00191",
+      "reading_unit_id": "reading-unit.0066",
+      "decision": {
+        "status": "excluded",
+        "class": "jsx_whitespace",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0094",
+      "ordinal": 93,
+      "source_node_id": "jsx.00193",
+      "reading_unit_id": "reading-unit.0066",
+      "decision": {
+        "status": "excluded",
+        "class": "structural_heading",
+        "authority": "user",
+        "structural_purpose": "distinguish_topics_verse_parts_and_subverses"
+      }
+    },
+    {
+      "id": "scope-decision.0095",
+      "ordinal": 94,
+      "source_node_id": "jsx.00195",
+      "reading_unit_id": "reading-unit.0066",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0096",
+      "ordinal": 95,
+      "source_node_id": "jsx.00198",
+      "reading_unit_id": "reading-unit.0068",
+      "decision": {
+        "status": "excluded",
+        "class": "jsx_whitespace",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0097",
+      "ordinal": 96,
+      "source_node_id": "jsx.00200",
+      "reading_unit_id": "reading-unit.0068",
+      "decision": {
+        "status": "excluded",
+        "class": "structural_heading",
+        "authority": "user",
+        "structural_purpose": "distinguish_topics_verse_parts_and_subverses"
+      }
+    },
+    {
+      "id": "scope-decision.0098",
+      "ordinal": 97,
+      "source_node_id": "jsx.00202",
+      "reading_unit_id": "reading-unit.0068",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0099",
+      "ordinal": 98,
+      "source_node_id": "jsx.00204",
+      "reading_unit_id": "reading-unit.0069",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0100",
+      "ordinal": 99,
+      "source_node_id": "jsx.00206",
+      "reading_unit_id": "reading-unit.0069",
+      "decision": {
+        "status": "included_temporarily",
+        "class": "small_text",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0101",
+      "ordinal": 100,
+      "source_node_id": "jsx.00209",
+      "reading_unit_id": "reading-unit.0070",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0102",
+      "ordinal": 101,
+      "source_node_id": "jsx.00212",
+      "reading_unit_id": "reading-unit.0072",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0103",
+      "ordinal": 102,
+      "source_node_id": "jsx.00214",
+      "reading_unit_id": "reading-unit.0072",
+      "decision": {
+        "status": "excluded",
+        "class": "structural_heading",
+        "authority": "user",
+        "structural_purpose": "distinguish_topics_verse_parts_and_subverses"
+      }
+    },
+    {
+      "id": "scope-decision.0104",
+      "ordinal": 103,
+      "source_node_id": "jsx.00216",
+      "reading_unit_id": "reading-unit.0072",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0105",
+      "ordinal": 104,
+      "source_node_id": "jsx.00218",
+      "reading_unit_id": "reading-unit.0072",
+      "decision": {
+        "status": "excluded",
+        "class": "structural_heading",
+        "authority": "user",
+        "structural_purpose": "distinguish_topics_verse_parts_and_subverses"
+      }
+    },
+    {
+      "id": "scope-decision.0106",
+      "ordinal": 105,
+      "source_node_id": "jsx.00220",
+      "reading_unit_id": "reading-unit.0072",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0107",
+      "ordinal": 106,
+      "source_node_id": "jsx.00222",
+      "reading_unit_id": "reading-unit.0072",
+      "decision": {
+        "status": "excluded",
+        "class": "structural_heading",
+        "authority": "user",
+        "structural_purpose": "distinguish_topics_verse_parts_and_subverses"
+      }
+    },
+    {
+      "id": "scope-decision.0108",
+      "ordinal": 107,
+      "source_node_id": "jsx.00224",
+      "reading_unit_id": "reading-unit.0072",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0109",
+      "ordinal": 108,
+      "source_node_id": "jsx.00226",
+      "reading_unit_id": "reading-unit.0072",
+      "decision": {
+        "status": "excluded",
+        "class": "structural_heading",
+        "authority": "user",
+        "structural_purpose": "distinguish_topics_verse_parts_and_subverses"
+      }
+    },
+    {
+      "id": "scope-decision.0110",
+      "ordinal": 109,
+      "source_node_id": "jsx.00228",
+      "reading_unit_id": "reading-unit.0072",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0111",
+      "ordinal": 110,
+      "source_node_id": "jsx.00230",
+      "reading_unit_id": "reading-unit.0072",
+      "decision": {
+        "status": "excluded",
+        "class": "structural_heading",
+        "authority": "user",
+        "structural_purpose": "distinguish_topics_verse_parts_and_subverses"
+      }
+    },
+    {
+      "id": "scope-decision.0112",
+      "ordinal": 111,
+      "source_node_id": "jsx.00232",
+      "reading_unit_id": "reading-unit.0072",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0113",
+      "ordinal": 112,
+      "source_node_id": "jsx.00235",
+      "reading_unit_id": "reading-unit.0074",
+      "decision": {
+        "status": "excluded",
+        "class": "jsx_whitespace",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0114",
+      "ordinal": 113,
+      "source_node_id": "jsx.00237",
+      "reading_unit_id": "reading-unit.0074",
+      "decision": {
+        "status": "excluded",
+        "class": "structural_heading",
+        "authority": "user",
+        "structural_purpose": "distinguish_topics_verse_parts_and_subverses"
+      }
+    },
+    {
+      "id": "scope-decision.0115",
+      "ordinal": 114,
+      "source_node_id": "jsx.00239",
+      "reading_unit_id": "reading-unit.0074",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0116",
+      "ordinal": 115,
+      "source_node_id": "jsx.00241",
+      "reading_unit_id": "reading-unit.0075",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0117",
+      "ordinal": 116,
+      "source_node_id": "jsx.00244",
+      "reading_unit_id": "reading-unit.0077",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0118",
+      "ordinal": 117,
+      "source_node_id": "jsx.00246",
+      "reading_unit_id": "reading-unit.0077",
+      "decision": {
+        "status": "included_temporarily",
+        "class": "small_text",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0119",
+      "ordinal": 118,
+      "source_node_id": "jsx.00248",
+      "reading_unit_id": "reading-unit.0077",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0120",
+      "ordinal": 119,
+      "source_node_id": "jsx.00251",
+      "reading_unit_id": "reading-unit.0079",
+      "decision": {
+        "status": "excluded",
+        "class": "jsx_whitespace",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0121",
+      "ordinal": 120,
+      "source_node_id": "jsx.00253",
+      "reading_unit_id": "reading-unit.0079",
+      "decision": {
+        "status": "excluded",
+        "class": "jsx_whitespace",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0122",
+      "ordinal": 121,
+      "source_node_id": "jsx.00255",
+      "reading_unit_id": "reading-unit.0079",
+      "decision": {
+        "status": "excluded",
+        "class": "jsx_whitespace",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0123",
+      "ordinal": 122,
+      "source_node_id": "jsx.00257",
+      "reading_unit_id": "reading-unit.0079",
+      "decision": {
+        "status": "excluded",
+        "class": "structural_heading",
+        "authority": "user",
+        "structural_purpose": "distinguish_topics_verse_parts_and_subverses"
+      }
+    },
+    {
+      "id": "scope-decision.0124",
+      "ordinal": 123,
+      "source_node_id": "jsx.00259",
+      "reading_unit_id": "reading-unit.0079",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0125",
+      "ordinal": 124,
+      "source_node_id": "jsx.00261",
+      "reading_unit_id": "reading-unit.0080",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0126",
+      "ordinal": 125,
+      "source_node_id": "jsx.00263",
+      "reading_unit_id": "reading-unit.0081",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0127",
+      "ordinal": 126,
+      "source_node_id": "jsx.00265",
+      "reading_unit_id": "reading-unit.0082",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0128",
+      "ordinal": 127,
+      "source_node_id": "jsx.00268",
+      "reading_unit_id": "reading-unit.0084",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0129",
+      "ordinal": 128,
+      "source_node_id": "jsx.00270",
+      "reading_unit_id": "reading-unit.0085",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0130",
+      "ordinal": 129,
+      "source_node_id": "jsx.00272",
+      "reading_unit_id": "reading-unit.0086",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0131",
+      "ordinal": 130,
+      "source_node_id": "jsx.00275",
+      "reading_unit_id": "reading-unit.0088",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0132",
+      "ordinal": 131,
+      "source_node_id": "jsx.00277",
+      "reading_unit_id": "reading-unit.0089",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0133",
+      "ordinal": 132,
+      "source_node_id": "jsx.00279",
+      "reading_unit_id": "reading-unit.0090",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0134",
+      "ordinal": 133,
+      "source_node_id": "jsx.00281",
+      "reading_unit_id": "reading-unit.0091",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0135",
+      "ordinal": 134,
+      "source_node_id": "jsx.00283",
+      "reading_unit_id": "reading-unit.0092",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0136",
+      "ordinal": 135,
+      "source_node_id": "jsx.00285",
+      "reading_unit_id": "reading-unit.0093",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0137",
+      "ordinal": 136,
+      "source_node_id": "jsx.00287",
+      "reading_unit_id": "reading-unit.0094",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0138",
+      "ordinal": 137,
+      "source_node_id": "jsx.00290",
+      "reading_unit_id": "reading-unit.0096",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0139",
+      "ordinal": 138,
+      "source_node_id": "jsx.00292",
+      "reading_unit_id": "reading-unit.0097",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0140",
+      "ordinal": 139,
+      "source_node_id": "jsx.00294",
+      "reading_unit_id": "reading-unit.0098",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0141",
+      "ordinal": 140,
+      "source_node_id": "jsx.00296",
+      "reading_unit_id": "reading-unit.0099",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0142",
+      "ordinal": 141,
+      "source_node_id": "jsx.00298",
+      "reading_unit_id": "reading-unit.0100",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0143",
+      "ordinal": 142,
+      "source_node_id": "jsx.00300",
+      "reading_unit_id": "reading-unit.0101",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0144",
+      "ordinal": 143,
+      "source_node_id": "jsx.00303",
+      "reading_unit_id": "reading-unit.0103",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0145",
+      "ordinal": 144,
+      "source_node_id": "jsx.00305",
+      "reading_unit_id": "reading-unit.0103",
+      "decision": {
+        "status": "included_temporarily",
+        "class": "small_text",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0146",
+      "ordinal": 145,
+      "source_node_id": "jsx.00310",
+      "reading_unit_id": "reading-unit.0106",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0147",
+      "ordinal": 146,
+      "source_node_id": "jsx.00312",
+      "reading_unit_id": "reading-unit.0107",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0148",
+      "ordinal": 147,
+      "source_node_id": "jsx.00314",
+      "reading_unit_id": "reading-unit.0108",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0149",
+      "ordinal": 148,
+      "source_node_id": "jsx.00316",
+      "reading_unit_id": "reading-unit.0109",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0150",
+      "ordinal": 149,
+      "source_node_id": "jsx.00318",
+      "reading_unit_id": "reading-unit.0110",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0151",
+      "ordinal": 150,
+      "source_node_id": "jsx.00320",
+      "reading_unit_id": "reading-unit.0111",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0152",
+      "ordinal": 151,
+      "source_node_id": "jsx.00323",
+      "reading_unit_id": "reading-unit.0113",
+      "decision": {
+        "status": "excluded",
+        "class": "jsx_whitespace",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0153",
+      "ordinal": 152,
+      "source_node_id": "jsx.00325",
+      "reading_unit_id": "reading-unit.0113",
+      "decision": {
+        "status": "included_temporarily",
+        "class": "small_text",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0154",
+      "ordinal": 153,
+      "source_node_id": "jsx.00328",
+      "reading_unit_id": "reading-unit.0114",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0155",
+      "ordinal": 154,
+      "source_node_id": "jsx.00331",
+      "reading_unit_id": "reading-unit.0116",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0156",
+      "ordinal": 155,
+      "source_node_id": "jsx.00333",
+      "reading_unit_id": "reading-unit.0117",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0157",
+      "ordinal": 156,
+      "source_node_id": "jsx.00335",
+      "reading_unit_id": "reading-unit.0118",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0158",
+      "ordinal": 157,
+      "source_node_id": "jsx.00337",
+      "reading_unit_id": "reading-unit.0119",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0159",
+      "ordinal": 158,
+      "source_node_id": "jsx.00339",
+      "reading_unit_id": "reading-unit.0120",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0160",
+      "ordinal": 159,
+      "source_node_id": "jsx.00341",
+      "reading_unit_id": "reading-unit.0121",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0161",
+      "ordinal": 160,
+      "source_node_id": "jsx.00344",
+      "reading_unit_id": "reading-unit.0123",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0162",
+      "ordinal": 161,
+      "source_node_id": "jsx.00346",
+      "reading_unit_id": "reading-unit.0124",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0163",
+      "ordinal": 162,
+      "source_node_id": "jsx.00348",
+      "reading_unit_id": "reading-unit.0125",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0164",
+      "ordinal": 163,
+      "source_node_id": "jsx.00350",
+      "reading_unit_id": "reading-unit.0126",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0165",
+      "ordinal": 164,
+      "source_node_id": "jsx.00352",
+      "reading_unit_id": "reading-unit.0127",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0166",
+      "ordinal": 165,
+      "source_node_id": "jsx.00354",
+      "reading_unit_id": "reading-unit.0128",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0167",
+      "ordinal": 166,
+      "source_node_id": "jsx.00356",
+      "reading_unit_id": "reading-unit.0129",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0168",
+      "ordinal": 167,
+      "source_node_id": "jsx.00358",
+      "reading_unit_id": "reading-unit.0130",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0169",
+      "ordinal": 168,
+      "source_node_id": "jsx.00361",
+      "reading_unit_id": "reading-unit.0132",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0170",
+      "ordinal": 169,
+      "source_node_id": "jsx.00363",
+      "reading_unit_id": "reading-unit.0133",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0171",
+      "ordinal": 170,
+      "source_node_id": "jsx.00365",
+      "reading_unit_id": "reading-unit.0134",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0172",
+      "ordinal": 171,
+      "source_node_id": "jsx.00367",
+      "reading_unit_id": "reading-unit.0135",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0173",
+      "ordinal": 172,
+      "source_node_id": "jsx.00369",
+      "reading_unit_id": "reading-unit.0136",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0174",
+      "ordinal": 173,
+      "source_node_id": "jsx.00371",
+      "reading_unit_id": "reading-unit.0137",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0175",
+      "ordinal": 174,
+      "source_node_id": "jsx.00373",
+      "reading_unit_id": "reading-unit.0138",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0176",
+      "ordinal": 175,
+      "source_node_id": "jsx.00375",
+      "reading_unit_id": "reading-unit.0139",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0177",
+      "ordinal": 176,
+      "source_node_id": "jsx.00377",
+      "reading_unit_id": "reading-unit.0140",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0178",
+      "ordinal": 177,
+      "source_node_id": "jsx.00379",
+      "reading_unit_id": "reading-unit.0141",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0179",
+      "ordinal": 178,
+      "source_node_id": "jsx.00381",
+      "reading_unit_id": "reading-unit.0142",
+      "decision": {
+        "status": "excluded",
+        "class": "jsx_whitespace",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0180",
+      "ordinal": 179,
+      "source_node_id": "jsx.00383",
+      "reading_unit_id": "reading-unit.0142",
+      "decision": {
+        "status": "excluded",
+        "class": "jsx_whitespace",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0181",
+      "ordinal": 180,
+      "source_node_id": "jsx.00385",
+      "reading_unit_id": "reading-unit.0142",
+      "decision": {
+        "status": "excluded",
+        "class": "jsx_whitespace",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0182",
+      "ordinal": 181,
+      "source_node_id": "jsx.00387",
+      "reading_unit_id": "reading-unit.0142",
+      "decision": {
+        "status": "excluded",
+        "class": "structural_heading",
+        "authority": "user",
+        "structural_purpose": "distinguish_topics_verse_parts_and_subverses"
+      }
+    },
+    {
+      "id": "scope-decision.0183",
+      "ordinal": 182,
+      "source_node_id": "jsx.00389",
+      "reading_unit_id": "reading-unit.0142",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0184",
+      "ordinal": 183,
+      "source_node_id": "jsx.00391",
+      "reading_unit_id": "reading-unit.0143",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0185",
+      "ordinal": 184,
+      "source_node_id": "jsx.00393",
+      "reading_unit_id": "reading-unit.0144",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0186",
+      "ordinal": 185,
+      "source_node_id": "jsx.00395",
+      "reading_unit_id": "reading-unit.0145",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0187",
+      "ordinal": 186,
+      "source_node_id": "jsx.00397",
+      "reading_unit_id": "reading-unit.0146",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0188",
+      "ordinal": 187,
+      "source_node_id": "jsx.00399",
+      "reading_unit_id": "reading-unit.0147",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0189",
+      "ordinal": 188,
+      "source_node_id": "jsx.00402",
+      "reading_unit_id": "reading-unit.0149",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0190",
+      "ordinal": 189,
+      "source_node_id": "jsx.00404",
+      "reading_unit_id": "reading-unit.0150",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0191",
+      "ordinal": 190,
+      "source_node_id": "jsx.00406",
+      "reading_unit_id": "reading-unit.0151",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0192",
+      "ordinal": 191,
+      "source_node_id": "jsx.00408",
+      "reading_unit_id": "reading-unit.0152",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0193",
+      "ordinal": 192,
+      "source_node_id": "jsx.00410",
+      "reading_unit_id": "reading-unit.0153",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0194",
+      "ordinal": 193,
+      "source_node_id": "jsx.00412",
+      "reading_unit_id": "reading-unit.0154",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0195",
+      "ordinal": 194,
+      "source_node_id": "jsx.00414",
+      "reading_unit_id": "reading-unit.0155",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0196",
+      "ordinal": 195,
+      "source_node_id": "jsx.00417",
+      "reading_unit_id": "reading-unit.0157",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0197",
+      "ordinal": 196,
+      "source_node_id": "jsx.00419",
+      "reading_unit_id": "reading-unit.0158",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0198",
+      "ordinal": 197,
+      "source_node_id": "jsx.00421",
+      "reading_unit_id": "reading-unit.0159",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0199",
+      "ordinal": 198,
+      "source_node_id": "jsx.00423",
+      "reading_unit_id": "reading-unit.0160",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0200",
+      "ordinal": 199,
+      "source_node_id": "jsx.00426",
+      "reading_unit_id": "reading-unit.0162",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0201",
+      "ordinal": 200,
+      "source_node_id": "jsx.00428",
+      "reading_unit_id": "reading-unit.0163",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0202",
+      "ordinal": 201,
+      "source_node_id": "jsx.00430",
+      "reading_unit_id": "reading-unit.0164",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0203",
+      "ordinal": 202,
+      "source_node_id": "jsx.00432",
+      "reading_unit_id": "reading-unit.0165",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0204",
+      "ordinal": 203,
+      "source_node_id": "jsx.00434",
+      "reading_unit_id": "reading-unit.0166",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0205",
+      "ordinal": 204,
+      "source_node_id": "jsx.00436",
+      "reading_unit_id": "reading-unit.0167",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0206",
+      "ordinal": 205,
+      "source_node_id": "jsx.00439",
+      "reading_unit_id": "reading-unit.0169",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0207",
+      "ordinal": 206,
+      "source_node_id": "jsx.00441",
+      "reading_unit_id": "reading-unit.0170",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0208",
+      "ordinal": 207,
+      "source_node_id": "jsx.00443",
+      "reading_unit_id": "reading-unit.0171",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0209",
+      "ordinal": 208,
+      "source_node_id": "jsx.00445",
+      "reading_unit_id": "reading-unit.0172",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0210",
+      "ordinal": 209,
+      "source_node_id": "jsx.00447",
+      "reading_unit_id": "reading-unit.0173",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0211",
+      "ordinal": 210,
+      "source_node_id": "jsx.00449",
+      "reading_unit_id": "reading-unit.0174",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0212",
+      "ordinal": 211,
+      "source_node_id": "jsx.00451",
+      "reading_unit_id": "reading-unit.0175",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0213",
+      "ordinal": 212,
+      "source_node_id": "jsx.00453",
+      "reading_unit_id": "reading-unit.0176",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0214",
+      "ordinal": 213,
+      "source_node_id": "jsx.00455",
+      "reading_unit_id": "reading-unit.0177",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0215",
+      "ordinal": 214,
+      "source_node_id": "jsx.00457",
+      "reading_unit_id": "reading-unit.0178",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0216",
+      "ordinal": 215,
+      "source_node_id": "jsx.00459",
+      "reading_unit_id": "reading-unit.0179",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0217",
+      "ordinal": 216,
+      "source_node_id": "jsx.00461",
+      "reading_unit_id": "reading-unit.0180",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0218",
+      "ordinal": 217,
+      "source_node_id": "jsx.00464",
+      "reading_unit_id": "reading-unit.0182",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0219",
+      "ordinal": 218,
+      "source_node_id": "jsx.00466",
+      "reading_unit_id": "reading-unit.0183",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0220",
+      "ordinal": 219,
+      "source_node_id": "jsx.00468",
+      "reading_unit_id": "reading-unit.0184",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0221",
+      "ordinal": 220,
+      "source_node_id": "jsx.00470",
+      "reading_unit_id": "reading-unit.0185",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0222",
+      "ordinal": 221,
+      "source_node_id": "jsx.00472",
+      "reading_unit_id": "reading-unit.0186",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0223",
+      "ordinal": 222,
+      "source_node_id": "jsx.00474",
+      "reading_unit_id": "reading-unit.0187",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0224",
+      "ordinal": 223,
+      "source_node_id": "jsx.00477",
+      "reading_unit_id": "reading-unit.0189",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0225",
+      "ordinal": 224,
+      "source_node_id": "jsx.00479",
+      "reading_unit_id": "reading-unit.0190",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0226",
+      "ordinal": 225,
+      "source_node_id": "jsx.00481",
+      "reading_unit_id": "reading-unit.0191",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0227",
+      "ordinal": 226,
+      "source_node_id": "jsx.00483",
+      "reading_unit_id": "reading-unit.0191",
+      "decision": {
+        "status": "included_temporarily",
+        "class": "small_text",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0228",
+      "ordinal": 227,
+      "source_node_id": "jsx.00485",
+      "reading_unit_id": "reading-unit.0191",
+      "decision": {
+        "status": "included_temporarily",
+        "class": "small_text",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0229",
+      "ordinal": 228,
+      "source_node_id": "jsx.00487",
+      "reading_unit_id": "reading-unit.0191",
+      "decision": {
+        "status": "included_temporarily",
+        "class": "small_text",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0230",
+      "ordinal": 229,
+      "source_node_id": "jsx.00489",
+      "reading_unit_id": "reading-unit.0191",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0231",
+      "ordinal": 230,
+      "source_node_id": "jsx.00491",
+      "reading_unit_id": "reading-unit.0192",
+      "decision": {
+        "status": "excluded",
+        "class": "jsx_whitespace",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0232",
+      "ordinal": 231,
+      "source_node_id": "jsx.00493",
+      "reading_unit_id": "reading-unit.0192",
+      "decision": {
+        "status": "excluded",
+        "class": "jsx_whitespace",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0233",
+      "ordinal": 232,
+      "source_node_id": "jsx.00495",
+      "reading_unit_id": "reading-unit.0192",
+      "decision": {
+        "status": "excluded",
+        "class": "jsx_whitespace",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0234",
+      "ordinal": 233,
+      "source_node_id": "jsx.00497",
+      "reading_unit_id": "reading-unit.0192",
+      "decision": {
+        "status": "excluded",
+        "class": "structural_heading",
+        "authority": "user",
+        "structural_purpose": "distinguish_topics_verse_parts_and_subverses"
+      }
+    },
+    {
+      "id": "scope-decision.0235",
+      "ordinal": 234,
+      "source_node_id": "jsx.00499",
+      "reading_unit_id": "reading-unit.0192",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0236",
+      "ordinal": 235,
+      "source_node_id": "jsx.00501",
+      "reading_unit_id": "reading-unit.0193",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0237",
+      "ordinal": 236,
+      "source_node_id": "jsx.00503",
+      "reading_unit_id": "reading-unit.0194",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0238",
+      "ordinal": 237,
+      "source_node_id": "jsx.00505",
+      "reading_unit_id": "reading-unit.0195",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0239",
+      "ordinal": 238,
+      "source_node_id": "jsx.00507",
+      "reading_unit_id": "reading-unit.0196",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0240",
+      "ordinal": 239,
+      "source_node_id": "jsx.00509",
+      "reading_unit_id": "reading-unit.0197",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0241",
+      "ordinal": 240,
+      "source_node_id": "jsx.00511",
+      "reading_unit_id": "reading-unit.0198",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0242",
+      "ordinal": 241,
+      "source_node_id": "jsx.00513",
+      "reading_unit_id": "reading-unit.0199",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0243",
+      "ordinal": 242,
+      "source_node_id": "jsx.00515",
+      "reading_unit_id": "reading-unit.0200",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0244",
+      "ordinal": 243,
+      "source_node_id": "jsx.00517",
+      "reading_unit_id": "reading-unit.0201",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0245",
+      "ordinal": 244,
+      "source_node_id": "jsx.00519",
+      "reading_unit_id": "reading-unit.0202",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0246",
+      "ordinal": 245,
+      "source_node_id": "jsx.00521",
+      "reading_unit_id": "reading-unit.0203",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0247",
+      "ordinal": 246,
+      "source_node_id": "jsx.00523",
+      "reading_unit_id": "reading-unit.0204",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0248",
+      "ordinal": 247,
+      "source_node_id": "jsx.00525",
+      "reading_unit_id": "reading-unit.0205",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0249",
+      "ordinal": 248,
+      "source_node_id": "jsx.00527",
+      "reading_unit_id": "reading-unit.0206",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0250",
+      "ordinal": 249,
+      "source_node_id": "jsx.00529",
+      "reading_unit_id": "reading-unit.0207",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0251",
+      "ordinal": 250,
+      "source_node_id": "jsx.00532",
+      "reading_unit_id": "reading-unit.0209",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0252",
+      "ordinal": 251,
+      "source_node_id": "jsx.00534",
+      "reading_unit_id": "reading-unit.0210",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0253",
+      "ordinal": 252,
+      "source_node_id": "jsx.00536",
+      "reading_unit_id": "reading-unit.0211",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0254",
+      "ordinal": 253,
+      "source_node_id": "jsx.00538",
+      "reading_unit_id": "reading-unit.0212",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0255",
+      "ordinal": 254,
+      "source_node_id": "jsx.00540",
+      "reading_unit_id": "reading-unit.0213",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0256",
+      "ordinal": 255,
+      "source_node_id": "jsx.00543",
+      "reading_unit_id": "reading-unit.0215",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0257",
+      "ordinal": 256,
+      "source_node_id": "jsx.00545",
+      "reading_unit_id": "reading-unit.0216",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0258",
+      "ordinal": 257,
+      "source_node_id": "jsx.00547",
+      "reading_unit_id": "reading-unit.0217",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0259",
+      "ordinal": 258,
+      "source_node_id": "jsx.00549",
+      "reading_unit_id": "reading-unit.0218",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0260",
+      "ordinal": 259,
+      "source_node_id": "jsx.00551",
+      "reading_unit_id": "reading-unit.0219",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0261",
+      "ordinal": 260,
+      "source_node_id": "jsx.00553",
+      "reading_unit_id": "reading-unit.0220",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0262",
+      "ordinal": 261,
+      "source_node_id": "jsx.00555",
+      "reading_unit_id": "reading-unit.0221",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0263",
+      "ordinal": 262,
+      "source_node_id": "jsx.00558",
+      "reading_unit_id": "reading-unit.0223",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0264",
+      "ordinal": 263,
+      "source_node_id": "jsx.00560",
+      "reading_unit_id": "reading-unit.0224",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0265",
+      "ordinal": 264,
+      "source_node_id": "jsx.00562",
+      "reading_unit_id": "reading-unit.0225",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0266",
+      "ordinal": 265,
+      "source_node_id": "jsx.00564",
+      "reading_unit_id": "reading-unit.0226",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0267",
+      "ordinal": 266,
+      "source_node_id": "jsx.00566",
+      "reading_unit_id": "reading-unit.0227",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0268",
+      "ordinal": 267,
+      "source_node_id": "jsx.00568",
+      "reading_unit_id": "reading-unit.0228",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0269",
+      "ordinal": 268,
+      "source_node_id": "jsx.00570",
+      "reading_unit_id": "reading-unit.0229",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0270",
+      "ordinal": 269,
+      "source_node_id": "jsx.00572",
+      "reading_unit_id": "reading-unit.0230",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0271",
+      "ordinal": 270,
+      "source_node_id": "jsx.00574",
+      "reading_unit_id": "reading-unit.0231",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0272",
+      "ordinal": 271,
+      "source_node_id": "jsx.00576",
+      "reading_unit_id": "reading-unit.0232",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0273",
+      "ordinal": 272,
+      "source_node_id": "jsx.00578",
+      "reading_unit_id": "reading-unit.0233",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0274",
+      "ordinal": 273,
+      "source_node_id": "jsx.00581",
+      "reading_unit_id": "reading-unit.0235",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0275",
+      "ordinal": 274,
+      "source_node_id": "jsx.00583",
+      "reading_unit_id": "reading-unit.0236",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0276",
+      "ordinal": 275,
+      "source_node_id": "jsx.00585",
+      "reading_unit_id": "reading-unit.0237",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0277",
+      "ordinal": 276,
+      "source_node_id": "jsx.00587",
+      "reading_unit_id": "reading-unit.0238",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0278",
+      "ordinal": 277,
+      "source_node_id": "jsx.00589",
+      "reading_unit_id": "reading-unit.0239",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0279",
+      "ordinal": 278,
+      "source_node_id": "jsx.00591",
+      "reading_unit_id": "reading-unit.0240",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0280",
+      "ordinal": 279,
+      "source_node_id": "jsx.00593",
+      "reading_unit_id": "reading-unit.0241",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0281",
+      "ordinal": 280,
+      "source_node_id": "jsx.00596",
+      "reading_unit_id": "reading-unit.0243",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0282",
+      "ordinal": 281,
+      "source_node_id": "jsx.00598",
+      "reading_unit_id": "reading-unit.0244",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0283",
+      "ordinal": 282,
+      "source_node_id": "jsx.00600",
+      "reading_unit_id": "reading-unit.0245",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0284",
+      "ordinal": 283,
+      "source_node_id": "jsx.00602",
+      "reading_unit_id": "reading-unit.0246",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0285",
+      "ordinal": 284,
+      "source_node_id": "jsx.00604",
+      "reading_unit_id": "reading-unit.0247",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0286",
+      "ordinal": 285,
+      "source_node_id": "jsx.00606",
+      "reading_unit_id": "reading-unit.0248",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0287",
+      "ordinal": 286,
+      "source_node_id": "jsx.00608",
+      "reading_unit_id": "reading-unit.0249",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0288",
+      "ordinal": 287,
+      "source_node_id": "jsx.00610",
+      "reading_unit_id": "reading-unit.0250",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0289",
+      "ordinal": 288,
+      "source_node_id": "jsx.00612",
+      "reading_unit_id": "reading-unit.0251",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0290",
+      "ordinal": 289,
+      "source_node_id": "jsx.00614",
+      "reading_unit_id": "reading-unit.0252",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0291",
+      "ordinal": 290,
+      "source_node_id": "jsx.00616",
+      "reading_unit_id": "reading-unit.0253",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0292",
+      "ordinal": 291,
+      "source_node_id": "jsx.00618",
+      "reading_unit_id": "reading-unit.0254",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0293",
+      "ordinal": 292,
+      "source_node_id": "jsx.00620",
+      "reading_unit_id": "reading-unit.0255",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0294",
+      "ordinal": 293,
+      "source_node_id": "jsx.00622",
+      "reading_unit_id": "reading-unit.0256",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0295",
+      "ordinal": 294,
+      "source_node_id": "jsx.00624",
+      "reading_unit_id": "reading-unit.0257",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0296",
+      "ordinal": 295,
+      "source_node_id": "jsx.00626",
+      "reading_unit_id": "reading-unit.0258",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0297",
+      "ordinal": 296,
+      "source_node_id": "jsx.00629",
+      "reading_unit_id": "reading-unit.0260",
+      "decision": {
+        "status": "excluded",
+        "class": "jsx_whitespace",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0298",
+      "ordinal": 297,
+      "source_node_id": "jsx.00631",
+      "reading_unit_id": "reading-unit.0260",
+      "decision": {
+        "status": "excluded",
+        "class": "jsx_whitespace",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0299",
+      "ordinal": 298,
+      "source_node_id": "jsx.00633",
+      "reading_unit_id": "reading-unit.0260",
+      "decision": {
+        "status": "excluded",
+        "class": "jsx_whitespace",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0300",
+      "ordinal": 299,
+      "source_node_id": "jsx.00635",
+      "reading_unit_id": "reading-unit.0260",
+      "decision": {
+        "status": "excluded",
+        "class": "structural_heading",
+        "authority": "user",
+        "structural_purpose": "distinguish_topics_verse_parts_and_subverses"
+      }
+    },
+    {
+      "id": "scope-decision.0301",
+      "ordinal": 300,
+      "source_node_id": "jsx.00637",
+      "reading_unit_id": "reading-unit.0260",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0302",
+      "ordinal": 301,
+      "source_node_id": "jsx.00639",
+      "reading_unit_id": "reading-unit.0261",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0303",
+      "ordinal": 302,
+      "source_node_id": "jsx.00641",
+      "reading_unit_id": "reading-unit.0262",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0304",
+      "ordinal": 303,
+      "source_node_id": "jsx.00643",
+      "reading_unit_id": "reading-unit.0263",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0305",
+      "ordinal": 304,
+      "source_node_id": "jsx.00645",
+      "reading_unit_id": "reading-unit.0264",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0306",
+      "ordinal": 305,
+      "source_node_id": "jsx.00647",
+      "reading_unit_id": "reading-unit.0265",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0307",
+      "ordinal": 306,
+      "source_node_id": "jsx.00649",
+      "reading_unit_id": "reading-unit.0266",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0308",
+      "ordinal": 307,
+      "source_node_id": "jsx.00651",
+      "reading_unit_id": "reading-unit.0267",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0309",
+      "ordinal": 308,
+      "source_node_id": "jsx.00654",
+      "reading_unit_id": "reading-unit.0269",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0310",
+      "ordinal": 309,
+      "source_node_id": "jsx.00656",
+      "reading_unit_id": "reading-unit.0270",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0311",
+      "ordinal": 310,
+      "source_node_id": "jsx.00658",
+      "reading_unit_id": "reading-unit.0271",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0312",
+      "ordinal": 311,
+      "source_node_id": "jsx.00660",
+      "reading_unit_id": "reading-unit.0272",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0313",
+      "ordinal": 312,
+      "source_node_id": "jsx.00662",
+      "reading_unit_id": "reading-unit.0273",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0314",
+      "ordinal": 313,
+      "source_node_id": "jsx.00664",
+      "reading_unit_id": "reading-unit.0274",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0315",
+      "ordinal": 314,
+      "source_node_id": "jsx.00666",
+      "reading_unit_id": "reading-unit.0275",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0316",
+      "ordinal": 315,
+      "source_node_id": "jsx.00668",
+      "reading_unit_id": "reading-unit.0276",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0317",
+      "ordinal": 316,
+      "source_node_id": "jsx.00670",
+      "reading_unit_id": "reading-unit.0277",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0318",
+      "ordinal": 317,
+      "source_node_id": "jsx.00673",
+      "reading_unit_id": "reading-unit.0279",
+      "decision": {
+        "status": "excluded",
+        "class": "jsx_whitespace",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0319",
+      "ordinal": 318,
+      "source_node_id": "jsx.00675",
+      "reading_unit_id": "reading-unit.0280",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0320",
+      "ordinal": 319,
+      "source_node_id": "jsx.00677",
+      "reading_unit_id": "reading-unit.0281",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0321",
+      "ordinal": 320,
+      "source_node_id": "jsx.00679",
+      "reading_unit_id": "reading-unit.0282",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0322",
+      "ordinal": 321,
+      "source_node_id": "jsx.00681",
+      "reading_unit_id": "reading-unit.0283",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0323",
+      "ordinal": 322,
+      "source_node_id": "jsx.00683",
+      "reading_unit_id": "reading-unit.0284",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0324",
+      "ordinal": 323,
+      "source_node_id": "jsx.00685",
+      "reading_unit_id": "reading-unit.0285",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0325",
+      "ordinal": 324,
+      "source_node_id": "jsx.00687",
+      "reading_unit_id": "reading-unit.0286",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0326",
+      "ordinal": 325,
+      "source_node_id": "jsx.00689",
+      "reading_unit_id": "reading-unit.0287",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0327",
+      "ordinal": 326,
+      "source_node_id": "jsx.00691",
+      "reading_unit_id": "reading-unit.0288",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0328",
+      "ordinal": 327,
+      "source_node_id": "jsx.00693",
+      "reading_unit_id": "reading-unit.0289",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0329",
+      "ordinal": 328,
+      "source_node_id": "jsx.00695",
+      "reading_unit_id": "reading-unit.0290",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0330",
+      "ordinal": 329,
+      "source_node_id": "jsx.00697",
+      "reading_unit_id": "reading-unit.0291",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0331",
+      "ordinal": 330,
+      "source_node_id": "jsx.00699",
+      "reading_unit_id": "reading-unit.0292",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0332",
+      "ordinal": 331,
+      "source_node_id": "jsx.00702",
+      "reading_unit_id": "reading-unit.0294",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0333",
+      "ordinal": 332,
+      "source_node_id": "jsx.00704",
+      "reading_unit_id": "reading-unit.0295",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0334",
+      "ordinal": 333,
+      "source_node_id": "jsx.00706",
+      "reading_unit_id": "reading-unit.0296",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0335",
+      "ordinal": 334,
+      "source_node_id": "jsx.00708",
+      "reading_unit_id": "reading-unit.0297",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0336",
+      "ordinal": 335,
+      "source_node_id": "jsx.00710",
+      "reading_unit_id": "reading-unit.0298",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0337",
+      "ordinal": 336,
+      "source_node_id": "jsx.00712",
+      "reading_unit_id": "reading-unit.0299",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0338",
+      "ordinal": 337,
+      "source_node_id": "jsx.00715",
+      "reading_unit_id": "reading-unit.0301",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0339",
+      "ordinal": 338,
+      "source_node_id": "jsx.00717",
+      "reading_unit_id": "reading-unit.0302",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0340",
+      "ordinal": 339,
+      "source_node_id": "jsx.00719",
+      "reading_unit_id": "reading-unit.0303",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0341",
+      "ordinal": 340,
+      "source_node_id": "jsx.00721",
+      "reading_unit_id": "reading-unit.0304",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0342",
+      "ordinal": 341,
+      "source_node_id": "jsx.00723",
+      "reading_unit_id": "reading-unit.0305",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0343",
+      "ordinal": 342,
+      "source_node_id": "jsx.00726",
+      "reading_unit_id": "reading-unit.0307",
+      "decision": {
+        "status": "excluded",
+        "class": "jsx_whitespace",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0344",
+      "ordinal": 343,
+      "source_node_id": "jsx.00728",
+      "reading_unit_id": "reading-unit.0307",
+      "decision": {
+        "status": "excluded",
+        "class": "jsx_whitespace",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0345",
+      "ordinal": 344,
+      "source_node_id": "jsx.00730",
+      "reading_unit_id": "reading-unit.0307",
+      "decision": {
+        "status": "excluded",
+        "class": "jsx_whitespace",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0346",
+      "ordinal": 345,
+      "source_node_id": "jsx.00732",
+      "reading_unit_id": "reading-unit.0307",
+      "decision": {
+        "status": "excluded",
+        "class": "structural_heading",
+        "authority": "user",
+        "structural_purpose": "distinguish_topics_verse_parts_and_subverses"
+      }
+    },
+    {
+      "id": "scope-decision.0347",
+      "ordinal": 346,
+      "source_node_id": "jsx.00734",
+      "reading_unit_id": "reading-unit.0307",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0348",
+      "ordinal": 347,
+      "source_node_id": "jsx.00736",
+      "reading_unit_id": "reading-unit.0308",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0349",
+      "ordinal": 348,
+      "source_node_id": "jsx.00738",
+      "reading_unit_id": "reading-unit.0308",
+      "decision": {
+        "status": "included_temporarily",
+        "class": "small_text",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0350",
+      "ordinal": 349,
+      "source_node_id": "jsx.00740",
+      "reading_unit_id": "reading-unit.0308",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0351",
+      "ordinal": 350,
+      "source_node_id": "jsx.00742",
+      "reading_unit_id": "reading-unit.0309",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0352",
+      "ordinal": 351,
+      "source_node_id": "jsx.00744",
+      "reading_unit_id": "reading-unit.0310",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0353",
+      "ordinal": 352,
+      "source_node_id": "jsx.00746",
+      "reading_unit_id": "reading-unit.0311",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0354",
+      "ordinal": 353,
+      "source_node_id": "jsx.00748",
+      "reading_unit_id": "reading-unit.0312",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0355",
+      "ordinal": 354,
+      "source_node_id": "jsx.00750",
+      "reading_unit_id": "reading-unit.0313",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0356",
+      "ordinal": 355,
+      "source_node_id": "jsx.00752",
+      "reading_unit_id": "reading-unit.0313",
+      "decision": {
+        "status": "included_temporarily",
+        "class": "small_text",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0357",
+      "ordinal": 356,
+      "source_node_id": "jsx.00754",
+      "reading_unit_id": "reading-unit.0313",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0358",
+      "ordinal": 357,
+      "source_node_id": "jsx.00756",
+      "reading_unit_id": "reading-unit.0314",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0359",
+      "ordinal": 358,
+      "source_node_id": "jsx.00758",
+      "reading_unit_id": "reading-unit.0315",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0360",
+      "ordinal": 359,
+      "source_node_id": "jsx.00760",
+      "reading_unit_id": "reading-unit.0316",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0361",
+      "ordinal": 360,
+      "source_node_id": "jsx.00762",
+      "reading_unit_id": "reading-unit.0317",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0362",
+      "ordinal": 361,
+      "source_node_id": "jsx.00764",
+      "reading_unit_id": "reading-unit.0318",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0363",
+      "ordinal": 362,
+      "source_node_id": "jsx.00766",
+      "reading_unit_id": "reading-unit.0319",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0364",
+      "ordinal": 363,
+      "source_node_id": "jsx.00768",
+      "reading_unit_id": "reading-unit.0320",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0365",
+      "ordinal": 364,
+      "source_node_id": "jsx.00770",
+      "reading_unit_id": "reading-unit.0321",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0366",
+      "ordinal": 365,
+      "source_node_id": "jsx.00773",
+      "reading_unit_id": "reading-unit.0323",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0367",
+      "ordinal": 366,
+      "source_node_id": "jsx.00775",
+      "reading_unit_id": "reading-unit.0324",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0368",
+      "ordinal": 367,
+      "source_node_id": "jsx.00777",
+      "reading_unit_id": "reading-unit.0325",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0369",
+      "ordinal": 368,
+      "source_node_id": "jsx.00779",
+      "reading_unit_id": "reading-unit.0326",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0370",
+      "ordinal": 369,
+      "source_node_id": "jsx.00781",
+      "reading_unit_id": "reading-unit.0327",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0371",
+      "ordinal": 370,
+      "source_node_id": "jsx.00783",
+      "reading_unit_id": "reading-unit.0328",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0372",
+      "ordinal": 371,
+      "source_node_id": "jsx.00785",
+      "reading_unit_id": "reading-unit.0329",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0373",
+      "ordinal": 372,
+      "source_node_id": "jsx.00787",
+      "reading_unit_id": "reading-unit.0330",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0374",
+      "ordinal": 373,
+      "source_node_id": "jsx.00789",
+      "reading_unit_id": "reading-unit.0331",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0375",
+      "ordinal": 374,
+      "source_node_id": "jsx.00791",
+      "reading_unit_id": "reading-unit.0332",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0376",
+      "ordinal": 375,
+      "source_node_id": "jsx.00793",
+      "reading_unit_id": "reading-unit.0333",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0377",
+      "ordinal": 376,
+      "source_node_id": "jsx.00795",
+      "reading_unit_id": "reading-unit.0334",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0378",
+      "ordinal": 377,
+      "source_node_id": "jsx.00797",
+      "reading_unit_id": "reading-unit.0335",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0379",
+      "ordinal": 378,
+      "source_node_id": "jsx.00799",
+      "reading_unit_id": "reading-unit.0336",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0380",
+      "ordinal": 379,
+      "source_node_id": "jsx.00801",
+      "reading_unit_id": "reading-unit.0337",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0381",
+      "ordinal": 380,
+      "source_node_id": "jsx.00803",
+      "reading_unit_id": "reading-unit.0338",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0382",
+      "ordinal": 381,
+      "source_node_id": "jsx.00805",
+      "reading_unit_id": "reading-unit.0339",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0383",
+      "ordinal": 382,
+      "source_node_id": "jsx.00807",
+      "reading_unit_id": "reading-unit.0340",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0384",
+      "ordinal": 383,
+      "source_node_id": "jsx.00809",
+      "reading_unit_id": "reading-unit.0341",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0385",
+      "ordinal": 384,
+      "source_node_id": "jsx.00811",
+      "reading_unit_id": "reading-unit.0342",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0386",
+      "ordinal": 385,
+      "source_node_id": "jsx.00813",
+      "reading_unit_id": "reading-unit.0343",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0387",
+      "ordinal": 386,
+      "source_node_id": "jsx.00815",
+      "reading_unit_id": "reading-unit.0344",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0388",
+      "ordinal": 387,
+      "source_node_id": "jsx.00817",
+      "reading_unit_id": "reading-unit.0345",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0389",
+      "ordinal": 388,
+      "source_node_id": "jsx.00819",
+      "reading_unit_id": "reading-unit.0346",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0390",
+      "ordinal": 389,
+      "source_node_id": "jsx.00821",
+      "reading_unit_id": "reading-unit.0347",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0391",
+      "ordinal": 390,
+      "source_node_id": "jsx.00823",
+      "reading_unit_id": "reading-unit.0348",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0392",
+      "ordinal": 391,
+      "source_node_id": "jsx.00825",
+      "reading_unit_id": "reading-unit.0349",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0393",
+      "ordinal": 392,
+      "source_node_id": "jsx.00827",
+      "reading_unit_id": "reading-unit.0350",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0394",
+      "ordinal": 393,
+      "source_node_id": "jsx.00829",
+      "reading_unit_id": "reading-unit.0351",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0395",
+      "ordinal": 394,
+      "source_node_id": "jsx.00831",
+      "reading_unit_id": "reading-unit.0352",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0396",
+      "ordinal": 395,
+      "source_node_id": "jsx.00833",
+      "reading_unit_id": "reading-unit.0353",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0397",
+      "ordinal": 396,
+      "source_node_id": "jsx.00835",
+      "reading_unit_id": "reading-unit.0354",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0398",
+      "ordinal": 397,
+      "source_node_id": "jsx.00837",
+      "reading_unit_id": "reading-unit.0355",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0399",
+      "ordinal": 398,
+      "source_node_id": "jsx.00839",
+      "reading_unit_id": "reading-unit.0356",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0400",
+      "ordinal": 399,
+      "source_node_id": "jsx.00842",
+      "reading_unit_id": "reading-unit.0358",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0401",
+      "ordinal": 400,
+      "source_node_id": "jsx.00844",
+      "reading_unit_id": "reading-unit.0359",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0402",
+      "ordinal": 401,
+      "source_node_id": "jsx.00846",
+      "reading_unit_id": "reading-unit.0360",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0403",
+      "ordinal": 402,
+      "source_node_id": "jsx.00848",
+      "reading_unit_id": "reading-unit.0361",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0404",
+      "ordinal": 403,
+      "source_node_id": "jsx.00850",
+      "reading_unit_id": "reading-unit.0362",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0405",
+      "ordinal": 404,
+      "source_node_id": "jsx.00852",
+      "reading_unit_id": "reading-unit.0363",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0406",
+      "ordinal": 405,
+      "source_node_id": "jsx.00854",
+      "reading_unit_id": "reading-unit.0364",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0407",
+      "ordinal": 406,
+      "source_node_id": "jsx.00856",
+      "reading_unit_id": "reading-unit.0365",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0408",
+      "ordinal": 407,
+      "source_node_id": "jsx.00858",
+      "reading_unit_id": "reading-unit.0366",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0409",
+      "ordinal": 408,
+      "source_node_id": "jsx.00860",
+      "reading_unit_id": "reading-unit.0367",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0410",
+      "ordinal": 409,
+      "source_node_id": "jsx.00862",
+      "reading_unit_id": "reading-unit.0368",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0411",
+      "ordinal": 410,
+      "source_node_id": "jsx.00864",
+      "reading_unit_id": "reading-unit.0369",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0412",
+      "ordinal": 411,
+      "source_node_id": "jsx.00866",
+      "reading_unit_id": "reading-unit.0370",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0413",
+      "ordinal": 412,
+      "source_node_id": "jsx.00868",
+      "reading_unit_id": "reading-unit.0371",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0414",
+      "ordinal": 413,
+      "source_node_id": "jsx.00870",
+      "reading_unit_id": "reading-unit.0372",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0415",
+      "ordinal": 414,
+      "source_node_id": "jsx.00872",
+      "reading_unit_id": "reading-unit.0373",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0416",
+      "ordinal": 415,
+      "source_node_id": "jsx.00874",
+      "reading_unit_id": "reading-unit.0374",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0417",
+      "ordinal": 416,
+      "source_node_id": "jsx.00876",
+      "reading_unit_id": "reading-unit.0375",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0418",
+      "ordinal": 417,
+      "source_node_id": "jsx.00878",
+      "reading_unit_id": "reading-unit.0376",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0419",
+      "ordinal": 418,
+      "source_node_id": "jsx.00880",
+      "reading_unit_id": "reading-unit.0377",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0420",
+      "ordinal": 419,
+      "source_node_id": "jsx.00882",
+      "reading_unit_id": "reading-unit.0378",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0421",
+      "ordinal": 420,
+      "source_node_id": "jsx.00884",
+      "reading_unit_id": "reading-unit.0379",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0422",
+      "ordinal": 421,
+      "source_node_id": "jsx.00886",
+      "reading_unit_id": "reading-unit.0380",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0423",
+      "ordinal": 422,
+      "source_node_id": "jsx.00888",
+      "reading_unit_id": "reading-unit.0381",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0424",
+      "ordinal": 423,
+      "source_node_id": "jsx.00890",
+      "reading_unit_id": "reading-unit.0382",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0425",
+      "ordinal": 424,
+      "source_node_id": "jsx.00892",
+      "reading_unit_id": "reading-unit.0383",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0426",
+      "ordinal": 425,
+      "source_node_id": "jsx.00894",
+      "reading_unit_id": "reading-unit.0384",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0427",
+      "ordinal": 426,
+      "source_node_id": "jsx.00896",
+      "reading_unit_id": "reading-unit.0385",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0428",
+      "ordinal": 427,
+      "source_node_id": "jsx.00898",
+      "reading_unit_id": null,
+      "decision": {
+        "status": "excluded",
+        "class": "jsx_whitespace",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0429",
+      "ordinal": 428,
+      "source_node_id": "jsx.00900",
+      "reading_unit_id": null,
+      "decision": {
+        "status": "excluded",
+        "class": "jsx_whitespace",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0430",
+      "ordinal": 429,
+      "source_node_id": "jsx.00902",
+      "reading_unit_id": null,
+      "decision": {
+        "status": "excluded",
+        "class": "jsx_whitespace",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0431",
+      "ordinal": 430,
+      "source_node_id": "jsx.00904",
+      "reading_unit_id": null,
+      "decision": {
+        "status": "excluded",
+        "class": "jsx_whitespace",
+        "authority": "user"
+      }
+    }
+  ]
+}
