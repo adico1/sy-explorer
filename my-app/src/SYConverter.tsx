@@ -16,6 +16,7 @@ type Interpretation = {
 
 type Interpretations = Record<string, Interpretation>;
 type Filter = "all" | "repeated" | "single" | "interpreted";
+type View = "names" | "patterns";
 
 const roleLabels: Record<string, string> = {
   name: "שם",
@@ -27,6 +28,9 @@ const roleLabels: Record<string, string> = {
   representation: "ייצוג",
   state: "מצב",
   relation: "יחס",
+  category: "קטגוריה",
+  controller: "בקר",
+  value: "ערך",
 };
 
 function loadInterpretations(): Interpretations {
@@ -44,6 +48,7 @@ export function SYConverter() {
   const [selectedId, setSelectedId] = useState<string>(() => corpus.evidence.names[0]?.id || "");
   const [query, setQuery] = useState("");
   const [filter, setFilter] = useState<Filter>("all");
+  const [view, setView] = useState<View>("patterns");
 
   const names = useMemo(() => {
     const needle = query.trim();
@@ -145,10 +150,16 @@ export function SYConverter() {
       <div className="name-stats">
         <span><b>{corpus.stats.names}</b> שמות</span>
         <span><b>{corpus.stats.occurrences}</b> מופעים</span>
-        <span><b>{corpus.stats.repeated_names}</b> שמות חוזרים</span>
-        <span><b>{corpus.stats.single_occurrence_names}</b> מופע יחיד</span>
+        <span><b>{corpus.stats.repeated_sequences}</b> רצפים חוזרים</span>
+        <span><b>{corpus.stats.slot_candidates}</b> slots מועמדים</span>
       </div>
 
+      <nav className="mode-tabs">
+        <button aria-pressed={view === "patterns"} onClick={() => setView("patterns")}>תבניות וכפילויות</button>
+        <button aria-pressed={view === "names"} onClick={() => setView("names")}>שמות ומופעים</button>
+      </nav>
+
+      {view === "names" && <>
       <div className="name-toolbar">
         <input value={query} onChange={(event) => setQuery(event.target.value)} placeholder="חיפוש שם…" aria-label="חיפוש שם" />
         <select value={filter} onChange={(event) => setFilter(event.target.value as Filter)} aria-label="סינון שמות">
@@ -224,6 +235,85 @@ export function SYConverter() {
           </main>
         )}
       </div>
+      </>}
+
+      {view === "patterns" && <PatternExplorer corpus={corpus} />}
     </section>
+  );
+}
+
+function PatternExplorer({ corpus }: { corpus: any }) {
+  const candidates = corpus.structure.role_candidates;
+  const candidateName = (id: string) => corpus.evidence.names.find((name: any) => name.id === id)?.normalized || id;
+
+  return (
+    <div className="pattern-explorer">
+      <section className="pattern-summary">
+        <h3>מה נגזר מן הכפילויות</h3>
+        <p>החזרה קובעת מועמדות מבנית בלבד. התפקיד הסופי — קטגוריה, קשר, בקר או ערך — נקבע בפירוש שלך.</p>
+        <div>
+          <span><b>{candidates.filter((item: any) => item.candidate === "category_relation_or_controller").length}</b> מועמדי מבנה</span>
+          <span><b>{candidates.filter((item: any) => item.candidate === "single_unit_value_or_name").length}</b> שמות הקיימים ביחידה אחת</span>
+          <span><b>{corpus.structure.records.length}</b> רשומות מקור</span>
+        </div>
+      </section>
+
+      <section className="pattern-section">
+        <h3>Slots בין עוגנים חוזרים</h3>
+        <p>כל שורה מציגה שני שמות חוזרים, ואת הערכים המשתנים שנמצאו ביניהם ברשומות שונות.</p>
+        {corpus.structure.slots.slice(0, 100).map((slot: any) => (
+          <article className="slot-card" key={slot.id}>
+            <header>
+              <code>{slot.id}</code>
+              <span>{slot.record_count} רשומות · מספר ערכים: {slot.cardinality.join(" או ")}</span>
+            </header>
+            <div className="slot-shape">
+              <b>{slot.right_anchor}</b>
+              <span>← {slot.cardinality.length === 1 && slot.cardinality[0] === 1 ? "ערך יחיד אפשרי" : "ערך או צירוף אפשרי"} ←</span>
+              <b>{slot.left_anchor}</b>
+            </div>
+            <div className="slot-values">
+              {slot.values.slice(0, 12).map((value: any) => (
+                <span key={value.record_id}>{value.surface} <small>{value.record_id}</small></span>
+              ))}
+            </div>
+          </article>
+        ))}
+      </section>
+
+      <section className="pattern-section">
+        <h3>רצפים חוזרים</h3>
+        <div className="sequence-grid">
+          {corpus.structure.repeated_sequences.slice(0, 80).map((sequence: any) => (
+            <article key={sequence.id}>
+              <strong>{sequence.member_name_ids.map(candidateName).join(" → ")}</strong>
+              <span>{sequence.occurrence_count} מופעים</span>
+            </article>
+          ))}
+        </div>
+      </section>
+
+      <section className="pattern-section">
+        <h3>מועמדויות לפי היקף הכפילות</h3>
+        <div className="candidate-grid">
+          {candidates
+            .sort((a: any, b: any) => b.record_presence - a.record_presence || b.occurrence_count - a.occurrence_count)
+            .slice(0, 120)
+            .map((candidate: any) => (
+              <article key={candidate.name_id}>
+                <b>{candidateName(candidate.name_id)}</b>
+                <span>{candidate.occurrence_count} מופעים · {candidate.record_presence} רשומות</span>
+                <small>
+                  {candidate.candidate === "category_relation_or_controller"
+                    ? "מועמד: קטגוריה / קשר / בקר"
+                    : candidate.candidate === "single_unit_value_or_name"
+                      ? `מועמד: ערך / שם של יחידה יחידה · קרדינליות ${candidate.cardinality_in_single_unit}`
+                      : "מועמד: ערך חוזר / מבנה מקומי"}
+                </small>
+              </article>
+            ))}
+        </div>
+      </section>
+    </div>
   );
 }
