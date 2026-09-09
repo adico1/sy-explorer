@@ -2,6 +2,8 @@ export interface SYCorpus {
   version: string;
   stats: {
     units: number;
+    statements: number;
+    relations: number;
     operations: number;
     domains: number;
     variants: number;
