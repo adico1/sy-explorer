@@ -184,9 +184,20 @@
     ],
     "discovery_rules": [
       {
-        "id": "declaration.explicit_category",
-        "pattern": ["cardinality", "category_name", "member_set"],
-        "produces": ["category", "cardinality", "members"],
+        "id": "declaration.cardinality_noun",
+        "pattern": ["cardinality", "following_noun_candidate"],
+        "produces": ["cardinality_statement"],
+        "status": "discovery"
+      },
+      {
+        "id": "declaration.explicit_member_set",
+        "pattern": [
+          "cardinality",
+          "following_noun_candidate",
+          "orthographically_encoded_hebrew_letters",
+          "encoded_letter_count_equals_cardinality"
+        ],
+        "produces": ["category_candidate", "cardinality", "members"],
         "status": "discovery"
       },
       {
