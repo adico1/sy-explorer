@@ -1,7 +1,7 @@
 {
   "$schema": "./sy.converter-spec.schema.json",
   "id": "sy.converter",
-  "version": "0.7.0",
+  "version": "0.8.0",
   "language": "he",
   "normalization": {"remove_cantillation": true, "remove_niqqud": true, "remove_punctuation": true},
   "structure": {

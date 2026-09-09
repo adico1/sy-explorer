@@ -52,6 +52,8 @@ export function SYConverter() {
           <p className="converter__stats">
             {corpus.stats.units} יחידות ·{" "}
             {corpus.stats.operations} פעולות ·{" "}
+            {corpus.stats.tokens} מופעי מילים ·{" "}
+            {corpus.stats.lexemes} מילים ייחודיות ·{" "}
             {corpus.provenance.length} קישורי ראיה
           </p>
 
