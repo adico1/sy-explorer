@@ -1,0 +1,252 @@
+{
+  "id": "sy.sealed-hyphen-word-units",
+  "version": "1.0.0",
+  "status": "sealed",
+  "scope": "hyphen_connected_words_only",
+  "source": {
+    "file": "src/SeferYetzirah.tsx",
+    "sha256": "868e1cadf357fd6b868bfa14d9694e55623186354b1a456dd3a45bb48f4864dd",
+    "corpus_text_sha256": "284add33b3b8a6e4b5f452b3097c07bc13dc7545ffb578697b6f852dc684c348",
+    "word_contract_sha256": "79e9b0d7a113ca0ff83c278dc879cf22ba2aa7841f2de061e1b6a26b059680f9",
+    "lexical_ambiguities_sha256": "eff029f807be27465815ea72f55f70744b9ac5ec6ff665a63f5b3b9be7fde7d8"
+  },
+  "rule": {
+    "statement": "Pointed Hebrew surface forms joined internally by an approved hyphen connector are one word.",
+    "connector_characters": [
+      "-",
+      "־"
+    ],
+    "surface_preservation": "exact",
+    "attached_prefix_analysis": "not_performed",
+    "punctuation_role": "unknown_and_excluded_from_the_hyphen_unit"
+  },
+  "proof": {
+    "exactly_eight_hyphen_units": true,
+    "every_recorded_hyphen_assigned_exactly_once": true,
+    "every_unit_matches_exact_source_range": true,
+    "every_unit_has_content_on_both_sides": true,
+    "no_unit_contains_whitespace": true,
+    "adjacent_punctuation_excluded_and_preserved": true,
+    "exact_corpus_round_trip_after_overlay_removal": true,
+    "no_non_hyphen_words_emitted": true,
+    "deterministic_output": true,
+    "unit_count": 8,
+    "adjacent_punctuation_count": 4
+  },
+  "units": [
+    {
+      "id": "hyphen-unit.001",
+      "ordinal": 0,
+      "unit_type": "word",
+      "decision_status": "sealed",
+      "authority": "user",
+      "raw": "אֱלֹהֵי-יִשְׂרָאֵל",
+      "connector_characters": [
+        "-"
+      ],
+      "component_surface_forms": [
+        "אֱלֹהֵי",
+        "יִשְׂרָאֵל"
+      ],
+      "corpus_fragment_id": "corpus-fragment.0006",
+      "source_node_id": "jsx.00033",
+      "reading_unit_id": "reading-unit.0007",
+      "source_code_unit_range": {
+        "start": 406,
+        "end": 424
+      }
+    },
+    {
+      "id": "hyphen-unit.002",
+      "ordinal": 1,
+      "unit_type": "word",
+      "decision_status": "sealed",
+      "authority": "user",
+      "raw": "אֱלֹהִים-חַיִּים",
+      "connector_characters": [
+        "-"
+      ],
+      "component_surface_forms": [
+        "אֱלֹהִים",
+        "חַיִּים"
+      ],
+      "corpus_fragment_id": "corpus-fragment.0006",
+      "source_node_id": "jsx.00033",
+      "reading_unit_id": "reading-unit.0007",
+      "source_code_unit_range": {
+        "start": 425,
+        "end": 441
+      }
+    },
+    {
+      "id": "hyphen-unit.003",
+      "ordinal": 2,
+      "unit_type": "word",
+      "decision_status": "sealed",
+      "authority": "user",
+      "raw": "וּמֶלֶךְ-עוֹלָם",
+      "connector_characters": [
+        "-"
+      ],
+      "component_surface_forms": [
+        "וּמֶלֶךְ",
+        "עוֹלָם"
+      ],
+      "corpus_fragment_id": "corpus-fragment.0006",
+      "source_node_id": "jsx.00033",
+      "reading_unit_id": "reading-unit.0007",
+      "source_code_unit_range": {
+        "start": 442,
+        "end": 457
+      }
+    },
+    {
+      "id": "hyphen-unit.004",
+      "ordinal": 3,
+      "unit_type": "word",
+      "decision_status": "sealed",
+      "authority": "user",
+      "raw": "מַכְרִיעַ-בֵּינְתַיִם",
+      "connector_characters": [
+        "-"
+      ],
+      "component_surface_forms": [
+        "מַכְרִיעַ",
+        "בֵּינְתַיִם"
+      ],
+      "corpus_fragment_id": "corpus-fragment.0083",
+      "source_node_id": "jsx.00272",
+      "reading_unit_id": "reading-unit.0086",
+      "source_code_unit_range": {
+        "start": 5587,
+        "end": 5608
+      }
+    },
+    {
+      "id": "hyphen-unit.005",
+      "ordinal": 4,
+      "unit_type": "word",
+      "decision_status": "sealed",
+      "authority": "user",
+      "raw": "מַכְרִיעַ-בֵּינְתַיִם",
+      "connector_characters": [
+        "-"
+      ],
+      "component_surface_forms": [
+        "מַכְרִיעַ",
+        "בֵּינְתַיִם"
+      ],
+      "corpus_fragment_id": "corpus-fragment.0136",
+      "source_node_id": "jsx.00399",
+      "reading_unit_id": "reading-unit.0147",
+      "source_code_unit_range": {
+        "start": 7997,
+        "end": 8018
+      }
+    },
+    {
+      "id": "hyphen-unit.006",
+      "ordinal": 5,
+      "unit_type": "word",
+      "decision_status": "sealed",
+      "authority": "user",
+      "raw": "מַכְרִיעַ-בֵּינְתַיִם",
+      "connector_characters": [
+        "-"
+      ],
+      "component_surface_forms": [
+        "מַכְרִיעַ",
+        "בֵּינְתַיִם"
+      ],
+      "corpus_fragment_id": "corpus-fragment.0295",
+      "source_node_id": "jsx.00760",
+      "reading_unit_id": "reading-unit.0316",
+      "source_code_unit_range": {
+        "start": 18328,
+        "end": 18349
+      }
+    },
+    {
+      "id": "hyphen-unit.007",
+      "ordinal": 6,
+      "unit_type": "word",
+      "decision_status": "sealed",
+      "authority": "user",
+      "raw": "מַכְרִיעַ-בֵּינְתַיִם",
+      "connector_characters": [
+        "-"
+      ],
+      "component_surface_forms": [
+        "מַכְרִיעַ",
+        "בֵּינְתַיִם"
+      ],
+      "corpus_fragment_id": "corpus-fragment.0300",
+      "source_node_id": "jsx.00770",
+      "reading_unit_id": "reading-unit.0321",
+      "source_code_unit_range": {
+        "start": 18521,
+        "end": 18542
+      }
+    },
+    {
+      "id": "hyphen-unit.008",
+      "ordinal": 7,
+      "unit_type": "word",
+      "decision_status": "sealed",
+      "authority": "user",
+      "raw": "מַכְרִיעַ-בֵּינְתַיִם",
+      "connector_characters": [
+        "-"
+      ],
+      "component_surface_forms": [
+        "מַכְרִיעַ",
+        "בֵּינְתַיִם"
+      ],
+      "corpus_fragment_id": "corpus-fragment.0320",
+      "source_node_id": "jsx.00811",
+      "reading_unit_id": "reading-unit.0342",
+      "source_code_unit_range": {
+        "start": 19292,
+        "end": 19313
+      }
+    }
+  ],
+  "adjacent_punctuation_observations": [
+    {
+      "hyphen_unit_id": "hyphen-unit.004",
+      "char": ":",
+      "status": "excluded_from_hyphen_unit_role_unknown",
+      "source_code_unit_range": {
+        "start": 5608,
+        "end": 5609
+      }
+    },
+    {
+      "hyphen_unit_id": "hyphen-unit.005",
+      "char": ":",
+      "status": "excluded_from_hyphen_unit_role_unknown",
+      "source_code_unit_range": {
+        "start": 8018,
+        "end": 8019
+      }
+    },
+    {
+      "hyphen_unit_id": "hyphen-unit.007",
+      "char": ":",
+      "status": "excluded_from_hyphen_unit_role_unknown",
+      "source_code_unit_range": {
+        "start": 18542,
+        "end": 18543
+      }
+    },
+    {
+      "hyphen_unit_id": "hyphen-unit.008",
+      "char": ".",
+      "status": "excluded_from_hyphen_unit_role_unknown",
+      "source_code_unit_range": {
+        "start": 19313,
+        "end": 19314
+      }
+    }
+  ]
+}
