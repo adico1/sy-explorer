@@ -1,7 +1,7 @@
 {
   "$schema": "./sy.converter-spec.schema.json",
   "id": "sy.evidence-corpus",
-  "version": "0.12.4",
+  "version": "0.12.5",
   "language": "he",
   "source": {
     "authority": "sefaria_source",
@@ -126,6 +126,7 @@
     { "id": "source.lossless_jsx_map", "status": "active", "artifact": "src/sy.source-map.json", "proof": "exact_main_root_round_trip" },
     { "id": "reading.lossless_br_units", "status": "active", "artifact": "src/sy.reading-units.json", "proof": "exact_br_partition_round_trip" },
     { "id": "structure.jsx_reading_hierarchy", "status": "active", "artifact": "src/sy.reading-hierarchy.json", "proof": "exact_jsx_context_assignment" },
+    { "id": "text.exact_node_projection", "status": "active", "artifact": "src/sy.text-projection.json", "proof": "exact_text_node_projection" },
     { "id": "corpus.name_occurrences", "status": "active" },
     { "id": "corpus.occurrence_counts", "status": "active" },
     { "id": "corpus.user_interpretations", "status": "active" },
@@ -174,6 +175,13 @@
         "statement": "Every reading unit is assigned once to literal enclosing section tags and to the latest preceding closed h1, h2 and h3 headings in source order; this is structural context only.",
         "authority": "deterministic_derivation",
         "artifact": "src/sy.reading-hierarchy.json",
+        "status": "sealed"
+      },
+      {
+        "id": "text.exact_node_projection",
+        "statement": "Every JSX text node is projected once into its reading unit or the structural tail with exact raw content and source ranges; no whitespace, niqqud, punctuation or token normalization is applied.",
+        "authority": "deterministic_derivation",
+        "artifact": "src/sy.text-projection.json",
         "status": "sealed"
       },
       {
