@@ -1,12 +1,27 @@
 {
   "$schema": "./sy.converter-spec.schema.json",
   "id": "sy.evidence-corpus",
-  "version": "0.11.0",
+  "version": "0.12.0",
   "language": "he",
   "source": {
     "authority": "sefaria_source",
     "canonical_url": "https://www.sefaria.org.il/Sefer_Yetzirah.1.1?lang=he",
-    "local_copy_equivalence": "not_yet_verified"
+    "local_edition": {
+      "status": "sealed",
+      "file": "src/SeferYetzirah.tsx",
+      "sha256": "868e1cadf357fd6b868bfa14d9694e55623186354b1a456dd3a45bb48f4864dd",
+      "textual_equivalence": "manually_verified_by_user",
+      "niqqud": {
+        "status": "authoritative",
+        "added_by": "user",
+        "purpose": "correct_reading"
+      },
+      "br_boundaries": {
+        "status": "authoritative",
+        "added_by": "user",
+        "purpose": "correct_reading_boundaries"
+      }
+    }
   },
   "scope": {
     "allowed_authorities": [
@@ -58,6 +73,8 @@
     "storage": "local"
   },
   "repetition": {
+    "status": "rejected_as_semantic_reader",
+    "retained_as": "diagnostic_evidence_only",
     "authority": "user_interpretation",
     "minimum_record_presence_for_anchor": 3,
     "minimum_records_per_slot": 2,
@@ -68,6 +85,68 @@
       "single_global_occurrence": "single_occurrence_value_or_name_candidate",
       "between_repeated_anchors": "slot_value_candidate"
     }
+  },
+  "reading_specification": {
+    "id": "sy.systemic-reading",
+    "version": "0.1.0",
+    "states": ["sealed", "discovery", "rejected"],
+    "sealed_rules": [
+      {
+        "id": "source.local_edition",
+        "statement": "The user-verified local edition is the authoritative working source.",
+        "authority": "user_attestation"
+      },
+      {
+        "id": "reading.preserve_niqqud",
+        "statement": "Niqqud is authoritative reading information and must not be discarded before linguistic analysis.",
+        "authority": "user_interpretation"
+      },
+      {
+        "id": "reading.br_boundary",
+        "statement": "Every br marks an authoritative reading boundary; consecutive br elements additionally delimit a reading group.",
+        "authority": "user_interpretation"
+      },
+      {
+        "id": "semantics.standard_hebrew",
+        "statement": "Standard Hebrew lexical meaning, morphology and syntax are valid derivation sources.",
+        "authority": "user_interpretation"
+      },
+      {
+        "id": "scope.no_external_commentary",
+        "statement": "Claims not derived from the source, standard Hebrew or the user's interpretation are excluded.",
+        "authority": "user_interpretation"
+      }
+    ],
+    "discovery_rules": [
+      {
+        "id": "declaration.explicit_category",
+        "pattern": ["cardinality", "category_name", "member_set"],
+        "produces": ["category", "cardinality", "members"],
+        "status": "discovery"
+      },
+      {
+        "id": "clause.operation",
+        "pattern": ["verb", "arguments", "prepositional_relations"],
+        "produces": ["operation", "inputs", "relations", "outputs"],
+        "status": "discovery"
+      },
+      {
+        "id": "invariant.cross_unit",
+        "pattern": ["repeated_syntactic_structure", "varying_lexical_values"],
+        "produces": ["schema", "fields", "values"],
+        "status": "discovery"
+      }
+    ],
+    "rejected_rules": [
+      {
+        "id": "reader.auto_svo.v0_9",
+        "reason": "Assumed a linear subject-operation-object reading before establishing Hebrew syntax."
+      },
+      {
+        "id": "reader.frequency_threshold.v0_11",
+        "reason": "Used arbitrary occurrence thresholds as semantic categories."
+      }
+    ]
   },
   "validation": {
     "scope": "structural_and_lossless_only",
