@@ -19,6 +19,8 @@
     "test:text-context": "node scripts/generate-text-context.mjs --check",
     "generate:corpus-scope": "node scripts/generate-corpus-scope.mjs",
     "test:corpus-scope": "node scripts/generate-corpus-scope.mjs --check",
+    "generate:corpus-text": "node scripts/generate-corpus-text.mjs",
+    "test:corpus-text": "node scripts/generate-corpus-text.mjs --check",
     "test:regression": "node scripts/regression.mjs",
     "preview": "vite preview"
   },
