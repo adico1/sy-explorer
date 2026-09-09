@@ -41,11 +41,17 @@ function cardinalPrefix(values) {
   return null;
 }
 
-function memberSet(text, expected) {
+function encodedMemberSet(text) {
   const clean = stripMarks(text).replace(/[^א-ת]/g, "");
   const wordLengths = tokens(text).map((word) => withoutConjunction(word).length);
-  const visiblyEncoded = /[״׳"']/.test(text) || (wordLengths.length > 1 && wordLengths.every((length) => length <= 3));
-  if (!visiblyEncoded || clean.length !== expected) return null;
+  const hasHebrewQuote = /[״׳"']/.test(text);
+  const quotedLetterTokens = hasHebrewQuote
+    && wordLengths.length > 0
+    && wordLengths.every((length) => length <= 4);
+  const separatedSingleLetters = wordLengths.length > 1
+    && wordLengths.every((length) => length === 1);
+  const visiblyEncoded = quotedLetterTokens || separatedSingleLetters;
+  if (!visiblyEncoded || clean.length === 0) return null;
   return [...clean];
 }
 
@@ -64,11 +70,12 @@ for (let index = 0; index < records.length; index += 1) {
   const payloadSource = currentPayload
     ? record.text.split(/\s+/).slice(cardinal.width + 1).join(" ")
     : nextIsSameGroup ? next.text : "";
-  const members = memberSet(payloadSource, cardinal.value);
+  const encodedMembers = encodedMemberSet(payloadSource);
+  const members = encodedMembers?.length === cardinal.value ? encodedMembers : null;
 
   declarations.push({
     id: `candidate.category.${String(declarations.length + 1).padStart(4, "0")}`,
-    rule_id: "declaration.explicit_category",
+    rule_id: members ? "declaration.explicit_member_set" : "declaration.cardinality_noun",
     status: "discovery",
     source: {
       record_id: record.id,
@@ -80,6 +87,7 @@ for (let index = 0; index < records.length; index += 1) {
       cardinality: cardinal.value,
       category_name: category,
       member_set: members,
+      encoded_member_count: encodedMembers?.length ?? null,
     },
     evidence: {
       cardinality: "standard_hebrew_number",
@@ -89,8 +97,14 @@ for (let index = 0; index < records.length; index += 1) {
   });
 }
 
+const complete = declarations.filter((item) => item.parse.member_set);
+const cardinalityOnly = declarations.filter((item) => item.parse.encoded_member_count === null);
+const malformedExplicitMemberSets = declarations.filter((item) =>
+  item.parse.encoded_member_count !== null && item.parse.member_set === null
+);
+
 const categoryCardinalities = new Map();
-for (const item of declarations) {
+for (const item of complete) {
   const key = withoutConjunction(item.parse.category_name);
   if (!categoryCardinalities.has(key)) categoryCardinalities.set(key, new Set());
   categoryCardinalities.get(key).add(item.parse.cardinality);
@@ -104,39 +118,41 @@ const contradictions = [...categoryCardinalities.entries()]
     values: [...values],
   }));
 
-const complete = declarations.filter((item) => item.parse.member_set);
-const counterexamples = declarations
-  .filter((item) => !item.parse.member_set)
+const counterexamples = malformedExplicitMemberSets
   .map((item) => ({
     candidate_id: item.id,
-    reason: "cardinality_and_noun_found_but_member_set_not_established",
+    reason: "explicitly_encoded_member_count_does_not_match_cardinality",
+    declared_cardinality: item.parse.cardinality,
+    encoded_member_count: item.parse.encoded_member_count,
     source: item.source,
   }));
 
 const report = {
-  id: "sy.systemic-reading.discovery.explicit-category.1",
+  id: "sy.systemic-reading.discovery.explicit-member-set.2",
   status: "discovery",
   corpus_version: corpus.version,
   source_sha256: corpus.seal.source_sha256,
-  rule: spec.reading_specification.discovery_rules.find((rule) => rule.id === "declaration.explicit_category"),
+  rule: spec.reading_specification.discovery_rules.find((rule) => rule.id === "declaration.explicit_member_set"),
   contract: spec.reading_specification.discovery_contract,
   coverage: {
     authoritative_records: records.length,
-    construction_matches: declarations.length,
-    complete_declarations: complete.length,
-    unresolved_matches: counterexamples.length,
+    cardinality_noun_matches: declarations.length,
+    explicit_member_set_matches: complete.length,
+    cardinality_only_matches: cardinalityOnly.length,
+    malformed_explicit_member_sets: counterexamples.length,
     contradictions: contradictions.length,
   },
   complete_declarations: complete,
-  unresolved_matches: counterexamples,
+  cardinality_only_matches: cardinalityOnly,
+  malformed_explicit_member_sets: counterexamples,
   contradictions,
   decision: {
     can_seal: contradictions.length === 0 && counterexamples.length === 0 && complete.length > 0,
     reason: counterexamples.length
-      ? "The construction has unresolved matches; the rule remains discovery."
+      ? "An explicitly encoded member set disagrees with its cardinality; the rule remains discovery."
       : contradictions.length
         ? "Contradictions were found; the rule remains discovery."
-        : "All detected matches are complete and contradiction-free.",
+        : "Every explicitly encoded member-set match is complete and contradiction-free; cardinality-only statements are outside this narrow rule.",
   },
 };
 
