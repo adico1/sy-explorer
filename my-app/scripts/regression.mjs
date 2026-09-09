@@ -18,6 +18,7 @@ const wordContract = JSON.parse(fs.readFileSync(new URL("../src/sy.word-contract
 const lexicalAmbiguities = JSON.parse(fs.readFileSync(new URL("../src/sy.lexical-ambiguities.json", import.meta.url), "utf8"));
 const hyphenUnits = JSON.parse(fs.readFileSync(new URL("../src/sy.hyphen-units.json", import.meta.url), "utf8"));
 const internalQuoteUnits = JSON.parse(fs.readFileSync(new URL("../src/sy.internal-quote-units.json", import.meta.url), "utf8"));
+const sealedWordUnits = JSON.parse(fs.readFileSync(new URL("../src/sy.sealed-word-units.json", import.meta.url), "utf8"));
 const failures = [];
 const requireInvariant = (condition, name) => {
   if (!condition) failures.push(name);
@@ -125,6 +126,20 @@ requireInvariant(internalQuoteUnits.proof.exact_corpus_round_trip_after_overlay_
 requireInvariant(internalQuoteUnits.proof.no_non_internal_quote_words_emitted, "internal_quote_scope_limit");
 requireInvariant(internalQuoteUnits.proof.no_linguistic_subtype_inferred, "internal_quote_no_subtype_inference");
 requireInvariant(internalQuoteUnits.proof.deterministic_output, "internal_quote_deterministic");
+requireInvariant(sealedWordUnits.source.sha256 === sourceHash, "sealed_words_source_hash");
+requireInvariant(sealedWordUnits.status === "sealed", "sealed_words_sealed");
+requireInvariant(sealedWordUnits.proof.exactly_ninety_four_signed_occurrences, "sealed_words_exact_count");
+requireInvariant(sealedWordUnits.proof.every_input_occurrence_included_exactly_once, "sealed_words_input_coverage");
+requireInvariant(sealedWordUnits.proof.no_occurrence_ranges_overlap, "sealed_words_no_overlap");
+requireInvariant(sealedWordUnits.proof.source_order_preserved, "sealed_words_source_order");
+requireInvariant(sealedWordUnits.proof.every_occurrence_matches_exact_source_range, "sealed_words_source_ranges");
+requireInvariant(sealedWordUnits.proof.every_occurrence_identifies_its_recognition_rule, "sealed_words_rules_present");
+requireInvariant(sealedWordUnits.proof.exact_pointed_frequency_counts_cover_every_occurrence, "sealed_words_frequency_coverage");
+requireInvariant(sealedWordUnits.proof.exact_corpus_round_trip_after_overlay_removal, "sealed_words_round_trip");
+requireInvariant(sealedWordUnits.proof.no_new_word_occurrences_emitted, "sealed_words_no_new_words");
+requireInvariant(sealedWordUnits.proof.no_unpointed_identity_emitted, "sealed_words_no_unpointed_identity");
+requireInvariant(sealedWordUnits.proof.no_prefix_analysis_or_semantic_interpretation_emitted, "sealed_words_no_semantics");
+requireInvariant(sealedWordUnits.proof.deterministic_output, "sealed_words_deterministic");
 requireInvariant(corpus.validation.valid, "corpus_validation");
 requireInvariant(corpus.input === sourceText, "lossless_source");
 requireInvariant(corpus.stats.occurrences === 1673, "occurrence_count");

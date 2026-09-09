@@ -27,6 +27,8 @@
     "test:hyphen-units": "node scripts/generate-hyphen-units.mjs --check",
     "generate:internal-quote-units": "node scripts/generate-internal-quote-units.mjs",
     "test:internal-quote-units": "node scripts/generate-internal-quote-units.mjs --check",
+    "generate:sealed-word-units": "node scripts/generate-sealed-word-units.mjs",
+    "test:sealed-word-units": "node scripts/generate-sealed-word-units.mjs --check",
     "test:regression": "node scripts/regression.mjs",
     "preview": "vite preview"
   },
