@@ -165,7 +165,8 @@ export function createConverter(spec) {
           text,
           occurrence_ids,
           evidence: "observed",
-          boundary_basis: "source_line_break",
+          boundary_basis: "authoritative_br",
+          boundary_authority: "user_interpretation",
         };
         records.push(record);
         const seen = new Set();
@@ -344,7 +345,9 @@ export function createConverter(spec) {
           chapter_label: raw.chapter,
           unit_label: raw.label,
           boundary_basis: "input_markup",
-          boundary_evidence: "observed",
+          boundary_meaning: "authoritative_reading_group_from_consecutive_br",
+          boundary_authority: "user_interpretation",
+          boundary_evidence: "sealed",
           source: { text: extracted.source, language: spec.language, evidence: "observed" },
           editorial_notes: extracted.editorial,
           tokens: [],
@@ -377,9 +380,20 @@ export function createConverter(spec) {
         local_copy: {
           format: "tsx",
           text: input,
-          equivalence_to_canonical: "not_yet_verified",
+          status: spec.source.local_edition.status,
+          sha256: spec.source.local_edition.sha256,
+          hash_verification: "verified_at_build_time",
+          equivalence_to_canonical: spec.source.local_edition.textual_equivalence,
+          niqqud: spec.source.local_edition.niqqud,
+          br_boundaries: spec.source.local_edition.br_boundaries,
           evidence: "observed",
         },
+      },
+      reading_specification: spec.reading_specification,
+      seal: {
+        status: "sealed",
+        source_sha256: spec.source.local_edition.sha256,
+        specification_version: spec.reading_specification.version,
       },
       axiom: spec.axiom,
       stats: {
