@@ -11,6 +11,7 @@ const sourceMap = JSON.parse(fs.readFileSync(new URL("../src/sy.source-map.json"
 const readingUnits = JSON.parse(fs.readFileSync(new URL("../src/sy.reading-units.json", import.meta.url), "utf8"));
 const readingHierarchy = JSON.parse(fs.readFileSync(new URL("../src/sy.reading-hierarchy.json", import.meta.url), "utf8"));
 const textProjection = JSON.parse(fs.readFileSync(new URL("../src/sy.text-projection.json", import.meta.url), "utf8"));
+const textContext = JSON.parse(fs.readFileSync(new URL("../src/sy.text-context.json", import.meta.url), "utf8"));
 const failures = [];
 const requireInvariant = (condition, name) => {
   if (!condition) failures.push(name);
@@ -47,6 +48,16 @@ requireInvariant(textProjection.proof.every_fragment_matches_source_range, "text
 requireInvariant(textProjection.proof.exact_text_node_stream_round_trip, "text_projection_round_trip");
 requireInvariant(textProjection.proof.every_reading_unit_projected_exactly_once, "text_projection_unit_coverage");
 requireInvariant(textProjection.proof.deterministic_output, "text_projection_deterministic");
+requireInvariant(textContext.source.sha256 === sourceHash, "text_context_source_hash");
+requireInvariant(textContext.status === "sealed", "text_context_sealed");
+requireInvariant(textContext.semantic_status === "none", "text_context_has_no_semantics");
+requireInvariant(textContext.corpus_scope_status === "undecided", "text_context_scope_undecided");
+requireInvariant(textContext.proof.every_text_node_mapped_exactly_once, "text_context_node_coverage");
+requireInvariant(textContext.proof.every_jsx_element_closed, "text_context_elements_closed");
+requireInvariant(textContext.proof.every_ancestor_reference_resolves, "text_context_ancestors");
+requireInvariant(textContext.proof.every_projection_reference_resolves, "text_context_projection_refs");
+requireInvariant(textContext.proof.every_corpus_decision_remains_unset, "text_context_no_scope_invention");
+requireInvariant(textContext.proof.deterministic_output, "text_context_deterministic");
 requireInvariant(corpus.validation.valid, "corpus_validation");
 requireInvariant(corpus.input === sourceText, "lossless_source");
 requireInvariant(corpus.stats.occurrences === 1673, "occurrence_count");
