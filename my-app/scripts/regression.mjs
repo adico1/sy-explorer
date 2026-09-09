@@ -19,6 +19,7 @@ const lexicalAmbiguities = JSON.parse(fs.readFileSync(new URL("../src/sy.lexical
 const hyphenUnits = JSON.parse(fs.readFileSync(new URL("../src/sy.hyphen-units.json", import.meta.url), "utf8"));
 const internalQuoteUnits = JSON.parse(fs.readFileSync(new URL("../src/sy.internal-quote-units.json", import.meta.url), "utf8"));
 const sealedWordUnits = JSON.parse(fs.readFileSync(new URL("../src/sy.sealed-word-units.json", import.meta.url), "utf8"));
+const lexicalCoverage = JSON.parse(fs.readFileSync(new URL("../src/sy.lexical-coverage.json", import.meta.url), "utf8"));
 const failures = [];
 const requireInvariant = (condition, name) => {
   if (!condition) failures.push(name);
@@ -140,6 +141,19 @@ requireInvariant(sealedWordUnits.proof.no_new_word_occurrences_emitted, "sealed_
 requireInvariant(sealedWordUnits.proof.no_unpointed_identity_emitted, "sealed_words_no_unpointed_identity");
 requireInvariant(sealedWordUnits.proof.no_prefix_analysis_or_semantic_interpretation_emitted, "sealed_words_no_semantics");
 requireInvariant(sealedWordUnits.proof.deterministic_output, "sealed_words_deterministic");
+requireInvariant(lexicalCoverage.source.sha256 === sourceHash, "lexical_coverage_source_hash");
+requireInvariant(lexicalCoverage.status === "sealed", "lexical_coverage_sealed");
+requireInvariant(lexicalCoverage.semantic_status === "coverage_only", "lexical_coverage_no_semantics");
+requireInvariant(lexicalCoverage.proof.every_corpus_code_unit_covered_exactly_once, "lexical_coverage_exact_coverage");
+requireInvariant(lexicalCoverage.proof.exact_corpus_stream_round_trip, "lexical_coverage_round_trip");
+requireInvariant(lexicalCoverage.proof.every_segment_matches_exact_source_range, "lexical_coverage_source_ranges");
+requireInvariant(lexicalCoverage.proof.segments_preserve_source_order_without_fragment_gaps, "lexical_coverage_order_and_gaps");
+requireInvariant(lexicalCoverage.proof.exactly_four_allowed_categories, "lexical_coverage_categories");
+requireInvariant(lexicalCoverage.proof.all_ninety_four_sealed_words_preserved_exactly_once, "lexical_coverage_words_preserved");
+requireInvariant(lexicalCoverage.proof.no_new_words_or_candidates_emitted, "lexical_coverage_no_new_words");
+requireInvariant(lexicalCoverage.proof.all_nonword_segments_uninterpreted, "lexical_coverage_nonwords_uninterpreted");
+requireInvariant(lexicalCoverage.proof.category_counts_cover_corpus, "lexical_coverage_counts");
+requireInvariant(lexicalCoverage.proof.deterministic_output, "lexical_coverage_deterministic");
 requireInvariant(corpus.validation.valid, "corpus_validation");
 requireInvariant(corpus.input === sourceText, "lossless_source");
 requireInvariant(corpus.stats.occurrences === 1673, "occurrence_count");

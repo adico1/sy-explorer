@@ -29,6 +29,8 @@
     "test:internal-quote-units": "node scripts/generate-internal-quote-units.mjs --check",
     "generate:sealed-word-units": "node scripts/generate-sealed-word-units.mjs",
     "test:sealed-word-units": "node scripts/generate-sealed-word-units.mjs --check",
+    "generate:lexical-coverage": "node scripts/generate-lexical-coverage.mjs",
+    "test:lexical-coverage": "node scripts/generate-lexical-coverage.mjs --check",
     "test:regression": "node scripts/regression.mjs",
     "preview": "vite preview"
   },
