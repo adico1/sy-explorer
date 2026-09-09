@@ -1,7 +1,7 @@
 {
   "$schema": "./sy.converter-spec.schema.json",
   "id": "sy.evidence-corpus",
-  "version": "0.12.9",
+  "version": "0.12.10",
   "language": "he",
   "source": {
     "authority": "sefaria_source",
@@ -144,6 +144,7 @@
     { "id": "corpus.sealed_working_text", "status": "active", "artifact": "src/sy.corpus-text.json", "proof": "exact_included_text_stream" },
     { "id": "lexicon.partial_word_contract", "status": "active", "artifact": "src/sy.word-contract.json", "proof": "approved_rules_and_unknowns_explicit" },
     { "id": "lexicon.lexical_ambiguity_inventory", "status": "active", "artifact": "src/sy.lexical-ambiguities.json", "proof": "exact_positional_observations_without_tokenization" },
+    { "id": "lexicon.sealed_hyphen_word_units", "status": "active", "artifact": "src/sy.hyphen-units.json", "proof": "all_hyphen_occurrences_assigned_once_and_exact_corpus_round_trip" },
     { "id": "corpus.name_occurrences", "status": "active" },
     { "id": "corpus.occurrence_counts", "status": "active" },
     { "id": "corpus.user_interpretations", "status": "active" },
@@ -234,6 +235,13 @@
         "statement": "Potentially relevant characters and diagnostic non-whitespace spans are recorded at exact source positions without emitting words, tokens, prefix boundaries or interpretations.",
         "authority": "deterministic_derivation_from_partial_user_contract",
         "artifact": "src/sy.lexical-ambiguities.json",
+        "status": "sealed"
+      },
+      {
+        "id": "lexicon.sealed_hyphen_word_units",
+        "statement": "All eight hyphen-connected pointed Hebrew forms in the sealed corpus are one word each, preserve their exact source surface and range, and exclude adjacent punctuation whose role remains unknown.",
+        "authority": "deterministic_derivation_from_user_hyphen_rule",
+        "artifact": "src/sy.hyphen-units.json",
         "status": "sealed"
       },
       {

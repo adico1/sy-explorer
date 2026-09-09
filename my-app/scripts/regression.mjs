@@ -16,6 +16,7 @@ const corpusScope = JSON.parse(fs.readFileSync(new URL("../src/sy.corpus-scope.j
 const corpusText = JSON.parse(fs.readFileSync(new URL("../src/sy.corpus-text.json", import.meta.url), "utf8"));
 const wordContract = JSON.parse(fs.readFileSync(new URL("../src/sy.word-contract.json", import.meta.url), "utf8"));
 const lexicalAmbiguities = JSON.parse(fs.readFileSync(new URL("../src/sy.lexical-ambiguities.json", import.meta.url), "utf8"));
+const hyphenUnits = JSON.parse(fs.readFileSync(new URL("../src/sy.hyphen-units.json", import.meta.url), "utf8"));
 const failures = [];
 const requireInvariant = (condition, name) => {
   if (!condition) failures.push(name);
@@ -100,6 +101,17 @@ requireInvariant(lexicalAmbiguities.proof.exact_corpus_stream_round_trip, "lexic
 requireInvariant(lexicalAmbiguities.proof.all_contract_open_decisions_remain_unknown, "lexical_inventory_unknowns_preserved");
 requireInvariant(lexicalAmbiguities.proof.no_lexical_units_emitted, "lexical_inventory_no_lexical_units");
 requireInvariant(lexicalAmbiguities.proof.deterministic_output, "lexical_inventory_deterministic");
+requireInvariant(hyphenUnits.source.sha256 === sourceHash, "hyphen_units_source_hash");
+requireInvariant(hyphenUnits.status === "sealed", "hyphen_units_sealed");
+requireInvariant(hyphenUnits.proof.exactly_eight_hyphen_units, "hyphen_units_exact_count");
+requireInvariant(hyphenUnits.proof.every_recorded_hyphen_assigned_exactly_once, "hyphen_units_connector_coverage");
+requireInvariant(hyphenUnits.proof.every_unit_matches_exact_source_range, "hyphen_units_source_ranges");
+requireInvariant(hyphenUnits.proof.every_unit_has_content_on_both_sides, "hyphen_units_both_sides");
+requireInvariant(hyphenUnits.proof.no_unit_contains_whitespace, "hyphen_units_no_whitespace");
+requireInvariant(hyphenUnits.proof.adjacent_punctuation_excluded_and_preserved, "hyphen_units_punctuation_preserved");
+requireInvariant(hyphenUnits.proof.exact_corpus_round_trip_after_overlay_removal, "hyphen_units_round_trip");
+requireInvariant(hyphenUnits.proof.no_non_hyphen_words_emitted, "hyphen_units_scope_limit");
+requireInvariant(hyphenUnits.proof.deterministic_output, "hyphen_units_deterministic");
 requireInvariant(corpus.validation.valid, "corpus_validation");
 requireInvariant(corpus.input === sourceText, "lossless_source");
 requireInvariant(corpus.stats.occurrences === 1673, "occurrence_count");

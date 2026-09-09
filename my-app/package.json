@@ -23,6 +23,8 @@
     "test:corpus-text": "node scripts/generate-corpus-text.mjs --check",
     "generate:lexical-ambiguities": "node scripts/generate-lexical-ambiguities.mjs",
     "test:lexical-ambiguities": "node scripts/generate-lexical-ambiguities.mjs --check",
+    "generate:hyphen-units": "node scripts/generate-hyphen-units.mjs",
+    "test:hyphen-units": "node scripts/generate-hyphen-units.mjs --check",
     "test:regression": "node scripts/regression.mjs",
     "preview": "vite preview"
   },
