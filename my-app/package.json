@@ -11,6 +11,8 @@
     "test:source-map": "node scripts/generate-source-map.mjs --check",
     "generate:reading-units": "node scripts/generate-reading-units.mjs",
     "test:reading-units": "node scripts/generate-reading-units.mjs --check",
+    "generate:reading-hierarchy": "node scripts/generate-reading-hierarchy.mjs",
+    "test:reading-hierarchy": "node scripts/generate-reading-hierarchy.mjs --check",
     "test:regression": "node scripts/regression.mjs",
     "preview": "vite preview"
   },

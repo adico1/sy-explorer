@@ -1,0 +1,5175 @@
+{
+  "id": "sy.jsx-reading-hierarchy",
+  "version": "1.0.0",
+  "status": "sealed",
+  "semantic_status": "none",
+  "source": {
+    "file": "src/SeferYetzirah.tsx",
+    "sha256": "868e1cadf357fd6b868bfa14d9694e55623186354b1a456dd3a45bb48f4864dd",
+    "source_map_sha256": "1df99b7ecb4a3b38b46f849ff0a8239c89373195d8d04853efdc7425e2691949",
+    "reading_units_sha256": "8f2c6c99762f00c249e45bb7673457acc07e11c8b9b527a3e9149748153ec019"
+  },
+  "rules": {
+    "containment": "literal_open_and_close_jsx_tags",
+    "heading_context": "latest_preceding_closed_heading_in_source_order",
+    "h3_reset": "on_each_closed_h2",
+    "interpretation": "forbidden"
+  },
+  "proof": {
+    "every_source_map_node_processed_exactly_once": true,
+    "every_tracked_element_closed": true,
+    "every_reading_unit_assigned_exactly_once": true,
+    "every_reference_resolves": true,
+    "deterministic_output": true,
+    "section_count": 6,
+    "h1_count": 1,
+    "h2_count": 6,
+    "h3_count": 20,
+    "reading_unit_assignment_count": 385
+  },
+  "elements": [
+    {
+      "id": "heading.h1.0001",
+      "tag_name": "h1",
+      "semantic_status": "none",
+      "open_node_id": "jsx.00005",
+      "close_node_id": "jsx.00007",
+      "source_code_unit_range": {
+        "start": 125,
+        "end": 151
+      },
+      "text_node_ids": [
+        "jsx.00006"
+      ],
+      "text_raw": "סֵפֶר הַיְּצִירָה",
+      "text_raw_sha256": "69c56f48824f7266c65a26dd0aa299915e19482f4d05f093c3b65f9a28007ae7"
+    },
+    {
+      "id": "section.0001",
+      "tag_name": "section",
+      "semantic_status": "none",
+      "open_node_id": "jsx.00013",
+      "close_node_id": "jsx.00252",
+      "source_code_unit_range": {
+        "start": 192,
+        "end": 5224
+      },
+      "text_node_ids": [],
+      "text_raw": "",
+      "text_raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": "heading.h2.0001",
+      "tag_name": "h2",
+      "semantic_status": "none",
+      "open_node_id": "jsx.00015",
+      "close_node_id": "jsx.00017",
+      "source_code_unit_range": {
+        "start": 212,
+        "end": 229
+      },
+      "text_node_ids": [
+        "jsx.00016"
+      ],
+      "text_raw": "פֶּרֶק 1",
+      "text_raw_sha256": "5523f1a572058de25a3559bbbefe890802380739bab003228779bbe0e5cb297f"
+    },
+    {
+      "id": "heading.h3.0001",
+      "tag_name": "h3",
+      "semantic_status": "none",
+      "open_node_id": "jsx.00019",
+      "close_node_id": "jsx.00021",
+      "source_code_unit_range": {
+        "start": 240,
+        "end": 258
+      },
+      "text_node_ids": [
+        "jsx.00020"
+      ],
+      "text_raw": "פָּסוּק 1",
+      "text_raw_sha256": "87bff9c8f1b45dd79afc929546dbbe880cf7adad1caf991bd0016ab91db879a7"
+    },
+    {
+      "id": "heading.h3.0002",
+      "tag_name": "h3",
+      "semantic_status": "none",
+      "open_node_id": "jsx.00052",
+      "close_node_id": "jsx.00054",
+      "source_code_unit_range": {
+        "start": 722,
+        "end": 740
+      },
+      "text_node_ids": [
+        "jsx.00053"
+      ],
+      "text_raw": "פָּסוּק 2",
+      "text_raw_sha256": "18de910883ff3a145e7c1f6382fdf3725fdb7556818c5681e0113ef7c2cba4a1"
+    },
+    {
+      "id": "heading.h3.0003",
+      "tag_name": "h3",
+      "semantic_status": "none",
+      "open_node_id": "jsx.00066",
+      "close_node_id": "jsx.00068",
+      "source_code_unit_range": {
+        "start": 973,
+        "end": 991
+      },
+      "text_node_ids": [
+        "jsx.00067"
+      ],
+      "text_raw": "פָּסוּק 3",
+      "text_raw_sha256": "3ca68327651720c463335539cd73fbb5e62e4dc46424db64be6e4ca990ce6c23"
+    },
+    {
+      "id": "heading.h3.0004",
+      "tag_name": "h3",
+      "semantic_status": "none",
+      "open_node_id": "jsx.00080",
+      "close_node_id": "jsx.00082",
+      "source_code_unit_range": {
+        "start": 1241,
+        "end": 1259
+      },
+      "text_node_ids": [
+        "jsx.00081"
+      ],
+      "text_raw": "פָּסוּק 4",
+      "text_raw_sha256": "42b2bac3663eab26211c64025bcbebbfc4b4b500570985f429c26af3f8b0e35c"
+    },
+    {
+      "id": "heading.h3.0005",
+      "tag_name": "h3",
+      "semantic_status": "none",
+      "open_node_id": "jsx.00096",
+      "close_node_id": "jsx.00098",
+      "source_code_unit_range": {
+        "start": 1564,
+        "end": 1582
+      },
+      "text_node_ids": [
+        "jsx.00097"
+      ],
+      "text_raw": "פָּסוּק 5",
+      "text_raw_sha256": "b9e239af5222ea612861c0468168f6df90b1801e33de4b19b6654e2619d2c9c8"
+    },
+    {
+      "id": "heading.h3.0006",
+      "tag_name": "h3",
+      "semantic_status": "none",
+      "open_node_id": "jsx.00124",
+      "close_node_id": "jsx.00126",
+      "source_code_unit_range": {
+        "start": 2078,
+        "end": 2096
+      },
+      "text_node_ids": [
+        "jsx.00125"
+      ],
+      "text_raw": "פָּסוּק 6",
+      "text_raw_sha256": "069ccc948e39a7041c6bab21f775699a94f3d60403b806702e72f826a41d9f3c"
+    },
+    {
+      "id": "heading.h3.0007",
+      "tag_name": "h3",
+      "semantic_status": "none",
+      "open_node_id": "jsx.00140",
+      "close_node_id": "jsx.00142",
+      "source_code_unit_range": {
+        "start": 2405,
+        "end": 2423
+      },
+      "text_node_ids": [
+        "jsx.00141"
+      ],
+      "text_raw": "פָּסוּק 7",
+      "text_raw_sha256": "963d094f0f9715e5d7297657390f58c870153a050e762108443af75c13dd96db"
+    },
+    {
+      "id": "heading.h3.0008",
+      "tag_name": "h3",
+      "semantic_status": "none",
+      "open_node_id": "jsx.00156",
+      "close_node_id": "jsx.00158",
+      "source_code_unit_range": {
+        "start": 2719,
+        "end": 2737
+      },
+      "text_node_ids": [
+        "jsx.00157"
+      ],
+      "text_raw": "פָּסוּק 8",
+      "text_raw_sha256": "6f70a2068f300981301f41147b6f68a93c9059873109ad85b59412c2028ba92c"
+    },
+    {
+      "id": "heading.h3.0009",
+      "tag_name": "h3",
+      "semantic_status": "none",
+      "open_node_id": "jsx.00168",
+      "close_node_id": "jsx.00170",
+      "source_code_unit_range": {
+        "start": 3004,
+        "end": 3022
+      },
+      "text_node_ids": [
+        "jsx.00169"
+      ],
+      "text_raw": "פָּסוּק 9",
+      "text_raw_sha256": "695ff61d89380dcac02b700775f13183059afa633800301c4d571298fcade86c"
+    },
+    {
+      "id": "heading.h3.0010",
+      "tag_name": "h3",
+      "semantic_status": "none",
+      "open_node_id": "jsx.00174",
+      "close_node_id": "jsx.00176",
+      "source_code_unit_range": {
+        "start": 3078,
+        "end": 3098
+      },
+      "text_node_ids": [
+        "jsx.00175"
+      ],
+      "text_raw": "פָּסוּק 9.1",
+      "text_raw_sha256": "528588b27006df84c797c1524610eb0e02f8ab9dae016f654e522e65611fc09a"
+    },
+    {
+      "id": "heading.h3.0011",
+      "tag_name": "h3",
+      "semantic_status": "none",
+      "open_node_id": "jsx.00180",
+      "close_node_id": "jsx.00182",
+      "source_code_unit_range": {
+        "start": 3250,
+        "end": 3270
+      },
+      "text_node_ids": [
+        "jsx.00181"
+      ],
+      "text_raw": "פָּסוּק 9.2",
+      "text_raw_sha256": "c8c725c9992c3d8930c88779263c4fffd093cf0515a68d7169c8c5a9fd5489e1"
+    },
+    {
+      "id": "heading.h3.0012",
+      "tag_name": "h3",
+      "semantic_status": "none",
+      "open_node_id": "jsx.00186",
+      "close_node_id": "jsx.00188",
+      "source_code_unit_range": {
+        "start": 3472,
+        "end": 3492
+      },
+      "text_node_ids": [
+        "jsx.00187"
+      ],
+      "text_raw": "פָּסוּק 9.3",
+      "text_raw_sha256": "1ff9fcf662a6fabaa4cf6233182334ea2d67304bb8fc0dd4ec9a55fd7c6a1786"
+    },
+    {
+      "id": "heading.h3.0013",
+      "tag_name": "h3",
+      "semantic_status": "none",
+      "open_node_id": "jsx.00192",
+      "close_node_id": "jsx.00194",
+      "source_code_unit_range": {
+        "start": 3670,
+        "end": 3690
+      },
+      "text_node_ids": [
+        "jsx.00193"
+      ],
+      "text_raw": "פָּסוּק 9.4",
+      "text_raw_sha256": "cbcbec144d1bfda721c17b48d6bda36594cb3b7ca99188d2b089dc868f9e60c3"
+    },
+    {
+      "id": "heading.h3.0014",
+      "tag_name": "h3",
+      "semantic_status": "none",
+      "open_node_id": "jsx.00199",
+      "close_node_id": "jsx.00201",
+      "source_code_unit_range": {
+        "start": 3943,
+        "end": 3963
+      },
+      "text_node_ids": [
+        "jsx.00200"
+      ],
+      "text_raw": "פָּסוּק 9.5",
+      "text_raw_sha256": "43978564ff52fbd05c23ac71ca72f2cade87f82aeb76f7d4255db391ae91688f"
+    },
+    {
+      "id": "heading.h3.0015",
+      "tag_name": "h3",
+      "semantic_status": "none",
+      "open_node_id": "jsx.00213",
+      "close_node_id": "jsx.00215",
+      "source_code_unit_range": {
+        "start": 4383,
+        "end": 4403
+      },
+      "text_node_ids": [
+        "jsx.00214"
+      ],
+      "text_raw": "פָּסוּק 9.6",
+      "text_raw_sha256": "bde0c8c3e0b029ffd0e94f2d0dc213b406e59ca46ff01aaae2c4b1831061217d"
+    },
+    {
+      "id": "heading.h3.0016",
+      "tag_name": "h3",
+      "semantic_status": "none",
+      "open_node_id": "jsx.00217",
+      "close_node_id": "jsx.00219",
+      "source_code_unit_range": {
+        "start": 4477,
+        "end": 4497
+      },
+      "text_node_ids": [
+        "jsx.00218"
+      ],
+      "text_raw": "פָּסוּק 9.7",
+      "text_raw_sha256": "90172cb8af70d356a7b48285f9f19294acb8bf5d68dbc7dc47cecdb00ffae5c8"
+    },
+    {
+      "id": "heading.h3.0017",
+      "tag_name": "h3",
+      "semantic_status": "none",
+      "open_node_id": "jsx.00221",
+      "close_node_id": "jsx.00223",
+      "source_code_unit_range": {
+        "start": 4573,
+        "end": 4593
+      },
+      "text_node_ids": [
+        "jsx.00222"
+      ],
+      "text_raw": "פָּסוּק 9.8",
+      "text_raw_sha256": "85380414f71e92f9a7485fde090e079c899fe2d0a28a61a54035e263ab1ccf5c"
+    },
+    {
+      "id": "heading.h3.0018",
+      "tag_name": "h3",
+      "semantic_status": "none",
+      "open_node_id": "jsx.00225",
+      "close_node_id": "jsx.00227",
+      "source_code_unit_range": {
+        "start": 4670,
+        "end": 4690
+      },
+      "text_node_ids": [
+        "jsx.00226"
+      ],
+      "text_raw": "פָּסוּק 9.9",
+      "text_raw_sha256": "6c49e1545392911f72b4618937f6f83d5ad650d58a0c256da5bb5f3a4172b50f"
+    },
+    {
+      "id": "heading.h3.0019",
+      "tag_name": "h3",
+      "semantic_status": "none",
+      "open_node_id": "jsx.00229",
+      "close_node_id": "jsx.00231",
+      "source_code_unit_range": {
+        "start": 4765,
+        "end": 4786
+      },
+      "text_node_ids": [
+        "jsx.00230"
+      ],
+      "text_raw": "פָּסוּק 9.10",
+      "text_raw_sha256": "f8f852754e027119a056f76899aa0225efc026715180b9099bc02548a57bfa9e"
+    },
+    {
+      "id": "heading.h3.0020",
+      "tag_name": "h3",
+      "semantic_status": "none",
+      "open_node_id": "jsx.00236",
+      "close_node_id": "jsx.00238",
+      "source_code_unit_range": {
+        "start": 4876,
+        "end": 4897
+      },
+      "text_node_ids": [
+        "jsx.00237"
+      ],
+      "text_raw": "פָּסוּק 9.11",
+      "text_raw_sha256": "9c9233c49ef222b54ab5c09571f72c8f93aaa732b72005e549d03563f2e39023"
+    },
+    {
+      "id": "section.0002",
+      "tag_name": "section",
+      "semantic_status": "none",
+      "open_node_id": "jsx.00254",
+      "close_node_id": "jsx.00382",
+      "source_code_unit_range": {
+        "start": 5233,
+        "end": 7793
+      },
+      "text_node_ids": [],
+      "text_raw": "",
+      "text_raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": "heading.h2.0002",
+      "tag_name": "h2",
+      "semantic_status": "none",
+      "open_node_id": "jsx.00256",
+      "close_node_id": "jsx.00258",
+      "source_code_unit_range": {
+        "start": 5253,
+        "end": 5267
+      },
+      "text_node_ids": [
+        "jsx.00257"
+      ],
+      "text_raw": "פרק 2",
+      "text_raw_sha256": "76b735a452d44186862990fe4cea7e32e428fb9f50ee7a5e09ec3f12fabd9d45"
+    },
+    {
+      "id": "section.0003",
+      "tag_name": "section",
+      "semantic_status": "none",
+      "open_node_id": "jsx.00384",
+      "close_node_id": "jsx.00492",
+      "source_code_unit_range": {
+        "start": 7802,
+        "end": 10110
+      },
+      "text_node_ids": [],
+      "text_raw": "",
+      "text_raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": "heading.h2.0003",
+      "tag_name": "h2",
+      "semantic_status": "none",
+      "open_node_id": "jsx.00386",
+      "close_node_id": "jsx.00388",
+      "source_code_unit_range": {
+        "start": 7822,
+        "end": 7836
+      },
+      "text_node_ids": [
+        "jsx.00387"
+      ],
+      "text_raw": "פרק 3",
+      "text_raw_sha256": "e87d229f256b8ad604c13026ce3baf6f0fdc5ccf2673f63b594ad3767b99d3ea"
+    },
+    {
+      "id": "section.0004",
+      "tag_name": "section",
+      "semantic_status": "none",
+      "open_node_id": "jsx.00494",
+      "close_node_id": "jsx.00630",
+      "source_code_unit_range": {
+        "start": 10119,
+        "end": 13952
+      },
+      "text_node_ids": [],
+      "text_raw": "",
+      "text_raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": "heading.h2.0004",
+      "tag_name": "h2",
+      "semantic_status": "none",
+      "open_node_id": "jsx.00496",
+      "close_node_id": "jsx.00498",
+      "source_code_unit_range": {
+        "start": 10139,
+        "end": 10153
+      },
+      "text_node_ids": [
+        "jsx.00497"
+      ],
+      "text_raw": "פרק 4",
+      "text_raw_sha256": "fc21b5431b3c703a713f9fcacbcb9e5b1f40dab1a04423f849b55f06ad3e2df7"
+    },
+    {
+      "id": "section.0005",
+      "tag_name": "section",
+      "semantic_status": "none",
+      "open_node_id": "jsx.00632",
+      "close_node_id": "jsx.00727",
+      "source_code_unit_range": {
+        "start": 13961,
+        "end": 17743
+      },
+      "text_node_ids": [],
+      "text_raw": "",
+      "text_raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": "heading.h2.0005",
+      "tag_name": "h2",
+      "semantic_status": "none",
+      "open_node_id": "jsx.00634",
+      "close_node_id": "jsx.00636",
+      "source_code_unit_range": {
+        "start": 13981,
+        "end": 13995
+      },
+      "text_node_ids": [
+        "jsx.00635"
+      ],
+      "text_raw": "פרק 5",
+      "text_raw_sha256": "bf6cb7df3e37a4849f49c837d6c43fb43a0506d25ae058fef6a11d783a23680f"
+    },
+    {
+      "id": "section.0006",
+      "tag_name": "section",
+      "semantic_status": "none",
+      "open_node_id": "jsx.00729",
+      "close_node_id": "jsx.00899",
+      "source_code_unit_range": {
+        "start": 17752,
+        "end": 21043
+      },
+      "text_node_ids": [],
+      "text_raw": "",
+      "text_raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": "heading.h2.0006",
+      "tag_name": "h2",
+      "semantic_status": "none",
+      "open_node_id": "jsx.00731",
+      "close_node_id": "jsx.00733",
+      "source_code_unit_range": {
+        "start": 17772,
+        "end": 17786
+      },
+      "text_node_ids": [
+        "jsx.00732"
+      ],
+      "text_raw": "פרק 6",
+      "text_raw_sha256": "7deb799f1ecfdbe85f6a31577e44bc026b249ff87dbb74aa7a4ab3e901f0e871"
+    }
+  ],
+  "reading_unit_assignments": [
+    {
+      "reading_unit_id": "reading-unit.0001",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0001"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0001",
+        "h3": "heading.h3.0001"
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0002",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0001"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0001",
+        "h3": "heading.h3.0001"
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0003",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0001"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0001",
+        "h3": "heading.h3.0001"
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0004",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0001"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0001",
+        "h3": "heading.h3.0001"
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0005",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0001"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0001",
+        "h3": "heading.h3.0001"
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0006",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0001"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0001",
+        "h3": "heading.h3.0001"
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0007",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0001"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0001",
+        "h3": "heading.h3.0001"
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0008",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0001"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0001",
+        "h3": "heading.h3.0001"
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0009",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0001"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0001",
+        "h3": "heading.h3.0001"
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0010",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0001"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0001",
+        "h3": "heading.h3.0001"
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0011",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0001"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0001",
+        "h3": "heading.h3.0001"
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0012",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0001"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0001",
+        "h3": "heading.h3.0001"
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0013",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0001"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0001",
+        "h3": "heading.h3.0001"
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0014",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0001"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0001",
+        "h3": "heading.h3.0001"
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0015",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0001"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0001",
+        "h3": "heading.h3.0001"
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0016",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0001"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0001",
+        "h3": "heading.h3.0001"
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0017",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0001"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0001",
+        "h3": "heading.h3.0001"
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0018",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0001"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0001",
+        "h3": "heading.h3.0002"
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0019",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0001"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0001",
+        "h3": "heading.h3.0002"
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0020",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0001"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0001",
+        "h3": "heading.h3.0002"
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0021",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0001"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0001",
+        "h3": "heading.h3.0002"
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0022",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0001"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0001",
+        "h3": "heading.h3.0002"
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0023",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0001"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0001",
+        "h3": "heading.h3.0003"
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0024",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0001"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0001",
+        "h3": "heading.h3.0003"
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0025",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0001"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0001",
+        "h3": "heading.h3.0003"
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0026",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0001"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0001",
+        "h3": "heading.h3.0003"
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0027",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0001"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0001",
+        "h3": "heading.h3.0003"
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0028",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0001"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0001",
+        "h3": "heading.h3.0004"
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0029",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0001"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0001",
+        "h3": "heading.h3.0004"
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0030",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0001"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0001",
+        "h3": "heading.h3.0004"
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0031",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0001"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0001",
+        "h3": "heading.h3.0004"
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0032",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0001"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0001",
+        "h3": "heading.h3.0004"
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0033",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0001"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0001",
+        "h3": "heading.h3.0004"
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0034",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0001"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0001",
+        "h3": "heading.h3.0005"
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0035",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0001"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0001",
+        "h3": "heading.h3.0005"
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0036",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0001"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0001",
+        "h3": "heading.h3.0005"
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0037",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0001"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0001",
+        "h3": "heading.h3.0005"
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0038",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0001"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0001",
+        "h3": "heading.h3.0005"
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0039",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0001"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0001",
+        "h3": "heading.h3.0005"
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0040",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0001"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0001",
+        "h3": "heading.h3.0005"
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0041",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0001"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0001",
+        "h3": "heading.h3.0005"
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0042",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0001"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0001",
+        "h3": "heading.h3.0005"
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0043",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0001"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0001",
+        "h3": "heading.h3.0005"
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0044",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0001"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0001",
+        "h3": "heading.h3.0005"
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0045",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0001"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0001",
+        "h3": "heading.h3.0005"
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0046",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0001"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0001",
+        "h3": "heading.h3.0006"
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0047",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0001"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0001",
+        "h3": "heading.h3.0006"
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0048",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0001"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0001",
+        "h3": "heading.h3.0006"
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0049",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0001"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0001",
+        "h3": "heading.h3.0006"
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0050",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0001"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0001",
+        "h3": "heading.h3.0006"
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0051",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0001"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0001",
+        "h3": "heading.h3.0006"
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0052",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0001"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0001",
+        "h3": "heading.h3.0007"
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0053",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0001"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0001",
+        "h3": "heading.h3.0007"
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0054",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0001"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0001",
+        "h3": "heading.h3.0007"
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0055",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0001"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0001",
+        "h3": "heading.h3.0007"
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0056",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0001"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0001",
+        "h3": "heading.h3.0007"
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0057",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0001"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0001",
+        "h3": "heading.h3.0007"
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0058",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0001"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0001",
+        "h3": "heading.h3.0008"
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0059",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0001"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0001",
+        "h3": "heading.h3.0008"
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0060",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0001"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0001",
+        "h3": "heading.h3.0008"
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0061",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0001"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0001",
+        "h3": "heading.h3.0008"
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0062",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0001"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0001",
+        "h3": "heading.h3.0009"
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0063",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0001"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0001",
+        "h3": "heading.h3.0010"
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0064",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0001"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0001",
+        "h3": "heading.h3.0011"
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0065",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0001"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0001",
+        "h3": "heading.h3.0012"
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0066",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0001"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0001",
+        "h3": "heading.h3.0013"
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0067",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0001"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0001",
+        "h3": "heading.h3.0013"
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0068",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0001"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0001",
+        "h3": "heading.h3.0014"
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0069",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0001"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0001",
+        "h3": "heading.h3.0014"
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0070",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0001"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0001",
+        "h3": "heading.h3.0014"
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0071",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0001"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0001",
+        "h3": "heading.h3.0014"
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0072",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0001"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0001",
+        "h3": "heading.h3.0019"
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0073",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0001"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0001",
+        "h3": "heading.h3.0019"
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0074",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0001"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0001",
+        "h3": "heading.h3.0020"
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0075",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0001"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0001",
+        "h3": "heading.h3.0020"
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0076",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0001"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0001",
+        "h3": "heading.h3.0020"
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0077",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0001"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0001",
+        "h3": "heading.h3.0020"
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0078",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0001"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0001",
+        "h3": "heading.h3.0020"
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0079",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0001",
+        "section.0002"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0002",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0080",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0002"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0002",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0081",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0002"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0002",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0082",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0002"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0002",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0083",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0002"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0002",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0084",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0002"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0002",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0085",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0002"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0002",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0086",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0002"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0002",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0087",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0002"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0002",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0088",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0002"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0002",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0089",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0002"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0002",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0090",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0002"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0002",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0091",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0002"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0002",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0092",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0002"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0002",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0093",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0002"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0002",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0094",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0002"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0002",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0095",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0002"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0002",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0096",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0002"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0002",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0097",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0002"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0002",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0098",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0002"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0002",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0099",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0002"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0002",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0100",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0002"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0002",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0101",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0002"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0002",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0102",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0002"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0002",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0103",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0002"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0002",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0104",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0002"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0002",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0105",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0002"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0002",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0106",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0002"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0002",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0107",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0002"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0002",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0108",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0002"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0002",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0109",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0002"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0002",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0110",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0002"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0002",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0111",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0002"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0002",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0112",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0002"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0002",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0113",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0002"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0002",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0114",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0002"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0002",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0115",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0002"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0002",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0116",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0002"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0002",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0117",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0002"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0002",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0118",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0002"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0002",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0119",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0002"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0002",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0120",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0002"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0002",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0121",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0002"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0002",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0122",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0002"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0002",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0123",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0002"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0002",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0124",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0002"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0002",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0125",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0002"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0002",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0126",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0002"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0002",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0127",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0002"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0002",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0128",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0002"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0002",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0129",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0002"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0002",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0130",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0002"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0002",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0131",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0002"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0002",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0132",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0002"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0002",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0133",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0002"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0002",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0134",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0002"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0002",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0135",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0002"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0002",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0136",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0002"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0002",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0137",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0002"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0002",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0138",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0002"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0002",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0139",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0002"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0002",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0140",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0002"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0002",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0141",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0002"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0002",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0142",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0002",
+        "section.0003"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0003",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0143",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0003"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0003",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0144",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0003"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0003",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0145",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0003"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0003",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0146",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0003"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0003",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0147",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0003"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0003",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0148",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0003"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0003",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0149",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0003"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0003",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0150",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0003"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0003",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0151",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0003"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0003",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0152",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0003"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0003",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0153",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0003"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0003",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0154",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0003"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0003",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0155",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0003"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0003",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0156",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0003"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0003",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0157",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0003"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0003",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0158",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0003"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0003",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0159",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0003"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0003",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0160",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0003"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0003",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0161",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0003"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0003",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0162",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0003"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0003",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0163",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0003"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0003",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0164",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0003"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0003",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0165",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0003"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0003",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0166",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0003"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0003",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0167",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0003"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0003",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0168",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0003"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0003",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0169",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0003"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0003",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0170",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0003"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0003",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0171",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0003"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0003",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0172",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0003"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0003",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0173",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0003"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0003",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0174",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0003"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0003",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0175",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0003"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0003",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0176",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0003"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0003",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0177",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0003"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0003",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0178",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0003"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0003",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0179",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0003"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0003",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0180",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0003"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0003",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0181",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0003"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0003",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0182",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0003"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0003",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0183",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0003"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0003",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0184",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0003"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0003",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0185",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0003"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0003",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0186",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0003"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0003",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0187",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0003"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0003",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0188",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0003"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0003",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0189",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0003"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0003",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0190",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0003"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0003",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0191",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0003"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0003",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0192",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0003",
+        "section.0004"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0004",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0193",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0004"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0004",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0194",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0004"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0004",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0195",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0004"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0004",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0196",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0004"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0004",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0197",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0004"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0004",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0198",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0004"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0004",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0199",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0004"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0004",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0200",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0004"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0004",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0201",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0004"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0004",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0202",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0004"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0004",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0203",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0004"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0004",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0204",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0004"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0004",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0205",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0004"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0004",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0206",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0004"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0004",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0207",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0004"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0004",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0208",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0004"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0004",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0209",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0004"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0004",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0210",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0004"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0004",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0211",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0004"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0004",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0212",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0004"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0004",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0213",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0004"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0004",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0214",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0004"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0004",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0215",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0004"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0004",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0216",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0004"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0004",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0217",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0004"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0004",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0218",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0004"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0004",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0219",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0004"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0004",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0220",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0004"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0004",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0221",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0004"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0004",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0222",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0004"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0004",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0223",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0004"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0004",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0224",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0004"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0004",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0225",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0004"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0004",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0226",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0004"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0004",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0227",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0004"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0004",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0228",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0004"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0004",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0229",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0004"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0004",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0230",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0004"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0004",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0231",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0004"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0004",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0232",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0004"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0004",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0233",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0004"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0004",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0234",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0004"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0004",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0235",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0004"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0004",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0236",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0004"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0004",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0237",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0004"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0004",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0238",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0004"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0004",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0239",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0004"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0004",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0240",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0004"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0004",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0241",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0004"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0004",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0242",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0004"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0004",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0243",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0004"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0004",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0244",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0004"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0004",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0245",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0004"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0004",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0246",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0004"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0004",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0247",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0004"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0004",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0248",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0004"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0004",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0249",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0004"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0004",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0250",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0004"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0004",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0251",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0004"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0004",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0252",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0004"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0004",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0253",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0004"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0004",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0254",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0004"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0004",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0255",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0004"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0004",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0256",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0004"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0004",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0257",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0004"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0004",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0258",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0004"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0004",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0259",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0004"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0004",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0260",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0004",
+        "section.0005"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0005",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0261",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0005"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0005",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0262",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0005"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0005",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0263",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0005"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0005",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0264",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0005"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0005",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0265",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0005"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0005",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0266",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0005"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0005",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0267",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0005"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0005",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0268",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0005"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0005",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0269",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0005"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0005",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0270",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0005"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0005",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0271",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0005"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0005",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0272",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0005"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0005",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0273",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0005"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0005",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0274",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0005"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0005",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0275",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0005"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0005",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0276",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0005"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0005",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0277",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0005"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0005",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0278",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0005"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0005",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0279",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0005"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0005",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0280",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0005"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0005",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0281",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0005"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0005",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0282",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0005"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0005",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0283",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0005"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0005",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0284",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0005"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0005",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0285",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0005"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0005",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0286",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0005"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0005",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0287",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0005"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0005",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0288",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0005"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0005",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0289",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0005"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0005",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0290",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0005"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0005",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0291",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0005"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0005",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0292",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0005"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0005",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0293",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0005"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0005",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0294",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0005"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0005",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0295",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0005"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0005",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0296",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0005"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0005",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0297",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0005"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0005",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0298",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0005"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0005",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0299",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0005"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0005",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0300",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0005"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0005",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0301",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0005"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0005",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0302",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0005"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0005",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0303",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0005"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0005",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0304",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0005"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0005",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0305",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0005"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0005",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0306",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0005"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0005",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0307",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0005",
+        "section.0006"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0006",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0308",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0006"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0006",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0309",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0006"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0006",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0310",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0006"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0006",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0311",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0006"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0006",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0312",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0006"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0006",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0313",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0006"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0006",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0314",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0006"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0006",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0315",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0006"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0006",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0316",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0006"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0006",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0317",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0006"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0006",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0318",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0006"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0006",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0319",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0006"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0006",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0320",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0006"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0006",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0321",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0006"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0006",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0322",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0006"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0006",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0323",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0006"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0006",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0324",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0006"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0006",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0325",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0006"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0006",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0326",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0006"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0006",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0327",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0006"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0006",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0328",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0006"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0006",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0329",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0006"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0006",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0330",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0006"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0006",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0331",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0006"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0006",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0332",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0006"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0006",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0333",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0006"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0006",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0334",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0006"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0006",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0335",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0006"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0006",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0336",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0006"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0006",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0337",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0006"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0006",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0338",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0006"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0006",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0339",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0006"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0006",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0340",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0006"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0006",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0341",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0006"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0006",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0342",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0006"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0006",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0343",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0006"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0006",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0344",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0006"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0006",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0345",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0006"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0006",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0346",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0006"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0006",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0347",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0006"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0006",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0348",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0006"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0006",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0349",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0006"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0006",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0350",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0006"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0006",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0351",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0006"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0006",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0352",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0006"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0006",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0353",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0006"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0006",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0354",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0006"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0006",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0355",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0006"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0006",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0356",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0006"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0006",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0357",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0006"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0006",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0358",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0006"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0006",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0359",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0006"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0006",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0360",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0006"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0006",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0361",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0006"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0006",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0362",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0006"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0006",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0363",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0006"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0006",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0364",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0006"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0006",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0365",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0006"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0006",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0366",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0006"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0006",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0367",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0006"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0006",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0368",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0006"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0006",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0369",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0006"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0006",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0370",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0006"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0006",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0371",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0006"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0006",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0372",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0006"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0006",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0373",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0006"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0006",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0374",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0006"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0006",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0375",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0006"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0006",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0376",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0006"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0006",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0377",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0006"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0006",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0378",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0006"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0006",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0379",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0006"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0006",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0380",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0006"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0006",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0381",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0006"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0006",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0382",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0006"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0006",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0383",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0006"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0006",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0384",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0006"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0006",
+        "h3": null
+      }
+    },
+    {
+      "reading_unit_id": "reading-unit.0385",
+      "semantic_status": "none",
+      "containing_section_ids": [
+        "section.0006"
+      ],
+      "latest_heading_in_source_order": {
+        "h1": "heading.h1.0001",
+        "h2": "heading.h2.0006",
+        "h3": null
+      }
+    }
+  ]
+}

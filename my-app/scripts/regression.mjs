@@ -9,6 +9,7 @@ const sourceHash = crypto.createHash("sha256").update(source).digest("hex");
 const corpus = createConverter(spec)(sourceText);
 const sourceMap = JSON.parse(fs.readFileSync(new URL("../src/sy.source-map.json", import.meta.url), "utf8"));
 const readingUnits = JSON.parse(fs.readFileSync(new URL("../src/sy.reading-units.json", import.meta.url), "utf8"));
+const readingHierarchy = JSON.parse(fs.readFileSync(new URL("../src/sy.reading-hierarchy.json", import.meta.url), "utf8"));
 const failures = [];
 const requireInvariant = (condition, name) => {
   if (!condition) failures.push(name);
@@ -29,6 +30,14 @@ requireInvariant(readingUnits.proof.every_br_used_exactly_once_as_a_boundary, "r
 requireInvariant(readingUnits.proof.exact_root_round_trip, "reading_units_round_trip");
 requireInvariant(readingUnits.proof.deterministic_output, "reading_units_deterministic");
 requireInvariant(readingUnits.proof.stable_ordinal_ids, "reading_units_stable_ids");
+requireInvariant(readingHierarchy.source.sha256 === sourceHash, "reading_hierarchy_source_hash");
+requireInvariant(readingHierarchy.status === "sealed", "reading_hierarchy_sealed");
+requireInvariant(readingHierarchy.semantic_status === "none", "reading_hierarchy_has_no_semantics");
+requireInvariant(readingHierarchy.proof.every_source_map_node_processed_exactly_once, "reading_hierarchy_node_coverage");
+requireInvariant(readingHierarchy.proof.every_tracked_element_closed, "reading_hierarchy_elements_closed");
+requireInvariant(readingHierarchy.proof.every_reading_unit_assigned_exactly_once, "reading_hierarchy_unit_coverage");
+requireInvariant(readingHierarchy.proof.every_reference_resolves, "reading_hierarchy_references");
+requireInvariant(readingHierarchy.proof.deterministic_output, "reading_hierarchy_deterministic");
 requireInvariant(corpus.validation.valid, "corpus_validation");
 requireInvariant(corpus.input === sourceText, "lossless_source");
 requireInvariant(corpus.stats.occurrences === 1673, "occurrence_count");
