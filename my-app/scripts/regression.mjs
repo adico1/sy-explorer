@@ -8,6 +8,7 @@ const sourceText = source.toString("utf8");
 const sourceHash = crypto.createHash("sha256").update(source).digest("hex");
 const corpus = createConverter(spec)(sourceText);
 const sourceMap = JSON.parse(fs.readFileSync(new URL("../src/sy.source-map.json", import.meta.url), "utf8"));
+const readingUnits = JSON.parse(fs.readFileSync(new URL("../src/sy.reading-units.json", import.meta.url), "utf8"));
 const failures = [];
 const requireInvariant = (condition, name) => {
   if (!condition) failures.push(name);
@@ -20,6 +21,14 @@ requireInvariant(sourceMap.semantic_status === "none", "source_map_has_no_semant
 requireInvariant(sourceMap.proof.every_root_code_unit_covered_exactly_once, "source_map_unique_coverage");
 requireInvariant(sourceMap.proof.exact_root_round_trip, "source_map_round_trip");
 requireInvariant(sourceMap.proof.deterministic_output, "source_map_deterministic");
+requireInvariant(readingUnits.source.sha256 === sourceHash, "reading_units_source_hash");
+requireInvariant(readingUnits.status === "sealed", "reading_units_sealed");
+requireInvariant(readingUnits.semantic_status === "none", "reading_units_have_no_semantics");
+requireInvariant(readingUnits.proof.every_source_map_node_assigned_exactly_once, "reading_units_unique_coverage");
+requireInvariant(readingUnits.proof.every_br_used_exactly_once_as_a_boundary, "reading_units_all_br_boundaries");
+requireInvariant(readingUnits.proof.exact_root_round_trip, "reading_units_round_trip");
+requireInvariant(readingUnits.proof.deterministic_output, "reading_units_deterministic");
+requireInvariant(readingUnits.proof.stable_ordinal_ids, "reading_units_stable_ids");
 requireInvariant(corpus.validation.valid, "corpus_validation");
 requireInvariant(corpus.input === sourceText, "lossless_source");
 requireInvariant(corpus.stats.occurrences === 1673, "occurrence_count");
