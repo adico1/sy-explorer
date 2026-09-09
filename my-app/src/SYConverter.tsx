@@ -4,263 +4,225 @@ import spec from "./sy.converter.spec.json";
 import { createConverter } from "./converter-engine.mjs";
 
 const convert = createConverter(spec);
-const reviewKey = `sy-explorer:reviews:${spec.version}`;
+const storageKey = `sy-explorer:user-interpretations:${spec.version}`;
 
-type ReviewStatus = "pending" | "approved" | "rejected";
-type ReviewPart = "subject" | "operation" | "object";
-type Decision = { status: ReviewStatus; decided_at: string | null };
-type RelationDecision = Partial<Record<ReviewPart, Decision>>;
-type Decisions = Record<string, RelationDecision>;
-type Tab = "reviewable" | "incomplete" | "contracts" | "json";
-
-const operationLabels: Record<string, string> = {
-  engrave: "חקק", carve: "חצב", weigh: "שקל", permute: "המיר",
-  combine: "צירף", form: "יצר", crown: "המליך", bind: "קשר",
-  seal: "חתם", create: "ברא", establish: "יסד", examine: "בחן",
-  investigate: "חקר", stabilize: "העמיד",
+type Interpretation = {
+  role: string;
+  meaning: string;
+  note: string;
+  authority: "user_interpretation";
+  updated_at: string;
 };
 
-const evidenceLabels: Record<string, string> = {
-  observed: "מופיע בטקסט",
-  derived: "נגזר לפי כלל",
-  hypothesis: "השערת הממיר",
-  unknown: "לא ידוע",
+type Interpretations = Record<string, Interpretation>;
+type Filter = "all" | "repeated" | "single" | "interpreted";
+
+const roleLabels: Record<string, string> = {
+  name: "שם",
+  operation: "פעולה",
+  entity: "ישות",
+  number: "מספר",
+  domain: "תחום",
+  class: "מחלקה",
+  representation: "ייצוג",
+  state: "מצב",
+  relation: "יחס",
 };
 
-const typeLabels: Record<string, string> = {
-  entity: "ישות", letter: "אות", relation: "יחס", state: "מצב",
-  domain: "תחום", operation: "פעולה", quality: "תכונה",
-};
-
-const contractText: Record<string, string> = {
-  engrave: "מסמן או רושם ישות.",
-  carve: "מבדיל צורה מתוך חומר או ישות.",
-  weigh: "משווה, מסדר או מאזן בין ישויות.",
-  permute: "משנה את סדר האותיות או הישויות.",
-  combine: "מחבר מספר קלטים לצירוף.",
-  form: "יוצר צורה מתוך חומר או הקשר.",
-  crown: "ממנה אות לשליטה בתכונה או בתחום.",
-  bind: "יוצר קשר בין ישויות.",
-  seal: "מקבע או סוגר יעד.",
-  create: "מכניס ישות חדשה למערכת.",
-  establish: "מייסד או מקבע מצב.",
-  examine: "מפיק תצפית על ישות.",
-  investigate: "מפיק חקירה על ישות.",
-  stabilize: "מעמיד יעד במצב מוגדר.",
-};
-
-const failureLabels: Record<string, string> = {
-  unknown_semantics: "משמעות הפעולה עדיין אינה מוכחת.",
-  comparison_not_observed: "לא זוהו ישויות שאפשר להשוות ביניהן.",
-  ordering_not_observed: "סדר הקלטים לא זוהה בטקסט.",
-  members_not_observed: "חברי הצירוף לא זוהו.",
-  material_unknown: "החומר שממנו נוצרת הצורה אינו ידוע.",
-  letter_missing: "לא זוהתה אות קלט.",
-  participants_unknown: "המשתתפים בקשר אינם ידועים.",
-  target_missing: "יעד הפעולה לא זוהה.",
-  object_missing: "מושא הפעולה לא זוהה.",
-  criteria_unknown: "קריטריון הבדיקה אינו ידוע.",
-};
-
-function pending(): Decision {
-  return { status: "pending", decided_at: null };
-}
-
-function loadDecisions(): Decisions {
+function loadInterpretations(): Interpretations {
   try {
-    const parsed = JSON.parse(localStorage.getItem(reviewKey) || "{}");
-    return typeof parsed === "object" && parsed ? parsed : {};
+    const value = JSON.parse(localStorage.getItem(storageKey) || "{}");
+    return typeof value === "object" && value ? value : {};
   } catch {
     return {};
   }
 }
 
-function isIncomplete(relation: any) {
-  return !relation.subject?.text || !relation.object?.text;
-}
-
-function statusFor(decisions: Decisions, relationId: string, part: ReviewPart): Decision {
-  return decisions[relationId]?.[part] || pending();
-}
-
-function aggregateStatus(parts: Record<ReviewPart, Decision>): ReviewStatus {
-  const values = Object.values(parts).map((x) => x.status);
-  if (values.includes("rejected")) return "rejected";
-  if (values.every((x) => x === "approved")) return "approved";
-  return "pending";
-}
-
 export function SYConverter() {
   const [corpus] = useState<any>(() => convert(sourceText));
-  const [tab, setTab] = useState<Tab>("reviewable");
-  const [decisions, setDecisions] = useState<Decisions>(loadDecisions);
+  const [interpretations, setInterpretations] = useState<Interpretations>(loadInterpretations);
+  const [selectedId, setSelectedId] = useState<string>(() => corpus.evidence.names[0]?.id || "");
+  const [query, setQuery] = useState("");
+  const [filter, setFilter] = useState<Filter>("all");
 
-  const reviewedCorpus = useMemo(() => {
+  const names = useMemo(() => {
+    const needle = query.trim();
+    return [...corpus.evidence.names]
+      .filter((name: any) => !needle || name.normalized.includes(needle) || name.surface_forms.some((form: string) => form.includes(needle)))
+      .filter((name: any) => {
+        if (filter === "repeated") return name.occurrence_count > 1;
+        if (filter === "single") return name.occurrence_count === 1;
+        if (filter === "interpreted") return Boolean(interpretations[name.id]);
+        return true;
+      })
+      .sort((a: any, b: any) => b.occurrence_count - a.occurrence_count || a.normalized.localeCompare(b.normalized, "he"));
+  }, [corpus, filter, interpretations, query]);
+
+  const selected = corpus.evidence.names.find((name: any) => name.id === selectedId) || names[0];
+  const selectedInterpretation = selected ? interpretations[selected.id] : undefined;
+  const occurrences = selected
+    ? selected.occurrence_ids.map((id: string) => corpus.evidence.occurrences.find((item: any) => item.id === id))
+    : [];
+
+  const exportedCorpus = useMemo(() => {
     const value = structuredClone(corpus);
-    value.review.decisions = decisions;
-    value.review.granularity = "relation_component";
-    value.graph.relations = value.graph.relations.map((relation: any) => {
-      const components = {
-        subject: statusFor(decisions, relation.id, "subject"),
-        operation: statusFor(decisions, relation.id, "operation"),
-        object: statusFor(decisions, relation.id, "object"),
-      };
-      return { ...relation, review: { status: aggregateStatus(components), components } };
-    });
-    value.stats.approved_relations = value.graph.relations.filter((x: any) => x.review.status === "approved").length;
-    value.stats.rejected_relations = value.graph.relations.filter((x: any) => x.review.status === "rejected").length;
-    value.stats.pending_relations = value.stats.relations - value.stats.approved_relations - value.stats.rejected_relations;
-    value.stats.incomplete_relations = value.graph.relations.filter(isIncomplete).length;
+    value.interpretations.entries = interpretations;
+    value.stats.interpreted_names = Object.keys(interpretations).length;
+    value.stats.uninterpreted_names = value.stats.names - value.stats.interpreted_names;
+    value.evidence.names = value.evidence.names.map((name: any) => ({
+      ...name,
+      interpretation: interpretations[name.id] || {
+        status: "uninterpreted",
+        authority: "user_interpretation_only",
+      },
+    }));
     return value;
-  }, [corpus, decisions]);
+  }, [corpus, interpretations]);
 
-  function decide(id: string, part: ReviewPart, status: ReviewStatus) {
-    const relation = { ...(decisions[id] || {}) };
-    if (status === "pending") delete relation[part];
-    else relation[part] = { status, decided_at: new Date().toISOString() };
-    const next = { ...decisions };
-    if (Object.keys(relation).length) next[id] = relation;
-    else delete next[id];
-    setDecisions(next);
-    localStorage.setItem(reviewKey, JSON.stringify(next));
+  function saveInterpretation(event: React.FormEvent<HTMLFormElement>) {
+    event.preventDefault();
+    if (!selected) return;
+    const data = new FormData(event.currentTarget);
+    const entry: Interpretation = {
+      role: String(data.get("role") || "name"),
+      meaning: String(data.get("meaning") || "").trim(),
+      note: String(data.get("note") || "").trim(),
+      authority: "user_interpretation",
+      updated_at: new Date().toISOString(),
+    };
+    const next = { ...interpretations, [selected.id]: entry };
+    setInterpretations(next);
+    localStorage.setItem(storageKey, JSON.stringify(next));
+  }
+
+  function clearInterpretation() {
+    if (!selected) return;
+    const next = { ...interpretations };
+    delete next[selected.id];
+    setInterpretations(next);
+    localStorage.setItem(storageKey, JSON.stringify(next));
   }
 
   function downloadJSON() {
-    const blob = new Blob([JSON.stringify(reviewedCorpus, null, 2) + "\n"], {
+    const blob = new Blob([JSON.stringify(exportedCorpus, null, 2) + "\n"], {
       type: "application/json;charset=utf-8",
     });
     const url = URL.createObjectURL(blob);
     const link = document.createElement("a");
     link.href = url;
-    link.download = `sy.corpus-${reviewedCorpus.version}.json`;
+    link.download = `sy.evidence-corpus-${exportedCorpus.version}.json`;
     document.body.appendChild(link);
     link.click();
     link.remove();
     setTimeout(() => URL.revokeObjectURL(url), 0);
   }
 
-  const relations = reviewedCorpus.graph.relations.filter((relation: any) =>
-    tab === "incomplete" ? isIncomplete(relation) : !isIncomplete(relation),
-  );
-
   return (
-    <section className="converter" dir="rtl" aria-label="SY Explorer">
+    <section className="converter name-explorer" dir="rtl" aria-label="SY Evidence Corpus">
       <header className="converter__header">
         <div>
-          <small>SY EXPLORER · v{corpus.version}</small>
-          <h2>בדיקת פירושי הטקסט</h2>
+          <small>SY EVIDENCE CORPUS · v{corpus.version}</small>
+          <h2>שמות ומופעים בספר יצירה</h2>
         </div>
         <span className={corpus.validation.valid ? "converter__valid" : "converter__invalid"}>
-          {corpus.validation.valid ? "מבנה הנתונים תקין" : "נמצאו שגיאות מבניות"}
+          {corpus.validation.valid ? "המקור נשמר בשלמותו" : "נמצאה שגיאת מקור"}
         </span>
       </header>
 
-      <details className="converter__guide">
-        <summary>כיצד בודקים פירוש?</summary>
-        <p>בכל כרטיס מופיע תחילה המשפט המקורי. מתחתיו מוצעת חלוקה לנושא, פעולה ומושא. יש לאשר או לדחות כל רכיב בנפרד.</p>
-        <ul>
-          <li><b>מופיע בטקסט</b> — זוהה ישירות.</li>
-          <li><b>נגזר לפי כלל</b> — הופק באמצעות כלל מוגדר.</li>
-          <li><b>השערת הממיר</b> — דורש שיקול אנושי.</li>
-          <li><b>לא ידוע</b> — אין די מידע.</li>
-        </ul>
-      </details>
-
-      <div className="converter__actions">
-        <button className="converter__primary" onClick={downloadJSON}>הורד JSON עם הביקורת</button>
+      <div className="source-authority">
+        <strong>סמכות המקור: ספריא</strong>
+        <span>העותק המקומי טרם הושווה אוטומטית לנוסח המקוון.</span>
       </div>
 
-      <p className="converter__stats">
-        {corpus.stats.relations} פירושים · {reviewedCorpus.stats.incomplete_relations} דורשים השלמה
-        <br />
-        {reviewedCorpus.stats.approved_relations} אושרו במלואם · {reviewedCorpus.stats.rejected_relations} נדחו
+      <p className="axiom">
+        <b>עקרון היסוד שלך:</b> כל שם המופיע בייצוג המזערי של המערכת הוא מהותי, גם אם הופיע פעם אחת בלבד.
       </p>
 
-      <nav className="converter__tabs" aria-label="תצוגות">
-        <button aria-pressed={tab === "reviewable"} onClick={() => setTab("reviewable")}>מוכן לבדיקה</button>
-        <button aria-pressed={tab === "incomplete"} onClick={() => setTab("incomplete")}>דורש השלמה</button>
-        <button aria-pressed={tab === "contracts"} onClick={() => setTab("contracts")}>מילון פעולות</button>
-        <button aria-pressed={tab === "json"} onClick={() => setTab("json")}>JSON</button>
-      </nav>
+      <div className="converter__actions">
+        <button className="converter__primary" onClick={downloadJSON}>הורד קורפוס עם הפירוש שלי</button>
+      </div>
 
-      {(tab === "reviewable" || tab === "incomplete") && (
-        <div className="review-list">
-          <p className="review-note">
-            {tab === "reviewable"
-              ? "מוצגים רק פירושים שבהם זוהו גם נושא וגם מושא."
-              : "יחסים אלה אינם מוכנים לאישור מלא. הרכיב החסר מסומן במפורש."}
-          </p>
-          {relations.map((relation: any) => {
-            const statement = reviewedCorpus.graph.statements.find((x: any) => x.id === relation.statement_id);
-            return (
-              <article className="relation-card" key={relation.id}>
-                <div className="relation-card__meta">
-                  <span>{relation.unit_id} · {relation.id}</span>
-                  <span className={`evidence evidence--${relation.evidence}`}>{evidenceLabels[relation.evidence]}</span>
-                </div>
-                <blockquote className="relation-card__source">{statement?.text}</blockquote>
-                <div className="relation-card__triple" aria-label="נושא פעולה מושא">
-                  <ReviewField label="נושא" value={relation.subject.text} type={relation.subject.type} evidence={relation.subject.evidence} status={relation.review.components.subject.status} onDecision={(status) => decide(relation.id, "subject", status)} />
-                  <span className="relation-card__arrow" aria-hidden="true">←</span>
-                  <ReviewField label="פעולה" value={operationLabels[relation.operation] || relation.operation} type="operation" evidence="observed" status={relation.review.components.operation.status} onDecision={(status) => decide(relation.id, "operation", status)} />
-                  <span className="relation-card__arrow" aria-hidden="true">←</span>
-                  <ReviewField label="מושא" value={relation.object.text} type={relation.object.type} evidence={relation.object.evidence} status={relation.review.components.object.status} onDecision={(status) => decide(relation.id, "object", status)} />
-                </div>
-              </article>
-            );
-          })}
-        </div>
-      )}
+      <div className="name-stats">
+        <span><b>{corpus.stats.names}</b> שמות</span>
+        <span><b>{corpus.stats.occurrences}</b> מופעים</span>
+        <span><b>{corpus.stats.repeated_names}</b> שמות חוזרים</span>
+        <span><b>{corpus.stats.single_occurrence_names}</b> מופע יחיד</span>
+      </div>
 
-      {tab === "contracts" && (
-        <div className="review-list">
-          <p className="review-note">זהו מילון העבודה של הממיר. הוא מתאר מה אנו מניחים שכל פעולה עושה; השערה אינה עובדה בטקסט.</p>
-          {corpus.operation_contracts.map((contract: any) => (
-            <article className="relation-card contract-card" key={contract.operation}>
-              <div className="relation-card__meta">
-                <strong>{operationLabels[contract.operation] || contract.operation}</strong>
-                <span className={`evidence evidence--${contract.evidence}`}>{evidenceLabels[contract.evidence]}</span>
-              </div>
-              <p>{contractText[contract.operation]}</p>
-              <dl>
-                <div><dt>מקבל</dt><dd>{contract.input_types.map((x: string) => typeLabels[x] || x).join(", ")}</dd></div>
-                <div><dt>מפיק</dt><dd>{contract.output_types.map((x: string) => typeLabels[x] || x).join(", ")}</dd></div>
-                <div><dt>אם חסר מידע</dt><dd>{failureLabels[contract.failure] || contract.failure}</dd></div>
-              </dl>
-            </article>
+      <div className="name-toolbar">
+        <input value={query} onChange={(event) => setQuery(event.target.value)} placeholder="חיפוש שם…" aria-label="חיפוש שם" />
+        <select value={filter} onChange={(event) => setFilter(event.target.value as Filter)} aria-label="סינון שמות">
+          <option value="all">כל השמות</option>
+          <option value="repeated">שמות חוזרים</option>
+          <option value="single">מופע יחיד</option>
+          <option value="interpreted">פירשתי</option>
+        </select>
+      </div>
+
+      <div className="name-workspace">
+        <nav className="name-list" aria-label="רשימת שמות">
+          {names.map((name: any) => (
+            <button key={name.id} className={selected?.id === name.id ? "is-selected" : ""} onClick={() => setSelectedId(name.id)}>
+              <span>{name.normalized}</span>
+              <small>{name.occurrence_count} {name.occurrence_count === 1 ? "מופע" : "מופעים"}</small>
+              {interpretations[name.id] && <i>פורש</i>}
+            </button>
           ))}
-        </div>
-      )}
+          {!names.length && <p>לא נמצאו שמות מתאימים.</p>}
+        </nav>
 
-      {tab === "json" && (
-        <div className="json-panel">
-          <p>תצוגה טכנית מלאה למפתחים. אין צורך לקרוא אותה כדי לבדוק פירושים.</p>
-          <pre className="converter__output" dir="ltr">{JSON.stringify(reviewedCorpus, null, 2)}</pre>
-        </div>
-      )}
-    </section>
-  );
-}
+        {selected && (
+          <main className="name-detail">
+            <header className="name-detail__header">
+              <div>
+                <small>{selected.id}</small>
+                <h3>{selected.normalized}</h3>
+              </div>
+              <span className="essential-badge">שם מהותי</span>
+            </header>
 
-function ReviewField({ label, value, type, evidence, status, onDecision }: {
-  label: string;
-  value: string | null;
-  type: string;
-  evidence: string;
-  status: ReviewStatus;
-  onDecision: (status: ReviewStatus) => void;
-}) {
-  return (
-    <section className={`review-field ${!value ? "review-field--missing" : ""}`}>
-      <header>
-        <span>{label}</span>
-        <small>{typeLabels[type] || type} · {evidenceLabels[evidence]}</small>
-      </header>
-      <strong>{value || "לא זוהה"}</strong>
-      <div className="review-field__actions">
-        <button className={status === "approved" ? "is-approved" : ""} disabled={!value} onClick={() => onDecision("approved")} aria-label={`אישור ${label}`}>✓</button>
-        <button className={status === "rejected" ? "is-rejected" : ""} onClick={() => onDecision("rejected")} aria-label={`דחיית ${label}`}>×</button>
-        {status !== "pending" && <button onClick={() => onDecision("pending")} aria-label={`איפוס ${label}`}>↶</button>}
+            <dl className="name-facts">
+              <div><dt>מספר מופעים</dt><dd>{selected.occurrence_count}</dd></div>
+              <div><dt>צורות מקור</dt><dd>{selected.surface_forms.join(" · ")}</dd></div>
+              <div><dt>בסיס החשיבות</dt><dd>הפירוש שלך: כל שם במערכת המזערית הוא מהותי</dd></div>
+            </dl>
+
+            <form className="interpretation-form" key={selected.id} onSubmit={saveInterpretation}>
+              <h4>הפירוש שלי</h4>
+              <label>
+                תפקיד במערכת
+                <select name="role" defaultValue={selectedInterpretation?.role || "name"}>
+                  {spec.interpretation.roles.map((role) => <option key={role} value={role}>{roleLabels[role] || role}</option>)}
+                </select>
+              </label>
+              <label>
+                משמעות
+                <textarea name="meaning" defaultValue={selectedInterpretation?.meaning || ""} placeholder="מה משמעות השם לפי פירושך?" />
+              </label>
+              <label>
+                הערה או כלל גזירה
+                <textarea name="note" defaultValue={selectedInterpretation?.note || ""} placeholder="על מה מבוסס הפירוש ומה נגזר ממנו?" />
+              </label>
+              <div>
+                <button className="converter__primary" type="submit">שמור כפירוש שלי</button>
+                {selectedInterpretation && <button type="button" onClick={clearInterpretation}>מחק פירוש</button>}
+              </div>
+            </form>
+
+            <section className="occurrences">
+              <h4>כל המופעים בטקסט</h4>
+              {occurrences.map((occurrence: any) => {
+                const unit = corpus.units.find((item: any) => item.id === occurrence.unit_id);
+                return (
+                  <article key={occurrence.id}>
+                    <header><b>{occurrence.id}</b><span>{occurrence.unit_id} · מיקום {occurrence.token_index + 1}</span></header>
+                    <p>{unit?.source.text}</p>
+                  </article>
+                );
+              })}
+            </section>
+          </main>
+        )}
       </div>
     </section>
   );
