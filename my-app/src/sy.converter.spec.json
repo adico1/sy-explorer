@@ -1,56 +1,63 @@
 {
   "$schema": "./sy.converter-spec.schema.json",
-  "id": "sy.converter",
-  "version": "0.9.1",
+  "id": "sy.evidence-corpus",
+  "version": "0.10.0",
   "language": "he",
-  "normalization": { "remove_cantillation": true, "remove_niqqud": true, "remove_punctuation": true },
-  "structure": { "chapter_heading": "h2", "explicit_unit_heading": "h3", "fallback_unit_separator": "jsx_br_pair", "discard_headings": ["h1"], "minimum_unit_characters": 2 },
-  "evidence": { "levels": ["observed", "derived", "hypothesis", "unknown"], "source": "observed", "literal": "observed" },
-  "ontology": {
-    "entity_types": [
-      { "id": "document", "evidence": "observed" }, { "id": "chapter", "evidence": "observed" },
-      { "id": "unit", "evidence": "observed" }, { "id": "statement", "evidence": "derived" },
-      { "id": "entity", "evidence": "derived" }, { "id": "operation", "evidence": "observed" },
-      { "id": "relation", "evidence": "derived" }, { "id": "letter", "evidence": "observed" },
-      { "id": "number", "evidence": "observed" }, { "id": "domain", "evidence": "observed" },
-      { "id": "class", "evidence": "observed" }, { "id": "quality", "evidence": "hypothesis" },
-      { "id": "state", "evidence": "hypothesis" }
+  "source": {
+    "authority": "sefaria_source",
+    "canonical_url": "https://www.sefaria.org.il/Sefer_Yetzirah.1.1?lang=he",
+    "local_copy_equivalence": "not_yet_verified"
+  },
+  "scope": {
+    "allowed_authorities": [
+      "sefaria_source",
+      "user_interpretation",
+      "deterministic_derivation"
     ],
-    "relation_types": [
-      { "id": "acts_on", "evidence": "derived" }, { "id": "produces", "evidence": "hypothesis" },
-      { "id": "governs", "evidence": "derived" }, { "id": "corresponds_to", "evidence": "hypothesis" },
-      { "id": "contains", "evidence": "derived" }, { "id": "seals", "evidence": "derived" }
+    "excluded_authorities": [
+      "external_commentary",
+      "model_generated_interpretation"
     ]
   },
-  "lexicons": {
-    "operations": {
-      "engrave": ["חקק", "חקקן"], "carve": ["חצב", "חצבן"], "weigh": ["שקל", "שקלן"],
-      "permute": ["המיר", "המירן"], "combine": ["צרף", "צרפן"], "form": ["צר", "יצר"],
-      "crown": ["המליך"], "bind": ["קשר"], "seal": ["חתם"], "create": ["ברא"],
-      "establish": ["יסד", "יסדן"], "examine": ["בחן", "בחון"], "investigate": ["חקור"], "stabilize": ["העמד"]
-    },
-    "domains": { "world": ["עולם", "בעולם", "עולמו"], "year": ["שנה", "בשנה"], "soul": ["נפש", "בנפש"] },
-    "classes": { "mothers": ["אמות"], "doubles": ["כפולות"], "simples": ["פשוטות"], "sefirot": ["ספירות"], "letters": ["אותיות"], "paths": ["נתיבות"], "gates": ["שערים"] }
+  "axiom": {
+    "id": "minimal_name_occurrence",
+    "statement": "A name occurrence in the source is the minimal representation from which the system is derived.",
+    "consequence": "Every observed name is essential regardless of its occurrence count.",
+    "authority": "user_interpretation"
   },
-  "operation_contracts": [
-    { "operation": "engrave", "input_types": ["entity"], "output_types": ["entity"], "preconditions": ["explicit_object"], "effects": ["marks_or_inscribes"], "failure": "unknown_semantics", "evidence": "hypothesis" },
-    { "operation": "carve", "input_types": ["entity"], "output_types": ["entity"], "preconditions": ["explicit_object"], "effects": ["differentiates_form"], "failure": "unknown_semantics", "evidence": "hypothesis" },
-    { "operation": "weigh", "input_types": ["entity"], "output_types": ["relation"], "preconditions": ["comparable_entities"], "effects": ["orders_or_balances"], "failure": "comparison_not_observed", "evidence": "hypothesis" },
-    { "operation": "permute", "input_types": ["letter", "entity"], "output_types": ["entity"], "preconditions": ["ordered_inputs"], "effects": ["changes_order"], "failure": "ordering_not_observed", "evidence": "derived" },
-    { "operation": "combine", "input_types": ["entity"], "output_types": ["entity"], "preconditions": ["multiple_inputs"], "effects": ["forms_combination"], "failure": "members_not_observed", "evidence": "derived" },
-    { "operation": "form", "input_types": ["entity"], "output_types": ["entity"], "preconditions": ["explicit_or_contextual_material"], "effects": ["produces_form"], "failure": "material_unknown", "evidence": "hypothesis" },
-    { "operation": "crown", "input_types": ["letter"], "output_types": ["relation"], "preconditions": ["letter_observed"], "effects": ["assigns_governance"], "failure": "letter_missing", "evidence": "derived" },
-    { "operation": "bind", "input_types": ["entity"], "output_types": ["relation"], "preconditions": ["related_entities"], "effects": ["creates_binding"], "failure": "participants_unknown", "evidence": "hypothesis" },
-    { "operation": "seal", "input_types": ["entity", "domain"], "output_types": ["state"], "preconditions": ["target_observed"], "effects": ["closes_or_fixes"], "failure": "target_missing", "evidence": "hypothesis" },
-    { "operation": "create", "input_types": ["entity"], "output_types": ["entity"], "preconditions": ["object_observed"], "effects": ["introduces_entity"], "failure": "object_missing", "evidence": "derived" },
-    { "operation": "establish", "input_types": ["entity"], "output_types": ["state"], "preconditions": ["object_observed"], "effects": ["sets_foundation"], "failure": "object_missing", "evidence": "hypothesis" },
-    { "operation": "examine", "input_types": ["entity"], "output_types": ["relation"], "preconditions": ["object_observed"], "effects": ["produces_observation"], "failure": "criteria_unknown", "evidence": "derived" },
-    { "operation": "investigate", "input_types": ["entity"], "output_types": ["relation"], "preconditions": ["object_observed"], "effects": ["produces_inquiry"], "failure": "criteria_unknown", "evidence": "derived" },
-    { "operation": "stabilize", "input_types": ["entity", "state"], "output_types": ["state"], "preconditions": ["target_observed"], "effects": ["sets_state"], "failure": "target_missing", "evidence": "hypothesis" }
-  ],
-  "numbers": [["שלשים ושתים",32],["שלושים ושתים",32],["עשרים ושתים",22],["עשרים ושתיים",22],["שתים עשרה",12],["שתיים עשרה",12],["שנים עשר",12],["שלוש",3],["שלש",3],["שבע",7],["עשר",10],["רלא",231]],
-  "record_patterns": [{ "id":"crowned_letter_mapping", "trigger":"המליך אות", "minimum_repetitions_to_split":2, "input_after":"אות", "output_domains":["world","year","soul"], "governs_by_input":{"א":"רוח","מ":"מים","ש":"אש","ב":"חיים","ג":"שלום","ד":"חכמה","כ":"עושר","פ":"חן","ר":"זרע","ת":"ממשלה","ה":"ראיה","ו":"שמיעה","ז":"ריחה","ח":"שיחה","ט":"לעיטה","י":"תשמיש","ל":"מעשה","נ":"הלוך","ס":"רוגז","ע":"שחוק","צ":"הרהור","ק":"שינה"}, "governs_source_forms":{"עושר":["עושר","עשר"],"רוגז":["רוגז","רגז"],"שינה":["שינה","שנה"]}, "evidence":"derived" }],
-  "review": { "states": ["pending", "approved", "rejected"], "storage": "local", "granularity": "relation_component", "components": ["subject", "operation", "object"] },
-  "target": { "id": "sy.semantic-graph.v1", "kind": "read_only_semantic_graph", "selected_after": ["ontology", "relations", "contracts", "review_workflow"], "admission": "validation_passed", "evidence": "derived" },
-  "validation": { "require_chapter": true, "unique_ids": true, "reject_marker_leaks": true, "verify_stats": true, "allowed_evidence": ["observed", "derived", "hypothesis", "unknown"] }
+  "normalization": {
+    "remove_cantillation": true,
+    "remove_niqqud": true,
+    "remove_punctuation": true,
+    "preserve_surface_form": true
+  },
+  "structure": {
+    "chapter_heading": "h2",
+    "explicit_unit_heading": "h3",
+    "fallback_unit_separator": "jsx_br_pair",
+    "discard_headings": ["h1"],
+    "minimum_unit_characters": 2,
+    "semantic_status": "uninterpreted_input_markup"
+  },
+  "interpretation": {
+    "authority": "user_interpretation_only",
+    "roles": [
+      "name",
+      "operation",
+      "entity",
+      "number",
+      "domain",
+      "class",
+      "representation",
+      "state",
+      "relation"
+    ],
+    "storage": "local"
+  },
+  "validation": {
+    "scope": "structural_and_lossless_only",
+    "require_lossless_source": true,
+    "require_complete_occurrence_coverage": true,
+    "require_name_occurrence_counts": true
+  }
 }
