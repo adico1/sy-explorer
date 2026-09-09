@@ -1,7 +1,7 @@
 {
   "$schema": "./sy.converter-spec.schema.json",
   "id": "sy.evidence-corpus",
-  "version": "0.12.2",
+  "version": "0.12.3",
   "language": "he",
   "source": {
     "authority": "sefaria_source",
@@ -124,6 +124,7 @@
     { "id": "source.authoritative_niqqud", "status": "active" },
     { "id": "source.authoritative_br_boundaries", "status": "active" },
     { "id": "source.lossless_jsx_map", "status": "active", "artifact": "src/sy.source-map.json", "proof": "exact_main_root_round_trip" },
+    { "id": "reading.lossless_br_units", "status": "active", "artifact": "src/sy.reading-units.json", "proof": "exact_br_partition_round_trip" },
     { "id": "corpus.name_occurrences", "status": "active" },
     { "id": "corpus.occurrence_counts", "status": "active" },
     { "id": "corpus.user_interpretations", "status": "active" },
@@ -158,6 +159,13 @@
         "statement": "The ordered JSX main-root map covers every source code unit exactly once and reconstructs the mapped source slice exactly.",
         "authority": "deterministic_derivation",
         "artifact": "src/sy.source-map.json",
+        "status": "sealed"
+      },
+      {
+        "id": "reading.lossless_br_units",
+        "statement": "Every br closes one ordered reading unit; the last br in each consecutive run of two or more additionally closes a reading group. All source-map nodes are assigned exactly once and reconstruct the mapped root exactly.",
+        "authority": "deterministic_derivation_from_user_boundaries",
+        "artifact": "src/sy.reading-units.json",
         "status": "sealed"
       },
       {
