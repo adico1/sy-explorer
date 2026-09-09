@@ -1,7 +1,7 @@
 {
   "$schema": "./sy.converter-spec.schema.json",
   "id": "sy.evidence-corpus",
-  "version": "0.10.0",
+  "version": "0.11.0",
   "language": "he",
   "source": {
     "authority": "sefaria_source",
@@ -51,8 +51,23 @@
       "representation",
       "state",
       "relation"
+      ,"category"
+      ,"controller"
+      ,"value"
     ],
     "storage": "local"
+  },
+  "repetition": {
+    "authority": "user_interpretation",
+    "minimum_record_presence_for_anchor": 3,
+    "minimum_records_per_slot": 2,
+    "ngram_sizes": [2, 3],
+    "rules": {
+      "repeated_at_aligned_scope": "category_relation_or_controller_candidate",
+      "single_unit_presence": "single_unit_value_or_name_candidate",
+      "single_global_occurrence": "single_occurrence_value_or_name_candidate",
+      "between_repeated_anchors": "slot_value_candidate"
+    }
   },
   "validation": {
     "scope": "structural_and_lossless_only",
