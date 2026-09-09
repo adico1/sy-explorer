@@ -5,6 +5,10 @@ export interface SYCorpus {
     operations: number;
     domains: number;
     variants: number;
+    tokens: number;
+    lexemes: number;
+    classified_lexemes: number;
+    unclassified_lexemes: number;
   };
   provenance: unknown[];
   validation: {
