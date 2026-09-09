@@ -390,6 +390,8 @@ export function createConverter(spec) {
         },
       },
       reading_specification: spec.reading_specification,
+      terminology: spec.terminology,
+      capability_registry: spec.capability_registry,
       seal: {
         status: "sealed",
         source_sha256: spec.source.local_edition.sha256,

@@ -1,7 +1,7 @@
 {
   "$schema": "./sy.converter-spec.schema.json",
   "id": "sy.evidence-corpus",
-  "version": "0.12.0",
+  "version": "0.12.1",
   "language": "he",
   "source": {
     "authority": "sefaria_source",
@@ -65,17 +65,17 @@
       "class",
       "representation",
       "state",
-      "relation"
-      ,"category"
-      ,"controller"
-      ,"value"
+      "relation",
+      "category",
+      "controller",
+      "value"
     ],
     "storage": "local"
   },
   "repetition": {
     "status": "rejected_as_semantic_reader",
     "retained_as": "diagnostic_evidence_only",
-    "authority": "user_interpretation",
+    "authority": "assistant_inference",
     "minimum_record_presence_for_anchor": 3,
     "minimum_records_per_slot": 2,
     "ngram_sizes": [2, 3],
@@ -86,6 +86,52 @@
       "between_repeated_anchors": "slot_value_candidate"
     }
   },
+  "terminology": [
+    {
+      "id": "user_term.double_words",
+      "term": "מילים כפולות",
+      "language": "he",
+      "authority": "user",
+      "definition": null,
+      "status": "awaiting_user_definition",
+      "execution": "forbidden_until_defined",
+      "assistant_inferences": [
+        {
+          "meaning": "words_with_multiple_occurrences",
+          "status": "rejected",
+          "reason": "not_defined_by_user"
+        },
+        {
+          "meaning": "repeated_ngrams",
+          "status": "rejected",
+          "reason": "not_defined_by_user"
+        },
+        {
+          "meaning": "frequency_threshold_anchors",
+          "status": "rejected",
+          "reason": "not_defined_by_user"
+        },
+        {
+          "meaning": "the_explicit_seven_double_letters_category",
+          "status": "rejected",
+          "reason": "not_defined_by_user"
+        }
+      ]
+    }
+  ],
+  "capability_registry": [
+    { "id": "source.lossless_local_edition", "status": "active" },
+    { "id": "source.authoritative_niqqud", "status": "active" },
+    { "id": "source.authoritative_br_boundaries", "status": "active" },
+    { "id": "corpus.name_occurrences", "status": "active" },
+    { "id": "corpus.occurrence_counts", "status": "active" },
+    { "id": "corpus.user_interpretations", "status": "active" },
+    { "id": "export.complete_json", "status": "active" },
+    { "id": "reader.auto_svo", "status": "rejected", "retained_in": "git_history_v0.9" },
+    { "id": "reader.frequency_threshold", "status": "rejected", "retained_in": "diagnostic_evidence" },
+    { "id": "reader.operation_contracts", "status": "discovery", "retained_in": "git_history_v0.9" },
+    { "id": "review.approve_reject_interpretations", "status": "discovery", "retained_in": "git_history_v0.9.1" }
+  ],
   "reading_specification": {
     "id": "sy.systemic-reading",
     "version": "0.1.0",
@@ -144,7 +190,9 @@
       },
       {
         "id": "reader.frequency_threshold.v0_11",
-        "reason": "Used arbitrary occurrence thresholds as semantic categories."
+        "reason": "Assistant incorrectly assigned meanings to the undefined user term 'מילים כפולות' and used arbitrary occurrence thresholds as semantic categories.",
+        "authority": "assistant_inference",
+        "status": "rejected"
       }
     ]
   },
