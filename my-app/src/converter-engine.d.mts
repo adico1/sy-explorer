@@ -2,17 +2,15 @@ export interface SYCorpus {
   version: string;
   stats: {
     units: number;
-    statements: number;
-    relations: number;
-    operations: number;
-    domains: number;
-    variants: number;
-    tokens: number;
-    lexemes: number;
-    classified_lexemes: number;
-    unclassified_lexemes: number;
+    occurrences: number;
+    names: number;
+    repeated_names: number;
+    single_occurrence_names: number;
   };
-  provenance: unknown[];
+  evidence: {
+    occurrences: unknown[];
+    names: unknown[];
+  };
   validation: {
     valid: boolean;
     errors: string[];
