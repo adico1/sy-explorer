@@ -1,7 +1,7 @@
 {
   "$schema": "./sy.converter-spec.schema.json",
   "id": "sy.evidence-corpus",
-  "version": "0.12.5",
+  "version": "0.12.6",
   "language": "he",
   "source": {
     "authority": "sefaria_source",
@@ -127,6 +127,7 @@
     { "id": "reading.lossless_br_units", "status": "active", "artifact": "src/sy.reading-units.json", "proof": "exact_br_partition_round_trip" },
     { "id": "structure.jsx_reading_hierarchy", "status": "active", "artifact": "src/sy.reading-hierarchy.json", "proof": "exact_jsx_context_assignment" },
     { "id": "text.exact_node_projection", "status": "active", "artifact": "src/sy.text-projection.json", "proof": "exact_text_node_projection" },
+    { "id": "text.literal_jsx_context", "status": "active", "artifact": "src/sy.text-context.json", "proof": "literal_ancestor_context_without_corpus_decision" },
     { "id": "corpus.name_occurrences", "status": "active" },
     { "id": "corpus.occurrence_counts", "status": "active" },
     { "id": "corpus.user_interpretations", "status": "active" },
@@ -182,6 +183,13 @@
         "statement": "Every JSX text node is projected once into its reading unit or the structural tail with exact raw content and source ranges; no whitespace, niqqud, punctuation or token normalization is applied.",
         "authority": "deterministic_derivation",
         "artifact": "src/sy.text-projection.json",
+        "status": "sealed"
+      },
+      {
+        "id": "text.literal_jsx_context",
+        "statement": "Every JSX text node is mapped once to its literal ancestor element chain and technical context flags; corpus inclusion remains undecided for every node.",
+        "authority": "deterministic_derivation",
+        "artifact": "src/sy.text-context.json",
         "status": "sealed"
       },
       {
