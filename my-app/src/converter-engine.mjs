@@ -1,37 +1,237 @@
-export function createConverter(spec){
+export function createConverter(spec) {
+  const norm = (value) => value
+    .normalize("NFD")
+    .replace(/[\u0591-\u05C7]/g, "")
+    .normalize("NFC")
+    .replace(/[״׳"']/g, "")
+    .replace(/[^א-ת0-9]+/g, " ")
+    .trim();
 
- const norm=s=>s.normalize('NFD').replace(/[\u0591-\u05C7]/g,'').normalize('NFC').replace(/[״׳"']/g,'').replace(/[^א-ת0-9]+/g,' ').trim();
+  const surfaceWords = (value) =>
+    value.match(/[א-ת][א-ת\u0591-\u05C7״׳"']*|\d+/g) || [];
 
- const words=s=>norm(s).split(/\s+/).filter(Boolean);
+  const clean = (input) => input
+    .replace(/\{\/\*[\s\S]*?\*\/\}/g, " ")
+    .replace(/<br\s*\/?\s*>/gi, "§BR§")
+    .replace(/<h1[^>]*>[\s\S]*?<\/h1>/gi, " ")
+    .replace(/<h2[^>]*>/gi, "§CHAPTER§")
+    .replace(/<\/h2>/gi, "§END§")
+    .replace(/<h3[^>]*>/gi, "§UNIT§")
+    .replace(/<\/h3>/gi, "§END§")
+    .replace(/<small[^>]*>/gi, "§NOTE§")
+    .replace(/<\/small>/gi, "§ENDNOTE§")
+    .replace(/<[^>]+>/g, " ")
+    .replace(/&quot;/g, '"')
+    .replace(/&amp;/g, "&")
+    .replace(/^[\s\S]*?return\s*\(/, "")
+    .replace(/\)\s*}\s*export default[\s\S]*$/, "")
+    .replace(/\r?\n/g, " ")
+    .replace(/[ \t]+/g, " ")
+    .replace(/\s*(§(?:CHAPTER|UNIT|END|NOTE|ENDNOTE)§)\s*/g, "$1")
+    .replace(/\s*§BR§\s*/g, "\n")
+    .replace(/\n{3,}/g, "\n\n")
+    .trim();
 
- const surfaceWords=s=>s.match(/[א-ת][א-ת\u0591-\u05C7״׳"']*|\d+/g)||[];
+  const extractNotes = (text) => {
+    const editorial = [];
+    let source = text;
+    for (let pass = 0; pass < 8 && source.includes("§NOTE§"); pass += 1) {
+      source = source.replace(/§NOTE§([^§]*?)§ENDNOTE§/g, (_, value) => {
+        editorial.push(value.trim());
+        return "";
+      });
+    }
+    source = source.replace(/§(?:END)?NOTE§/g, "").trim();
+    return {
+      source,
+      editorial: editorial
+        .map((value) => value.replace(/§(?:END)?NOTE§/g, "").trim())
+        .filter(Boolean),
+    };
+  };
 
- const detect=(text,table)=>{const set=new Set(words(text)),hits=[];for(const [canonical,forms] of Object.entries(table)){const source=forms.find(f=>{const n=norm(f);return set.has(n)||set.has('ו'+n)});if(source)hits.push({source,canonical,evidence:spec.evidence.literal})}return hits};
+  const segment = (text) => {
+    let chapter = null;
+    let count = 0;
+    const output = [];
+    for (const part of text.split(/(?=§CHAPTER§|§UNIT§)/)) {
+      if (!part.trim()) continue;
+      if (part.startsWith("§CHAPTER§")) {
+        const end = part.indexOf("§END§");
+        chapter = part.slice(9, end).trim() || null;
+        count = 0;
+        const rest = part.slice(end + 5).trim();
+        if (rest) {
+          for (const block of rest.split(/\n\s*\n/).filter((value) => norm(value).length >= spec.structure.minimum_unit_characters)) {
+            output.push({ chapter, label: `יחידה ${++count}`, text: block.trim() });
+          }
+        }
+      } else if (part.startsWith("§UNIT§")) {
+        const end = part.indexOf("§END§");
+        const label = part.slice(6, end).trim();
+        count += 1;
+        const rest = part.slice(end + 5).trim();
+        if (rest && norm(rest).length >= spec.structure.minimum_unit_characters) {
+          output.push({ chapter, label: label || `יחידה ${count}`, text: rest });
+        }
+      }
+    }
+    return output;
+  };
 
- const numbers=text=>{const tokens=words(text),used=new Set(),hits=[];for(const [source,value] of spec.numbers){const phrase=words(source);for(let i=0;i<=tokens.length-phrase.length;i++){const slots=phrase.map((_,j)=>i+j);if(slots.some(x=>used.has(x)))continue;if(phrase.every((w,j)=>tokens[i+j]===w)){slots.forEach(x=>used.add(x));hits.push({source,value,evidence:spec.evidence.literal});break}}}return hits};
+  const indexNames = (units) => {
+    const occurrences = [];
+    const nameMap = new Map();
 
- const clean=input=>input.replace(/\{\/\*[\s\S]*?\*\/\}/g,' ').replace(/<br\s*\/?\s*>/gi,'§BR§').replace(/<h1[^>]*>[\s\S]*?<\/h1>/gi,' ').replace(/<h2[^>]*>/gi,'§CHAPTER§').replace(/<\/h2>/gi,'§END§').replace(/<h3[^>]*>/gi,'§UNIT§').replace(/<\/h3>/gi,'§END§').replace(/<small[^>]*>/gi,'§NOTE§').replace(/<\/small>/gi,'§ENDNOTE§').replace(/<[^>]+>/g,' ').replace(/&quot;/g,'"').replace(/&amp;/g,'&').replace(/^[\s\S]*?return\s*\(/,'').replace(/\)\s*}\s*export default[\s\S]*$/,'').replace(/\r?\n/g,' ').replace(/[ \t]+/g,' ').replace(/\s*(§(?:CHAPTER|UNIT|END|NOTE|ENDNOTE)§)\s*/g,'$1').replace(/\s*§BR§\s*/g,'\n').replace(/\n{3,}/g,'\n\n').trim();
+    for (const unit of units) {
+      unit.tokens = surfaceWords(unit.source.text).map((surface, index) => {
+        const normalized = norm(surface);
+        const id = `occ.${String(occurrences.length + 1).padStart(6, "0")}`;
+        const occurrence = {
+          id,
+          unit_id: unit.id,
+          token_index: index,
+          surface,
+          normalized,
+          evidence: "observed",
+        };
+        occurrences.push(occurrence);
+        if (!nameMap.has(normalized)) {
+          nameMap.set(normalized, {
+            normalized,
+            surface_forms: new Set(),
+            occurrence_ids: [],
+          });
+        }
+        const name = nameMap.get(normalized);
+        name.surface_forms.add(surface);
+        name.occurrence_ids.push(id);
+        return id;
+      });
+    }
 
- const notes=text=>{const editorial=[];let source=text;for(let pass=0;pass<8&&source.includes('§NOTE§');pass++)source=source.replace(/§NOTE§([^§]*?)§ENDNOTE§/g,(_,v)=>{editorial.push(v.trim());return ''});source=source.replace(/§(?:END)?NOTE§/g,'').trim();editorial.forEach((v,i)=>editorial[i]=v.replace(/§(?:END)?NOTE§/g,'').trim());return{source,editorial:editorial.filter(Boolean)}};
+    const names = [...nameMap.values()]
+      .sort((a, b) => a.normalized.localeCompare(b.normalized, "he"))
+      .map((name, index) => ({
+        id: `name.${String(index + 1).padStart(5, "0")}`,
+        normalized: name.normalized,
+        surface_forms: [...name.surface_forms],
+        occurrence_ids: name.occurrence_ids,
+        occurrence_count: name.occurrence_ids.length,
+        evidence: "observed",
+        importance: {
+          value: "essential",
+          authority: "user_interpretation",
+          rule: "every_name_in_minimal_system_representation_is_essential",
+        },
+        interpretation: {
+          status: "uninterpreted",
+          authority: "user_interpretation_only",
+        },
+      }));
 
- const segment=text=>{let chapter=null,count=0,out=[];for(const part of text.split(/(?=§CHAPTER§|§UNIT§)/)){if(!part.trim())continue;if(part.startsWith('§CHAPTER§')){const e=part.indexOf('§END§');chapter=part.slice(9,e).trim()||null;count=0;const rest=part.slice(e+5).trim();if(rest)for(const block of rest.split(/\n\s*\n/).filter(x=>norm(x).length>=spec.structure.minimum_unit_characters))out.push({chapter,label:`יחידה ${++count}`,text:block.trim()})}else if(part.startsWith('§UNIT§')){const e=part.indexOf('§END§'),label=part.slice(6,e).trim();count++;const rest=part.slice(e+5).trim();if(rest&&norm(rest).length>=spec.structure.minimum_unit_characters)out.push({chapter,label:label||`יחידה ${count}`,text:rest})}}return out};
+    const nameIdByNormalized = new Map(names.map((name) => [name.normalized, name.id]));
+    for (const occurrence of occurrences) {
+      occurrence.name_id = nameIdByNormalized.get(occurrence.normalized);
+    }
 
- const expandRecords=raws=>raws.flatMap(raw=>{const pattern=spec.record_patterns?.[0];if(!pattern)return[raw];const lines=raw.text.split('\n').map(x=>x.trim()).filter(Boolean),trigger=norm(pattern.trigger),matched=lines.filter(x=>norm(x).includes(trigger));if(matched.length<pattern.minimum_repetitions_to_split)return[raw];const pre=lines.filter(x=>!norm(x).includes(trigger)).join('\n').trim(),records=matched.map((text,i)=>({...raw,label:`${pattern.id} ${i+1}`,text,record_pattern:pattern.id}));return pre&&norm(pre).length>=spec.structure.minimum_unit_characters?[{...raw,text:pre},...records]:records});
+    return {
+      occurrences,
+      names,
+      stats: {
+        total_occurrences: occurrences.length,
+        total_names: names.length,
+        repeated_names: names.filter((name) => name.occurrence_count > 1).length,
+        single_occurrence_names: names.filter((name) => name.occurrence_count === 1).length,
+      },
+    };
+  };
 
- const operationSequence=source=>{const tokens=words(source),positions=[];for(const [canonical,forms] of Object.entries(spec.lexicons.operations))for(const form of forms){const f=norm(form);for(let i=0;i<tokens.length;i++)if(tokens[i]===f||tokens[i]==='ו'+f)positions.push({canonical,index:i})}return positions.sort((a,b)=>a.index-b.index).filter((x,i,a)=>!i||x.canonical!==a[i-1].canonical).map(x=>x.canonical)};
+  const validate = (result) => {
+    const errors = [];
+    const unitIds = new Set();
+    for (const unit of result.units) {
+      if (unitIds.has(unit.id)) errors.push(`duplicate_unit_id:${unit.id}`);
+      unitIds.add(unit.id);
+      if (/§/.test(unit.source.text)) errors.push(`marker_leak:${unit.id}`);
+    }
+    const occurrenceIds = new Set(result.evidence.occurrences.map((item) => item.id));
+    const referenced = result.units.flatMap((unit) => unit.tokens);
+    if (occurrenceIds.size !== result.evidence.occurrences.length) errors.push("duplicate_occurrence_id");
+    if (referenced.length !== result.evidence.occurrences.length || referenced.some((id) => !occurrenceIds.has(id))) {
+      errors.push("incomplete_occurrence_coverage");
+    }
+    for (const name of result.evidence.names) {
+      const actual = result.evidence.occurrences.filter((item) => item.name_id === name.id).length;
+      if (actual !== name.occurrence_count) errors.push(`invalid_occurrence_count:${name.id}`);
+      if (name.importance.authority !== "user_interpretation") errors.push(`invalid_importance_authority:${name.id}`);
+    }
+    if (result.source.local_copy.text !== result.input) errors.push("source_not_lossless");
+    if (!result.evidence.names.some((name) => name.normalized === "פליאות")) errors.push("missing_expected_name:פליאות");
+    return { valid: errors.length === 0, scope: "structural_and_lossless_only", errors };
+  };
 
- const inferRecord=(source,patternId)=>{if(!patternId)return{type:null,input:null,transformation:null,output:null,evidence:'unknown'};const pattern=spec.record_patterns.find(x=>x.id===patternId),p=norm(source),input=(p.match(/המליך אות ([א-ת])/)||[])[1]||null,direct=(p.match(/המליך אות [א-ת]+ ב([א-ת]+) וקשר/)||[])[1]||null,world=(p.match(/(?:צר|חתם) (?:בו|בהם|בהן) (.+?) בעולם/)||[])[1]||null,year=(p.match(/בעולם (.+?) בשנה/)||[])[1]||null,soul=(p.match(/בשנה (.+?) בנפש/)||[])[1]||null,trim=v=>v?v.replace(/^ו(?=[א-ת])/,'').trim():null,field=(value,rule,evidence='derived')=>({value:trim(value),evidence:value?evidence:'unknown',rule,derived_from:[]}),governs=direct||pattern.governs_by_input?.[input]||null;return{type:pattern.id,input:input?{kind:'letter',value:input,governs:field(governs,direct?'direct_capture':'ordered_correspondence',direct?'observed':'derived')}:null,transformation:operationSequence(source),output:{world:field(world,'direct_capture'),year:field(year,'direct_capture'),soul:field(soul,'direct_capture')},evidence:pattern.evidence}};
+  return (input) => {
+    const units = segment(clean(input))
+      .map((raw, index) => {
+        const extracted = extractNotes(raw.text);
+        return {
+          id: `sy.${String(index + 1).padStart(4, "0")}`,
+          chapter_label: raw.chapter,
+          unit_label: raw.label,
+          boundary_basis: "input_markup",
+          boundary_evidence: "observed",
+          source: { text: extracted.source, language: spec.language, evidence: "observed" },
+          editorial_notes: extracted.editorial,
+          tokens: [],
+        };
+      })
+      .filter((unit) => norm(unit.source.text).length >= spec.structure.minimum_unit_characters);
 
- const semanticIndex=new Map();for(const[kind,table]of Object.entries(spec.lexicons))for(const[canonical,forms]of Object.entries(table))for(const form of forms){const key=norm(form);if(!semanticIndex.has(key))semanticIndex.set(key,[]);semanticIndex.get(key).push({kind:kind.slice(0,-1),canonical})}
+    units.forEach((unit, index) => {
+      unit.id = `sy.${String(index + 1).padStart(4, "0")}`;
+    });
 
- const classify=token=>semanticIndex.get(token)||semanticIndex.get(token.replace(/^ו(?=[א-ת])/ ,''))||[];
-
- const indexCorpus=units=>{const occurrences=[],lexemeMap=new Map();for(const unit of units)unit.tokens=surfaceWords(unit.source.text).map((surface,index)=>{const normalized=norm(surface),id=`tok.${String(occurrences.length+1).padStart(6,'0')}`,meanings=classify(normalized),occurrence={id,unit_id:unit.id,index,surface,normalized,meanings,interpretation:meanings.length?'classified':'unclassified'};occurrences.push(occurrence);if(!lexemeMap.has(normalized))lexemeMap.set(normalized,{normalized,surface_forms:new Set(),occurrences:[],meanings,interpretation:meanings.length?'classified':'unclassified'});const lexeme=lexemeMap.get(normalized);lexeme.surface_forms.add(surface);lexeme.occurrences.push(id);return id});const lexemes=[...lexemeMap.values()].map(x=>({...x,surface_forms:[...x.surface_forms]})).sort((a,b)=>a.normalized.localeCompare(b.normalized,'he'));return{occurrences,lexemes,coverage:{total_occurrences:occurrences.length,total_lexemes:lexemes.length,classified_lexemes:lexemes.filter(x=>x.interpretation==='classified').length,unclassified_lexemes:lexemes.filter(x=>x.interpretation==='unclassified').length,lossless:true}}};
-
- const statementParts=text=>text.split(/(?<=[.!?׃:;])\s+|\n+/).map(x=>x.trim()).filter(Boolean);
-
- const extractGraph=units=>{const statements=[],relations=[];for(const unit of units){for(const text of statementParts(unit.source.text)){const statement={id:`stmt.${String(statements.length+1).padStart(5,'0')}`,unit_id:unit.id,text,evidence:'derived'};statements.push(statement);const tokens=surfaceWords(text),normalized=tokens.map(norm);for(let i=0;i<normalized.length;i++){let operation=null;for(const [canonical,forms] of Object.entries(spec.lexicons.operations)){if(forms.some(form=>{const f=norm(form);return normalized[i]===f||normalized[i]==='ו'+f})){operation=canonical;break}}if(!operation)continue;const before=tokens.slice(Math.max(0,i-5),i).join(' ').trim(),after=tokens.slice(i+1,Math.min(tokens.length,i+9)).join(' ').trim();const crowned=(norm(text).match(/המליך אות ([א-ת])/)||[])[1]||null;const subject=crowned?{text:crowned,type:'letter',evidence:'observed'}:before?{text:before,type:'entity',evidence:'hypothesis'}:{text:null,type:'entity',evidence:'unknown'};const object=after?{text:after,type:'entity',evidence:'hypothesis'}:{text:null,type:'entity',evidence:'unknown'};const evidence=crowned&&after?'derived':before&&after?'hypothesis':'unknown';relations.push({id:`rel.${String(relations.length+1).padStart(5,'0')}`,statement_id:statement.id,unit_id:unit.id,subject,operation,object,predicate:'acts_on',evidence,review:{status:'pending',decided_at:null}})}}}return{statements,relations}};
-
- const validate=corpus=>{const errors=[],ids=new Set(),allowed=new Set(spec.validation.allowed_evidence);for(const u of corpus.units){if(spec.validation.unique_ids&&ids.has(u.id))errors.push(`duplicate_id:${u.id}`);ids.add(u.id);if(spec.validation.require_chapter&&!u.chapter)errors.push(`missing_chapter:${u.id}`);for(const value of [u.source.text,...u.editorial_notes,...u.variants.map(v=>v.text)])if(spec.validation.reject_marker_leaks&&/§/.test(value))errors.push(`marker_leak:${u.id}`);for(const evidence of [u.source.evidence,u.annotations.evidence,u.interpretation.evidence])if(!allowed.has(evidence))errors.push(`invalid_evidence:${u.id}:${evidence}`)}for(const edge of corpus.provenance||[])if(!edge.derived_from.length)errors.push(`missing_provenance:${edge.subject}:${edge.field}`);for(const relation of corpus.graph.relations){if(!relation.subject||!relation.operation||!relation.object)errors.push(`incomplete_relation:${relation.id}`);for(const evidence of [relation.evidence,relation.subject.evidence,relation.object.evidence])if(!allowed.has(evidence))errors.push(`invalid_relation_evidence:${relation.id}:${evidence}`);if(!spec.operation_contracts.some(x=>x.operation===relation.operation))errors.push(`missing_contract:${relation.operation}`)}for(const operation of Object.keys(spec.lexicons.operations))if(!spec.operation_contracts.some(x=>x.operation===operation))errors.push(`missing_contract:${operation}`);const tokenIds=new Set(corpus.corpus.occurrences.map(x=>x.id)),referenced=corpus.units.flatMap(x=>x.tokens);if(tokenIds.size!==corpus.corpus.occurrences.length)errors.push('duplicate_token_id');if(referenced.length!==corpus.corpus.occurrences.length||referenced.some(id=>!tokenIds.has(id)))errors.push('incomplete_token_coverage');if(corpus.sy.source.text!==corpus.input)errors.push('source_not_lossless');if(!corpus.corpus.lexemes.some(x=>x.normalized==='פליאות'))errors.push('missing_expected_lexeme:פליאות');return{valid:errors.length===0,errors}};
- return input=>{const units=expandRecords(segment(clean(input))).map(raw=>{const extracted=notes(raw.text),source=extracted.source,operations=detect(source,spec.lexicons.operations),domains=detect(source,spec.lexicons.domains),classes=detect(source,spec.lexicons.classes),record=inferRecord(source,raw.record_pattern);return{id:null,chapter:raw.chapter,label:raw.label,source:{text:source,language:spec.language,evidence:spec.evidence.source},editorial_notes:extracted.editorial,annotations:{operations,domains,classes,numbers:numbers(source),evidence:operations.length||domains.length||classes.length?spec.evidence.literal:'unknown'},interpretation:record.type?record:{type:null,input:null,transformation:operations.map(x=>x.canonical),output:null,evidence:operations.length?'derived':'unknown'},variants:[]}}).filter(u=>norm(u.source.text).length>=spec.structure.minimum_unit_characters);units.forEach((u,i)=>u.id=`sy.${String(i+1).padStart(4,'0')}`);const provenance=[],pattern=spec.record_patterns[0];units.forEach((u,i)=>{const ir=u.interpretation;if(ir.type!=='crowned_letter_mapping')return;const g=ir.input.governs;if(g.rule==='direct_capture')g.derived_from=[u.id];else{const forms=pattern.governs_source_forms?.[g.value]||[g.value],source=[...units.slice(0,i)].reverse().find(x=>x.chapter===u.chapter&&forms.some(f=>words(x.source.text).includes(norm(f))));g.derived_from=source?[source.id]:[]}for(const domain of ['world','year','soul'])ir.output[domain].derived_from=[u.id];for(const [field,node] of [['input.governs',g],...['world','year','soul'].map(d=>[`output.${d}`,ir.output[d]])])provenance.push({subject:u.id,field,value:node.value,evidence:node.evidence,rule:node.rule,derived_from:node.derived_from})});const corpusIndex=indexCorpus(units),graph=extractGraph(units),chapters=[...new Set(units.map(x=>x.chapter))].map(title=>({title,unit_ids:units.filter(x=>x.chapter===title).map(x=>x.id)}));const corpus={converter:{spec_id:spec.id,spec_version:spec.version},version:spec.version,generated_at:new Date().toISOString(),input,policy:{source_text:spec.evidence.source,annotations:spec.evidence.literal,interpretation:'observed_derived_hypothesis_or_unknown',vocabulary:'complete_with_unclassified'},ontology:spec.ontology,operation_contracts:spec.operation_contracts,target:spec.target,review:{storage:spec.review.storage,states:spec.review.states,decisions:{}},sy:{title:'ספר היצירה',language:spec.language,source:{format:'tsx',text:input,evidence:spec.evidence.source},document:{chapters}},stats:{units:units.length,statements:graph.statements.length,relations:graph.relations.length,operations:units.reduce((n,u)=>n+u.annotations.operations.length,0),domains:units.reduce((n,u)=>n+u.annotations.domains.length,0),variants:0,tokens:corpusIndex.occurrences.length,lexemes:corpusIndex.lexemes.length,classified_lexemes:corpusIndex.coverage.classified_lexemes,unclassified_lexemes:corpusIndex.coverage.unclassified_lexemes},provenance,graph,units,corpus:corpusIndex};corpus.validation=validate(corpus);return corpus}
+    const evidence = indexNames(units);
+    const result = {
+      converter: { spec_id: spec.id, spec_version: spec.version },
+      version: spec.version,
+      generated_at: new Date().toISOString(),
+      input,
+      scope: {
+        allowed_authorities: ["sefaria_source", "user_interpretation", "deterministic_derivation"],
+        excluded: ["external_commentary", "model_generated_interpretation"],
+      },
+      source: {
+        authority: {
+          id: "sefaria_source",
+          name: "Sefaria",
+          url: spec.source.canonical_url,
+          basis: "declared_by_user",
+        },
+        local_copy: {
+          format: "tsx",
+          text: input,
+          equivalence_to_canonical: "not_yet_verified",
+          evidence: "observed",
+        },
+      },
+      axiom: spec.axiom,
+      stats: {
+        units: units.length,
+        occurrences: evidence.stats.total_occurrences,
+        names: evidence.stats.total_names,
+        repeated_names: evidence.stats.repeated_names,
+        single_occurrence_names: evidence.stats.single_occurrence_names,
+      },
+      evidence,
+      interpretations: {
+        authority: "user_interpretation",
+        entries: {},
+      },
+      units,
+    };
+    result.validation = validate(result);
+    return result;
+  };
 }
