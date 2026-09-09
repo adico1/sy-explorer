@@ -147,6 +147,164 @@ export function createConverter(spec) {
     };
   };
 
+  const deriveRepetitionStructure = (units, evidence) => {
+    const occurrenceById = new Map(evidence.occurrences.map((item) => [item.id, item]));
+    const records = [];
+    const adjacency_edges = [];
+    const recordsByName = new Map();
+
+    for (const unit of units) {
+      let tokenOffset = 0;
+      for (const text of unit.source.text.split(/\n+/).map((value) => value.trim()).filter(Boolean)) {
+        const tokenCount = surfaceWords(text).length;
+        const occurrence_ids = unit.tokens.slice(tokenOffset, tokenOffset + tokenCount);
+        tokenOffset += tokenCount;
+        const record = {
+          id: `record.${String(records.length + 1).padStart(5, "0")}`,
+          unit_id: unit.id,
+          text,
+          occurrence_ids,
+          evidence: "observed",
+          boundary_basis: "source_line_break",
+        };
+        records.push(record);
+        const seen = new Set();
+        occurrence_ids.forEach((id, index) => {
+          const occurrence = occurrenceById.get(id);
+          occurrence.record_id = record.id;
+          if (!seen.has(occurrence.name_id)) {
+            if (!recordsByName.has(occurrence.name_id)) recordsByName.set(occurrence.name_id, new Set());
+            recordsByName.get(occurrence.name_id).add(record.id);
+            seen.add(occurrence.name_id);
+          }
+          if (index < occurrence_ids.length - 1) {
+            adjacency_edges.push({
+              id: `next.${String(adjacency_edges.length + 1).padStart(6, "0")}`,
+              from: id,
+              to: occurrence_ids[index + 1],
+              relation: "next_in_source_record",
+              evidence: "deterministic_derivation",
+            });
+          }
+        });
+      }
+    }
+
+    const nameById = new Map(evidence.names.map((name) => [name.id, name]));
+    const structuralAnchors = new Set(
+      evidence.names
+        .filter((name) => (recordsByName.get(name.id)?.size || 0) >= spec.repetition.minimum_record_presence_for_anchor)
+        .map((name) => name.id),
+    );
+
+    const role_candidates = evidence.names.map((name) => {
+      const record_presence = recordsByName.get(name.id)?.size || 0;
+      const unit_presence = new Set(
+        name.occurrence_ids.map((id) => occurrenceById.get(id).unit_id),
+      ).size;
+      let candidate;
+      if (unit_presence === 1) candidate = "single_unit_value_or_name";
+      else if (record_presence >= spec.repetition.minimum_record_presence_for_anchor) candidate = "category_relation_or_controller";
+      else candidate = "repeated_value_or_local_structure";
+      return {
+        name_id: name.id,
+        occurrence_count: name.occurrence_count,
+        unit_presence,
+        cardinality_in_single_unit: unit_presence === 1 ? name.occurrence_count : null,
+        record_presence,
+        candidate,
+        authority: "user_interpretation",
+        derivation: "multiplicity_and_scope_rule",
+      };
+    });
+
+    const ngramMap = new Map();
+    for (const record of records) {
+      const ids = record.occurrence_ids.map((id) => occurrenceById.get(id).name_id);
+      for (const size of spec.repetition.ngram_sizes) {
+        for (let index = 0; index <= ids.length - size; index += 1) {
+          const members = ids.slice(index, index + size);
+          const signature = members.join(">");
+          if (!ngramMap.has(signature)) {
+            ngramMap.set(signature, { size, member_name_ids: members, occurrences: [] });
+          }
+          ngramMap.get(signature).occurrences.push({
+            record_id: record.id,
+            occurrence_ids: record.occurrence_ids.slice(index, index + size),
+          });
+        }
+      }
+    }
+    const repeated_sequences = [...ngramMap.values()]
+      .filter((item) => item.occurrences.length > 1)
+      .map((item, index) => ({
+        id: `sequence.${String(index + 1).padStart(5, "0")}`,
+        ...item,
+        occurrence_count: item.occurrences.length,
+        evidence: "deterministic_derivation",
+      }))
+      .sort((a, b) => b.occurrence_count - a.occurrence_count);
+
+    const slotMap = new Map();
+    for (const record of records) {
+      const occurrences = record.occurrence_ids.map((id) => occurrenceById.get(id));
+      for (let start = 0; start < occurrences.length; start += 1) {
+        if (!structuralAnchors.has(occurrences[start].name_id)) continue;
+        let end = start + 1;
+        while (end < occurrences.length && !structuralAnchors.has(occurrences[end].name_id)) end += 1;
+        if (end >= occurrences.length || end === start + 1) continue;
+        const values = occurrences.slice(start + 1, end);
+        const key = `${occurrences[start].name_id}>${occurrences[end].name_id}`;
+        if (!slotMap.has(key)) {
+          slotMap.set(key, {
+            left_anchor_name_id: occurrences[start].name_id,
+            right_anchor_name_id: occurrences[end].name_id,
+            values: [],
+          });
+        }
+        slotMap.get(key).values.push({
+          record_id: record.id,
+          occurrence_ids: values.map((item) => item.id),
+          name_ids: values.map((item) => item.name_id),
+          surface: values.map((item) => item.surface).join(" "),
+        });
+        start = end - 1;
+      }
+    }
+    const slots = [...slotMap.values()]
+      .filter((slot) => new Set(slot.values.map((value) => value.record_id)).size >= spec.repetition.minimum_records_per_slot)
+      .map((slot, index) => ({
+        id: `slot.${String(index + 1).padStart(5, "0")}`,
+        ...slot,
+        left_anchor: nameById.get(slot.left_anchor_name_id).normalized,
+        right_anchor: nameById.get(slot.right_anchor_name_id).normalized,
+        record_count: new Set(slot.values.map((value) => value.record_id)).size,
+        cardinality: [...new Set(slot.values.map((value) => value.name_ids.length))],
+        candidate_role: "single_value_relation_or_controller_name",
+        authority: "user_interpretation",
+        evidence: "deterministic_derivation",
+      }))
+      .sort((a, b) => b.record_count - a.record_count);
+
+    return {
+      records,
+      adjacency_edges,
+      same_name_groups: evidence.names
+        .filter((name) => name.occurrence_count > 1)
+        .map((name) => ({
+          name_id: name.id,
+          occurrence_ids: name.occurrence_ids,
+          occurrence_count: name.occurrence_count,
+          relation: "same_normalized_name",
+          evidence: "deterministic_derivation",
+        })),
+      role_candidates,
+      repeated_sequences,
+      slots,
+      rules: spec.repetition,
+    };
+  };
+
   const validate = (result) => {
     const errors = [];
     const unitIds = new Set();
@@ -165,6 +323,12 @@ export function createConverter(spec) {
       const actual = result.evidence.occurrences.filter((item) => item.name_id === name.id).length;
       if (actual !== name.occurrence_count) errors.push(`invalid_occurrence_count:${name.id}`);
       if (name.importance.authority !== "user_interpretation") errors.push(`invalid_importance_authority:${name.id}`);
+    }
+    for (const edge of result.structure.adjacency_edges) {
+      if (!occurrenceIds.has(edge.from) || !occurrenceIds.has(edge.to)) errors.push(`invalid_adjacency:${edge.id}`);
+    }
+    for (const slot of result.structure.slots) {
+      if (!slot.values.length || slot.record_count < result.structure.rules.minimum_records_per_slot) errors.push(`invalid_slot:${slot.id}`);
     }
     if (result.source.local_copy.text !== result.input) errors.push("source_not_lossless");
     if (!result.evidence.names.some((name) => name.normalized === "פליאות")) errors.push("missing_expected_name:פליאות");
@@ -193,6 +357,7 @@ export function createConverter(spec) {
     });
 
     const evidence = indexNames(units);
+    const structure = deriveRepetitionStructure(units, evidence);
     const result = {
       converter: { spec_id: spec.id, spec_version: spec.version },
       version: spec.version,
@@ -223,8 +388,13 @@ export function createConverter(spec) {
         names: evidence.stats.total_names,
         repeated_names: evidence.stats.repeated_names,
         single_occurrence_names: evidence.stats.single_occurrence_names,
+        source_records: structure.records.length,
+        repeated_sequences: structure.repeated_sequences.length,
+        slot_candidates: structure.slots.length,
+        single_unit_name_candidates: structure.role_candidates.filter((item) => item.unit_presence === 1).length,
       },
       evidence,
+      structure,
       interpretations: {
         authority: "user_interpretation",
         entries: {},
