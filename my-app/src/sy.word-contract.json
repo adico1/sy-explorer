@@ -1,0 +1,66 @@
+{
+  "id": "sy.partial-word-contract",
+  "version": "1.0.0",
+  "status": "sealed_partial",
+  "authority": "user",
+  "purpose": "Preserve the approved orthographic facts while leaving undecided lexical questions explicitly unknown.",
+  "scope": "sealed_working_corpus_text",
+  "rules": {
+    "surface": {
+      "status": "sealed",
+      "rule": "The exact pointed source form and its exact source range are always preserved."
+    },
+    "hyphen_connectors": {
+      "status": "sealed",
+      "characters": ["-", "־"],
+      "rule": "A hyphen connector internal to a non-whitespace span joins one orthographic unit."
+    },
+    "initialisms": {
+      "status": "sealed",
+      "internal_quote_characters": ["\"", "'", "״", "׳"],
+      "rule": "An acronym or initialism containing internal quote marks remains one orthographic unit."
+    },
+    "attached_prefixes": {
+      "status": "sealed_partial",
+      "surface_representation": "required",
+      "decomposed_representation": "required",
+      "segmentation_rules": "unknown",
+      "accepted_prefix_inventory": "unknown",
+      "repetition_rule": "Counts must be reported separately for each representation and must identify the representation used.",
+      "classification_rule": "Every classification must identify the representation and segmentation rule used."
+    },
+    "numbers_and_verse_markers": {
+      "status": "unknown",
+      "decision_granularity": "per_occurrence",
+      "question": "Which occurrences are words and which are structural markers?"
+    },
+    "punctuation": {
+      "status": "unknown",
+      "exact_position": "required",
+      "entity_role": "unknown"
+    },
+    "niqqud": {
+      "status": "sealed_partial",
+      "exact_source_form": "required",
+      "unpointed_derivative": "unknown",
+      "lexical_counting_role": "unknown"
+    }
+  },
+  "prohibitions": {
+    "emit_words_or_tokens": true,
+    "infer_prefix_boundaries": true,
+    "collapse_surface_and_decomposed_counts": true,
+    "treat_legacy_name_or_occurrence_counts_as_lexical_proof": true
+  },
+  "legacy_diagnostics": {
+    "name_count_740": "not_evidence_for_this_contract",
+    "occurrence_count_1673": "not_evidence_for_this_contract"
+  },
+  "open_decisions": [
+    "attached_prefix_segmentation_rules",
+    "accepted_prefix_inventory",
+    "number_and_verse_marker_role_per_occurrence",
+    "punctuation_entity_role",
+    "unpointed_derivative_generation_and_use"
+  ]
+}
