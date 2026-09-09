@@ -43,6 +43,10 @@ function loadInterpretations(): Interpretations {
 }
 
 export function SYConverter() {
+  return null;
+}
+
+export function SYConverterWorkbench() {
   const [corpus] = useState<any>(() => convert(sourceText));
   const [interpretations, setInterpretations] = useState<Interpretations>(loadInterpretations);
   const [selectedId, setSelectedId] = useState<string>(() => corpus.evidence.names[0]?.id || "");
