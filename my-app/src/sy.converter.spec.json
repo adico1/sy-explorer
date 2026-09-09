@@ -1,7 +1,7 @@
 {
   "$schema": "./sy.converter-spec.schema.json",
   "id": "sy.evidence-corpus",
-  "version": "0.12.1",
+  "version": "0.12.2",
   "language": "he",
   "source": {
     "authority": "sefaria_source",
@@ -123,6 +123,7 @@
     { "id": "source.lossless_local_edition", "status": "active" },
     { "id": "source.authoritative_niqqud", "status": "active" },
     { "id": "source.authoritative_br_boundaries", "status": "active" },
+    { "id": "source.lossless_jsx_map", "status": "active", "artifact": "src/sy.source-map.json", "proof": "exact_main_root_round_trip" },
     { "id": "corpus.name_occurrences", "status": "active" },
     { "id": "corpus.occurrence_counts", "status": "active" },
     { "id": "corpus.user_interpretations", "status": "active" },
@@ -151,6 +152,13 @@
         "id": "reading.br_boundary",
         "statement": "Every br marks an authoritative reading boundary; consecutive br elements additionally delimit a reading group.",
         "authority": "user_interpretation"
+      },
+      {
+        "id": "source.lossless_jsx_map",
+        "statement": "The ordered JSX main-root map covers every source code unit exactly once and reconstructs the mapped source slice exactly.",
+        "authority": "deterministic_derivation",
+        "artifact": "src/sy.source-map.json",
+        "status": "sealed"
       },
       {
         "id": "semantics.standard_hebrew",

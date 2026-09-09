@@ -7,12 +7,19 @@ const source = fs.readFileSync(new URL("../src/SeferYetzirah.tsx", import.meta.u
 const sourceText = source.toString("utf8");
 const sourceHash = crypto.createHash("sha256").update(source).digest("hex");
 const corpus = createConverter(spec)(sourceText);
+const sourceMap = JSON.parse(fs.readFileSync(new URL("../src/sy.source-map.json", import.meta.url), "utf8"));
 const failures = [];
 const requireInvariant = (condition, name) => {
   if (!condition) failures.push(name);
 };
 
 requireInvariant(sourceHash === spec.source.local_edition.sha256, "sealed_source_hash");
+requireInvariant(sourceMap.source.sha256 === sourceHash, "source_map_source_hash");
+requireInvariant(sourceMap.status === "sealed", "source_map_sealed");
+requireInvariant(sourceMap.semantic_status === "none", "source_map_has_no_semantics");
+requireInvariant(sourceMap.proof.every_root_code_unit_covered_exactly_once, "source_map_unique_coverage");
+requireInvariant(sourceMap.proof.exact_root_round_trip, "source_map_round_trip");
+requireInvariant(sourceMap.proof.deterministic_output, "source_map_deterministic");
 requireInvariant(corpus.validation.valid, "corpus_validation");
 requireInvariant(corpus.input === sourceText, "lossless_source");
 requireInvariant(corpus.stats.occurrences === 1673, "occurrence_count");

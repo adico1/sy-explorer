@@ -7,6 +7,8 @@
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "oxlint",
+    "generate:source-map": "node scripts/generate-source-map.mjs",
+    "test:source-map": "node scripts/generate-source-map.mjs --check",
     "test:regression": "node scripts/regression.mjs",
     "preview": "vite preview"
   },
