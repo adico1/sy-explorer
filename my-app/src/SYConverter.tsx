@@ -1,5 +1,5 @@
 import { useState } from "react";
-import sourceText from "./App.tsx?raw";
+import sourceText from "./SeferYetzirah.tsx?raw";
 import spec from "./sy.converter.spec.json";
 import { createConverter } from "./converter-engine.mjs";
 
@@ -49,13 +49,13 @@ export function SYConverter() {
 
       {corpus && (
         <>
-          <p>
+          <p className="converter__stats">
             {corpus.stats.units} יחידות ·{" "}
             {corpus.stats.operations} פעולות ·{" "}
             {corpus.provenance.length} קישורי ראיה
           </p>
 
-          <pre dir="ltr">
+          <pre className="converter__output" dir="ltr">
             {JSON.stringify(corpus, null, 2)}
           </pre>
         </>

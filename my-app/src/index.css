@@ -1,59 +1,22 @@
-@font-face {
-  font-family: 'StamBiblicalFont';
-  src: url('./assets/stamashkenazclm-webfont.woff') format('woff');
-}
-
-@font-face {
-  font-family: 'MenukadFont';
-  src: url('./assets/mft_narkisclassic-regular-WeTb87hM.woff') format('woff');
-}
-
-body {
-  font-family: 'MenukadFont', serif;
-}
-
-.bible-text {
-  font-family: 'ShofarRegular', serif;
-  line-height: 1.8;
-  /* מרווח שורה מוגדל כדי למנוע חיתוך של הניקוד */
-  font-size: 1.25rem;
-  /* טקסט תנ"כי מומלץ להציג בגודל קריא וברור */
-}
-
-.bible-text-2 {
-  font-family: 'ShofarRegularOblique', serif;
-  line-height: 1.8;
-  /* מרווח שורה מוגדל כדי למנוע חיתוך של הניקוד */
-  font-size: 1.25rem;
-  /* טקסט תנ"כי מומלץ להציג בגודל קריא וברור */
-}
-
-.bible-text-3 {
-  font-family: 'ShofarDemi-BoldOblique', serif;
-  line-height: 1.8;
-  /* מרווח שורה מוגדל כדי למנוע חיתוך של הניקוד */
-  font-size: 1.25rem;
-  /* טקסט תנ"כי מומלץ להציג בגודל קריא וברור */
-}
-
-.bible-text-4 {
-  font-family: 'ShofarDemi-Bold', serif;
-  line-height: 1.8;
-  /* מרווח שורה מוגדל כדי למנוע חיתוך של הניקוד */
-  font-size: 1.25rem;
-  /* טקסט תנ"כי מומלץ להציג בגודל קריא וברור */
-}
-
-main {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  direction: rtl;
-  font-size: xx-large;
-  line-height: 3rem;
-  align-items: center; 
-}
-
-section {
-  max-width: 730px;
-}
+@font-face { font-family: "Menukad"; src: url("./assets/mft_narkisclassic-regular-WeTb87hM.woff") format("woff"); }
+:root { font-family: Menukad, Georgia, serif; color: #24211b; background: #e9e4d8; font-synthesis: none; }
+* { box-sizing: border-box; }
+body { margin: 0; min-width: 320px; }
+button { font: inherit; }
+.app-shell { display: grid; grid-template-columns: minmax(0, 760px) minmax(360px, 1fr); align-items: start; gap: 24px; max-width: 1440px; margin: 0 auto; padding: 32px; }
+.app-shell > main { padding: 38px clamp(24px, 6vw, 64px); background: #fffdf6; border: 1px solid #cbc2af; box-shadow: 0 24px 70px #3b33231a; font-size: 1.22rem; line-height: 2; }
+.app-shell > main h1 { margin: 0 0 2rem; font-size: clamp(2.2rem, 5vw, 4rem); line-height: 1.1; text-align: center; }
+.app-shell > main h2 { margin: 3rem 0 1.2rem; padding-bottom: .35rem; border-bottom: 1px solid #d7cfbf; font-size: 1.8rem; }
+.app-shell > main h3 { margin: 1.8rem 0 .5rem; font-size: 1.25rem; }
+.converter { position: sticky; top: 24px; max-height: calc(100vh - 48px); overflow: hidden; border-radius: 14px; color: #f3eee3; background: #0c1714; border: 1px solid #29443b; box-shadow: 0 24px 70px #15221d33; }
+.converter__header { display: flex; justify-content: space-between; align-items: center; padding: 20px; border-bottom: 1px solid #29443b; }
+.converter__header small { color: #d8ab55; font: .72rem monospace; }
+.converter__header h2 { margin: .25rem 0 0; font-size: 1.35rem; }
+.converter__valid { color: #6dd0b2; font-size: .82rem; }
+.converter__actions { display: flex; gap: 10px; padding: 16px 20px; }
+.converter button { padding: 10px 14px; border: 1px solid #365248; border-radius: 8px; color: #f3eee3; background: #14241f; cursor: pointer; }
+.converter button:disabled { opacity: .4; cursor: not-allowed; }
+.converter .converter__primary { color: #07100e; background: #6dd0b2; border-color: #6dd0b2; font-weight: 700; }
+.converter__stats { margin: 0; padding: 0 20px 14px; color: #aab8b2; }
+.converter__output { max-height: calc(100vh - 205px); margin: 0; padding: 20px; overflow: auto; border-top: 1px solid #29443b; direction: ltr; text-align: left; color: #d7e1dd; background: #09120f; font: .78rem/1.55 monospace; white-space: pre-wrap; overflow-wrap: anywhere; }
+@media (max-width: 960px) { .app-shell { grid-template-columns: 1fr; padding: 16px; } .converter { position: static; grid-row: 1; max-height: none; } .converter__output { max-height: 55vh; } }
