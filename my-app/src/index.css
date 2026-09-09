@@ -1,0 +1,59 @@
+@font-face {
+  font-family: 'StamBiblicalFont';
+  src: url('./assets/stamashkenazclm-webfont.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'MenukadFont';
+  src: url('./assets/mft_narkisclassic-regular-WeTb87hM.woff') format('woff');
+}
+
+body {
+  font-family: 'MenukadFont', serif;
+}
+
+.bible-text {
+  font-family: 'ShofarRegular', serif;
+  line-height: 1.8;
+  /* מרווח שורה מוגדל כדי למנוע חיתוך של הניקוד */
+  font-size: 1.25rem;
+  /* טקסט תנ"כי מומלץ להציג בגודל קריא וברור */
+}
+
+.bible-text-2 {
+  font-family: 'ShofarRegularOblique', serif;
+  line-height: 1.8;
+  /* מרווח שורה מוגדל כדי למנוע חיתוך של הניקוד */
+  font-size: 1.25rem;
+  /* טקסט תנ"כי מומלץ להציג בגודל קריא וברור */
+}
+
+.bible-text-3 {
+  font-family: 'ShofarDemi-BoldOblique', serif;
+  line-height: 1.8;
+  /* מרווח שורה מוגדל כדי למנוע חיתוך של הניקוד */
+  font-size: 1.25rem;
+  /* טקסט תנ"כי מומלץ להציג בגודל קריא וברור */
+}
+
+.bible-text-4 {
+  font-family: 'ShofarDemi-Bold', serif;
+  line-height: 1.8;
+  /* מרווח שורה מוגדל כדי למנוע חיתוך של הניקוד */
+  font-size: 1.25rem;
+  /* טקסט תנ"כי מומלץ להציג בגודל קריא וברור */
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  direction: rtl;
+  font-size: xx-large;
+  line-height: 3rem;
+  align-items: center; 
+}
+
+section {
+  max-width: 730px;
+}
