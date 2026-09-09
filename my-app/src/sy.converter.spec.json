@@ -1,7 +1,7 @@
 {
   "$schema": "./sy.converter-spec.schema.json",
   "id": "sy.evidence-corpus",
-  "version": "0.12.12",
+  "version": "0.12.13",
   "language": "he",
   "source": {
     "authority": "sefaria_source",
@@ -147,6 +147,7 @@
     { "id": "lexicon.sealed_hyphen_word_units", "status": "active", "artifact": "src/sy.hyphen-units.json", "proof": "all_hyphen_occurrences_assigned_once_and_exact_corpus_round_trip" },
     { "id": "lexicon.sealed_internal_quote_word_units", "status": "active", "artifact": "src/sy.internal-quote-units.json", "proof": "all_quote_marks_classified_and_internal_quotes_assigned_once" },
     { "id": "lexicon.unified_sealed_word_units", "status": "active", "artifact": "src/sy.sealed-word-units.json", "proof": "exact_union_of_previously_sealed_nonoverlapping_word_occurrences" },
+    { "id": "lexicon.complete_coverage_map", "status": "active", "artifact": "src/sy.lexical-coverage.json", "proof": "every_corpus_code_unit_covered_exactly_once_without_new_words" },
     { "id": "corpus.name_occurrences", "status": "active" },
     { "id": "corpus.occurrence_counts", "status": "active" },
     { "id": "corpus.user_interpretations", "status": "active" },
@@ -258,6 +259,13 @@
         "statement": "The unified signed word layer contains exactly the non-overlapping union of the 8 hyphen and 86 internal-quote occurrences, retains exact pointed surfaces and recognition rules, and adds no other words or interpretation.",
         "authority": "deterministic_union_of_user_authorized_rules",
         "artifact": "src/sy.sealed-word-units.json",
+        "status": "sealed"
+      },
+      {
+        "id": "lexicon.complete_coverage_map",
+        "statement": "Every corpus code unit is covered exactly once as a sealed word, Unicode whitespace, Unicode punctuation or symbol with unknown role, or unresolved text; the map preserves all 94 sealed words and creates no new words or candidates.",
+        "authority": "deterministic_derivation",
+        "artifact": "src/sy.lexical-coverage.json",
         "status": "sealed"
       },
       {
