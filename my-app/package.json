@@ -13,6 +13,8 @@
     "test:reading-units": "node scripts/generate-reading-units.mjs --check",
     "generate:reading-hierarchy": "node scripts/generate-reading-hierarchy.mjs",
     "test:reading-hierarchy": "node scripts/generate-reading-hierarchy.mjs --check",
+    "generate:text-projection": "node scripts/generate-text-projection.mjs",
+    "test:text-projection": "node scripts/generate-text-projection.mjs --check",
     "test:regression": "node scripts/regression.mjs",
     "preview": "vite preview"
   },
