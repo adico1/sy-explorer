@@ -1,7 +1,7 @@
 {
   "$schema": "./sy.converter-spec.schema.json",
   "id": "sy.evidence-corpus",
-  "version": "0.12.1",
+  "version": "0.13.0-discovery.1",
   "language": "he",
   "source": {
     "authority": "sefaria_source",
@@ -134,8 +134,27 @@
   ],
   "reading_specification": {
     "id": "sy.systemic-reading",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "states": ["sealed", "discovery", "rejected"],
+    "discovery_contract": {
+      "status": "sealed",
+      "unit_of_approval": "rule_not_instance",
+      "requirements": [
+        "source_spans_for_every_claim",
+        "same_construction_same_parse",
+        "all_matches_reported",
+        "all_counterexamples_reported",
+        "explicit_cardinality_checked",
+        "ambiguity_preserved",
+        "no_external_semantics",
+        "no_unapproved_user_term_expansion"
+      ],
+      "acceptance": {
+        "contradictions": 0,
+        "unreported_matches": 0,
+        "unsupported_claims": 0
+      }
+    },
     "sealed_rules": [
       {
         "id": "source.local_edition",
