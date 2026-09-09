@@ -13,6 +13,7 @@ const readingHierarchy = JSON.parse(fs.readFileSync(new URL("../src/sy.reading-h
 const textProjection = JSON.parse(fs.readFileSync(new URL("../src/sy.text-projection.json", import.meta.url), "utf8"));
 const textContext = JSON.parse(fs.readFileSync(new URL("../src/sy.text-context.json", import.meta.url), "utf8"));
 const corpusScope = JSON.parse(fs.readFileSync(new URL("../src/sy.corpus-scope.json", import.meta.url), "utf8"));
+const corpusText = JSON.parse(fs.readFileSync(new URL("../src/sy.corpus-text.json", import.meta.url), "utf8"));
 const failures = [];
 const requireInvariant = (condition, name) => {
   if (!condition) failures.push(name);
@@ -68,6 +69,16 @@ requireInvariant(corpusScope.proof.counts_match_user_decision, "corpus_scope_use
 requireInvariant(corpusScope.proof.included_source_order_preserved, "corpus_scope_source_order");
 requireInvariant(corpusScope.proof.total_included_count === 362, "corpus_scope_included_count");
 requireInvariant(corpusScope.proof.deterministic_output, "corpus_scope_deterministic");
+requireInvariant(corpusText.source.sha256 === sourceHash, "corpus_text_source_hash");
+requireInvariant(corpusText.status === "sealed", "corpus_text_sealed");
+requireInvariant(corpusText.proof.every_included_node_present_exactly_once, "corpus_text_included_coverage");
+requireInvariant(corpusText.proof.no_excluded_node_present, "corpus_text_no_excluded_nodes");
+requireInvariant(corpusText.proof.every_fragment_matches_source_range, "corpus_text_source_ranges");
+requireInvariant(corpusText.proof.included_source_order_preserved, "corpus_text_source_order");
+requireInvariant(corpusText.proof.every_fragment_assigned_to_one_reading_unit, "corpus_text_unit_assignment");
+requireInvariant(corpusText.proof.exact_included_text_stream_round_trip, "corpus_text_round_trip");
+requireInvariant(corpusText.proof.counts_match_sealed_scope, "corpus_text_scope_counts");
+requireInvariant(corpusText.proof.deterministic_output, "corpus_text_deterministic");
 requireInvariant(corpus.validation.valid, "corpus_validation");
 requireInvariant(corpus.input === sourceText, "lossless_source");
 requireInvariant(corpus.stats.occurrences === 1673, "occurrence_count");
