@@ -9,6 +9,8 @@
     "lint": "oxlint",
     "generate:source-map": "node scripts/generate-source-map.mjs",
     "test:source-map": "node scripts/generate-source-map.mjs --check",
+    "generate:reading-units": "node scripts/generate-reading-units.mjs",
+    "test:reading-units": "node scripts/generate-reading-units.mjs --check",
     "test:regression": "node scripts/regression.mjs",
     "preview": "vite preview"
   },
