@@ -1,7 +1,7 @@
 {
   "$schema": "./sy.converter-spec.schema.json",
   "id": "sy.evidence-corpus",
-  "version": "0.12.6",
+  "version": "0.12.7",
   "language": "he",
   "source": {
     "authority": "sefaria_source",
@@ -128,6 +128,7 @@
     { "id": "structure.jsx_reading_hierarchy", "status": "active", "artifact": "src/sy.reading-hierarchy.json", "proof": "exact_jsx_context_assignment" },
     { "id": "text.exact_node_projection", "status": "active", "artifact": "src/sy.text-projection.json", "proof": "exact_text_node_projection" },
     { "id": "text.literal_jsx_context", "status": "active", "artifact": "src/sy.text-context.json", "proof": "literal_ancestor_context_without_corpus_decision" },
+    { "id": "corpus.user_defined_text_scope", "status": "active", "artifact": "src/sy.corpus-scope.json", "proof": "exclusive_scope_decision_for_every_text_node" },
     { "id": "corpus.name_occurrences", "status": "active" },
     { "id": "corpus.occurrence_counts", "status": "active" },
     { "id": "corpus.user_interpretations", "status": "active" },
@@ -190,6 +191,13 @@
         "statement": "Every JSX text node is mapped once to its literal ancestor element chain and technical context flags; corpus inclusion remains undecided for every node.",
         "authority": "deterministic_derivation",
         "artifact": "src/sy.text-context.json",
+        "status": "sealed"
+      },
+      {
+        "id": "corpus.user_defined_text_scope",
+        "statement": "Section-body text is included; small text is included temporarily; headings are excluded from corpus text and retained as structural separators for topics, verse parts and subverses; JSX whitespace is excluded.",
+        "authority": "user",
+        "artifact": "src/sy.corpus-scope.json",
         "status": "sealed"
       },
       {
