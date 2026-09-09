@@ -1,7 +1,7 @@
 {
   "$schema": "./sy.converter-spec.schema.json",
   "id": "sy.evidence-corpus",
-  "version": "0.12.11",
+  "version": "0.12.12",
   "language": "he",
   "source": {
     "authority": "sefaria_source",
@@ -146,6 +146,7 @@
     { "id": "lexicon.lexical_ambiguity_inventory", "status": "active", "artifact": "src/sy.lexical-ambiguities.json", "proof": "exact_positional_observations_without_tokenization" },
     { "id": "lexicon.sealed_hyphen_word_units", "status": "active", "artifact": "src/sy.hyphen-units.json", "proof": "all_hyphen_occurrences_assigned_once_and_exact_corpus_round_trip" },
     { "id": "lexicon.sealed_internal_quote_word_units", "status": "active", "artifact": "src/sy.internal-quote-units.json", "proof": "all_quote_marks_classified_and_internal_quotes_assigned_once" },
+    { "id": "lexicon.unified_sealed_word_units", "status": "active", "artifact": "src/sy.sealed-word-units.json", "proof": "exact_union_of_previously_sealed_nonoverlapping_word_occurrences" },
     { "id": "corpus.name_occurrences", "status": "active" },
     { "id": "corpus.occurrence_counts", "status": "active" },
     { "id": "corpus.user_interpretations", "status": "active" },
@@ -250,6 +251,13 @@
         "statement": "All 119 quote marks are classified by exact position: 86 internal marks form one exact pointed Hebrew word each, while 33 non-internal marks remain unknown; no linguistic subtype is inferred.",
         "authority": "deterministic_derivation_from_user_internal_quote_rule",
         "artifact": "src/sy.internal-quote-units.json",
+        "status": "sealed"
+      },
+      {
+        "id": "lexicon.unified_sealed_word_units",
+        "statement": "The unified signed word layer contains exactly the non-overlapping union of the 8 hyphen and 86 internal-quote occurrences, retains exact pointed surfaces and recognition rules, and adds no other words or interpretation.",
+        "authority": "deterministic_union_of_user_authorized_rules",
+        "artifact": "src/sy.sealed-word-units.json",
         "status": "sealed"
       },
       {
