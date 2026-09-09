@@ -10,6 +10,7 @@ const corpus = createConverter(spec)(sourceText);
 const sourceMap = JSON.parse(fs.readFileSync(new URL("../src/sy.source-map.json", import.meta.url), "utf8"));
 const readingUnits = JSON.parse(fs.readFileSync(new URL("../src/sy.reading-units.json", import.meta.url), "utf8"));
 const readingHierarchy = JSON.parse(fs.readFileSync(new URL("../src/sy.reading-hierarchy.json", import.meta.url), "utf8"));
+const textProjection = JSON.parse(fs.readFileSync(new URL("../src/sy.text-projection.json", import.meta.url), "utf8"));
 const failures = [];
 const requireInvariant = (condition, name) => {
   if (!condition) failures.push(name);
@@ -38,6 +39,14 @@ requireInvariant(readingHierarchy.proof.every_tracked_element_closed, "reading_h
 requireInvariant(readingHierarchy.proof.every_reading_unit_assigned_exactly_once, "reading_hierarchy_unit_coverage");
 requireInvariant(readingHierarchy.proof.every_reference_resolves, "reading_hierarchy_references");
 requireInvariant(readingHierarchy.proof.deterministic_output, "reading_hierarchy_deterministic");
+requireInvariant(textProjection.source.sha256 === sourceHash, "text_projection_source_hash");
+requireInvariant(textProjection.status === "sealed", "text_projection_sealed");
+requireInvariant(textProjection.semantic_status === "none", "text_projection_has_no_semantics");
+requireInvariant(textProjection.proof.every_text_node_projected_exactly_once, "text_projection_node_coverage");
+requireInvariant(textProjection.proof.every_fragment_matches_source_range, "text_projection_source_ranges");
+requireInvariant(textProjection.proof.exact_text_node_stream_round_trip, "text_projection_round_trip");
+requireInvariant(textProjection.proof.every_reading_unit_projected_exactly_once, "text_projection_unit_coverage");
+requireInvariant(textProjection.proof.deterministic_output, "text_projection_deterministic");
 requireInvariant(corpus.validation.valid, "corpus_validation");
 requireInvariant(corpus.input === sourceText, "lossless_source");
 requireInvariant(corpus.stats.occurrences === 1673, "occurrence_count");
