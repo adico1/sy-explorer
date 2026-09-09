@@ -1,7 +1,7 @@
 {
   "$schema": "./sy.converter-spec.schema.json",
   "id": "sy.evidence-corpus",
-  "version": "0.12.8",
+  "version": "0.12.9",
   "language": "he",
   "source": {
     "authority": "sefaria_source",
@@ -41,10 +41,22 @@
     "authority": "user_interpretation"
   },
   "normalization": {
-    "remove_cantillation": true,
-    "remove_niqqud": true,
-    "remove_punctuation": true,
-    "preserve_surface_form": true
+    "status": "superseded_for_new_lexical_work",
+    "legacy_diagnostic_pipeline": {
+      "authority": "assistant_inference",
+      "remove_cantillation": true,
+      "remove_niqqud": true,
+      "remove_punctuation": true,
+      "preserve_surface_form": true
+    },
+    "current_contract": {
+      "artifact": "src/sy.word-contract.json",
+      "preserve_exact_surface_form": true,
+      "remove_cantillation": null,
+      "remove_niqqud": null,
+      "remove_punctuation": null,
+      "null_meaning": "unknown_not_decided"
+    }
   },
   "structure": {
     "chapter_heading": "h2",
@@ -130,6 +142,8 @@
     { "id": "text.literal_jsx_context", "status": "active", "artifact": "src/sy.text-context.json", "proof": "literal_ancestor_context_without_corpus_decision" },
     { "id": "corpus.user_defined_text_scope", "status": "active", "artifact": "src/sy.corpus-scope.json", "proof": "exclusive_scope_decision_for_every_text_node" },
     { "id": "corpus.sealed_working_text", "status": "active", "artifact": "src/sy.corpus-text.json", "proof": "exact_included_text_stream" },
+    { "id": "lexicon.partial_word_contract", "status": "active", "artifact": "src/sy.word-contract.json", "proof": "approved_rules_and_unknowns_explicit" },
+    { "id": "lexicon.lexical_ambiguity_inventory", "status": "active", "artifact": "src/sy.lexical-ambiguities.json", "proof": "exact_positional_observations_without_tokenization" },
     { "id": "corpus.name_occurrences", "status": "active" },
     { "id": "corpus.occurrence_counts", "status": "active" },
     { "id": "corpus.user_interpretations", "status": "active" },
@@ -206,6 +220,20 @@
         "statement": "The working corpus contains exactly the 362 text nodes selected by the sealed user scope, once each and in source order, with exact raw text and reading structure references; small remains temporary.",
         "authority": "deterministic_derivation_from_user_scope",
         "artifact": "src/sy.corpus-text.json",
+        "status": "sealed"
+      },
+      {
+        "id": "lexicon.partial_word_contract",
+        "statement": "Hyphen-connected forms and acronyms are one orthographic unit; attached prefixes require both exact surface and decomposed representations, while segmentation rules remain unknown. Numbers, punctuation role and use of an unpointed derivative remain unknown.",
+        "authority": "user",
+        "artifact": "src/sy.word-contract.json",
+        "status": "sealed_partial"
+      },
+      {
+        "id": "lexicon.lexical_ambiguity_inventory",
+        "statement": "Potentially relevant characters and diagnostic non-whitespace spans are recorded at exact source positions without emitting words, tokens, prefix boundaries or interpretations.",
+        "authority": "deterministic_derivation_from_partial_user_contract",
+        "artifact": "src/sy.lexical-ambiguities.json",
         "status": "sealed"
       },
       {

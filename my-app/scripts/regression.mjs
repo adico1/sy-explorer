@@ -14,6 +14,8 @@ const textProjection = JSON.parse(fs.readFileSync(new URL("../src/sy.text-projec
 const textContext = JSON.parse(fs.readFileSync(new URL("../src/sy.text-context.json", import.meta.url), "utf8"));
 const corpusScope = JSON.parse(fs.readFileSync(new URL("../src/sy.corpus-scope.json", import.meta.url), "utf8"));
 const corpusText = JSON.parse(fs.readFileSync(new URL("../src/sy.corpus-text.json", import.meta.url), "utf8"));
+const wordContract = JSON.parse(fs.readFileSync(new URL("../src/sy.word-contract.json", import.meta.url), "utf8"));
+const lexicalAmbiguities = JSON.parse(fs.readFileSync(new URL("../src/sy.lexical-ambiguities.json", import.meta.url), "utf8"));
 const failures = [];
 const requireInvariant = (condition, name) => {
   if (!condition) failures.push(name);
@@ -79,6 +81,25 @@ requireInvariant(corpusText.proof.every_fragment_assigned_to_one_reading_unit, "
 requireInvariant(corpusText.proof.exact_included_text_stream_round_trip, "corpus_text_round_trip");
 requireInvariant(corpusText.proof.counts_match_sealed_scope, "corpus_text_scope_counts");
 requireInvariant(corpusText.proof.deterministic_output, "corpus_text_deterministic");
+requireInvariant(wordContract.status === "sealed_partial", "word_contract_sealed_partial");
+requireInvariant(wordContract.rules.hyphen_connectors.status === "sealed", "word_contract_hyphens_sealed");
+requireInvariant(wordContract.rules.initialisms.status === "sealed", "word_contract_initialisms_sealed");
+requireInvariant(wordContract.rules.attached_prefixes.surface_representation === "required", "word_contract_prefix_surface_required");
+requireInvariant(wordContract.rules.attached_prefixes.decomposed_representation === "required", "word_contract_prefix_decomposition_required");
+requireInvariant(wordContract.rules.attached_prefixes.segmentation_rules === "unknown", "word_contract_prefix_rules_unknown");
+requireInvariant(wordContract.rules.numbers_and_verse_markers.status === "unknown", "word_contract_numbers_unknown");
+requireInvariant(wordContract.rules.punctuation.entity_role === "unknown", "word_contract_punctuation_unknown");
+requireInvariant(wordContract.rules.niqqud.unpointed_derivative === "unknown", "word_contract_unpointed_unknown");
+requireInvariant(lexicalAmbiguities.source.sha256 === sourceHash, "lexical_inventory_source_hash");
+requireInvariant(lexicalAmbiguities.status === "sealed_observation", "lexical_inventory_sealed");
+requireInvariant(lexicalAmbiguities.semantic_status === "no_words_or_tokens_defined", "lexical_inventory_no_tokens");
+requireInvariant(lexicalAmbiguities.proof.every_corpus_fragment_scanned_exactly_once, "lexical_inventory_fragment_coverage");
+requireInvariant(lexicalAmbiguities.proof.every_corpus_code_unit_classified_exactly_once, "lexical_inventory_code_unit_coverage");
+requireInvariant(lexicalAmbiguities.proof.every_recorded_character_matches_source_range, "lexical_inventory_source_ranges");
+requireInvariant(lexicalAmbiguities.proof.exact_corpus_stream_round_trip, "lexical_inventory_round_trip");
+requireInvariant(lexicalAmbiguities.proof.all_contract_open_decisions_remain_unknown, "lexical_inventory_unknowns_preserved");
+requireInvariant(lexicalAmbiguities.proof.no_lexical_units_emitted, "lexical_inventory_no_lexical_units");
+requireInvariant(lexicalAmbiguities.proof.deterministic_output, "lexical_inventory_deterministic");
 requireInvariant(corpus.validation.valid, "corpus_validation");
 requireInvariant(corpus.input === sourceText, "lossless_source");
 requireInvariant(corpus.stats.occurrences === 1673, "occurrence_count");
