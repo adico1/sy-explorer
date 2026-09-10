@@ -20,6 +20,7 @@ const hyphenUnits = JSON.parse(fs.readFileSync(new URL("../src/sy.hyphen-units.j
 const internalQuoteUnits = JSON.parse(fs.readFileSync(new URL("../src/sy.internal-quote-units.json", import.meta.url), "utf8"));
 const sealedWordUnits = JSON.parse(fs.readFileSync(new URL("../src/sy.sealed-word-units.json", import.meta.url), "utf8"));
 const lexicalCoverage = JSON.parse(fs.readFileSync(new URL("../src/sy.lexical-coverage.json", import.meta.url), "utf8"));
+const hebrewGraphemes = JSON.parse(fs.readFileSync(new URL("../src/sy.hebrew-graphemes.json", import.meta.url), "utf8"));
 const failures = [];
 const requireInvariant = (condition, name) => {
   if (!condition) failures.push(name);
@@ -154,6 +155,21 @@ requireInvariant(lexicalCoverage.proof.no_new_words_or_candidates_emitted, "lexi
 requireInvariant(lexicalCoverage.proof.all_nonword_segments_uninterpreted, "lexical_coverage_nonwords_uninterpreted");
 requireInvariant(lexicalCoverage.proof.category_counts_cover_corpus, "lexical_coverage_counts");
 requireInvariant(lexicalCoverage.proof.deterministic_output, "lexical_coverage_deterministic");
+requireInvariant(hebrewGraphemes.source.sha256 === sourceHash, "hebrew_graphemes_source_hash");
+requireInvariant(hebrewGraphemes.status === "sealed", "hebrew_graphemes_sealed");
+requireInvariant(hebrewGraphemes.semantic_status === "orthographic_atoms_only", "hebrew_graphemes_no_semantics");
+requireInvariant(hebrewGraphemes.proof.every_hebrew_letter_emitted_exactly_once, "hebrew_graphemes_letter_coverage");
+requireInvariant(hebrewGraphemes.proof.every_combining_mark_attached_exactly_once, "hebrew_graphemes_mark_coverage");
+requireInvariant(hebrewGraphemes.proof.every_hebrew_letter_and_mark_code_unit_covered_exactly_once, "hebrew_graphemes_code_unit_coverage");
+requireInvariant(hebrewGraphemes.proof.every_grapheme_has_one_hebrew_base, "hebrew_graphemes_one_base");
+requireInvariant(hebrewGraphemes.proof.every_suffix_code_point_is_a_combining_mark, "hebrew_graphemes_mark_suffix");
+requireInvariant(hebrewGraphemes.proof.every_grapheme_matches_exact_source_range, "hebrew_graphemes_source_ranges");
+requireInvariant(hebrewGraphemes.proof.graphemes_are_nonoverlapping_and_in_source_order, "hebrew_graphemes_order");
+requireInvariant(hebrewGraphemes.proof.sealed_word_association_is_all_or_none, "hebrew_graphemes_word_association");
+requireInvariant(hebrewGraphemes.proof.exact_corpus_round_trip_after_overlay_removal, "hebrew_graphemes_round_trip");
+requireInvariant(hebrewGraphemes.proof.no_words_or_unpointed_word_forms_emitted, "hebrew_graphemes_no_words");
+requireInvariant(hebrewGraphemes.proof.no_semantic_interpretation_emitted, "hebrew_graphemes_no_interpretation");
+requireInvariant(hebrewGraphemes.proof.deterministic_output, "hebrew_graphemes_deterministic");
 requireInvariant(corpus.validation.valid, "corpus_validation");
 requireInvariant(corpus.input === sourceText, "lossless_source");
 requireInvariant(corpus.stats.occurrences === 1673, "occurrence_count");
