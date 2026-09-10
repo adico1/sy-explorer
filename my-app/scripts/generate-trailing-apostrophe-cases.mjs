@@ -118,8 +118,8 @@ const shapeCounts = Object.fromEntries([
   "multiple_hebrew_letters_plus_trailing_apostrophe",
 ].map((shape) => [shape, cases.filter((item) => item.structural_shape === shape).length]));
 const proof = {
-  all_thirty_three_unknown_quotes_accounted_exactly_once: cases.length === 33
-    && new Set(cases.map((item) => item.apostrophe_source_code_unit_range.start)).size === 33
+  all_thirty_two_unknown_quotes_accounted_exactly_once: cases.length === 32
+    && new Set(cases.map((item) => item.apostrophe_source_code_unit_range.start)).size === 32
     && unknownQuoteMarks.every((quote) => cases.some((item) =>
       item.apostrophe_source_code_unit_range.start === quote.source_code_unit_range.start)),
   every_case_is_a_trailing_ascii_apostrophe: cases.every((item) =>
@@ -127,9 +127,9 @@ const proof = {
   every_case_has_an_immediately_adjacent_hebrew_sequence: cases.every((item) =>
     item.preceding_hebrew_raw.length > 0
     && item.raw === `${item.preceding_hebrew_raw}${item.apostrophe_character}`),
-  exactly_thirty_single_letter_and_three_multi_letter_shapes:
+  exactly_thirty_single_letter_and_two_multi_letter_shapes:
     shapeCounts.single_hebrew_letter_plus_trailing_apostrophe === 30
-    && shapeCounts.multiple_hebrew_letters_plus_trailing_apostrophe === 3,
+    && shapeCounts.multiple_hebrew_letters_plus_trailing_apostrophe === 2,
   every_case_grapheme_membership_matches_base_letters: cases.every((item) =>
     item.grapheme_ids.length === item.base_letter_count
     && new Set(item.grapheme_ids).size === item.grapheme_ids.length),

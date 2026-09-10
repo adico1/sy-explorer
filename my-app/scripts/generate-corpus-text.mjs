@@ -97,9 +97,9 @@ const everyFragmentAssignedToOneUnit = units.flatMap((unit) => unit.corpus_fragm
 const exactIncludedStream = includedIds.map((id) => projectionByNode.get(id).raw).join("");
 const corpusText = fragments.map((fragment) => fragment.raw).join("");
 const exactCorpusStreamRoundTrip = corpusText === exactIncludedStream;
-const countsMatchSealedScope = fragments.length === 362
+const countsMatchSealedScope = fragments.length === 361
   && fragments.filter((fragment) => fragment.scope_class === "section_body").length === 353
-  && fragments.filter((fragment) => fragment.scope_class === "small_text").length === 9;
+  && fragments.filter((fragment) => fragment.scope_class === "small_text").length === 8;
 
 if (!everyIncludedNodePresentOnce || !noExcludedNodePresent || !everyFragmentMatchesSource
   || !sourceOrderPreserved || !everyFragmentAssignedToOneUnit || !exactCorpusStreamRoundTrip

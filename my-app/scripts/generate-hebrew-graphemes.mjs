@@ -102,10 +102,10 @@ const reconstructed = corpus.fragments.map((fragment) => source.slice(
 )).join("");
 const proof = {
   every_hebrew_letter_emitted_exactly_once: graphemes.length === hebrewLetterCount
-    && hebrewLetterCount === 6669,
+    && hebrewLetterCount === 6652,
   every_combining_mark_attached_exactly_once: orphanMarks.length === 0
     && graphemes.reduce((sum, item) => sum + item.combining_mark_count, 0) === combiningMarkCount
-    && combiningMarkCount === 5270,
+    && combiningMarkCount === 5267,
   every_hebrew_letter_and_mark_code_unit_covered_exactly_once: coveredHebrewCodeUnits.size === expectedHebrewPositions.size
     && [...expectedHebrewPositions].every((position) => coveredHebrewCodeUnits.has(position)),
   every_grapheme_has_one_hebrew_base: graphemes.every((item) => /^[א-ת]$/u.test(item.base_letter)

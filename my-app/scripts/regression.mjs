@@ -30,6 +30,10 @@ const requireInvariant = (condition, name) => {
 };
 
 requireInvariant(sourceHash === spec.source.local_edition.sha256, "sealed_source_hash");
+requireInvariant(!sourceText.includes('וברמ"ב'), "commentator_attribution_1_removed");
+requireInvariant(!sourceText.includes('וע"ז קַאי פִּי\' הרמ"ב:'), "commentator_attribution_2_removed");
+requireInvariant(sourceText.includes('בִּדְפוּס מַנְטוֹבָה (שכ"ב) הֵגַי\' כמ"ש בְּאוֹצַר ה\''), "attribution_1_interpretive_text_retained");
+requireInvariant(sourceText.includes('וסצר"ש בֵּין הַשִּׁנַּיִם וְלָשׁוֹן שְׁכוּבָה וּשְׁטוּתָהּ.'), "attribution_2_interpretive_text_retained");
 requireInvariant(sourceMap.source.sha256 === sourceHash, "source_map_source_hash");
 requireInvariant(sourceMap.status === "sealed", "source_map_sealed");
 requireInvariant(sourceMap.semantic_status === "none", "source_map_has_no_semantics");
@@ -77,7 +81,7 @@ requireInvariant(corpusScope.proof.every_decision_exclusive, "corpus_scope_exclu
 requireInvariant(corpusScope.proof.no_unresolved_text_nodes, "corpus_scope_resolved");
 requireInvariant(corpusScope.proof.counts_match_user_decision, "corpus_scope_user_counts");
 requireInvariant(corpusScope.proof.included_source_order_preserved, "corpus_scope_source_order");
-requireInvariant(corpusScope.proof.total_included_count === 362, "corpus_scope_included_count");
+requireInvariant(corpusScope.proof.total_included_count === 361, "corpus_scope_included_count");
 requireInvariant(corpusScope.proof.deterministic_output, "corpus_scope_deterministic");
 requireInvariant(corpusText.source.sha256 === sourceHash, "corpus_text_source_hash");
 requireInvariant(corpusText.status === "sealed", "corpus_text_sealed");
@@ -133,7 +137,7 @@ requireInvariant(internalQuoteUnits.proof.no_linguistic_subtype_inferred, "inter
 requireInvariant(internalQuoteUnits.proof.deterministic_output, "internal_quote_deterministic");
 requireInvariant(sealedWordUnits.source.sha256 === sourceHash, "sealed_words_source_hash");
 requireInvariant(sealedWordUnits.status === "sealed", "sealed_words_sealed");
-requireInvariant(sealedWordUnits.proof.exactly_ninety_four_signed_occurrences, "sealed_words_exact_count");
+requireInvariant(sealedWordUnits.proof.exactly_ninety_one_signed_occurrences, "sealed_words_exact_count");
 requireInvariant(sealedWordUnits.proof.every_input_occurrence_included_exactly_once, "sealed_words_input_coverage");
 requireInvariant(sealedWordUnits.proof.no_occurrence_ranges_overlap, "sealed_words_no_overlap");
 requireInvariant(sealedWordUnits.proof.source_order_preserved, "sealed_words_source_order");
@@ -153,7 +157,7 @@ requireInvariant(lexicalCoverage.proof.exact_corpus_stream_round_trip, "lexical_
 requireInvariant(lexicalCoverage.proof.every_segment_matches_exact_source_range, "lexical_coverage_source_ranges");
 requireInvariant(lexicalCoverage.proof.segments_preserve_source_order_without_fragment_gaps, "lexical_coverage_order_and_gaps");
 requireInvariant(lexicalCoverage.proof.exactly_four_allowed_categories, "lexical_coverage_categories");
-requireInvariant(lexicalCoverage.proof.all_ninety_four_sealed_words_preserved_exactly_once, "lexical_coverage_words_preserved");
+requireInvariant(lexicalCoverage.proof.all_ninety_one_sealed_words_preserved_exactly_once, "lexical_coverage_words_preserved");
 requireInvariant(lexicalCoverage.proof.no_new_words_or_candidates_emitted, "lexical_coverage_no_new_words");
 requireInvariant(lexicalCoverage.proof.all_nonword_segments_uninterpreted, "lexical_coverage_nonwords_uninterpreted");
 requireInvariant(lexicalCoverage.proof.category_counts_cover_corpus, "lexical_coverage_counts");
@@ -180,7 +184,7 @@ requireInvariant(orthographicStream.proof.every_corpus_code_unit_represented_exa
 requireInvariant(orthographicStream.proof.exact_corpus_stream_round_trip, "orthographic_stream_round_trip");
 requireInvariant(orthographicStream.proof.every_atom_matches_exact_source_range, "orthographic_stream_source_ranges");
 requireInvariant(orthographicStream.proof.atom_stream_is_gap_free_and_nonoverlapping_per_fragment, "orthographic_stream_no_gaps_or_overlap");
-requireInvariant(orthographicStream.proof.all_ninety_four_sealed_words_are_single_atoms, "orthographic_stream_words_atomic");
+requireInvariant(orthographicStream.proof.all_ninety_one_sealed_words_are_single_atoms, "orthographic_stream_words_atomic");
 requireInvariant(orthographicStream.proof.every_grapheme_represented_exactly_once_as_atom_or_word_child, "orthographic_stream_grapheme_coverage");
 requireInvariant(orthographicStream.proof.no_word_child_grapheme_is_a_top_level_atom, "orthographic_stream_no_child_duplication");
 requireInvariant(orthographicStream.proof.every_word_child_is_fully_contained, "orthographic_stream_children_contained");
@@ -206,10 +210,10 @@ requireInvariant(wordCandidateViews.proof.deterministic_output, "word_candidate_
 requireInvariant(trailingApostropheCases.source.sha256 === sourceHash, "trailing_apostrophes_source_hash");
 requireInvariant(trailingApostropheCases.status === "sealed_structural_classification", "trailing_apostrophes_sealed");
 requireInvariant(trailingApostropheCases.semantic_status === "all_roles_unknown", "trailing_apostrophes_roles_unknown");
-requireInvariant(trailingApostropheCases.proof.all_thirty_three_unknown_quotes_accounted_exactly_once, "trailing_apostrophes_exact_coverage");
+requireInvariant(trailingApostropheCases.proof.all_thirty_two_unknown_quotes_accounted_exactly_once, "trailing_apostrophes_exact_coverage");
 requireInvariant(trailingApostropheCases.proof.every_case_is_a_trailing_ascii_apostrophe, "trailing_apostrophes_ascii_source");
 requireInvariant(trailingApostropheCases.proof.every_case_has_an_immediately_adjacent_hebrew_sequence, "trailing_apostrophes_adjacency");
-requireInvariant(trailingApostropheCases.proof.exactly_thirty_single_letter_and_three_multi_letter_shapes, "trailing_apostrophes_shapes");
+requireInvariant(trailingApostropheCases.proof.exactly_thirty_single_letter_and_two_multi_letter_shapes, "trailing_apostrophes_shapes");
 requireInvariant(trailingApostropheCases.proof.every_case_grapheme_membership_matches_base_letters, "trailing_apostrophes_graphemes");
 requireInvariant(trailingApostropheCases.proof.every_case_matches_exact_source_range, "trailing_apostrophes_source_ranges");
 requireInvariant(trailingApostropheCases.proof.cases_are_nonoverlapping_and_in_source_order, "trailing_apostrophes_order");
