@@ -5,11 +5,11 @@
   "semantic_status": "all_roles_unknown",
   "source": {
     "file": "src/SeferYetzirah.tsx",
-    "sha256": "d568a1ab11859e04c5ed6292b0d8ad829885ecdb95fc19a9fb5273b269413024",
-    "corpus_text_sha256": "577986cf30c0e2b73f19e09523aed6954017f42c413db2cc214e7147ddc95752",
-    "internal_quote_units_sha256": "6bf419bec7fba6128f8aa7bba0f5f0394adef1da6c262f28edca517498da1c27",
-    "hebrew_graphemes_sha256": "85bbd17bc4da60f1a16144110a19bbe912000c15d23a6c8553f8c359bfa2db6c",
-    "word_candidate_views_sha256": "a6685ceb14be89d3bbc99aa194360f8aca6c39642ebb3f5009c8fc0735716e68"
+    "sha256": "e86001bbbcad27a4b4cf2dd2260bc2059e37dd668a8e3b7b6c7ae930be721643",
+    "corpus_text_sha256": "4a1b17aa75cef0fdfab81780b7d2e28a092935087da73ae7dd25b934f4d06a6a",
+    "internal_quote_units_sha256": "d4ddf619e58e42d0203d2199392bbae5b902feac4477240dbb234ccd1c8482c7",
+    "hebrew_graphemes_sha256": "c4de10e8353f5ffaba6083bf656d91037c91406b25470c6b253571deae8cc150",
+    "word_candidate_views_sha256": "8c445ee7008ec7cff328599e977eea4c06c57f7d354b9b975167f7755d87e655"
   },
   "rules": {
     "classification_basis": "exact_local_orthographic_shape_only",
@@ -25,10 +25,10 @@
     "interpretation": "forbidden"
   },
   "proof": {
-    "all_thirty_two_unknown_quotes_accounted_exactly_once": true,
+    "all_thirty_unknown_quotes_accounted_exactly_once": true,
     "every_case_is_a_trailing_ascii_apostrophe": true,
     "every_case_has_an_immediately_adjacent_hebrew_sequence": true,
-    "exactly_thirty_single_letter_and_two_multi_letter_shapes": true,
+    "exactly_twenty_nine_single_letter_and_one_multi_letter_shapes": true,
     "every_case_grapheme_membership_matches_base_letters": true,
     "every_case_matches_exact_source_range": true,
     "cases_are_nonoverlapping_and_in_source_order": true,
@@ -37,10 +37,10 @@
     "exact_corpus_round_trip_after_overlay_removal": true,
     "no_word_number_abbreviation_or_punctuation_role_inferred": true,
     "deterministic_output": true,
-    "case_count": 32,
+    "case_count": 30,
     "shape_counts": {
-      "single_hebrew_letter_plus_trailing_apostrophe": 30,
-      "multiple_hebrew_letters_plus_trailing_apostrophe": 2
+      "single_hebrew_letter_plus_trailing_apostrophe": 29,
+      "multiple_hebrew_letters_plus_trailing_apostrophe": 1
     }
   },
   "cases": [
@@ -55,18 +55,18 @@
       "apostrophe_character": "'",
       "base_letter_count": 1,
       "grapheme_ids": [
-        "hebrew-grapheme.01207"
+        "hebrew-grapheme.01196"
       ],
-      "corpus_fragment_id": "corpus-fragment.0065",
-      "source_node_id": "jsx.00209",
+      "corpus_fragment_id": "corpus-fragment.0063",
+      "source_node_id": "jsx.00206",
       "reading_unit_id": "reading-unit.0070",
       "source_code_unit_range": {
-        "start": 4182,
-        "end": 4184
+        "start": 4141,
+        "end": 4143
       },
       "apostrophe_source_code_unit_range": {
-        "start": 4183,
-        "end": 4184
+        "start": 4142,
+        "end": 4143
       },
       "left_boundary_observation": {
         "kind": "whitespace",
@@ -77,12 +77,12 @@
         "raw": " "
       },
       "context_source_code_unit_range": {
-        "start": 4174,
-        "end": 4196
+        "start": 4133,
+        "end": 4155
       },
       "context_raw": " בֵּרֵר ג' אוֹתִיּוֹת ",
       "punctuation_dependent_case_ordinals": [
-        20
+        17
       ]
     },
     {
@@ -96,18 +96,18 @@
       "apostrophe_character": "'",
       "base_letter_count": 1,
       "grapheme_ids": [
-        "hebrew-grapheme.01227"
+        "hebrew-grapheme.01216"
       ],
-      "corpus_fragment_id": "corpus-fragment.0065",
-      "source_node_id": "jsx.00209",
+      "corpus_fragment_id": "corpus-fragment.0063",
+      "source_node_id": "jsx.00206",
       "reading_unit_id": "reading-unit.0070",
       "source_code_unit_range": {
-        "start": 4222,
-        "end": 4224
+        "start": 4181,
+        "end": 4183
       },
       "apostrophe_source_code_unit_range": {
-        "start": 4223,
-        "end": 4224
+        "start": 4182,
+        "end": 4183
       },
       "left_boundary_observation": {
         "kind": "whitespace",
@@ -118,12 +118,12 @@
         "raw": " "
       },
       "context_source_code_unit_range": {
-        "start": 4210,
-        "end": 4236
+        "start": 4169,
+        "end": 4195
       },
       "context_raw": "וֹת בְּסוֹד ג' אַמּוֹת אמ\"",
       "punctuation_dependent_case_ordinals": [
-        21
+        18
       ]
     },
     {
@@ -137,18 +137,18 @@
       "apostrophe_character": "'",
       "base_letter_count": 1,
       "grapheme_ids": [
-        "hebrew-grapheme.01256"
+        "hebrew-grapheme.01245"
       ],
-      "corpus_fragment_id": "corpus-fragment.0065",
-      "source_node_id": "jsx.00209",
+      "corpus_fragment_id": "corpus-fragment.0063",
+      "source_node_id": "jsx.00206",
       "reading_unit_id": "reading-unit.0070",
       "source_code_unit_range": {
-        "start": 4283,
-        "end": 4285
+        "start": 4242,
+        "end": 4244
       },
       "apostrophe_source_code_unit_range": {
-        "start": 4284,
-        "end": 4285
+        "start": 4243,
+        "end": 4244
       },
       "left_boundary_observation": {
         "kind": "whitespace",
@@ -159,100 +159,16 @@
         "raw": " "
       },
       "context_source_code_unit_range": {
-        "start": 4271,
-        "end": 4296
+        "start": 4230,
+        "end": 4254
       },
-      "context_raw": "ָתַם בָּהֶם ו' קְצָווֹת],",
+      "context_raw": "ָתַם בָּהֶם ו' קְצָווֹת,",
       "punctuation_dependent_case_ordinals": [
-        22
+        19
       ]
     },
     {
       "id": "trailing-apostrophe-case.004",
-      "status": "derived_case_role_unknown",
-      "word_status": "unknown",
-      "semantic_role": "unknown",
-      "structural_shape": "multiple_hebrew_letters_plus_trailing_apostrophe",
-      "raw": "הֵגַי'",
-      "preceding_hebrew_raw": "הֵגַי",
-      "apostrophe_character": "'",
-      "base_letter_count": 3,
-      "grapheme_ids": [
-        "hebrew-grapheme.01530",
-        "hebrew-grapheme.01531",
-        "hebrew-grapheme.01532"
-      ],
-      "corpus_fragment_id": "corpus-fragment.0075",
-      "source_node_id": "jsx.00246",
-      "reading_unit_id": "reading-unit.0077",
-      "source_code_unit_range": {
-        "start": 5152,
-        "end": 5158
-      },
-      "apostrophe_source_code_unit_range": {
-        "start": 5157,
-        "end": 5158
-      },
-      "left_boundary_observation": {
-        "kind": "whitespace",
-        "raw": " "
-      },
-      "right_boundary_observation": {
-        "kind": "whitespace",
-        "raw": " "
-      },
-      "context_source_code_unit_range": {
-        "start": 5140,
-        "end": 5170
-      },
-      "context_raw": "ֹבָה (שכ\"ב) הֵגַי' כמ\"ש בְּאוֹ",
-      "punctuation_dependent_case_ordinals": [
-        24
-      ]
-    },
-    {
-      "id": "trailing-apostrophe-case.005",
-      "status": "derived_case_role_unknown",
-      "word_status": "unknown",
-      "semantic_role": "unknown",
-      "structural_shape": "single_hebrew_letter_plus_trailing_apostrophe",
-      "raw": "ה'",
-      "preceding_hebrew_raw": "ה",
-      "apostrophe_character": "'",
-      "base_letter_count": 1,
-      "grapheme_ids": [
-        "hebrew-grapheme.01541"
-      ],
-      "corpus_fragment_id": "corpus-fragment.0075",
-      "source_node_id": "jsx.00246",
-      "reading_unit_id": "reading-unit.0077",
-      "source_code_unit_range": {
-        "start": 5174,
-        "end": 5176
-      },
-      "apostrophe_source_code_unit_range": {
-        "start": 5175,
-        "end": 5176
-      },
-      "left_boundary_observation": {
-        "kind": "whitespace",
-        "raw": " "
-      },
-      "right_boundary_observation": {
-        "kind": "corpus_fragment_edge",
-        "raw": ""
-      },
-      "context_source_code_unit_range": {
-        "start": 5162,
-        "end": 5176
-      },
-      "context_raw": "ש בְּאוֹצַר ה'",
-      "punctuation_dependent_case_ordinals": [
-        25
-      ]
-    },
-    {
-      "id": "trailing-apostrophe-case.006",
       "status": "derived_case_role_unknown",
       "word_status": "unknown",
       "semantic_role": "unknown",
@@ -262,18 +178,18 @@
       "apostrophe_character": "'",
       "base_letter_count": 1,
       "grapheme_ids": [
-        "hebrew-grapheme.03325"
+        "hebrew-grapheme.03261"
       ],
-      "corpus_fragment_id": "corpus-fragment.0200",
-      "source_node_id": "jsx.00540",
-      "reading_unit_id": "reading-unit.0215",
+      "corpus_fragment_id": "corpus-fragment.0188",
+      "source_node_id": "jsx.00512",
+      "reading_unit_id": "reading-unit.0208",
       "source_code_unit_range": {
-        "start": 11165,
-        "end": 11167
+        "start": 10871,
+        "end": 10873
       },
       "apostrophe_source_code_unit_range": {
-        "start": 11166,
-        "end": 11167
+        "start": 10872,
+        "end": 10873
       },
       "left_boundary_observation": {
         "kind": "whitespace",
@@ -284,16 +200,16 @@
         "raw": " "
       },
       "context_source_code_unit_range": {
-        "start": 11153,
-        "end": 11176
+        "start": 10859,
+        "end": 10882
       },
       "context_raw": "   כְּנֶגֶד ז' קְצָווֹת",
       "punctuation_dependent_case_ordinals": [
-        55
+        48
       ]
     },
     {
-      "id": "trailing-apostrophe-case.007",
+      "id": "trailing-apostrophe-case.005",
       "status": "derived_case_role_unknown",
       "word_status": "unknown",
       "semantic_role": "unknown",
@@ -303,18 +219,18 @@
       "apostrophe_character": "'",
       "base_letter_count": 1,
       "grapheme_ids": [
-        "hebrew-grapheme.03334"
+        "hebrew-grapheme.03270"
       ],
-      "corpus_fragment_id": "corpus-fragment.0201",
-      "source_node_id": "jsx.00542",
-      "reading_unit_id": "reading-unit.0216",
+      "corpus_fragment_id": "corpus-fragment.0189",
+      "source_node_id": "jsx.00514",
+      "reading_unit_id": "reading-unit.0209",
       "source_code_unit_range": {
-        "start": 11199,
-        "end": 11201
+        "start": 10905,
+        "end": 10907
       },
       "apostrophe_source_code_unit_range": {
-        "start": 11200,
-        "end": 11201
+        "start": 10906,
+        "end": 10907
       },
       "left_boundary_observation": {
         "kind": "whitespace",
@@ -325,16 +241,16 @@
         "raw": " "
       },
       "context_source_code_unit_range": {
-        "start": 11187,
-        "end": 11213
+        "start": 10893,
+        "end": 10919
       },
       "context_raw": "      מֵהֶם ו' קְצָווֹת\n  ",
       "punctuation_dependent_case_ordinals": [
-        56
+        49
       ]
     },
     {
-      "id": "trailing-apostrophe-case.008",
+      "id": "trailing-apostrophe-case.006",
       "status": "derived_case_role_unknown",
       "word_status": "unknown",
       "semantic_role": "unknown",
@@ -344,18 +260,18 @@
       "apostrophe_character": "'",
       "base_letter_count": 1,
       "grapheme_ids": [
-        "hebrew-grapheme.03531"
+        "hebrew-grapheme.03467"
       ],
-      "corpus_fragment_id": "corpus-fragment.0217",
-      "source_node_id": "jsx.00576",
-      "reading_unit_id": "reading-unit.0234",
+      "corpus_fragment_id": "corpus-fragment.0205",
+      "source_node_id": "jsx.00548",
+      "reading_unit_id": "reading-unit.0227",
       "source_code_unit_range": {
-        "start": 11883,
-        "end": 11885
+        "start": 11589,
+        "end": 11591
       },
       "apostrophe_source_code_unit_range": {
-        "start": 11884,
-        "end": 11885
+        "start": 11590,
+        "end": 11591
       },
       "left_boundary_observation": {
         "kind": "whitespace",
@@ -366,12 +282,94 @@
         "raw": " "
       },
       "context_source_code_unit_range": {
-        "start": 11871,
-        "end": 11897
+        "start": 11577,
+        "end": 11603
       },
       "context_raw": "ְלִיךְ אוֹת ב' בַּחַיִּים ",
       "punctuation_dependent_case_ordinals": [
-        59
+        52
+      ]
+    },
+    {
+      "id": "trailing-apostrophe-case.007",
+      "status": "derived_case_role_unknown",
+      "word_status": "unknown",
+      "semantic_role": "unknown",
+      "structural_shape": "single_hebrew_letter_plus_trailing_apostrophe",
+      "raw": "ג'",
+      "preceding_hebrew_raw": "ג",
+      "apostrophe_character": "'",
+      "base_letter_count": 1,
+      "grapheme_ids": [
+        "hebrew-grapheme.03529"
+      ],
+      "corpus_fragment_id": "corpus-fragment.0206",
+      "source_node_id": "jsx.00550",
+      "reading_unit_id": "reading-unit.0228",
+      "source_code_unit_range": {
+        "start": 11739,
+        "end": 11741
+      },
+      "apostrophe_source_code_unit_range": {
+        "start": 11740,
+        "end": 11741
+      },
+      "left_boundary_observation": {
+        "kind": "whitespace",
+        "raw": " "
+      },
+      "right_boundary_observation": {
+        "kind": "whitespace",
+        "raw": " "
+      },
+      "context_source_code_unit_range": {
+        "start": 11727,
+        "end": 11753
+      },
+      "context_raw": "ְלִיךְ אוֹת ג' וְקָשַׁר לו",
+      "punctuation_dependent_case_ordinals": [
+        54
+      ]
+    },
+    {
+      "id": "trailing-apostrophe-case.008",
+      "status": "derived_case_role_unknown",
+      "word_status": "unknown",
+      "semantic_role": "unknown",
+      "structural_shape": "single_hebrew_letter_plus_trailing_apostrophe",
+      "raw": "ד'",
+      "preceding_hebrew_raw": "ד",
+      "apostrophe_character": "'",
+      "base_letter_count": 1,
+      "grapheme_ids": [
+        "hebrew-grapheme.03582"
+      ],
+      "corpus_fragment_id": "corpus-fragment.0207",
+      "source_node_id": "jsx.00552",
+      "reading_unit_id": "reading-unit.0229",
+      "source_code_unit_range": {
+        "start": 11870,
+        "end": 11872
+      },
+      "apostrophe_source_code_unit_range": {
+        "start": 11871,
+        "end": 11872
+      },
+      "left_boundary_observation": {
+        "kind": "whitespace",
+        "raw": " "
+      },
+      "right_boundary_observation": {
+        "kind": "whitespace",
+        "raw": " "
+      },
+      "context_source_code_unit_range": {
+        "start": 11858,
+        "end": 11884
+      },
+      "context_raw": "ְלִיךְ אוֹת ד' וְקָשַׁר לו",
+      "punctuation_dependent_case_ordinals": [
+        56
       ]
     },
     {
@@ -385,18 +383,18 @@
       "apostrophe_character": "'",
       "base_letter_count": 1,
       "grapheme_ids": [
-        "hebrew-grapheme.03593"
+        "hebrew-grapheme.03611"
       ],
-      "corpus_fragment_id": "corpus-fragment.0218",
-      "source_node_id": "jsx.00578",
-      "reading_unit_id": "reading-unit.0235",
+      "corpus_fragment_id": "corpus-fragment.0207",
+      "source_node_id": "jsx.00552",
+      "reading_unit_id": "reading-unit.0229",
       "source_code_unit_range": {
-        "start": 12033,
-        "end": 12035
+        "start": 11931,
+        "end": 11933
       },
       "apostrophe_source_code_unit_range": {
-        "start": 12034,
-        "end": 12035
+        "start": 11932,
+        "end": 11933
       },
       "left_boundary_observation": {
         "kind": "whitespace",
@@ -407,98 +405,16 @@
         "raw": " "
       },
       "context_source_code_unit_range": {
-        "start": 12021,
-        "end": 12047
+        "start": 11919,
+        "end": 11945
       },
-      "context_raw": "ְלִיךְ אוֹת ג' וְקָשַׁר לו",
+      "context_raw": "ֹלָם וְיוֹם ג' בְּשָׁנָה ו",
       "punctuation_dependent_case_ordinals": [
-        61
+        57
       ]
     },
     {
       "id": "trailing-apostrophe-case.010",
-      "status": "derived_case_role_unknown",
-      "word_status": "unknown",
-      "semantic_role": "unknown",
-      "structural_shape": "single_hebrew_letter_plus_trailing_apostrophe",
-      "raw": "ד'",
-      "preceding_hebrew_raw": "ד",
-      "apostrophe_character": "'",
-      "base_letter_count": 1,
-      "grapheme_ids": [
-        "hebrew-grapheme.03646"
-      ],
-      "corpus_fragment_id": "corpus-fragment.0219",
-      "source_node_id": "jsx.00580",
-      "reading_unit_id": "reading-unit.0236",
-      "source_code_unit_range": {
-        "start": 12164,
-        "end": 12166
-      },
-      "apostrophe_source_code_unit_range": {
-        "start": 12165,
-        "end": 12166
-      },
-      "left_boundary_observation": {
-        "kind": "whitespace",
-        "raw": " "
-      },
-      "right_boundary_observation": {
-        "kind": "whitespace",
-        "raw": " "
-      },
-      "context_source_code_unit_range": {
-        "start": 12152,
-        "end": 12178
-      },
-      "context_raw": "ְלִיךְ אוֹת ד' וְקָשַׁר לו",
-      "punctuation_dependent_case_ordinals": [
-        63
-      ]
-    },
-    {
-      "id": "trailing-apostrophe-case.011",
-      "status": "derived_case_role_unknown",
-      "word_status": "unknown",
-      "semantic_role": "unknown",
-      "structural_shape": "single_hebrew_letter_plus_trailing_apostrophe",
-      "raw": "ג'",
-      "preceding_hebrew_raw": "ג",
-      "apostrophe_character": "'",
-      "base_letter_count": 1,
-      "grapheme_ids": [
-        "hebrew-grapheme.03675"
-      ],
-      "corpus_fragment_id": "corpus-fragment.0219",
-      "source_node_id": "jsx.00580",
-      "reading_unit_id": "reading-unit.0236",
-      "source_code_unit_range": {
-        "start": 12225,
-        "end": 12227
-      },
-      "apostrophe_source_code_unit_range": {
-        "start": 12226,
-        "end": 12227
-      },
-      "left_boundary_observation": {
-        "kind": "whitespace",
-        "raw": " "
-      },
-      "right_boundary_observation": {
-        "kind": "whitespace",
-        "raw": " "
-      },
-      "context_source_code_unit_range": {
-        "start": 12213,
-        "end": 12239
-      },
-      "context_raw": "ֹלָם וְיוֹם ג' בְּשָׁנָה ו",
-      "punctuation_dependent_case_ordinals": [
-        64
-      ]
-    },
-    {
-      "id": "trailing-apostrophe-case.012",
       "status": "derived_case_role_unknown",
       "word_status": "unknown",
       "semantic_role": "unknown",
@@ -508,18 +424,18 @@
       "apostrophe_character": "'",
       "base_letter_count": 1,
       "grapheme_ids": [
-        "hebrew-grapheme.03700"
+        "hebrew-grapheme.03636"
       ],
-      "corpus_fragment_id": "corpus-fragment.0220",
-      "source_node_id": "jsx.00582",
-      "reading_unit_id": "reading-unit.0237",
+      "corpus_fragment_id": "corpus-fragment.0208",
+      "source_node_id": "jsx.00554",
+      "reading_unit_id": "reading-unit.0230",
       "source_code_unit_range": {
-        "start": 12297,
-        "end": 12299
+        "start": 12003,
+        "end": 12005
       },
       "apostrophe_source_code_unit_range": {
-        "start": 12298,
-        "end": 12299
+        "start": 12004,
+        "end": 12005
       },
       "left_boundary_observation": {
         "kind": "whitespace",
@@ -530,16 +446,16 @@
         "raw": " "
       },
       "context_source_code_unit_range": {
-        "start": 12285,
-        "end": 12311
+        "start": 11991,
+        "end": 12017
       },
       "context_raw": "ְלִיךְ אוֹת כ' וְקָשַׁר לו",
       "punctuation_dependent_case_ordinals": [
-        66
+        59
       ]
     },
     {
-      "id": "trailing-apostrophe-case.013",
+      "id": "trailing-apostrophe-case.011",
       "status": "derived_case_role_unknown",
       "word_status": "unknown",
       "semantic_role": "unknown",
@@ -549,18 +465,18 @@
       "apostrophe_character": "'",
       "base_letter_count": 1,
       "grapheme_ids": [
-        "hebrew-grapheme.03727"
+        "hebrew-grapheme.03663"
       ],
-      "corpus_fragment_id": "corpus-fragment.0220",
-      "source_node_id": "jsx.00582",
-      "reading_unit_id": "reading-unit.0237",
+      "corpus_fragment_id": "corpus-fragment.0208",
+      "source_node_id": "jsx.00554",
+      "reading_unit_id": "reading-unit.0230",
       "source_code_unit_range": {
-        "start": 12355,
-        "end": 12357
+        "start": 12061,
+        "end": 12063
       },
       "apostrophe_source_code_unit_range": {
-        "start": 12356,
-        "end": 12357
+        "start": 12062,
+        "end": 12063
       },
       "left_boundary_observation": {
         "kind": "whitespace",
@@ -571,16 +487,16 @@
         "raw": " "
       },
       "context_source_code_unit_range": {
-        "start": 12343,
-        "end": 12369
+        "start": 12049,
+        "end": 12075
       },
       "context_raw": "ֹלָם וְיוֹם ד' בְּשָׁנָה ו",
       "punctuation_dependent_case_ordinals": [
-        67
+        60
       ]
     },
     {
-      "id": "trailing-apostrophe-case.014",
+      "id": "trailing-apostrophe-case.012",
       "status": "derived_case_role_unknown",
       "word_status": "unknown",
       "semantic_role": "unknown",
@@ -590,18 +506,18 @@
       "apostrophe_character": "'",
       "base_letter_count": 1,
       "grapheme_ids": [
-        "hebrew-grapheme.03752"
+        "hebrew-grapheme.03688"
       ],
-      "corpus_fragment_id": "corpus-fragment.0221",
-      "source_node_id": "jsx.00584",
-      "reading_unit_id": "reading-unit.0238",
+      "corpus_fragment_id": "corpus-fragment.0209",
+      "source_node_id": "jsx.00556",
+      "reading_unit_id": "reading-unit.0231",
       "source_code_unit_range": {
-        "start": 12428,
-        "end": 12430
+        "start": 12134,
+        "end": 12136
       },
       "apostrophe_source_code_unit_range": {
-        "start": 12429,
-        "end": 12430
+        "start": 12135,
+        "end": 12136
       },
       "left_boundary_observation": {
         "kind": "whitespace",
@@ -612,16 +528,16 @@
         "raw": " "
       },
       "context_source_code_unit_range": {
-        "start": 12416,
-        "end": 12442
+        "start": 12122,
+        "end": 12148
       },
       "context_raw": "ְלִיךְ אוֹת פ' וְקָשַׁר לו",
       "punctuation_dependent_case_ordinals": [
-        69
+        62
       ]
     },
     {
-      "id": "trailing-apostrophe-case.015",
+      "id": "trailing-apostrophe-case.013",
       "status": "derived_case_role_unknown",
       "word_status": "unknown",
       "semantic_role": "unknown",
@@ -631,18 +547,18 @@
       "apostrophe_character": "'",
       "base_letter_count": 1,
       "grapheme_ids": [
-        "hebrew-grapheme.03780"
+        "hebrew-grapheme.03716"
       ],
-      "corpus_fragment_id": "corpus-fragment.0221",
-      "source_node_id": "jsx.00584",
-      "reading_unit_id": "reading-unit.0238",
+      "corpus_fragment_id": "corpus-fragment.0209",
+      "source_node_id": "jsx.00556",
+      "reading_unit_id": "reading-unit.0231",
       "source_code_unit_range": {
-        "start": 12486,
-        "end": 12488
+        "start": 12192,
+        "end": 12194
       },
       "apostrophe_source_code_unit_range": {
-        "start": 12487,
-        "end": 12488
+        "start": 12193,
+        "end": 12194
       },
       "left_boundary_observation": {
         "kind": "whitespace",
@@ -653,16 +569,16 @@
         "raw": " "
       },
       "context_source_code_unit_range": {
-        "start": 12474,
-        "end": 12500
+        "start": 12180,
+        "end": 12206
       },
       "context_raw": "ֹלָם וְיוֹם ה' בְּשָׁנָה ו",
       "punctuation_dependent_case_ordinals": [
-        70
+        63
       ]
     },
     {
-      "id": "trailing-apostrophe-case.016",
+      "id": "trailing-apostrophe-case.014",
       "status": "derived_case_role_unknown",
       "word_status": "unknown",
       "semantic_role": "unknown",
@@ -672,18 +588,18 @@
       "apostrophe_character": "'",
       "base_letter_count": 1,
       "grapheme_ids": [
-        "hebrew-grapheme.03806"
+        "hebrew-grapheme.03742"
       ],
-      "corpus_fragment_id": "corpus-fragment.0222",
-      "source_node_id": "jsx.00586",
-      "reading_unit_id": "reading-unit.0239",
+      "corpus_fragment_id": "corpus-fragment.0210",
+      "source_node_id": "jsx.00558",
+      "reading_unit_id": "reading-unit.0232",
       "source_code_unit_range": {
-        "start": 12559,
-        "end": 12561
+        "start": 12265,
+        "end": 12267
       },
       "apostrophe_source_code_unit_range": {
-        "start": 12560,
-        "end": 12561
+        "start": 12266,
+        "end": 12267
       },
       "left_boundary_observation": {
         "kind": "whitespace",
@@ -694,16 +610,16 @@
         "raw": " "
       },
       "context_source_code_unit_range": {
-        "start": 12547,
-        "end": 12573
+        "start": 12253,
+        "end": 12279
       },
       "context_raw": "ְלִיךְ אוֹת ר' וְקָשַׁר לו",
       "punctuation_dependent_case_ordinals": [
-        72
+        65
       ]
     },
     {
-      "id": "trailing-apostrophe-case.017",
+      "id": "trailing-apostrophe-case.015",
       "status": "derived_case_role_unknown",
       "word_status": "unknown",
       "semantic_role": "unknown",
@@ -713,18 +629,18 @@
       "apostrophe_character": "'",
       "base_letter_count": 1,
       "grapheme_ids": [
-        "hebrew-grapheme.03862"
+        "hebrew-grapheme.03798"
       ],
-      "corpus_fragment_id": "corpus-fragment.0223",
-      "source_node_id": "jsx.00588",
-      "reading_unit_id": "reading-unit.0240",
+      "corpus_fragment_id": "corpus-fragment.0211",
+      "source_node_id": "jsx.00560",
+      "reading_unit_id": "reading-unit.0233",
       "source_code_unit_range": {
-        "start": 12698,
-        "end": 12700
+        "start": 12404,
+        "end": 12406
       },
       "apostrophe_source_code_unit_range": {
-        "start": 12699,
-        "end": 12700
+        "start": 12405,
+        "end": 12406
       },
       "left_boundary_observation": {
         "kind": "whitespace",
@@ -735,16 +651,16 @@
         "raw": " "
       },
       "context_source_code_unit_range": {
-        "start": 12686,
-        "end": 12712
+        "start": 12392,
+        "end": 12418
       },
       "context_raw": "ְלִיךְ אוֹת ת' וְקָשַׁר לו",
       "punctuation_dependent_case_ordinals": [
-        74
+        67
       ]
     },
     {
-      "id": "trailing-apostrophe-case.018",
+      "id": "trailing-apostrophe-case.016",
       "status": "derived_case_role_unknown",
       "word_status": "unknown",
       "semantic_role": "unknown",
@@ -754,18 +670,18 @@
       "apostrophe_character": "'",
       "base_letter_count": 1,
       "grapheme_ids": [
-        "hebrew-grapheme.04158"
+        "hebrew-grapheme.04094"
       ],
-      "corpus_fragment_id": "corpus-fragment.0235",
-      "source_node_id": "jsx.00613",
-      "reading_unit_id": "reading-unit.0253",
+      "corpus_fragment_id": "corpus-fragment.0223",
+      "source_node_id": "jsx.00585",
+      "reading_unit_id": "reading-unit.0246",
       "source_code_unit_range": {
-        "start": 13526,
-        "end": 13528
+        "start": 13232,
+        "end": 13234
       },
       "apostrophe_source_code_unit_range": {
-        "start": 13527,
-        "end": 13528
+        "start": 13233,
+        "end": 13234
       },
       "left_boundary_observation": {
         "kind": "whitespace",
@@ -776,16 +692,16 @@
         "raw": " "
       },
       "context_source_code_unit_range": {
-        "start": 13514,
-        "end": 13540
+        "start": 13220,
+        "end": 13246
       },
       "context_raw": "ְאֵלּוּ הֵן ז' יָמִים בְּש",
       "punctuation_dependent_case_ordinals": [
-        85
+        78
       ]
     },
     {
-      "id": "trailing-apostrophe-case.019",
+      "id": "trailing-apostrophe-case.017",
       "status": "derived_case_role_unknown",
       "word_status": "unknown",
       "semantic_role": "unknown",
@@ -795,18 +711,18 @@
       "apostrophe_character": "'",
       "base_letter_count": 1,
       "grapheme_ids": [
-        "hebrew-grapheme.04961"
+        "hebrew-grapheme.04897"
       ],
-      "corpus_fragment_id": "corpus-fragment.0258",
-      "source_node_id": "jsx.00672",
-      "reading_unit_id": "reading-unit.0280",
+      "corpus_fragment_id": "corpus-fragment.0246",
+      "source_node_id": "jsx.00644",
+      "reading_unit_id": "reading-unit.0273",
       "source_code_unit_range": {
-        "start": 15639,
-        "end": 15641
+        "start": 15345,
+        "end": 15347
       },
       "apostrophe_source_code_unit_range": {
-        "start": 15640,
-        "end": 15641
+        "start": 15346,
+        "end": 15347
       },
       "left_boundary_observation": {
         "kind": "whitespace",
@@ -817,16 +733,16 @@
         "raw": " "
       },
       "context_source_code_unit_range": {
-        "start": 15627,
-        "end": 15653
+        "start": 15333,
+        "end": 15359
       },
       "context_raw": "ְלִיךְ אוֹת ה' וְקָשַׁר לו",
       "punctuation_dependent_case_ordinals": [
-        123
+        116
       ]
     },
     {
-      "id": "trailing-apostrophe-case.020",
+      "id": "trailing-apostrophe-case.018",
       "status": "derived_case_role_unknown",
       "word_status": "unknown",
       "semantic_role": "unknown",
@@ -836,18 +752,18 @@
       "apostrophe_character": "'",
       "base_letter_count": 1,
       "grapheme_ids": [
-        "hebrew-grapheme.05020"
+        "hebrew-grapheme.04956"
       ],
-      "corpus_fragment_id": "corpus-fragment.0259",
-      "source_node_id": "jsx.00674",
-      "reading_unit_id": "reading-unit.0281",
+      "corpus_fragment_id": "corpus-fragment.0247",
+      "source_node_id": "jsx.00646",
+      "reading_unit_id": "reading-unit.0274",
       "source_code_unit_range": {
-        "start": 15781,
-        "end": 15783
+        "start": 15487,
+        "end": 15489
       },
       "apostrophe_source_code_unit_range": {
-        "start": 15782,
-        "end": 15783
+        "start": 15488,
+        "end": 15489
       },
       "left_boundary_observation": {
         "kind": "whitespace",
@@ -858,16 +774,16 @@
         "raw": " "
       },
       "context_source_code_unit_range": {
-        "start": 15769,
-        "end": 15795
+        "start": 15475,
+        "end": 15501
       },
       "context_raw": "ְלִיךְ אוֹת ו' וְקָשַׁר לו",
       "punctuation_dependent_case_ordinals": [
-        125
+        118
       ]
     },
     {
-      "id": "trailing-apostrophe-case.021",
+      "id": "trailing-apostrophe-case.019",
       "status": "derived_case_role_unknown",
       "word_status": "unknown",
       "semantic_role": "unknown",
@@ -877,18 +793,18 @@
       "apostrophe_character": "'",
       "base_letter_count": 1,
       "grapheme_ids": [
-        "hebrew-grapheme.05070"
+        "hebrew-grapheme.05006"
       ],
-      "corpus_fragment_id": "corpus-fragment.0260",
-      "source_node_id": "jsx.00676",
-      "reading_unit_id": "reading-unit.0282",
+      "corpus_fragment_id": "corpus-fragment.0248",
+      "source_node_id": "jsx.00648",
+      "reading_unit_id": "reading-unit.0275",
       "source_code_unit_range": {
-        "start": 15907,
-        "end": 15909
+        "start": 15613,
+        "end": 15615
       },
       "apostrophe_source_code_unit_range": {
-        "start": 15908,
-        "end": 15909
+        "start": 15614,
+        "end": 15615
       },
       "left_boundary_observation": {
         "kind": "whitespace",
@@ -899,16 +815,16 @@
         "raw": " "
       },
       "context_source_code_unit_range": {
-        "start": 15895,
-        "end": 15921
+        "start": 15601,
+        "end": 15627
       },
       "context_raw": "ְלִיךְ אוֹת ז' וְקָשַׁר לו",
       "punctuation_dependent_case_ordinals": [
-        127
+        120
       ]
     },
     {
-      "id": "trailing-apostrophe-case.022",
+      "id": "trailing-apostrophe-case.020",
       "status": "derived_case_role_unknown",
       "word_status": "unknown",
       "semantic_role": "unknown",
@@ -918,18 +834,18 @@
       "apostrophe_character": "'",
       "base_letter_count": 1,
       "grapheme_ids": [
-        "hebrew-grapheme.05125"
+        "hebrew-grapheme.05061"
       ],
-      "corpus_fragment_id": "corpus-fragment.0261",
-      "source_node_id": "jsx.00678",
-      "reading_unit_id": "reading-unit.0283",
+      "corpus_fragment_id": "corpus-fragment.0249",
+      "source_node_id": "jsx.00650",
+      "reading_unit_id": "reading-unit.0276",
       "source_code_unit_range": {
-        "start": 16038,
-        "end": 16040
+        "start": 15744,
+        "end": 15746
       },
       "apostrophe_source_code_unit_range": {
-        "start": 16039,
-        "end": 16040
+        "start": 15745,
+        "end": 15746
       },
       "left_boundary_observation": {
         "kind": "whitespace",
@@ -940,16 +856,16 @@
         "raw": " "
       },
       "context_source_code_unit_range": {
-        "start": 16026,
-        "end": 16052
+        "start": 15732,
+        "end": 15758
       },
       "context_raw": "ְלִיךְ אוֹת ח' וְקָשַׁר לו",
       "punctuation_dependent_case_ordinals": [
-        129
+        122
       ]
     },
     {
-      "id": "trailing-apostrophe-case.023",
+      "id": "trailing-apostrophe-case.021",
       "status": "derived_case_role_unknown",
       "word_status": "unknown",
       "semantic_role": "unknown",
@@ -959,18 +875,18 @@
       "apostrophe_character": "'",
       "base_letter_count": 1,
       "grapheme_ids": [
-        "hebrew-grapheme.05178"
+        "hebrew-grapheme.05114"
       ],
-      "corpus_fragment_id": "corpus-fragment.0262",
-      "source_node_id": "jsx.00680",
-      "reading_unit_id": "reading-unit.0284",
+      "corpus_fragment_id": "corpus-fragment.0250",
+      "source_node_id": "jsx.00652",
+      "reading_unit_id": "reading-unit.0277",
       "source_code_unit_range": {
-        "start": 16169,
-        "end": 16171
+        "start": 15875,
+        "end": 15877
       },
       "apostrophe_source_code_unit_range": {
-        "start": 16170,
-        "end": 16171
+        "start": 15876,
+        "end": 15877
       },
       "left_boundary_observation": {
         "kind": "whitespace",
@@ -981,16 +897,16 @@
         "raw": " "
       },
       "context_source_code_unit_range": {
-        "start": 16157,
-        "end": 16183
+        "start": 15863,
+        "end": 15889
       },
       "context_raw": "ְלִיךְ אוֹת ט' וְקָשַׁר לו",
       "punctuation_dependent_case_ordinals": [
-        131
+        124
       ]
     },
     {
-      "id": "trailing-apostrophe-case.024",
+      "id": "trailing-apostrophe-case.022",
       "status": "derived_case_role_unknown",
       "word_status": "unknown",
       "semantic_role": "unknown",
@@ -1000,18 +916,18 @@
       "apostrophe_character": "'",
       "base_letter_count": 1,
       "grapheme_ids": [
-        "hebrew-grapheme.05230"
+        "hebrew-grapheme.05166"
       ],
-      "corpus_fragment_id": "corpus-fragment.0263",
-      "source_node_id": "jsx.00682",
-      "reading_unit_id": "reading-unit.0285",
+      "corpus_fragment_id": "corpus-fragment.0251",
+      "source_node_id": "jsx.00654",
+      "reading_unit_id": "reading-unit.0278",
       "source_code_unit_range": {
-        "start": 16296,
-        "end": 16298
+        "start": 16002,
+        "end": 16004
       },
       "apostrophe_source_code_unit_range": {
-        "start": 16297,
-        "end": 16298
+        "start": 16003,
+        "end": 16004
       },
       "left_boundary_observation": {
         "kind": "whitespace",
@@ -1022,16 +938,16 @@
         "raw": " "
       },
       "context_source_code_unit_range": {
-        "start": 16284,
-        "end": 16310
+        "start": 15990,
+        "end": 16016
       },
       "context_raw": "ְלִיךְ אוֹת י' וְקָשַׁר לו",
       "punctuation_dependent_case_ordinals": [
-        133
+        126
       ]
     },
     {
-      "id": "trailing-apostrophe-case.025",
+      "id": "trailing-apostrophe-case.023",
       "status": "derived_case_role_unknown",
       "word_status": "unknown",
       "semantic_role": "unknown",
@@ -1041,18 +957,18 @@
       "apostrophe_character": "'",
       "base_letter_count": 1,
       "grapheme_ids": [
-        "hebrew-grapheme.05285"
+        "hebrew-grapheme.05221"
       ],
-      "corpus_fragment_id": "corpus-fragment.0264",
-      "source_node_id": "jsx.00684",
-      "reading_unit_id": "reading-unit.0286",
+      "corpus_fragment_id": "corpus-fragment.0252",
+      "source_node_id": "jsx.00656",
+      "reading_unit_id": "reading-unit.0279",
       "source_code_unit_range": {
-        "start": 16430,
-        "end": 16432
+        "start": 16136,
+        "end": 16138
       },
       "apostrophe_source_code_unit_range": {
-        "start": 16431,
-        "end": 16432
+        "start": 16137,
+        "end": 16138
       },
       "left_boundary_observation": {
         "kind": "whitespace",
@@ -1063,16 +979,16 @@
         "raw": " "
       },
       "context_source_code_unit_range": {
-        "start": 16418,
-        "end": 16444
+        "start": 16124,
+        "end": 16150
       },
       "context_raw": "ְלִיךְ אוֹת ל' וְקָשַׁר לו",
       "punctuation_dependent_case_ordinals": [
-        135
+        128
       ]
     },
     {
-      "id": "trailing-apostrophe-case.026",
+      "id": "trailing-apostrophe-case.024",
       "status": "derived_case_role_unknown",
       "word_status": "unknown",
       "semantic_role": "unknown",
@@ -1082,18 +998,18 @@
       "apostrophe_character": "'",
       "base_letter_count": 1,
       "grapheme_ids": [
-        "hebrew-grapheme.05336"
+        "hebrew-grapheme.05272"
       ],
-      "corpus_fragment_id": "corpus-fragment.0265",
-      "source_node_id": "jsx.00686",
-      "reading_unit_id": "reading-unit.0287",
+      "corpus_fragment_id": "corpus-fragment.0253",
+      "source_node_id": "jsx.00658",
+      "reading_unit_id": "reading-unit.0280",
       "source_code_unit_range": {
-        "start": 16557,
-        "end": 16559
+        "start": 16263,
+        "end": 16265
       },
       "apostrophe_source_code_unit_range": {
-        "start": 16558,
-        "end": 16559
+        "start": 16264,
+        "end": 16265
       },
       "left_boundary_observation": {
         "kind": "whitespace",
@@ -1104,16 +1020,16 @@
         "raw": " "
       },
       "context_source_code_unit_range": {
-        "start": 16545,
-        "end": 16571
+        "start": 16251,
+        "end": 16277
       },
       "context_raw": "ְלִיךְ אוֹת נ' וְקָשַׁר לו",
       "punctuation_dependent_case_ordinals": [
-        137
+        130
       ]
     },
     {
-      "id": "trailing-apostrophe-case.027",
+      "id": "trailing-apostrophe-case.025",
       "status": "derived_case_role_unknown",
       "word_status": "unknown",
       "semantic_role": "unknown",
@@ -1123,18 +1039,18 @@
       "apostrophe_character": "'",
       "base_letter_count": 1,
       "grapheme_ids": [
-        "hebrew-grapheme.05388"
+        "hebrew-grapheme.05324"
       ],
-      "corpus_fragment_id": "corpus-fragment.0266",
-      "source_node_id": "jsx.00688",
-      "reading_unit_id": "reading-unit.0288",
+      "corpus_fragment_id": "corpus-fragment.0254",
+      "source_node_id": "jsx.00660",
+      "reading_unit_id": "reading-unit.0281",
       "source_code_unit_range": {
-        "start": 16686,
-        "end": 16688
+        "start": 16392,
+        "end": 16394
       },
       "apostrophe_source_code_unit_range": {
-        "start": 16687,
-        "end": 16688
+        "start": 16393,
+        "end": 16394
       },
       "left_boundary_observation": {
         "kind": "whitespace",
@@ -1145,16 +1061,16 @@
         "raw": " "
       },
       "context_source_code_unit_range": {
-        "start": 16674,
-        "end": 16700
+        "start": 16380,
+        "end": 16406
       },
       "context_raw": "ְלִיךְ אוֹת ס' וְקָשַׁר לו",
       "punctuation_dependent_case_ordinals": [
-        139
+        132
       ]
     },
     {
-      "id": "trailing-apostrophe-case.028",
+      "id": "trailing-apostrophe-case.026",
       "status": "derived_case_role_unknown",
       "word_status": "unknown",
       "semantic_role": "unknown",
@@ -1164,18 +1080,18 @@
       "apostrophe_character": "'",
       "base_letter_count": 1,
       "grapheme_ids": [
-        "hebrew-grapheme.05436"
+        "hebrew-grapheme.05372"
       ],
-      "corpus_fragment_id": "corpus-fragment.0267",
-      "source_node_id": "jsx.00690",
-      "reading_unit_id": "reading-unit.0289",
+      "corpus_fragment_id": "corpus-fragment.0255",
+      "source_node_id": "jsx.00662",
+      "reading_unit_id": "reading-unit.0282",
       "source_code_unit_range": {
-        "start": 16808,
-        "end": 16810
+        "start": 16514,
+        "end": 16516
       },
       "apostrophe_source_code_unit_range": {
-        "start": 16809,
-        "end": 16810
+        "start": 16515,
+        "end": 16516
       },
       "left_boundary_observation": {
         "kind": "whitespace",
@@ -1186,16 +1102,16 @@
         "raw": " "
       },
       "context_source_code_unit_range": {
-        "start": 16796,
-        "end": 16822
+        "start": 16502,
+        "end": 16528
       },
       "context_raw": "ְלִיךְ אוֹת ע' וְקָשַׁר לו",
       "punctuation_dependent_case_ordinals": [
-        141
+        134
       ]
     },
     {
-      "id": "trailing-apostrophe-case.029",
+      "id": "trailing-apostrophe-case.027",
       "status": "derived_case_role_unknown",
       "word_status": "unknown",
       "semantic_role": "unknown",
@@ -1205,18 +1121,18 @@
       "apostrophe_character": "'",
       "base_letter_count": 1,
       "grapheme_ids": [
-        "hebrew-grapheme.05484"
+        "hebrew-grapheme.05420"
       ],
-      "corpus_fragment_id": "corpus-fragment.0268",
-      "source_node_id": "jsx.00692",
-      "reading_unit_id": "reading-unit.0290",
+      "corpus_fragment_id": "corpus-fragment.0256",
+      "source_node_id": "jsx.00664",
+      "reading_unit_id": "reading-unit.0283",
       "source_code_unit_range": {
-        "start": 16932,
-        "end": 16934
+        "start": 16638,
+        "end": 16640
       },
       "apostrophe_source_code_unit_range": {
-        "start": 16933,
-        "end": 16934
+        "start": 16639,
+        "end": 16640
       },
       "left_boundary_observation": {
         "kind": "whitespace",
@@ -1227,16 +1143,16 @@
         "raw": " "
       },
       "context_source_code_unit_range": {
-        "start": 16920,
-        "end": 16946
+        "start": 16626,
+        "end": 16652
       },
       "context_raw": "ְלִיךְ אוֹת צ' וְקָשַׁר לו",
       "punctuation_dependent_case_ordinals": [
-        143
+        136
       ]
     },
     {
-      "id": "trailing-apostrophe-case.030",
+      "id": "trailing-apostrophe-case.028",
       "status": "derived_case_role_unknown",
       "word_status": "unknown",
       "semantic_role": "unknown",
@@ -1246,18 +1162,18 @@
       "apostrophe_character": "'",
       "base_letter_count": 1,
       "grapheme_ids": [
-        "hebrew-grapheme.05531"
+        "hebrew-grapheme.05467"
       ],
-      "corpus_fragment_id": "corpus-fragment.0269",
-      "source_node_id": "jsx.00694",
-      "reading_unit_id": "reading-unit.0291",
+      "corpus_fragment_id": "corpus-fragment.0257",
+      "source_node_id": "jsx.00666",
+      "reading_unit_id": "reading-unit.0284",
       "source_code_unit_range": {
-        "start": 17053,
-        "end": 17055
+        "start": 16759,
+        "end": 16761
       },
       "apostrophe_source_code_unit_range": {
-        "start": 17054,
-        "end": 17055
+        "start": 16760,
+        "end": 16761
       },
       "left_boundary_observation": {
         "kind": "whitespace",
@@ -1268,16 +1184,16 @@
         "raw": " "
       },
       "context_source_code_unit_range": {
-        "start": 17041,
-        "end": 17067
+        "start": 16747,
+        "end": 16773
       },
       "context_raw": "ְלִיךְ אוֹת ק' וְקָשַׁר לו",
       "punctuation_dependent_case_ordinals": [
-        145
+        138
       ]
     },
     {
-      "id": "trailing-apostrophe-case.031",
+      "id": "trailing-apostrophe-case.029",
       "status": "derived_case_role_unknown",
       "word_status": "unknown",
       "semantic_role": "unknown",
@@ -1287,18 +1203,18 @@
       "apostrophe_character": "'",
       "base_letter_count": 1,
       "grapheme_ids": [
-        "hebrew-grapheme.06139"
+        "hebrew-grapheme.06074"
       ],
-      "corpus_fragment_id": "corpus-fragment.0317",
-      "source_node_id": "jsx.00802",
-      "reading_unit_id": "reading-unit.0339",
+      "corpus_fragment_id": "corpus-fragment.0301",
+      "source_node_id": "jsx.00766",
+      "reading_unit_id": "reading-unit.0332",
       "source_code_unit_range": {
-        "start": 19166,
-        "end": 19168
+        "start": 18836,
+        "end": 18838
       },
       "apostrophe_source_code_unit_range": {
-        "start": 19167,
-        "end": 19168
+        "start": 18837,
+        "end": 18838
       },
       "left_boundary_observation": {
         "kind": "whitespace",
@@ -1309,16 +1225,16 @@
         "raw": " "
       },
       "context_source_code_unit_range": {
-        "start": 19155,
-        "end": 19178
+        "start": 18825,
+        "end": 18848
       },
       "context_raw": "\n          ז' חֲלוּקִין",
       "punctuation_dependent_case_ordinals": [
-        163
+        154
       ]
     },
     {
-      "id": "trailing-apostrophe-case.032",
+      "id": "trailing-apostrophe-case.030",
       "status": "derived_case_role_unknown",
       "word_status": "unknown",
       "semantic_role": "unknown",
@@ -1328,19 +1244,19 @@
       "apostrophe_character": "'",
       "base_letter_count": 2,
       "grapheme_ids": [
-        "hebrew-grapheme.06486",
-        "hebrew-grapheme.06487"
+        "hebrew-grapheme.06421",
+        "hebrew-grapheme.06422"
       ],
-      "corpus_fragment_id": "corpus-fragment.0348",
-      "source_node_id": "jsx.00865",
-      "reading_unit_id": "reading-unit.0371",
+      "corpus_fragment_id": "corpus-fragment.0332",
+      "source_node_id": "jsx.00829",
+      "reading_unit_id": "reading-unit.0364",
       "source_code_unit_range": {
-        "start": 20398,
-        "end": 20403
+        "start": 20068,
+        "end": 20073
       },
       "apostrophe_source_code_unit_range": {
-        "start": 20402,
-        "end": 20403
+        "start": 20072,
+        "end": 20073
       },
       "left_boundary_observation": {
         "kind": "whitespace",
@@ -1351,12 +1267,12 @@
         "raw": ""
       },
       "context_source_code_unit_range": {
-        "start": 20386,
-        "end": 20403
+        "start": 20056,
+        "end": 20073
       },
       "context_raw": "  וְהֶאֱמִן בַּה'",
       "punctuation_dependent_case_ordinals": [
-        169
+        160
       ]
     }
   ]

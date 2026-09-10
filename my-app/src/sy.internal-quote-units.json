@@ -5,10 +5,10 @@
   "scope": "internal_quote_words_only",
   "source": {
     "file": "src/SeferYetzirah.tsx",
-    "sha256": "d568a1ab11859e04c5ed6292b0d8ad829885ecdb95fc19a9fb5273b269413024",
-    "corpus_text_sha256": "577986cf30c0e2b73f19e09523aed6954017f42c413db2cc214e7147ddc95752",
-    "word_contract_sha256": "79e9b0d7a113ca0ff83c278dc879cf22ba2aa7841f2de061e1b6a26b059680f9",
-    "lexical_ambiguities_sha256": "7bb818af58c4cd04b50b06494cab6ac879ce9bf6386207e207363ad1c54edf51"
+    "sha256": "e86001bbbcad27a4b4cf2dd2260bc2059e37dd668a8e3b7b6c7ae930be721643",
+    "corpus_text_sha256": "4a1b17aa75cef0fdfab81780b7d2e28a092935087da73ae7dd25b934f4d06a6a",
+    "word_contract_sha256": "c9892436c88cfdcf8924d07f1576acf886ee23a4ef520e558f1fe95f752ce33c",
+    "lexical_ambiguities_sha256": "5b557264018e4f98875164365560fa6a9f02e05a0537570f61aef0f5787097e3"
   },
   "rule": {
     "statement": "A quote mark internal to a pointed Hebrew letter sequence keeps the complete sequence as one word.",
@@ -35,10 +35,10 @@
     "no_non_internal_quote_words_emitted": true,
     "no_linguistic_subtype_inferred": true,
     "deterministic_output": true,
-    "quote_mark_count": 115,
-    "internal_quote_word_count": 83,
-    "unknown_non_internal_quote_count": 32,
-    "adjacent_punctuation_count": 14
+    "quote_mark_count": 109,
+    "internal_quote_word_count": 79,
+    "unknown_non_internal_quote_count": 30,
+    "adjacent_punctuation_count": 12
   },
   "quote_mark_classifications": [
     {
@@ -50,8 +50,8 @@
       "source_node_id": "jsx.00202",
       "reading_unit_id": "reading-unit.0068",
       "source_code_unit_range": {
-        "start": 4078,
-        "end": 4079
+        "start": 4077,
+        "end": 4078
       }
     },
     {
@@ -59,12 +59,12 @@
       "quote_character": "'",
       "classification": "unknown_non_internal_quote",
       "resulting_unit_id": null,
-      "corpus_fragment_id": "corpus-fragment.0065",
-      "source_node_id": "jsx.00209",
+      "corpus_fragment_id": "corpus-fragment.0063",
+      "source_node_id": "jsx.00206",
       "reading_unit_id": "reading-unit.0070",
       "source_code_unit_range": {
-        "start": 4183,
-        "end": 4184
+        "start": 4142,
+        "end": 4143
       }
     },
     {
@@ -72,12 +72,12 @@
       "quote_character": "'",
       "classification": "unknown_non_internal_quote",
       "resulting_unit_id": null,
-      "corpus_fragment_id": "corpus-fragment.0065",
-      "source_node_id": "jsx.00209",
+      "corpus_fragment_id": "corpus-fragment.0063",
+      "source_node_id": "jsx.00206",
       "reading_unit_id": "reading-unit.0070",
       "source_code_unit_range": {
-        "start": 4223,
-        "end": 4224
+        "start": 4182,
+        "end": 4183
       }
     },
     {
@@ -85,12 +85,12 @@
       "quote_character": "\"",
       "classification": "internal_quote_word_connector",
       "resulting_unit_id": "internal-quote-unit.002",
-      "corpus_fragment_id": "corpus-fragment.0065",
-      "source_node_id": "jsx.00209",
+      "corpus_fragment_id": "corpus-fragment.0063",
+      "source_node_id": "jsx.00206",
       "reading_unit_id": "reading-unit.0070",
       "source_code_unit_range": {
-        "start": 4235,
-        "end": 4236
+        "start": 4194,
+        "end": 4195
       }
     },
     {
@@ -98,12 +98,12 @@
       "quote_character": "'",
       "classification": "unknown_non_internal_quote",
       "resulting_unit_id": null,
-      "corpus_fragment_id": "corpus-fragment.0065",
-      "source_node_id": "jsx.00209",
+      "corpus_fragment_id": "corpus-fragment.0063",
+      "source_node_id": "jsx.00206",
       "reading_unit_id": "reading-unit.0070",
       "source_code_unit_range": {
-        "start": 4284,
-        "end": 4285
+        "start": 4243,
+        "end": 4244
       }
     },
     {
@@ -111,12 +111,12 @@
       "quote_character": "\"",
       "classification": "internal_quote_word_connector",
       "resulting_unit_id": "internal-quote-unit.003",
-      "corpus_fragment_id": "corpus-fragment.0066",
-      "source_node_id": "jsx.00212",
+      "corpus_fragment_id": "corpus-fragment.0064",
+      "source_node_id": "jsx.00209",
       "reading_unit_id": "reading-unit.0072",
       "source_code_unit_range": {
-        "start": 4369,
-        "end": 4370
+        "start": 4327,
+        "end": 4328
       }
     },
     {
@@ -124,12 +124,12 @@
       "quote_character": "\"",
       "classification": "internal_quote_word_connector",
       "resulting_unit_id": "internal-quote-unit.004",
-      "corpus_fragment_id": "corpus-fragment.0067",
-      "source_node_id": "jsx.00216",
+      "corpus_fragment_id": "corpus-fragment.0065",
+      "source_node_id": "jsx.00213",
       "reading_unit_id": "reading-unit.0072",
       "source_code_unit_range": {
-        "start": 4463,
-        "end": 4464
+        "start": 4421,
+        "end": 4422
       }
     },
     {
@@ -137,12 +137,12 @@
       "quote_character": "\"",
       "classification": "internal_quote_word_connector",
       "resulting_unit_id": "internal-quote-unit.005",
-      "corpus_fragment_id": "corpus-fragment.0068",
-      "source_node_id": "jsx.00220",
+      "corpus_fragment_id": "corpus-fragment.0066",
+      "source_node_id": "jsx.00217",
       "reading_unit_id": "reading-unit.0072",
       "source_code_unit_range": {
-        "start": 4559,
-        "end": 4560
+        "start": 4517,
+        "end": 4518
       }
     },
     {
@@ -150,12 +150,12 @@
       "quote_character": "\"",
       "classification": "internal_quote_word_connector",
       "resulting_unit_id": "internal-quote-unit.006",
-      "corpus_fragment_id": "corpus-fragment.0069",
-      "source_node_id": "jsx.00224",
+      "corpus_fragment_id": "corpus-fragment.0067",
+      "source_node_id": "jsx.00221",
       "reading_unit_id": "reading-unit.0072",
       "source_code_unit_range": {
-        "start": 4659,
-        "end": 4660
+        "start": 4617,
+        "end": 4618
       }
     },
     {
@@ -163,12 +163,12 @@
       "quote_character": "\"",
       "classification": "internal_quote_word_connector",
       "resulting_unit_id": "internal-quote-unit.007",
-      "corpus_fragment_id": "corpus-fragment.0070",
-      "source_node_id": "jsx.00228",
+      "corpus_fragment_id": "corpus-fragment.0068",
+      "source_node_id": "jsx.00225",
       "reading_unit_id": "reading-unit.0072",
       "source_code_unit_range": {
-        "start": 4754,
-        "end": 4755
+        "start": 4712,
+        "end": 4713
       }
     },
     {
@@ -176,12 +176,12 @@
       "quote_character": "\"",
       "classification": "internal_quote_word_connector",
       "resulting_unit_id": "internal-quote-unit.008",
-      "corpus_fragment_id": "corpus-fragment.0071",
-      "source_node_id": "jsx.00232",
+      "corpus_fragment_id": "corpus-fragment.0069",
+      "source_node_id": "jsx.00229",
       "reading_unit_id": "reading-unit.0072",
       "source_code_unit_range": {
-        "start": 4850,
-        "end": 4851
+        "start": 4808,
+        "end": 4809
       }
     },
     {
@@ -189,610 +189,610 @@
       "quote_character": "\"",
       "classification": "internal_quote_word_connector",
       "resulting_unit_id": "internal-quote-unit.009",
-      "corpus_fragment_id": "corpus-fragment.0075",
-      "source_node_id": "jsx.00246",
-      "reading_unit_id": "reading-unit.0077",
+      "corpus_fragment_id": "corpus-fragment.0076",
+      "source_node_id": "jsx.00258",
+      "reading_unit_id": "reading-unit.0082",
       "source_code_unit_range": {
-        "start": 5148,
-        "end": 5149
+        "start": 5332,
+        "end": 5333
       }
     },
     {
       "id": "quote-classification.013",
-      "quote_character": "'",
-      "classification": "unknown_non_internal_quote",
-      "resulting_unit_id": null,
-      "corpus_fragment_id": "corpus-fragment.0075",
-      "source_node_id": "jsx.00246",
-      "reading_unit_id": "reading-unit.0077",
+      "quote_character": "\"",
+      "classification": "internal_quote_word_connector",
+      "resulting_unit_id": "internal-quote-unit.010",
+      "corpus_fragment_id": "corpus-fragment.0091",
+      "source_node_id": "jsx.00290",
+      "reading_unit_id": "reading-unit.0099",
       "source_code_unit_range": {
-        "start": 5157,
-        "end": 5158
+        "start": 5948,
+        "end": 5949
       }
     },
     {
       "id": "quote-classification.014",
       "quote_character": "\"",
       "classification": "internal_quote_word_connector",
-      "resulting_unit_id": "internal-quote-unit.010",
-      "corpus_fragment_id": "corpus-fragment.0075",
-      "source_node_id": "jsx.00246",
-      "reading_unit_id": "reading-unit.0077",
+      "resulting_unit_id": "internal-quote-unit.011",
+      "corpus_fragment_id": "corpus-fragment.0091",
+      "source_node_id": "jsx.00290",
+      "reading_unit_id": "reading-unit.0099",
       "source_code_unit_range": {
-        "start": 5161,
-        "end": 5162
+        "start": 5954,
+        "end": 5955
       }
     },
     {
       "id": "quote-classification.015",
-      "quote_character": "'",
-      "classification": "unknown_non_internal_quote",
-      "resulting_unit_id": null,
-      "corpus_fragment_id": "corpus-fragment.0075",
-      "source_node_id": "jsx.00246",
-      "reading_unit_id": "reading-unit.0077",
+      "quote_character": "\"",
+      "classification": "internal_quote_word_connector",
+      "resulting_unit_id": "internal-quote-unit.012",
+      "corpus_fragment_id": "corpus-fragment.0091",
+      "source_node_id": "jsx.00290",
+      "reading_unit_id": "reading-unit.0099",
       "source_code_unit_range": {
-        "start": 5175,
-        "end": 5176
+        "start": 5960,
+        "end": 5961
       }
     },
     {
       "id": "quote-classification.016",
       "quote_character": "\"",
       "classification": "internal_quote_word_connector",
-      "resulting_unit_id": "internal-quote-unit.011",
-      "corpus_fragment_id": "corpus-fragment.0081",
-      "source_node_id": "jsx.00268",
-      "reading_unit_id": "reading-unit.0084",
+      "resulting_unit_id": "internal-quote-unit.013",
+      "corpus_fragment_id": "corpus-fragment.0091",
+      "source_node_id": "jsx.00290",
+      "reading_unit_id": "reading-unit.0099",
       "source_code_unit_range": {
-        "start": 5467,
-        "end": 5468
+        "start": 5967,
+        "end": 5968
       }
     },
     {
       "id": "quote-classification.017",
       "quote_character": "\"",
       "classification": "internal_quote_word_connector",
-      "resulting_unit_id": "internal-quote-unit.012",
-      "corpus_fragment_id": "corpus-fragment.0096",
-      "source_node_id": "jsx.00300",
-      "reading_unit_id": "reading-unit.0101",
+      "resulting_unit_id": "internal-quote-unit.014",
+      "corpus_fragment_id": "corpus-fragment.0091",
+      "source_node_id": "jsx.00290",
+      "reading_unit_id": "reading-unit.0099",
       "source_code_unit_range": {
-        "start": 6083,
-        "end": 6084
+        "start": 5974,
+        "end": 5975
       }
     },
     {
       "id": "quote-classification.018",
       "quote_character": "\"",
       "classification": "internal_quote_word_connector",
-      "resulting_unit_id": "internal-quote-unit.013",
-      "corpus_fragment_id": "corpus-fragment.0096",
-      "source_node_id": "jsx.00300",
-      "reading_unit_id": "reading-unit.0101",
+      "resulting_unit_id": "internal-quote-unit.015",
+      "corpus_fragment_id": "corpus-fragment.0093",
+      "source_node_id": "jsx.00295",
+      "reading_unit_id": "reading-unit.0102",
       "source_code_unit_range": {
-        "start": 6089,
-        "end": 6090
+        "start": 6068,
+        "end": 6069
       }
     },
     {
       "id": "quote-classification.019",
       "quote_character": "\"",
       "classification": "internal_quote_word_connector",
-      "resulting_unit_id": "internal-quote-unit.014",
-      "corpus_fragment_id": "corpus-fragment.0096",
-      "source_node_id": "jsx.00300",
-      "reading_unit_id": "reading-unit.0101",
+      "resulting_unit_id": "internal-quote-unit.016",
+      "corpus_fragment_id": "corpus-fragment.0094",
+      "source_node_id": "jsx.00297",
+      "reading_unit_id": "reading-unit.0103",
       "source_code_unit_range": {
-        "start": 6095,
-        "end": 6096
+        "start": 6144,
+        "end": 6145
       }
     },
     {
       "id": "quote-classification.020",
       "quote_character": "\"",
       "classification": "internal_quote_word_connector",
-      "resulting_unit_id": "internal-quote-unit.015",
-      "corpus_fragment_id": "corpus-fragment.0096",
-      "source_node_id": "jsx.00300",
-      "reading_unit_id": "reading-unit.0101",
+      "resulting_unit_id": "internal-quote-unit.017",
+      "corpus_fragment_id": "corpus-fragment.0095",
+      "source_node_id": "jsx.00299",
+      "reading_unit_id": "reading-unit.0104",
       "source_code_unit_range": {
-        "start": 6102,
-        "end": 6103
+        "start": 6208,
+        "end": 6209
       }
     },
     {
       "id": "quote-classification.021",
       "quote_character": "\"",
       "classification": "internal_quote_word_connector",
-      "resulting_unit_id": "internal-quote-unit.016",
+      "resulting_unit_id": "internal-quote-unit.018",
       "corpus_fragment_id": "corpus-fragment.0096",
-      "source_node_id": "jsx.00300",
-      "reading_unit_id": "reading-unit.0101",
+      "source_node_id": "jsx.00301",
+      "reading_unit_id": "reading-unit.0105",
       "source_code_unit_range": {
-        "start": 6109,
-        "end": 6110
+        "start": 6274,
+        "end": 6275
       }
     },
     {
       "id": "quote-classification.022",
       "quote_character": "\"",
       "classification": "internal_quote_word_connector",
-      "resulting_unit_id": "internal-quote-unit.017",
-      "corpus_fragment_id": "corpus-fragment.0100",
-      "source_node_id": "jsx.00312",
-      "reading_unit_id": "reading-unit.0107",
+      "resulting_unit_id": "internal-quote-unit.019",
+      "corpus_fragment_id": "corpus-fragment.0097",
+      "source_node_id": "jsx.00303",
+      "reading_unit_id": "reading-unit.0106",
       "source_code_unit_range": {
-        "start": 6293,
-        "end": 6294
+        "start": 6343,
+        "end": 6344
       }
     },
     {
       "id": "quote-classification.023",
       "quote_character": "\"",
       "classification": "internal_quote_word_connector",
-      "resulting_unit_id": "internal-quote-unit.018",
-      "corpus_fragment_id": "corpus-fragment.0101",
-      "source_node_id": "jsx.00314",
-      "reading_unit_id": "reading-unit.0108",
+      "resulting_unit_id": "internal-quote-unit.020",
+      "corpus_fragment_id": "corpus-fragment.0100",
+      "source_node_id": "jsx.00310",
+      "reading_unit_id": "reading-unit.0110",
       "source_code_unit_range": {
-        "start": 6369,
-        "end": 6370
+        "start": 6519,
+        "end": 6520
       }
     },
     {
       "id": "quote-classification.024",
       "quote_character": "\"",
       "classification": "internal_quote_word_connector",
-      "resulting_unit_id": "internal-quote-unit.019",
-      "corpus_fragment_id": "corpus-fragment.0102",
-      "source_node_id": "jsx.00316",
-      "reading_unit_id": "reading-unit.0109",
+      "resulting_unit_id": "internal-quote-unit.021",
+      "corpus_fragment_id": "corpus-fragment.0105",
+      "source_node_id": "jsx.00321",
+      "reading_unit_id": "reading-unit.0116",
       "source_code_unit_range": {
-        "start": 6433,
-        "end": 6434
+        "start": 6780,
+        "end": 6781
       }
     },
     {
       "id": "quote-classification.025",
       "quote_character": "\"",
       "classification": "internal_quote_word_connector",
-      "resulting_unit_id": "internal-quote-unit.020",
-      "corpus_fragment_id": "corpus-fragment.0103",
-      "source_node_id": "jsx.00318",
-      "reading_unit_id": "reading-unit.0110",
+      "resulting_unit_id": "internal-quote-unit.022",
+      "corpus_fragment_id": "corpus-fragment.0106",
+      "source_node_id": "jsx.00323",
+      "reading_unit_id": "reading-unit.0117",
       "source_code_unit_range": {
-        "start": 6499,
-        "end": 6500
+        "start": 6828,
+        "end": 6829
       }
     },
     {
       "id": "quote-classification.026",
       "quote_character": "\"",
       "classification": "internal_quote_word_connector",
-      "resulting_unit_id": "internal-quote-unit.021",
-      "corpus_fragment_id": "corpus-fragment.0104",
-      "source_node_id": "jsx.00320",
-      "reading_unit_id": "reading-unit.0111",
+      "resulting_unit_id": "internal-quote-unit.023",
+      "corpus_fragment_id": "corpus-fragment.0107",
+      "source_node_id": "jsx.00325",
+      "reading_unit_id": "reading-unit.0118",
       "source_code_unit_range": {
-        "start": 6568,
-        "end": 6569
+        "start": 6852,
+        "end": 6853
       }
     },
     {
       "id": "quote-classification.027",
       "quote_character": "\"",
       "classification": "internal_quote_word_connector",
-      "resulting_unit_id": "internal-quote-unit.022",
+      "resulting_unit_id": "internal-quote-unit.024",
       "corpus_fragment_id": "corpus-fragment.0108",
-      "source_node_id": "jsx.00330",
-      "reading_unit_id": "reading-unit.0117",
+      "source_node_id": "jsx.00327",
+      "reading_unit_id": "reading-unit.0119",
       "source_code_unit_range": {
-        "start": 6769,
-        "end": 6770
+        "start": 6900,
+        "end": 6901
       }
     },
     {
       "id": "quote-classification.028",
       "quote_character": "\"",
       "classification": "internal_quote_word_connector",
-      "resulting_unit_id": "internal-quote-unit.023",
-      "corpus_fragment_id": "corpus-fragment.0113",
-      "source_node_id": "jsx.00341",
-      "reading_unit_id": "reading-unit.0123",
+      "resulting_unit_id": "internal-quote-unit.025",
+      "corpus_fragment_id": "corpus-fragment.0122",
+      "source_node_id": "jsx.00364",
+      "reading_unit_id": "reading-unit.0134",
       "source_code_unit_range": {
-        "start": 7030,
-        "end": 7031
+        "start": 7566,
+        "end": 7567
       }
     },
     {
       "id": "quote-classification.029",
       "quote_character": "\"",
       "classification": "internal_quote_word_connector",
-      "resulting_unit_id": "internal-quote-unit.024",
-      "corpus_fragment_id": "corpus-fragment.0114",
-      "source_node_id": "jsx.00343",
-      "reading_unit_id": "reading-unit.0124",
+      "resulting_unit_id": "internal-quote-unit.026",
+      "corpus_fragment_id": "corpus-fragment.0128",
+      "source_node_id": "jsx.00377",
+      "reading_unit_id": "reading-unit.0141",
       "source_code_unit_range": {
-        "start": 7078,
-        "end": 7079
+        "start": 7760,
+        "end": 7761
       }
     },
     {
       "id": "quote-classification.030",
       "quote_character": "\"",
       "classification": "internal_quote_word_connector",
-      "resulting_unit_id": "internal-quote-unit.025",
-      "corpus_fragment_id": "corpus-fragment.0115",
-      "source_node_id": "jsx.00345",
-      "reading_unit_id": "reading-unit.0125",
+      "resulting_unit_id": "internal-quote-unit.027",
+      "corpus_fragment_id": "corpus-fragment.0135",
+      "source_node_id": "jsx.00392",
+      "reading_unit_id": "reading-unit.0149",
       "source_code_unit_range": {
-        "start": 7102,
-        "end": 7103
+        "start": 8035,
+        "end": 8036
       }
     },
     {
       "id": "quote-classification.031",
       "quote_character": "\"",
       "classification": "internal_quote_word_connector",
-      "resulting_unit_id": "internal-quote-unit.026",
-      "corpus_fragment_id": "corpus-fragment.0116",
-      "source_node_id": "jsx.00347",
-      "reading_unit_id": "reading-unit.0126",
+      "resulting_unit_id": "internal-quote-unit.028",
+      "corpus_fragment_id": "corpus-fragment.0139",
+      "source_node_id": "jsx.00401",
+      "reading_unit_id": "reading-unit.0154",
       "source_code_unit_range": {
-        "start": 7150,
-        "end": 7151
+        "start": 8185,
+        "end": 8186
       }
     },
     {
       "id": "quote-classification.032",
       "quote_character": "\"",
       "classification": "internal_quote_word_connector",
-      "resulting_unit_id": "internal-quote-unit.027",
-      "corpus_fragment_id": "corpus-fragment.0130",
-      "source_node_id": "jsx.00384",
-      "reading_unit_id": "reading-unit.0141",
+      "resulting_unit_id": "internal-quote-unit.029",
+      "corpus_fragment_id": "corpus-fragment.0145",
+      "source_node_id": "jsx.00414",
+      "reading_unit_id": "reading-unit.0161",
       "source_code_unit_range": {
-        "start": 7816,
-        "end": 7817
+        "start": 8449,
+        "end": 8450
       }
     },
     {
       "id": "quote-classification.033",
       "quote_character": "\"",
       "classification": "internal_quote_word_connector",
-      "resulting_unit_id": "internal-quote-unit.028",
-      "corpus_fragment_id": "corpus-fragment.0136",
-      "source_node_id": "jsx.00397",
-      "reading_unit_id": "reading-unit.0148",
+      "resulting_unit_id": "internal-quote-unit.030",
+      "corpus_fragment_id": "corpus-fragment.0151",
+      "source_node_id": "jsx.00426",
+      "reading_unit_id": "reading-unit.0167",
       "source_code_unit_range": {
-        "start": 8010,
-        "end": 8011
+        "start": 8669,
+        "end": 8670
       }
     },
     {
       "id": "quote-classification.034",
       "quote_character": "\"",
       "classification": "internal_quote_word_connector",
-      "resulting_unit_id": "internal-quote-unit.029",
-      "corpus_fragment_id": "corpus-fragment.0143",
-      "source_node_id": "jsx.00412",
-      "reading_unit_id": "reading-unit.0156",
+      "resulting_unit_id": "internal-quote-unit.031",
+      "corpus_fragment_id": "corpus-fragment.0157",
+      "source_node_id": "jsx.00439",
+      "reading_unit_id": "reading-unit.0174",
       "source_code_unit_range": {
-        "start": 8285,
-        "end": 8286
+        "start": 8918,
+        "end": 8919
       }
     },
     {
       "id": "quote-classification.035",
       "quote_character": "\"",
       "classification": "internal_quote_word_connector",
-      "resulting_unit_id": "internal-quote-unit.030",
-      "corpus_fragment_id": "corpus-fragment.0147",
-      "source_node_id": "jsx.00421",
-      "reading_unit_id": "reading-unit.0161",
+      "resulting_unit_id": "internal-quote-unit.032",
+      "corpus_fragment_id": "corpus-fragment.0163",
+      "source_node_id": "jsx.00452",
+      "reading_unit_id": "reading-unit.0181",
       "source_code_unit_range": {
-        "start": 8435,
-        "end": 8436
+        "start": 9184,
+        "end": 9185
       }
     },
     {
       "id": "quote-classification.036",
       "quote_character": "\"",
       "classification": "internal_quote_word_connector",
-      "resulting_unit_id": "internal-quote-unit.031",
-      "corpus_fragment_id": "corpus-fragment.0153",
-      "source_node_id": "jsx.00434",
-      "reading_unit_id": "reading-unit.0168",
+      "resulting_unit_id": "internal-quote-unit.033",
+      "corpus_fragment_id": "corpus-fragment.0163",
+      "source_node_id": "jsx.00452",
+      "reading_unit_id": "reading-unit.0181",
       "source_code_unit_range": {
-        "start": 8699,
-        "end": 8700
+        "start": 9318,
+        "end": 9319
       }
     },
     {
       "id": "quote-classification.037",
       "quote_character": "\"",
       "classification": "internal_quote_word_connector",
-      "resulting_unit_id": "internal-quote-unit.032",
-      "corpus_fragment_id": "corpus-fragment.0159",
-      "source_node_id": "jsx.00446",
-      "reading_unit_id": "reading-unit.0174",
+      "resulting_unit_id": "internal-quote-unit.034",
+      "corpus_fragment_id": "corpus-fragment.0163",
+      "source_node_id": "jsx.00452",
+      "reading_unit_id": "reading-unit.0181",
       "source_code_unit_range": {
-        "start": 8919,
-        "end": 8920
+        "start": 9334,
+        "end": 9335
       }
     },
     {
       "id": "quote-classification.038",
       "quote_character": "\"",
       "classification": "internal_quote_word_connector",
-      "resulting_unit_id": "internal-quote-unit.033",
-      "corpus_fragment_id": "corpus-fragment.0165",
-      "source_node_id": "jsx.00459",
-      "reading_unit_id": "reading-unit.0181",
+      "resulting_unit_id": "internal-quote-unit.035",
+      "corpus_fragment_id": "corpus-fragment.0164",
+      "source_node_id": "jsx.00454",
+      "reading_unit_id": "reading-unit.0182",
       "source_code_unit_range": {
-        "start": 9168,
-        "end": 9169
+        "start": 9371,
+        "end": 9372
       }
     },
     {
       "id": "quote-classification.039",
       "quote_character": "\"",
       "classification": "internal_quote_word_connector",
-      "resulting_unit_id": "internal-quote-unit.034",
-      "corpus_fragment_id": "corpus-fragment.0171",
-      "source_node_id": "jsx.00472",
-      "reading_unit_id": "reading-unit.0188",
+      "resulting_unit_id": "internal-quote-unit.036",
+      "corpus_fragment_id": "corpus-fragment.0164",
+      "source_node_id": "jsx.00454",
+      "reading_unit_id": "reading-unit.0182",
       "source_code_unit_range": {
-        "start": 9434,
-        "end": 9435
+        "start": 9518,
+        "end": 9519
       }
     },
     {
       "id": "quote-classification.040",
       "quote_character": "\"",
       "classification": "internal_quote_word_connector",
-      "resulting_unit_id": "internal-quote-unit.035",
-      "corpus_fragment_id": "corpus-fragment.0171",
-      "source_node_id": "jsx.00472",
-      "reading_unit_id": "reading-unit.0188",
+      "resulting_unit_id": "internal-quote-unit.037",
+      "corpus_fragment_id": "corpus-fragment.0164",
+      "source_node_id": "jsx.00454",
+      "reading_unit_id": "reading-unit.0182",
       "source_code_unit_range": {
-        "start": 9568,
-        "end": 9569
+        "start": 9534,
+        "end": 9535
       }
     },
     {
       "id": "quote-classification.041",
       "quote_character": "\"",
       "classification": "internal_quote_word_connector",
-      "resulting_unit_id": "internal-quote-unit.036",
-      "corpus_fragment_id": "corpus-fragment.0171",
-      "source_node_id": "jsx.00472",
-      "reading_unit_id": "reading-unit.0188",
+      "resulting_unit_id": "internal-quote-unit.038",
+      "corpus_fragment_id": "corpus-fragment.0165",
+      "source_node_id": "jsx.00456",
+      "reading_unit_id": "reading-unit.0183",
       "source_code_unit_range": {
-        "start": 9584,
-        "end": 9585
+        "start": 9573,
+        "end": 9574
       }
     },
     {
       "id": "quote-classification.042",
       "quote_character": "\"",
       "classification": "internal_quote_word_connector",
-      "resulting_unit_id": "internal-quote-unit.037",
-      "corpus_fragment_id": "corpus-fragment.0172",
-      "source_node_id": "jsx.00474",
-      "reading_unit_id": "reading-unit.0189",
+      "resulting_unit_id": "internal-quote-unit.039",
+      "corpus_fragment_id": "corpus-fragment.0165",
+      "source_node_id": "jsx.00456",
+      "reading_unit_id": "reading-unit.0183",
       "source_code_unit_range": {
-        "start": 9621,
-        "end": 9622
+        "start": 9721,
+        "end": 9722
       }
     },
     {
       "id": "quote-classification.043",
       "quote_character": "\"",
       "classification": "internal_quote_word_connector",
-      "resulting_unit_id": "internal-quote-unit.038",
-      "corpus_fragment_id": "corpus-fragment.0172",
-      "source_node_id": "jsx.00474",
-      "reading_unit_id": "reading-unit.0189",
+      "resulting_unit_id": "internal-quote-unit.040",
+      "corpus_fragment_id": "corpus-fragment.0165",
+      "source_node_id": "jsx.00456",
+      "reading_unit_id": "reading-unit.0183",
       "source_code_unit_range": {
-        "start": 9768,
-        "end": 9769
+        "start": 9737,
+        "end": 9738
       }
     },
     {
       "id": "quote-classification.044",
       "quote_character": "\"",
       "classification": "internal_quote_word_connector",
-      "resulting_unit_id": "internal-quote-unit.039",
-      "corpus_fragment_id": "corpus-fragment.0172",
-      "source_node_id": "jsx.00474",
-      "reading_unit_id": "reading-unit.0189",
+      "resulting_unit_id": "internal-quote-unit.041",
+      "corpus_fragment_id": "corpus-fragment.0166",
+      "source_node_id": "jsx.00466",
+      "reading_unit_id": "reading-unit.0184",
       "source_code_unit_range": {
-        "start": 9784,
-        "end": 9785
+        "start": 9841,
+        "end": 9842
       }
     },
     {
       "id": "quote-classification.045",
       "quote_character": "\"",
       "classification": "internal_quote_word_connector",
-      "resulting_unit_id": "internal-quote-unit.040",
-      "corpus_fragment_id": "corpus-fragment.0173",
-      "source_node_id": "jsx.00476",
-      "reading_unit_id": "reading-unit.0190",
+      "resulting_unit_id": "internal-quote-unit.042",
+      "corpus_fragment_id": "corpus-fragment.0166",
+      "source_node_id": "jsx.00466",
+      "reading_unit_id": "reading-unit.0184",
       "source_code_unit_range": {
-        "start": 9823,
-        "end": 9824
+        "start": 9847,
+        "end": 9848
       }
     },
     {
       "id": "quote-classification.046",
       "quote_character": "\"",
       "classification": "internal_quote_word_connector",
-      "resulting_unit_id": "internal-quote-unit.041",
-      "corpus_fragment_id": "corpus-fragment.0174",
-      "source_node_id": "jsx.00478",
-      "reading_unit_id": "reading-unit.0190",
+      "resulting_unit_id": "internal-quote-unit.043",
+      "corpus_fragment_id": "corpus-fragment.0171",
+      "source_node_id": "jsx.00476",
+      "reading_unit_id": "reading-unit.0189",
       "source_code_unit_range": {
-        "start": 9979,
-        "end": 9980
+        "start": 10079,
+        "end": 10080
       }
     },
     {
       "id": "quote-classification.047",
       "quote_character": "\"",
       "classification": "internal_quote_word_connector",
-      "resulting_unit_id": "internal-quote-unit.042",
-      "corpus_fragment_id": "corpus-fragment.0174",
-      "source_node_id": "jsx.00478",
-      "reading_unit_id": "reading-unit.0190",
+      "resulting_unit_id": "internal-quote-unit.044",
+      "corpus_fragment_id": "corpus-fragment.0171",
+      "source_node_id": "jsx.00476",
+      "reading_unit_id": "reading-unit.0189",
       "source_code_unit_range": {
-        "start": 9995,
-        "end": 9996
+        "start": 10084,
+        "end": 10085
       }
     },
     {
       "id": "quote-classification.048",
       "quote_character": "\"",
       "classification": "internal_quote_word_connector",
-      "resulting_unit_id": "internal-quote-unit.043",
-      "corpus_fragment_id": "corpus-fragment.0175",
-      "source_node_id": "jsx.00480",
-      "reading_unit_id": "reading-unit.0190",
+      "resulting_unit_id": "internal-quote-unit.045",
+      "corpus_fragment_id": "corpus-fragment.0171",
+      "source_node_id": "jsx.00476",
+      "reading_unit_id": "reading-unit.0189",
       "source_code_unit_range": {
-        "start": 10008,
-        "end": 10009
+        "start": 10089,
+        "end": 10090
       }
     },
     {
       "id": "quote-classification.049",
       "quote_character": "\"",
       "classification": "internal_quote_word_connector",
-      "resulting_unit_id": "internal-quote-unit.044",
-      "corpus_fragment_id": "corpus-fragment.0175",
-      "source_node_id": "jsx.00480",
-      "reading_unit_id": "reading-unit.0190",
+      "resulting_unit_id": "internal-quote-unit.046",
+      "corpus_fragment_id": "corpus-fragment.0171",
+      "source_node_id": "jsx.00476",
+      "reading_unit_id": "reading-unit.0189",
       "source_code_unit_range": {
-        "start": 10013,
-        "end": 10014
+        "start": 10094,
+        "end": 10095
       }
     },
     {
       "id": "quote-classification.050",
       "quote_character": "\"",
       "classification": "internal_quote_word_connector",
-      "resulting_unit_id": "internal-quote-unit.045",
-      "corpus_fragment_id": "corpus-fragment.0178",
-      "source_node_id": "jsx.00494",
-      "reading_unit_id": "reading-unit.0191",
+      "resulting_unit_id": "internal-quote-unit.047",
+      "corpus_fragment_id": "corpus-fragment.0171",
+      "source_node_id": "jsx.00476",
+      "reading_unit_id": "reading-unit.0189",
       "source_code_unit_range": {
-        "start": 10135,
-        "end": 10136
+        "start": 10099,
+        "end": 10100
       }
     },
     {
       "id": "quote-classification.051",
       "quote_character": "\"",
       "classification": "internal_quote_word_connector",
-      "resulting_unit_id": "internal-quote-unit.046",
-      "corpus_fragment_id": "corpus-fragment.0178",
-      "source_node_id": "jsx.00494",
-      "reading_unit_id": "reading-unit.0191",
+      "resulting_unit_id": "internal-quote-unit.048",
+      "corpus_fragment_id": "corpus-fragment.0171",
+      "source_node_id": "jsx.00476",
+      "reading_unit_id": "reading-unit.0189",
       "source_code_unit_range": {
-        "start": 10141,
-        "end": 10142
+        "start": 10104,
+        "end": 10105
       }
     },
     {
       "id": "quote-classification.052",
       "quote_character": "\"",
       "classification": "internal_quote_word_connector",
-      "resulting_unit_id": "internal-quote-unit.047",
-      "corpus_fragment_id": "corpus-fragment.0183",
-      "source_node_id": "jsx.00504",
-      "reading_unit_id": "reading-unit.0196",
+      "resulting_unit_id": "internal-quote-unit.049",
+      "corpus_fragment_id": "corpus-fragment.0171",
+      "source_node_id": "jsx.00476",
+      "reading_unit_id": "reading-unit.0189",
       "source_code_unit_range": {
-        "start": 10373,
-        "end": 10374
+        "start": 10109,
+        "end": 10110
       }
     },
     {
       "id": "quote-classification.053",
       "quote_character": "\"",
       "classification": "internal_quote_word_connector",
-      "resulting_unit_id": "internal-quote-unit.048",
-      "corpus_fragment_id": "corpus-fragment.0183",
-      "source_node_id": "jsx.00504",
-      "reading_unit_id": "reading-unit.0196",
+      "resulting_unit_id": "internal-quote-unit.050",
+      "corpus_fragment_id": "corpus-fragment.0182",
+      "source_node_id": "jsx.00499",
+      "reading_unit_id": "reading-unit.0201",
       "source_code_unit_range": {
-        "start": 10378,
-        "end": 10379
+        "start": 10571,
+        "end": 10572
       }
     },
     {
       "id": "quote-classification.054",
       "quote_character": "\"",
       "classification": "internal_quote_word_connector",
-      "resulting_unit_id": "internal-quote-unit.049",
-      "corpus_fragment_id": "corpus-fragment.0183",
-      "source_node_id": "jsx.00504",
-      "reading_unit_id": "reading-unit.0196",
+      "resulting_unit_id": "internal-quote-unit.051",
+      "corpus_fragment_id": "corpus-fragment.0182",
+      "source_node_id": "jsx.00499",
+      "reading_unit_id": "reading-unit.0201",
       "source_code_unit_range": {
-        "start": 10383,
-        "end": 10384
+        "start": 10577,
+        "end": 10578
       }
     },
     {
       "id": "quote-classification.055",
       "quote_character": "\"",
       "classification": "internal_quote_word_connector",
-      "resulting_unit_id": "internal-quote-unit.050",
-      "corpus_fragment_id": "corpus-fragment.0183",
-      "source_node_id": "jsx.00504",
-      "reading_unit_id": "reading-unit.0196",
+      "resulting_unit_id": "internal-quote-unit.052",
+      "corpus_fragment_id": "corpus-fragment.0187",
+      "source_node_id": "jsx.00510",
+      "reading_unit_id": "reading-unit.0207",
       "source_code_unit_range": {
-        "start": 10388,
-        "end": 10389
+        "start": 10837,
+        "end": 10838
       }
     },
     {
       "id": "quote-classification.056",
       "quote_character": "\"",
       "classification": "internal_quote_word_connector",
-      "resulting_unit_id": "internal-quote-unit.051",
-      "corpus_fragment_id": "corpus-fragment.0183",
-      "source_node_id": "jsx.00504",
-      "reading_unit_id": "reading-unit.0196",
+      "resulting_unit_id": "internal-quote-unit.053",
+      "corpus_fragment_id": "corpus-fragment.0187",
+      "source_node_id": "jsx.00510",
+      "reading_unit_id": "reading-unit.0207",
       "source_code_unit_range": {
-        "start": 10393,
-        "end": 10394
+        "start": 10843,
+        "end": 10844
       }
     },
     {
       "id": "quote-classification.057",
-      "quote_character": "\"",
-      "classification": "internal_quote_word_connector",
-      "resulting_unit_id": "internal-quote-unit.052",
-      "corpus_fragment_id": "corpus-fragment.0183",
-      "source_node_id": "jsx.00504",
-      "reading_unit_id": "reading-unit.0196",
+      "quote_character": "'",
+      "classification": "unknown_non_internal_quote",
+      "resulting_unit_id": null,
+      "corpus_fragment_id": "corpus-fragment.0188",
+      "source_node_id": "jsx.00512",
+      "reading_unit_id": "reading-unit.0208",
       "source_code_unit_range": {
-        "start": 10398,
-        "end": 10399
+        "start": 10872,
+        "end": 10873
       }
     },
     {
       "id": "quote-classification.058",
-      "quote_character": "\"",
-      "classification": "internal_quote_word_connector",
-      "resulting_unit_id": "internal-quote-unit.053",
-      "corpus_fragment_id": "corpus-fragment.0183",
-      "source_node_id": "jsx.00504",
-      "reading_unit_id": "reading-unit.0196",
+      "quote_character": "'",
+      "classification": "unknown_non_internal_quote",
+      "resulting_unit_id": null,
+      "corpus_fragment_id": "corpus-fragment.0189",
+      "source_node_id": "jsx.00514",
+      "reading_unit_id": "reading-unit.0209",
       "source_code_unit_range": {
-        "start": 10403,
-        "end": 10404
+        "start": 10906,
+        "end": 10907
       }
     },
     {
@@ -801,11 +801,11 @@
       "classification": "internal_quote_word_connector",
       "resulting_unit_id": "internal-quote-unit.054",
       "corpus_fragment_id": "corpus-fragment.0194",
-      "source_node_id": "jsx.00527",
-      "reading_unit_id": "reading-unit.0208",
+      "source_node_id": "jsx.00525",
+      "reading_unit_id": "reading-unit.0215",
       "source_code_unit_range": {
-        "start": 10865,
-        "end": 10866
+        "start": 11152,
+        "end": 11153
       }
     },
     {
@@ -814,37 +814,37 @@
       "classification": "internal_quote_word_connector",
       "resulting_unit_id": "internal-quote-unit.055",
       "corpus_fragment_id": "corpus-fragment.0194",
-      "source_node_id": "jsx.00527",
-      "reading_unit_id": "reading-unit.0208",
+      "source_node_id": "jsx.00525",
+      "reading_unit_id": "reading-unit.0215",
       "source_code_unit_range": {
-        "start": 10871,
-        "end": 10872
+        "start": 11158,
+        "end": 11159
       }
     },
     {
       "id": "quote-classification.061",
-      "quote_character": "\"",
-      "classification": "internal_quote_word_connector",
-      "resulting_unit_id": "internal-quote-unit.056",
-      "corpus_fragment_id": "corpus-fragment.0199",
-      "source_node_id": "jsx.00538",
-      "reading_unit_id": "reading-unit.0214",
+      "quote_character": "'",
+      "classification": "unknown_non_internal_quote",
+      "resulting_unit_id": null,
+      "corpus_fragment_id": "corpus-fragment.0205",
+      "source_node_id": "jsx.00548",
+      "reading_unit_id": "reading-unit.0227",
       "source_code_unit_range": {
-        "start": 11131,
-        "end": 11132
+        "start": 11590,
+        "end": 11591
       }
     },
     {
       "id": "quote-classification.062",
-      "quote_character": "\"",
-      "classification": "internal_quote_word_connector",
-      "resulting_unit_id": "internal-quote-unit.057",
-      "corpus_fragment_id": "corpus-fragment.0199",
-      "source_node_id": "jsx.00538",
-      "reading_unit_id": "reading-unit.0214",
+      "quote_character": "'",
+      "classification": "unknown_non_internal_quote",
+      "resulting_unit_id": null,
+      "corpus_fragment_id": "corpus-fragment.0206",
+      "source_node_id": "jsx.00550",
+      "reading_unit_id": "reading-unit.0228",
       "source_code_unit_range": {
-        "start": 11137,
-        "end": 11138
+        "start": 11740,
+        "end": 11741
       }
     },
     {
@@ -852,12 +852,12 @@
       "quote_character": "'",
       "classification": "unknown_non_internal_quote",
       "resulting_unit_id": null,
-      "corpus_fragment_id": "corpus-fragment.0200",
-      "source_node_id": "jsx.00540",
-      "reading_unit_id": "reading-unit.0215",
+      "corpus_fragment_id": "corpus-fragment.0207",
+      "source_node_id": "jsx.00552",
+      "reading_unit_id": "reading-unit.0229",
       "source_code_unit_range": {
-        "start": 11166,
-        "end": 11167
+        "start": 11871,
+        "end": 11872
       }
     },
     {
@@ -865,38 +865,38 @@
       "quote_character": "'",
       "classification": "unknown_non_internal_quote",
       "resulting_unit_id": null,
-      "corpus_fragment_id": "corpus-fragment.0201",
-      "source_node_id": "jsx.00542",
-      "reading_unit_id": "reading-unit.0216",
+      "corpus_fragment_id": "corpus-fragment.0207",
+      "source_node_id": "jsx.00552",
+      "reading_unit_id": "reading-unit.0229",
       "source_code_unit_range": {
-        "start": 11200,
-        "end": 11201
+        "start": 11932,
+        "end": 11933
       }
     },
     {
       "id": "quote-classification.065",
-      "quote_character": "\"",
-      "classification": "internal_quote_word_connector",
-      "resulting_unit_id": "internal-quote-unit.058",
-      "corpus_fragment_id": "corpus-fragment.0206",
-      "source_node_id": "jsx.00553",
-      "reading_unit_id": "reading-unit.0222",
+      "quote_character": "'",
+      "classification": "unknown_non_internal_quote",
+      "resulting_unit_id": null,
+      "corpus_fragment_id": "corpus-fragment.0208",
+      "source_node_id": "jsx.00554",
+      "reading_unit_id": "reading-unit.0230",
       "source_code_unit_range": {
-        "start": 11446,
-        "end": 11447
+        "start": 12004,
+        "end": 12005
       }
     },
     {
       "id": "quote-classification.066",
-      "quote_character": "\"",
-      "classification": "internal_quote_word_connector",
-      "resulting_unit_id": "internal-quote-unit.059",
-      "corpus_fragment_id": "corpus-fragment.0206",
-      "source_node_id": "jsx.00553",
-      "reading_unit_id": "reading-unit.0222",
+      "quote_character": "'",
+      "classification": "unknown_non_internal_quote",
+      "resulting_unit_id": null,
+      "corpus_fragment_id": "corpus-fragment.0208",
+      "source_node_id": "jsx.00554",
+      "reading_unit_id": "reading-unit.0230",
       "source_code_unit_range": {
-        "start": 11452,
-        "end": 11453
+        "start": 12062,
+        "end": 12063
       }
     },
     {
@@ -904,12 +904,12 @@
       "quote_character": "'",
       "classification": "unknown_non_internal_quote",
       "resulting_unit_id": null,
-      "corpus_fragment_id": "corpus-fragment.0217",
-      "source_node_id": "jsx.00576",
-      "reading_unit_id": "reading-unit.0234",
+      "corpus_fragment_id": "corpus-fragment.0209",
+      "source_node_id": "jsx.00556",
+      "reading_unit_id": "reading-unit.0231",
       "source_code_unit_range": {
-        "start": 11884,
-        "end": 11885
+        "start": 12135,
+        "end": 12136
       }
     },
     {
@@ -917,12 +917,12 @@
       "quote_character": "'",
       "classification": "unknown_non_internal_quote",
       "resulting_unit_id": null,
-      "corpus_fragment_id": "corpus-fragment.0218",
-      "source_node_id": "jsx.00578",
-      "reading_unit_id": "reading-unit.0235",
+      "corpus_fragment_id": "corpus-fragment.0209",
+      "source_node_id": "jsx.00556",
+      "reading_unit_id": "reading-unit.0231",
       "source_code_unit_range": {
-        "start": 12034,
-        "end": 12035
+        "start": 12193,
+        "end": 12194
       }
     },
     {
@@ -930,12 +930,12 @@
       "quote_character": "'",
       "classification": "unknown_non_internal_quote",
       "resulting_unit_id": null,
-      "corpus_fragment_id": "corpus-fragment.0219",
-      "source_node_id": "jsx.00580",
-      "reading_unit_id": "reading-unit.0236",
+      "corpus_fragment_id": "corpus-fragment.0210",
+      "source_node_id": "jsx.00558",
+      "reading_unit_id": "reading-unit.0232",
       "source_code_unit_range": {
-        "start": 12165,
-        "end": 12166
+        "start": 12266,
+        "end": 12267
       }
     },
     {
@@ -943,12 +943,12 @@
       "quote_character": "'",
       "classification": "unknown_non_internal_quote",
       "resulting_unit_id": null,
-      "corpus_fragment_id": "corpus-fragment.0219",
-      "source_node_id": "jsx.00580",
-      "reading_unit_id": "reading-unit.0236",
+      "corpus_fragment_id": "corpus-fragment.0211",
+      "source_node_id": "jsx.00560",
+      "reading_unit_id": "reading-unit.0233",
       "source_code_unit_range": {
-        "start": 12226,
-        "end": 12227
+        "start": 12405,
+        "end": 12406
       }
     },
     {
@@ -956,298 +956,298 @@
       "quote_character": "'",
       "classification": "unknown_non_internal_quote",
       "resulting_unit_id": null,
-      "corpus_fragment_id": "corpus-fragment.0220",
-      "source_node_id": "jsx.00582",
-      "reading_unit_id": "reading-unit.0237",
+      "corpus_fragment_id": "corpus-fragment.0223",
+      "source_node_id": "jsx.00585",
+      "reading_unit_id": "reading-unit.0246",
       "source_code_unit_range": {
-        "start": 12298,
-        "end": 12299
+        "start": 13233,
+        "end": 13234
       }
     },
     {
       "id": "quote-classification.072",
-      "quote_character": "'",
-      "classification": "unknown_non_internal_quote",
-      "resulting_unit_id": null,
-      "corpus_fragment_id": "corpus-fragment.0220",
-      "source_node_id": "jsx.00582",
-      "reading_unit_id": "reading-unit.0237",
+      "quote_character": "\"",
+      "classification": "internal_quote_word_connector",
+      "resulting_unit_id": "internal-quote-unit.056",
+      "corpus_fragment_id": "corpus-fragment.0229",
+      "source_node_id": "jsx.00606",
+      "reading_unit_id": "reading-unit.0253",
       "source_code_unit_range": {
-        "start": 12356,
-        "end": 12357
+        "start": 13710,
+        "end": 13711
       }
     },
     {
       "id": "quote-classification.073",
-      "quote_character": "'",
-      "classification": "unknown_non_internal_quote",
-      "resulting_unit_id": null,
-      "corpus_fragment_id": "corpus-fragment.0221",
-      "source_node_id": "jsx.00584",
-      "reading_unit_id": "reading-unit.0238",
+      "quote_character": "\"",
+      "classification": "internal_quote_word_connector",
+      "resulting_unit_id": "internal-quote-unit.057",
+      "corpus_fragment_id": "corpus-fragment.0229",
+      "source_node_id": "jsx.00606",
+      "reading_unit_id": "reading-unit.0253",
       "source_code_unit_range": {
-        "start": 12429,
-        "end": 12430
+        "start": 13714,
+        "end": 13715
       }
     },
     {
       "id": "quote-classification.074",
-      "quote_character": "'",
-      "classification": "unknown_non_internal_quote",
-      "resulting_unit_id": null,
-      "corpus_fragment_id": "corpus-fragment.0221",
-      "source_node_id": "jsx.00584",
-      "reading_unit_id": "reading-unit.0238",
+      "quote_character": "\"",
+      "classification": "internal_quote_word_connector",
+      "resulting_unit_id": "internal-quote-unit.058",
+      "corpus_fragment_id": "corpus-fragment.0229",
+      "source_node_id": "jsx.00606",
+      "reading_unit_id": "reading-unit.0253",
       "source_code_unit_range": {
-        "start": 12487,
-        "end": 12488
+        "start": 13718,
+        "end": 13719
       }
     },
     {
       "id": "quote-classification.075",
-      "quote_character": "'",
-      "classification": "unknown_non_internal_quote",
-      "resulting_unit_id": null,
-      "corpus_fragment_id": "corpus-fragment.0222",
-      "source_node_id": "jsx.00586",
-      "reading_unit_id": "reading-unit.0239",
+      "quote_character": "\"",
+      "classification": "internal_quote_word_connector",
+      "resulting_unit_id": "internal-quote-unit.059",
+      "corpus_fragment_id": "corpus-fragment.0229",
+      "source_node_id": "jsx.00606",
+      "reading_unit_id": "reading-unit.0253",
       "source_code_unit_range": {
-        "start": 12560,
-        "end": 12561
+        "start": 13722,
+        "end": 13723
       }
     },
     {
       "id": "quote-classification.076",
-      "quote_character": "'",
-      "classification": "unknown_non_internal_quote",
-      "resulting_unit_id": null,
-      "corpus_fragment_id": "corpus-fragment.0223",
-      "source_node_id": "jsx.00588",
-      "reading_unit_id": "reading-unit.0240",
+      "quote_character": "\"",
+      "classification": "internal_quote_word_connector",
+      "resulting_unit_id": "internal-quote-unit.060",
+      "corpus_fragment_id": "corpus-fragment.0229",
+      "source_node_id": "jsx.00606",
+      "reading_unit_id": "reading-unit.0253",
       "source_code_unit_range": {
-        "start": 12699,
-        "end": 12700
+        "start": 13726,
+        "end": 13727
       }
     },
     {
       "id": "quote-classification.077",
-      "quote_character": "'",
-      "classification": "unknown_non_internal_quote",
-      "resulting_unit_id": null,
-      "corpus_fragment_id": "corpus-fragment.0235",
-      "source_node_id": "jsx.00613",
+      "quote_character": "\"",
+      "classification": "internal_quote_word_connector",
+      "resulting_unit_id": "internal-quote-unit.061",
+      "corpus_fragment_id": "corpus-fragment.0229",
+      "source_node_id": "jsx.00606",
       "reading_unit_id": "reading-unit.0253",
       "source_code_unit_range": {
-        "start": 13527,
-        "end": 13528
+        "start": 13730,
+        "end": 13731
       }
     },
     {
       "id": "quote-classification.078",
       "quote_character": "\"",
       "classification": "internal_quote_word_connector",
-      "resulting_unit_id": "internal-quote-unit.060",
-      "corpus_fragment_id": "corpus-fragment.0241",
-      "source_node_id": "jsx.00634",
-      "reading_unit_id": "reading-unit.0260",
+      "resulting_unit_id": "internal-quote-unit.062",
+      "corpus_fragment_id": "corpus-fragment.0237",
+      "source_node_id": "jsx.00623",
+      "reading_unit_id": "reading-unit.0262",
       "source_code_unit_range": {
-        "start": 14004,
-        "end": 14005
+        "start": 14497,
+        "end": 14498
       }
     },
     {
       "id": "quote-classification.079",
       "quote_character": "\"",
       "classification": "internal_quote_word_connector",
-      "resulting_unit_id": "internal-quote-unit.061",
-      "corpus_fragment_id": "corpus-fragment.0241",
-      "source_node_id": "jsx.00634",
-      "reading_unit_id": "reading-unit.0260",
+      "resulting_unit_id": "internal-quote-unit.063",
+      "corpus_fragment_id": "corpus-fragment.0237",
+      "source_node_id": "jsx.00623",
+      "reading_unit_id": "reading-unit.0262",
       "source_code_unit_range": {
-        "start": 14008,
-        "end": 14009
+        "start": 14501,
+        "end": 14502
       }
     },
     {
       "id": "quote-classification.080",
       "quote_character": "\"",
       "classification": "internal_quote_word_connector",
-      "resulting_unit_id": "internal-quote-unit.062",
-      "corpus_fragment_id": "corpus-fragment.0241",
-      "source_node_id": "jsx.00634",
-      "reading_unit_id": "reading-unit.0260",
+      "resulting_unit_id": "internal-quote-unit.064",
+      "corpus_fragment_id": "corpus-fragment.0237",
+      "source_node_id": "jsx.00623",
+      "reading_unit_id": "reading-unit.0262",
       "source_code_unit_range": {
-        "start": 14012,
-        "end": 14013
+        "start": 14505,
+        "end": 14506
       }
     },
     {
       "id": "quote-classification.081",
       "quote_character": "\"",
       "classification": "internal_quote_word_connector",
-      "resulting_unit_id": "internal-quote-unit.063",
-      "corpus_fragment_id": "corpus-fragment.0241",
-      "source_node_id": "jsx.00634",
-      "reading_unit_id": "reading-unit.0260",
+      "resulting_unit_id": "internal-quote-unit.065",
+      "corpus_fragment_id": "corpus-fragment.0237",
+      "source_node_id": "jsx.00623",
+      "reading_unit_id": "reading-unit.0262",
       "source_code_unit_range": {
-        "start": 14016,
-        "end": 14017
+        "start": 14509,
+        "end": 14510
       }
     },
     {
       "id": "quote-classification.082",
       "quote_character": "\"",
       "classification": "internal_quote_word_connector",
-      "resulting_unit_id": "internal-quote-unit.064",
-      "corpus_fragment_id": "corpus-fragment.0241",
-      "source_node_id": "jsx.00634",
-      "reading_unit_id": "reading-unit.0260",
+      "resulting_unit_id": "internal-quote-unit.066",
+      "corpus_fragment_id": "corpus-fragment.0237",
+      "source_node_id": "jsx.00623",
+      "reading_unit_id": "reading-unit.0262",
       "source_code_unit_range": {
-        "start": 14020,
-        "end": 14021
+        "start": 14513,
+        "end": 14514
       }
     },
     {
       "id": "quote-classification.083",
       "quote_character": "\"",
       "classification": "internal_quote_word_connector",
-      "resulting_unit_id": "internal-quote-unit.065",
-      "corpus_fragment_id": "corpus-fragment.0241",
-      "source_node_id": "jsx.00634",
-      "reading_unit_id": "reading-unit.0260",
+      "resulting_unit_id": "internal-quote-unit.067",
+      "corpus_fragment_id": "corpus-fragment.0237",
+      "source_node_id": "jsx.00623",
+      "reading_unit_id": "reading-unit.0262",
       "source_code_unit_range": {
-        "start": 14024,
-        "end": 14025
+        "start": 14517,
+        "end": 14518
       }
     },
     {
       "id": "quote-classification.084",
       "quote_character": "\"",
       "classification": "internal_quote_word_connector",
-      "resulting_unit_id": "internal-quote-unit.066",
-      "corpus_fragment_id": "corpus-fragment.0249",
-      "source_node_id": "jsx.00651",
-      "reading_unit_id": "reading-unit.0269",
+      "resulting_unit_id": "internal-quote-unit.068",
+      "corpus_fragment_id": "corpus-fragment.0241",
+      "source_node_id": "jsx.00631",
+      "reading_unit_id": "reading-unit.0266",
       "source_code_unit_range": {
-        "start": 14791,
-        "end": 14792
+        "start": 14683,
+        "end": 14684
       }
     },
     {
       "id": "quote-classification.085",
       "quote_character": "\"",
       "classification": "internal_quote_word_connector",
-      "resulting_unit_id": "internal-quote-unit.067",
-      "corpus_fragment_id": "corpus-fragment.0249",
-      "source_node_id": "jsx.00651",
-      "reading_unit_id": "reading-unit.0269",
+      "resulting_unit_id": "internal-quote-unit.069",
+      "corpus_fragment_id": "corpus-fragment.0241",
+      "source_node_id": "jsx.00631",
+      "reading_unit_id": "reading-unit.0266",
       "source_code_unit_range": {
-        "start": 14795,
-        "end": 14796
+        "start": 14688,
+        "end": 14689
       }
     },
     {
       "id": "quote-classification.086",
       "quote_character": "\"",
       "classification": "internal_quote_word_connector",
-      "resulting_unit_id": "internal-quote-unit.068",
-      "corpus_fragment_id": "corpus-fragment.0249",
-      "source_node_id": "jsx.00651",
-      "reading_unit_id": "reading-unit.0269",
+      "resulting_unit_id": "internal-quote-unit.070",
+      "corpus_fragment_id": "corpus-fragment.0241",
+      "source_node_id": "jsx.00631",
+      "reading_unit_id": "reading-unit.0266",
       "source_code_unit_range": {
-        "start": 14799,
-        "end": 14800
+        "start": 14693,
+        "end": 14694
       }
     },
     {
       "id": "quote-classification.087",
       "quote_character": "\"",
       "classification": "internal_quote_word_connector",
-      "resulting_unit_id": "internal-quote-unit.069",
-      "corpus_fragment_id": "corpus-fragment.0249",
-      "source_node_id": "jsx.00651",
-      "reading_unit_id": "reading-unit.0269",
+      "resulting_unit_id": "internal-quote-unit.071",
+      "corpus_fragment_id": "corpus-fragment.0241",
+      "source_node_id": "jsx.00631",
+      "reading_unit_id": "reading-unit.0266",
       "source_code_unit_range": {
-        "start": 14803,
-        "end": 14804
+        "start": 14698,
+        "end": 14699
       }
     },
     {
       "id": "quote-classification.088",
-      "quote_character": "\"",
-      "classification": "internal_quote_word_connector",
-      "resulting_unit_id": "internal-quote-unit.070",
-      "corpus_fragment_id": "corpus-fragment.0249",
-      "source_node_id": "jsx.00651",
-      "reading_unit_id": "reading-unit.0269",
+      "quote_character": "'",
+      "classification": "unknown_non_internal_quote",
+      "resulting_unit_id": null,
+      "corpus_fragment_id": "corpus-fragment.0246",
+      "source_node_id": "jsx.00644",
+      "reading_unit_id": "reading-unit.0273",
       "source_code_unit_range": {
-        "start": 14807,
-        "end": 14808
+        "start": 15346,
+        "end": 15347
       }
     },
     {
       "id": "quote-classification.089",
-      "quote_character": "\"",
-      "classification": "internal_quote_word_connector",
-      "resulting_unit_id": "internal-quote-unit.071",
-      "corpus_fragment_id": "corpus-fragment.0249",
-      "source_node_id": "jsx.00651",
-      "reading_unit_id": "reading-unit.0269",
+      "quote_character": "'",
+      "classification": "unknown_non_internal_quote",
+      "resulting_unit_id": null,
+      "corpus_fragment_id": "corpus-fragment.0247",
+      "source_node_id": "jsx.00646",
+      "reading_unit_id": "reading-unit.0274",
       "source_code_unit_range": {
-        "start": 14811,
-        "end": 14812
+        "start": 15488,
+        "end": 15489
       }
     },
     {
       "id": "quote-classification.090",
-      "quote_character": "\"",
-      "classification": "internal_quote_word_connector",
-      "resulting_unit_id": "internal-quote-unit.072",
-      "corpus_fragment_id": "corpus-fragment.0253",
-      "source_node_id": "jsx.00659",
-      "reading_unit_id": "reading-unit.0273",
+      "quote_character": "'",
+      "classification": "unknown_non_internal_quote",
+      "resulting_unit_id": null,
+      "corpus_fragment_id": "corpus-fragment.0248",
+      "source_node_id": "jsx.00648",
+      "reading_unit_id": "reading-unit.0275",
       "source_code_unit_range": {
-        "start": 14977,
-        "end": 14978
+        "start": 15614,
+        "end": 15615
       }
     },
     {
       "id": "quote-classification.091",
-      "quote_character": "\"",
-      "classification": "internal_quote_word_connector",
-      "resulting_unit_id": "internal-quote-unit.073",
-      "corpus_fragment_id": "corpus-fragment.0253",
-      "source_node_id": "jsx.00659",
-      "reading_unit_id": "reading-unit.0273",
+      "quote_character": "'",
+      "classification": "unknown_non_internal_quote",
+      "resulting_unit_id": null,
+      "corpus_fragment_id": "corpus-fragment.0249",
+      "source_node_id": "jsx.00650",
+      "reading_unit_id": "reading-unit.0276",
       "source_code_unit_range": {
-        "start": 14982,
-        "end": 14983
+        "start": 15745,
+        "end": 15746
       }
     },
     {
       "id": "quote-classification.092",
-      "quote_character": "\"",
-      "classification": "internal_quote_word_connector",
-      "resulting_unit_id": "internal-quote-unit.074",
-      "corpus_fragment_id": "corpus-fragment.0253",
-      "source_node_id": "jsx.00659",
-      "reading_unit_id": "reading-unit.0273",
+      "quote_character": "'",
+      "classification": "unknown_non_internal_quote",
+      "resulting_unit_id": null,
+      "corpus_fragment_id": "corpus-fragment.0250",
+      "source_node_id": "jsx.00652",
+      "reading_unit_id": "reading-unit.0277",
       "source_code_unit_range": {
-        "start": 14987,
-        "end": 14988
+        "start": 15876,
+        "end": 15877
       }
     },
     {
       "id": "quote-classification.093",
-      "quote_character": "\"",
-      "classification": "internal_quote_word_connector",
-      "resulting_unit_id": "internal-quote-unit.075",
-      "corpus_fragment_id": "corpus-fragment.0253",
-      "source_node_id": "jsx.00659",
-      "reading_unit_id": "reading-unit.0273",
+      "quote_character": "'",
+      "classification": "unknown_non_internal_quote",
+      "resulting_unit_id": null,
+      "corpus_fragment_id": "corpus-fragment.0251",
+      "source_node_id": "jsx.00654",
+      "reading_unit_id": "reading-unit.0278",
       "source_code_unit_range": {
-        "start": 14992,
-        "end": 14993
+        "start": 16003,
+        "end": 16004
       }
     },
     {
@@ -1255,12 +1255,12 @@
       "quote_character": "'",
       "classification": "unknown_non_internal_quote",
       "resulting_unit_id": null,
-      "corpus_fragment_id": "corpus-fragment.0258",
-      "source_node_id": "jsx.00672",
-      "reading_unit_id": "reading-unit.0280",
+      "corpus_fragment_id": "corpus-fragment.0252",
+      "source_node_id": "jsx.00656",
+      "reading_unit_id": "reading-unit.0279",
       "source_code_unit_range": {
-        "start": 15640,
-        "end": 15641
+        "start": 16137,
+        "end": 16138
       }
     },
     {
@@ -1268,12 +1268,12 @@
       "quote_character": "'",
       "classification": "unknown_non_internal_quote",
       "resulting_unit_id": null,
-      "corpus_fragment_id": "corpus-fragment.0259",
-      "source_node_id": "jsx.00674",
-      "reading_unit_id": "reading-unit.0281",
+      "corpus_fragment_id": "corpus-fragment.0253",
+      "source_node_id": "jsx.00658",
+      "reading_unit_id": "reading-unit.0280",
       "source_code_unit_range": {
-        "start": 15782,
-        "end": 15783
+        "start": 16264,
+        "end": 16265
       }
     },
     {
@@ -1281,12 +1281,12 @@
       "quote_character": "'",
       "classification": "unknown_non_internal_quote",
       "resulting_unit_id": null,
-      "corpus_fragment_id": "corpus-fragment.0260",
-      "source_node_id": "jsx.00676",
-      "reading_unit_id": "reading-unit.0282",
+      "corpus_fragment_id": "corpus-fragment.0254",
+      "source_node_id": "jsx.00660",
+      "reading_unit_id": "reading-unit.0281",
       "source_code_unit_range": {
-        "start": 15908,
-        "end": 15909
+        "start": 16393,
+        "end": 16394
       }
     },
     {
@@ -1294,12 +1294,12 @@
       "quote_character": "'",
       "classification": "unknown_non_internal_quote",
       "resulting_unit_id": null,
-      "corpus_fragment_id": "corpus-fragment.0261",
-      "source_node_id": "jsx.00678",
-      "reading_unit_id": "reading-unit.0283",
+      "corpus_fragment_id": "corpus-fragment.0255",
+      "source_node_id": "jsx.00662",
+      "reading_unit_id": "reading-unit.0282",
       "source_code_unit_range": {
-        "start": 16039,
-        "end": 16040
+        "start": 16515,
+        "end": 16516
       }
     },
     {
@@ -1307,12 +1307,12 @@
       "quote_character": "'",
       "classification": "unknown_non_internal_quote",
       "resulting_unit_id": null,
-      "corpus_fragment_id": "corpus-fragment.0262",
-      "source_node_id": "jsx.00680",
-      "reading_unit_id": "reading-unit.0284",
+      "corpus_fragment_id": "corpus-fragment.0256",
+      "source_node_id": "jsx.00664",
+      "reading_unit_id": "reading-unit.0283",
       "source_code_unit_range": {
-        "start": 16170,
-        "end": 16171
+        "start": 16639,
+        "end": 16640
       }
     },
     {
@@ -1320,220 +1320,142 @@
       "quote_character": "'",
       "classification": "unknown_non_internal_quote",
       "resulting_unit_id": null,
-      "corpus_fragment_id": "corpus-fragment.0263",
-      "source_node_id": "jsx.00682",
-      "reading_unit_id": "reading-unit.0285",
+      "corpus_fragment_id": "corpus-fragment.0257",
+      "source_node_id": "jsx.00666",
+      "reading_unit_id": "reading-unit.0284",
       "source_code_unit_range": {
-        "start": 16297,
-        "end": 16298
+        "start": 16760,
+        "end": 16761
       }
     },
     {
       "id": "quote-classification.100",
-      "quote_character": "'",
-      "classification": "unknown_non_internal_quote",
-      "resulting_unit_id": null,
-      "corpus_fragment_id": "corpus-fragment.0264",
+      "quote_character": "\"",
+      "classification": "internal_quote_word_connector",
+      "resulting_unit_id": "internal-quote-unit.072",
+      "corpus_fragment_id": "corpus-fragment.0265",
       "source_node_id": "jsx.00684",
-      "reading_unit_id": "reading-unit.0286",
+      "reading_unit_id": "reading-unit.0294",
       "source_code_unit_range": {
-        "start": 16431,
-        "end": 16432
+        "start": 17196,
+        "end": 17197
       }
     },
     {
       "id": "quote-classification.101",
-      "quote_character": "'",
-      "classification": "unknown_non_internal_quote",
-      "resulting_unit_id": null,
-      "corpus_fragment_id": "corpus-fragment.0265",
-      "source_node_id": "jsx.00686",
-      "reading_unit_id": "reading-unit.0287",
+      "quote_character": "\"",
+      "classification": "internal_quote_word_connector",
+      "resulting_unit_id": "internal-quote-unit.073",
+      "corpus_fragment_id": "corpus-fragment.0270",
+      "source_node_id": "jsx.00703",
+      "reading_unit_id": "reading-unit.0300",
       "source_code_unit_range": {
-        "start": 16558,
-        "end": 16559
+        "start": 17526,
+        "end": 17527
       }
     },
     {
       "id": "quote-classification.102",
-      "quote_character": "'",
-      "classification": "unknown_non_internal_quote",
-      "resulting_unit_id": null,
-      "corpus_fragment_id": "corpus-fragment.0266",
-      "source_node_id": "jsx.00688",
-      "reading_unit_id": "reading-unit.0288",
+      "quote_character": "\"",
+      "classification": "internal_quote_word_connector",
+      "resulting_unit_id": "internal-quote-unit.074",
+      "corpus_fragment_id": "corpus-fragment.0275",
+      "source_node_id": "jsx.00713",
+      "reading_unit_id": "reading-unit.0305",
       "source_code_unit_range": {
-        "start": 16687,
-        "end": 16688
+        "start": 17751,
+        "end": 17752
       }
     },
     {
       "id": "quote-classification.103",
-      "quote_character": "'",
-      "classification": "unknown_non_internal_quote",
-      "resulting_unit_id": null,
-      "corpus_fragment_id": "corpus-fragment.0267",
-      "source_node_id": "jsx.00690",
-      "reading_unit_id": "reading-unit.0289",
+      "quote_character": "\"",
+      "classification": "internal_quote_word_connector",
+      "resulting_unit_id": "internal-quote-unit.075",
+      "corpus_fragment_id": "corpus-fragment.0281",
+      "source_node_id": "jsx.00725",
+      "reading_unit_id": "reading-unit.0311",
       "source_code_unit_range": {
-        "start": 16809,
-        "end": 16810
+        "start": 18068,
+        "end": 18069
       }
     },
     {
       "id": "quote-classification.104",
-      "quote_character": "'",
-      "classification": "unknown_non_internal_quote",
-      "resulting_unit_id": null,
-      "corpus_fragment_id": "corpus-fragment.0268",
-      "source_node_id": "jsx.00692",
-      "reading_unit_id": "reading-unit.0290",
+      "quote_character": "\"",
+      "classification": "internal_quote_word_connector",
+      "resulting_unit_id": "internal-quote-unit.076",
+      "corpus_fragment_id": "corpus-fragment.0282",
+      "source_node_id": "jsx.00727",
+      "reading_unit_id": "reading-unit.0312",
       "source_code_unit_range": {
-        "start": 16933,
-        "end": 16934
+        "start": 18101,
+        "end": 18102
       }
     },
     {
       "id": "quote-classification.105",
-      "quote_character": "'",
-      "classification": "unknown_non_internal_quote",
-      "resulting_unit_id": null,
-      "corpus_fragment_id": "corpus-fragment.0269",
-      "source_node_id": "jsx.00694",
-      "reading_unit_id": "reading-unit.0291",
+      "quote_character": "\"",
+      "classification": "internal_quote_word_connector",
+      "resulting_unit_id": "internal-quote-unit.077",
+      "corpus_fragment_id": "corpus-fragment.0283",
+      "source_node_id": "jsx.00729",
+      "reading_unit_id": "reading-unit.0313",
       "source_code_unit_range": {
-        "start": 17054,
-        "end": 17055
+        "start": 18134,
+        "end": 18135
       }
     },
     {
       "id": "quote-classification.106",
-      "quote_character": "\"",
-      "classification": "internal_quote_word_connector",
-      "resulting_unit_id": "internal-quote-unit.076",
-      "corpus_fragment_id": "corpus-fragment.0277",
-      "source_node_id": "jsx.00712",
-      "reading_unit_id": "reading-unit.0301",
+      "quote_character": "'",
+      "classification": "unknown_non_internal_quote",
+      "resulting_unit_id": null,
+      "corpus_fragment_id": "corpus-fragment.0301",
+      "source_node_id": "jsx.00766",
+      "reading_unit_id": "reading-unit.0332",
       "source_code_unit_range": {
-        "start": 17490,
-        "end": 17491
+        "start": 18837,
+        "end": 18838
       }
     },
     {
       "id": "quote-classification.107",
       "quote_character": "\"",
       "classification": "internal_quote_word_connector",
-      "resulting_unit_id": "internal-quote-unit.077",
-      "corpus_fragment_id": "corpus-fragment.0283",
-      "source_node_id": "jsx.00733",
-      "reading_unit_id": "reading-unit.0307",
+      "resulting_unit_id": "internal-quote-unit.078",
+      "corpus_fragment_id": "corpus-fragment.0319",
+      "source_node_id": "jsx.00803",
+      "reading_unit_id": "reading-unit.0351",
       "source_code_unit_range": {
-        "start": 17828,
-        "end": 17829
+        "start": 19625,
+        "end": 19626
       }
     },
     {
       "id": "quote-classification.108",
       "quote_character": "\"",
       "classification": "internal_quote_word_connector",
-      "resulting_unit_id": "internal-quote-unit.078",
-      "corpus_fragment_id": "corpus-fragment.0290",
-      "source_node_id": "jsx.00747",
-      "reading_unit_id": "reading-unit.0312",
+      "resulting_unit_id": "internal-quote-unit.079",
+      "corpus_fragment_id": "corpus-fragment.0327",
+      "source_node_id": "jsx.00819",
+      "reading_unit_id": "reading-unit.0359",
       "source_code_unit_range": {
-        "start": 18072,
-        "end": 18073
+        "start": 19874,
+        "end": 19875
       }
     },
     {
       "id": "quote-classification.109",
-      "quote_character": "\"",
-      "classification": "internal_quote_word_connector",
-      "resulting_unit_id": "internal-quote-unit.079",
-      "corpus_fragment_id": "corpus-fragment.0297",
-      "source_node_id": "jsx.00761",
-      "reading_unit_id": "reading-unit.0318",
-      "source_code_unit_range": {
-        "start": 18398,
-        "end": 18399
-      }
-    },
-    {
-      "id": "quote-classification.110",
-      "quote_character": "\"",
-      "classification": "internal_quote_word_connector",
-      "resulting_unit_id": "internal-quote-unit.080",
-      "corpus_fragment_id": "corpus-fragment.0298",
-      "source_node_id": "jsx.00763",
-      "reading_unit_id": "reading-unit.0319",
-      "source_code_unit_range": {
-        "start": 18431,
-        "end": 18432
-      }
-    },
-    {
-      "id": "quote-classification.111",
-      "quote_character": "\"",
-      "classification": "internal_quote_word_connector",
-      "resulting_unit_id": "internal-quote-unit.081",
-      "corpus_fragment_id": "corpus-fragment.0299",
-      "source_node_id": "jsx.00765",
-      "reading_unit_id": "reading-unit.0320",
-      "source_code_unit_range": {
-        "start": 18464,
-        "end": 18465
-      }
-    },
-    {
-      "id": "quote-classification.112",
       "quote_character": "'",
       "classification": "unknown_non_internal_quote",
       "resulting_unit_id": null,
-      "corpus_fragment_id": "corpus-fragment.0317",
-      "source_node_id": "jsx.00802",
-      "reading_unit_id": "reading-unit.0339",
+      "corpus_fragment_id": "corpus-fragment.0332",
+      "source_node_id": "jsx.00829",
+      "reading_unit_id": "reading-unit.0364",
       "source_code_unit_range": {
-        "start": 19167,
-        "end": 19168
-      }
-    },
-    {
-      "id": "quote-classification.113",
-      "quote_character": "\"",
-      "classification": "internal_quote_word_connector",
-      "resulting_unit_id": "internal-quote-unit.082",
-      "corpus_fragment_id": "corpus-fragment.0335",
-      "source_node_id": "jsx.00839",
-      "reading_unit_id": "reading-unit.0358",
-      "source_code_unit_range": {
-        "start": 19955,
-        "end": 19956
-      }
-    },
-    {
-      "id": "quote-classification.114",
-      "quote_character": "\"",
-      "classification": "internal_quote_word_connector",
-      "resulting_unit_id": "internal-quote-unit.083",
-      "corpus_fragment_id": "corpus-fragment.0343",
-      "source_node_id": "jsx.00855",
-      "reading_unit_id": "reading-unit.0366",
-      "source_code_unit_range": {
-        "start": 20204,
-        "end": 20205
-      }
-    },
-    {
-      "id": "quote-classification.115",
-      "quote_character": "'",
-      "classification": "unknown_non_internal_quote",
-      "resulting_unit_id": null,
-      "corpus_fragment_id": "corpus-fragment.0348",
-      "source_node_id": "jsx.00865",
-      "reading_unit_id": "reading-unit.0371",
-      "source_code_unit_range": {
-        "start": 20402,
-        "end": 20403
+        "start": 20072,
+        "end": 20073
       }
     }
   ],
@@ -1555,12 +1477,12 @@
       "source_node_id": "jsx.00202",
       "reading_unit_id": "reading-unit.0068",
       "source_code_unit_range": {
-        "start": 4076,
-        "end": 4080
+        "start": 4075,
+        "end": 4079
       },
       "quote_source_code_unit_range": {
-        "start": 4078,
-        "end": 4079
+        "start": 4077,
+        "end": 4078
       }
     },
     {
@@ -1576,16 +1498,16 @@
         "אמ",
         "ש"
       ],
-      "corpus_fragment_id": "corpus-fragment.0065",
-      "source_node_id": "jsx.00209",
+      "corpus_fragment_id": "corpus-fragment.0063",
+      "source_node_id": "jsx.00206",
       "reading_unit_id": "reading-unit.0070",
       "source_code_unit_range": {
-        "start": 4233,
-        "end": 4237
+        "start": 4192,
+        "end": 4196
       },
       "quote_source_code_unit_range": {
-        "start": 4235,
-        "end": 4236
+        "start": 4194,
+        "end": 4195
       }
     },
     {
@@ -1601,16 +1523,16 @@
         "ביה",
         "ו"
       ],
-      "corpus_fragment_id": "corpus-fragment.0066",
-      "source_node_id": "jsx.00212",
+      "corpus_fragment_id": "corpus-fragment.0064",
+      "source_node_id": "jsx.00209",
       "reading_unit_id": "reading-unit.0072",
       "source_code_unit_range": {
-        "start": 4366,
-        "end": 4371
+        "start": 4324,
+        "end": 4329
       },
       "quote_source_code_unit_range": {
-        "start": 4369,
-        "end": 4370
+        "start": 4327,
+        "end": 4328
       }
     },
     {
@@ -1626,16 +1548,16 @@
         "ביו",
         "ה"
       ],
-      "corpus_fragment_id": "corpus-fragment.0067",
-      "source_node_id": "jsx.00216",
+      "corpus_fragment_id": "corpus-fragment.0065",
+      "source_node_id": "jsx.00213",
       "reading_unit_id": "reading-unit.0072",
       "source_code_unit_range": {
-        "start": 4460,
-        "end": 4465
+        "start": 4418,
+        "end": 4423
       },
       "quote_source_code_unit_range": {
-        "start": 4463,
-        "end": 4464
+        "start": 4421,
+        "end": 4422
       }
     },
     {
@@ -1651,16 +1573,16 @@
         "בהי",
         "ו"
       ],
-      "corpus_fragment_id": "corpus-fragment.0068",
-      "source_node_id": "jsx.00220",
+      "corpus_fragment_id": "corpus-fragment.0066",
+      "source_node_id": "jsx.00217",
       "reading_unit_id": "reading-unit.0072",
       "source_code_unit_range": {
-        "start": 4556,
-        "end": 4561
+        "start": 4514,
+        "end": 4519
       },
       "quote_source_code_unit_range": {
-        "start": 4559,
-        "end": 4560
+        "start": 4517,
+        "end": 4518
       }
     },
     {
@@ -1676,16 +1598,16 @@
         "בהו",
         "י"
       ],
-      "corpus_fragment_id": "corpus-fragment.0069",
-      "source_node_id": "jsx.00224",
+      "corpus_fragment_id": "corpus-fragment.0067",
+      "source_node_id": "jsx.00221",
       "reading_unit_id": "reading-unit.0072",
       "source_code_unit_range": {
-        "start": 4656,
-        "end": 4661
+        "start": 4614,
+        "end": 4619
       },
       "quote_source_code_unit_range": {
-        "start": 4659,
-        "end": 4660
+        "start": 4617,
+        "end": 4618
       }
     },
     {
@@ -1701,16 +1623,16 @@
         "בוי",
         "ה"
       ],
-      "corpus_fragment_id": "corpus-fragment.0070",
-      "source_node_id": "jsx.00228",
+      "corpus_fragment_id": "corpus-fragment.0068",
+      "source_node_id": "jsx.00225",
       "reading_unit_id": "reading-unit.0072",
       "source_code_unit_range": {
-        "start": 4751,
-        "end": 4756
+        "start": 4709,
+        "end": 4714
       },
       "quote_source_code_unit_range": {
-        "start": 4754,
-        "end": 4755
+        "start": 4712,
+        "end": 4713
       }
     },
     {
@@ -1726,71 +1648,21 @@
         "בוה",
         "י"
       ],
-      "corpus_fragment_id": "corpus-fragment.0071",
-      "source_node_id": "jsx.00232",
+      "corpus_fragment_id": "corpus-fragment.0069",
+      "source_node_id": "jsx.00229",
       "reading_unit_id": "reading-unit.0072",
       "source_code_unit_range": {
-        "start": 4847,
-        "end": 4852
+        "start": 4805,
+        "end": 4810
       },
       "quote_source_code_unit_range": {
-        "start": 4850,
-        "end": 4851
+        "start": 4808,
+        "end": 4809
       }
     },
     {
       "id": "internal-quote-unit.009",
       "ordinal": 8,
-      "unit_type": "word",
-      "decision_status": "sealed",
-      "authority": "user",
-      "linguistic_subtype": "unknown",
-      "raw": "שכ\"ב",
-      "quote_character": "\"",
-      "component_surface_forms": [
-        "שכ",
-        "ב"
-      ],
-      "corpus_fragment_id": "corpus-fragment.0075",
-      "source_node_id": "jsx.00246",
-      "reading_unit_id": "reading-unit.0077",
-      "source_code_unit_range": {
-        "start": 5146,
-        "end": 5150
-      },
-      "quote_source_code_unit_range": {
-        "start": 5148,
-        "end": 5149
-      }
-    },
-    {
-      "id": "internal-quote-unit.010",
-      "ordinal": 9,
-      "unit_type": "word",
-      "decision_status": "sealed",
-      "authority": "user",
-      "linguistic_subtype": "unknown",
-      "raw": "כמ\"ש",
-      "quote_character": "\"",
-      "component_surface_forms": [
-        "כמ",
-        "ש"
-      ],
-      "corpus_fragment_id": "corpus-fragment.0075",
-      "source_node_id": "jsx.00246",
-      "reading_unit_id": "reading-unit.0077",
-      "source_code_unit_range": {
-        "start": 5159,
-        "end": 5163
-      },
-      "quote_source_code_unit_range": {
-        "start": 5161,
-        "end": 5162
-      }
-    },
-    {
-      "id": "internal-quote-unit.011",
-      "ordinal": 10,
       "unit_type": "word",
       "decision_status": "sealed",
       "authority": "user",
@@ -1801,21 +1673,21 @@
         "אמ",
         "ש"
       ],
-      "corpus_fragment_id": "corpus-fragment.0081",
-      "source_node_id": "jsx.00268",
-      "reading_unit_id": "reading-unit.0084",
+      "corpus_fragment_id": "corpus-fragment.0076",
+      "source_node_id": "jsx.00258",
+      "reading_unit_id": "reading-unit.0082",
       "source_code_unit_range": {
-        "start": 5465,
-        "end": 5469
+        "start": 5330,
+        "end": 5334
       },
       "quote_source_code_unit_range": {
-        "start": 5467,
-        "end": 5468
+        "start": 5332,
+        "end": 5333
       }
     },
     {
-      "id": "internal-quote-unit.012",
-      "ordinal": 11,
+      "id": "internal-quote-unit.010",
+      "ordinal": 9,
       "unit_type": "word",
       "decision_status": "sealed",
       "authority": "user",
@@ -1826,21 +1698,21 @@
         "אחה",
         "ע"
       ],
-      "corpus_fragment_id": "corpus-fragment.0096",
-      "source_node_id": "jsx.00300",
-      "reading_unit_id": "reading-unit.0101",
+      "corpus_fragment_id": "corpus-fragment.0091",
+      "source_node_id": "jsx.00290",
+      "reading_unit_id": "reading-unit.0099",
       "source_code_unit_range": {
-        "start": 6080,
-        "end": 6085
+        "start": 5945,
+        "end": 5950
       },
       "quote_source_code_unit_range": {
-        "start": 6083,
-        "end": 6084
+        "start": 5948,
+        "end": 5949
       }
     },
     {
-      "id": "internal-quote-unit.013",
-      "ordinal": 12,
+      "id": "internal-quote-unit.011",
+      "ordinal": 10,
       "unit_type": "word",
       "decision_status": "sealed",
       "authority": "user",
@@ -1851,21 +1723,21 @@
         "בומ",
         "ף"
       ],
-      "corpus_fragment_id": "corpus-fragment.0096",
-      "source_node_id": "jsx.00300",
-      "reading_unit_id": "reading-unit.0101",
+      "corpus_fragment_id": "corpus-fragment.0091",
+      "source_node_id": "jsx.00290",
+      "reading_unit_id": "reading-unit.0099",
       "source_code_unit_range": {
-        "start": 6086,
-        "end": 6091
+        "start": 5951,
+        "end": 5956
       },
       "quote_source_code_unit_range": {
-        "start": 6089,
-        "end": 6090
+        "start": 5954,
+        "end": 5955
       }
     },
     {
-      "id": "internal-quote-unit.014",
-      "ordinal": 13,
+      "id": "internal-quote-unit.012",
+      "ordinal": 11,
       "unit_type": "word",
       "decision_status": "sealed",
       "authority": "user",
@@ -1876,21 +1748,21 @@
         "גיכ",
         "ק"
       ],
-      "corpus_fragment_id": "corpus-fragment.0096",
-      "source_node_id": "jsx.00300",
-      "reading_unit_id": "reading-unit.0101",
+      "corpus_fragment_id": "corpus-fragment.0091",
+      "source_node_id": "jsx.00290",
+      "reading_unit_id": "reading-unit.0099",
       "source_code_unit_range": {
-        "start": 6092,
-        "end": 6097
+        "start": 5957,
+        "end": 5962
       },
       "quote_source_code_unit_range": {
-        "start": 6095,
-        "end": 6096
+        "start": 5960,
+        "end": 5961
       }
     },
     {
-      "id": "internal-quote-unit.015",
-      "ordinal": 14,
+      "id": "internal-quote-unit.013",
+      "ordinal": 12,
       "unit_type": "word",
       "decision_status": "sealed",
       "authority": "user",
@@ -1901,21 +1773,21 @@
         "דטלנ",
         "ת"
       ],
-      "corpus_fragment_id": "corpus-fragment.0096",
-      "source_node_id": "jsx.00300",
-      "reading_unit_id": "reading-unit.0101",
+      "corpus_fragment_id": "corpus-fragment.0091",
+      "source_node_id": "jsx.00290",
+      "reading_unit_id": "reading-unit.0099",
       "source_code_unit_range": {
-        "start": 6098,
-        "end": 6104
+        "start": 5963,
+        "end": 5969
       },
       "quote_source_code_unit_range": {
-        "start": 6102,
-        "end": 6103
+        "start": 5967,
+        "end": 5968
       }
     },
     {
-      "id": "internal-quote-unit.016",
-      "ordinal": 15,
+      "id": "internal-quote-unit.014",
+      "ordinal": 13,
       "unit_type": "word",
       "decision_status": "sealed",
       "authority": "user",
@@ -1926,21 +1798,21 @@
         "זסשר",
         "ץ"
       ],
-      "corpus_fragment_id": "corpus-fragment.0096",
-      "source_node_id": "jsx.00300",
-      "reading_unit_id": "reading-unit.0101",
+      "corpus_fragment_id": "corpus-fragment.0091",
+      "source_node_id": "jsx.00290",
+      "reading_unit_id": "reading-unit.0099",
       "source_code_unit_range": {
-        "start": 6105,
-        "end": 6111
+        "start": 5970,
+        "end": 5976
       },
       "quote_source_code_unit_range": {
-        "start": 6109,
-        "end": 6110
+        "start": 5974,
+        "end": 5975
       }
     },
     {
-      "id": "internal-quote-unit.017",
-      "ordinal": 16,
+      "id": "internal-quote-unit.015",
+      "ordinal": 14,
       "unit_type": "word",
       "decision_status": "sealed",
       "authority": "user",
@@ -1951,21 +1823,21 @@
         "אחה",
         "ע"
       ],
-      "corpus_fragment_id": "corpus-fragment.0100",
-      "source_node_id": "jsx.00312",
-      "reading_unit_id": "reading-unit.0107",
+      "corpus_fragment_id": "corpus-fragment.0093",
+      "source_node_id": "jsx.00295",
+      "reading_unit_id": "reading-unit.0102",
       "source_code_unit_range": {
-        "start": 6290,
-        "end": 6295
+        "start": 6065,
+        "end": 6070
       },
       "quote_source_code_unit_range": {
-        "start": 6293,
-        "end": 6294
+        "start": 6068,
+        "end": 6069
       }
     },
     {
-      "id": "internal-quote-unit.018",
-      "ordinal": 17,
+      "id": "internal-quote-unit.016",
+      "ordinal": 15,
       "unit_type": "word",
       "decision_status": "sealed",
       "authority": "user",
@@ -1976,21 +1848,21 @@
         "בומ",
         "ף"
       ],
-      "corpus_fragment_id": "corpus-fragment.0101",
-      "source_node_id": "jsx.00314",
-      "reading_unit_id": "reading-unit.0108",
+      "corpus_fragment_id": "corpus-fragment.0094",
+      "source_node_id": "jsx.00297",
+      "reading_unit_id": "reading-unit.0103",
       "source_code_unit_range": {
-        "start": 6366,
-        "end": 6371
+        "start": 6141,
+        "end": 6146
       },
       "quote_source_code_unit_range": {
-        "start": 6369,
-        "end": 6370
+        "start": 6144,
+        "end": 6145
       }
     },
     {
-      "id": "internal-quote-unit.019",
-      "ordinal": 18,
+      "id": "internal-quote-unit.017",
+      "ordinal": 16,
       "unit_type": "word",
       "decision_status": "sealed",
       "authority": "user",
@@ -2001,21 +1873,21 @@
         "גיכ",
         "ק"
       ],
-      "corpus_fragment_id": "corpus-fragment.0102",
-      "source_node_id": "jsx.00316",
-      "reading_unit_id": "reading-unit.0109",
+      "corpus_fragment_id": "corpus-fragment.0095",
+      "source_node_id": "jsx.00299",
+      "reading_unit_id": "reading-unit.0104",
       "source_code_unit_range": {
-        "start": 6430,
-        "end": 6435
+        "start": 6205,
+        "end": 6210
       },
       "quote_source_code_unit_range": {
-        "start": 6433,
-        "end": 6434
+        "start": 6208,
+        "end": 6209
       }
     },
     {
-      "id": "internal-quote-unit.020",
-      "ordinal": 19,
+      "id": "internal-quote-unit.018",
+      "ordinal": 17,
       "unit_type": "word",
       "decision_status": "sealed",
       "authority": "user",
@@ -2026,21 +1898,21 @@
         "דטלנ",
         "ת"
       ],
-      "corpus_fragment_id": "corpus-fragment.0103",
-      "source_node_id": "jsx.00318",
-      "reading_unit_id": "reading-unit.0110",
+      "corpus_fragment_id": "corpus-fragment.0096",
+      "source_node_id": "jsx.00301",
+      "reading_unit_id": "reading-unit.0105",
       "source_code_unit_range": {
-        "start": 6495,
-        "end": 6501
+        "start": 6270,
+        "end": 6276
       },
       "quote_source_code_unit_range": {
-        "start": 6499,
-        "end": 6500
+        "start": 6274,
+        "end": 6275
       }
     },
     {
-      "id": "internal-quote-unit.021",
-      "ordinal": 20,
+      "id": "internal-quote-unit.019",
+      "ordinal": 18,
       "unit_type": "word",
       "decision_status": "sealed",
       "authority": "user",
@@ -2051,21 +1923,21 @@
         "וסצר",
         "ש"
       ],
-      "corpus_fragment_id": "corpus-fragment.0104",
-      "source_node_id": "jsx.00320",
-      "reading_unit_id": "reading-unit.0111",
+      "corpus_fragment_id": "corpus-fragment.0097",
+      "source_node_id": "jsx.00303",
+      "reading_unit_id": "reading-unit.0106",
       "source_code_unit_range": {
-        "start": 6564,
-        "end": 6570
+        "start": 6339,
+        "end": 6345
       },
       "quote_source_code_unit_range": {
-        "start": 6568,
-        "end": 6569
+        "start": 6343,
+        "end": 6344
       }
     },
     {
-      "id": "internal-quote-unit.022",
-      "ordinal": 21,
+      "id": "internal-quote-unit.020",
+      "ordinal": 19,
       "unit_type": "word",
       "decision_status": "sealed",
       "authority": "user",
@@ -2076,16 +1948,66 @@
         "ברל",
         "א"
       ],
-      "corpus_fragment_id": "corpus-fragment.0108",
-      "source_node_id": "jsx.00330",
-      "reading_unit_id": "reading-unit.0117",
+      "corpus_fragment_id": "corpus-fragment.0100",
+      "source_node_id": "jsx.00310",
+      "reading_unit_id": "reading-unit.0110",
       "source_code_unit_range": {
-        "start": 6766,
-        "end": 6771
+        "start": 6516,
+        "end": 6521
       },
       "quote_source_code_unit_range": {
-        "start": 6769,
-        "end": 6770
+        "start": 6519,
+        "end": 6520
+      }
+    },
+    {
+      "id": "internal-quote-unit.021",
+      "ordinal": 20,
+      "unit_type": "word",
+      "decision_status": "sealed",
+      "authority": "user",
+      "linguistic_subtype": "unknown",
+      "raw": "אָלֶ\"ף",
+      "quote_character": "\"",
+      "component_surface_forms": [
+        "אָלֶ",
+        "ף"
+      ],
+      "corpus_fragment_id": "corpus-fragment.0105",
+      "source_node_id": "jsx.00321",
+      "reading_unit_id": "reading-unit.0116",
+      "source_code_unit_range": {
+        "start": 6776,
+        "end": 6782
+      },
+      "quote_source_code_unit_range": {
+        "start": 6780,
+        "end": 6781
+      }
+    },
+    {
+      "id": "internal-quote-unit.022",
+      "ordinal": 21,
+      "unit_type": "word",
+      "decision_status": "sealed",
+      "authority": "user",
+      "linguistic_subtype": "unknown",
+      "raw": "אָלֶ\"ף",
+      "quote_character": "\"",
+      "component_surface_forms": [
+        "אָלֶ",
+        "ף"
+      ],
+      "corpus_fragment_id": "corpus-fragment.0106",
+      "source_node_id": "jsx.00323",
+      "reading_unit_id": "reading-unit.0117",
+      "source_code_unit_range": {
+        "start": 6824,
+        "end": 6830
+      },
+      "quote_source_code_unit_range": {
+        "start": 6828,
+        "end": 6829
       }
     },
     {
@@ -2095,22 +2017,22 @@
       "decision_status": "sealed",
       "authority": "user",
       "linguistic_subtype": "unknown",
-      "raw": "אָלֶ\"ף",
+      "raw": "בֵּי\"ת",
       "quote_character": "\"",
       "component_surface_forms": [
-        "אָלֶ",
-        "ף"
+        "בֵּי",
+        "ת"
       ],
-      "corpus_fragment_id": "corpus-fragment.0113",
-      "source_node_id": "jsx.00341",
-      "reading_unit_id": "reading-unit.0123",
+      "corpus_fragment_id": "corpus-fragment.0107",
+      "source_node_id": "jsx.00325",
+      "reading_unit_id": "reading-unit.0118",
       "source_code_unit_range": {
-        "start": 7026,
-        "end": 7032
+        "start": 6848,
+        "end": 6854
       },
       "quote_source_code_unit_range": {
-        "start": 7030,
-        "end": 7031
+        "start": 6852,
+        "end": 6853
       }
     },
     {
@@ -2120,22 +2042,22 @@
       "decision_status": "sealed",
       "authority": "user",
       "linguistic_subtype": "unknown",
-      "raw": "אָלֶ\"ף",
+      "raw": "בֵּי\"ת",
       "quote_character": "\"",
       "component_surface_forms": [
-        "אָלֶ",
-        "ף"
+        "בֵּי",
+        "ת"
       ],
-      "corpus_fragment_id": "corpus-fragment.0114",
-      "source_node_id": "jsx.00343",
-      "reading_unit_id": "reading-unit.0124",
+      "corpus_fragment_id": "corpus-fragment.0108",
+      "source_node_id": "jsx.00327",
+      "reading_unit_id": "reading-unit.0119",
       "source_code_unit_range": {
-        "start": 7074,
-        "end": 7080
+        "start": 6896,
+        "end": 6902
       },
       "quote_source_code_unit_range": {
-        "start": 7078,
-        "end": 7079
+        "start": 6900,
+        "end": 6901
       }
     },
     {
@@ -2145,22 +2067,22 @@
       "decision_status": "sealed",
       "authority": "user",
       "linguistic_subtype": "unknown",
-      "raw": "בֵּי\"ת",
+      "raw": "אמ\"ש",
       "quote_character": "\"",
       "component_surface_forms": [
-        "בֵּי",
-        "ת"
+        "אמ",
+        "ש"
       ],
-      "corpus_fragment_id": "corpus-fragment.0115",
-      "source_node_id": "jsx.00345",
-      "reading_unit_id": "reading-unit.0125",
+      "corpus_fragment_id": "corpus-fragment.0122",
+      "source_node_id": "jsx.00364",
+      "reading_unit_id": "reading-unit.0134",
       "source_code_unit_range": {
-        "start": 7098,
-        "end": 7104
+        "start": 7564,
+        "end": 7568
       },
       "quote_source_code_unit_range": {
-        "start": 7102,
-        "end": 7103
+        "start": 7566,
+        "end": 7567
       }
     },
     {
@@ -2170,22 +2092,22 @@
       "decision_status": "sealed",
       "authority": "user",
       "linguistic_subtype": "unknown",
-      "raw": "בֵּי\"ת",
+      "raw": "אמ\"ש",
       "quote_character": "\"",
       "component_surface_forms": [
-        "בֵּי",
-        "ת"
+        "אמ",
+        "ש"
       ],
-      "corpus_fragment_id": "corpus-fragment.0116",
-      "source_node_id": "jsx.00347",
-      "reading_unit_id": "reading-unit.0126",
+      "corpus_fragment_id": "corpus-fragment.0128",
+      "source_node_id": "jsx.00377",
+      "reading_unit_id": "reading-unit.0141",
       "source_code_unit_range": {
-        "start": 7146,
-        "end": 7152
+        "start": 7758,
+        "end": 7762
       },
       "quote_source_code_unit_range": {
-        "start": 7150,
-        "end": 7151
+        "start": 7760,
+        "end": 7761
       }
     },
     {
@@ -2201,16 +2123,16 @@
         "אמ",
         "ש"
       ],
-      "corpus_fragment_id": "corpus-fragment.0130",
-      "source_node_id": "jsx.00384",
-      "reading_unit_id": "reading-unit.0141",
+      "corpus_fragment_id": "corpus-fragment.0135",
+      "source_node_id": "jsx.00392",
+      "reading_unit_id": "reading-unit.0149",
       "source_code_unit_range": {
-        "start": 7814,
-        "end": 7818
+        "start": 8033,
+        "end": 8037
       },
       "quote_source_code_unit_range": {
-        "start": 7816,
-        "end": 7817
+        "start": 8035,
+        "end": 8036
       }
     },
     {
@@ -2226,16 +2148,16 @@
         "אמ",
         "ש"
       ],
-      "corpus_fragment_id": "corpus-fragment.0136",
-      "source_node_id": "jsx.00397",
-      "reading_unit_id": "reading-unit.0148",
+      "corpus_fragment_id": "corpus-fragment.0139",
+      "source_node_id": "jsx.00401",
+      "reading_unit_id": "reading-unit.0154",
       "source_code_unit_range": {
-        "start": 8008,
-        "end": 8012
+        "start": 8183,
+        "end": 8187
       },
       "quote_source_code_unit_range": {
-        "start": 8010,
-        "end": 8011
+        "start": 8185,
+        "end": 8186
       }
     },
     {
@@ -2251,16 +2173,16 @@
         "אמ",
         "ש"
       ],
-      "corpus_fragment_id": "corpus-fragment.0143",
-      "source_node_id": "jsx.00412",
-      "reading_unit_id": "reading-unit.0156",
+      "corpus_fragment_id": "corpus-fragment.0145",
+      "source_node_id": "jsx.00414",
+      "reading_unit_id": "reading-unit.0161",
       "source_code_unit_range": {
-        "start": 8283,
-        "end": 8287
+        "start": 8447,
+        "end": 8451
       },
       "quote_source_code_unit_range": {
-        "start": 8285,
-        "end": 8286
+        "start": 8449,
+        "end": 8450
       }
     },
     {
@@ -2276,16 +2198,16 @@
         "אמ",
         "ש"
       ],
-      "corpus_fragment_id": "corpus-fragment.0147",
-      "source_node_id": "jsx.00421",
-      "reading_unit_id": "reading-unit.0161",
+      "corpus_fragment_id": "corpus-fragment.0151",
+      "source_node_id": "jsx.00426",
+      "reading_unit_id": "reading-unit.0167",
       "source_code_unit_range": {
-        "start": 8433,
-        "end": 8437
+        "start": 8667,
+        "end": 8671
       },
       "quote_source_code_unit_range": {
-        "start": 8435,
-        "end": 8436
+        "start": 8669,
+        "end": 8670
       }
     },
     {
@@ -2301,71 +2223,21 @@
         "אמ",
         "ש"
       ],
-      "corpus_fragment_id": "corpus-fragment.0153",
-      "source_node_id": "jsx.00434",
-      "reading_unit_id": "reading-unit.0168",
+      "corpus_fragment_id": "corpus-fragment.0157",
+      "source_node_id": "jsx.00439",
+      "reading_unit_id": "reading-unit.0174",
       "source_code_unit_range": {
-        "start": 8697,
-        "end": 8701
+        "start": 8916,
+        "end": 8920
       },
       "quote_source_code_unit_range": {
-        "start": 8699,
-        "end": 8700
+        "start": 8918,
+        "end": 8919
       }
     },
     {
       "id": "internal-quote-unit.032",
       "ordinal": 31,
-      "unit_type": "word",
-      "decision_status": "sealed",
-      "authority": "user",
-      "linguistic_subtype": "unknown",
-      "raw": "אמ\"ש",
-      "quote_character": "\"",
-      "component_surface_forms": [
-        "אמ",
-        "ש"
-      ],
-      "corpus_fragment_id": "corpus-fragment.0159",
-      "source_node_id": "jsx.00446",
-      "reading_unit_id": "reading-unit.0174",
-      "source_code_unit_range": {
-        "start": 8917,
-        "end": 8921
-      },
-      "quote_source_code_unit_range": {
-        "start": 8919,
-        "end": 8920
-      }
-    },
-    {
-      "id": "internal-quote-unit.033",
-      "ordinal": 32,
-      "unit_type": "word",
-      "decision_status": "sealed",
-      "authority": "user",
-      "linguistic_subtype": "unknown",
-      "raw": "אמ\"ש",
-      "quote_character": "\"",
-      "component_surface_forms": [
-        "אמ",
-        "ש"
-      ],
-      "corpus_fragment_id": "corpus-fragment.0165",
-      "source_node_id": "jsx.00459",
-      "reading_unit_id": "reading-unit.0181",
-      "source_code_unit_range": {
-        "start": 9166,
-        "end": 9170
-      },
-      "quote_source_code_unit_range": {
-        "start": 9168,
-        "end": 9169
-      }
-    },
-    {
-      "id": "internal-quote-unit.034",
-      "ordinal": 33,
       "unit_type": "word",
       "decision_status": "sealed",
       "authority": "user",
@@ -2376,21 +2248,21 @@
         "אָלֶ",
         "ף"
       ],
-      "corpus_fragment_id": "corpus-fragment.0171",
-      "source_node_id": "jsx.00472",
-      "reading_unit_id": "reading-unit.0188",
+      "corpus_fragment_id": "corpus-fragment.0163",
+      "source_node_id": "jsx.00452",
+      "reading_unit_id": "reading-unit.0181",
       "source_code_unit_range": {
-        "start": 9430,
-        "end": 9436
+        "start": 9180,
+        "end": 9186
       },
       "quote_source_code_unit_range": {
-        "start": 9434,
-        "end": 9435
+        "start": 9184,
+        "end": 9185
       }
     },
     {
-      "id": "internal-quote-unit.035",
-      "ordinal": 34,
+      "id": "internal-quote-unit.033",
+      "ordinal": 32,
       "unit_type": "word",
       "decision_status": "sealed",
       "authority": "user",
@@ -2401,21 +2273,21 @@
         "באמ",
         "ש"
       ],
-      "corpus_fragment_id": "corpus-fragment.0171",
-      "source_node_id": "jsx.00472",
-      "reading_unit_id": "reading-unit.0188",
+      "corpus_fragment_id": "corpus-fragment.0163",
+      "source_node_id": "jsx.00452",
+      "reading_unit_id": "reading-unit.0181",
       "source_code_unit_range": {
-        "start": 9565,
-        "end": 9570
+        "start": 9315,
+        "end": 9320
       },
       "quote_source_code_unit_range": {
-        "start": 9568,
-        "end": 9569
+        "start": 9318,
+        "end": 9319
       }
     },
     {
-      "id": "internal-quote-unit.036",
-      "ordinal": 35,
+      "id": "internal-quote-unit.034",
+      "ordinal": 33,
       "unit_type": "word",
       "decision_status": "sealed",
       "authority": "user",
@@ -2426,21 +2298,21 @@
         "באש",
         "ם"
       ],
-      "corpus_fragment_id": "corpus-fragment.0171",
-      "source_node_id": "jsx.00472",
-      "reading_unit_id": "reading-unit.0188",
+      "corpus_fragment_id": "corpus-fragment.0163",
+      "source_node_id": "jsx.00452",
+      "reading_unit_id": "reading-unit.0181",
       "source_code_unit_range": {
-        "start": 9581,
-        "end": 9586
+        "start": 9331,
+        "end": 9336
       },
       "quote_source_code_unit_range": {
-        "start": 9584,
-        "end": 9585
+        "start": 9334,
+        "end": 9335
       }
     },
     {
-      "id": "internal-quote-unit.037",
-      "ordinal": 36,
+      "id": "internal-quote-unit.035",
+      "ordinal": 34,
       "unit_type": "word",
       "decision_status": "sealed",
       "authority": "user",
@@ -2451,21 +2323,21 @@
         "מֵ",
         "ם"
       ],
-      "corpus_fragment_id": "corpus-fragment.0172",
-      "source_node_id": "jsx.00474",
-      "reading_unit_id": "reading-unit.0189",
+      "corpus_fragment_id": "corpus-fragment.0164",
+      "source_node_id": "jsx.00454",
+      "reading_unit_id": "reading-unit.0182",
       "source_code_unit_range": {
-        "start": 9619,
-        "end": 9623
+        "start": 9369,
+        "end": 9373
       },
       "quote_source_code_unit_range": {
-        "start": 9621,
-        "end": 9622
+        "start": 9371,
+        "end": 9372
       }
     },
     {
-      "id": "internal-quote-unit.038",
-      "ordinal": 37,
+      "id": "internal-quote-unit.036",
+      "ordinal": 35,
       "unit_type": "word",
       "decision_status": "sealed",
       "authority": "user",
@@ -2476,21 +2348,21 @@
         "במא",
         "ש"
       ],
-      "corpus_fragment_id": "corpus-fragment.0172",
-      "source_node_id": "jsx.00474",
-      "reading_unit_id": "reading-unit.0189",
+      "corpus_fragment_id": "corpus-fragment.0164",
+      "source_node_id": "jsx.00454",
+      "reading_unit_id": "reading-unit.0182",
       "source_code_unit_range": {
-        "start": 9765,
-        "end": 9770
+        "start": 9515,
+        "end": 9520
       },
       "quote_source_code_unit_range": {
-        "start": 9768,
-        "end": 9769
+        "start": 9518,
+        "end": 9519
       }
     },
     {
-      "id": "internal-quote-unit.039",
-      "ordinal": 38,
+      "id": "internal-quote-unit.037",
+      "ordinal": 36,
       "unit_type": "word",
       "decision_status": "sealed",
       "authority": "user",
@@ -2501,21 +2373,21 @@
         "במש",
         "א"
       ],
-      "corpus_fragment_id": "corpus-fragment.0172",
-      "source_node_id": "jsx.00474",
-      "reading_unit_id": "reading-unit.0189",
+      "corpus_fragment_id": "corpus-fragment.0164",
+      "source_node_id": "jsx.00454",
+      "reading_unit_id": "reading-unit.0182",
       "source_code_unit_range": {
-        "start": 9781,
-        "end": 9786
+        "start": 9531,
+        "end": 9536
       },
       "quote_source_code_unit_range": {
-        "start": 9784,
-        "end": 9785
+        "start": 9534,
+        "end": 9535
       }
     },
     {
-      "id": "internal-quote-unit.040",
-      "ordinal": 39,
+      "id": "internal-quote-unit.038",
+      "ordinal": 37,
       "unit_type": "word",
       "decision_status": "sealed",
       "authority": "user",
@@ -2526,21 +2398,21 @@
         "שִׁי",
         "ן"
       ],
-      "corpus_fragment_id": "corpus-fragment.0173",
-      "source_node_id": "jsx.00476",
-      "reading_unit_id": "reading-unit.0190",
+      "corpus_fragment_id": "corpus-fragment.0165",
+      "source_node_id": "jsx.00456",
+      "reading_unit_id": "reading-unit.0183",
       "source_code_unit_range": {
-        "start": 9819,
-        "end": 9825
+        "start": 9569,
+        "end": 9575
       },
       "quote_source_code_unit_range": {
-        "start": 9823,
-        "end": 9824
+        "start": 9573,
+        "end": 9574
       }
     },
     {
-      "id": "internal-quote-unit.041",
-      "ordinal": 40,
+      "id": "internal-quote-unit.039",
+      "ordinal": 38,
       "unit_type": "word",
       "decision_status": "sealed",
       "authority": "user",
@@ -2551,21 +2423,21 @@
         "בשא",
         "מ"
       ],
-      "corpus_fragment_id": "corpus-fragment.0174",
-      "source_node_id": "jsx.00478",
-      "reading_unit_id": "reading-unit.0190",
+      "corpus_fragment_id": "corpus-fragment.0165",
+      "source_node_id": "jsx.00456",
+      "reading_unit_id": "reading-unit.0183",
       "source_code_unit_range": {
-        "start": 9976,
-        "end": 9981
+        "start": 9718,
+        "end": 9723
       },
       "quote_source_code_unit_range": {
-        "start": 9979,
-        "end": 9980
+        "start": 9721,
+        "end": 9722
       }
     },
     {
-      "id": "internal-quote-unit.042",
-      "ordinal": 41,
+      "id": "internal-quote-unit.040",
+      "ordinal": 39,
       "unit_type": "word",
       "decision_status": "sealed",
       "authority": "user",
@@ -2576,71 +2448,21 @@
         "בשמ",
         "א"
       ],
-      "corpus_fragment_id": "corpus-fragment.0174",
-      "source_node_id": "jsx.00478",
-      "reading_unit_id": "reading-unit.0190",
+      "corpus_fragment_id": "corpus-fragment.0165",
+      "source_node_id": "jsx.00456",
+      "reading_unit_id": "reading-unit.0183",
       "source_code_unit_range": {
-        "start": 9992,
-        "end": 9997
+        "start": 9734,
+        "end": 9739
       },
       "quote_source_code_unit_range": {
-        "start": 9995,
-        "end": 9996
+        "start": 9737,
+        "end": 9738
       }
     },
     {
-      "id": "internal-quote-unit.043",
-      "ordinal": 42,
-      "unit_type": "word",
-      "decision_status": "sealed",
-      "authority": "user",
-      "linguistic_subtype": "unknown",
-      "raw": "כ\"ה",
-      "quote_character": "\"",
-      "component_surface_forms": [
-        "כ",
-        "ה"
-      ],
-      "corpus_fragment_id": "corpus-fragment.0175",
-      "source_node_id": "jsx.00480",
-      "reading_unit_id": "reading-unit.0190",
-      "source_code_unit_range": {
-        "start": 10007,
-        "end": 10010
-      },
-      "quote_source_code_unit_range": {
-        "start": 10008,
-        "end": 10009
-      }
-    },
-    {
-      "id": "internal-quote-unit.044",
-      "ordinal": 43,
-      "unit_type": "word",
-      "decision_status": "sealed",
-      "authority": "user",
-      "linguistic_subtype": "unknown",
-      "raw": "בנ\"י",
-      "quote_character": "\"",
-      "component_surface_forms": [
-        "בנ",
-        "י"
-      ],
-      "corpus_fragment_id": "corpus-fragment.0175",
-      "source_node_id": "jsx.00480",
-      "reading_unit_id": "reading-unit.0190",
-      "source_code_unit_range": {
-        "start": 10011,
-        "end": 10015
-      },
-      "quote_source_code_unit_range": {
-        "start": 10013,
-        "end": 10014
-      }
-    },
-    {
-      "id": "internal-quote-unit.045",
-      "ordinal": 44,
+      "id": "internal-quote-unit.041",
+      "ordinal": 40,
       "unit_type": "word",
       "decision_status": "sealed",
       "authority": "user",
@@ -2651,21 +2473,21 @@
         "בג",
         "ד"
       ],
-      "corpus_fragment_id": "corpus-fragment.0178",
-      "source_node_id": "jsx.00494",
-      "reading_unit_id": "reading-unit.0191",
+      "corpus_fragment_id": "corpus-fragment.0166",
+      "source_node_id": "jsx.00466",
+      "reading_unit_id": "reading-unit.0184",
       "source_code_unit_range": {
-        "start": 10133,
-        "end": 10137
+        "start": 9839,
+        "end": 9843
       },
       "quote_source_code_unit_range": {
-        "start": 10135,
-        "end": 10136
+        "start": 9841,
+        "end": 9842
       }
     },
     {
-      "id": "internal-quote-unit.046",
-      "ordinal": 45,
+      "id": "internal-quote-unit.042",
+      "ordinal": 41,
       "unit_type": "word",
       "decision_status": "sealed",
       "authority": "user",
@@ -2676,21 +2498,21 @@
         "כפר",
         "ת"
       ],
-      "corpus_fragment_id": "corpus-fragment.0178",
-      "source_node_id": "jsx.00494",
-      "reading_unit_id": "reading-unit.0191",
+      "corpus_fragment_id": "corpus-fragment.0166",
+      "source_node_id": "jsx.00466",
+      "reading_unit_id": "reading-unit.0184",
       "source_code_unit_range": {
-        "start": 10138,
-        "end": 10143
+        "start": 9844,
+        "end": 9849
       },
       "quote_source_code_unit_range": {
-        "start": 10141,
-        "end": 10142
+        "start": 9847,
+        "end": 9848
       }
     },
     {
-      "id": "internal-quote-unit.047",
-      "ordinal": 46,
+      "id": "internal-quote-unit.043",
+      "ordinal": 42,
       "unit_type": "word",
       "decision_status": "sealed",
       "authority": "user",
@@ -2701,21 +2523,21 @@
         "ב",
         "בּ"
       ],
-      "corpus_fragment_id": "corpus-fragment.0183",
-      "source_node_id": "jsx.00504",
-      "reading_unit_id": "reading-unit.0196",
+      "corpus_fragment_id": "corpus-fragment.0171",
+      "source_node_id": "jsx.00476",
+      "reading_unit_id": "reading-unit.0189",
       "source_code_unit_range": {
-        "start": 10372,
-        "end": 10376
+        "start": 10078,
+        "end": 10082
       },
       "quote_source_code_unit_range": {
-        "start": 10373,
-        "end": 10374
+        "start": 10079,
+        "end": 10080
       }
     },
     {
-      "id": "internal-quote-unit.048",
-      "ordinal": 47,
+      "id": "internal-quote-unit.044",
+      "ordinal": 43,
       "unit_type": "word",
       "decision_status": "sealed",
       "authority": "user",
@@ -2726,21 +2548,21 @@
         "ג",
         "גּ"
       ],
-      "corpus_fragment_id": "corpus-fragment.0183",
-      "source_node_id": "jsx.00504",
-      "reading_unit_id": "reading-unit.0196",
+      "corpus_fragment_id": "corpus-fragment.0171",
+      "source_node_id": "jsx.00476",
+      "reading_unit_id": "reading-unit.0189",
       "source_code_unit_range": {
-        "start": 10377,
-        "end": 10381
+        "start": 10083,
+        "end": 10087
       },
       "quote_source_code_unit_range": {
-        "start": 10378,
-        "end": 10379
+        "start": 10084,
+        "end": 10085
       }
     },
     {
-      "id": "internal-quote-unit.049",
-      "ordinal": 48,
+      "id": "internal-quote-unit.045",
+      "ordinal": 44,
       "unit_type": "word",
       "decision_status": "sealed",
       "authority": "user",
@@ -2751,21 +2573,21 @@
         "ד",
         "דּ"
       ],
-      "corpus_fragment_id": "corpus-fragment.0183",
-      "source_node_id": "jsx.00504",
-      "reading_unit_id": "reading-unit.0196",
+      "corpus_fragment_id": "corpus-fragment.0171",
+      "source_node_id": "jsx.00476",
+      "reading_unit_id": "reading-unit.0189",
       "source_code_unit_range": {
-        "start": 10382,
-        "end": 10386
+        "start": 10088,
+        "end": 10092
       },
       "quote_source_code_unit_range": {
-        "start": 10383,
-        "end": 10384
+        "start": 10089,
+        "end": 10090
       }
     },
     {
-      "id": "internal-quote-unit.050",
-      "ordinal": 49,
+      "id": "internal-quote-unit.046",
+      "ordinal": 45,
       "unit_type": "word",
       "decision_status": "sealed",
       "authority": "user",
@@ -2776,21 +2598,21 @@
         "כ",
         "כּ"
       ],
-      "corpus_fragment_id": "corpus-fragment.0183",
-      "source_node_id": "jsx.00504",
-      "reading_unit_id": "reading-unit.0196",
+      "corpus_fragment_id": "corpus-fragment.0171",
+      "source_node_id": "jsx.00476",
+      "reading_unit_id": "reading-unit.0189",
       "source_code_unit_range": {
-        "start": 10387,
-        "end": 10391
+        "start": 10093,
+        "end": 10097
       },
       "quote_source_code_unit_range": {
-        "start": 10388,
-        "end": 10389
+        "start": 10094,
+        "end": 10095
       }
     },
     {
-      "id": "internal-quote-unit.051",
-      "ordinal": 50,
+      "id": "internal-quote-unit.047",
+      "ordinal": 46,
       "unit_type": "word",
       "decision_status": "sealed",
       "authority": "user",
@@ -2801,21 +2623,21 @@
         "פ",
         "פּ"
       ],
-      "corpus_fragment_id": "corpus-fragment.0183",
-      "source_node_id": "jsx.00504",
-      "reading_unit_id": "reading-unit.0196",
+      "corpus_fragment_id": "corpus-fragment.0171",
+      "source_node_id": "jsx.00476",
+      "reading_unit_id": "reading-unit.0189",
       "source_code_unit_range": {
-        "start": 10392,
-        "end": 10396
+        "start": 10098,
+        "end": 10102
       },
       "quote_source_code_unit_range": {
-        "start": 10393,
-        "end": 10394
+        "start": 10099,
+        "end": 10100
       }
     },
     {
-      "id": "internal-quote-unit.052",
-      "ordinal": 51,
+      "id": "internal-quote-unit.048",
+      "ordinal": 47,
       "unit_type": "word",
       "decision_status": "sealed",
       "authority": "user",
@@ -2826,21 +2648,21 @@
         "ר",
         "רּ"
       ],
-      "corpus_fragment_id": "corpus-fragment.0183",
-      "source_node_id": "jsx.00504",
-      "reading_unit_id": "reading-unit.0196",
+      "corpus_fragment_id": "corpus-fragment.0171",
+      "source_node_id": "jsx.00476",
+      "reading_unit_id": "reading-unit.0189",
       "source_code_unit_range": {
-        "start": 10397,
-        "end": 10401
+        "start": 10103,
+        "end": 10107
       },
       "quote_source_code_unit_range": {
-        "start": 10398,
-        "end": 10399
+        "start": 10104,
+        "end": 10105
       }
     },
     {
-      "id": "internal-quote-unit.053",
-      "ordinal": 52,
+      "id": "internal-quote-unit.049",
+      "ordinal": 48,
       "unit_type": "word",
       "decision_status": "sealed",
       "authority": "user",
@@ -2851,16 +2673,116 @@
         "ת",
         "תּ"
       ],
-      "corpus_fragment_id": "corpus-fragment.0183",
-      "source_node_id": "jsx.00504",
-      "reading_unit_id": "reading-unit.0196",
+      "corpus_fragment_id": "corpus-fragment.0171",
+      "source_node_id": "jsx.00476",
+      "reading_unit_id": "reading-unit.0189",
       "source_code_unit_range": {
-        "start": 10402,
-        "end": 10406
+        "start": 10108,
+        "end": 10112
       },
       "quote_source_code_unit_range": {
-        "start": 10403,
-        "end": 10404
+        "start": 10109,
+        "end": 10110
+      }
+    },
+    {
+      "id": "internal-quote-unit.050",
+      "ordinal": 49,
+      "unit_type": "word",
+      "decision_status": "sealed",
+      "authority": "user",
+      "linguistic_subtype": "unknown",
+      "raw": "בג\"ד",
+      "quote_character": "\"",
+      "component_surface_forms": [
+        "בג",
+        "ד"
+      ],
+      "corpus_fragment_id": "corpus-fragment.0182",
+      "source_node_id": "jsx.00499",
+      "reading_unit_id": "reading-unit.0201",
+      "source_code_unit_range": {
+        "start": 10569,
+        "end": 10573
+      },
+      "quote_source_code_unit_range": {
+        "start": 10571,
+        "end": 10572
+      }
+    },
+    {
+      "id": "internal-quote-unit.051",
+      "ordinal": 50,
+      "unit_type": "word",
+      "decision_status": "sealed",
+      "authority": "user",
+      "linguistic_subtype": "unknown",
+      "raw": "כפר\"ת",
+      "quote_character": "\"",
+      "component_surface_forms": [
+        "כפר",
+        "ת"
+      ],
+      "corpus_fragment_id": "corpus-fragment.0182",
+      "source_node_id": "jsx.00499",
+      "reading_unit_id": "reading-unit.0201",
+      "source_code_unit_range": {
+        "start": 10574,
+        "end": 10579
+      },
+      "quote_source_code_unit_range": {
+        "start": 10577,
+        "end": 10578
+      }
+    },
+    {
+      "id": "internal-quote-unit.052",
+      "ordinal": 51,
+      "unit_type": "word",
+      "decision_status": "sealed",
+      "authority": "user",
+      "linguistic_subtype": "unknown",
+      "raw": "בג\"ד",
+      "quote_character": "\"",
+      "component_surface_forms": [
+        "בג",
+        "ד"
+      ],
+      "corpus_fragment_id": "corpus-fragment.0187",
+      "source_node_id": "jsx.00510",
+      "reading_unit_id": "reading-unit.0207",
+      "source_code_unit_range": {
+        "start": 10835,
+        "end": 10839
+      },
+      "quote_source_code_unit_range": {
+        "start": 10837,
+        "end": 10838
+      }
+    },
+    {
+      "id": "internal-quote-unit.053",
+      "ordinal": 52,
+      "unit_type": "word",
+      "decision_status": "sealed",
+      "authority": "user",
+      "linguistic_subtype": "unknown",
+      "raw": "כפר\"ת",
+      "quote_character": "\"",
+      "component_surface_forms": [
+        "כפר",
+        "ת"
+      ],
+      "corpus_fragment_id": "corpus-fragment.0187",
+      "source_node_id": "jsx.00510",
+      "reading_unit_id": "reading-unit.0207",
+      "source_code_unit_range": {
+        "start": 10840,
+        "end": 10845
+      },
+      "quote_source_code_unit_range": {
+        "start": 10843,
+        "end": 10844
       }
     },
     {
@@ -2877,15 +2799,15 @@
         "ד"
       ],
       "corpus_fragment_id": "corpus-fragment.0194",
-      "source_node_id": "jsx.00527",
-      "reading_unit_id": "reading-unit.0208",
+      "source_node_id": "jsx.00525",
+      "reading_unit_id": "reading-unit.0215",
       "source_code_unit_range": {
-        "start": 10863,
-        "end": 10867
+        "start": 11150,
+        "end": 11154
       },
       "quote_source_code_unit_range": {
-        "start": 10865,
-        "end": 10866
+        "start": 11152,
+        "end": 11153
       }
     },
     {
@@ -2902,15 +2824,15 @@
         "ת"
       ],
       "corpus_fragment_id": "corpus-fragment.0194",
-      "source_node_id": "jsx.00527",
-      "reading_unit_id": "reading-unit.0208",
+      "source_node_id": "jsx.00525",
+      "reading_unit_id": "reading-unit.0215",
       "source_code_unit_range": {
-        "start": 10868,
-        "end": 10873
+        "start": 11155,
+        "end": 11160
       },
       "quote_source_code_unit_range": {
-        "start": 10871,
-        "end": 10872
+        "start": 11158,
+        "end": 11159
       }
     },
     {
@@ -2920,22 +2842,22 @@
       "decision_status": "sealed",
       "authority": "user",
       "linguistic_subtype": "unknown",
-      "raw": "בג\"ד",
+      "raw": "ה\"ו",
       "quote_character": "\"",
       "component_surface_forms": [
-        "בג",
-        "ד"
+        "ה",
+        "ו"
       ],
-      "corpus_fragment_id": "corpus-fragment.0199",
-      "source_node_id": "jsx.00538",
-      "reading_unit_id": "reading-unit.0214",
+      "corpus_fragment_id": "corpus-fragment.0229",
+      "source_node_id": "jsx.00606",
+      "reading_unit_id": "reading-unit.0253",
       "source_code_unit_range": {
-        "start": 11129,
-        "end": 11133
+        "start": 13709,
+        "end": 13712
       },
       "quote_source_code_unit_range": {
-        "start": 11131,
-        "end": 11132
+        "start": 13710,
+        "end": 13711
       }
     },
     {
@@ -2945,22 +2867,22 @@
       "decision_status": "sealed",
       "authority": "user",
       "linguistic_subtype": "unknown",
-      "raw": "כפר\"ת",
+      "raw": "ז\"ח",
       "quote_character": "\"",
       "component_surface_forms": [
-        "כפר",
-        "ת"
+        "ז",
+        "ח"
       ],
-      "corpus_fragment_id": "corpus-fragment.0199",
-      "source_node_id": "jsx.00538",
-      "reading_unit_id": "reading-unit.0214",
+      "corpus_fragment_id": "corpus-fragment.0229",
+      "source_node_id": "jsx.00606",
+      "reading_unit_id": "reading-unit.0253",
       "source_code_unit_range": {
-        "start": 11134,
-        "end": 11139
+        "start": 13713,
+        "end": 13716
       },
       "quote_source_code_unit_range": {
-        "start": 11137,
-        "end": 11138
+        "start": 13714,
+        "end": 13715
       }
     },
     {
@@ -2970,22 +2892,22 @@
       "decision_status": "sealed",
       "authority": "user",
       "linguistic_subtype": "unknown",
-      "raw": "בג\"ד",
+      "raw": "ט\"י",
       "quote_character": "\"",
       "component_surface_forms": [
-        "בג",
-        "ד"
+        "ט",
+        "י"
       ],
-      "corpus_fragment_id": "corpus-fragment.0206",
-      "source_node_id": "jsx.00553",
-      "reading_unit_id": "reading-unit.0222",
+      "corpus_fragment_id": "corpus-fragment.0229",
+      "source_node_id": "jsx.00606",
+      "reading_unit_id": "reading-unit.0253",
       "source_code_unit_range": {
-        "start": 11444,
-        "end": 11448
+        "start": 13717,
+        "end": 13720
       },
       "quote_source_code_unit_range": {
-        "start": 11446,
-        "end": 11447
+        "start": 13718,
+        "end": 13719
       }
     },
     {
@@ -2995,22 +2917,22 @@
       "decision_status": "sealed",
       "authority": "user",
       "linguistic_subtype": "unknown",
-      "raw": "כפר\"ת",
+      "raw": "ל\"נ",
       "quote_character": "\"",
       "component_surface_forms": [
-        "כפר",
-        "ת"
+        "ל",
+        "נ"
       ],
-      "corpus_fragment_id": "corpus-fragment.0206",
-      "source_node_id": "jsx.00553",
-      "reading_unit_id": "reading-unit.0222",
+      "corpus_fragment_id": "corpus-fragment.0229",
+      "source_node_id": "jsx.00606",
+      "reading_unit_id": "reading-unit.0253",
       "source_code_unit_range": {
-        "start": 11449,
-        "end": 11454
+        "start": 13721,
+        "end": 13724
       },
       "quote_source_code_unit_range": {
-        "start": 11452,
-        "end": 11453
+        "start": 13722,
+        "end": 13723
       }
     },
     {
@@ -3020,22 +2942,22 @@
       "decision_status": "sealed",
       "authority": "user",
       "linguistic_subtype": "unknown",
-      "raw": "ה\"ו",
+      "raw": "ס\"ע",
       "quote_character": "\"",
       "component_surface_forms": [
-        "ה",
-        "ו"
+        "ס",
+        "ע"
       ],
-      "corpus_fragment_id": "corpus-fragment.0241",
-      "source_node_id": "jsx.00634",
-      "reading_unit_id": "reading-unit.0260",
+      "corpus_fragment_id": "corpus-fragment.0229",
+      "source_node_id": "jsx.00606",
+      "reading_unit_id": "reading-unit.0253",
       "source_code_unit_range": {
-        "start": 14003,
-        "end": 14006
+        "start": 13725,
+        "end": 13728
       },
       "quote_source_code_unit_range": {
-        "start": 14004,
-        "end": 14005
+        "start": 13726,
+        "end": 13727
       }
     },
     {
@@ -3045,127 +2967,27 @@
       "decision_status": "sealed",
       "authority": "user",
       "linguistic_subtype": "unknown",
-      "raw": "ז\"ח",
-      "quote_character": "\"",
-      "component_surface_forms": [
-        "ז",
-        "ח"
-      ],
-      "corpus_fragment_id": "corpus-fragment.0241",
-      "source_node_id": "jsx.00634",
-      "reading_unit_id": "reading-unit.0260",
-      "source_code_unit_range": {
-        "start": 14007,
-        "end": 14010
-      },
-      "quote_source_code_unit_range": {
-        "start": 14008,
-        "end": 14009
-      }
-    },
-    {
-      "id": "internal-quote-unit.062",
-      "ordinal": 61,
-      "unit_type": "word",
-      "decision_status": "sealed",
-      "authority": "user",
-      "linguistic_subtype": "unknown",
-      "raw": "ט\"י",
-      "quote_character": "\"",
-      "component_surface_forms": [
-        "ט",
-        "י"
-      ],
-      "corpus_fragment_id": "corpus-fragment.0241",
-      "source_node_id": "jsx.00634",
-      "reading_unit_id": "reading-unit.0260",
-      "source_code_unit_range": {
-        "start": 14011,
-        "end": 14014
-      },
-      "quote_source_code_unit_range": {
-        "start": 14012,
-        "end": 14013
-      }
-    },
-    {
-      "id": "internal-quote-unit.063",
-      "ordinal": 62,
-      "unit_type": "word",
-      "decision_status": "sealed",
-      "authority": "user",
-      "linguistic_subtype": "unknown",
-      "raw": "ל\"נ",
-      "quote_character": "\"",
-      "component_surface_forms": [
-        "ל",
-        "נ"
-      ],
-      "corpus_fragment_id": "corpus-fragment.0241",
-      "source_node_id": "jsx.00634",
-      "reading_unit_id": "reading-unit.0260",
-      "source_code_unit_range": {
-        "start": 14015,
-        "end": 14018
-      },
-      "quote_source_code_unit_range": {
-        "start": 14016,
-        "end": 14017
-      }
-    },
-    {
-      "id": "internal-quote-unit.064",
-      "ordinal": 63,
-      "unit_type": "word",
-      "decision_status": "sealed",
-      "authority": "user",
-      "linguistic_subtype": "unknown",
-      "raw": "ס\"ע",
-      "quote_character": "\"",
-      "component_surface_forms": [
-        "ס",
-        "ע"
-      ],
-      "corpus_fragment_id": "corpus-fragment.0241",
-      "source_node_id": "jsx.00634",
-      "reading_unit_id": "reading-unit.0260",
-      "source_code_unit_range": {
-        "start": 14019,
-        "end": 14022
-      },
-      "quote_source_code_unit_range": {
-        "start": 14020,
-        "end": 14021
-      }
-    },
-    {
-      "id": "internal-quote-unit.065",
-      "ordinal": 64,
-      "unit_type": "word",
-      "decision_status": "sealed",
-      "authority": "user",
-      "linguistic_subtype": "unknown",
       "raw": "צ\"ק",
       "quote_character": "\"",
       "component_surface_forms": [
         "צ",
         "ק"
       ],
-      "corpus_fragment_id": "corpus-fragment.0241",
-      "source_node_id": "jsx.00634",
-      "reading_unit_id": "reading-unit.0260",
+      "corpus_fragment_id": "corpus-fragment.0229",
+      "source_node_id": "jsx.00606",
+      "reading_unit_id": "reading-unit.0253",
       "source_code_unit_range": {
-        "start": 14023,
-        "end": 14026
+        "start": 13729,
+        "end": 13732
       },
       "quote_source_code_unit_range": {
-        "start": 14024,
-        "end": 14025
+        "start": 13730,
+        "end": 13731
       }
     },
     {
-      "id": "internal-quote-unit.066",
-      "ordinal": 65,
+      "id": "internal-quote-unit.062",
+      "ordinal": 61,
       "unit_type": "word",
       "decision_status": "sealed",
       "authority": "user",
@@ -3176,21 +2998,21 @@
         "ה",
         "ו"
       ],
-      "corpus_fragment_id": "corpus-fragment.0249",
-      "source_node_id": "jsx.00651",
-      "reading_unit_id": "reading-unit.0269",
+      "corpus_fragment_id": "corpus-fragment.0237",
+      "source_node_id": "jsx.00623",
+      "reading_unit_id": "reading-unit.0262",
       "source_code_unit_range": {
-        "start": 14790,
-        "end": 14793
+        "start": 14496,
+        "end": 14499
       },
       "quote_source_code_unit_range": {
-        "start": 14791,
-        "end": 14792
+        "start": 14497,
+        "end": 14498
       }
     },
     {
-      "id": "internal-quote-unit.067",
-      "ordinal": 66,
+      "id": "internal-quote-unit.063",
+      "ordinal": 62,
       "unit_type": "word",
       "decision_status": "sealed",
       "authority": "user",
@@ -3201,21 +3023,21 @@
         "ז",
         "ח"
       ],
-      "corpus_fragment_id": "corpus-fragment.0249",
-      "source_node_id": "jsx.00651",
-      "reading_unit_id": "reading-unit.0269",
+      "corpus_fragment_id": "corpus-fragment.0237",
+      "source_node_id": "jsx.00623",
+      "reading_unit_id": "reading-unit.0262",
       "source_code_unit_range": {
-        "start": 14794,
-        "end": 14797
+        "start": 14500,
+        "end": 14503
       },
       "quote_source_code_unit_range": {
-        "start": 14795,
-        "end": 14796
+        "start": 14501,
+        "end": 14502
       }
     },
     {
-      "id": "internal-quote-unit.068",
-      "ordinal": 67,
+      "id": "internal-quote-unit.064",
+      "ordinal": 63,
       "unit_type": "word",
       "decision_status": "sealed",
       "authority": "user",
@@ -3226,21 +3048,21 @@
         "ט",
         "י"
       ],
-      "corpus_fragment_id": "corpus-fragment.0249",
-      "source_node_id": "jsx.00651",
-      "reading_unit_id": "reading-unit.0269",
+      "corpus_fragment_id": "corpus-fragment.0237",
+      "source_node_id": "jsx.00623",
+      "reading_unit_id": "reading-unit.0262",
       "source_code_unit_range": {
-        "start": 14798,
-        "end": 14801
+        "start": 14504,
+        "end": 14507
       },
       "quote_source_code_unit_range": {
-        "start": 14799,
-        "end": 14800
+        "start": 14505,
+        "end": 14506
       }
     },
     {
-      "id": "internal-quote-unit.069",
-      "ordinal": 68,
+      "id": "internal-quote-unit.065",
+      "ordinal": 64,
       "unit_type": "word",
       "decision_status": "sealed",
       "authority": "user",
@@ -3251,21 +3073,21 @@
         "ל",
         "נ"
       ],
-      "corpus_fragment_id": "corpus-fragment.0249",
-      "source_node_id": "jsx.00651",
-      "reading_unit_id": "reading-unit.0269",
+      "corpus_fragment_id": "corpus-fragment.0237",
+      "source_node_id": "jsx.00623",
+      "reading_unit_id": "reading-unit.0262",
       "source_code_unit_range": {
-        "start": 14802,
-        "end": 14805
+        "start": 14508,
+        "end": 14511
       },
       "quote_source_code_unit_range": {
-        "start": 14803,
-        "end": 14804
+        "start": 14509,
+        "end": 14510
       }
     },
     {
-      "id": "internal-quote-unit.070",
-      "ordinal": 69,
+      "id": "internal-quote-unit.066",
+      "ordinal": 65,
       "unit_type": "word",
       "decision_status": "sealed",
       "authority": "user",
@@ -3276,21 +3098,21 @@
         "ס",
         "ע"
       ],
-      "corpus_fragment_id": "corpus-fragment.0249",
-      "source_node_id": "jsx.00651",
-      "reading_unit_id": "reading-unit.0269",
+      "corpus_fragment_id": "corpus-fragment.0237",
+      "source_node_id": "jsx.00623",
+      "reading_unit_id": "reading-unit.0262",
       "source_code_unit_range": {
-        "start": 14806,
-        "end": 14809
+        "start": 14512,
+        "end": 14515
       },
       "quote_source_code_unit_range": {
-        "start": 14807,
-        "end": 14808
+        "start": 14513,
+        "end": 14514
       }
     },
     {
-      "id": "internal-quote-unit.071",
-      "ordinal": 70,
+      "id": "internal-quote-unit.067",
+      "ordinal": 66,
       "unit_type": "word",
       "decision_status": "sealed",
       "authority": "user",
@@ -3301,21 +3123,21 @@
         "צ",
         "ק"
       ],
-      "corpus_fragment_id": "corpus-fragment.0249",
-      "source_node_id": "jsx.00651",
-      "reading_unit_id": "reading-unit.0269",
+      "corpus_fragment_id": "corpus-fragment.0237",
+      "source_node_id": "jsx.00623",
+      "reading_unit_id": "reading-unit.0262",
       "source_code_unit_range": {
-        "start": 14810,
-        "end": 14813
+        "start": 14516,
+        "end": 14519
       },
       "quote_source_code_unit_range": {
-        "start": 14811,
-        "end": 14812
+        "start": 14517,
+        "end": 14518
       }
     },
     {
-      "id": "internal-quote-unit.072",
-      "ordinal": 71,
+      "id": "internal-quote-unit.068",
+      "ordinal": 67,
       "unit_type": "word",
       "decision_status": "sealed",
       "authority": "user",
@@ -3326,21 +3148,21 @@
         "טש",
         "ת"
       ],
-      "corpus_fragment_id": "corpus-fragment.0253",
-      "source_node_id": "jsx.00659",
-      "reading_unit_id": "reading-unit.0273",
+      "corpus_fragment_id": "corpus-fragment.0241",
+      "source_node_id": "jsx.00631",
+      "reading_unit_id": "reading-unit.0266",
       "source_code_unit_range": {
-        "start": 14975,
-        "end": 14979
+        "start": 14681,
+        "end": 14685
       },
       "quote_source_code_unit_range": {
-        "start": 14977,
-        "end": 14978
+        "start": 14683,
+        "end": 14684
       }
     },
     {
-      "id": "internal-quote-unit.073",
-      "ordinal": 72,
+      "id": "internal-quote-unit.069",
+      "ordinal": 68,
       "unit_type": "word",
       "decision_status": "sealed",
       "authority": "user",
@@ -3351,21 +3173,21 @@
         "סא",
         "ב"
       ],
-      "corpus_fragment_id": "corpus-fragment.0253",
-      "source_node_id": "jsx.00659",
-      "reading_unit_id": "reading-unit.0273",
+      "corpus_fragment_id": "corpus-fragment.0241",
+      "source_node_id": "jsx.00631",
+      "reading_unit_id": "reading-unit.0266",
       "source_code_unit_range": {
-        "start": 14980,
-        "end": 14984
+        "start": 14686,
+        "end": 14690
       },
       "quote_source_code_unit_range": {
-        "start": 14982,
-        "end": 14983
+        "start": 14688,
+        "end": 14689
       }
     },
     {
-      "id": "internal-quote-unit.074",
-      "ordinal": 73,
+      "id": "internal-quote-unit.070",
+      "ordinal": 69,
       "unit_type": "word",
       "decision_status": "sealed",
       "authority": "user",
@@ -3376,21 +3198,21 @@
         "מע",
         "ק"
       ],
-      "corpus_fragment_id": "corpus-fragment.0253",
-      "source_node_id": "jsx.00659",
-      "reading_unit_id": "reading-unit.0273",
+      "corpus_fragment_id": "corpus-fragment.0241",
+      "source_node_id": "jsx.00631",
+      "reading_unit_id": "reading-unit.0266",
       "source_code_unit_range": {
-        "start": 14985,
-        "end": 14989
+        "start": 14691,
+        "end": 14695
       },
       "quote_source_code_unit_range": {
-        "start": 14987,
-        "end": 14988
+        "start": 14693,
+        "end": 14694
       }
     },
     {
-      "id": "internal-quote-unit.075",
-      "ordinal": 74,
+      "id": "internal-quote-unit.071",
+      "ordinal": 70,
       "unit_type": "word",
       "decision_status": "sealed",
       "authority": "user",
@@ -3401,21 +3223,21 @@
         "גד",
         "ד"
       ],
-      "corpus_fragment_id": "corpus-fragment.0253",
-      "source_node_id": "jsx.00659",
-      "reading_unit_id": "reading-unit.0273",
+      "corpus_fragment_id": "corpus-fragment.0241",
+      "source_node_id": "jsx.00631",
+      "reading_unit_id": "reading-unit.0266",
       "source_code_unit_range": {
-        "start": 14990,
-        "end": 14994
+        "start": 14696,
+        "end": 14700
       },
       "quote_source_code_unit_range": {
-        "start": 14992,
-        "end": 14993
+        "start": 14698,
+        "end": 14699
       }
     },
     {
-      "id": "internal-quote-unit.076",
-      "ordinal": 75,
+      "id": "internal-quote-unit.072",
+      "ordinal": 71,
       "unit_type": "word",
       "decision_status": "sealed",
       "authority": "user",
@@ -3426,21 +3248,21 @@
         "הקב",
         "ה"
       ],
-      "corpus_fragment_id": "corpus-fragment.0277",
-      "source_node_id": "jsx.00712",
-      "reading_unit_id": "reading-unit.0301",
+      "corpus_fragment_id": "corpus-fragment.0265",
+      "source_node_id": "jsx.00684",
+      "reading_unit_id": "reading-unit.0294",
       "source_code_unit_range": {
-        "start": 17487,
-        "end": 17492
+        "start": 17193,
+        "end": 17198
       },
       "quote_source_code_unit_range": {
-        "start": 17490,
-        "end": 17491
+        "start": 17196,
+        "end": 17197
       }
     },
     {
-      "id": "internal-quote-unit.077",
-      "ordinal": 76,
+      "id": "internal-quote-unit.073",
+      "ordinal": 72,
       "unit_type": "word",
       "decision_status": "sealed",
       "authority": "user",
@@ -3451,21 +3273,21 @@
         "נ",
         "א"
       ],
-      "corpus_fragment_id": "corpus-fragment.0283",
-      "source_node_id": "jsx.00733",
-      "reading_unit_id": "reading-unit.0307",
+      "corpus_fragment_id": "corpus-fragment.0270",
+      "source_node_id": "jsx.00703",
+      "reading_unit_id": "reading-unit.0300",
       "source_code_unit_range": {
-        "start": 17827,
-        "end": 17830
+        "start": 17525,
+        "end": 17528
       },
       "quote_source_code_unit_range": {
-        "start": 17828,
-        "end": 17829
+        "start": 17526,
+        "end": 17527
       }
     },
     {
-      "id": "internal-quote-unit.078",
-      "ordinal": 77,
+      "id": "internal-quote-unit.074",
+      "ordinal": 73,
       "unit_type": "word",
       "decision_status": "sealed",
       "authority": "user",
@@ -3476,21 +3298,21 @@
         "נ",
         "א"
       ],
-      "corpus_fragment_id": "corpus-fragment.0290",
-      "source_node_id": "jsx.00747",
-      "reading_unit_id": "reading-unit.0312",
+      "corpus_fragment_id": "corpus-fragment.0275",
+      "source_node_id": "jsx.00713",
+      "reading_unit_id": "reading-unit.0305",
       "source_code_unit_range": {
-        "start": 18071,
-        "end": 18074
+        "start": 17750,
+        "end": 17753
       },
       "quote_source_code_unit_range": {
-        "start": 18072,
-        "end": 18073
+        "start": 17751,
+        "end": 17752
       }
     },
     {
-      "id": "internal-quote-unit.079",
-      "ordinal": 78,
+      "id": "internal-quote-unit.075",
+      "ordinal": 74,
       "unit_type": "word",
       "decision_status": "sealed",
       "authority": "user",
@@ -3501,21 +3323,21 @@
         "מֵ",
         "ם"
       ],
-      "corpus_fragment_id": "corpus-fragment.0297",
-      "source_node_id": "jsx.00761",
-      "reading_unit_id": "reading-unit.0318",
+      "corpus_fragment_id": "corpus-fragment.0281",
+      "source_node_id": "jsx.00725",
+      "reading_unit_id": "reading-unit.0311",
       "source_code_unit_range": {
-        "start": 18396,
-        "end": 18400
+        "start": 18066,
+        "end": 18070
       },
       "quote_source_code_unit_range": {
-        "start": 18398,
-        "end": 18399
+        "start": 18068,
+        "end": 18069
       }
     },
     {
-      "id": "internal-quote-unit.080",
-      "ordinal": 79,
+      "id": "internal-quote-unit.076",
+      "ordinal": 75,
       "unit_type": "word",
       "decision_status": "sealed",
       "authority": "user",
@@ -3526,21 +3348,21 @@
         "שִׁי",
         "ן"
       ],
-      "corpus_fragment_id": "corpus-fragment.0298",
-      "source_node_id": "jsx.00763",
-      "reading_unit_id": "reading-unit.0319",
+      "corpus_fragment_id": "corpus-fragment.0282",
+      "source_node_id": "jsx.00727",
+      "reading_unit_id": "reading-unit.0312",
       "source_code_unit_range": {
-        "start": 18427,
-        "end": 18433
+        "start": 18097,
+        "end": 18103
       },
       "quote_source_code_unit_range": {
-        "start": 18431,
-        "end": 18432
+        "start": 18101,
+        "end": 18102
       }
     },
     {
-      "id": "internal-quote-unit.081",
-      "ordinal": 80,
+      "id": "internal-quote-unit.077",
+      "ordinal": 76,
       "unit_type": "word",
       "decision_status": "sealed",
       "authority": "user",
@@ -3551,21 +3373,21 @@
         "אָלֶ",
         "ף"
       ],
-      "corpus_fragment_id": "corpus-fragment.0299",
-      "source_node_id": "jsx.00765",
-      "reading_unit_id": "reading-unit.0320",
+      "corpus_fragment_id": "corpus-fragment.0283",
+      "source_node_id": "jsx.00729",
+      "reading_unit_id": "reading-unit.0313",
       "source_code_unit_range": {
-        "start": 18460,
-        "end": 18466
+        "start": 18130,
+        "end": 18136
       },
       "quote_source_code_unit_range": {
-        "start": 18464,
-        "end": 18465
+        "start": 18134,
+        "end": 18135
       }
     },
     {
-      "id": "internal-quote-unit.082",
-      "ordinal": 81,
+      "id": "internal-quote-unit.078",
+      "ordinal": 77,
       "unit_type": "word",
       "decision_status": "sealed",
       "authority": "user",
@@ -3576,21 +3398,21 @@
         "ע",
         "ה"
       ],
-      "corpus_fragment_id": "corpus-fragment.0335",
-      "source_node_id": "jsx.00839",
-      "reading_unit_id": "reading-unit.0358",
+      "corpus_fragment_id": "corpus-fragment.0319",
+      "source_node_id": "jsx.00803",
+      "reading_unit_id": "reading-unit.0351",
       "source_code_unit_range": {
-        "start": 19954,
-        "end": 19957
+        "start": 19624,
+        "end": 19627
       },
       "quote_source_code_unit_range": {
-        "start": 19955,
-        "end": 19956
+        "start": 19625,
+        "end": 19626
       }
     },
     {
-      "id": "internal-quote-unit.083",
-      "ordinal": 82,
+      "id": "internal-quote-unit.079",
+      "ordinal": 78,
       "unit_type": "word",
       "decision_status": "sealed",
       "authority": "user",
@@ -3601,16 +3423,16 @@
         "ב",
         "ה"
       ],
-      "corpus_fragment_id": "corpus-fragment.0343",
-      "source_node_id": "jsx.00855",
-      "reading_unit_id": "reading-unit.0366",
+      "corpus_fragment_id": "corpus-fragment.0327",
+      "source_node_id": "jsx.00819",
+      "reading_unit_id": "reading-unit.0359",
       "source_code_unit_range": {
-        "start": 20203,
-        "end": 20206
+        "start": 19873,
+        "end": 19876
       },
       "quote_source_code_unit_range": {
-        "start": 20204,
-        "end": 20205
+        "start": 19874,
+        "end": 19875
       }
     }
   ],
@@ -3620,8 +3442,8 @@
       "char": ".",
       "status": "excluded_from_word_role_unknown",
       "source_code_unit_range": {
-        "start": 4080,
-        "end": 4081
+        "start": 4079,
+        "end": 4080
       }
     },
     {
@@ -3629,8 +3451,8 @@
       "char": ".",
       "status": "excluded_from_word_role_unknown",
       "source_code_unit_range": {
-        "start": 4371,
-        "end": 4372
+        "start": 4329,
+        "end": 4330
       }
     },
     {
@@ -3638,8 +3460,8 @@
       "char": ".",
       "status": "excluded_from_word_role_unknown",
       "source_code_unit_range": {
-        "start": 4465,
-        "end": 4466
+        "start": 4423,
+        "end": 4424
       }
     },
     {
@@ -3647,8 +3469,8 @@
       "char": ".",
       "status": "excluded_from_word_role_unknown",
       "source_code_unit_range": {
-        "start": 4561,
-        "end": 4562
+        "start": 4519,
+        "end": 4520
       }
     },
     {
@@ -3656,8 +3478,8 @@
       "char": ".",
       "status": "excluded_from_word_role_unknown",
       "source_code_unit_range": {
-        "start": 4661,
-        "end": 4662
+        "start": 4619,
+        "end": 4620
       }
     },
     {
@@ -3665,8 +3487,8 @@
       "char": ".",
       "status": "excluded_from_word_role_unknown",
       "source_code_unit_range": {
-        "start": 4756,
-        "end": 4757
+        "start": 4714,
+        "end": 4715
       }
     },
     {
@@ -3674,71 +3496,53 @@
       "char": ":",
       "status": "excluded_from_word_role_unknown",
       "source_code_unit_range": {
-        "start": 4852,
-        "end": 4853
+        "start": 4810,
+        "end": 4811
       }
     },
     {
-      "internal_quote_unit_id": "internal-quote-unit.009",
-      "char": ")",
-      "status": "excluded_from_word_role_unknown",
-      "source_code_unit_range": {
-        "start": 5150,
-        "end": 5151
-      }
-    },
-    {
-      "internal_quote_unit_id": "internal-quote-unit.024",
+      "internal_quote_unit_id": "internal-quote-unit.022",
       "char": ",",
       "status": "excluded_from_word_role_unknown",
       "source_code_unit_range": {
-        "start": 7080,
-        "end": 7081
+        "start": 6830,
+        "end": 6831
       }
     },
     {
-      "internal_quote_unit_id": "internal-quote-unit.036",
+      "internal_quote_unit_id": "internal-quote-unit.034",
       "char": ":",
       "status": "excluded_from_word_role_unknown",
       "source_code_unit_range": {
-        "start": 9586,
-        "end": 9587
+        "start": 9336,
+        "end": 9337
       }
     },
     {
-      "internal_quote_unit_id": "internal-quote-unit.039",
+      "internal_quote_unit_id": "internal-quote-unit.037",
       "char": ":",
       "status": "excluded_from_word_role_unknown",
       "source_code_unit_range": {
-        "start": 9786,
-        "end": 9787
+        "start": 9536,
+        "end": 9537
       }
     },
     {
-      "internal_quote_unit_id": "internal-quote-unit.042",
-      "char": ",",
+      "internal_quote_unit_id": "internal-quote-unit.040",
+      "char": ":",
       "status": "excluded_from_word_role_unknown",
       "source_code_unit_range": {
-        "start": 9997,
-        "end": 9998
+        "start": 9739,
+        "end": 9740
       }
     },
     {
-      "internal_quote_unit_id": "internal-quote-unit.044",
-      "char": ")",
-      "status": "excluded_from_word_role_unknown",
-      "source_code_unit_range": {
-        "start": 10015,
-        "end": 10016
-      }
-    },
-    {
-      "internal_quote_unit_id": "internal-quote-unit.075",
+      "internal_quote_unit_id": "internal-quote-unit.071",
       "char": ".",
       "status": "excluded_from_word_role_unknown",
       "source_code_unit_range": {
-        "start": 14994,
-        "end": 14995
+        "start": 14700,
+        "end": 14701
       }
     }
   ]

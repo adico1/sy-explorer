@@ -1,7 +1,7 @@
 {
   "$schema": "./sy.converter-spec.schema.json",
   "id": "sy.evidence-corpus",
-  "version": "0.12.20",
+  "version": "0.14.0",
   "language": "he",
   "source": {
     "authority": "sefaria_source",
@@ -9,8 +9,8 @@
     "local_edition": {
       "status": "sealed",
       "file": "src/SeferYetzirah.tsx",
-      "sha256": "d568a1ab11859e04c5ed6292b0d8ad829885ecdb95fc19a9fb5273b269413024",
-      "textual_equivalence": "manually_verified_by_user",
+      "sha256": "e86001bbbcad27a4b4cf2dd2260bc2059e37dd668a8e3b7b6c7ae930be721643",
+      "textual_equivalence": "user_curated_from_manually_verified_source",
       "niqqud": {
         "status": "authoritative",
         "added_by": "user",
@@ -24,11 +24,13 @@
       "editorial_cleanup": {
         "status": "sealed",
         "authority": "user",
-        "rule": "remove_full_commentator_attribution_expressions_without_removing_the_interpretive_content",
+        "rule": "apply_user_directed_editorial_removals_and_wrapper_cleanup_while_preserving_original_cases_in_the_decision_artifact",
         "removed_expressions": [
           "וברמ\"ב",
           "וע\"ז קַאי פִּי' הרמ\"ב:"
-        ]
+        ],
+        "decision_artifact": "src/sy.editorial-decisions.json",
+        "applied_manual_case_count": 14
       }
     }
   },
@@ -146,7 +148,8 @@
     { "id": "source.authoritative_br_boundaries", "status": "active" },
     { "id": "source.commentator_attributions_removed", "status": "active", "proof": "two_user_authorized_attribution_expressions_absent_from_local_edition" },
     { "id": "source.editorial_addition_candidate_inventory", "status": "active", "artifact": "src/sy.editorial-candidate-inventory.json", "proof": "all_small_square_bracket_and_parenthesis_structures_inventoried_without_corpus_decision" },
-    { "id": "source.editorial_manual_review_queue", "status": "active", "artifact": "src/sy.editorial-review-cases.json", "proof": "23_observations_consolidated_into_14_nonoverlapping_manual_cases_with_clear_labels_first" },
+    { "id": "source.editorial_manual_review_queue", "status": "complete", "artifact": "src/sy.editorial-review-cases.json", "proof": "all_7_remaining_observations_resolved_with_0_pending_cases" },
+    { "id": "source.editorial_manual_decisions", "status": "active", "artifact": "src/sy.editorial-decisions.json", "proof": "14_user_directed_decisions_recorded_including_7_verbatim_retentions" },
     { "id": "source.lossless_jsx_map", "status": "active", "artifact": "src/sy.source-map.json", "proof": "exact_main_root_round_trip" },
     { "id": "reading.lossless_br_units", "status": "active", "artifact": "src/sy.reading-units.json", "proof": "exact_br_partition_round_trip" },
     { "id": "structure.jsx_reading_hierarchy", "status": "active", "artifact": "src/sy.reading-hierarchy.json", "proof": "exact_jsx_context_assignment" },
@@ -163,7 +166,7 @@
     { "id": "orthography.hebrew_letter_mark_units", "status": "active", "artifact": "src/sy.hebrew-graphemes.json", "proof": "every_hebrew_letter_and_combining_mark_assigned_exactly_once" },
     { "id": "orthography.ordered_atom_stream", "status": "active", "artifact": "src/sy.orthographic-stream.json", "proof": "exact_nonoverlapping_composition_of_words_graphemes_and_technical_atoms" },
     { "id": "lexicon.parallel_word_candidate_views", "status": "active", "artifact": "src/sy.word-candidate-views.json", "proof": "two_complete_nonpreferred_candidate_partitions_preserving_punctuation_uncertainty" },
-    { "id": "orthography.trailing_apostrophe_unknown_cases", "status": "active", "artifact": "src/sy.trailing-apostrophe-cases.json", "proof": "all_32_noninternal_quotes_structurally_classified_without_role_inference" },
+    { "id": "orthography.trailing_apostrophe_unknown_cases", "status": "active", "artifact": "src/sy.trailing-apostrophe-cases.json", "proof": "all_30_noninternal_quotes_structurally_classified_without_role_inference" },
     { "id": "corpus.name_occurrences", "status": "active" },
     { "id": "corpus.occurrence_counts", "status": "active" },
     { "id": "corpus.user_interpretations", "status": "active" },
@@ -191,17 +194,52 @@
       },
       {
         "id": "source.editorial_addition_candidate_inventory",
-        "statement": "All seven small elements, nine square-bracket pairs and seven parenthesis pairs are recorded as 23 structural candidates with exact source context. Marker presence alone does not establish that any candidate is an editorial addition or outside the corpus.",
+        "statement": "After seven user-directed source edits, the four remaining parenthesis pairs and three remaining square-bracket pairs are recorded as seven structural candidates with exact source context. The user explicitly retained all seven as primary text.",
         "authority": "deterministic_structural_observation",
         "artifact": "src/sy.editorial-candidate-inventory.json",
         "status": "sealed"
       },
       {
         "id": "source.editorial_manual_review_queue",
-        "statement": "The 23 structural observations are consolidated into 14 non-overlapping manual review cases. Six cases containing explicit textual labels are ordered first; corpus cleaning is stopped and no case is changed until a user decision is recorded.",
+        "statement": "All seven remaining structural observations were explicitly retained by the user. The sealed review queue is complete with zero pending cases, and all fourteen decisions are preserved in the editorial decision artifact.",
         "authority": "user_workflow_decision_and_deterministic_consolidation",
         "artifact": "src/sy.editorial-review-cases.json",
         "status": "sealed"
+      },
+      {
+        "id": "source.editorial_manual_decision.01",
+        "statement": "The user removed the structural wrapper and label from original review case 01 while retaining its reading content. The original marked passage is preserved verbatim in the decision artifact.",
+        "authority": "user",
+        "artifact": "src/sy.editorial-decisions.json",
+        "status": "applied"
+      },
+      {
+        "id": "source.editorial_manual_decision.02",
+        "statement": "The user removed original review case 02 entirely from the working corpus. The original source note is preserved verbatim in the decision artifact.",
+        "authority": "user",
+        "artifact": "src/sy.editorial-decisions.json",
+        "status": "applied"
+      },
+      {
+        "id": "source.editorial_manual_decision.03",
+        "statement": "The user removed the Mantua label and structural wrapper from original review case 03 while retaining its reading content. The original marked passage is preserved verbatim in the decision artifact.",
+        "authority": "user",
+        "artifact": "src/sy.editorial-decisions.json",
+        "status": "applied"
+      },
+      {
+        "id": "source.editorial_manual_decisions.04_07",
+        "statement": "The user directly removed structural wrappers from original review cases 04 through 07 while retaining their textual content. Every original marked passage is preserved verbatim in the decision artifact.",
+        "authority": "user_direct_source_edit",
+        "artifact": "src/sy.editorial-decisions.json",
+        "status": "applied"
+      },
+      {
+        "id": "source.editorial_manual_decisions.08_14",
+        "statement": "The user explicitly retained the seven remaining parenthetical and square-bracketed passages verbatim as primary text. No editorial review cases remain pending.",
+        "authority": "user",
+        "artifact": "src/sy.editorial-decisions.json",
+        "status": "applied"
       },
       {
         "id": "reading.preserve_niqqud",
@@ -250,14 +288,14 @@
       },
       {
         "id": "corpus.user_defined_text_scope",
-        "statement": "Section-body text is included; small text is included temporarily; headings are excluded from corpus text and retained as structural separators for topics, verse parts and subverses; JSX whitespace is excluded.",
+        "statement": "Section-body text is included; no small text remains after the user cleanup; headings are excluded from corpus text and retained as structural separators for topics, verse parts and subverses; JSX whitespace is excluded.",
         "authority": "user",
         "artifact": "src/sy.corpus-scope.json",
         "status": "sealed"
       },
       {
         "id": "corpus.sealed_working_text",
-        "statement": "The working corpus contains exactly the 361 text nodes selected by the sealed user scope, once each and in source order, with exact raw text and reading structure references; small remains temporary.",
+        "statement": "The working corpus contains exactly the 345 text nodes selected by the sealed user scope, once each and in source order, with exact raw text and reading structure references.",
         "authority": "deterministic_derivation_from_user_scope",
         "artifact": "src/sy.corpus-text.json",
         "status": "sealed"
@@ -285,28 +323,28 @@
       },
       {
         "id": "lexicon.sealed_internal_quote_word_units",
-        "statement": "All 115 quote marks are classified by exact position: 83 internal marks form one exact pointed Hebrew word each, while 32 non-internal marks remain unknown; no linguistic subtype is inferred.",
+        "statement": "All 109 quote marks are classified by exact position: 79 internal marks form one exact pointed Hebrew word each, while 30 non-internal marks remain unknown; no linguistic subtype is inferred.",
         "authority": "deterministic_derivation_from_user_internal_quote_rule",
         "artifact": "src/sy.internal-quote-units.json",
         "status": "sealed"
       },
       {
         "id": "lexicon.unified_sealed_word_units",
-        "statement": "The unified signed word layer contains exactly the non-overlapping union of the 8 hyphen and 83 internal-quote occurrences, retains exact pointed surfaces and recognition rules, and adds no other words or interpretation.",
+        "statement": "The unified signed word layer contains exactly the non-overlapping union of the 8 hyphen and 79 internal-quote occurrences, retains exact pointed surfaces and recognition rules, and adds no other words or interpretation.",
         "authority": "deterministic_union_of_user_authorized_rules",
         "artifact": "src/sy.sealed-word-units.json",
         "status": "sealed"
       },
       {
         "id": "lexicon.complete_coverage_map",
-        "statement": "Every corpus code unit is covered exactly once as a sealed word, Unicode whitespace, Unicode punctuation or symbol with unknown role, or unresolved text; the map preserves all 91 sealed words and creates no new words or candidates.",
+        "statement": "Every corpus code unit is covered exactly once as a sealed word, Unicode whitespace, Unicode punctuation or symbol with unknown role, or unresolved text; the map preserves all 87 sealed words and creates no new words or candidates.",
         "authority": "deterministic_derivation",
         "artifact": "src/sy.lexical-coverage.json",
         "status": "sealed"
       },
       {
         "id": "orthography.hebrew_letter_mark_units",
-        "statement": "Every Hebrew letter is emitted once with all immediately following Unicode combining marks in exact source order; all 5,270 marks are attached, none is orphaned, and no word, normalization or interpretation is created.",
+        "statement": "Every Hebrew letter is emitted once with all immediately following Unicode combining marks in exact source order; all 5,224 marks are attached, none is orphaned, and no word, normalization or interpretation is created.",
         "authority": "deterministic_derivation",
         "artifact": "src/sy.hebrew-graphemes.json",
         "status": "sealed"
@@ -320,14 +358,14 @@
       },
       {
         "id": "lexicon.parallel_word_candidate_views",
-        "statement": "Two equally non-authoritative candidate views partition the full atom stream: one bounded by whitespace and one bounded by whitespace or punctuation. Both preserve 91 sealed words, label every new sequence as candidate-not-word, retain punctuation uncertainty and reconstruct the corpus exactly.",
+        "statement": "Two equally non-authoritative candidate views partition the full atom stream: one bounded by whitespace and one bounded by whitespace or punctuation. Both preserve 87 sealed words, label every new sequence as candidate-not-word, retain punctuation uncertainty and reconstruct the corpus exactly.",
         "authority": "deterministic_parallel_derivation",
         "artifact": "src/sy.word-candidate-views.json",
         "status": "sealed"
       },
       {
         "id": "orthography.trailing_apostrophe_unknown_cases",
-        "statement": "All 32 unresolved quote marks are exact trailing ASCII-apostrophe cases: 30 follow one Hebrew letter and 2 follow multiple Hebrew letters. Their word, number, abbreviation and punctuation roles remain unknown.",
+        "statement": "All 30 unresolved quote marks are exact trailing ASCII-apostrophe cases: 29 follow one Hebrew letter and 1 follows multiple Hebrew letters. Their word, number, abbreviation and punctuation roles remain unknown.",
         "authority": "deterministic_structural_derivation",
         "artifact": "src/sy.trailing-apostrophe-cases.json",
         "status": "sealed"

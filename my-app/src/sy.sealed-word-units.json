@@ -5,11 +5,11 @@
   "scope": "previously_sealed_word_rules_only",
   "source": {
     "file": "src/SeferYetzirah.tsx",
-    "sha256": "d568a1ab11859e04c5ed6292b0d8ad829885ecdb95fc19a9fb5273b269413024",
-    "corpus_text_sha256": "577986cf30c0e2b73f19e09523aed6954017f42c413db2cc214e7147ddc95752",
-    "word_contract_sha256": "79e9b0d7a113ca0ff83c278dc879cf22ba2aa7841f2de061e1b6a26b059680f9",
-    "hyphen_units_sha256": "b7a005ea8aedcabb6ee43abb6cb16db595e424642da8807e2033f599d50addf8",
-    "internal_quote_units_sha256": "6bf419bec7fba6128f8aa7bba0f5f0394adef1da6c262f28edca517498da1c27"
+    "sha256": "e86001bbbcad27a4b4cf2dd2260bc2059e37dd668a8e3b7b6c7ae930be721643",
+    "corpus_text_sha256": "4a1b17aa75cef0fdfab81780b7d2e28a092935087da73ae7dd25b934f4d06a6a",
+    "word_contract_sha256": "c9892436c88cfdcf8924d07f1576acf886ee23a4ef520e558f1fe95f752ce33c",
+    "hyphen_units_sha256": "1e0a0757e926cc2f8ae9f8827dcdaf6a3d6f04f0aebac66ac6f0de4b865d5580",
+    "internal_quote_units_sha256": "d4ddf619e58e42d0203d2199392bbae5b902feac4477240dbb234ccd1c8482c7"
   },
   "rules": {
     "accepted_recognition_rules": [
@@ -25,7 +25,7 @@
     "ordinary_non_signed_words": "not_emitted"
   },
   "proof": {
-    "exactly_ninety_one_signed_occurrences": true,
+    "exactly_eighty_seven_signed_occurrences": true,
     "every_input_occurrence_included_exactly_once": true,
     "no_occurrence_ranges_overlap": true,
     "source_order_preserved": true,
@@ -37,18 +37,18 @@
     "no_unpointed_identity_emitted": true,
     "no_prefix_analysis_or_semantic_interpretation_emitted": true,
     "deterministic_output": true,
-    "occurrence_count": 91,
+    "occurrence_count": 87,
     "hyphen_occurrence_count": 8,
-    "internal_quote_occurrence_count": 83,
-    "distinct_exact_pointed_surface_count": 56
+    "internal_quote_occurrence_count": 79,
+    "distinct_exact_pointed_surface_count": 52
   },
   "exact_pointed_surface_counts": [
     {
       "exact_pointed_surface": "אחה\"ע",
       "occurrence_count": 2,
       "occurrence_ids": [
-        "sealed-word-occurrence.016",
-        "sealed-word-occurrence.021"
+        "sealed-word-occurrence.014",
+        "sealed-word-occurrence.019"
       ],
       "recognition_rules": [
         "internal_quote"
@@ -58,10 +58,10 @@
       "exact_pointed_surface": "אָלֶ\"ף",
       "occurrence_count": 4,
       "occurrence_ids": [
-        "sealed-word-occurrence.027",
-        "sealed-word-occurrence.028",
-        "sealed-word-occurrence.039",
-        "sealed-word-occurrence.087"
+        "sealed-word-occurrence.025",
+        "sealed-word-occurrence.026",
+        "sealed-word-occurrence.037",
+        "sealed-word-occurrence.083"
       ],
       "recognition_rules": [
         "internal_quote"
@@ -92,14 +92,14 @@
       "occurrence_count": 9,
       "occurrence_ids": [
         "sealed-word-occurrence.005",
-        "sealed-word-occurrence.014",
+        "sealed-word-occurrence.012",
+        "sealed-word-occurrence.029",
         "sealed-word-occurrence.031",
+        "sealed-word-occurrence.032",
         "sealed-word-occurrence.033",
         "sealed-word-occurrence.034",
         "sealed-word-occurrence.035",
-        "sealed-word-occurrence.036",
-        "sealed-word-occurrence.037",
-        "sealed-word-occurrence.038"
+        "sealed-word-occurrence.036"
       ],
       "recognition_rules": [
         "internal_quote"
@@ -109,7 +109,7 @@
       "exact_pointed_surface": "ב\"בּ",
       "occurrence_count": 1,
       "occurrence_ids": [
-        "sealed-word-occurrence.052"
+        "sealed-word-occurrence.048"
       ],
       "recognition_rules": [
         "internal_quote"
@@ -119,7 +119,7 @@
       "exact_pointed_surface": "ב\"ה",
       "occurrence_count": 1,
       "occurrence_ids": [
-        "sealed-word-occurrence.091"
+        "sealed-word-occurrence.087"
       ],
       "recognition_rules": [
         "internal_quote"
@@ -129,7 +129,7 @@
       "exact_pointed_surface": "באמ\"ש",
       "occurrence_count": 1,
       "occurrence_ids": [
-        "sealed-word-occurrence.040"
+        "sealed-word-occurrence.038"
       ],
       "recognition_rules": [
         "internal_quote"
@@ -139,7 +139,7 @@
       "exact_pointed_surface": "באש\"ם",
       "occurrence_count": 1,
       "occurrence_ids": [
-        "sealed-word-occurrence.041"
+        "sealed-word-occurrence.039"
       ],
       "recognition_rules": [
         "internal_quote"
@@ -149,10 +149,10 @@
       "exact_pointed_surface": "בג\"ד",
       "occurrence_count": 4,
       "occurrence_ids": [
-        "sealed-word-occurrence.050",
-        "sealed-word-occurrence.059",
-        "sealed-word-occurrence.061",
-        "sealed-word-occurrence.063"
+        "sealed-word-occurrence.046",
+        "sealed-word-occurrence.055",
+        "sealed-word-occurrence.057",
+        "sealed-word-occurrence.059"
       ],
       "recognition_rules": [
         "internal_quote"
@@ -202,8 +202,8 @@
       "exact_pointed_surface": "בומ\"ף",
       "occurrence_count": 2,
       "occurrence_ids": [
-        "sealed-word-occurrence.017",
-        "sealed-word-occurrence.022"
+        "sealed-word-occurrence.015",
+        "sealed-word-occurrence.020"
       ],
       "recognition_rules": [
         "internal_quote"
@@ -213,8 +213,8 @@
       "exact_pointed_surface": "בֵּי\"ת",
       "occurrence_count": 2,
       "occurrence_ids": [
-        "sealed-word-occurrence.029",
-        "sealed-word-occurrence.030"
+        "sealed-word-occurrence.027",
+        "sealed-word-occurrence.028"
       ],
       "recognition_rules": [
         "internal_quote"
@@ -244,7 +244,7 @@
       "exact_pointed_surface": "במא\"ש",
       "occurrence_count": 1,
       "occurrence_ids": [
-        "sealed-word-occurrence.043"
+        "sealed-word-occurrence.041"
       ],
       "recognition_rules": [
         "internal_quote"
@@ -254,17 +254,7 @@
       "exact_pointed_surface": "במש\"א",
       "occurrence_count": 1,
       "occurrence_ids": [
-        "sealed-word-occurrence.044"
-      ],
-      "recognition_rules": [
-        "internal_quote"
-      ]
-    },
-    {
-      "exact_pointed_surface": "בנ\"י",
-      "occurrence_count": 1,
-      "occurrence_ids": [
-        "sealed-word-occurrence.049"
+        "sealed-word-occurrence.042"
       ],
       "recognition_rules": [
         "internal_quote"
@@ -274,7 +264,7 @@
       "exact_pointed_surface": "ברל\"א",
       "occurrence_count": 1,
       "occurrence_ids": [
-        "sealed-word-occurrence.026"
+        "sealed-word-occurrence.024"
       ],
       "recognition_rules": [
         "internal_quote"
@@ -284,7 +274,7 @@
       "exact_pointed_surface": "בשא\"מ",
       "occurrence_count": 1,
       "occurrence_ids": [
-        "sealed-word-occurrence.046"
+        "sealed-word-occurrence.044"
       ],
       "recognition_rules": [
         "internal_quote"
@@ -294,7 +284,7 @@
       "exact_pointed_surface": "בשמ\"א",
       "occurrence_count": 1,
       "occurrence_ids": [
-        "sealed-word-occurrence.047"
+        "sealed-word-occurrence.045"
       ],
       "recognition_rules": [
         "internal_quote"
@@ -304,7 +294,7 @@
       "exact_pointed_surface": "ג\"גּ",
       "occurrence_count": 1,
       "occurrence_ids": [
-        "sealed-word-occurrence.053"
+        "sealed-word-occurrence.049"
       ],
       "recognition_rules": [
         "internal_quote"
@@ -314,7 +304,7 @@
       "exact_pointed_surface": "גד\"ד",
       "occurrence_count": 1,
       "occurrence_ids": [
-        "sealed-word-occurrence.080"
+        "sealed-word-occurrence.076"
       ],
       "recognition_rules": [
         "internal_quote"
@@ -324,8 +314,8 @@
       "exact_pointed_surface": "גיכ\"ק",
       "occurrence_count": 2,
       "occurrence_ids": [
-        "sealed-word-occurrence.018",
-        "sealed-word-occurrence.023"
+        "sealed-word-occurrence.016",
+        "sealed-word-occurrence.021"
       ],
       "recognition_rules": [
         "internal_quote"
@@ -335,7 +325,7 @@
       "exact_pointed_surface": "ד\"דּ",
       "occurrence_count": 1,
       "occurrence_ids": [
-        "sealed-word-occurrence.054"
+        "sealed-word-occurrence.050"
       ],
       "recognition_rules": [
         "internal_quote"
@@ -345,8 +335,8 @@
       "exact_pointed_surface": "דטלנ\"ת",
       "occurrence_count": 2,
       "occurrence_ids": [
-        "sealed-word-occurrence.019",
-        "sealed-word-occurrence.024"
+        "sealed-word-occurrence.017",
+        "sealed-word-occurrence.022"
       ],
       "recognition_rules": [
         "internal_quote"
@@ -356,8 +346,8 @@
       "exact_pointed_surface": "ה\"ו",
       "occurrence_count": 2,
       "occurrence_ids": [
-        "sealed-word-occurrence.065",
-        "sealed-word-occurrence.071"
+        "sealed-word-occurrence.061",
+        "sealed-word-occurrence.067"
       ],
       "recognition_rules": [
         "internal_quote"
@@ -367,7 +357,7 @@
       "exact_pointed_surface": "הקב\"ה",
       "occurrence_count": 1,
       "occurrence_ids": [
-        "sealed-word-occurrence.081"
+        "sealed-word-occurrence.077"
       ],
       "recognition_rules": [
         "internal_quote"
@@ -387,7 +377,7 @@
       "exact_pointed_surface": "וסצר\"ש",
       "occurrence_count": 1,
       "occurrence_ids": [
-        "sealed-word-occurrence.025"
+        "sealed-word-occurrence.023"
       ],
       "recognition_rules": [
         "internal_quote"
@@ -397,8 +387,8 @@
       "exact_pointed_surface": "ז\"ח",
       "occurrence_count": 2,
       "occurrence_ids": [
-        "sealed-word-occurrence.066",
-        "sealed-word-occurrence.072"
+        "sealed-word-occurrence.062",
+        "sealed-word-occurrence.068"
       ],
       "recognition_rules": [
         "internal_quote"
@@ -408,7 +398,7 @@
       "exact_pointed_surface": "זסשר\"ץ",
       "occurrence_count": 1,
       "occurrence_ids": [
-        "sealed-word-occurrence.020"
+        "sealed-word-occurrence.018"
       ],
       "recognition_rules": [
         "internal_quote"
@@ -418,8 +408,8 @@
       "exact_pointed_surface": "ט\"י",
       "occurrence_count": 2,
       "occurrence_ids": [
-        "sealed-word-occurrence.067",
-        "sealed-word-occurrence.073"
+        "sealed-word-occurrence.063",
+        "sealed-word-occurrence.069"
       ],
       "recognition_rules": [
         "internal_quote"
@@ -429,7 +419,7 @@
       "exact_pointed_surface": "טש\"ת",
       "occurrence_count": 1,
       "occurrence_ids": [
-        "sealed-word-occurrence.077"
+        "sealed-word-occurrence.073"
       ],
       "recognition_rules": [
         "internal_quote"
@@ -446,30 +436,10 @@
       ]
     },
     {
-      "exact_pointed_surface": "כ\"ה",
-      "occurrence_count": 1,
-      "occurrence_ids": [
-        "sealed-word-occurrence.048"
-      ],
-      "recognition_rules": [
-        "internal_quote"
-      ]
-    },
-    {
       "exact_pointed_surface": "כ\"כּ",
       "occurrence_count": 1,
       "occurrence_ids": [
-        "sealed-word-occurrence.055"
-      ],
-      "recognition_rules": [
-        "internal_quote"
-      ]
-    },
-    {
-      "exact_pointed_surface": "כמ\"ש",
-      "occurrence_count": 1,
-      "occurrence_ids": [
-        "sealed-word-occurrence.013"
+        "sealed-word-occurrence.051"
       ],
       "recognition_rules": [
         "internal_quote"
@@ -479,10 +449,10 @@
       "exact_pointed_surface": "כפר\"ת",
       "occurrence_count": 4,
       "occurrence_ids": [
-        "sealed-word-occurrence.051",
-        "sealed-word-occurrence.060",
-        "sealed-word-occurrence.062",
-        "sealed-word-occurrence.064"
+        "sealed-word-occurrence.047",
+        "sealed-word-occurrence.056",
+        "sealed-word-occurrence.058",
+        "sealed-word-occurrence.060"
       ],
       "recognition_rules": [
         "internal_quote"
@@ -492,8 +462,8 @@
       "exact_pointed_surface": "ל\"נ",
       "occurrence_count": 2,
       "occurrence_ids": [
-        "sealed-word-occurrence.068",
-        "sealed-word-occurrence.074"
+        "sealed-word-occurrence.064",
+        "sealed-word-occurrence.070"
       ],
       "recognition_rules": [
         "internal_quote"
@@ -503,8 +473,8 @@
       "exact_pointed_surface": "מֵ\"ם",
       "occurrence_count": 2,
       "occurrence_ids": [
-        "sealed-word-occurrence.042",
-        "sealed-word-occurrence.085"
+        "sealed-word-occurrence.040",
+        "sealed-word-occurrence.081"
       ],
       "recognition_rules": [
         "internal_quote"
@@ -514,11 +484,11 @@
       "exact_pointed_surface": "מַכְרִיעַ-בֵּינְתַיִם",
       "occurrence_count": 5,
       "occurrence_ids": [
-        "sealed-word-occurrence.015",
-        "sealed-word-occurrence.032",
+        "sealed-word-occurrence.013",
+        "sealed-word-occurrence.030",
+        "sealed-word-occurrence.080",
         "sealed-word-occurrence.084",
-        "sealed-word-occurrence.088",
-        "sealed-word-occurrence.089"
+        "sealed-word-occurrence.085"
       ],
       "recognition_rules": [
         "hyphen"
@@ -528,7 +498,7 @@
       "exact_pointed_surface": "מע\"ק",
       "occurrence_count": 1,
       "occurrence_ids": [
-        "sealed-word-occurrence.079"
+        "sealed-word-occurrence.075"
       ],
       "recognition_rules": [
         "internal_quote"
@@ -538,8 +508,8 @@
       "exact_pointed_surface": "נ\"א",
       "occurrence_count": 2,
       "occurrence_ids": [
-        "sealed-word-occurrence.082",
-        "sealed-word-occurrence.083"
+        "sealed-word-occurrence.078",
+        "sealed-word-occurrence.079"
       ],
       "recognition_rules": [
         "internal_quote"
@@ -549,8 +519,8 @@
       "exact_pointed_surface": "ס\"ע",
       "occurrence_count": 2,
       "occurrence_ids": [
-        "sealed-word-occurrence.069",
-        "sealed-word-occurrence.075"
+        "sealed-word-occurrence.065",
+        "sealed-word-occurrence.071"
       ],
       "recognition_rules": [
         "internal_quote"
@@ -560,7 +530,7 @@
       "exact_pointed_surface": "סא\"ב",
       "occurrence_count": 1,
       "occurrence_ids": [
-        "sealed-word-occurrence.078"
+        "sealed-word-occurrence.074"
       ],
       "recognition_rules": [
         "internal_quote"
@@ -570,7 +540,7 @@
       "exact_pointed_surface": "ע\"ה",
       "occurrence_count": 1,
       "occurrence_ids": [
-        "sealed-word-occurrence.090"
+        "sealed-word-occurrence.086"
       ],
       "recognition_rules": [
         "internal_quote"
@@ -580,7 +550,7 @@
       "exact_pointed_surface": "פ\"פּ",
       "occurrence_count": 1,
       "occurrence_ids": [
-        "sealed-word-occurrence.056"
+        "sealed-word-occurrence.052"
       ],
       "recognition_rules": [
         "internal_quote"
@@ -590,8 +560,8 @@
       "exact_pointed_surface": "צ\"ק",
       "occurrence_count": 2,
       "occurrence_ids": [
-        "sealed-word-occurrence.070",
-        "sealed-word-occurrence.076"
+        "sealed-word-occurrence.066",
+        "sealed-word-occurrence.072"
       ],
       "recognition_rules": [
         "internal_quote"
@@ -601,7 +571,7 @@
       "exact_pointed_surface": "ר\"רּ",
       "occurrence_count": 1,
       "occurrence_ids": [
-        "sealed-word-occurrence.057"
+        "sealed-word-occurrence.053"
       ],
       "recognition_rules": [
         "internal_quote"
@@ -611,18 +581,8 @@
       "exact_pointed_surface": "שִׁי\"ן",
       "occurrence_count": 2,
       "occurrence_ids": [
-        "sealed-word-occurrence.045",
-        "sealed-word-occurrence.086"
-      ],
-      "recognition_rules": [
-        "internal_quote"
-      ]
-    },
-    {
-      "exact_pointed_surface": "שכ\"ב",
-      "occurrence_count": 1,
-      "occurrence_ids": [
-        "sealed-word-occurrence.012"
+        "sealed-word-occurrence.043",
+        "sealed-word-occurrence.082"
       ],
       "recognition_rules": [
         "internal_quote"
@@ -632,7 +592,7 @@
       "exact_pointed_surface": "ת\"תּ",
       "occurrence_count": 1,
       "occurrence_ids": [
-        "sealed-word-occurrence.058"
+        "sealed-word-occurrence.054"
       ],
       "recognition_rules": [
         "internal_quote"
@@ -712,8 +672,8 @@
       "source_node_id": "jsx.00202",
       "reading_unit_id": "reading-unit.0068",
       "source_code_unit_range": {
-        "start": 4076,
-        "end": 4080
+        "start": 4075,
+        "end": 4079
       }
     },
     {
@@ -727,12 +687,12 @@
       "recognition_rule": "internal_quote",
       "source_artifact_id": "sy.sealed-internal-quote-word-units",
       "source_unit_id": "internal-quote-unit.002",
-      "corpus_fragment_id": "corpus-fragment.0065",
-      "source_node_id": "jsx.00209",
+      "corpus_fragment_id": "corpus-fragment.0063",
+      "source_node_id": "jsx.00206",
       "reading_unit_id": "reading-unit.0070",
       "source_code_unit_range": {
-        "start": 4233,
-        "end": 4237
+        "start": 4192,
+        "end": 4196
       }
     },
     {
@@ -746,12 +706,12 @@
       "recognition_rule": "internal_quote",
       "source_artifact_id": "sy.sealed-internal-quote-word-units",
       "source_unit_id": "internal-quote-unit.003",
-      "corpus_fragment_id": "corpus-fragment.0066",
-      "source_node_id": "jsx.00212",
+      "corpus_fragment_id": "corpus-fragment.0064",
+      "source_node_id": "jsx.00209",
       "reading_unit_id": "reading-unit.0072",
       "source_code_unit_range": {
-        "start": 4366,
-        "end": 4371
+        "start": 4324,
+        "end": 4329
       }
     },
     {
@@ -765,12 +725,12 @@
       "recognition_rule": "internal_quote",
       "source_artifact_id": "sy.sealed-internal-quote-word-units",
       "source_unit_id": "internal-quote-unit.004",
-      "corpus_fragment_id": "corpus-fragment.0067",
-      "source_node_id": "jsx.00216",
+      "corpus_fragment_id": "corpus-fragment.0065",
+      "source_node_id": "jsx.00213",
       "reading_unit_id": "reading-unit.0072",
       "source_code_unit_range": {
-        "start": 4460,
-        "end": 4465
+        "start": 4418,
+        "end": 4423
       }
     },
     {
@@ -784,12 +744,12 @@
       "recognition_rule": "internal_quote",
       "source_artifact_id": "sy.sealed-internal-quote-word-units",
       "source_unit_id": "internal-quote-unit.005",
-      "corpus_fragment_id": "corpus-fragment.0068",
-      "source_node_id": "jsx.00220",
+      "corpus_fragment_id": "corpus-fragment.0066",
+      "source_node_id": "jsx.00217",
       "reading_unit_id": "reading-unit.0072",
       "source_code_unit_range": {
-        "start": 4556,
-        "end": 4561
+        "start": 4514,
+        "end": 4519
       }
     },
     {
@@ -803,12 +763,12 @@
       "recognition_rule": "internal_quote",
       "source_artifact_id": "sy.sealed-internal-quote-word-units",
       "source_unit_id": "internal-quote-unit.006",
-      "corpus_fragment_id": "corpus-fragment.0069",
-      "source_node_id": "jsx.00224",
+      "corpus_fragment_id": "corpus-fragment.0067",
+      "source_node_id": "jsx.00221",
       "reading_unit_id": "reading-unit.0072",
       "source_code_unit_range": {
-        "start": 4656,
-        "end": 4661
+        "start": 4614,
+        "end": 4619
       }
     },
     {
@@ -822,12 +782,12 @@
       "recognition_rule": "internal_quote",
       "source_artifact_id": "sy.sealed-internal-quote-word-units",
       "source_unit_id": "internal-quote-unit.007",
-      "corpus_fragment_id": "corpus-fragment.0070",
-      "source_node_id": "jsx.00228",
+      "corpus_fragment_id": "corpus-fragment.0068",
+      "source_node_id": "jsx.00225",
       "reading_unit_id": "reading-unit.0072",
       "source_code_unit_range": {
-        "start": 4751,
-        "end": 4756
+        "start": 4709,
+        "end": 4714
       }
     },
     {
@@ -841,12 +801,12 @@
       "recognition_rule": "internal_quote",
       "source_artifact_id": "sy.sealed-internal-quote-word-units",
       "source_unit_id": "internal-quote-unit.008",
-      "corpus_fragment_id": "corpus-fragment.0071",
-      "source_node_id": "jsx.00232",
+      "corpus_fragment_id": "corpus-fragment.0069",
+      "source_node_id": "jsx.00229",
       "reading_unit_id": "reading-unit.0072",
       "source_code_unit_range": {
-        "start": 4847,
-        "end": 4852
+        "start": 4805,
+        "end": 4810
       }
     },
     {
@@ -856,16 +816,16 @@
       "decision_status": "sealed",
       "authority": "user_rule",
       "surface_identity_mode": "exact_pointed_source_form",
-      "raw": "שכ\"ב",
+      "raw": "אמ\"ש",
       "recognition_rule": "internal_quote",
       "source_artifact_id": "sy.sealed-internal-quote-word-units",
       "source_unit_id": "internal-quote-unit.009",
-      "corpus_fragment_id": "corpus-fragment.0075",
-      "source_node_id": "jsx.00246",
-      "reading_unit_id": "reading-unit.0077",
+      "corpus_fragment_id": "corpus-fragment.0076",
+      "source_node_id": "jsx.00258",
+      "reading_unit_id": "reading-unit.0082",
       "source_code_unit_range": {
-        "start": 5146,
-        "end": 5150
+        "start": 5330,
+        "end": 5334
       }
     },
     {
@@ -875,16 +835,16 @@
       "decision_status": "sealed",
       "authority": "user_rule",
       "surface_identity_mode": "exact_pointed_source_form",
-      "raw": "כמ\"ש",
-      "recognition_rule": "internal_quote",
-      "source_artifact_id": "sy.sealed-internal-quote-word-units",
-      "source_unit_id": "internal-quote-unit.010",
-      "corpus_fragment_id": "corpus-fragment.0075",
-      "source_node_id": "jsx.00246",
-      "reading_unit_id": "reading-unit.0077",
+      "raw": "מַכְרִיעַ-בֵּינְתַיִם",
+      "recognition_rule": "hyphen",
+      "source_artifact_id": "sy.sealed-hyphen-word-units",
+      "source_unit_id": "hyphen-unit.004",
+      "corpus_fragment_id": "corpus-fragment.0078",
+      "source_node_id": "jsx.00262",
+      "reading_unit_id": "reading-unit.0084",
       "source_code_unit_range": {
-        "start": 5159,
-        "end": 5163
+        "start": 5445,
+        "end": 5466
       }
     },
     {
@@ -894,16 +854,16 @@
       "decision_status": "sealed",
       "authority": "user_rule",
       "surface_identity_mode": "exact_pointed_source_form",
-      "raw": "אמ\"ש",
+      "raw": "אחה\"ע",
       "recognition_rule": "internal_quote",
       "source_artifact_id": "sy.sealed-internal-quote-word-units",
-      "source_unit_id": "internal-quote-unit.011",
-      "corpus_fragment_id": "corpus-fragment.0081",
-      "source_node_id": "jsx.00268",
-      "reading_unit_id": "reading-unit.0084",
+      "source_unit_id": "internal-quote-unit.010",
+      "corpus_fragment_id": "corpus-fragment.0091",
+      "source_node_id": "jsx.00290",
+      "reading_unit_id": "reading-unit.0099",
       "source_code_unit_range": {
-        "start": 5465,
-        "end": 5469
+        "start": 5945,
+        "end": 5950
       }
     },
     {
@@ -913,16 +873,16 @@
       "decision_status": "sealed",
       "authority": "user_rule",
       "surface_identity_mode": "exact_pointed_source_form",
-      "raw": "מַכְרִיעַ-בֵּינְתַיִם",
-      "recognition_rule": "hyphen",
-      "source_artifact_id": "sy.sealed-hyphen-word-units",
-      "source_unit_id": "hyphen-unit.004",
-      "corpus_fragment_id": "corpus-fragment.0083",
-      "source_node_id": "jsx.00272",
-      "reading_unit_id": "reading-unit.0086",
+      "raw": "בומ\"ף",
+      "recognition_rule": "internal_quote",
+      "source_artifact_id": "sy.sealed-internal-quote-word-units",
+      "source_unit_id": "internal-quote-unit.011",
+      "corpus_fragment_id": "corpus-fragment.0091",
+      "source_node_id": "jsx.00290",
+      "reading_unit_id": "reading-unit.0099",
       "source_code_unit_range": {
-        "start": 5580,
-        "end": 5601
+        "start": 5951,
+        "end": 5956
       }
     },
     {
@@ -932,16 +892,16 @@
       "decision_status": "sealed",
       "authority": "user_rule",
       "surface_identity_mode": "exact_pointed_source_form",
-      "raw": "אחה\"ע",
+      "raw": "גיכ\"ק",
       "recognition_rule": "internal_quote",
       "source_artifact_id": "sy.sealed-internal-quote-word-units",
       "source_unit_id": "internal-quote-unit.012",
-      "corpus_fragment_id": "corpus-fragment.0096",
-      "source_node_id": "jsx.00300",
-      "reading_unit_id": "reading-unit.0101",
+      "corpus_fragment_id": "corpus-fragment.0091",
+      "source_node_id": "jsx.00290",
+      "reading_unit_id": "reading-unit.0099",
       "source_code_unit_range": {
-        "start": 6080,
-        "end": 6085
+        "start": 5957,
+        "end": 5962
       }
     },
     {
@@ -951,16 +911,16 @@
       "decision_status": "sealed",
       "authority": "user_rule",
       "surface_identity_mode": "exact_pointed_source_form",
-      "raw": "בומ\"ף",
+      "raw": "דטלנ\"ת",
       "recognition_rule": "internal_quote",
       "source_artifact_id": "sy.sealed-internal-quote-word-units",
       "source_unit_id": "internal-quote-unit.013",
-      "corpus_fragment_id": "corpus-fragment.0096",
-      "source_node_id": "jsx.00300",
-      "reading_unit_id": "reading-unit.0101",
+      "corpus_fragment_id": "corpus-fragment.0091",
+      "source_node_id": "jsx.00290",
+      "reading_unit_id": "reading-unit.0099",
       "source_code_unit_range": {
-        "start": 6086,
-        "end": 6091
+        "start": 5963,
+        "end": 5969
       }
     },
     {
@@ -970,16 +930,16 @@
       "decision_status": "sealed",
       "authority": "user_rule",
       "surface_identity_mode": "exact_pointed_source_form",
-      "raw": "גיכ\"ק",
+      "raw": "זסשר\"ץ",
       "recognition_rule": "internal_quote",
       "source_artifact_id": "sy.sealed-internal-quote-word-units",
       "source_unit_id": "internal-quote-unit.014",
-      "corpus_fragment_id": "corpus-fragment.0096",
-      "source_node_id": "jsx.00300",
-      "reading_unit_id": "reading-unit.0101",
+      "corpus_fragment_id": "corpus-fragment.0091",
+      "source_node_id": "jsx.00290",
+      "reading_unit_id": "reading-unit.0099",
       "source_code_unit_range": {
-        "start": 6092,
-        "end": 6097
+        "start": 5970,
+        "end": 5976
       }
     },
     {
@@ -989,16 +949,16 @@
       "decision_status": "sealed",
       "authority": "user_rule",
       "surface_identity_mode": "exact_pointed_source_form",
-      "raw": "דטלנ\"ת",
+      "raw": "אחה\"ע",
       "recognition_rule": "internal_quote",
       "source_artifact_id": "sy.sealed-internal-quote-word-units",
       "source_unit_id": "internal-quote-unit.015",
-      "corpus_fragment_id": "corpus-fragment.0096",
-      "source_node_id": "jsx.00300",
-      "reading_unit_id": "reading-unit.0101",
+      "corpus_fragment_id": "corpus-fragment.0093",
+      "source_node_id": "jsx.00295",
+      "reading_unit_id": "reading-unit.0102",
       "source_code_unit_range": {
-        "start": 6098,
-        "end": 6104
+        "start": 6065,
+        "end": 6070
       }
     },
     {
@@ -1008,16 +968,16 @@
       "decision_status": "sealed",
       "authority": "user_rule",
       "surface_identity_mode": "exact_pointed_source_form",
-      "raw": "זסשר\"ץ",
+      "raw": "בומ\"ף",
       "recognition_rule": "internal_quote",
       "source_artifact_id": "sy.sealed-internal-quote-word-units",
       "source_unit_id": "internal-quote-unit.016",
-      "corpus_fragment_id": "corpus-fragment.0096",
-      "source_node_id": "jsx.00300",
-      "reading_unit_id": "reading-unit.0101",
+      "corpus_fragment_id": "corpus-fragment.0094",
+      "source_node_id": "jsx.00297",
+      "reading_unit_id": "reading-unit.0103",
       "source_code_unit_range": {
-        "start": 6105,
-        "end": 6111
+        "start": 6141,
+        "end": 6146
       }
     },
     {
@@ -1027,16 +987,16 @@
       "decision_status": "sealed",
       "authority": "user_rule",
       "surface_identity_mode": "exact_pointed_source_form",
-      "raw": "אחה\"ע",
+      "raw": "גיכ\"ק",
       "recognition_rule": "internal_quote",
       "source_artifact_id": "sy.sealed-internal-quote-word-units",
       "source_unit_id": "internal-quote-unit.017",
-      "corpus_fragment_id": "corpus-fragment.0100",
-      "source_node_id": "jsx.00312",
-      "reading_unit_id": "reading-unit.0107",
+      "corpus_fragment_id": "corpus-fragment.0095",
+      "source_node_id": "jsx.00299",
+      "reading_unit_id": "reading-unit.0104",
       "source_code_unit_range": {
-        "start": 6290,
-        "end": 6295
+        "start": 6205,
+        "end": 6210
       }
     },
     {
@@ -1046,16 +1006,16 @@
       "decision_status": "sealed",
       "authority": "user_rule",
       "surface_identity_mode": "exact_pointed_source_form",
-      "raw": "בומ\"ף",
+      "raw": "דטלנ\"ת",
       "recognition_rule": "internal_quote",
       "source_artifact_id": "sy.sealed-internal-quote-word-units",
       "source_unit_id": "internal-quote-unit.018",
-      "corpus_fragment_id": "corpus-fragment.0101",
-      "source_node_id": "jsx.00314",
-      "reading_unit_id": "reading-unit.0108",
+      "corpus_fragment_id": "corpus-fragment.0096",
+      "source_node_id": "jsx.00301",
+      "reading_unit_id": "reading-unit.0105",
       "source_code_unit_range": {
-        "start": 6366,
-        "end": 6371
+        "start": 6270,
+        "end": 6276
       }
     },
     {
@@ -1065,16 +1025,16 @@
       "decision_status": "sealed",
       "authority": "user_rule",
       "surface_identity_mode": "exact_pointed_source_form",
-      "raw": "גיכ\"ק",
+      "raw": "וסצר\"ש",
       "recognition_rule": "internal_quote",
       "source_artifact_id": "sy.sealed-internal-quote-word-units",
       "source_unit_id": "internal-quote-unit.019",
-      "corpus_fragment_id": "corpus-fragment.0102",
-      "source_node_id": "jsx.00316",
-      "reading_unit_id": "reading-unit.0109",
+      "corpus_fragment_id": "corpus-fragment.0097",
+      "source_node_id": "jsx.00303",
+      "reading_unit_id": "reading-unit.0106",
       "source_code_unit_range": {
-        "start": 6430,
-        "end": 6435
+        "start": 6339,
+        "end": 6345
       }
     },
     {
@@ -1084,16 +1044,16 @@
       "decision_status": "sealed",
       "authority": "user_rule",
       "surface_identity_mode": "exact_pointed_source_form",
-      "raw": "דטלנ\"ת",
+      "raw": "ברל\"א",
       "recognition_rule": "internal_quote",
       "source_artifact_id": "sy.sealed-internal-quote-word-units",
       "source_unit_id": "internal-quote-unit.020",
-      "corpus_fragment_id": "corpus-fragment.0103",
-      "source_node_id": "jsx.00318",
+      "corpus_fragment_id": "corpus-fragment.0100",
+      "source_node_id": "jsx.00310",
       "reading_unit_id": "reading-unit.0110",
       "source_code_unit_range": {
-        "start": 6495,
-        "end": 6501
+        "start": 6516,
+        "end": 6521
       }
     },
     {
@@ -1103,16 +1063,16 @@
       "decision_status": "sealed",
       "authority": "user_rule",
       "surface_identity_mode": "exact_pointed_source_form",
-      "raw": "וסצר\"ש",
+      "raw": "אָלֶ\"ף",
       "recognition_rule": "internal_quote",
       "source_artifact_id": "sy.sealed-internal-quote-word-units",
       "source_unit_id": "internal-quote-unit.021",
-      "corpus_fragment_id": "corpus-fragment.0104",
-      "source_node_id": "jsx.00320",
-      "reading_unit_id": "reading-unit.0111",
+      "corpus_fragment_id": "corpus-fragment.0105",
+      "source_node_id": "jsx.00321",
+      "reading_unit_id": "reading-unit.0116",
       "source_code_unit_range": {
-        "start": 6564,
-        "end": 6570
+        "start": 6776,
+        "end": 6782
       }
     },
     {
@@ -1122,16 +1082,16 @@
       "decision_status": "sealed",
       "authority": "user_rule",
       "surface_identity_mode": "exact_pointed_source_form",
-      "raw": "ברל\"א",
+      "raw": "אָלֶ\"ף",
       "recognition_rule": "internal_quote",
       "source_artifact_id": "sy.sealed-internal-quote-word-units",
       "source_unit_id": "internal-quote-unit.022",
-      "corpus_fragment_id": "corpus-fragment.0108",
-      "source_node_id": "jsx.00330",
+      "corpus_fragment_id": "corpus-fragment.0106",
+      "source_node_id": "jsx.00323",
       "reading_unit_id": "reading-unit.0117",
       "source_code_unit_range": {
-        "start": 6766,
-        "end": 6771
+        "start": 6824,
+        "end": 6830
       }
     },
     {
@@ -1141,16 +1101,16 @@
       "decision_status": "sealed",
       "authority": "user_rule",
       "surface_identity_mode": "exact_pointed_source_form",
-      "raw": "אָלֶ\"ף",
+      "raw": "בֵּי\"ת",
       "recognition_rule": "internal_quote",
       "source_artifact_id": "sy.sealed-internal-quote-word-units",
       "source_unit_id": "internal-quote-unit.023",
-      "corpus_fragment_id": "corpus-fragment.0113",
-      "source_node_id": "jsx.00341",
-      "reading_unit_id": "reading-unit.0123",
+      "corpus_fragment_id": "corpus-fragment.0107",
+      "source_node_id": "jsx.00325",
+      "reading_unit_id": "reading-unit.0118",
       "source_code_unit_range": {
-        "start": 7026,
-        "end": 7032
+        "start": 6848,
+        "end": 6854
       }
     },
     {
@@ -1160,16 +1120,16 @@
       "decision_status": "sealed",
       "authority": "user_rule",
       "surface_identity_mode": "exact_pointed_source_form",
-      "raw": "אָלֶ\"ף",
+      "raw": "בֵּי\"ת",
       "recognition_rule": "internal_quote",
       "source_artifact_id": "sy.sealed-internal-quote-word-units",
       "source_unit_id": "internal-quote-unit.024",
-      "corpus_fragment_id": "corpus-fragment.0114",
-      "source_node_id": "jsx.00343",
-      "reading_unit_id": "reading-unit.0124",
+      "corpus_fragment_id": "corpus-fragment.0108",
+      "source_node_id": "jsx.00327",
+      "reading_unit_id": "reading-unit.0119",
       "source_code_unit_range": {
-        "start": 7074,
-        "end": 7080
+        "start": 6896,
+        "end": 6902
       }
     },
     {
@@ -1179,16 +1139,16 @@
       "decision_status": "sealed",
       "authority": "user_rule",
       "surface_identity_mode": "exact_pointed_source_form",
-      "raw": "בֵּי\"ת",
+      "raw": "אמ\"ש",
       "recognition_rule": "internal_quote",
       "source_artifact_id": "sy.sealed-internal-quote-word-units",
       "source_unit_id": "internal-quote-unit.025",
-      "corpus_fragment_id": "corpus-fragment.0115",
-      "source_node_id": "jsx.00345",
-      "reading_unit_id": "reading-unit.0125",
+      "corpus_fragment_id": "corpus-fragment.0122",
+      "source_node_id": "jsx.00364",
+      "reading_unit_id": "reading-unit.0134",
       "source_code_unit_range": {
-        "start": 7098,
-        "end": 7104
+        "start": 7564,
+        "end": 7568
       }
     },
     {
@@ -1198,16 +1158,16 @@
       "decision_status": "sealed",
       "authority": "user_rule",
       "surface_identity_mode": "exact_pointed_source_form",
-      "raw": "בֵּי\"ת",
-      "recognition_rule": "internal_quote",
-      "source_artifact_id": "sy.sealed-internal-quote-word-units",
-      "source_unit_id": "internal-quote-unit.026",
-      "corpus_fragment_id": "corpus-fragment.0116",
-      "source_node_id": "jsx.00347",
-      "reading_unit_id": "reading-unit.0126",
+      "raw": "מַכְרִיעַ-בֵּינְתַיִם",
+      "recognition_rule": "hyphen",
+      "source_artifact_id": "sy.sealed-hyphen-word-units",
+      "source_unit_id": "hyphen-unit.005",
+      "corpus_fragment_id": "corpus-fragment.0127",
+      "source_node_id": "jsx.00374",
+      "reading_unit_id": "reading-unit.0139",
       "source_code_unit_range": {
-        "start": 7146,
-        "end": 7152
+        "start": 7697,
+        "end": 7718
       }
     },
     {
@@ -1220,13 +1180,13 @@
       "raw": "אמ\"ש",
       "recognition_rule": "internal_quote",
       "source_artifact_id": "sy.sealed-internal-quote-word-units",
-      "source_unit_id": "internal-quote-unit.027",
-      "corpus_fragment_id": "corpus-fragment.0130",
-      "source_node_id": "jsx.00384",
+      "source_unit_id": "internal-quote-unit.026",
+      "corpus_fragment_id": "corpus-fragment.0128",
+      "source_node_id": "jsx.00377",
       "reading_unit_id": "reading-unit.0141",
       "source_code_unit_range": {
-        "start": 7814,
-        "end": 7818
+        "start": 7758,
+        "end": 7762
       }
     },
     {
@@ -1236,16 +1196,16 @@
       "decision_status": "sealed",
       "authority": "user_rule",
       "surface_identity_mode": "exact_pointed_source_form",
-      "raw": "מַכְרִיעַ-בֵּינְתַיִם",
-      "recognition_rule": "hyphen",
-      "source_artifact_id": "sy.sealed-hyphen-word-units",
-      "source_unit_id": "hyphen-unit.005",
+      "raw": "אמ\"ש",
+      "recognition_rule": "internal_quote",
+      "source_artifact_id": "sy.sealed-internal-quote-word-units",
+      "source_unit_id": "internal-quote-unit.027",
       "corpus_fragment_id": "corpus-fragment.0135",
-      "source_node_id": "jsx.00394",
-      "reading_unit_id": "reading-unit.0146",
+      "source_node_id": "jsx.00392",
+      "reading_unit_id": "reading-unit.0149",
       "source_code_unit_range": {
-        "start": 7947,
-        "end": 7968
+        "start": 8033,
+        "end": 8037
       }
     },
     {
@@ -1259,12 +1219,12 @@
       "recognition_rule": "internal_quote",
       "source_artifact_id": "sy.sealed-internal-quote-word-units",
       "source_unit_id": "internal-quote-unit.028",
-      "corpus_fragment_id": "corpus-fragment.0136",
-      "source_node_id": "jsx.00397",
-      "reading_unit_id": "reading-unit.0148",
+      "corpus_fragment_id": "corpus-fragment.0139",
+      "source_node_id": "jsx.00401",
+      "reading_unit_id": "reading-unit.0154",
       "source_code_unit_range": {
-        "start": 8008,
-        "end": 8012
+        "start": 8183,
+        "end": 8187
       }
     },
     {
@@ -1278,12 +1238,12 @@
       "recognition_rule": "internal_quote",
       "source_artifact_id": "sy.sealed-internal-quote-word-units",
       "source_unit_id": "internal-quote-unit.029",
-      "corpus_fragment_id": "corpus-fragment.0143",
-      "source_node_id": "jsx.00412",
-      "reading_unit_id": "reading-unit.0156",
+      "corpus_fragment_id": "corpus-fragment.0145",
+      "source_node_id": "jsx.00414",
+      "reading_unit_id": "reading-unit.0161",
       "source_code_unit_range": {
-        "start": 8283,
-        "end": 8287
+        "start": 8447,
+        "end": 8451
       }
     },
     {
@@ -1297,12 +1257,12 @@
       "recognition_rule": "internal_quote",
       "source_artifact_id": "sy.sealed-internal-quote-word-units",
       "source_unit_id": "internal-quote-unit.030",
-      "corpus_fragment_id": "corpus-fragment.0147",
-      "source_node_id": "jsx.00421",
-      "reading_unit_id": "reading-unit.0161",
+      "corpus_fragment_id": "corpus-fragment.0151",
+      "source_node_id": "jsx.00426",
+      "reading_unit_id": "reading-unit.0167",
       "source_code_unit_range": {
-        "start": 8433,
-        "end": 8437
+        "start": 8667,
+        "end": 8671
       }
     },
     {
@@ -1316,12 +1276,12 @@
       "recognition_rule": "internal_quote",
       "source_artifact_id": "sy.sealed-internal-quote-word-units",
       "source_unit_id": "internal-quote-unit.031",
-      "corpus_fragment_id": "corpus-fragment.0153",
-      "source_node_id": "jsx.00434",
-      "reading_unit_id": "reading-unit.0168",
+      "corpus_fragment_id": "corpus-fragment.0157",
+      "source_node_id": "jsx.00439",
+      "reading_unit_id": "reading-unit.0174",
       "source_code_unit_range": {
-        "start": 8697,
-        "end": 8701
+        "start": 8916,
+        "end": 8920
       }
     },
     {
@@ -1331,16 +1291,16 @@
       "decision_status": "sealed",
       "authority": "user_rule",
       "surface_identity_mode": "exact_pointed_source_form",
-      "raw": "אמ\"ש",
+      "raw": "אָלֶ\"ף",
       "recognition_rule": "internal_quote",
       "source_artifact_id": "sy.sealed-internal-quote-word-units",
       "source_unit_id": "internal-quote-unit.032",
-      "corpus_fragment_id": "corpus-fragment.0159",
-      "source_node_id": "jsx.00446",
-      "reading_unit_id": "reading-unit.0174",
+      "corpus_fragment_id": "corpus-fragment.0163",
+      "source_node_id": "jsx.00452",
+      "reading_unit_id": "reading-unit.0181",
       "source_code_unit_range": {
-        "start": 8917,
-        "end": 8921
+        "start": 9180,
+        "end": 9186
       }
     },
     {
@@ -1350,16 +1310,16 @@
       "decision_status": "sealed",
       "authority": "user_rule",
       "surface_identity_mode": "exact_pointed_source_form",
-      "raw": "אמ\"ש",
+      "raw": "באמ\"ש",
       "recognition_rule": "internal_quote",
       "source_artifact_id": "sy.sealed-internal-quote-word-units",
       "source_unit_id": "internal-quote-unit.033",
-      "corpus_fragment_id": "corpus-fragment.0165",
-      "source_node_id": "jsx.00459",
+      "corpus_fragment_id": "corpus-fragment.0163",
+      "source_node_id": "jsx.00452",
       "reading_unit_id": "reading-unit.0181",
       "source_code_unit_range": {
-        "start": 9166,
-        "end": 9170
+        "start": 9315,
+        "end": 9320
       }
     },
     {
@@ -1369,16 +1329,16 @@
       "decision_status": "sealed",
       "authority": "user_rule",
       "surface_identity_mode": "exact_pointed_source_form",
-      "raw": "אָלֶ\"ף",
+      "raw": "באש\"ם",
       "recognition_rule": "internal_quote",
       "source_artifact_id": "sy.sealed-internal-quote-word-units",
       "source_unit_id": "internal-quote-unit.034",
-      "corpus_fragment_id": "corpus-fragment.0171",
-      "source_node_id": "jsx.00472",
-      "reading_unit_id": "reading-unit.0188",
+      "corpus_fragment_id": "corpus-fragment.0163",
+      "source_node_id": "jsx.00452",
+      "reading_unit_id": "reading-unit.0181",
       "source_code_unit_range": {
-        "start": 9430,
-        "end": 9436
+        "start": 9331,
+        "end": 9336
       }
     },
     {
@@ -1388,16 +1348,16 @@
       "decision_status": "sealed",
       "authority": "user_rule",
       "surface_identity_mode": "exact_pointed_source_form",
-      "raw": "באמ\"ש",
+      "raw": "מֵ\"ם",
       "recognition_rule": "internal_quote",
       "source_artifact_id": "sy.sealed-internal-quote-word-units",
       "source_unit_id": "internal-quote-unit.035",
-      "corpus_fragment_id": "corpus-fragment.0171",
-      "source_node_id": "jsx.00472",
-      "reading_unit_id": "reading-unit.0188",
+      "corpus_fragment_id": "corpus-fragment.0164",
+      "source_node_id": "jsx.00454",
+      "reading_unit_id": "reading-unit.0182",
       "source_code_unit_range": {
-        "start": 9565,
-        "end": 9570
+        "start": 9369,
+        "end": 9373
       }
     },
     {
@@ -1407,16 +1367,16 @@
       "decision_status": "sealed",
       "authority": "user_rule",
       "surface_identity_mode": "exact_pointed_source_form",
-      "raw": "באש\"ם",
+      "raw": "במא\"ש",
       "recognition_rule": "internal_quote",
       "source_artifact_id": "sy.sealed-internal-quote-word-units",
       "source_unit_id": "internal-quote-unit.036",
-      "corpus_fragment_id": "corpus-fragment.0171",
-      "source_node_id": "jsx.00472",
-      "reading_unit_id": "reading-unit.0188",
+      "corpus_fragment_id": "corpus-fragment.0164",
+      "source_node_id": "jsx.00454",
+      "reading_unit_id": "reading-unit.0182",
       "source_code_unit_range": {
-        "start": 9581,
-        "end": 9586
+        "start": 9515,
+        "end": 9520
       }
     },
     {
@@ -1426,16 +1386,16 @@
       "decision_status": "sealed",
       "authority": "user_rule",
       "surface_identity_mode": "exact_pointed_source_form",
-      "raw": "מֵ\"ם",
+      "raw": "במש\"א",
       "recognition_rule": "internal_quote",
       "source_artifact_id": "sy.sealed-internal-quote-word-units",
       "source_unit_id": "internal-quote-unit.037",
-      "corpus_fragment_id": "corpus-fragment.0172",
-      "source_node_id": "jsx.00474",
-      "reading_unit_id": "reading-unit.0189",
+      "corpus_fragment_id": "corpus-fragment.0164",
+      "source_node_id": "jsx.00454",
+      "reading_unit_id": "reading-unit.0182",
       "source_code_unit_range": {
-        "start": 9619,
-        "end": 9623
+        "start": 9531,
+        "end": 9536
       }
     },
     {
@@ -1445,16 +1405,16 @@
       "decision_status": "sealed",
       "authority": "user_rule",
       "surface_identity_mode": "exact_pointed_source_form",
-      "raw": "במא\"ש",
+      "raw": "שִׁי\"ן",
       "recognition_rule": "internal_quote",
       "source_artifact_id": "sy.sealed-internal-quote-word-units",
       "source_unit_id": "internal-quote-unit.038",
-      "corpus_fragment_id": "corpus-fragment.0172",
-      "source_node_id": "jsx.00474",
-      "reading_unit_id": "reading-unit.0189",
+      "corpus_fragment_id": "corpus-fragment.0165",
+      "source_node_id": "jsx.00456",
+      "reading_unit_id": "reading-unit.0183",
       "source_code_unit_range": {
-        "start": 9765,
-        "end": 9770
+        "start": 9569,
+        "end": 9575
       }
     },
     {
@@ -1464,16 +1424,16 @@
       "decision_status": "sealed",
       "authority": "user_rule",
       "surface_identity_mode": "exact_pointed_source_form",
-      "raw": "במש\"א",
+      "raw": "בשא\"מ",
       "recognition_rule": "internal_quote",
       "source_artifact_id": "sy.sealed-internal-quote-word-units",
       "source_unit_id": "internal-quote-unit.039",
-      "corpus_fragment_id": "corpus-fragment.0172",
-      "source_node_id": "jsx.00474",
-      "reading_unit_id": "reading-unit.0189",
+      "corpus_fragment_id": "corpus-fragment.0165",
+      "source_node_id": "jsx.00456",
+      "reading_unit_id": "reading-unit.0183",
       "source_code_unit_range": {
-        "start": 9781,
-        "end": 9786
+        "start": 9718,
+        "end": 9723
       }
     },
     {
@@ -1483,16 +1443,16 @@
       "decision_status": "sealed",
       "authority": "user_rule",
       "surface_identity_mode": "exact_pointed_source_form",
-      "raw": "שִׁי\"ן",
+      "raw": "בשמ\"א",
       "recognition_rule": "internal_quote",
       "source_artifact_id": "sy.sealed-internal-quote-word-units",
       "source_unit_id": "internal-quote-unit.040",
-      "corpus_fragment_id": "corpus-fragment.0173",
-      "source_node_id": "jsx.00476",
-      "reading_unit_id": "reading-unit.0190",
+      "corpus_fragment_id": "corpus-fragment.0165",
+      "source_node_id": "jsx.00456",
+      "reading_unit_id": "reading-unit.0183",
       "source_code_unit_range": {
-        "start": 9819,
-        "end": 9825
+        "start": 9734,
+        "end": 9739
       }
     },
     {
@@ -1502,16 +1462,16 @@
       "decision_status": "sealed",
       "authority": "user_rule",
       "surface_identity_mode": "exact_pointed_source_form",
-      "raw": "בשא\"מ",
+      "raw": "בג\"ד",
       "recognition_rule": "internal_quote",
       "source_artifact_id": "sy.sealed-internal-quote-word-units",
       "source_unit_id": "internal-quote-unit.041",
-      "corpus_fragment_id": "corpus-fragment.0174",
-      "source_node_id": "jsx.00478",
-      "reading_unit_id": "reading-unit.0190",
+      "corpus_fragment_id": "corpus-fragment.0166",
+      "source_node_id": "jsx.00466",
+      "reading_unit_id": "reading-unit.0184",
       "source_code_unit_range": {
-        "start": 9976,
-        "end": 9981
+        "start": 9839,
+        "end": 9843
       }
     },
     {
@@ -1521,16 +1481,16 @@
       "decision_status": "sealed",
       "authority": "user_rule",
       "surface_identity_mode": "exact_pointed_source_form",
-      "raw": "בשמ\"א",
+      "raw": "כפר\"ת",
       "recognition_rule": "internal_quote",
       "source_artifact_id": "sy.sealed-internal-quote-word-units",
       "source_unit_id": "internal-quote-unit.042",
-      "corpus_fragment_id": "corpus-fragment.0174",
-      "source_node_id": "jsx.00478",
-      "reading_unit_id": "reading-unit.0190",
+      "corpus_fragment_id": "corpus-fragment.0166",
+      "source_node_id": "jsx.00466",
+      "reading_unit_id": "reading-unit.0184",
       "source_code_unit_range": {
-        "start": 9992,
-        "end": 9997
+        "start": 9844,
+        "end": 9849
       }
     },
     {
@@ -1540,16 +1500,16 @@
       "decision_status": "sealed",
       "authority": "user_rule",
       "surface_identity_mode": "exact_pointed_source_form",
-      "raw": "כ\"ה",
+      "raw": "ב\"בּ",
       "recognition_rule": "internal_quote",
       "source_artifact_id": "sy.sealed-internal-quote-word-units",
       "source_unit_id": "internal-quote-unit.043",
-      "corpus_fragment_id": "corpus-fragment.0175",
-      "source_node_id": "jsx.00480",
-      "reading_unit_id": "reading-unit.0190",
+      "corpus_fragment_id": "corpus-fragment.0171",
+      "source_node_id": "jsx.00476",
+      "reading_unit_id": "reading-unit.0189",
       "source_code_unit_range": {
-        "start": 10007,
-        "end": 10010
+        "start": 10078,
+        "end": 10082
       }
     },
     {
@@ -1559,16 +1519,16 @@
       "decision_status": "sealed",
       "authority": "user_rule",
       "surface_identity_mode": "exact_pointed_source_form",
-      "raw": "בנ\"י",
+      "raw": "ג\"גּ",
       "recognition_rule": "internal_quote",
       "source_artifact_id": "sy.sealed-internal-quote-word-units",
       "source_unit_id": "internal-quote-unit.044",
-      "corpus_fragment_id": "corpus-fragment.0175",
-      "source_node_id": "jsx.00480",
-      "reading_unit_id": "reading-unit.0190",
+      "corpus_fragment_id": "corpus-fragment.0171",
+      "source_node_id": "jsx.00476",
+      "reading_unit_id": "reading-unit.0189",
       "source_code_unit_range": {
-        "start": 10011,
-        "end": 10015
+        "start": 10083,
+        "end": 10087
       }
     },
     {
@@ -1578,16 +1538,16 @@
       "decision_status": "sealed",
       "authority": "user_rule",
       "surface_identity_mode": "exact_pointed_source_form",
-      "raw": "בג\"ד",
+      "raw": "ד\"דּ",
       "recognition_rule": "internal_quote",
       "source_artifact_id": "sy.sealed-internal-quote-word-units",
       "source_unit_id": "internal-quote-unit.045",
-      "corpus_fragment_id": "corpus-fragment.0178",
-      "source_node_id": "jsx.00494",
-      "reading_unit_id": "reading-unit.0191",
+      "corpus_fragment_id": "corpus-fragment.0171",
+      "source_node_id": "jsx.00476",
+      "reading_unit_id": "reading-unit.0189",
       "source_code_unit_range": {
-        "start": 10133,
-        "end": 10137
+        "start": 10088,
+        "end": 10092
       }
     },
     {
@@ -1597,16 +1557,16 @@
       "decision_status": "sealed",
       "authority": "user_rule",
       "surface_identity_mode": "exact_pointed_source_form",
-      "raw": "כפר\"ת",
+      "raw": "כ\"כּ",
       "recognition_rule": "internal_quote",
       "source_artifact_id": "sy.sealed-internal-quote-word-units",
       "source_unit_id": "internal-quote-unit.046",
-      "corpus_fragment_id": "corpus-fragment.0178",
-      "source_node_id": "jsx.00494",
-      "reading_unit_id": "reading-unit.0191",
+      "corpus_fragment_id": "corpus-fragment.0171",
+      "source_node_id": "jsx.00476",
+      "reading_unit_id": "reading-unit.0189",
       "source_code_unit_range": {
-        "start": 10138,
-        "end": 10143
+        "start": 10093,
+        "end": 10097
       }
     },
     {
@@ -1616,16 +1576,16 @@
       "decision_status": "sealed",
       "authority": "user_rule",
       "surface_identity_mode": "exact_pointed_source_form",
-      "raw": "ב\"בּ",
+      "raw": "פ\"פּ",
       "recognition_rule": "internal_quote",
       "source_artifact_id": "sy.sealed-internal-quote-word-units",
       "source_unit_id": "internal-quote-unit.047",
-      "corpus_fragment_id": "corpus-fragment.0183",
-      "source_node_id": "jsx.00504",
-      "reading_unit_id": "reading-unit.0196",
+      "corpus_fragment_id": "corpus-fragment.0171",
+      "source_node_id": "jsx.00476",
+      "reading_unit_id": "reading-unit.0189",
       "source_code_unit_range": {
-        "start": 10372,
-        "end": 10376
+        "start": 10098,
+        "end": 10102
       }
     },
     {
@@ -1635,16 +1595,16 @@
       "decision_status": "sealed",
       "authority": "user_rule",
       "surface_identity_mode": "exact_pointed_source_form",
-      "raw": "ג\"גּ",
+      "raw": "ר\"רּ",
       "recognition_rule": "internal_quote",
       "source_artifact_id": "sy.sealed-internal-quote-word-units",
       "source_unit_id": "internal-quote-unit.048",
-      "corpus_fragment_id": "corpus-fragment.0183",
-      "source_node_id": "jsx.00504",
-      "reading_unit_id": "reading-unit.0196",
+      "corpus_fragment_id": "corpus-fragment.0171",
+      "source_node_id": "jsx.00476",
+      "reading_unit_id": "reading-unit.0189",
       "source_code_unit_range": {
-        "start": 10377,
-        "end": 10381
+        "start": 10103,
+        "end": 10107
       }
     },
     {
@@ -1654,16 +1614,16 @@
       "decision_status": "sealed",
       "authority": "user_rule",
       "surface_identity_mode": "exact_pointed_source_form",
-      "raw": "ד\"דּ",
+      "raw": "ת\"תּ",
       "recognition_rule": "internal_quote",
       "source_artifact_id": "sy.sealed-internal-quote-word-units",
       "source_unit_id": "internal-quote-unit.049",
-      "corpus_fragment_id": "corpus-fragment.0183",
-      "source_node_id": "jsx.00504",
-      "reading_unit_id": "reading-unit.0196",
+      "corpus_fragment_id": "corpus-fragment.0171",
+      "source_node_id": "jsx.00476",
+      "reading_unit_id": "reading-unit.0189",
       "source_code_unit_range": {
-        "start": 10382,
-        "end": 10386
+        "start": 10108,
+        "end": 10112
       }
     },
     {
@@ -1673,16 +1633,16 @@
       "decision_status": "sealed",
       "authority": "user_rule",
       "surface_identity_mode": "exact_pointed_source_form",
-      "raw": "כ\"כּ",
+      "raw": "בג\"ד",
       "recognition_rule": "internal_quote",
       "source_artifact_id": "sy.sealed-internal-quote-word-units",
       "source_unit_id": "internal-quote-unit.050",
-      "corpus_fragment_id": "corpus-fragment.0183",
-      "source_node_id": "jsx.00504",
-      "reading_unit_id": "reading-unit.0196",
+      "corpus_fragment_id": "corpus-fragment.0182",
+      "source_node_id": "jsx.00499",
+      "reading_unit_id": "reading-unit.0201",
       "source_code_unit_range": {
-        "start": 10387,
-        "end": 10391
+        "start": 10569,
+        "end": 10573
       }
     },
     {
@@ -1692,16 +1652,16 @@
       "decision_status": "sealed",
       "authority": "user_rule",
       "surface_identity_mode": "exact_pointed_source_form",
-      "raw": "פ\"פּ",
+      "raw": "כפר\"ת",
       "recognition_rule": "internal_quote",
       "source_artifact_id": "sy.sealed-internal-quote-word-units",
       "source_unit_id": "internal-quote-unit.051",
-      "corpus_fragment_id": "corpus-fragment.0183",
-      "source_node_id": "jsx.00504",
-      "reading_unit_id": "reading-unit.0196",
+      "corpus_fragment_id": "corpus-fragment.0182",
+      "source_node_id": "jsx.00499",
+      "reading_unit_id": "reading-unit.0201",
       "source_code_unit_range": {
-        "start": 10392,
-        "end": 10396
+        "start": 10574,
+        "end": 10579
       }
     },
     {
@@ -1711,16 +1671,16 @@
       "decision_status": "sealed",
       "authority": "user_rule",
       "surface_identity_mode": "exact_pointed_source_form",
-      "raw": "ר\"רּ",
+      "raw": "בג\"ד",
       "recognition_rule": "internal_quote",
       "source_artifact_id": "sy.sealed-internal-quote-word-units",
       "source_unit_id": "internal-quote-unit.052",
-      "corpus_fragment_id": "corpus-fragment.0183",
-      "source_node_id": "jsx.00504",
-      "reading_unit_id": "reading-unit.0196",
+      "corpus_fragment_id": "corpus-fragment.0187",
+      "source_node_id": "jsx.00510",
+      "reading_unit_id": "reading-unit.0207",
       "source_code_unit_range": {
-        "start": 10397,
-        "end": 10401
+        "start": 10835,
+        "end": 10839
       }
     },
     {
@@ -1730,16 +1690,16 @@
       "decision_status": "sealed",
       "authority": "user_rule",
       "surface_identity_mode": "exact_pointed_source_form",
-      "raw": "ת\"תּ",
+      "raw": "כפר\"ת",
       "recognition_rule": "internal_quote",
       "source_artifact_id": "sy.sealed-internal-quote-word-units",
       "source_unit_id": "internal-quote-unit.053",
-      "corpus_fragment_id": "corpus-fragment.0183",
-      "source_node_id": "jsx.00504",
-      "reading_unit_id": "reading-unit.0196",
+      "corpus_fragment_id": "corpus-fragment.0187",
+      "source_node_id": "jsx.00510",
+      "reading_unit_id": "reading-unit.0207",
       "source_code_unit_range": {
-        "start": 10402,
-        "end": 10406
+        "start": 10840,
+        "end": 10845
       }
     },
     {
@@ -1754,11 +1714,11 @@
       "source_artifact_id": "sy.sealed-internal-quote-word-units",
       "source_unit_id": "internal-quote-unit.054",
       "corpus_fragment_id": "corpus-fragment.0194",
-      "source_node_id": "jsx.00527",
-      "reading_unit_id": "reading-unit.0208",
+      "source_node_id": "jsx.00525",
+      "reading_unit_id": "reading-unit.0215",
       "source_code_unit_range": {
-        "start": 10863,
-        "end": 10867
+        "start": 11150,
+        "end": 11154
       }
     },
     {
@@ -1773,11 +1733,11 @@
       "source_artifact_id": "sy.sealed-internal-quote-word-units",
       "source_unit_id": "internal-quote-unit.055",
       "corpus_fragment_id": "corpus-fragment.0194",
-      "source_node_id": "jsx.00527",
-      "reading_unit_id": "reading-unit.0208",
+      "source_node_id": "jsx.00525",
+      "reading_unit_id": "reading-unit.0215",
       "source_code_unit_range": {
-        "start": 10868,
-        "end": 10873
+        "start": 11155,
+        "end": 11160
       }
     },
     {
@@ -1787,16 +1747,16 @@
       "decision_status": "sealed",
       "authority": "user_rule",
       "surface_identity_mode": "exact_pointed_source_form",
-      "raw": "בג\"ד",
+      "raw": "ה\"ו",
       "recognition_rule": "internal_quote",
       "source_artifact_id": "sy.sealed-internal-quote-word-units",
       "source_unit_id": "internal-quote-unit.056",
-      "corpus_fragment_id": "corpus-fragment.0199",
-      "source_node_id": "jsx.00538",
-      "reading_unit_id": "reading-unit.0214",
+      "corpus_fragment_id": "corpus-fragment.0229",
+      "source_node_id": "jsx.00606",
+      "reading_unit_id": "reading-unit.0253",
       "source_code_unit_range": {
-        "start": 11129,
-        "end": 11133
+        "start": 13709,
+        "end": 13712
       }
     },
     {
@@ -1806,16 +1766,16 @@
       "decision_status": "sealed",
       "authority": "user_rule",
       "surface_identity_mode": "exact_pointed_source_form",
-      "raw": "כפר\"ת",
+      "raw": "ז\"ח",
       "recognition_rule": "internal_quote",
       "source_artifact_id": "sy.sealed-internal-quote-word-units",
       "source_unit_id": "internal-quote-unit.057",
-      "corpus_fragment_id": "corpus-fragment.0199",
-      "source_node_id": "jsx.00538",
-      "reading_unit_id": "reading-unit.0214",
+      "corpus_fragment_id": "corpus-fragment.0229",
+      "source_node_id": "jsx.00606",
+      "reading_unit_id": "reading-unit.0253",
       "source_code_unit_range": {
-        "start": 11134,
-        "end": 11139
+        "start": 13713,
+        "end": 13716
       }
     },
     {
@@ -1825,16 +1785,16 @@
       "decision_status": "sealed",
       "authority": "user_rule",
       "surface_identity_mode": "exact_pointed_source_form",
-      "raw": "בג\"ד",
+      "raw": "ט\"י",
       "recognition_rule": "internal_quote",
       "source_artifact_id": "sy.sealed-internal-quote-word-units",
       "source_unit_id": "internal-quote-unit.058",
-      "corpus_fragment_id": "corpus-fragment.0206",
-      "source_node_id": "jsx.00553",
-      "reading_unit_id": "reading-unit.0222",
+      "corpus_fragment_id": "corpus-fragment.0229",
+      "source_node_id": "jsx.00606",
+      "reading_unit_id": "reading-unit.0253",
       "source_code_unit_range": {
-        "start": 11444,
-        "end": 11448
+        "start": 13717,
+        "end": 13720
       }
     },
     {
@@ -1844,16 +1804,16 @@
       "decision_status": "sealed",
       "authority": "user_rule",
       "surface_identity_mode": "exact_pointed_source_form",
-      "raw": "כפר\"ת",
+      "raw": "ל\"נ",
       "recognition_rule": "internal_quote",
       "source_artifact_id": "sy.sealed-internal-quote-word-units",
       "source_unit_id": "internal-quote-unit.059",
-      "corpus_fragment_id": "corpus-fragment.0206",
-      "source_node_id": "jsx.00553",
-      "reading_unit_id": "reading-unit.0222",
+      "corpus_fragment_id": "corpus-fragment.0229",
+      "source_node_id": "jsx.00606",
+      "reading_unit_id": "reading-unit.0253",
       "source_code_unit_range": {
-        "start": 11449,
-        "end": 11454
+        "start": 13721,
+        "end": 13724
       }
     },
     {
@@ -1863,16 +1823,16 @@
       "decision_status": "sealed",
       "authority": "user_rule",
       "surface_identity_mode": "exact_pointed_source_form",
-      "raw": "ה\"ו",
+      "raw": "ס\"ע",
       "recognition_rule": "internal_quote",
       "source_artifact_id": "sy.sealed-internal-quote-word-units",
       "source_unit_id": "internal-quote-unit.060",
-      "corpus_fragment_id": "corpus-fragment.0241",
-      "source_node_id": "jsx.00634",
-      "reading_unit_id": "reading-unit.0260",
+      "corpus_fragment_id": "corpus-fragment.0229",
+      "source_node_id": "jsx.00606",
+      "reading_unit_id": "reading-unit.0253",
       "source_code_unit_range": {
-        "start": 14003,
-        "end": 14006
+        "start": 13725,
+        "end": 13728
       }
     },
     {
@@ -1882,16 +1842,16 @@
       "decision_status": "sealed",
       "authority": "user_rule",
       "surface_identity_mode": "exact_pointed_source_form",
-      "raw": "ז\"ח",
+      "raw": "צ\"ק",
       "recognition_rule": "internal_quote",
       "source_artifact_id": "sy.sealed-internal-quote-word-units",
       "source_unit_id": "internal-quote-unit.061",
-      "corpus_fragment_id": "corpus-fragment.0241",
-      "source_node_id": "jsx.00634",
-      "reading_unit_id": "reading-unit.0260",
+      "corpus_fragment_id": "corpus-fragment.0229",
+      "source_node_id": "jsx.00606",
+      "reading_unit_id": "reading-unit.0253",
       "source_code_unit_range": {
-        "start": 14007,
-        "end": 14010
+        "start": 13729,
+        "end": 13732
       }
     },
     {
@@ -1901,16 +1861,16 @@
       "decision_status": "sealed",
       "authority": "user_rule",
       "surface_identity_mode": "exact_pointed_source_form",
-      "raw": "ט\"י",
+      "raw": "ה\"ו",
       "recognition_rule": "internal_quote",
       "source_artifact_id": "sy.sealed-internal-quote-word-units",
       "source_unit_id": "internal-quote-unit.062",
-      "corpus_fragment_id": "corpus-fragment.0241",
-      "source_node_id": "jsx.00634",
-      "reading_unit_id": "reading-unit.0260",
+      "corpus_fragment_id": "corpus-fragment.0237",
+      "source_node_id": "jsx.00623",
+      "reading_unit_id": "reading-unit.0262",
       "source_code_unit_range": {
-        "start": 14011,
-        "end": 14014
+        "start": 14496,
+        "end": 14499
       }
     },
     {
@@ -1920,16 +1880,16 @@
       "decision_status": "sealed",
       "authority": "user_rule",
       "surface_identity_mode": "exact_pointed_source_form",
-      "raw": "ל\"נ",
+      "raw": "ז\"ח",
       "recognition_rule": "internal_quote",
       "source_artifact_id": "sy.sealed-internal-quote-word-units",
       "source_unit_id": "internal-quote-unit.063",
-      "corpus_fragment_id": "corpus-fragment.0241",
-      "source_node_id": "jsx.00634",
-      "reading_unit_id": "reading-unit.0260",
+      "corpus_fragment_id": "corpus-fragment.0237",
+      "source_node_id": "jsx.00623",
+      "reading_unit_id": "reading-unit.0262",
       "source_code_unit_range": {
-        "start": 14015,
-        "end": 14018
+        "start": 14500,
+        "end": 14503
       }
     },
     {
@@ -1939,16 +1899,16 @@
       "decision_status": "sealed",
       "authority": "user_rule",
       "surface_identity_mode": "exact_pointed_source_form",
-      "raw": "ס\"ע",
+      "raw": "ט\"י",
       "recognition_rule": "internal_quote",
       "source_artifact_id": "sy.sealed-internal-quote-word-units",
       "source_unit_id": "internal-quote-unit.064",
-      "corpus_fragment_id": "corpus-fragment.0241",
-      "source_node_id": "jsx.00634",
-      "reading_unit_id": "reading-unit.0260",
+      "corpus_fragment_id": "corpus-fragment.0237",
+      "source_node_id": "jsx.00623",
+      "reading_unit_id": "reading-unit.0262",
       "source_code_unit_range": {
-        "start": 14019,
-        "end": 14022
+        "start": 14504,
+        "end": 14507
       }
     },
     {
@@ -1958,16 +1918,16 @@
       "decision_status": "sealed",
       "authority": "user_rule",
       "surface_identity_mode": "exact_pointed_source_form",
-      "raw": "צ\"ק",
+      "raw": "ל\"נ",
       "recognition_rule": "internal_quote",
       "source_artifact_id": "sy.sealed-internal-quote-word-units",
       "source_unit_id": "internal-quote-unit.065",
-      "corpus_fragment_id": "corpus-fragment.0241",
-      "source_node_id": "jsx.00634",
-      "reading_unit_id": "reading-unit.0260",
+      "corpus_fragment_id": "corpus-fragment.0237",
+      "source_node_id": "jsx.00623",
+      "reading_unit_id": "reading-unit.0262",
       "source_code_unit_range": {
-        "start": 14023,
-        "end": 14026
+        "start": 14508,
+        "end": 14511
       }
     },
     {
@@ -1977,16 +1937,16 @@
       "decision_status": "sealed",
       "authority": "user_rule",
       "surface_identity_mode": "exact_pointed_source_form",
-      "raw": "ה\"ו",
+      "raw": "ס\"ע",
       "recognition_rule": "internal_quote",
       "source_artifact_id": "sy.sealed-internal-quote-word-units",
       "source_unit_id": "internal-quote-unit.066",
-      "corpus_fragment_id": "corpus-fragment.0249",
-      "source_node_id": "jsx.00651",
-      "reading_unit_id": "reading-unit.0269",
+      "corpus_fragment_id": "corpus-fragment.0237",
+      "source_node_id": "jsx.00623",
+      "reading_unit_id": "reading-unit.0262",
       "source_code_unit_range": {
-        "start": 14790,
-        "end": 14793
+        "start": 14512,
+        "end": 14515
       }
     },
     {
@@ -1996,16 +1956,16 @@
       "decision_status": "sealed",
       "authority": "user_rule",
       "surface_identity_mode": "exact_pointed_source_form",
-      "raw": "ז\"ח",
+      "raw": "צ\"ק",
       "recognition_rule": "internal_quote",
       "source_artifact_id": "sy.sealed-internal-quote-word-units",
       "source_unit_id": "internal-quote-unit.067",
-      "corpus_fragment_id": "corpus-fragment.0249",
-      "source_node_id": "jsx.00651",
-      "reading_unit_id": "reading-unit.0269",
+      "corpus_fragment_id": "corpus-fragment.0237",
+      "source_node_id": "jsx.00623",
+      "reading_unit_id": "reading-unit.0262",
       "source_code_unit_range": {
-        "start": 14794,
-        "end": 14797
+        "start": 14516,
+        "end": 14519
       }
     },
     {
@@ -2015,16 +1975,16 @@
       "decision_status": "sealed",
       "authority": "user_rule",
       "surface_identity_mode": "exact_pointed_source_form",
-      "raw": "ט\"י",
+      "raw": "טש\"ת",
       "recognition_rule": "internal_quote",
       "source_artifact_id": "sy.sealed-internal-quote-word-units",
       "source_unit_id": "internal-quote-unit.068",
-      "corpus_fragment_id": "corpus-fragment.0249",
-      "source_node_id": "jsx.00651",
-      "reading_unit_id": "reading-unit.0269",
+      "corpus_fragment_id": "corpus-fragment.0241",
+      "source_node_id": "jsx.00631",
+      "reading_unit_id": "reading-unit.0266",
       "source_code_unit_range": {
-        "start": 14798,
-        "end": 14801
+        "start": 14681,
+        "end": 14685
       }
     },
     {
@@ -2034,16 +1994,16 @@
       "decision_status": "sealed",
       "authority": "user_rule",
       "surface_identity_mode": "exact_pointed_source_form",
-      "raw": "ל\"נ",
+      "raw": "סא\"ב",
       "recognition_rule": "internal_quote",
       "source_artifact_id": "sy.sealed-internal-quote-word-units",
       "source_unit_id": "internal-quote-unit.069",
-      "corpus_fragment_id": "corpus-fragment.0249",
-      "source_node_id": "jsx.00651",
-      "reading_unit_id": "reading-unit.0269",
+      "corpus_fragment_id": "corpus-fragment.0241",
+      "source_node_id": "jsx.00631",
+      "reading_unit_id": "reading-unit.0266",
       "source_code_unit_range": {
-        "start": 14802,
-        "end": 14805
+        "start": 14686,
+        "end": 14690
       }
     },
     {
@@ -2053,16 +2013,16 @@
       "decision_status": "sealed",
       "authority": "user_rule",
       "surface_identity_mode": "exact_pointed_source_form",
-      "raw": "ס\"ע",
+      "raw": "מע\"ק",
       "recognition_rule": "internal_quote",
       "source_artifact_id": "sy.sealed-internal-quote-word-units",
       "source_unit_id": "internal-quote-unit.070",
-      "corpus_fragment_id": "corpus-fragment.0249",
-      "source_node_id": "jsx.00651",
-      "reading_unit_id": "reading-unit.0269",
+      "corpus_fragment_id": "corpus-fragment.0241",
+      "source_node_id": "jsx.00631",
+      "reading_unit_id": "reading-unit.0266",
       "source_code_unit_range": {
-        "start": 14806,
-        "end": 14809
+        "start": 14691,
+        "end": 14695
       }
     },
     {
@@ -2072,16 +2032,16 @@
       "decision_status": "sealed",
       "authority": "user_rule",
       "surface_identity_mode": "exact_pointed_source_form",
-      "raw": "צ\"ק",
+      "raw": "גד\"ד",
       "recognition_rule": "internal_quote",
       "source_artifact_id": "sy.sealed-internal-quote-word-units",
       "source_unit_id": "internal-quote-unit.071",
-      "corpus_fragment_id": "corpus-fragment.0249",
-      "source_node_id": "jsx.00651",
-      "reading_unit_id": "reading-unit.0269",
+      "corpus_fragment_id": "corpus-fragment.0241",
+      "source_node_id": "jsx.00631",
+      "reading_unit_id": "reading-unit.0266",
       "source_code_unit_range": {
-        "start": 14810,
-        "end": 14813
+        "start": 14696,
+        "end": 14700
       }
     },
     {
@@ -2091,16 +2051,16 @@
       "decision_status": "sealed",
       "authority": "user_rule",
       "surface_identity_mode": "exact_pointed_source_form",
-      "raw": "טש\"ת",
+      "raw": "הקב\"ה",
       "recognition_rule": "internal_quote",
       "source_artifact_id": "sy.sealed-internal-quote-word-units",
       "source_unit_id": "internal-quote-unit.072",
-      "corpus_fragment_id": "corpus-fragment.0253",
-      "source_node_id": "jsx.00659",
-      "reading_unit_id": "reading-unit.0273",
+      "corpus_fragment_id": "corpus-fragment.0265",
+      "source_node_id": "jsx.00684",
+      "reading_unit_id": "reading-unit.0294",
       "source_code_unit_range": {
-        "start": 14975,
-        "end": 14979
+        "start": 17193,
+        "end": 17198
       }
     },
     {
@@ -2110,16 +2070,16 @@
       "decision_status": "sealed",
       "authority": "user_rule",
       "surface_identity_mode": "exact_pointed_source_form",
-      "raw": "סא\"ב",
+      "raw": "נ\"א",
       "recognition_rule": "internal_quote",
       "source_artifact_id": "sy.sealed-internal-quote-word-units",
       "source_unit_id": "internal-quote-unit.073",
-      "corpus_fragment_id": "corpus-fragment.0253",
-      "source_node_id": "jsx.00659",
-      "reading_unit_id": "reading-unit.0273",
+      "corpus_fragment_id": "corpus-fragment.0270",
+      "source_node_id": "jsx.00703",
+      "reading_unit_id": "reading-unit.0300",
       "source_code_unit_range": {
-        "start": 14980,
-        "end": 14984
+        "start": 17525,
+        "end": 17528
       }
     },
     {
@@ -2129,16 +2089,16 @@
       "decision_status": "sealed",
       "authority": "user_rule",
       "surface_identity_mode": "exact_pointed_source_form",
-      "raw": "מע\"ק",
+      "raw": "נ\"א",
       "recognition_rule": "internal_quote",
       "source_artifact_id": "sy.sealed-internal-quote-word-units",
       "source_unit_id": "internal-quote-unit.074",
-      "corpus_fragment_id": "corpus-fragment.0253",
-      "source_node_id": "jsx.00659",
-      "reading_unit_id": "reading-unit.0273",
+      "corpus_fragment_id": "corpus-fragment.0275",
+      "source_node_id": "jsx.00713",
+      "reading_unit_id": "reading-unit.0305",
       "source_code_unit_range": {
-        "start": 14985,
-        "end": 14989
+        "start": 17750,
+        "end": 17753
       }
     },
     {
@@ -2148,16 +2108,16 @@
       "decision_status": "sealed",
       "authority": "user_rule",
       "surface_identity_mode": "exact_pointed_source_form",
-      "raw": "גד\"ד",
-      "recognition_rule": "internal_quote",
-      "source_artifact_id": "sy.sealed-internal-quote-word-units",
-      "source_unit_id": "internal-quote-unit.075",
-      "corpus_fragment_id": "corpus-fragment.0253",
-      "source_node_id": "jsx.00659",
-      "reading_unit_id": "reading-unit.0273",
+      "raw": "מַכְרִיעַ-בֵּינְתַיִם",
+      "recognition_rule": "hyphen",
+      "source_artifact_id": "sy.sealed-hyphen-word-units",
+      "source_unit_id": "hyphen-unit.006",
+      "corpus_fragment_id": "corpus-fragment.0278",
+      "source_node_id": "jsx.00719",
+      "reading_unit_id": "reading-unit.0308",
       "source_code_unit_range": {
-        "start": 14990,
-        "end": 14994
+        "start": 17948,
+        "end": 17969
       }
     },
     {
@@ -2167,16 +2127,16 @@
       "decision_status": "sealed",
       "authority": "user_rule",
       "surface_identity_mode": "exact_pointed_source_form",
-      "raw": "הקב\"ה",
+      "raw": "מֵ\"ם",
       "recognition_rule": "internal_quote",
       "source_artifact_id": "sy.sealed-internal-quote-word-units",
-      "source_unit_id": "internal-quote-unit.076",
-      "corpus_fragment_id": "corpus-fragment.0277",
-      "source_node_id": "jsx.00712",
-      "reading_unit_id": "reading-unit.0301",
+      "source_unit_id": "internal-quote-unit.075",
+      "corpus_fragment_id": "corpus-fragment.0281",
+      "source_node_id": "jsx.00725",
+      "reading_unit_id": "reading-unit.0311",
       "source_code_unit_range": {
-        "start": 17487,
-        "end": 17492
+        "start": 18066,
+        "end": 18070
       }
     },
     {
@@ -2186,16 +2146,16 @@
       "decision_status": "sealed",
       "authority": "user_rule",
       "surface_identity_mode": "exact_pointed_source_form",
-      "raw": "נ\"א",
+      "raw": "שִׁי\"ן",
       "recognition_rule": "internal_quote",
       "source_artifact_id": "sy.sealed-internal-quote-word-units",
-      "source_unit_id": "internal-quote-unit.077",
-      "corpus_fragment_id": "corpus-fragment.0283",
-      "source_node_id": "jsx.00733",
-      "reading_unit_id": "reading-unit.0307",
+      "source_unit_id": "internal-quote-unit.076",
+      "corpus_fragment_id": "corpus-fragment.0282",
+      "source_node_id": "jsx.00727",
+      "reading_unit_id": "reading-unit.0312",
       "source_code_unit_range": {
-        "start": 17827,
-        "end": 17830
+        "start": 18097,
+        "end": 18103
       }
     },
     {
@@ -2205,16 +2165,16 @@
       "decision_status": "sealed",
       "authority": "user_rule",
       "surface_identity_mode": "exact_pointed_source_form",
-      "raw": "נ\"א",
+      "raw": "אָלֶ\"ף",
       "recognition_rule": "internal_quote",
       "source_artifact_id": "sy.sealed-internal-quote-word-units",
-      "source_unit_id": "internal-quote-unit.078",
-      "corpus_fragment_id": "corpus-fragment.0290",
-      "source_node_id": "jsx.00747",
-      "reading_unit_id": "reading-unit.0312",
+      "source_unit_id": "internal-quote-unit.077",
+      "corpus_fragment_id": "corpus-fragment.0283",
+      "source_node_id": "jsx.00729",
+      "reading_unit_id": "reading-unit.0313",
       "source_code_unit_range": {
-        "start": 18071,
-        "end": 18074
+        "start": 18130,
+        "end": 18136
       }
     },
     {
@@ -2227,13 +2187,13 @@
       "raw": "מַכְרִיעַ-בֵּינְתַיִם",
       "recognition_rule": "hyphen",
       "source_artifact_id": "sy.sealed-hyphen-word-units",
-      "source_unit_id": "hyphen-unit.006",
-      "corpus_fragment_id": "corpus-fragment.0294",
-      "source_node_id": "jsx.00755",
-      "reading_unit_id": "reading-unit.0315",
+      "source_unit_id": "hyphen-unit.007",
+      "corpus_fragment_id": "corpus-fragment.0283",
+      "source_node_id": "jsx.00729",
+      "reading_unit_id": "reading-unit.0313",
       "source_code_unit_range": {
-        "start": 18278,
-        "end": 18299
+        "start": 18141,
+        "end": 18162
       }
     },
     {
@@ -2243,16 +2203,16 @@
       "decision_status": "sealed",
       "authority": "user_rule",
       "surface_identity_mode": "exact_pointed_source_form",
-      "raw": "מֵ\"ם",
-      "recognition_rule": "internal_quote",
-      "source_artifact_id": "sy.sealed-internal-quote-word-units",
-      "source_unit_id": "internal-quote-unit.079",
-      "corpus_fragment_id": "corpus-fragment.0297",
-      "source_node_id": "jsx.00761",
-      "reading_unit_id": "reading-unit.0318",
+      "raw": "מַכְרִיעַ-בֵּינְתַיִם",
+      "recognition_rule": "hyphen",
+      "source_artifact_id": "sy.sealed-hyphen-word-units",
+      "source_unit_id": "hyphen-unit.008",
+      "corpus_fragment_id": "corpus-fragment.0303",
+      "source_node_id": "jsx.00770",
+      "reading_unit_id": "reading-unit.0334",
       "source_code_unit_range": {
-        "start": 18396,
-        "end": 18400
+        "start": 18912,
+        "end": 18933
       }
     },
     {
@@ -2262,16 +2222,16 @@
       "decision_status": "sealed",
       "authority": "user_rule",
       "surface_identity_mode": "exact_pointed_source_form",
-      "raw": "שִׁי\"ן",
+      "raw": "ע\"ה",
       "recognition_rule": "internal_quote",
       "source_artifact_id": "sy.sealed-internal-quote-word-units",
-      "source_unit_id": "internal-quote-unit.080",
-      "corpus_fragment_id": "corpus-fragment.0298",
-      "source_node_id": "jsx.00763",
-      "reading_unit_id": "reading-unit.0319",
+      "source_unit_id": "internal-quote-unit.078",
+      "corpus_fragment_id": "corpus-fragment.0319",
+      "source_node_id": "jsx.00803",
+      "reading_unit_id": "reading-unit.0351",
       "source_code_unit_range": {
-        "start": 18427,
-        "end": 18433
+        "start": 19624,
+        "end": 19627
       }
     },
     {
@@ -2281,92 +2241,16 @@
       "decision_status": "sealed",
       "authority": "user_rule",
       "surface_identity_mode": "exact_pointed_source_form",
-      "raw": "אָלֶ\"ף",
-      "recognition_rule": "internal_quote",
-      "source_artifact_id": "sy.sealed-internal-quote-word-units",
-      "source_unit_id": "internal-quote-unit.081",
-      "corpus_fragment_id": "corpus-fragment.0299",
-      "source_node_id": "jsx.00765",
-      "reading_unit_id": "reading-unit.0320",
-      "source_code_unit_range": {
-        "start": 18460,
-        "end": 18466
-      }
-    },
-    {
-      "id": "sealed-word-occurrence.088",
-      "ordinal": 87,
-      "unit_type": "word",
-      "decision_status": "sealed",
-      "authority": "user_rule",
-      "surface_identity_mode": "exact_pointed_source_form",
-      "raw": "מַכְרִיעַ-בֵּינְתַיִם",
-      "recognition_rule": "hyphen",
-      "source_artifact_id": "sy.sealed-hyphen-word-units",
-      "source_unit_id": "hyphen-unit.007",
-      "corpus_fragment_id": "corpus-fragment.0299",
-      "source_node_id": "jsx.00765",
-      "reading_unit_id": "reading-unit.0320",
-      "source_code_unit_range": {
-        "start": 18471,
-        "end": 18492
-      }
-    },
-    {
-      "id": "sealed-word-occurrence.089",
-      "ordinal": 88,
-      "unit_type": "word",
-      "decision_status": "sealed",
-      "authority": "user_rule",
-      "surface_identity_mode": "exact_pointed_source_form",
-      "raw": "מַכְרִיעַ-בֵּינְתַיִם",
-      "recognition_rule": "hyphen",
-      "source_artifact_id": "sy.sealed-hyphen-word-units",
-      "source_unit_id": "hyphen-unit.008",
-      "corpus_fragment_id": "corpus-fragment.0319",
-      "source_node_id": "jsx.00806",
-      "reading_unit_id": "reading-unit.0341",
-      "source_code_unit_range": {
-        "start": 19242,
-        "end": 19263
-      }
-    },
-    {
-      "id": "sealed-word-occurrence.090",
-      "ordinal": 89,
-      "unit_type": "word",
-      "decision_status": "sealed",
-      "authority": "user_rule",
-      "surface_identity_mode": "exact_pointed_source_form",
-      "raw": "ע\"ה",
-      "recognition_rule": "internal_quote",
-      "source_artifact_id": "sy.sealed-internal-quote-word-units",
-      "source_unit_id": "internal-quote-unit.082",
-      "corpus_fragment_id": "corpus-fragment.0335",
-      "source_node_id": "jsx.00839",
-      "reading_unit_id": "reading-unit.0358",
-      "source_code_unit_range": {
-        "start": 19954,
-        "end": 19957
-      }
-    },
-    {
-      "id": "sealed-word-occurrence.091",
-      "ordinal": 90,
-      "unit_type": "word",
-      "decision_status": "sealed",
-      "authority": "user_rule",
-      "surface_identity_mode": "exact_pointed_source_form",
       "raw": "ב\"ה",
       "recognition_rule": "internal_quote",
       "source_artifact_id": "sy.sealed-internal-quote-word-units",
-      "source_unit_id": "internal-quote-unit.083",
-      "corpus_fragment_id": "corpus-fragment.0343",
-      "source_node_id": "jsx.00855",
-      "reading_unit_id": "reading-unit.0366",
+      "source_unit_id": "internal-quote-unit.079",
+      "corpus_fragment_id": "corpus-fragment.0327",
+      "source_node_id": "jsx.00819",
+      "reading_unit_id": "reading-unit.0359",
       "source_code_unit_range": {
-        "start": 20203,
-        "end": 20206
+        "start": 19873,
+        "end": 19876
       }
     }
   ]

@@ -92,12 +92,12 @@ const reconstructed = corpus.fragments.map((fragment) => source.slice(
   fragment.source_code_unit_range.end,
 )).join("");
 const proof = {
-  every_quote_mark_classified_exactly_once: classifications.length === 115
-    && new Set(classifications.map((item) => item.source_code_unit_range.start)).size === 115,
-  every_internal_quote_assigned_to_one_word: units.length === 83
+  every_quote_mark_classified_exactly_once: classifications.length === 109
+    && new Set(classifications.map((item) => item.source_code_unit_range.start)).size === 109,
+  every_internal_quote_assigned_to_one_word: units.length === 79
     && unitQuotePositions.size === units.length
     && classifications.filter((item) => item.classification === "internal_quote_word_connector").length === units.length,
-  every_non_internal_quote_remains_unknown: classifications.filter((item) => item.classification === "unknown_non_internal_quote").length === 32,
+  every_non_internal_quote_remains_unknown: classifications.filter((item) => item.classification === "unknown_non_internal_quote").length === 30,
   every_unit_matches_exact_source_range: units.every((unit) =>
     source.slice(unit.source_code_unit_range.start, unit.source_code_unit_range.end) === unit.raw),
   every_unit_has_hebrew_content_on_both_sides: units.every((unit) =>

@@ -5,10 +5,10 @@
   "semantic_status": "candidates_only_no_editorial_or_corpus_decision",
   "source": {
     "file": "src/SeferYetzirah.tsx",
-    "sha256": "d568a1ab11859e04c5ed6292b0d8ad829885ecdb95fc19a9fb5273b269413024",
-    "source_map_sha256": "7239e3c5f436242514bbbd6b677cb4ad3b81960bb794311807191dc7cfa78eeb",
-    "text_context_sha256": "6263a163fae684c5cd6c3ab2cb0e734dd36c20f0633328bee0d047f023108e14",
-    "corpus_scope_sha256": "250bc23401a7ee9b780c8610c0056032050008443d930e9665b3491d553b0cab"
+    "sha256": "e86001bbbcad27a4b4cf2dd2260bc2059e37dd668a8e3b7b6c7ae930be721643",
+    "source_map_sha256": "10a4a451499ee36a5835da734cb22916f0ed2d2635cc05b8e65728abdaa14c23",
+    "text_context_sha256": "273ae9692a3b270917666b7e6402c5b094f4a2ec4c94ab87e4b66f449e985e0b",
+    "corpus_scope_sha256": "4e7a9c1665b0f139f0db420da705a18cf647277fb16f39a87fdf14bb1b260648"
   },
   "rules": {
     "included_marker_kinds": [
@@ -23,9 +23,9 @@
     "source_normalization": "none"
   },
   "proof": {
-    "exactly_seven_small_elements_inventoried": true,
-    "exactly_nine_square_bracket_pairs_inventoried": true,
-    "exactly_seven_parenthesis_pairs_inventoried": true,
+    "exactly_zero_small_elements_inventoried": true,
+    "exactly_three_square_bracket_pairs_inventoried": true,
+    "exactly_four_parenthesis_pairs_inventoried": true,
     "every_candidate_matches_exact_source_range": true,
     "every_candidate_has_source_context": true,
     "every_source_node_reference_resolves": true,
@@ -33,11 +33,11 @@
     "every_corpus_and_editorial_role_remains_unknown": true,
     "no_source_or_corpus_change_performed": true,
     "deterministic_output": true,
-    "candidate_count": 23,
+    "candidate_count": 7,
     "marker_kind_counts": {
-      "small_element": 7,
-      "square_bracket_pair": 9,
-      "parenthesis_pair": 7
+      "small_element": 0,
+      "square_bracket_pair": 3,
+      "parenthesis_pair": 4
     }
   },
   "candidates": [
@@ -53,27 +53,27 @@
         "authority": "none_pending_user_decision"
       },
       "source_code_unit_range": {
-        "start": 3975,
-        "end": 4112
+        "start": 7414,
+        "end": 7426
       },
       "content_code_unit_range": {
-        "start": 3976,
-        "end": 4111
+        "start": 7415,
+        "end": 7425
       },
-      "raw": "(חָמֵשׁ שָׁלֹשׁ אוֹתִיּוֹת מִן הַפְּשׁוּטוֹת חָתַם רוֹם בָּרַר שָׁלֹשׁ וְקִבְעָן בִּשְׁמוֹ הַגָּדוֹל יה\"ו. וְחָתַם בָּהֶם שֵׁשׁ קְצָווֹת)",
-      "raw_sha256": "66e6b7308b3da241723e3033ab8f3fa420a7978e8387902ca5c9be38175221f4",
-      "content_raw": "חָמֵשׁ שָׁלֹשׁ אוֹתִיּוֹת מִן הַפְּשׁוּטוֹת חָתַם רוֹם בָּרַר שָׁלֹשׁ וְקִבְעָן בִּשְׁמוֹ הַגָּדוֹל יה\"ו. וְחָתַם בָּהֶם שֵׁשׁ קְצָווֹת",
-      "content_raw_sha256": "639e4d2ccd95e10756e4023d3159943aa46850f6f45a0a200c332b371047c4ff",
-      "immediate_context": "וּק 9.5</h3>\n\n          (חָמֵשׁ שָׁלֹשׁ אוֹתִיּוֹת מִן הַפְּשׁוּטוֹת חָתַם רוֹם בָּרַר שָׁלֹשׁ וְקִבְעָן בִּשְׁמוֹ הַגָּדוֹל יה\"ו. וְחָתַם בָּהֶם שֵׁשׁ קְצָווֹת)<br />\n          [<small",
+      "raw": "(מִנְיָנִים)",
+      "raw_sha256": "c5ace5ba2888ae454fb4574b7ec394ad201faa140285cf31cf6c0939b07d4d3f",
+      "content_raw": "מִנְיָנִים",
+      "content_raw_sha256": "0ffe9cea77f08e313d9a3c6a7a1ed40555c82d1eb16430839973622df77bd853",
+      "immediate_context": "  עֶשְׂרִים וּשְׁתַּיִם (מִנְיָנִים) [חֲפָצִים]<br />\n      ",
       "source_node_ids": [
-        "jsx.00202"
+        "jsx.00352"
       ],
       "reading_unit_ids": [
-        "reading-unit.0068"
+        "reading-unit.0132"
       ],
       "scope_decisions": [
         {
-          "source_node_id": "jsx.00202",
+          "source_node_id": "jsx.00352",
           "status": "included",
           "class": "section_body",
           "authority": "user"
@@ -93,56 +93,39 @@
         "authority": "none_pending_user_decision"
       },
       "source_code_unit_range": {
-        "start": 4129,
-        "end": 4295
+        "start": 7427,
+        "end": 7437
       },
       "content_code_unit_range": {
-        "start": 4130,
-        "end": 4294
+        "start": 7428,
+        "end": 7436
       },
-      "raw": "[<small>הַנֻּסְחָא הַנְּכוֹנָה:</small><br /> בֵּרֵר ג' אוֹתִיּוֹת מִן הַפְּשׁוּטוֹת בְּסוֹד ג' אַמּוֹת אמ\"ש וְקִבְעָן בִּשְׁמוֹ הַגָּדוֹל וְחָתַם בָּהֶם ו' קְצָווֹת]",
-      "raw_sha256": "0e8df07d2438b9386ec3110ffab27e34528c56dbc3a1d4c1715027ea7fca7334",
-      "content_raw": "<small>הַנֻּסְחָא הַנְּכוֹנָה:</small><br /> בֵּרֵר ג' אוֹתִיּוֹת מִן הַפְּשׁוּטוֹת בְּסוֹד ג' אַמּוֹת אמ\"ש וְקִבְעָן בִּשְׁמוֹ הַגָּדוֹל וְחָתַם בָּהֶם ו' קְצָווֹת",
-      "content_raw_sha256": "d7fe8f57f3b1b29428ac6906d5ed43c99f97806e24a83fafd76bfbcea3b354e9",
-      "immediate_context": "צָווֹת)<br />\n          [<small>הַנֻּסְחָא הַנְּכוֹנָה:</small><br /> בֵּרֵר ג' אוֹתִיּוֹת מִן הַפְּשׁוּטוֹת בְּסוֹד ג' אַמּוֹת אמ\"ש וְקִבְעָן בִּשְׁמוֹ הַגָּדוֹל וְחָתַם בָּהֶם ו' קְצָווֹת],<br /><br />\n\n         ",
+      "raw": "[חֲפָצִים]",
+      "raw_sha256": "cce285a5f7a24913246546caa6e774f57e84bf1fe95b01bd700e664e39a786d7",
+      "content_raw": "חֲפָצִים",
+      "content_raw_sha256": "d612fee0c1e97f8f96abdcb7ec5803b8efa553be19d23767a5cc5b332527a34c",
+      "immediate_context": "ּשְׁתַּיִם (מִנְיָנִים) [חֲפָצִים]<br />\n          בְּגוּף",
       "source_node_ids": [
-        "jsx.00204",
-        "jsx.00206",
-        "jsx.00209"
+        "jsx.00352"
       ],
       "reading_unit_ids": [
-        "reading-unit.0069",
-        "reading-unit.0070"
+        "reading-unit.0132"
       ],
       "scope_decisions": [
         {
-          "source_node_id": "jsx.00204",
-          "status": "included",
-          "class": "section_body",
-          "authority": "user"
-        },
-        {
-          "source_node_id": "jsx.00206",
-          "status": "included_temporarily",
-          "class": "small_text",
-          "authority": "user"
-        },
-        {
-          "source_node_id": "jsx.00209",
+          "source_node_id": "jsx.00352",
           "status": "included",
           "class": "section_body",
           "authority": "user"
         }
       ],
-      "overlapping_candidate_ids": [
-        "editorial-candidate.003"
-      ]
+      "overlapping_candidate_ids": []
     },
     {
       "id": "editorial-candidate.003",
       "ordinal": 2,
       "evidence_type": "structural_marker_only",
-      "marker_kind": "small_element",
+      "marker_kind": "parenthesis_pair",
       "decision": {
         "corpus_role": "unknown",
         "editorial_addition_status": "unknown",
@@ -150,39 +133,77 @@
         "authority": "none_pending_user_decision"
       },
       "source_code_unit_range": {
-        "start": 4130,
-        "end": 4168
+        "start": 9866,
+        "end": 9902
       },
       "content_code_unit_range": {
-        "start": 4137,
-        "end": 4160
+        "start": 9867,
+        "end": 9901
       },
-      "raw": "<small>הַנֻּסְחָא הַנְּכוֹנָה:</small>",
-      "raw_sha256": "f070dc10583e276bee674bb139251c6955a7ce6a647690de61202413787082a1",
-      "content_raw": "הַנֻּסְחָא הַנְּכוֹנָה:",
-      "content_raw_sha256": "a9f5c44c12d781fcc4ed5f8773b2aa0cb3d115ff3fe44cb97739b4947144b5c1",
-      "immediate_context": "ָווֹת)<br />\n          [<small>הַנֻּסְחָא הַנְּכוֹנָה:</small><br /> בֵּרֵר ג' אוֹתִיּ",
+      "raw": "(מִתְנַהֲגוֹת בִּשְׁתֵּי לְשׁוֹנוֹת)",
+      "raw_sha256": "6d293500acca063bc915b731c1468e8f935642bc1576f01488c463333521ee01",
+      "content_raw": "מִתְנַהֲגוֹת בִּשְׁתֵּי לְשׁוֹנוֹת",
+      "content_raw_sha256": "e49606f82b3ac94e110ff7809df8b00fbb0a289b84e82c45cd2ca91f8568d947",
+      "immediate_context": "ד כפר\"ת<br />\n          (מִתְנַהֲגוֹת בִּשְׁתֵּי לְשׁוֹנוֹת),<br />\n          יְסוֹד",
       "source_node_ids": [
-        "jsx.00206"
+        "jsx.00468"
       ],
       "reading_unit_ids": [
-        "reading-unit.0069"
+        "reading-unit.0185"
       ],
       "scope_decisions": [
         {
-          "source_node_id": "jsx.00206",
-          "status": "included_temporarily",
-          "class": "small_text",
+          "source_node_id": "jsx.00468",
+          "status": "included",
+          "class": "section_body",
           "authority": "user"
         }
       ],
-      "overlapping_candidate_ids": [
-        "editorial-candidate.002"
-      ]
+      "overlapping_candidate_ids": []
     },
     {
       "id": "editorial-candidate.004",
       "ordinal": 3,
+      "evidence_type": "structural_marker_only",
+      "marker_kind": "parenthesis_pair",
+      "decision": {
+        "corpus_role": "unknown",
+        "editorial_addition_status": "unknown",
+        "action": "none",
+        "authority": "none_pending_user_decision"
+      },
+      "source_code_unit_range": {
+        "start": 10683,
+        "end": 10701
+      },
+      "content_code_unit_range": {
+        "start": 10684,
+        "end": 10700
+      },
+      "raw": "(וְצוּר וְחָשׁוּב)",
+      "raw_sha256": "6b0db58ba89c1e74291c1831be71cc2edb943862822bd59f73d9591a67d3fc2c",
+      "content_raw": "וְצוּר וְחָשׁוּב",
+      "content_raw_sha256": "eafbd4acda0a84b3897137fe71a8df9d9b528e1428d3b2a1b17a720495f5d051",
+      "immediate_context": "ֹן בָּהֶן וַחֲקֹר מֵהֶן (וְצוּר וְחָשׁוּב)<br />\n          וְהַעֲמ",
+      "source_node_ids": [
+        "jsx.00503"
+      ],
+      "reading_unit_ids": [
+        "reading-unit.0203"
+      ],
+      "scope_decisions": [
+        {
+          "source_node_id": "jsx.00503",
+          "status": "included",
+          "class": "section_body",
+          "authority": "user"
+        }
+      ],
+      "overlapping_candidate_ids": []
+    },
+    {
+      "id": "editorial-candidate.005",
+      "ordinal": 4,
       "evidence_type": "structural_marker_only",
       "marker_kind": "square_bracket_pair",
       "decision": {
@@ -192,93 +213,33 @@
         "authority": "none_pending_user_decision"
       },
       "source_code_unit_range": {
-        "start": 5116,
-        "end": 5185
+        "start": 15041,
+        "end": 15157
       },
       "content_code_unit_range": {
-        "start": 5117,
-        "end": 5184
+        "start": 15042,
+        "end": 15156
       },
-      "raw": "[<small>בִּדְפוּס מַנְטוֹבָה (שכ\"ב) הֵגַי' כמ\"ש בְּאוֹצַר ה'</small>]",
-      "raw_sha256": "333cbb39a88f938956ee04717ba19594da3c7c16deacd530cda8620b467550f7",
-      "content_raw": "<small>בִּדְפוּס מַנְטוֹבָה (שכ\"ב) הֵגַי' כמ\"ש בְּאוֹצַר ה'</small>",
-      "content_raw_sha256": "44ce5ec61ee2d1b0c7a4b6f744fd2a5d5204a1f98cf4e56530e8b27270fbf172",
-      "immediate_context": "ם<br /><br />\n          [<small>בִּדְפוּס מַנְטוֹבָה (שכ\"ב) הֵגַי' כמ\"ש בְּאוֹצַר ה'</small>]:<br /><br />\n        </",
+      "raw": "[שְׁתֵּי לוֹעֲזִים וּשְׁתֵּי עַלִּיזִים שְׁתֵּי יוֹעֲצִים וּשְׁתֵּי יְעוּצִים שְׁתֵּי טוֹרְפִין וּשְׁתֵּי צַיָּדִים]",
+      "raw_sha256": "86491fb022ed9626b8f6205c3ed46711ce854c79434a0a367c040b810b100c55",
+      "content_raw": "שְׁתֵּי לוֹעֲזִים וּשְׁתֵּי עַלִּיזִים שְׁתֵּי יוֹעֲצִים וּשְׁתֵּי יְעוּצִים שְׁתֵּי טוֹרְפִין וּשְׁתֵּי צַיָּדִים",
+      "content_raw_sha256": "d9ce59226b24dfb1c687e37fea97071894a3045a05ce3af388f1cdf7ea264df2",
+      "immediate_context": "מַּסָּס קֵבָה קֻרְקְבָן [שְׁתֵּי לוֹעֲזִים וּשְׁתֵּי עַלִּיזִים שְׁתֵּי יוֹעֲצִים וּשְׁתֵּי יְעוּצִים שְׁתֵּי טוֹרְפִין וּשְׁתֵּי צַיָּדִים]. עֲשָׂאָן כְּמִין (מְדִ",
       "source_node_ids": [
-        "jsx.00244",
-        "jsx.00246",
-        "jsx.00248"
+        "jsx.00637"
       ],
       "reading_unit_ids": [
-        "reading-unit.0077"
+        "reading-unit.0269"
       ],
       "scope_decisions": [
         {
-          "source_node_id": "jsx.00244",
-          "status": "included",
-          "class": "section_body",
-          "authority": "user"
-        },
-        {
-          "source_node_id": "jsx.00246",
-          "status": "included_temporarily",
-          "class": "small_text",
-          "authority": "user"
-        },
-        {
-          "source_node_id": "jsx.00248",
+          "source_node_id": "jsx.00637",
           "status": "included",
           "class": "section_body",
           "authority": "user"
         }
       ],
-      "overlapping_candidate_ids": [
-        "editorial-candidate.005",
-        "editorial-candidate.006"
-      ]
-    },
-    {
-      "id": "editorial-candidate.005",
-      "ordinal": 4,
-      "evidence_type": "structural_marker_only",
-      "marker_kind": "small_element",
-      "decision": {
-        "corpus_role": "unknown",
-        "editorial_addition_status": "unknown",
-        "action": "none",
-        "authority": "none_pending_user_decision"
-      },
-      "source_code_unit_range": {
-        "start": 5117,
-        "end": 5184
-      },
-      "content_code_unit_range": {
-        "start": 5124,
-        "end": 5176
-      },
-      "raw": "<small>בִּדְפוּס מַנְטוֹבָה (שכ\"ב) הֵגַי' כמ\"ש בְּאוֹצַר ה'</small>",
-      "raw_sha256": "44ce5ec61ee2d1b0c7a4b6f744fd2a5d5204a1f98cf4e56530e8b27270fbf172",
-      "content_raw": "בִּדְפוּס מַנְטוֹבָה (שכ\"ב) הֵגַי' כמ\"ש בְּאוֹצַר ה'",
-      "content_raw_sha256": "6d3ad91a2e74d060d4d3b0cf458129c909b1becd5b671d77526cc86767d27f2b",
-      "immediate_context": "<br /><br />\n          [<small>בִּדְפוּס מַנְטוֹבָה (שכ\"ב) הֵגַי' כמ\"ש בְּאוֹצַר ה'</small>]:<br /><br />\n        <",
-      "source_node_ids": [
-        "jsx.00246"
-      ],
-      "reading_unit_ids": [
-        "reading-unit.0077"
-      ],
-      "scope_decisions": [
-        {
-          "source_node_id": "jsx.00246",
-          "status": "included_temporarily",
-          "class": "small_text",
-          "authority": "user"
-        }
-      ],
-      "overlapping_candidate_ids": [
-        "editorial-candidate.004",
-        "editorial-candidate.006"
-      ]
+      "overlapping_candidate_ids": []
     },
     {
       "id": "editorial-candidate.006",
@@ -292,36 +253,33 @@
         "authority": "none_pending_user_decision"
       },
       "source_code_unit_range": {
-        "start": 5145,
-        "end": 5151
+        "start": 15176,
+        "end": 15186
       },
       "content_code_unit_range": {
-        "start": 5146,
-        "end": 5150
+        "start": 15177,
+        "end": 15185
       },
-      "raw": "(שכ\"ב)",
-      "raw_sha256": "56036d3632cfa125ca06075da7cdbe53d9f8a6b1926232fede784cc0b609fef0",
-      "content_raw": "שכ\"ב",
-      "content_raw_sha256": "0c5efebc2da146e4ccedbe58f137d579d43c09ec10d3b6fb69d09491bcf460aa",
-      "immediate_context": "ll>בִּדְפוּס מַנְטוֹבָה (שכ\"ב) הֵגַי' כמ\"ש בְּאוֹצַר ה",
+      "raw": "(מְדִינָה)",
+      "raw_sha256": "7c96a6417bee5cacc5b5061f9468f15d6613cf39d5c66b27c5113c75b925a1c5",
+      "content_raw": "מְדִינָה",
+      "content_raw_sha256": "dd2415921ad1503a76eddd62cdb1d9f92e87a17c3f1ad1f3a67fb2f37d5ad01b",
+      "immediate_context": "דִים]. עֲשָׂאָן כְּמִין (מְדִינָה) [מְרִיבָה] וְעֶרְכָּן כ",
       "source_node_ids": [
-        "jsx.00246"
+        "jsx.00637"
       ],
       "reading_unit_ids": [
-        "reading-unit.0077"
+        "reading-unit.0269"
       ],
       "scope_decisions": [
         {
-          "source_node_id": "jsx.00246",
-          "status": "included_temporarily",
-          "class": "small_text",
+          "source_node_id": "jsx.00637",
+          "status": "included",
+          "class": "section_body",
           "authority": "user"
         }
       ],
-      "overlapping_candidate_ids": [
-        "editorial-candidate.004",
-        "editorial-candidate.005"
-      ]
+      "overlapping_candidate_ids": []
     },
     {
       "id": "editorial-candidate.007",
@@ -335,603 +293,12 @@
         "authority": "none_pending_user_decision"
       },
       "source_code_unit_range": {
-        "start": 6135,
-        "end": 6648
+        "start": 15187,
+        "end": 15197
       },
       "content_code_unit_range": {
-        "start": 6136,
-        "end": 6647
-      },
-      "raw": "[<small>בִּדְפוּס מַנְטוֹבָה נוֹסָף בַּמִּשְׁנָה זוֹ:<br /></small><br /><br />\n          קְשׁוּרוֹת בִּלְשׁוֹן כְּשֶׁהַלֶּבֶת בְּגַחֶלֶת,<br />\n          אחה\"ע מְשַׁמֶּשֶׁת בְּסוֹף הַלָּשׁוֹן וּבְבֵית הַבְּלִיעָה,<br />\n          בומ\"ף בֵּין הַשְּׂפָתַיִם וּבְרֹאשׁ הַלָּשׁוֹן,<br />\n          גיכ\"ק עַל שְׁלִישִׁיתָהּ שֶׁל לָשׁוֹן נִכְרֶתֶת,<br />\n          דטלנ\"ת בְּרֹאשׁ הַלָּשׁוֹן מְשַׁמֶּשֶׁת עִם הַקּוֹל,<br />\n          וסצר\"ש בֵּין הַשִּׁנַּיִם וְלָשׁוֹן שְׁכוּבָה וּשְׁטוּתָהּ. <br /><br />\n          ]",
-      "raw_sha256": "fe1e486ee0ae65fb536a72eac3626f2b121936890451da85fe6d6157dc40404e",
-      "content_raw": "<small>בִּדְפוּס מַנְטוֹבָה נוֹסָף בַּמִּשְׁנָה זוֹ:<br /></small><br /><br />\n          קְשׁוּרוֹת בִּלְשׁוֹן כְּשֶׁהַלֶּבֶת בְּגַחֶלֶת,<br />\n          אחה\"ע מְשַׁמֶּשֶׁת בְּסוֹף הַלָּשׁוֹן וּבְבֵית הַבְּלִיעָה,<br />\n          בומ\"ף בֵּין הַשְּׂפָתַיִם וּבְרֹאשׁ הַלָּשׁוֹן,<br />\n          גיכ\"ק עַל שְׁלִישִׁיתָהּ שֶׁל לָשׁוֹן נִכְרֶתֶת,<br />\n          דטלנ\"ת בְּרֹאשׁ הַלָּשׁוֹן מְשַׁמֶּשֶׁת עִם הַקּוֹל,<br />\n          וסצר\"ש בֵּין הַשִּׁנַּיִם וְלָשׁוֹן שְׁכוּבָה וּשְׁטוּתָהּ. <br /><br />\n          ",
-      "content_raw_sha256": "9e6f07fb57ae80b2a1147d126127689dc75a684d013ebbaddd5bc694e879bc9c",
-      "immediate_context": " <br /><br />\n          [<small>בִּדְפוּס מַנְטוֹבָה נוֹסָף בַּמִּשְׁנָה זוֹ:<br /></small><br /><br />\n          קְשׁוּרוֹת בִּלְשׁוֹן כְּשֶׁהַלֶּבֶת בְּגַחֶלֶת,<br />\n          אחה\"ע מְשַׁמֶּשֶׁת בְּסוֹף הַלָּשׁוֹן וּבְבֵית הַבְּלִיעָה,<br />\n          בומ\"ף בֵּין הַשְּׂפָתַיִם וּבְרֹאשׁ הַלָּשׁוֹן,<br />\n          גיכ\"ק עַל שְׁלִישִׁיתָהּ שֶׁל לָשׁוֹן נִכְרֶתֶת,<br />\n          דטלנ\"ת בְּרֹאשׁ הַלָּשׁוֹן מְשַׁמֶּשֶׁת עִם הַקּוֹל,<br />\n          וסצר\"ש בֵּין הַשִּׁנַּיִם וְלָשׁוֹן שְׁכוּבָה וּשְׁטוּתָהּ. <br /><br />\n          ]:<br /><br />\n          ",
-      "source_node_ids": [
-        "jsx.00303",
-        "jsx.00305",
-        "jsx.00310",
-        "jsx.00312",
-        "jsx.00314",
-        "jsx.00316",
-        "jsx.00318",
-        "jsx.00320",
-        "jsx.00323"
-      ],
-      "reading_unit_ids": [
-        "reading-unit.0103",
-        "reading-unit.0106",
-        "reading-unit.0107",
-        "reading-unit.0108",
-        "reading-unit.0109",
-        "reading-unit.0110",
-        "reading-unit.0111",
-        "reading-unit.0113"
-      ],
-      "scope_decisions": [
-        {
-          "source_node_id": "jsx.00303",
-          "status": "included",
-          "class": "section_body",
-          "authority": "user"
-        },
-        {
-          "source_node_id": "jsx.00305",
-          "status": "included_temporarily",
-          "class": "small_text",
-          "authority": "user"
-        },
-        {
-          "source_node_id": "jsx.00310",
-          "status": "included",
-          "class": "section_body",
-          "authority": "user"
-        },
-        {
-          "source_node_id": "jsx.00312",
-          "status": "included",
-          "class": "section_body",
-          "authority": "user"
-        },
-        {
-          "source_node_id": "jsx.00314",
-          "status": "included",
-          "class": "section_body",
-          "authority": "user"
-        },
-        {
-          "source_node_id": "jsx.00316",
-          "status": "included",
-          "class": "section_body",
-          "authority": "user"
-        },
-        {
-          "source_node_id": "jsx.00318",
-          "status": "included",
-          "class": "section_body",
-          "authority": "user"
-        },
-        {
-          "source_node_id": "jsx.00320",
-          "status": "included",
-          "class": "section_body",
-          "authority": "user"
-        },
-        {
-          "source_node_id": "jsx.00323",
-          "status": "included",
-          "class": "section_body",
-          "authority": "user"
-        }
-      ],
-      "overlapping_candidate_ids": [
-        "editorial-candidate.008"
-      ]
-    },
-    {
-      "id": "editorial-candidate.008",
-      "ordinal": 7,
-      "evidence_type": "structural_marker_only",
-      "marker_kind": "small_element",
-      "decision": {
-        "corpus_role": "unknown",
-        "editorial_addition_status": "unknown",
-        "action": "none",
-        "authority": "none_pending_user_decision"
-      },
-      "source_code_unit_range": {
-        "start": 6136,
-        "end": 6202
-      },
-      "content_code_unit_range": {
-        "start": 6143,
-        "end": 6194
-      },
-      "raw": "<small>בִּדְפוּס מַנְטוֹבָה נוֹסָף בַּמִּשְׁנָה זוֹ:<br /></small>",
-      "raw_sha256": "0fb9c5a2b3df4c3df4e4dd03d35d8844af373a05a133f0ed513c854b96b8f0e7",
-      "content_raw": "בִּדְפוּס מַנְטוֹבָה נוֹסָף בַּמִּשְׁנָה זוֹ:<br />",
-      "content_raw_sha256": "d1d6827e88826806f221c8a3defe47d074ddd8a846c8a00023e5ae0a7dcc56e8",
-      "immediate_context": "<br /><br />\n          [<small>בִּדְפוּס מַנְטוֹבָה נוֹסָף בַּמִּשְׁנָה זוֹ:<br /></small><br /><br />\n          ק",
-      "source_node_ids": [
-        "jsx.00305"
-      ],
-      "reading_unit_ids": [
-        "reading-unit.0103"
-      ],
-      "scope_decisions": [
-        {
-          "source_node_id": "jsx.00305",
-          "status": "included_temporarily",
-          "class": "small_text",
-          "authority": "user"
-        }
-      ],
-      "overlapping_candidate_ids": [
-        "editorial-candidate.007"
-      ]
-    },
-    {
-      "id": "editorial-candidate.009",
-      "ordinal": 8,
-      "evidence_type": "structural_marker_only",
-      "marker_kind": "parenthesis_pair",
-      "decision": {
-        "corpus_role": "unknown",
-        "editorial_addition_status": "unknown",
-        "action": "none",
-        "authority": "none_pending_user_decision"
-      },
-      "source_code_unit_range": {
-        "start": 7664,
-        "end": 7676
-      },
-      "content_code_unit_range": {
-        "start": 7665,
-        "end": 7675
-      },
-      "raw": "(מִנְיָנִים)",
-      "raw_sha256": "c5ace5ba2888ae454fb4574b7ec394ad201faa140285cf31cf6c0939b07d4d3f",
-      "content_raw": "מִנְיָנִים",
-      "content_raw_sha256": "0ffe9cea77f08e313d9a3c6a7a1ed40555c82d1eb16430839973622df77bd853",
-      "immediate_context": "  עֶשְׂרִים וּשְׁתַּיִם (מִנְיָנִים) [חֲפָצִים]<br />\n      ",
-      "source_node_ids": [
-        "jsx.00372"
-      ],
-      "reading_unit_ids": [
-        "reading-unit.0139"
-      ],
-      "scope_decisions": [
-        {
-          "source_node_id": "jsx.00372",
-          "status": "included",
-          "class": "section_body",
-          "authority": "user"
-        }
-      ],
-      "overlapping_candidate_ids": []
-    },
-    {
-      "id": "editorial-candidate.010",
-      "ordinal": 9,
-      "evidence_type": "structural_marker_only",
-      "marker_kind": "square_bracket_pair",
-      "decision": {
-        "corpus_role": "unknown",
-        "editorial_addition_status": "unknown",
-        "action": "none",
-        "authority": "none_pending_user_decision"
-      },
-      "source_code_unit_range": {
-        "start": 7677,
-        "end": 7687
-      },
-      "content_code_unit_range": {
-        "start": 7678,
-        "end": 7686
-      },
-      "raw": "[חֲפָצִים]",
-      "raw_sha256": "cce285a5f7a24913246546caa6e774f57e84bf1fe95b01bd700e664e39a786d7",
-      "content_raw": "חֲפָצִים",
-      "content_raw_sha256": "d612fee0c1e97f8f96abdcb7ec5803b8efa553be19d23767a5cc5b332527a34c",
-      "immediate_context": "ּשְׁתַּיִם (מִנְיָנִים) [חֲפָצִים]<br />\n          בְּגוּף",
-      "source_node_ids": [
-        "jsx.00372"
-      ],
-      "reading_unit_ids": [
-        "reading-unit.0139"
-      ],
-      "scope_decisions": [
-        {
-          "source_node_id": "jsx.00372",
-          "status": "included",
-          "class": "section_body",
-          "authority": "user"
-        }
-      ],
-      "overlapping_candidate_ids": []
-    },
-    {
-      "id": "editorial-candidate.011",
-      "ordinal": 10,
-      "evidence_type": "structural_marker_only",
-      "marker_kind": "small_element",
-      "decision": {
-        "corpus_role": "unknown",
-        "editorial_addition_status": "unknown",
-        "action": "none",
-        "authority": "none_pending_user_decision"
-      },
-      "source_code_unit_range": {
-        "start": 9962,
-        "end": 10033
-      },
-      "content_code_unit_range": {
-        "start": 9969,
-        "end": 10025
-      },
-      "raw": "<small>[זָכָר בשא\"מ וּנְקֵבָה בשמ\"א, <small>(כ\"ה בנ\"י)</small>]</small>",
-      "raw_sha256": "83c477d4321a39add0cfdb65a30eb2d874ea8341bb97bf91e4ce2c8b84c42117",
-      "content_raw": "[זָכָר בשא\"מ וּנְקֵבָה בשמ\"א, <small>(כ\"ה בנ\"י)</small>]",
-      "content_raw_sha256": "a961845400df2f1e110b4e33ab60d5cbc9d13e454c7c64b204f7ee04d2b537e3",
-      "immediate_context": "נֶּפֶשׁ זָכָר וּנְקֵבָה <small>[זָכָר בשא\"מ וּנְקֵבָה בשמ\"א, <small>(כ\"ה בנ\"י)</small>]</small>:<br />\n\n        </secti",
-      "source_node_ids": [
-        "jsx.00478",
-        "jsx.00480",
-        "jsx.00482"
-      ],
-      "reading_unit_ids": [
-        "reading-unit.0190"
-      ],
-      "scope_decisions": [
-        {
-          "source_node_id": "jsx.00478",
-          "status": "included_temporarily",
-          "class": "small_text",
-          "authority": "user"
-        },
-        {
-          "source_node_id": "jsx.00480",
-          "status": "included_temporarily",
-          "class": "small_text",
-          "authority": "user"
-        },
-        {
-          "source_node_id": "jsx.00482",
-          "status": "included_temporarily",
-          "class": "small_text",
-          "authority": "user"
-        }
-      ],
-      "overlapping_candidate_ids": [
-        "editorial-candidate.012",
-        "editorial-candidate.013",
-        "editorial-candidate.014"
-      ]
-    },
-    {
-      "id": "editorial-candidate.012",
-      "ordinal": 11,
-      "evidence_type": "structural_marker_only",
-      "marker_kind": "square_bracket_pair",
-      "decision": {
-        "corpus_role": "unknown",
-        "editorial_addition_status": "unknown",
-        "action": "none",
-        "authority": "none_pending_user_decision"
-      },
-      "source_code_unit_range": {
-        "start": 9969,
-        "end": 10025
-      },
-      "content_code_unit_range": {
-        "start": 9970,
-        "end": 10024
-      },
-      "raw": "[זָכָר בשא\"מ וּנְקֵבָה בשמ\"א, <small>(כ\"ה בנ\"י)</small>]",
-      "raw_sha256": "a961845400df2f1e110b4e33ab60d5cbc9d13e454c7c64b204f7ee04d2b537e3",
-      "content_raw": "זָכָר בשא\"מ וּנְקֵבָה בשמ\"א, <small>(כ\"ה בנ\"י)</small>",
-      "content_raw_sha256": "931a006fc2c8032ee05ec87e01dd7d26b58d72a0a89b171427cfe6d52defab54",
-      "immediate_context": " זָכָר וּנְקֵבָה <small>[זָכָר בשא\"מ וּנְקֵבָה בשמ\"א, <small>(כ\"ה בנ\"י)</small>]</small>:<br />\n\n       ",
-      "source_node_ids": [
-        "jsx.00478",
-        "jsx.00480",
-        "jsx.00482"
-      ],
-      "reading_unit_ids": [
-        "reading-unit.0190"
-      ],
-      "scope_decisions": [
-        {
-          "source_node_id": "jsx.00478",
-          "status": "included_temporarily",
-          "class": "small_text",
-          "authority": "user"
-        },
-        {
-          "source_node_id": "jsx.00480",
-          "status": "included_temporarily",
-          "class": "small_text",
-          "authority": "user"
-        },
-        {
-          "source_node_id": "jsx.00482",
-          "status": "included_temporarily",
-          "class": "small_text",
-          "authority": "user"
-        }
-      ],
-      "overlapping_candidate_ids": [
-        "editorial-candidate.011",
-        "editorial-candidate.013",
-        "editorial-candidate.014"
-      ]
-    },
-    {
-      "id": "editorial-candidate.013",
-      "ordinal": 12,
-      "evidence_type": "structural_marker_only",
-      "marker_kind": "small_element",
-      "decision": {
-        "corpus_role": "unknown",
-        "editorial_addition_status": "unknown",
-        "action": "none",
-        "authority": "none_pending_user_decision"
-      },
-      "source_code_unit_range": {
-        "start": 9999,
-        "end": 10024
-      },
-      "content_code_unit_range": {
-        "start": 10006,
-        "end": 10016
-      },
-      "raw": "<small>(כ\"ה בנ\"י)</small>",
-      "raw_sha256": "fcba19cd475427b8eb50d2e6d29739b4ffca6cf0f5d40576013be4f14de9de99",
-      "content_raw": "(כ\"ה בנ\"י)",
-      "content_raw_sha256": "f00672e7375c40f0d78163b23dff37a838aa8d7da02b13114386d285d39cf713",
-      "immediate_context": " בשא\"מ וּנְקֵבָה בשמ\"א, <small>(כ\"ה בנ\"י)</small>]</small>:<br />\n\n      ",
-      "source_node_ids": [
-        "jsx.00480"
-      ],
-      "reading_unit_ids": [
-        "reading-unit.0190"
-      ],
-      "scope_decisions": [
-        {
-          "source_node_id": "jsx.00480",
-          "status": "included_temporarily",
-          "class": "small_text",
-          "authority": "user"
-        }
-      ],
-      "overlapping_candidate_ids": [
-        "editorial-candidate.011",
-        "editorial-candidate.012",
-        "editorial-candidate.014"
-      ]
-    },
-    {
-      "id": "editorial-candidate.014",
-      "ordinal": 13,
-      "evidence_type": "structural_marker_only",
-      "marker_kind": "parenthesis_pair",
-      "decision": {
-        "corpus_role": "unknown",
-        "editorial_addition_status": "unknown",
-        "action": "none",
-        "authority": "none_pending_user_decision"
-      },
-      "source_code_unit_range": {
-        "start": 10006,
-        "end": 10016
-      },
-      "content_code_unit_range": {
-        "start": 10007,
-        "end": 10015
-      },
-      "raw": "(כ\"ה בנ\"י)",
-      "raw_sha256": "f00672e7375c40f0d78163b23dff37a838aa8d7da02b13114386d285d39cf713",
-      "content_raw": "כ\"ה בנ\"י",
-      "content_raw_sha256": "24773f56f28e049de25a38bc58a4cfd61afe9542e4b0437f0fdfb8738e2c34bc",
-      "immediate_context": "וּנְקֵבָה בשמ\"א, <small>(כ\"ה בנ\"י)</small>]</small>:<br />",
-      "source_node_ids": [
-        "jsx.00480"
-      ],
-      "reading_unit_ids": [
-        "reading-unit.0190"
-      ],
-      "scope_decisions": [
-        {
-          "source_node_id": "jsx.00480",
-          "status": "included_temporarily",
-          "class": "small_text",
-          "authority": "user"
-        }
-      ],
-      "overlapping_candidate_ids": [
-        "editorial-candidate.011",
-        "editorial-candidate.012",
-        "editorial-candidate.013"
-      ]
-    },
-    {
-      "id": "editorial-candidate.015",
-      "ordinal": 14,
-      "evidence_type": "structural_marker_only",
-      "marker_kind": "parenthesis_pair",
-      "decision": {
-        "corpus_role": "unknown",
-        "editorial_addition_status": "unknown",
-        "action": "none",
-        "authority": "none_pending_user_decision"
-      },
-      "source_code_unit_range": {
-        "start": 10160,
-        "end": 10196
-      },
-      "content_code_unit_range": {
-        "start": 10161,
-        "end": 10195
-      },
-      "raw": "(מִתְנַהֲגוֹת בִּשְׁתֵּי לְשׁוֹנוֹת)",
-      "raw_sha256": "6d293500acca063bc915b731c1468e8f935642bc1576f01488c463333521ee01",
-      "content_raw": "מִתְנַהֲגוֹת בִּשְׁתֵּי לְשׁוֹנוֹת",
-      "content_raw_sha256": "e49606f82b3ac94e110ff7809df8b00fbb0a289b84e82c45cd2ca91f8568d947",
-      "immediate_context": "ד כפר\"ת<br />\n          (מִתְנַהֲגוֹת בִּשְׁתֵּי לְשׁוֹנוֹת),<br />\n          יְסוֹד",
-      "source_node_ids": [
-        "jsx.00496"
-      ],
-      "reading_unit_ids": [
-        "reading-unit.0192"
-      ],
-      "scope_decisions": [
-        {
-          "source_node_id": "jsx.00496",
-          "status": "included",
-          "class": "section_body",
-          "authority": "user"
-        }
-      ],
-      "overlapping_candidate_ids": []
-    },
-    {
-      "id": "editorial-candidate.016",
-      "ordinal": 15,
-      "evidence_type": "structural_marker_only",
-      "marker_kind": "parenthesis_pair",
-      "decision": {
-        "corpus_role": "unknown",
-        "editorial_addition_status": "unknown",
-        "action": "none",
-        "authority": "none_pending_user_decision"
-      },
-      "source_code_unit_range": {
-        "start": 10977,
-        "end": 10995
-      },
-      "content_code_unit_range": {
-        "start": 10978,
-        "end": 10994
-      },
-      "raw": "(וְצוּר וְחָשׁוּב)",
-      "raw_sha256": "6b0db58ba89c1e74291c1831be71cc2edb943862822bd59f73d9591a67d3fc2c",
-      "content_raw": "וְצוּר וְחָשׁוּב",
-      "content_raw_sha256": "eafbd4acda0a84b3897137fe71a8df9d9b528e1428d3b2a1b17a720495f5d051",
-      "immediate_context": "ֹן בָּהֶן וַחֲקֹר מֵהֶן (וְצוּר וְחָשׁוּב)<br />\n          וְהַעֲמ",
-      "source_node_ids": [
-        "jsx.00531"
-      ],
-      "reading_unit_ids": [
-        "reading-unit.0210"
-      ],
-      "scope_decisions": [
-        {
-          "source_node_id": "jsx.00531",
-          "status": "included",
-          "class": "section_body",
-          "authority": "user"
-        }
-      ],
-      "overlapping_candidate_ids": []
-    },
-    {
-      "id": "editorial-candidate.017",
-      "ordinal": 16,
-      "evidence_type": "structural_marker_only",
-      "marker_kind": "square_bracket_pair",
-      "decision": {
-        "corpus_role": "unknown",
-        "editorial_addition_status": "unknown",
-        "action": "none",
-        "authority": "none_pending_user_decision"
-      },
-      "source_code_unit_range": {
-        "start": 15335,
-        "end": 15451
-      },
-      "content_code_unit_range": {
-        "start": 15336,
-        "end": 15450
-      },
-      "raw": "[שְׁתֵּי לוֹעֲזִים וּשְׁתֵּי עַלִּיזִים שְׁתֵּי יוֹעֲצִים וּשְׁתֵּי יְעוּצִים שְׁתֵּי טוֹרְפִין וּשְׁתֵּי צַיָּדִים]",
-      "raw_sha256": "86491fb022ed9626b8f6205c3ed46711ce854c79434a0a367c040b810b100c55",
-      "content_raw": "שְׁתֵּי לוֹעֲזִים וּשְׁתֵּי עַלִּיזִים שְׁתֵּי יוֹעֲצִים וּשְׁתֵּי יְעוּצִים שְׁתֵּי טוֹרְפִין וּשְׁתֵּי צַיָּדִים",
-      "content_raw_sha256": "d9ce59226b24dfb1c687e37fea97071894a3045a05ce3af388f1cdf7ea264df2",
-      "immediate_context": "מַּסָּס קֵבָה קֻרְקְבָן [שְׁתֵּי לוֹעֲזִים וּשְׁתֵּי עַלִּיזִים שְׁתֵּי יוֹעֲצִים וּשְׁתֵּי יְעוּצִים שְׁתֵּי טוֹרְפִין וּשְׁתֵּי צַיָּדִים]. עֲשָׂאָן כְּמִין (מְדִ",
-      "source_node_ids": [
-        "jsx.00665"
-      ],
-      "reading_unit_ids": [
-        "reading-unit.0276"
-      ],
-      "scope_decisions": [
-        {
-          "source_node_id": "jsx.00665",
-          "status": "included",
-          "class": "section_body",
-          "authority": "user"
-        }
-      ],
-      "overlapping_candidate_ids": []
-    },
-    {
-      "id": "editorial-candidate.018",
-      "ordinal": 17,
-      "evidence_type": "structural_marker_only",
-      "marker_kind": "parenthesis_pair",
-      "decision": {
-        "corpus_role": "unknown",
-        "editorial_addition_status": "unknown",
-        "action": "none",
-        "authority": "none_pending_user_decision"
-      },
-      "source_code_unit_range": {
-        "start": 15470,
-        "end": 15480
-      },
-      "content_code_unit_range": {
-        "start": 15471,
-        "end": 15479
-      },
-      "raw": "(מְדִינָה)",
-      "raw_sha256": "7c96a6417bee5cacc5b5061f9468f15d6613cf39d5c66b27c5113c75b925a1c5",
-      "content_raw": "מְדִינָה",
-      "content_raw_sha256": "dd2415921ad1503a76eddd62cdb1d9f92e87a17c3f1ad1f3a67fb2f37d5ad01b",
-      "immediate_context": "דִים]. עֲשָׂאָן כְּמִין (מְדִינָה) [מְרִיבָה] וְעֶרְכָּן כ",
-      "source_node_ids": [
-        "jsx.00665"
-      ],
-      "reading_unit_ids": [
-        "reading-unit.0276"
-      ],
-      "scope_decisions": [
-        {
-          "source_node_id": "jsx.00665",
-          "status": "included",
-          "class": "section_body",
-          "authority": "user"
-        }
-      ],
-      "overlapping_candidate_ids": []
-    },
-    {
-      "id": "editorial-candidate.019",
-      "ordinal": 18,
-      "evidence_type": "structural_marker_only",
-      "marker_kind": "square_bracket_pair",
-      "decision": {
-        "corpus_role": "unknown",
-        "editorial_addition_status": "unknown",
-        "action": "none",
-        "authority": "none_pending_user_decision"
-      },
-      "source_code_unit_range": {
-        "start": 15481,
-        "end": 15491
-      },
-      "content_code_unit_range": {
-        "start": 15482,
-        "end": 15490
+        "start": 15188,
+        "end": 15196
       },
       "raw": "[מְרִיבָה]",
       "raw_sha256": "e4b7e2bfc8319b6c7e923cac556b755f034a2f8e7bc7fbe7e732fb5d72f94beb",
@@ -939,216 +306,20 @@
       "content_raw_sha256": "08c4751b186baca65ad65018feb8a5eec54e9078036ae108ca81868f04a8524d",
       "immediate_context": "ָאָן כְּמִין (מְדִינָה) [מְרִיבָה] וְעֶרְכָּן כְּמִין מִלְ",
       "source_node_ids": [
-        "jsx.00665"
+        "jsx.00637"
       ],
       "reading_unit_ids": [
-        "reading-unit.0276"
+        "reading-unit.0269"
       ],
       "scope_decisions": [
         {
-          "source_node_id": "jsx.00665",
+          "source_node_id": "jsx.00637",
           "status": "included",
           "class": "section_body",
           "authority": "user"
         }
       ],
       "overlapping_candidate_ids": []
-    },
-    {
-      "id": "editorial-candidate.020",
-      "ordinal": 19,
-      "evidence_type": "structural_marker_only",
-      "marker_kind": "square_bracket_pair",
-      "decision": {
-        "corpus_role": "unknown",
-        "editorial_addition_status": "unknown",
-        "action": "none",
-        "authority": "none_pending_user_decision"
-      },
-      "source_code_unit_range": {
-        "start": 17819,
-        "end": 17849
-      },
-      "content_code_unit_range": {
-        "start": 17820,
-        "end": 17848
-      },
-      "raw": "[<small>נ\"א</small> כָּבְשֵׁן]",
-      "raw_sha256": "48890e129c5962c29a643b1ae03727bc5716077ec24f9a1b39ddcb2852615467",
-      "content_raw": "<small>נ\"א</small> כָּבְשֵׁן",
-      "content_raw_sha256": "99b0f21a2dbb1c7a53d633a8b89f48e4b66c4c822ffebe9388da1d728919baaa",
-      "immediate_context": "  וְשִׁבְעָה כּוֹכָבִים [<small>נ\"א</small> כָּבְשֵׁן] וְצִבְאוֹתֵיהֶן<br />\n ",
-      "source_node_ids": [
-        "jsx.00731",
-        "jsx.00733",
-        "jsx.00735"
-      ],
-      "reading_unit_ids": [
-        "reading-unit.0307"
-      ],
-      "scope_decisions": [
-        {
-          "source_node_id": "jsx.00731",
-          "status": "included",
-          "class": "section_body",
-          "authority": "user"
-        },
-        {
-          "source_node_id": "jsx.00733",
-          "status": "included_temporarily",
-          "class": "small_text",
-          "authority": "user"
-        },
-        {
-          "source_node_id": "jsx.00735",
-          "status": "included",
-          "class": "section_body",
-          "authority": "user"
-        }
-      ],
-      "overlapping_candidate_ids": [
-        "editorial-candidate.021"
-      ]
-    },
-    {
-      "id": "editorial-candidate.021",
-      "ordinal": 20,
-      "evidence_type": "structural_marker_only",
-      "marker_kind": "small_element",
-      "decision": {
-        "corpus_role": "unknown",
-        "editorial_addition_status": "unknown",
-        "action": "none",
-        "authority": "none_pending_user_decision"
-      },
-      "source_code_unit_range": {
-        "start": 17820,
-        "end": 17838
-      },
-      "content_code_unit_range": {
-        "start": 17827,
-        "end": 17830
-      },
-      "raw": "<small>נ\"א</small>",
-      "raw_sha256": "a8aad985bf49b165fd1f84b3b2ef846d13a3cbae6fa2ddb9243f8161db4c3134",
-      "content_raw": "נ\"א",
-      "content_raw_sha256": "cfec5cf0f1de73da31bdd5bd81eaeb82773b8ce03f3cd1f098aff6fe842da959",
-      "immediate_context": " וְשִׁבְעָה כּוֹכָבִים [<small>נ\"א</small> כָּבְשֵׁן] וְצִבְאוֹתֵי",
-      "source_node_ids": [
-        "jsx.00733"
-      ],
-      "reading_unit_ids": [
-        "reading-unit.0307"
-      ],
-      "scope_decisions": [
-        {
-          "source_node_id": "jsx.00733",
-          "status": "included_temporarily",
-          "class": "small_text",
-          "authority": "user"
-        }
-      ],
-      "overlapping_candidate_ids": [
-        "editorial-candidate.020"
-      ]
-    },
-    {
-      "id": "editorial-candidate.022",
-      "ordinal": 21,
-      "evidence_type": "structural_marker_only",
-      "marker_kind": "square_bracket_pair",
-      "decision": {
-        "corpus_role": "unknown",
-        "editorial_addition_status": "unknown",
-        "action": "none",
-        "authority": "none_pending_user_decision"
-      },
-      "source_code_unit_range": {
-        "start": 18063,
-        "end": 18092
-      },
-      "content_code_unit_range": {
-        "start": 18064,
-        "end": 18091
-      },
-      "raw": "[<small>נ\"א</small> עֶשְׂרֵה]",
-      "raw_sha256": "224134d4ca0f949d2da03d132e066acc034bdd68af439714bfdb039109366c91",
-      "content_raw": "<small>נ\"א</small> עֶשְׂרֵה",
-      "content_raw_sha256": "9325a2d06cf31acad86194187980aaadaee1680d98bc1067f4c5d33eae3ea484",
-      "immediate_context": "     חֹק שְׁנֵים עָשָׂר [<small>נ\"א</small> עֶשְׂרֵה] וְשִׁבְעָה וּשְׁלֹשָׁה<",
-      "source_node_ids": [
-        "jsx.00745",
-        "jsx.00747",
-        "jsx.00749"
-      ],
-      "reading_unit_ids": [
-        "reading-unit.0312"
-      ],
-      "scope_decisions": [
-        {
-          "source_node_id": "jsx.00745",
-          "status": "included",
-          "class": "section_body",
-          "authority": "user"
-        },
-        {
-          "source_node_id": "jsx.00747",
-          "status": "included_temporarily",
-          "class": "small_text",
-          "authority": "user"
-        },
-        {
-          "source_node_id": "jsx.00749",
-          "status": "included",
-          "class": "section_body",
-          "authority": "user"
-        }
-      ],
-      "overlapping_candidate_ids": [
-        "editorial-candidate.023"
-      ]
-    },
-    {
-      "id": "editorial-candidate.023",
-      "ordinal": 22,
-      "evidence_type": "structural_marker_only",
-      "marker_kind": "small_element",
-      "decision": {
-        "corpus_role": "unknown",
-        "editorial_addition_status": "unknown",
-        "action": "none",
-        "authority": "none_pending_user_decision"
-      },
-      "source_code_unit_range": {
-        "start": 18064,
-        "end": 18082
-      },
-      "content_code_unit_range": {
-        "start": 18071,
-        "end": 18074
-      },
-      "raw": "<small>נ\"א</small>",
-      "raw_sha256": "a8aad985bf49b165fd1f84b3b2ef846d13a3cbae6fa2ddb9243f8161db4c3134",
-      "content_raw": "נ\"א",
-      "content_raw_sha256": "cfec5cf0f1de73da31bdd5bd81eaeb82773b8ce03f3cd1f098aff6fe842da959",
-      "immediate_context": "    חֹק שְׁנֵים עָשָׂר [<small>נ\"א</small> עֶשְׂרֵה] וְשִׁבְעָה וּ",
-      "source_node_ids": [
-        "jsx.00747"
-      ],
-      "reading_unit_ids": [
-        "reading-unit.0312"
-      ],
-      "scope_decisions": [
-        {
-          "source_node_id": "jsx.00747",
-          "status": "included_temporarily",
-          "class": "small_text",
-          "authority": "user"
-        }
-      ],
-      "overlapping_candidate_ids": [
-        "editorial-candidate.022"
-      ]
     }
   ]
 }

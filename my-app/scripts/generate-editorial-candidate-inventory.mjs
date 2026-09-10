@@ -116,9 +116,9 @@ for (const candidate of candidates) {
 const kindCounts = Object.fromEntries(["small_element", "square_bracket_pair", "parenthesis_pair"]
   .map((kind) => [kind, candidates.filter((item) => item.marker_kind === kind).length]));
 const proof = {
-  exactly_seven_small_elements_inventoried: kindCounts.small_element === 7,
-  exactly_nine_square_bracket_pairs_inventoried: kindCounts.square_bracket_pair === 9,
-  exactly_seven_parenthesis_pairs_inventoried: kindCounts.parenthesis_pair === 7,
+  exactly_zero_small_elements_inventoried: kindCounts.small_element === 0,
+  exactly_three_square_bracket_pairs_inventoried: kindCounts.square_bracket_pair === 3,
+  exactly_four_parenthesis_pairs_inventoried: kindCounts.parenthesis_pair === 4,
   every_candidate_matches_exact_source_range: candidates.every((item) =>
     source.slice(item.source_code_unit_range.start, item.source_code_unit_range.end) === item.raw
     && source.slice(item.content_code_unit_range.start, item.content_code_unit_range.end) === item.content_raw),

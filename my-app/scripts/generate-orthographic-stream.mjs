@@ -145,8 +145,8 @@ const proof = {
       && members.every((atom, index) => index === 0
         || members[index - 1].source_code_unit_range.end === atom.source_code_unit_range.start);
   }),
-  all_ninety_one_sealed_words_are_single_atoms: wordAtomIds.length === 91
-    && new Set(wordAtomIds).size === 91
+  all_eighty_seven_sealed_words_are_single_atoms: wordAtomIds.length === 87
+    && new Set(wordAtomIds).size === 87
     && sealedWords.occurrences.every((word) => wordAtomIds.includes(word.id)),
   every_grapheme_represented_exactly_once_as_atom_or_word_child: allRepresentedGraphemeIds.length === graphemes.length
     && new Set(allRepresentedGraphemeIds).size === graphemes.length

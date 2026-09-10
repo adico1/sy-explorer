@@ -5,10 +5,10 @@
   "scope": "hyphen_connected_words_only",
   "source": {
     "file": "src/SeferYetzirah.tsx",
-    "sha256": "d568a1ab11859e04c5ed6292b0d8ad829885ecdb95fc19a9fb5273b269413024",
-    "corpus_text_sha256": "577986cf30c0e2b73f19e09523aed6954017f42c413db2cc214e7147ddc95752",
+    "sha256": "e86001bbbcad27a4b4cf2dd2260bc2059e37dd668a8e3b7b6c7ae930be721643",
+    "corpus_text_sha256": "4a1b17aa75cef0fdfab81780b7d2e28a092935087da73ae7dd25b934f4d06a6a",
     "word_contract_sha256": "79e9b0d7a113ca0ff83c278dc879cf22ba2aa7841f2de061e1b6a26b059680f9",
-    "lexical_ambiguities_sha256": "7bb818af58c4cd04b50b06494cab6ac879ce9bf6386207e207363ad1c54edf51"
+    "lexical_ambiguities_sha256": "5b557264018e4f98875164365560fa6a9f02e05a0537570f61aef0f5787097e3"
   },
   "rule": {
     "statement": "Pointed Hebrew surface forms joined internally by an approved hyphen connector are one word.",
@@ -114,12 +114,12 @@
         "מַכְרִיעַ",
         "בֵּינְתַיִם"
       ],
-      "corpus_fragment_id": "corpus-fragment.0083",
-      "source_node_id": "jsx.00272",
-      "reading_unit_id": "reading-unit.0086",
+      "corpus_fragment_id": "corpus-fragment.0078",
+      "source_node_id": "jsx.00262",
+      "reading_unit_id": "reading-unit.0084",
       "source_code_unit_range": {
-        "start": 5580,
-        "end": 5601
+        "start": 5445,
+        "end": 5466
       }
     },
     {
@@ -136,12 +136,12 @@
         "מַכְרִיעַ",
         "בֵּינְתַיִם"
       ],
-      "corpus_fragment_id": "corpus-fragment.0135",
-      "source_node_id": "jsx.00394",
-      "reading_unit_id": "reading-unit.0146",
+      "corpus_fragment_id": "corpus-fragment.0127",
+      "source_node_id": "jsx.00374",
+      "reading_unit_id": "reading-unit.0139",
       "source_code_unit_range": {
-        "start": 7947,
-        "end": 7968
+        "start": 7697,
+        "end": 7718
       }
     },
     {
@@ -158,12 +158,12 @@
         "מַכְרִיעַ",
         "בֵּינְתַיִם"
       ],
-      "corpus_fragment_id": "corpus-fragment.0294",
-      "source_node_id": "jsx.00755",
-      "reading_unit_id": "reading-unit.0315",
+      "corpus_fragment_id": "corpus-fragment.0278",
+      "source_node_id": "jsx.00719",
+      "reading_unit_id": "reading-unit.0308",
       "source_code_unit_range": {
-        "start": 18278,
-        "end": 18299
+        "start": 17948,
+        "end": 17969
       }
     },
     {
@@ -180,12 +180,12 @@
         "מַכְרִיעַ",
         "בֵּינְתַיִם"
       ],
-      "corpus_fragment_id": "corpus-fragment.0299",
-      "source_node_id": "jsx.00765",
-      "reading_unit_id": "reading-unit.0320",
+      "corpus_fragment_id": "corpus-fragment.0283",
+      "source_node_id": "jsx.00729",
+      "reading_unit_id": "reading-unit.0313",
       "source_code_unit_range": {
-        "start": 18471,
-        "end": 18492
+        "start": 18141,
+        "end": 18162
       }
     },
     {
@@ -202,12 +202,12 @@
         "מַכְרִיעַ",
         "בֵּינְתַיִם"
       ],
-      "corpus_fragment_id": "corpus-fragment.0319",
-      "source_node_id": "jsx.00806",
-      "reading_unit_id": "reading-unit.0341",
+      "corpus_fragment_id": "corpus-fragment.0303",
+      "source_node_id": "jsx.00770",
+      "reading_unit_id": "reading-unit.0334",
       "source_code_unit_range": {
-        "start": 19242,
-        "end": 19263
+        "start": 18912,
+        "end": 18933
       }
     }
   ],
@@ -217,8 +217,8 @@
       "char": ":",
       "status": "excluded_from_hyphen_unit_role_unknown",
       "source_code_unit_range": {
-        "start": 5601,
-        "end": 5602
+        "start": 5466,
+        "end": 5467
       }
     },
     {
@@ -226,8 +226,8 @@
       "char": ":",
       "status": "excluded_from_hyphen_unit_role_unknown",
       "source_code_unit_range": {
-        "start": 7968,
-        "end": 7969
+        "start": 7718,
+        "end": 7719
       }
     },
     {
@@ -235,8 +235,8 @@
       "char": ":",
       "status": "excluded_from_hyphen_unit_role_unknown",
       "source_code_unit_range": {
-        "start": 18492,
-        "end": 18493
+        "start": 18162,
+        "end": 18163
       }
     },
     {
@@ -244,8 +244,8 @@
       "char": ".",
       "status": "excluded_from_hyphen_unit_role_unknown",
       "source_code_unit_range": {
-        "start": 19263,
-        "end": 19264
+        "start": 18933,
+        "end": 18934
       }
     }
   ]

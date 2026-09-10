@@ -5,9 +5,9 @@
   "semantic_status": "none",
   "source": {
     "file": "src/SeferYetzirah.tsx",
-    "sha256": "d568a1ab11859e04c5ed6292b0d8ad829885ecdb95fc19a9fb5273b269413024",
-    "source_map_sha256": "7239e3c5f436242514bbbd6b677cb4ad3b81960bb794311807191dc7cfa78eeb",
-    "reading_units_sha256": "09c64c55f450a2a7ec6d1f794262277964e739a02ab2626607ed2efbb122ce75"
+    "sha256": "e86001bbbcad27a4b4cf2dd2260bc2059e37dd668a8e3b7b6c7ae930be721643",
+    "source_map_sha256": "10a4a451499ee36a5835da734cb22916f0ed2d2635cc05b8e65728abdaa14c23",
+    "reading_units_sha256": "3d9adb6eed171f0ebaee581e876db930378ab1f512aa952e328d00057c3f99a4"
   },
   "rules": {
     "containment": "literal_open_and_close_jsx_tags",
@@ -25,7 +25,7 @@
     "h1_count": 1,
     "h2_count": 6,
     "h3_count": 20,
-    "reading_unit_assignment_count": 384
+    "reading_unit_assignment_count": 377
   },
   "elements": [
     {
@@ -49,10 +49,10 @@
       "tag_name": "section",
       "semantic_status": "none",
       "open_node_id": "jsx.00013",
-      "close_node_id": "jsx.00252",
+      "close_node_id": "jsx.00242",
       "source_code_unit_range": {
         "start": 192,
-        "end": 5217
+        "end": 5082
       },
       "text_node_ids": [],
       "text_raw": "",
@@ -302,14 +302,14 @@
       "id": "heading.h3.0015",
       "tag_name": "h3",
       "semantic_status": "none",
-      "open_node_id": "jsx.00213",
-      "close_node_id": "jsx.00215",
+      "open_node_id": "jsx.00210",
+      "close_node_id": "jsx.00212",
       "source_code_unit_range": {
-        "start": 4383,
-        "end": 4403
+        "start": 4341,
+        "end": 4361
       },
       "text_node_ids": [
-        "jsx.00214"
+        "jsx.00211"
       ],
       "text_raw": "פָּסוּק 9.6",
       "text_raw_sha256": "bde0c8c3e0b029ffd0e94f2d0dc213b406e59ca46ff01aaae2c4b1831061217d"
@@ -318,14 +318,14 @@
       "id": "heading.h3.0016",
       "tag_name": "h3",
       "semantic_status": "none",
-      "open_node_id": "jsx.00217",
-      "close_node_id": "jsx.00219",
+      "open_node_id": "jsx.00214",
+      "close_node_id": "jsx.00216",
       "source_code_unit_range": {
-        "start": 4477,
-        "end": 4497
+        "start": 4435,
+        "end": 4455
       },
       "text_node_ids": [
-        "jsx.00218"
+        "jsx.00215"
       ],
       "text_raw": "פָּסוּק 9.7",
       "text_raw_sha256": "90172cb8af70d356a7b48285f9f19294acb8bf5d68dbc7dc47cecdb00ffae5c8"
@@ -334,14 +334,14 @@
       "id": "heading.h3.0017",
       "tag_name": "h3",
       "semantic_status": "none",
-      "open_node_id": "jsx.00221",
-      "close_node_id": "jsx.00223",
+      "open_node_id": "jsx.00218",
+      "close_node_id": "jsx.00220",
       "source_code_unit_range": {
-        "start": 4573,
-        "end": 4593
+        "start": 4531,
+        "end": 4551
       },
       "text_node_ids": [
-        "jsx.00222"
+        "jsx.00219"
       ],
       "text_raw": "פָּסוּק 9.8",
       "text_raw_sha256": "85380414f71e92f9a7485fde090e079c899fe2d0a28a61a54035e263ab1ccf5c"
@@ -350,14 +350,14 @@
       "id": "heading.h3.0018",
       "tag_name": "h3",
       "semantic_status": "none",
-      "open_node_id": "jsx.00225",
-      "close_node_id": "jsx.00227",
+      "open_node_id": "jsx.00222",
+      "close_node_id": "jsx.00224",
       "source_code_unit_range": {
-        "start": 4670,
-        "end": 4690
+        "start": 4628,
+        "end": 4648
       },
       "text_node_ids": [
-        "jsx.00226"
+        "jsx.00223"
       ],
       "text_raw": "פָּסוּק 9.9",
       "text_raw_sha256": "6c49e1545392911f72b4618937f6f83d5ad650d58a0c256da5bb5f3a4172b50f"
@@ -366,14 +366,14 @@
       "id": "heading.h3.0019",
       "tag_name": "h3",
       "semantic_status": "none",
-      "open_node_id": "jsx.00229",
-      "close_node_id": "jsx.00231",
+      "open_node_id": "jsx.00226",
+      "close_node_id": "jsx.00228",
       "source_code_unit_range": {
-        "start": 4765,
-        "end": 4786
+        "start": 4723,
+        "end": 4744
       },
       "text_node_ids": [
-        "jsx.00230"
+        "jsx.00227"
       ],
       "text_raw": "פָּסוּק 9.10",
       "text_raw_sha256": "f8f852754e027119a056f76899aa0225efc026715180b9099bc02548a57bfa9e"
@@ -382,14 +382,14 @@
       "id": "heading.h3.0020",
       "tag_name": "h3",
       "semantic_status": "none",
-      "open_node_id": "jsx.00236",
-      "close_node_id": "jsx.00238",
+      "open_node_id": "jsx.00233",
+      "close_node_id": "jsx.00235",
       "source_code_unit_range": {
-        "start": 4876,
-        "end": 4897
+        "start": 4834,
+        "end": 4855
       },
       "text_node_ids": [
-        "jsx.00237"
+        "jsx.00234"
       ],
       "text_raw": "פָּסוּק 9.11",
       "text_raw_sha256": "9c9233c49ef222b54ab5c09571f72c8f93aaa732b72005e549d03563f2e39023"
@@ -398,11 +398,11 @@
       "id": "section.0002",
       "tag_name": "section",
       "semantic_status": "none",
-      "open_node_id": "jsx.00254",
-      "close_node_id": "jsx.00377",
+      "open_node_id": "jsx.00244",
+      "close_node_id": "jsx.00357",
       "source_code_unit_range": {
-        "start": 5226,
-        "end": 7743
+        "start": 5091,
+        "end": 7493
       },
       "text_node_ids": [],
       "text_raw": "",
@@ -412,14 +412,14 @@
       "id": "heading.h2.0002",
       "tag_name": "h2",
       "semantic_status": "none",
-      "open_node_id": "jsx.00256",
-      "close_node_id": "jsx.00258",
+      "open_node_id": "jsx.00246",
+      "close_node_id": "jsx.00248",
       "source_code_unit_range": {
-        "start": 5246,
-        "end": 5260
+        "start": 5111,
+        "end": 5125
       },
       "text_node_ids": [
-        "jsx.00257"
+        "jsx.00247"
       ],
       "text_raw": "פרק 2",
       "text_raw_sha256": "76b735a452d44186862990fe4cea7e32e428fb9f50ee7a5e09ec3f12fabd9d45"
@@ -428,11 +428,11 @@
       "id": "section.0003",
       "tag_name": "section",
       "semantic_status": "none",
-      "open_node_id": "jsx.00379",
-      "close_node_id": "jsx.00487",
+      "open_node_id": "jsx.00359",
+      "close_node_id": "jsx.00459",
       "source_code_unit_range": {
-        "start": 7752,
-        "end": 10060
+        "start": 7502,
+        "end": 9766
       },
       "text_node_ids": [],
       "text_raw": "",
@@ -442,14 +442,14 @@
       "id": "heading.h2.0003",
       "tag_name": "h2",
       "semantic_status": "none",
-      "open_node_id": "jsx.00381",
-      "close_node_id": "jsx.00383",
+      "open_node_id": "jsx.00361",
+      "close_node_id": "jsx.00363",
       "source_code_unit_range": {
-        "start": 7772,
-        "end": 7786
+        "start": 7522,
+        "end": 7536
       },
       "text_node_ids": [
-        "jsx.00382"
+        "jsx.00362"
       ],
       "text_raw": "פרק 3",
       "text_raw_sha256": "e87d229f256b8ad604c13026ce3baf6f0fdc5ccf2673f63b594ad3767b99d3ea"
@@ -458,11 +458,11 @@
       "id": "section.0004",
       "tag_name": "section",
       "semantic_status": "none",
-      "open_node_id": "jsx.00489",
-      "close_node_id": "jsx.00625",
+      "open_node_id": "jsx.00461",
+      "close_node_id": "jsx.00597",
       "source_code_unit_range": {
-        "start": 10069,
-        "end": 13902
+        "start": 9775,
+        "end": 13608
       },
       "text_node_ids": [],
       "text_raw": "",
@@ -472,14 +472,14 @@
       "id": "heading.h2.0004",
       "tag_name": "h2",
       "semantic_status": "none",
-      "open_node_id": "jsx.00491",
-      "close_node_id": "jsx.00493",
+      "open_node_id": "jsx.00463",
+      "close_node_id": "jsx.00465",
       "source_code_unit_range": {
-        "start": 10089,
-        "end": 10103
+        "start": 9795,
+        "end": 9809
       },
       "text_node_ids": [
-        "jsx.00492"
+        "jsx.00464"
       ],
       "text_raw": "פרק 4",
       "text_raw_sha256": "fc21b5431b3c703a713f9fcacbcb9e5b1f40dab1a04423f849b55f06ad3e2df7"
@@ -488,11 +488,11 @@
       "id": "section.0005",
       "tag_name": "section",
       "semantic_status": "none",
-      "open_node_id": "jsx.00627",
-      "close_node_id": "jsx.00722",
+      "open_node_id": "jsx.00599",
+      "close_node_id": "jsx.00694",
       "source_code_unit_range": {
-        "start": 13911,
-        "end": 17693
+        "start": 13617,
+        "end": 17399
       },
       "text_node_ids": [],
       "text_raw": "",
@@ -502,14 +502,14 @@
       "id": "heading.h2.0005",
       "tag_name": "h2",
       "semantic_status": "none",
-      "open_node_id": "jsx.00629",
-      "close_node_id": "jsx.00631",
+      "open_node_id": "jsx.00601",
+      "close_node_id": "jsx.00603",
       "source_code_unit_range": {
-        "start": 13931,
-        "end": 13945
+        "start": 13637,
+        "end": 13651
       },
       "text_node_ids": [
-        "jsx.00630"
+        "jsx.00602"
       ],
       "text_raw": "פרק 5",
       "text_raw_sha256": "bf6cb7df3e37a4849f49c837d6c43fb43a0506d25ae058fef6a11d783a23680f"
@@ -518,11 +518,11 @@
       "id": "section.0006",
       "tag_name": "section",
       "semantic_status": "none",
-      "open_node_id": "jsx.00724",
-      "close_node_id": "jsx.00894",
+      "open_node_id": "jsx.00696",
+      "close_node_id": "jsx.00858",
       "source_code_unit_range": {
-        "start": 17702,
-        "end": 20993
+        "start": 17408,
+        "end": 20663
       },
       "text_node_ids": [],
       "text_raw": "",
@@ -532,14 +532,14 @@
       "id": "heading.h2.0006",
       "tag_name": "h2",
       "semantic_status": "none",
-      "open_node_id": "jsx.00726",
-      "close_node_id": "jsx.00728",
+      "open_node_id": "jsx.00698",
+      "close_node_id": "jsx.00700",
       "source_code_unit_range": {
-        "start": 17722,
-        "end": 17736
+        "start": 17428,
+        "end": 17442
       },
       "text_node_ids": [
-        "jsx.00727"
+        "jsx.00699"
       ],
       "text_raw": "פרק 6",
       "text_raw_sha256": "7deb799f1ecfdbe85f6a31577e44bc026b249ff87dbb74aa7a4ab3e901f0e871"
@@ -1462,31 +1462,31 @@
       "reading_unit_id": "reading-unit.0077",
       "semantic_status": "none",
       "containing_section_ids": [
-        "section.0001"
+        "section.0001",
+        "section.0002"
       ],
       "latest_heading_in_source_order": {
         "h1": "heading.h1.0001",
-        "h2": "heading.h2.0001",
-        "h3": "heading.h3.0020"
+        "h2": "heading.h2.0002",
+        "h3": null
       }
     },
     {
       "reading_unit_id": "reading-unit.0078",
       "semantic_status": "none",
       "containing_section_ids": [
-        "section.0001"
+        "section.0002"
       ],
       "latest_heading_in_source_order": {
         "h1": "heading.h1.0001",
-        "h2": "heading.h2.0001",
-        "h3": "heading.h3.0020"
+        "h2": "heading.h2.0002",
+        "h3": null
       }
     },
     {
       "reading_unit_id": "reading-unit.0079",
       "semantic_status": "none",
       "containing_section_ids": [
-        "section.0001",
         "section.0002"
       ],
       "latest_heading_in_source_order": {
@@ -2147,11 +2147,12 @@
       "reading_unit_id": "reading-unit.0134",
       "semantic_status": "none",
       "containing_section_ids": [
-        "section.0002"
+        "section.0002",
+        "section.0003"
       ],
       "latest_heading_in_source_order": {
         "h1": "heading.h1.0001",
-        "h2": "heading.h2.0002",
+        "h2": "heading.h2.0003",
         "h3": null
       }
     },
@@ -2159,11 +2160,11 @@
       "reading_unit_id": "reading-unit.0135",
       "semantic_status": "none",
       "containing_section_ids": [
-        "section.0002"
+        "section.0003"
       ],
       "latest_heading_in_source_order": {
         "h1": "heading.h1.0001",
-        "h2": "heading.h2.0002",
+        "h2": "heading.h2.0003",
         "h3": null
       }
     },
@@ -2171,11 +2172,11 @@
       "reading_unit_id": "reading-unit.0136",
       "semantic_status": "none",
       "containing_section_ids": [
-        "section.0002"
+        "section.0003"
       ],
       "latest_heading_in_source_order": {
         "h1": "heading.h1.0001",
-        "h2": "heading.h2.0002",
+        "h2": "heading.h2.0003",
         "h3": null
       }
     },
@@ -2183,11 +2184,11 @@
       "reading_unit_id": "reading-unit.0137",
       "semantic_status": "none",
       "containing_section_ids": [
-        "section.0002"
+        "section.0003"
       ],
       "latest_heading_in_source_order": {
         "h1": "heading.h1.0001",
-        "h2": "heading.h2.0002",
+        "h2": "heading.h2.0003",
         "h3": null
       }
     },
@@ -2195,11 +2196,11 @@
       "reading_unit_id": "reading-unit.0138",
       "semantic_status": "none",
       "containing_section_ids": [
-        "section.0002"
+        "section.0003"
       ],
       "latest_heading_in_source_order": {
         "h1": "heading.h1.0001",
-        "h2": "heading.h2.0002",
+        "h2": "heading.h2.0003",
         "h3": null
       }
     },
@@ -2207,11 +2208,11 @@
       "reading_unit_id": "reading-unit.0139",
       "semantic_status": "none",
       "containing_section_ids": [
-        "section.0002"
+        "section.0003"
       ],
       "latest_heading_in_source_order": {
         "h1": "heading.h1.0001",
-        "h2": "heading.h2.0002",
+        "h2": "heading.h2.0003",
         "h3": null
       }
     },
@@ -2219,11 +2220,11 @@
       "reading_unit_id": "reading-unit.0140",
       "semantic_status": "none",
       "containing_section_ids": [
-        "section.0002"
+        "section.0003"
       ],
       "latest_heading_in_source_order": {
         "h1": "heading.h1.0001",
-        "h2": "heading.h2.0002",
+        "h2": "heading.h2.0003",
         "h3": null
       }
     },
@@ -2231,7 +2232,6 @@
       "reading_unit_id": "reading-unit.0141",
       "semantic_status": "none",
       "containing_section_ids": [
-        "section.0002",
         "section.0003"
       ],
       "latest_heading_in_source_order": {
@@ -2748,11 +2748,12 @@
       "reading_unit_id": "reading-unit.0184",
       "semantic_status": "none",
       "containing_section_ids": [
-        "section.0003"
+        "section.0003",
+        "section.0004"
       ],
       "latest_heading_in_source_order": {
         "h1": "heading.h1.0001",
-        "h2": "heading.h2.0003",
+        "h2": "heading.h2.0004",
         "h3": null
       }
     },
@@ -2760,11 +2761,11 @@
       "reading_unit_id": "reading-unit.0185",
       "semantic_status": "none",
       "containing_section_ids": [
-        "section.0003"
+        "section.0004"
       ],
       "latest_heading_in_source_order": {
         "h1": "heading.h1.0001",
-        "h2": "heading.h2.0003",
+        "h2": "heading.h2.0004",
         "h3": null
       }
     },
@@ -2772,11 +2773,11 @@
       "reading_unit_id": "reading-unit.0186",
       "semantic_status": "none",
       "containing_section_ids": [
-        "section.0003"
+        "section.0004"
       ],
       "latest_heading_in_source_order": {
         "h1": "heading.h1.0001",
-        "h2": "heading.h2.0003",
+        "h2": "heading.h2.0004",
         "h3": null
       }
     },
@@ -2784,11 +2785,11 @@
       "reading_unit_id": "reading-unit.0187",
       "semantic_status": "none",
       "containing_section_ids": [
-        "section.0003"
+        "section.0004"
       ],
       "latest_heading_in_source_order": {
         "h1": "heading.h1.0001",
-        "h2": "heading.h2.0003",
+        "h2": "heading.h2.0004",
         "h3": null
       }
     },
@@ -2796,11 +2797,11 @@
       "reading_unit_id": "reading-unit.0188",
       "semantic_status": "none",
       "containing_section_ids": [
-        "section.0003"
+        "section.0004"
       ],
       "latest_heading_in_source_order": {
         "h1": "heading.h1.0001",
-        "h2": "heading.h2.0003",
+        "h2": "heading.h2.0004",
         "h3": null
       }
     },
@@ -2808,11 +2809,11 @@
       "reading_unit_id": "reading-unit.0189",
       "semantic_status": "none",
       "containing_section_ids": [
-        "section.0003"
+        "section.0004"
       ],
       "latest_heading_in_source_order": {
         "h1": "heading.h1.0001",
-        "h2": "heading.h2.0003",
+        "h2": "heading.h2.0004",
         "h3": null
       }
     },
@@ -2820,11 +2821,11 @@
       "reading_unit_id": "reading-unit.0190",
       "semantic_status": "none",
       "containing_section_ids": [
-        "section.0003"
+        "section.0004"
       ],
       "latest_heading_in_source_order": {
         "h1": "heading.h1.0001",
-        "h2": "heading.h2.0003",
+        "h2": "heading.h2.0004",
         "h3": null
       }
     },
@@ -2832,7 +2833,6 @@
       "reading_unit_id": "reading-unit.0191",
       "semantic_status": "none",
       "containing_section_ids": [
-        "section.0003",
         "section.0004"
       ],
       "latest_heading_in_source_order": {
@@ -3565,11 +3565,12 @@
       "reading_unit_id": "reading-unit.0252",
       "semantic_status": "none",
       "containing_section_ids": [
-        "section.0004"
+        "section.0004",
+        "section.0005"
       ],
       "latest_heading_in_source_order": {
         "h1": "heading.h1.0001",
-        "h2": "heading.h2.0004",
+        "h2": "heading.h2.0005",
         "h3": null
       }
     },
@@ -3577,11 +3578,11 @@
       "reading_unit_id": "reading-unit.0253",
       "semantic_status": "none",
       "containing_section_ids": [
-        "section.0004"
+        "section.0005"
       ],
       "latest_heading_in_source_order": {
         "h1": "heading.h1.0001",
-        "h2": "heading.h2.0004",
+        "h2": "heading.h2.0005",
         "h3": null
       }
     },
@@ -3589,11 +3590,11 @@
       "reading_unit_id": "reading-unit.0254",
       "semantic_status": "none",
       "containing_section_ids": [
-        "section.0004"
+        "section.0005"
       ],
       "latest_heading_in_source_order": {
         "h1": "heading.h1.0001",
-        "h2": "heading.h2.0004",
+        "h2": "heading.h2.0005",
         "h3": null
       }
     },
@@ -3601,11 +3602,11 @@
       "reading_unit_id": "reading-unit.0255",
       "semantic_status": "none",
       "containing_section_ids": [
-        "section.0004"
+        "section.0005"
       ],
       "latest_heading_in_source_order": {
         "h1": "heading.h1.0001",
-        "h2": "heading.h2.0004",
+        "h2": "heading.h2.0005",
         "h3": null
       }
     },
@@ -3613,11 +3614,11 @@
       "reading_unit_id": "reading-unit.0256",
       "semantic_status": "none",
       "containing_section_ids": [
-        "section.0004"
+        "section.0005"
       ],
       "latest_heading_in_source_order": {
         "h1": "heading.h1.0001",
-        "h2": "heading.h2.0004",
+        "h2": "heading.h2.0005",
         "h3": null
       }
     },
@@ -3625,11 +3626,11 @@
       "reading_unit_id": "reading-unit.0257",
       "semantic_status": "none",
       "containing_section_ids": [
-        "section.0004"
+        "section.0005"
       ],
       "latest_heading_in_source_order": {
         "h1": "heading.h1.0001",
-        "h2": "heading.h2.0004",
+        "h2": "heading.h2.0005",
         "h3": null
       }
     },
@@ -3637,11 +3638,11 @@
       "reading_unit_id": "reading-unit.0258",
       "semantic_status": "none",
       "containing_section_ids": [
-        "section.0004"
+        "section.0005"
       ],
       "latest_heading_in_source_order": {
         "h1": "heading.h1.0001",
-        "h2": "heading.h2.0004",
+        "h2": "heading.h2.0005",
         "h3": null
       }
     },
@@ -3649,7 +3650,6 @@
       "reading_unit_id": "reading-unit.0259",
       "semantic_status": "none",
       "containing_section_ids": [
-        "section.0004",
         "section.0005"
       ],
       "latest_heading_in_source_order": {
@@ -4130,11 +4130,12 @@
       "reading_unit_id": "reading-unit.0299",
       "semantic_status": "none",
       "containing_section_ids": [
-        "section.0005"
+        "section.0005",
+        "section.0006"
       ],
       "latest_heading_in_source_order": {
         "h1": "heading.h1.0001",
-        "h2": "heading.h2.0005",
+        "h2": "heading.h2.0006",
         "h3": null
       }
     },
@@ -4142,11 +4143,11 @@
       "reading_unit_id": "reading-unit.0300",
       "semantic_status": "none",
       "containing_section_ids": [
-        "section.0005"
+        "section.0006"
       ],
       "latest_heading_in_source_order": {
         "h1": "heading.h1.0001",
-        "h2": "heading.h2.0005",
+        "h2": "heading.h2.0006",
         "h3": null
       }
     },
@@ -4154,11 +4155,11 @@
       "reading_unit_id": "reading-unit.0301",
       "semantic_status": "none",
       "containing_section_ids": [
-        "section.0005"
+        "section.0006"
       ],
       "latest_heading_in_source_order": {
         "h1": "heading.h1.0001",
-        "h2": "heading.h2.0005",
+        "h2": "heading.h2.0006",
         "h3": null
       }
     },
@@ -4166,11 +4167,11 @@
       "reading_unit_id": "reading-unit.0302",
       "semantic_status": "none",
       "containing_section_ids": [
-        "section.0005"
+        "section.0006"
       ],
       "latest_heading_in_source_order": {
         "h1": "heading.h1.0001",
-        "h2": "heading.h2.0005",
+        "h2": "heading.h2.0006",
         "h3": null
       }
     },
@@ -4178,11 +4179,11 @@
       "reading_unit_id": "reading-unit.0303",
       "semantic_status": "none",
       "containing_section_ids": [
-        "section.0005"
+        "section.0006"
       ],
       "latest_heading_in_source_order": {
         "h1": "heading.h1.0001",
-        "h2": "heading.h2.0005",
+        "h2": "heading.h2.0006",
         "h3": null
       }
     },
@@ -4190,11 +4191,11 @@
       "reading_unit_id": "reading-unit.0304",
       "semantic_status": "none",
       "containing_section_ids": [
-        "section.0005"
+        "section.0006"
       ],
       "latest_heading_in_source_order": {
         "h1": "heading.h1.0001",
-        "h2": "heading.h2.0005",
+        "h2": "heading.h2.0006",
         "h3": null
       }
     },
@@ -4202,11 +4203,11 @@
       "reading_unit_id": "reading-unit.0305",
       "semantic_status": "none",
       "containing_section_ids": [
-        "section.0005"
+        "section.0006"
       ],
       "latest_heading_in_source_order": {
         "h1": "heading.h1.0001",
-        "h2": "heading.h2.0005",
+        "h2": "heading.h2.0006",
         "h3": null
       }
     },
@@ -4214,7 +4215,6 @@
       "reading_unit_id": "reading-unit.0306",
       "semantic_status": "none",
       "containing_section_ids": [
-        "section.0005",
         "section.0006"
       ],
       "latest_heading_in_source_order": {
@@ -5065,90 +5065,6 @@
     },
     {
       "reading_unit_id": "reading-unit.0377",
-      "semantic_status": "none",
-      "containing_section_ids": [
-        "section.0006"
-      ],
-      "latest_heading_in_source_order": {
-        "h1": "heading.h1.0001",
-        "h2": "heading.h2.0006",
-        "h3": null
-      }
-    },
-    {
-      "reading_unit_id": "reading-unit.0378",
-      "semantic_status": "none",
-      "containing_section_ids": [
-        "section.0006"
-      ],
-      "latest_heading_in_source_order": {
-        "h1": "heading.h1.0001",
-        "h2": "heading.h2.0006",
-        "h3": null
-      }
-    },
-    {
-      "reading_unit_id": "reading-unit.0379",
-      "semantic_status": "none",
-      "containing_section_ids": [
-        "section.0006"
-      ],
-      "latest_heading_in_source_order": {
-        "h1": "heading.h1.0001",
-        "h2": "heading.h2.0006",
-        "h3": null
-      }
-    },
-    {
-      "reading_unit_id": "reading-unit.0380",
-      "semantic_status": "none",
-      "containing_section_ids": [
-        "section.0006"
-      ],
-      "latest_heading_in_source_order": {
-        "h1": "heading.h1.0001",
-        "h2": "heading.h2.0006",
-        "h3": null
-      }
-    },
-    {
-      "reading_unit_id": "reading-unit.0381",
-      "semantic_status": "none",
-      "containing_section_ids": [
-        "section.0006"
-      ],
-      "latest_heading_in_source_order": {
-        "h1": "heading.h1.0001",
-        "h2": "heading.h2.0006",
-        "h3": null
-      }
-    },
-    {
-      "reading_unit_id": "reading-unit.0382",
-      "semantic_status": "none",
-      "containing_section_ids": [
-        "section.0006"
-      ],
-      "latest_heading_in_source_order": {
-        "h1": "heading.h1.0001",
-        "h2": "heading.h2.0006",
-        "h3": null
-      }
-    },
-    {
-      "reading_unit_id": "reading-unit.0383",
-      "semantic_status": "none",
-      "containing_section_ids": [
-        "section.0006"
-      ],
-      "latest_heading_in_source_order": {
-        "h1": "heading.h1.0001",
-        "h2": "heading.h2.0006",
-        "h3": null
-      }
-    },
-    {
-      "reading_unit_id": "reading-unit.0384",
       "semantic_status": "none",
       "containing_section_ids": [
         "section.0006"

@@ -138,8 +138,8 @@ const viewProofs = views.map((view) => {
       const members = atoms.slice(segment.atom_ordinal_range.start, segment.atom_ordinal_range.end);
       return members.every((atom) => atom.corpus_fragment_id === segment.corpus_fragment_id);
     }),
-    all_ninety_one_sealed_words_preserved_as_single_segments: wordSegments.length === 91
-      && new Set(wordSegments.map((segment) => segment.reference_id)).size === 91,
+    all_eighty_seven_sealed_words_preserved_as_single_segments: wordSegments.length === 87
+      && new Set(wordSegments.map((segment) => segment.reference_id)).size === 87,
     every_candidate_contains_a_grapheme: candidates(view).every((segment) => segment.grapheme_atom_count > 0),
     no_candidate_promoted_to_word: candidates(view).every((segment) =>
       segment.status === "candidate_not_word" && segment.semantic_status === "unknown"),
@@ -154,7 +154,7 @@ const proof = {
   every_view_round_trips_exact_corpus: viewProofs.every((item) => item.exact_corpus_stream_round_trip),
   every_view_segment_matches_source: viewProofs.every((item) => item.every_segment_matches_exact_source_range),
   no_view_segment_crosses_a_corpus_fragment: viewProofs.every((item) => item.no_segment_crosses_a_corpus_fragment),
-  all_sealed_words_preserved_in_both_views: viewProofs.every((item) => item.all_ninety_one_sealed_words_preserved_as_single_segments),
+  all_sealed_words_preserved_in_both_views: viewProofs.every((item) => item.all_eighty_seven_sealed_words_preserved_as_single_segments),
   every_candidate_contains_a_grapheme: viewProofs.every((item) => item.every_candidate_contains_a_grapheme),
   no_candidate_is_promoted_to_word: viewProofs.every((item) => item.no_candidate_promoted_to_word),
   punctuation_role_remains_unknown: whitespaceView.boundary_model.punctuation_or_symbol.includes("role_unknown")
