@@ -24,6 +24,7 @@ const hebrewGraphemes = JSON.parse(fs.readFileSync(new URL("../src/sy.hebrew-gra
 const orthographicStream = JSON.parse(fs.readFileSync(new URL("../src/sy.orthographic-stream.json", import.meta.url), "utf8"));
 const wordCandidateViews = JSON.parse(fs.readFileSync(new URL("../src/sy.word-candidate-views.json", import.meta.url), "utf8"));
 const trailingApostropheCases = JSON.parse(fs.readFileSync(new URL("../src/sy.trailing-apostrophe-cases.json", import.meta.url), "utf8"));
+const editorialCandidateInventory = JSON.parse(fs.readFileSync(new URL("../src/sy.editorial-candidate-inventory.json", import.meta.url), "utf8"));
 const failures = [];
 const requireInvariant = (condition, name) => {
   if (!condition) failures.push(name);
@@ -222,6 +223,20 @@ requireInvariant(trailingApostropheCases.proof.every_word_and_semantic_role_rema
 requireInvariant(trailingApostropheCases.proof.exact_corpus_round_trip_after_overlay_removal, "trailing_apostrophes_round_trip");
 requireInvariant(trailingApostropheCases.proof.no_word_number_abbreviation_or_punctuation_role_inferred, "trailing_apostrophes_no_inference");
 requireInvariant(trailingApostropheCases.proof.deterministic_output, "trailing_apostrophes_deterministic");
+requireInvariant(editorialCandidateInventory.source.sha256 === sourceHash, "editorial_candidates_source_hash");
+requireInvariant(editorialCandidateInventory.status === "sealed_observation", "editorial_candidates_sealed");
+requireInvariant(editorialCandidateInventory.semantic_status === "candidates_only_no_editorial_or_corpus_decision", "editorial_candidates_no_decision");
+requireInvariant(editorialCandidateInventory.proof.exactly_seven_small_elements_inventoried, "editorial_candidates_small_elements");
+requireInvariant(editorialCandidateInventory.proof.exactly_nine_square_bracket_pairs_inventoried, "editorial_candidates_square_brackets");
+requireInvariant(editorialCandidateInventory.proof.exactly_seven_parenthesis_pairs_inventoried, "editorial_candidates_parentheses");
+requireInvariant(editorialCandidateInventory.proof.every_candidate_matches_exact_source_range, "editorial_candidates_source_ranges");
+requireInvariant(editorialCandidateInventory.proof.every_candidate_has_source_context, "editorial_candidates_context");
+requireInvariant(editorialCandidateInventory.proof.every_source_node_reference_resolves, "editorial_candidates_node_references");
+requireInvariant(editorialCandidateInventory.proof.every_overlap_reference_is_symmetric, "editorial_candidates_overlaps");
+requireInvariant(editorialCandidateInventory.proof.every_corpus_and_editorial_role_remains_unknown, "editorial_candidates_unknown");
+requireInvariant(editorialCandidateInventory.proof.no_source_or_corpus_change_performed, "editorial_candidates_no_mutation");
+requireInvariant(editorialCandidateInventory.proof.candidate_count === 23, "editorial_candidates_exact_count");
+requireInvariant(editorialCandidateInventory.proof.deterministic_output, "editorial_candidates_deterministic");
 requireInvariant(corpus.validation.valid, "corpus_validation");
 requireInvariant(corpus.input === sourceText, "lossless_source");
 requireInvariant(corpus.stats.occurrences === 1673, "occurrence_count");

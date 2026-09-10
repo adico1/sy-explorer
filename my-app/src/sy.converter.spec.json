@@ -1,7 +1,7 @@
 {
   "$schema": "./sy.converter-spec.schema.json",
   "id": "sy.evidence-corpus",
-  "version": "0.12.18",
+  "version": "0.12.19",
   "language": "he",
   "source": {
     "authority": "sefaria_source",
@@ -145,6 +145,7 @@
     { "id": "source.authoritative_niqqud", "status": "active" },
     { "id": "source.authoritative_br_boundaries", "status": "active" },
     { "id": "source.commentator_attributions_removed", "status": "active", "proof": "two_user_authorized_attribution_expressions_absent_from_local_edition" },
+    { "id": "source.editorial_addition_candidate_inventory", "status": "active", "artifact": "src/sy.editorial-candidate-inventory.json", "proof": "all_small_square_bracket_and_parenthesis_structures_inventoried_without_corpus_decision" },
     { "id": "source.lossless_jsx_map", "status": "active", "artifact": "src/sy.source-map.json", "proof": "exact_main_root_round_trip" },
     { "id": "reading.lossless_br_units", "status": "active", "artifact": "src/sy.reading-units.json", "proof": "exact_br_partition_round_trip" },
     { "id": "structure.jsx_reading_hierarchy", "status": "active", "artifact": "src/sy.reading-hierarchy.json", "proof": "exact_jsx_context_assignment" },
@@ -185,6 +186,13 @@
         "id": "source.commentator_attributions_removed",
         "statement": "The full attribution expressions 'וברמ\"ב' and 'וע\"ז קַאי פִּי\u0027 הרמ\"ב:' are removed from the local edition by user decision; the associated interpretive text is retained.",
         "authority": "user",
+        "status": "sealed"
+      },
+      {
+        "id": "source.editorial_addition_candidate_inventory",
+        "statement": "All seven small elements, nine square-bracket pairs and seven parenthesis pairs are recorded as 23 structural candidates with exact source context. Marker presence alone does not establish that any candidate is an editorial addition or outside the corpus.",
+        "authority": "deterministic_structural_observation",
+        "artifact": "src/sy.editorial-candidate-inventory.json",
         "status": "sealed"
       },
       {
