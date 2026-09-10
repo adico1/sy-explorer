@@ -37,6 +37,8 @@
     "test:orthographic-stream": "node scripts/generate-orthographic-stream.mjs --check",
     "generate:word-candidate-views": "node scripts/generate-word-candidate-views.mjs",
     "test:word-candidate-views": "node scripts/generate-word-candidate-views.mjs --check",
+    "generate:trailing-apostrophe-cases": "node scripts/generate-trailing-apostrophe-cases.mjs",
+    "test:trailing-apostrophe-cases": "node scripts/generate-trailing-apostrophe-cases.mjs --check",
     "test:regression": "node scripts/regression.mjs",
     "preview": "vite preview"
   },

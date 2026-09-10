@@ -23,6 +23,7 @@ const lexicalCoverage = JSON.parse(fs.readFileSync(new URL("../src/sy.lexical-co
 const hebrewGraphemes = JSON.parse(fs.readFileSync(new URL("../src/sy.hebrew-graphemes.json", import.meta.url), "utf8"));
 const orthographicStream = JSON.parse(fs.readFileSync(new URL("../src/sy.orthographic-stream.json", import.meta.url), "utf8"));
 const wordCandidateViews = JSON.parse(fs.readFileSync(new URL("../src/sy.word-candidate-views.json", import.meta.url), "utf8"));
+const trailingApostropheCases = JSON.parse(fs.readFileSync(new URL("../src/sy.trailing-apostrophe-cases.json", import.meta.url), "utf8"));
 const failures = [];
 const requireInvariant = (condition, name) => {
   if (!condition) failures.push(name);
@@ -202,6 +203,21 @@ requireInvariant(wordCandidateViews.proof.punctuation_role_remains_unknown, "wor
 requireInvariant(wordCandidateViews.proof.every_difference_case_resolves_in_both_views, "word_candidate_views_difference_references");
 requireInvariant(wordCandidateViews.proof.no_normalization_prefix_analysis_or_interpretation, "word_candidate_views_no_semantics");
 requireInvariant(wordCandidateViews.proof.deterministic_output, "word_candidate_views_deterministic");
+requireInvariant(trailingApostropheCases.source.sha256 === sourceHash, "trailing_apostrophes_source_hash");
+requireInvariant(trailingApostropheCases.status === "sealed_structural_classification", "trailing_apostrophes_sealed");
+requireInvariant(trailingApostropheCases.semantic_status === "all_roles_unknown", "trailing_apostrophes_roles_unknown");
+requireInvariant(trailingApostropheCases.proof.all_thirty_three_unknown_quotes_accounted_exactly_once, "trailing_apostrophes_exact_coverage");
+requireInvariant(trailingApostropheCases.proof.every_case_is_a_trailing_ascii_apostrophe, "trailing_apostrophes_ascii_source");
+requireInvariant(trailingApostropheCases.proof.every_case_has_an_immediately_adjacent_hebrew_sequence, "trailing_apostrophes_adjacency");
+requireInvariant(trailingApostropheCases.proof.exactly_thirty_single_letter_and_three_multi_letter_shapes, "trailing_apostrophes_shapes");
+requireInvariant(trailingApostropheCases.proof.every_case_grapheme_membership_matches_base_letters, "trailing_apostrophes_graphemes");
+requireInvariant(trailingApostropheCases.proof.every_case_matches_exact_source_range, "trailing_apostrophes_source_ranges");
+requireInvariant(trailingApostropheCases.proof.cases_are_nonoverlapping_and_in_source_order, "trailing_apostrophes_order");
+requireInvariant(trailingApostropheCases.proof.every_case_is_present_in_the_punctuation_difference_inventory, "trailing_apostrophes_candidate_differences");
+requireInvariant(trailingApostropheCases.proof.every_word_and_semantic_role_remains_unknown, "trailing_apostrophes_unknown_preserved");
+requireInvariant(trailingApostropheCases.proof.exact_corpus_round_trip_after_overlay_removal, "trailing_apostrophes_round_trip");
+requireInvariant(trailingApostropheCases.proof.no_word_number_abbreviation_or_punctuation_role_inferred, "trailing_apostrophes_no_inference");
+requireInvariant(trailingApostropheCases.proof.deterministic_output, "trailing_apostrophes_deterministic");
 requireInvariant(corpus.validation.valid, "corpus_validation");
 requireInvariant(corpus.input === sourceText, "lossless_source");
 requireInvariant(corpus.stats.occurrences === 1673, "occurrence_count");
