@@ -1,0 +1,560 @@
+{
+  "id": "sy.editorial-review-cases",
+  "version": "1.0.0",
+  "status": "sealed_review_queue",
+  "corpus_cleaning_status": "stopped_pending_manual_decisions",
+  "decision_mode": "manual_case_by_case",
+  "source": {
+    "file": "src/SeferYetzirah.tsx",
+    "sha256": "d568a1ab11859e04c5ed6292b0d8ad829885ecdb95fc19a9fb5273b269413024",
+    "editorial_candidate_inventory_sha256": "e09165e02ff0524b7f95434fe19cd3e6683149346b1e36962e97f2b6051eda4e"
+  },
+  "rules": {
+    "consolidation": "maximal_noncontained_structural_candidate_ranges",
+    "ordering": "cases_with_clear_labels_first_then_remaining_cases_in_source_order",
+    "label_status": "clear_label_pending_corpus_decision",
+    "automatic_removal": "forbidden",
+    "automatic_corpus_decision": "forbidden",
+    "source_mutation": "none"
+  },
+  "proof": {
+    "twenty_three_observations_consolidated_exactly_once": true,
+    "exactly_fourteen_nonoverlapping_review_cases": true,
+    "exactly_six_clear_labels_recorded": true,
+    "clear_label_cases_are_first": true,
+    "every_label_belongs_to_exactly_one_case": true,
+    "every_case_matches_exact_source_range": true,
+    "every_decision_remains_pending_manual": true,
+    "corpus_cleaning_is_stopped": true,
+    "source_and_corpus_are_unchanged": true,
+    "deterministic_output": true,
+    "observation_count": 23,
+    "review_case_count": 14,
+    "clear_label_count": 6,
+    "clear_label_case_count": 6,
+    "remaining_case_count": 8
+  },
+  "clear_labels": [
+    {
+      "id": "editorial-label.01",
+      "ordinal": 0,
+      "status": "clear_label_pending_corpus_decision",
+      "authority": "user_direction_and_exact_surface_observation",
+      "label_type": "variant_claim_label",
+      "raw": "הַנֻּסְחָא הַנְּכוֹנָה:",
+      "source_code_unit_range": {
+        "start": 4137,
+        "end": 4160
+      },
+      "corpus_action": "pending_manual_decision"
+    },
+    {
+      "id": "editorial-label.02",
+      "ordinal": 1,
+      "status": "clear_label_pending_corpus_decision",
+      "authority": "user_direction_and_exact_surface_observation",
+      "label_type": "source_witness_note",
+      "raw": "בִּדְפוּס מַנְטוֹבָה (שכ\"ב) הֵגַי' כמ\"ש בְּאוֹצַר ה'",
+      "source_code_unit_range": {
+        "start": 5124,
+        "end": 5176
+      },
+      "corpus_action": "pending_manual_decision"
+    },
+    {
+      "id": "editorial-label.03",
+      "ordinal": 2,
+      "status": "clear_label_pending_corpus_decision",
+      "authority": "user_direction_and_exact_surface_observation",
+      "label_type": "addition_source_label",
+      "raw": "בִּדְפוּס מַנְטוֹבָה נוֹסָף בַּמִּשְׁנָה זוֹ:",
+      "source_code_unit_range": {
+        "start": 6143,
+        "end": 6188
+      },
+      "corpus_action": "pending_manual_decision"
+    },
+    {
+      "id": "editorial-label.04",
+      "ordinal": 3,
+      "status": "clear_label_pending_corpus_decision",
+      "authority": "user_direction_and_exact_surface_observation",
+      "label_type": "source_witness_abbreviation",
+      "raw": "(כ\"ה בנ\"י)",
+      "source_code_unit_range": {
+        "start": 10006,
+        "end": 10016
+      },
+      "corpus_action": "pending_manual_decision"
+    },
+    {
+      "id": "editorial-label.05",
+      "ordinal": 4,
+      "status": "clear_label_pending_corpus_decision",
+      "authority": "user_direction_and_exact_surface_observation",
+      "label_type": "variant_reading_abbreviation",
+      "raw": "נ\"א",
+      "source_code_unit_range": {
+        "start": 17827,
+        "end": 17830
+      },
+      "corpus_action": "pending_manual_decision"
+    },
+    {
+      "id": "editorial-label.06",
+      "ordinal": 5,
+      "status": "clear_label_pending_corpus_decision",
+      "authority": "user_direction_and_exact_surface_observation",
+      "label_type": "variant_reading_abbreviation",
+      "raw": "נ\"א",
+      "source_code_unit_range": {
+        "start": 18071,
+        "end": 18074
+      },
+      "corpus_action": "pending_manual_decision"
+    }
+  ],
+  "review_cases": [
+    {
+      "id": "editorial-review-case.01",
+      "review_order": 0,
+      "source_order": 1,
+      "priority": "clear_labels_first",
+      "source_candidate_id": "editorial-candidate.002",
+      "member_candidate_ids": [
+        "editorial-candidate.002",
+        "editorial-candidate.003"
+      ],
+      "clear_label_ids": [
+        "editorial-label.01"
+      ],
+      "marker_kind": "square_bracket_pair",
+      "source_code_unit_range": {
+        "start": 4129,
+        "end": 4295
+      },
+      "raw": "[<small>הַנֻּסְחָא הַנְּכוֹנָה:</small><br /> בֵּרֵר ג' אוֹתִיּוֹת מִן הַפְּשׁוּטוֹת בְּסוֹד ג' אַמּוֹת אמ\"ש וְקִבְעָן בִּשְׁמוֹ הַגָּדוֹל וְחָתַם בָּהֶם ו' קְצָווֹת]",
+      "immediate_context": "צָווֹת)<br />\n          [<small>הַנֻּסְחָא הַנְּכוֹנָה:</small><br /> בֵּרֵר ג' אוֹתִיּוֹת מִן הַפְּשׁוּטוֹת בְּסוֹד ג' אַמּוֹת אמ\"ש וְקִבְעָן בִּשְׁמוֹ הַגָּדוֹל וְחָתַם בָּהֶם ו' קְצָווֹת],<br /><br />\n\n         ",
+      "decision": {
+        "status": "pending_manual_case_by_case",
+        "corpus_role": "unknown",
+        "action": "none",
+        "authority": "user_required",
+        "allowed_actions": [
+          "retain_entire_case",
+          "remove_label_only_retain_content",
+          "remove_entire_case",
+          "keep_unknown"
+        ]
+      }
+    },
+    {
+      "id": "editorial-review-case.02",
+      "review_order": 1,
+      "source_order": 2,
+      "priority": "clear_labels_first",
+      "source_candidate_id": "editorial-candidate.004",
+      "member_candidate_ids": [
+        "editorial-candidate.004",
+        "editorial-candidate.005",
+        "editorial-candidate.006"
+      ],
+      "clear_label_ids": [
+        "editorial-label.02"
+      ],
+      "marker_kind": "square_bracket_pair",
+      "source_code_unit_range": {
+        "start": 5116,
+        "end": 5185
+      },
+      "raw": "[<small>בִּדְפוּס מַנְטוֹבָה (שכ\"ב) הֵגַי' כמ\"ש בְּאוֹצַר ה'</small>]",
+      "immediate_context": "ם<br /><br />\n          [<small>בִּדְפוּס מַנְטוֹבָה (שכ\"ב) הֵגַי' כמ\"ש בְּאוֹצַר ה'</small>]:<br /><br />\n        </",
+      "decision": {
+        "status": "pending_manual_case_by_case",
+        "corpus_role": "unknown",
+        "action": "none",
+        "authority": "user_required",
+        "allowed_actions": [
+          "retain_entire_case",
+          "remove_label_only_retain_content",
+          "remove_entire_case",
+          "keep_unknown"
+        ]
+      }
+    },
+    {
+      "id": "editorial-review-case.03",
+      "review_order": 2,
+      "source_order": 3,
+      "priority": "clear_labels_first",
+      "source_candidate_id": "editorial-candidate.007",
+      "member_candidate_ids": [
+        "editorial-candidate.007",
+        "editorial-candidate.008"
+      ],
+      "clear_label_ids": [
+        "editorial-label.03"
+      ],
+      "marker_kind": "square_bracket_pair",
+      "source_code_unit_range": {
+        "start": 6135,
+        "end": 6648
+      },
+      "raw": "[<small>בִּדְפוּס מַנְטוֹבָה נוֹסָף בַּמִּשְׁנָה זוֹ:<br /></small><br /><br />\n          קְשׁוּרוֹת בִּלְשׁוֹן כְּשֶׁהַלֶּבֶת בְּגַחֶלֶת,<br />\n          אחה\"ע מְשַׁמֶּשֶׁת בְּסוֹף הַלָּשׁוֹן וּבְבֵית הַבְּלִיעָה,<br />\n          בומ\"ף בֵּין הַשְּׂפָתַיִם וּבְרֹאשׁ הַלָּשׁוֹן,<br />\n          גיכ\"ק עַל שְׁלִישִׁיתָהּ שֶׁל לָשׁוֹן נִכְרֶתֶת,<br />\n          דטלנ\"ת בְּרֹאשׁ הַלָּשׁוֹן מְשַׁמֶּשֶׁת עִם הַקּוֹל,<br />\n          וסצר\"ש בֵּין הַשִּׁנַּיִם וְלָשׁוֹן שְׁכוּבָה וּשְׁטוּתָהּ. <br /><br />\n          ]",
+      "immediate_context": " <br /><br />\n          [<small>בִּדְפוּס מַנְטוֹבָה נוֹסָף בַּמִּשְׁנָה זוֹ:<br /></small><br /><br />\n          קְשׁוּרוֹת בִּלְשׁוֹן כְּשֶׁהַלֶּבֶת בְּגַחֶלֶת,<br />\n          אחה\"ע מְשַׁמֶּשֶׁת בְּסוֹף הַלָּשׁוֹן וּבְבֵית הַבְּלִיעָה,<br />\n          בומ\"ף בֵּין הַשְּׂפָתַיִם וּבְרֹאשׁ הַלָּשׁוֹן,<br />\n          גיכ\"ק עַל שְׁלִישִׁיתָהּ שֶׁל לָשׁוֹן נִכְרֶתֶת,<br />\n          דטלנ\"ת בְּרֹאשׁ הַלָּשׁוֹן מְשַׁמֶּשֶׁת עִם הַקּוֹל,<br />\n          וסצר\"ש בֵּין הַשִּׁנַּיִם וְלָשׁוֹן שְׁכוּבָה וּשְׁטוּתָהּ. <br /><br />\n          ]:<br /><br />\n          ",
+      "decision": {
+        "status": "pending_manual_case_by_case",
+        "corpus_role": "unknown",
+        "action": "none",
+        "authority": "user_required",
+        "allowed_actions": [
+          "retain_entire_case",
+          "remove_label_only_retain_content",
+          "remove_entire_case",
+          "keep_unknown"
+        ]
+      }
+    },
+    {
+      "id": "editorial-review-case.04",
+      "review_order": 3,
+      "source_order": 6,
+      "priority": "clear_labels_first",
+      "source_candidate_id": "editorial-candidate.011",
+      "member_candidate_ids": [
+        "editorial-candidate.011",
+        "editorial-candidate.012",
+        "editorial-candidate.013",
+        "editorial-candidate.014"
+      ],
+      "clear_label_ids": [
+        "editorial-label.04"
+      ],
+      "marker_kind": "small_element",
+      "source_code_unit_range": {
+        "start": 9962,
+        "end": 10033
+      },
+      "raw": "<small>[זָכָר בשא\"מ וּנְקֵבָה בשמ\"א, <small>(כ\"ה בנ\"י)</small>]</small>",
+      "immediate_context": "נֶּפֶשׁ זָכָר וּנְקֵבָה <small>[זָכָר בשא\"מ וּנְקֵבָה בשמ\"א, <small>(כ\"ה בנ\"י)</small>]</small>:<br />\n\n        </secti",
+      "decision": {
+        "status": "pending_manual_case_by_case",
+        "corpus_role": "unknown",
+        "action": "none",
+        "authority": "user_required",
+        "allowed_actions": [
+          "retain_entire_case",
+          "remove_label_only_retain_content",
+          "remove_entire_case",
+          "keep_unknown"
+        ]
+      }
+    },
+    {
+      "id": "editorial-review-case.05",
+      "review_order": 4,
+      "source_order": 12,
+      "priority": "clear_labels_first",
+      "source_candidate_id": "editorial-candidate.020",
+      "member_candidate_ids": [
+        "editorial-candidate.020",
+        "editorial-candidate.021"
+      ],
+      "clear_label_ids": [
+        "editorial-label.05"
+      ],
+      "marker_kind": "square_bracket_pair",
+      "source_code_unit_range": {
+        "start": 17819,
+        "end": 17849
+      },
+      "raw": "[<small>נ\"א</small> כָּבְשֵׁן]",
+      "immediate_context": "  וְשִׁבְעָה כּוֹכָבִים [<small>נ\"א</small> כָּבְשֵׁן] וְצִבְאוֹתֵיהֶן<br />\n ",
+      "decision": {
+        "status": "pending_manual_case_by_case",
+        "corpus_role": "unknown",
+        "action": "none",
+        "authority": "user_required",
+        "allowed_actions": [
+          "retain_entire_case",
+          "remove_label_only_retain_content",
+          "remove_entire_case",
+          "keep_unknown"
+        ]
+      }
+    },
+    {
+      "id": "editorial-review-case.06",
+      "review_order": 5,
+      "source_order": 13,
+      "priority": "clear_labels_first",
+      "source_candidate_id": "editorial-candidate.022",
+      "member_candidate_ids": [
+        "editorial-candidate.022",
+        "editorial-candidate.023"
+      ],
+      "clear_label_ids": [
+        "editorial-label.06"
+      ],
+      "marker_kind": "square_bracket_pair",
+      "source_code_unit_range": {
+        "start": 18063,
+        "end": 18092
+      },
+      "raw": "[<small>נ\"א</small> עֶשְׂרֵה]",
+      "immediate_context": "     חֹק שְׁנֵים עָשָׂר [<small>נ\"א</small> עֶשְׂרֵה] וְשִׁבְעָה וּשְׁלֹשָׁה<",
+      "decision": {
+        "status": "pending_manual_case_by_case",
+        "corpus_role": "unknown",
+        "action": "none",
+        "authority": "user_required",
+        "allowed_actions": [
+          "retain_entire_case",
+          "remove_label_only_retain_content",
+          "remove_entire_case",
+          "keep_unknown"
+        ]
+      }
+    },
+    {
+      "id": "editorial-review-case.07",
+      "review_order": 6,
+      "source_order": 0,
+      "priority": "remaining_structural_candidate",
+      "source_candidate_id": "editorial-candidate.001",
+      "member_candidate_ids": [
+        "editorial-candidate.001"
+      ],
+      "clear_label_ids": [],
+      "marker_kind": "parenthesis_pair",
+      "source_code_unit_range": {
+        "start": 3975,
+        "end": 4112
+      },
+      "raw": "(חָמֵשׁ שָׁלֹשׁ אוֹתִיּוֹת מִן הַפְּשׁוּטוֹת חָתַם רוֹם בָּרַר שָׁלֹשׁ וְקִבְעָן בִּשְׁמוֹ הַגָּדוֹל יה\"ו. וְחָתַם בָּהֶם שֵׁשׁ קְצָווֹת)",
+      "immediate_context": "וּק 9.5</h3>\n\n          (חָמֵשׁ שָׁלֹשׁ אוֹתִיּוֹת מִן הַפְּשׁוּטוֹת חָתַם רוֹם בָּרַר שָׁלֹשׁ וְקִבְעָן בִּשְׁמוֹ הַגָּדוֹל יה\"ו. וְחָתַם בָּהֶם שֵׁשׁ קְצָווֹת)<br />\n          [<small",
+      "decision": {
+        "status": "pending_manual_case_by_case",
+        "corpus_role": "unknown",
+        "action": "none",
+        "authority": "user_required",
+        "allowed_actions": [
+          "retain_entire_case",
+          "remove_label_only_retain_content",
+          "remove_entire_case",
+          "keep_unknown"
+        ]
+      }
+    },
+    {
+      "id": "editorial-review-case.08",
+      "review_order": 7,
+      "source_order": 4,
+      "priority": "remaining_structural_candidate",
+      "source_candidate_id": "editorial-candidate.009",
+      "member_candidate_ids": [
+        "editorial-candidate.009"
+      ],
+      "clear_label_ids": [],
+      "marker_kind": "parenthesis_pair",
+      "source_code_unit_range": {
+        "start": 7664,
+        "end": 7676
+      },
+      "raw": "(מִנְיָנִים)",
+      "immediate_context": "  עֶשְׂרִים וּשְׁתַּיִם (מִנְיָנִים) [חֲפָצִים]<br />\n      ",
+      "decision": {
+        "status": "pending_manual_case_by_case",
+        "corpus_role": "unknown",
+        "action": "none",
+        "authority": "user_required",
+        "allowed_actions": [
+          "retain_entire_case",
+          "remove_label_only_retain_content",
+          "remove_entire_case",
+          "keep_unknown"
+        ]
+      }
+    },
+    {
+      "id": "editorial-review-case.09",
+      "review_order": 8,
+      "source_order": 5,
+      "priority": "remaining_structural_candidate",
+      "source_candidate_id": "editorial-candidate.010",
+      "member_candidate_ids": [
+        "editorial-candidate.010"
+      ],
+      "clear_label_ids": [],
+      "marker_kind": "square_bracket_pair",
+      "source_code_unit_range": {
+        "start": 7677,
+        "end": 7687
+      },
+      "raw": "[חֲפָצִים]",
+      "immediate_context": "ּשְׁתַּיִם (מִנְיָנִים) [חֲפָצִים]<br />\n          בְּגוּף",
+      "decision": {
+        "status": "pending_manual_case_by_case",
+        "corpus_role": "unknown",
+        "action": "none",
+        "authority": "user_required",
+        "allowed_actions": [
+          "retain_entire_case",
+          "remove_label_only_retain_content",
+          "remove_entire_case",
+          "keep_unknown"
+        ]
+      }
+    },
+    {
+      "id": "editorial-review-case.10",
+      "review_order": 9,
+      "source_order": 7,
+      "priority": "remaining_structural_candidate",
+      "source_candidate_id": "editorial-candidate.015",
+      "member_candidate_ids": [
+        "editorial-candidate.015"
+      ],
+      "clear_label_ids": [],
+      "marker_kind": "parenthesis_pair",
+      "source_code_unit_range": {
+        "start": 10160,
+        "end": 10196
+      },
+      "raw": "(מִתְנַהֲגוֹת בִּשְׁתֵּי לְשׁוֹנוֹת)",
+      "immediate_context": "ד כפר\"ת<br />\n          (מִתְנַהֲגוֹת בִּשְׁתֵּי לְשׁוֹנוֹת),<br />\n          יְסוֹד",
+      "decision": {
+        "status": "pending_manual_case_by_case",
+        "corpus_role": "unknown",
+        "action": "none",
+        "authority": "user_required",
+        "allowed_actions": [
+          "retain_entire_case",
+          "remove_label_only_retain_content",
+          "remove_entire_case",
+          "keep_unknown"
+        ]
+      }
+    },
+    {
+      "id": "editorial-review-case.11",
+      "review_order": 10,
+      "source_order": 8,
+      "priority": "remaining_structural_candidate",
+      "source_candidate_id": "editorial-candidate.016",
+      "member_candidate_ids": [
+        "editorial-candidate.016"
+      ],
+      "clear_label_ids": [],
+      "marker_kind": "parenthesis_pair",
+      "source_code_unit_range": {
+        "start": 10977,
+        "end": 10995
+      },
+      "raw": "(וְצוּר וְחָשׁוּב)",
+      "immediate_context": "ֹן בָּהֶן וַחֲקֹר מֵהֶן (וְצוּר וְחָשׁוּב)<br />\n          וְהַעֲמ",
+      "decision": {
+        "status": "pending_manual_case_by_case",
+        "corpus_role": "unknown",
+        "action": "none",
+        "authority": "user_required",
+        "allowed_actions": [
+          "retain_entire_case",
+          "remove_label_only_retain_content",
+          "remove_entire_case",
+          "keep_unknown"
+        ]
+      }
+    },
+    {
+      "id": "editorial-review-case.12",
+      "review_order": 11,
+      "source_order": 9,
+      "priority": "remaining_structural_candidate",
+      "source_candidate_id": "editorial-candidate.017",
+      "member_candidate_ids": [
+        "editorial-candidate.017"
+      ],
+      "clear_label_ids": [],
+      "marker_kind": "square_bracket_pair",
+      "source_code_unit_range": {
+        "start": 15335,
+        "end": 15451
+      },
+      "raw": "[שְׁתֵּי לוֹעֲזִים וּשְׁתֵּי עַלִּיזִים שְׁתֵּי יוֹעֲצִים וּשְׁתֵּי יְעוּצִים שְׁתֵּי טוֹרְפִין וּשְׁתֵּי צַיָּדִים]",
+      "immediate_context": "מַּסָּס קֵבָה קֻרְקְבָן [שְׁתֵּי לוֹעֲזִים וּשְׁתֵּי עַלִּיזִים שְׁתֵּי יוֹעֲצִים וּשְׁתֵּי יְעוּצִים שְׁתֵּי טוֹרְפִין וּשְׁתֵּי צַיָּדִים]. עֲשָׂאָן כְּמִין (מְדִ",
+      "decision": {
+        "status": "pending_manual_case_by_case",
+        "corpus_role": "unknown",
+        "action": "none",
+        "authority": "user_required",
+        "allowed_actions": [
+          "retain_entire_case",
+          "remove_label_only_retain_content",
+          "remove_entire_case",
+          "keep_unknown"
+        ]
+      }
+    },
+    {
+      "id": "editorial-review-case.13",
+      "review_order": 12,
+      "source_order": 10,
+      "priority": "remaining_structural_candidate",
+      "source_candidate_id": "editorial-candidate.018",
+      "member_candidate_ids": [
+        "editorial-candidate.018"
+      ],
+      "clear_label_ids": [],
+      "marker_kind": "parenthesis_pair",
+      "source_code_unit_range": {
+        "start": 15470,
+        "end": 15480
+      },
+      "raw": "(מְדִינָה)",
+      "immediate_context": "דִים]. עֲשָׂאָן כְּמִין (מְדִינָה) [מְרִיבָה] וְעֶרְכָּן כ",
+      "decision": {
+        "status": "pending_manual_case_by_case",
+        "corpus_role": "unknown",
+        "action": "none",
+        "authority": "user_required",
+        "allowed_actions": [
+          "retain_entire_case",
+          "remove_label_only_retain_content",
+          "remove_entire_case",
+          "keep_unknown"
+        ]
+      }
+    },
+    {
+      "id": "editorial-review-case.14",
+      "review_order": 13,
+      "source_order": 11,
+      "priority": "remaining_structural_candidate",
+      "source_candidate_id": "editorial-candidate.019",
+      "member_candidate_ids": [
+        "editorial-candidate.019"
+      ],
+      "clear_label_ids": [],
+      "marker_kind": "square_bracket_pair",
+      "source_code_unit_range": {
+        "start": 15481,
+        "end": 15491
+      },
+      "raw": "[מְרִיבָה]",
+      "immediate_context": "ָאָן כְּמִין (מְדִינָה) [מְרִיבָה] וְעֶרְכָּן כְּמִין מִלְ",
+      "decision": {
+        "status": "pending_manual_case_by_case",
+        "corpus_role": "unknown",
+        "action": "none",
+        "authority": "user_required",
+        "allowed_actions": [
+          "retain_entire_case",
+          "remove_label_only_retain_content",
+          "remove_entire_case",
+          "keep_unknown"
+        ]
+      }
+    }
+  ]
+}

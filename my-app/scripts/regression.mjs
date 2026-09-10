@@ -25,6 +25,7 @@ const orthographicStream = JSON.parse(fs.readFileSync(new URL("../src/sy.orthogr
 const wordCandidateViews = JSON.parse(fs.readFileSync(new URL("../src/sy.word-candidate-views.json", import.meta.url), "utf8"));
 const trailingApostropheCases = JSON.parse(fs.readFileSync(new URL("../src/sy.trailing-apostrophe-cases.json", import.meta.url), "utf8"));
 const editorialCandidateInventory = JSON.parse(fs.readFileSync(new URL("../src/sy.editorial-candidate-inventory.json", import.meta.url), "utf8"));
+const editorialReviewCases = JSON.parse(fs.readFileSync(new URL("../src/sy.editorial-review-cases.json", import.meta.url), "utf8"));
 const failures = [];
 const requireInvariant = (condition, name) => {
   if (!condition) failures.push(name);
@@ -237,6 +238,20 @@ requireInvariant(editorialCandidateInventory.proof.every_corpus_and_editorial_ro
 requireInvariant(editorialCandidateInventory.proof.no_source_or_corpus_change_performed, "editorial_candidates_no_mutation");
 requireInvariant(editorialCandidateInventory.proof.candidate_count === 23, "editorial_candidates_exact_count");
 requireInvariant(editorialCandidateInventory.proof.deterministic_output, "editorial_candidates_deterministic");
+requireInvariant(editorialReviewCases.source.sha256 === sourceHash, "editorial_review_cases_source_hash");
+requireInvariant(editorialReviewCases.status === "sealed_review_queue", "editorial_review_cases_sealed");
+requireInvariant(editorialReviewCases.corpus_cleaning_status === "stopped_pending_manual_decisions", "editorial_review_cases_cleaning_stopped");
+requireInvariant(editorialReviewCases.decision_mode === "manual_case_by_case", "editorial_review_cases_manual_mode");
+requireInvariant(editorialReviewCases.proof.twenty_three_observations_consolidated_exactly_once, "editorial_review_cases_observation_coverage");
+requireInvariant(editorialReviewCases.proof.exactly_fourteen_nonoverlapping_review_cases, "editorial_review_cases_exact_count");
+requireInvariant(editorialReviewCases.proof.exactly_six_clear_labels_recorded, "editorial_review_cases_label_count");
+requireInvariant(editorialReviewCases.proof.clear_label_cases_are_first, "editorial_review_cases_label_priority");
+requireInvariant(editorialReviewCases.proof.every_label_belongs_to_exactly_one_case, "editorial_review_cases_label_assignment");
+requireInvariant(editorialReviewCases.proof.every_case_matches_exact_source_range, "editorial_review_cases_source_ranges");
+requireInvariant(editorialReviewCases.proof.every_decision_remains_pending_manual, "editorial_review_cases_pending");
+requireInvariant(editorialReviewCases.proof.corpus_cleaning_is_stopped, "editorial_review_cases_no_cleaning");
+requireInvariant(editorialReviewCases.proof.source_and_corpus_are_unchanged, "editorial_review_cases_no_mutation");
+requireInvariant(editorialReviewCases.proof.deterministic_output, "editorial_review_cases_deterministic");
 requireInvariant(corpus.validation.valid, "corpus_validation");
 requireInvariant(corpus.input === sourceText, "lossless_source");
 requireInvariant(corpus.stats.occurrences === 1673, "occurrence_count");

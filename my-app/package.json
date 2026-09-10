@@ -41,6 +41,8 @@
     "test:trailing-apostrophe-cases": "node scripts/generate-trailing-apostrophe-cases.mjs --check",
     "generate:editorial-candidate-inventory": "node scripts/generate-editorial-candidate-inventory.mjs",
     "test:editorial-candidate-inventory": "node scripts/generate-editorial-candidate-inventory.mjs --check",
+    "generate:editorial-review-cases": "node scripts/generate-editorial-review-cases.mjs",
+    "test:editorial-review-cases": "node scripts/generate-editorial-review-cases.mjs --check",
     "test:regression": "node scripts/regression.mjs",
     "preview": "vite preview"
   },
