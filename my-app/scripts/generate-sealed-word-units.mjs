@@ -74,7 +74,7 @@ const reconstructed = corpus.fragments.map((fragment) => source.slice(
   fragment.source_code_unit_range.end,
 )).join("");
 const proof = {
-  exactly_ninety_four_signed_occurrences: occurrences.length === 94,
+  exactly_ninety_one_signed_occurrences: occurrences.length === 91,
   every_input_occurrence_included_exactly_once: inputKeys.length === outputKeys.length
     && new Set(outputKeys).size === outputKeys.length
     && inputKeys.every((key) => outputKeys.includes(key)),

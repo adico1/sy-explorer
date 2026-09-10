@@ -57,10 +57,10 @@ const everyDecisionExclusive = decisions.every((item) => [
 ].includes(item.decision.status));
 const noUnresolvedNodes = decisions.every((item) => item.decision.status !== "unresolved");
 const countsMatchUserDecision = count((item) => item.decision.class === "section_body") === 353
-  && count((item) => item.decision.class === "small_text") === 9
+  && count((item) => item.decision.class === "small_text") === 8
   && count((item) => item.decision.class === "structural_heading") === 27
-  && count((item) => item.decision.class === "jsx_whitespace") === 42
-  && included.length === 362;
+  && count((item) => item.decision.class === "jsx_whitespace") === 41
+  && included.length === 361;
 const includedOrderPreserved = included.every((item, index) => index === 0
   || item.ordinal > included[index - 1].ordinal);
 

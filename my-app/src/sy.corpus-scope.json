@@ -5,8 +5,8 @@
   "semantic_status": "scope_only",
   "source": {
     "file": "src/SeferYetzirah.tsx",
-    "sha256": "868e1cadf357fd6b868bfa14d9694e55623186354b1a456dd3a45bb48f4864dd",
-    "text_context_sha256": "b63cd1cbbc8c65ac6f653ec4da56fc30f372a9b3a9b21073359678139f6db502"
+    "sha256": "d568a1ab11859e04c5ed6292b0d8ad829885ecdb95fc19a9fb5273b269413024",
+    "text_context_sha256": "6263a163fae684c5cd6c3ab2cb0e734dd36c20f0633328bee0d047f023108e14"
   },
   "policy": {
     "section_body": {
@@ -37,12 +37,12 @@
     "counts_match_user_decision": true,
     "included_source_order_preserved": true,
     "deterministic_output": true,
-    "total_text_node_count": 431,
+    "total_text_node_count": 429,
     "included_section_body_count": 353,
-    "included_temporarily_small_count": 9,
-    "total_included_count": 362,
+    "included_temporarily_small_count": 8,
+    "total_included_count": 361,
     "excluded_heading_count": 27,
-    "excluded_whitespace_count": 42
+    "excluded_whitespace_count": 41
   },
   "corpus_text_node_ids": [
     "jsx.00022",
@@ -149,264 +149,263 @@
     "jsx.00316",
     "jsx.00318",
     "jsx.00320",
-    "jsx.00325",
+    "jsx.00323",
+    "jsx.00326",
     "jsx.00328",
-    "jsx.00331",
-    "jsx.00333",
-    "jsx.00335",
-    "jsx.00337",
+    "jsx.00330",
+    "jsx.00332",
+    "jsx.00334",
+    "jsx.00336",
     "jsx.00339",
     "jsx.00341",
-    "jsx.00344",
-    "jsx.00346",
-    "jsx.00348",
-    "jsx.00350",
-    "jsx.00352",
-    "jsx.00354",
+    "jsx.00343",
+    "jsx.00345",
+    "jsx.00347",
+    "jsx.00349",
+    "jsx.00351",
+    "jsx.00353",
     "jsx.00356",
     "jsx.00358",
-    "jsx.00361",
-    "jsx.00363",
-    "jsx.00365",
-    "jsx.00367",
-    "jsx.00369",
-    "jsx.00371",
-    "jsx.00373",
-    "jsx.00375",
-    "jsx.00377",
-    "jsx.00379",
-    "jsx.00389",
-    "jsx.00391",
-    "jsx.00393",
-    "jsx.00395",
+    "jsx.00360",
+    "jsx.00362",
+    "jsx.00364",
+    "jsx.00366",
+    "jsx.00368",
+    "jsx.00370",
+    "jsx.00372",
+    "jsx.00374",
+    "jsx.00384",
+    "jsx.00386",
+    "jsx.00388",
+    "jsx.00390",
+    "jsx.00392",
+    "jsx.00394",
     "jsx.00397",
     "jsx.00399",
-    "jsx.00402",
-    "jsx.00404",
-    "jsx.00406",
-    "jsx.00408",
-    "jsx.00410",
+    "jsx.00401",
+    "jsx.00403",
+    "jsx.00405",
+    "jsx.00407",
+    "jsx.00409",
     "jsx.00412",
     "jsx.00414",
-    "jsx.00417",
-    "jsx.00419",
+    "jsx.00416",
+    "jsx.00418",
     "jsx.00421",
     "jsx.00423",
-    "jsx.00426",
-    "jsx.00428",
-    "jsx.00430",
-    "jsx.00432",
+    "jsx.00425",
+    "jsx.00427",
+    "jsx.00429",
+    "jsx.00431",
     "jsx.00434",
     "jsx.00436",
-    "jsx.00439",
-    "jsx.00441",
-    "jsx.00443",
-    "jsx.00445",
-    "jsx.00447",
-    "jsx.00449",
-    "jsx.00451",
-    "jsx.00453",
-    "jsx.00455",
-    "jsx.00457",
+    "jsx.00438",
+    "jsx.00440",
+    "jsx.00442",
+    "jsx.00444",
+    "jsx.00446",
+    "jsx.00448",
+    "jsx.00450",
+    "jsx.00452",
+    "jsx.00454",
+    "jsx.00456",
     "jsx.00459",
     "jsx.00461",
-    "jsx.00464",
-    "jsx.00466",
-    "jsx.00468",
-    "jsx.00470",
+    "jsx.00463",
+    "jsx.00465",
+    "jsx.00467",
+    "jsx.00469",
     "jsx.00472",
     "jsx.00474",
-    "jsx.00477",
-    "jsx.00479",
-    "jsx.00481",
-    "jsx.00483",
-    "jsx.00485",
-    "jsx.00487",
-    "jsx.00489",
-    "jsx.00499",
-    "jsx.00501",
-    "jsx.00503",
-    "jsx.00505",
-    "jsx.00507",
-    "jsx.00509",
-    "jsx.00511",
-    "jsx.00513",
-    "jsx.00515",
-    "jsx.00517",
-    "jsx.00519",
-    "jsx.00521",
-    "jsx.00523",
-    "jsx.00525",
+    "jsx.00476",
+    "jsx.00478",
+    "jsx.00480",
+    "jsx.00482",
+    "jsx.00484",
+    "jsx.00494",
+    "jsx.00496",
+    "jsx.00498",
+    "jsx.00500",
+    "jsx.00502",
+    "jsx.00504",
+    "jsx.00506",
+    "jsx.00508",
+    "jsx.00510",
+    "jsx.00512",
+    "jsx.00514",
+    "jsx.00516",
+    "jsx.00518",
+    "jsx.00520",
+    "jsx.00522",
+    "jsx.00524",
     "jsx.00527",
     "jsx.00529",
-    "jsx.00532",
-    "jsx.00534",
-    "jsx.00536",
+    "jsx.00531",
+    "jsx.00533",
+    "jsx.00535",
     "jsx.00538",
     "jsx.00540",
-    "jsx.00543",
-    "jsx.00545",
-    "jsx.00547",
-    "jsx.00549",
-    "jsx.00551",
+    "jsx.00542",
+    "jsx.00544",
+    "jsx.00546",
+    "jsx.00548",
+    "jsx.00550",
     "jsx.00553",
     "jsx.00555",
-    "jsx.00558",
-    "jsx.00560",
-    "jsx.00562",
-    "jsx.00564",
-    "jsx.00566",
-    "jsx.00568",
-    "jsx.00570",
-    "jsx.00572",
-    "jsx.00574",
+    "jsx.00557",
+    "jsx.00559",
+    "jsx.00561",
+    "jsx.00563",
+    "jsx.00565",
+    "jsx.00567",
+    "jsx.00569",
+    "jsx.00571",
+    "jsx.00573",
     "jsx.00576",
     "jsx.00578",
-    "jsx.00581",
-    "jsx.00583",
-    "jsx.00585",
-    "jsx.00587",
-    "jsx.00589",
+    "jsx.00580",
+    "jsx.00582",
+    "jsx.00584",
+    "jsx.00586",
+    "jsx.00588",
     "jsx.00591",
     "jsx.00593",
-    "jsx.00596",
-    "jsx.00598",
-    "jsx.00600",
-    "jsx.00602",
-    "jsx.00604",
-    "jsx.00606",
-    "jsx.00608",
-    "jsx.00610",
-    "jsx.00612",
-    "jsx.00614",
-    "jsx.00616",
-    "jsx.00618",
-    "jsx.00620",
-    "jsx.00622",
-    "jsx.00624",
-    "jsx.00626",
-    "jsx.00637",
-    "jsx.00639",
-    "jsx.00641",
-    "jsx.00643",
-    "jsx.00645",
-    "jsx.00647",
+    "jsx.00595",
+    "jsx.00597",
+    "jsx.00599",
+    "jsx.00601",
+    "jsx.00603",
+    "jsx.00605",
+    "jsx.00607",
+    "jsx.00609",
+    "jsx.00611",
+    "jsx.00613",
+    "jsx.00615",
+    "jsx.00617",
+    "jsx.00619",
+    "jsx.00621",
+    "jsx.00632",
+    "jsx.00634",
+    "jsx.00636",
+    "jsx.00638",
+    "jsx.00640",
+    "jsx.00642",
+    "jsx.00644",
+    "jsx.00646",
     "jsx.00649",
     "jsx.00651",
-    "jsx.00654",
-    "jsx.00656",
-    "jsx.00658",
-    "jsx.00660",
-    "jsx.00662",
-    "jsx.00664",
-    "jsx.00666",
-    "jsx.00668",
+    "jsx.00653",
+    "jsx.00655",
+    "jsx.00657",
+    "jsx.00659",
+    "jsx.00661",
+    "jsx.00663",
+    "jsx.00665",
     "jsx.00670",
-    "jsx.00675",
-    "jsx.00677",
-    "jsx.00679",
-    "jsx.00681",
-    "jsx.00683",
-    "jsx.00685",
-    "jsx.00687",
-    "jsx.00689",
-    "jsx.00691",
-    "jsx.00693",
-    "jsx.00695",
+    "jsx.00672",
+    "jsx.00674",
+    "jsx.00676",
+    "jsx.00678",
+    "jsx.00680",
+    "jsx.00682",
+    "jsx.00684",
+    "jsx.00686",
+    "jsx.00688",
+    "jsx.00690",
+    "jsx.00692",
+    "jsx.00694",
     "jsx.00697",
     "jsx.00699",
-    "jsx.00702",
-    "jsx.00704",
-    "jsx.00706",
-    "jsx.00708",
+    "jsx.00701",
+    "jsx.00703",
+    "jsx.00705",
+    "jsx.00707",
     "jsx.00710",
     "jsx.00712",
-    "jsx.00715",
-    "jsx.00717",
-    "jsx.00719",
-    "jsx.00721",
-    "jsx.00723",
-    "jsx.00734",
-    "jsx.00736",
-    "jsx.00738",
-    "jsx.00740",
-    "jsx.00742",
-    "jsx.00744",
-    "jsx.00746",
-    "jsx.00748",
-    "jsx.00750",
-    "jsx.00752",
-    "jsx.00754",
-    "jsx.00756",
-    "jsx.00758",
-    "jsx.00760",
-    "jsx.00762",
-    "jsx.00764",
-    "jsx.00766",
+    "jsx.00714",
+    "jsx.00716",
+    "jsx.00718",
+    "jsx.00729",
+    "jsx.00731",
+    "jsx.00733",
+    "jsx.00735",
+    "jsx.00737",
+    "jsx.00739",
+    "jsx.00741",
+    "jsx.00743",
+    "jsx.00745",
+    "jsx.00747",
+    "jsx.00749",
+    "jsx.00751",
+    "jsx.00753",
+    "jsx.00755",
+    "jsx.00757",
+    "jsx.00759",
+    "jsx.00761",
+    "jsx.00763",
+    "jsx.00765",
     "jsx.00768",
     "jsx.00770",
-    "jsx.00773",
-    "jsx.00775",
-    "jsx.00777",
-    "jsx.00779",
-    "jsx.00781",
-    "jsx.00783",
-    "jsx.00785",
-    "jsx.00787",
-    "jsx.00789",
-    "jsx.00791",
-    "jsx.00793",
-    "jsx.00795",
-    "jsx.00797",
-    "jsx.00799",
-    "jsx.00801",
-    "jsx.00803",
-    "jsx.00805",
-    "jsx.00807",
-    "jsx.00809",
-    "jsx.00811",
-    "jsx.00813",
-    "jsx.00815",
-    "jsx.00817",
-    "jsx.00819",
-    "jsx.00821",
-    "jsx.00823",
-    "jsx.00825",
-    "jsx.00827",
-    "jsx.00829",
-    "jsx.00831",
-    "jsx.00833",
-    "jsx.00835",
+    "jsx.00772",
+    "jsx.00774",
+    "jsx.00776",
+    "jsx.00778",
+    "jsx.00780",
+    "jsx.00782",
+    "jsx.00784",
+    "jsx.00786",
+    "jsx.00788",
+    "jsx.00790",
+    "jsx.00792",
+    "jsx.00794",
+    "jsx.00796",
+    "jsx.00798",
+    "jsx.00800",
+    "jsx.00802",
+    "jsx.00804",
+    "jsx.00806",
+    "jsx.00808",
+    "jsx.00810",
+    "jsx.00812",
+    "jsx.00814",
+    "jsx.00816",
+    "jsx.00818",
+    "jsx.00820",
+    "jsx.00822",
+    "jsx.00824",
+    "jsx.00826",
+    "jsx.00828",
+    "jsx.00830",
+    "jsx.00832",
+    "jsx.00834",
     "jsx.00837",
     "jsx.00839",
-    "jsx.00842",
-    "jsx.00844",
-    "jsx.00846",
-    "jsx.00848",
-    "jsx.00850",
-    "jsx.00852",
-    "jsx.00854",
-    "jsx.00856",
-    "jsx.00858",
-    "jsx.00860",
-    "jsx.00862",
-    "jsx.00864",
-    "jsx.00866",
-    "jsx.00868",
-    "jsx.00870",
-    "jsx.00872",
-    "jsx.00874",
-    "jsx.00876",
-    "jsx.00878",
-    "jsx.00880",
-    "jsx.00882",
-    "jsx.00884",
-    "jsx.00886",
-    "jsx.00888",
-    "jsx.00890",
-    "jsx.00892",
-    "jsx.00894",
-    "jsx.00896"
+    "jsx.00841",
+    "jsx.00843",
+    "jsx.00845",
+    "jsx.00847",
+    "jsx.00849",
+    "jsx.00851",
+    "jsx.00853",
+    "jsx.00855",
+    "jsx.00857",
+    "jsx.00859",
+    "jsx.00861",
+    "jsx.00863",
+    "jsx.00865",
+    "jsx.00867",
+    "jsx.00869",
+    "jsx.00871",
+    "jsx.00873",
+    "jsx.00875",
+    "jsx.00877",
+    "jsx.00879",
+    "jsx.00881",
+    "jsx.00883",
+    "jsx.00885",
+    "jsx.00887",
+    "jsx.00889",
+    "jsx.00891"
   ],
   "decisions": [
     {
@@ -2099,19 +2098,19 @@
       "source_node_id": "jsx.00323",
       "reading_unit_id": "reading-unit.0113",
       "decision": {
-        "status": "excluded",
-        "class": "jsx_whitespace",
+        "status": "included",
+        "class": "section_body",
         "authority": "user"
       }
     },
     {
       "id": "scope-decision.0153",
       "ordinal": 152,
-      "source_node_id": "jsx.00325",
-      "reading_unit_id": "reading-unit.0113",
+      "source_node_id": "jsx.00326",
+      "reading_unit_id": "reading-unit.0115",
       "decision": {
-        "status": "included_temporarily",
-        "class": "small_text",
+        "status": "included",
+        "class": "section_body",
         "authority": "user"
       }
     },
@@ -2119,7 +2118,7 @@
       "id": "scope-decision.0154",
       "ordinal": 153,
       "source_node_id": "jsx.00328",
-      "reading_unit_id": "reading-unit.0114",
+      "reading_unit_id": "reading-unit.0116",
       "decision": {
         "status": "included",
         "class": "section_body",
@@ -2129,8 +2128,8 @@
     {
       "id": "scope-decision.0155",
       "ordinal": 154,
-      "source_node_id": "jsx.00331",
-      "reading_unit_id": "reading-unit.0116",
+      "source_node_id": "jsx.00330",
+      "reading_unit_id": "reading-unit.0117",
       "decision": {
         "status": "included",
         "class": "section_body",
@@ -2140,8 +2139,8 @@
     {
       "id": "scope-decision.0156",
       "ordinal": 155,
-      "source_node_id": "jsx.00333",
-      "reading_unit_id": "reading-unit.0117",
+      "source_node_id": "jsx.00332",
+      "reading_unit_id": "reading-unit.0118",
       "decision": {
         "status": "included",
         "class": "section_body",
@@ -2151,8 +2150,8 @@
     {
       "id": "scope-decision.0157",
       "ordinal": 156,
-      "source_node_id": "jsx.00335",
-      "reading_unit_id": "reading-unit.0118",
+      "source_node_id": "jsx.00334",
+      "reading_unit_id": "reading-unit.0119",
       "decision": {
         "status": "included",
         "class": "section_body",
@@ -2162,8 +2161,8 @@
     {
       "id": "scope-decision.0158",
       "ordinal": 157,
-      "source_node_id": "jsx.00337",
-      "reading_unit_id": "reading-unit.0119",
+      "source_node_id": "jsx.00336",
+      "reading_unit_id": "reading-unit.0120",
       "decision": {
         "status": "included",
         "class": "section_body",
@@ -2174,7 +2173,7 @@
       "id": "scope-decision.0159",
       "ordinal": 158,
       "source_node_id": "jsx.00339",
-      "reading_unit_id": "reading-unit.0120",
+      "reading_unit_id": "reading-unit.0122",
       "decision": {
         "status": "included",
         "class": "section_body",
@@ -2185,7 +2184,7 @@
       "id": "scope-decision.0160",
       "ordinal": 159,
       "source_node_id": "jsx.00341",
-      "reading_unit_id": "reading-unit.0121",
+      "reading_unit_id": "reading-unit.0123",
       "decision": {
         "status": "included",
         "class": "section_body",
@@ -2195,8 +2194,8 @@
     {
       "id": "scope-decision.0161",
       "ordinal": 160,
-      "source_node_id": "jsx.00344",
-      "reading_unit_id": "reading-unit.0123",
+      "source_node_id": "jsx.00343",
+      "reading_unit_id": "reading-unit.0124",
       "decision": {
         "status": "included",
         "class": "section_body",
@@ -2206,8 +2205,8 @@
     {
       "id": "scope-decision.0162",
       "ordinal": 161,
-      "source_node_id": "jsx.00346",
-      "reading_unit_id": "reading-unit.0124",
+      "source_node_id": "jsx.00345",
+      "reading_unit_id": "reading-unit.0125",
       "decision": {
         "status": "included",
         "class": "section_body",
@@ -2217,8 +2216,8 @@
     {
       "id": "scope-decision.0163",
       "ordinal": 162,
-      "source_node_id": "jsx.00348",
-      "reading_unit_id": "reading-unit.0125",
+      "source_node_id": "jsx.00347",
+      "reading_unit_id": "reading-unit.0126",
       "decision": {
         "status": "included",
         "class": "section_body",
@@ -2228,8 +2227,8 @@
     {
       "id": "scope-decision.0164",
       "ordinal": 163,
-      "source_node_id": "jsx.00350",
-      "reading_unit_id": "reading-unit.0126",
+      "source_node_id": "jsx.00349",
+      "reading_unit_id": "reading-unit.0127",
       "decision": {
         "status": "included",
         "class": "section_body",
@@ -2239,8 +2238,8 @@
     {
       "id": "scope-decision.0165",
       "ordinal": 164,
-      "source_node_id": "jsx.00352",
-      "reading_unit_id": "reading-unit.0127",
+      "source_node_id": "jsx.00351",
+      "reading_unit_id": "reading-unit.0128",
       "decision": {
         "status": "included",
         "class": "section_body",
@@ -2250,8 +2249,8 @@
     {
       "id": "scope-decision.0166",
       "ordinal": 165,
-      "source_node_id": "jsx.00354",
-      "reading_unit_id": "reading-unit.0128",
+      "source_node_id": "jsx.00353",
+      "reading_unit_id": "reading-unit.0129",
       "decision": {
         "status": "included",
         "class": "section_body",
@@ -2262,7 +2261,7 @@
       "id": "scope-decision.0167",
       "ordinal": 166,
       "source_node_id": "jsx.00356",
-      "reading_unit_id": "reading-unit.0129",
+      "reading_unit_id": "reading-unit.0131",
       "decision": {
         "status": "included",
         "class": "section_body",
@@ -2273,7 +2272,7 @@
       "id": "scope-decision.0168",
       "ordinal": 167,
       "source_node_id": "jsx.00358",
-      "reading_unit_id": "reading-unit.0130",
+      "reading_unit_id": "reading-unit.0132",
       "decision": {
         "status": "included",
         "class": "section_body",
@@ -2283,8 +2282,8 @@
     {
       "id": "scope-decision.0169",
       "ordinal": 168,
-      "source_node_id": "jsx.00361",
-      "reading_unit_id": "reading-unit.0132",
+      "source_node_id": "jsx.00360",
+      "reading_unit_id": "reading-unit.0133",
       "decision": {
         "status": "included",
         "class": "section_body",
@@ -2294,8 +2293,8 @@
     {
       "id": "scope-decision.0170",
       "ordinal": 169,
-      "source_node_id": "jsx.00363",
-      "reading_unit_id": "reading-unit.0133",
+      "source_node_id": "jsx.00362",
+      "reading_unit_id": "reading-unit.0134",
       "decision": {
         "status": "included",
         "class": "section_body",
@@ -2305,8 +2304,8 @@
     {
       "id": "scope-decision.0171",
       "ordinal": 170,
-      "source_node_id": "jsx.00365",
-      "reading_unit_id": "reading-unit.0134",
+      "source_node_id": "jsx.00364",
+      "reading_unit_id": "reading-unit.0135",
       "decision": {
         "status": "included",
         "class": "section_body",
@@ -2316,8 +2315,8 @@
     {
       "id": "scope-decision.0172",
       "ordinal": 171,
-      "source_node_id": "jsx.00367",
-      "reading_unit_id": "reading-unit.0135",
+      "source_node_id": "jsx.00366",
+      "reading_unit_id": "reading-unit.0136",
       "decision": {
         "status": "included",
         "class": "section_body",
@@ -2327,8 +2326,8 @@
     {
       "id": "scope-decision.0173",
       "ordinal": 172,
-      "source_node_id": "jsx.00369",
-      "reading_unit_id": "reading-unit.0136",
+      "source_node_id": "jsx.00368",
+      "reading_unit_id": "reading-unit.0137",
       "decision": {
         "status": "included",
         "class": "section_body",
@@ -2338,8 +2337,8 @@
     {
       "id": "scope-decision.0174",
       "ordinal": 173,
-      "source_node_id": "jsx.00371",
-      "reading_unit_id": "reading-unit.0137",
+      "source_node_id": "jsx.00370",
+      "reading_unit_id": "reading-unit.0138",
       "decision": {
         "status": "included",
         "class": "section_body",
@@ -2349,8 +2348,8 @@
     {
       "id": "scope-decision.0175",
       "ordinal": 174,
-      "source_node_id": "jsx.00373",
-      "reading_unit_id": "reading-unit.0138",
+      "source_node_id": "jsx.00372",
+      "reading_unit_id": "reading-unit.0139",
       "decision": {
         "status": "included",
         "class": "section_body",
@@ -2360,8 +2359,8 @@
     {
       "id": "scope-decision.0176",
       "ordinal": 175,
-      "source_node_id": "jsx.00375",
-      "reading_unit_id": "reading-unit.0139",
+      "source_node_id": "jsx.00374",
+      "reading_unit_id": "reading-unit.0140",
       "decision": {
         "status": "included",
         "class": "section_body",
@@ -2371,30 +2370,30 @@
     {
       "id": "scope-decision.0177",
       "ordinal": 176,
-      "source_node_id": "jsx.00377",
-      "reading_unit_id": "reading-unit.0140",
+      "source_node_id": "jsx.00376",
+      "reading_unit_id": "reading-unit.0141",
       "decision": {
-        "status": "included",
-        "class": "section_body",
+        "status": "excluded",
+        "class": "jsx_whitespace",
         "authority": "user"
       }
     },
     {
       "id": "scope-decision.0178",
       "ordinal": 177,
-      "source_node_id": "jsx.00379",
+      "source_node_id": "jsx.00378",
       "reading_unit_id": "reading-unit.0141",
       "decision": {
-        "status": "included",
-        "class": "section_body",
+        "status": "excluded",
+        "class": "jsx_whitespace",
         "authority": "user"
       }
     },
     {
       "id": "scope-decision.0179",
       "ordinal": 178,
-      "source_node_id": "jsx.00381",
-      "reading_unit_id": "reading-unit.0142",
+      "source_node_id": "jsx.00380",
+      "reading_unit_id": "reading-unit.0141",
       "decision": {
         "status": "excluded",
         "class": "jsx_whitespace",
@@ -2404,30 +2403,8 @@
     {
       "id": "scope-decision.0180",
       "ordinal": 179,
-      "source_node_id": "jsx.00383",
-      "reading_unit_id": "reading-unit.0142",
-      "decision": {
-        "status": "excluded",
-        "class": "jsx_whitespace",
-        "authority": "user"
-      }
-    },
-    {
-      "id": "scope-decision.0181",
-      "ordinal": 180,
-      "source_node_id": "jsx.00385",
-      "reading_unit_id": "reading-unit.0142",
-      "decision": {
-        "status": "excluded",
-        "class": "jsx_whitespace",
-        "authority": "user"
-      }
-    },
-    {
-      "id": "scope-decision.0182",
-      "ordinal": 181,
-      "source_node_id": "jsx.00387",
-      "reading_unit_id": "reading-unit.0142",
+      "source_node_id": "jsx.00382",
+      "reading_unit_id": "reading-unit.0141",
       "decision": {
         "status": "excluded",
         "class": "structural_heading",
@@ -2436,10 +2413,32 @@
       }
     },
     {
+      "id": "scope-decision.0181",
+      "ordinal": 180,
+      "source_node_id": "jsx.00384",
+      "reading_unit_id": "reading-unit.0141",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0182",
+      "ordinal": 181,
+      "source_node_id": "jsx.00386",
+      "reading_unit_id": "reading-unit.0142",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
       "id": "scope-decision.0183",
       "ordinal": 182,
-      "source_node_id": "jsx.00389",
-      "reading_unit_id": "reading-unit.0142",
+      "source_node_id": "jsx.00388",
+      "reading_unit_id": "reading-unit.0143",
       "decision": {
         "status": "included",
         "class": "section_body",
@@ -2449,8 +2448,8 @@
     {
       "id": "scope-decision.0184",
       "ordinal": 183,
-      "source_node_id": "jsx.00391",
-      "reading_unit_id": "reading-unit.0143",
+      "source_node_id": "jsx.00390",
+      "reading_unit_id": "reading-unit.0144",
       "decision": {
         "status": "included",
         "class": "section_body",
@@ -2460,8 +2459,8 @@
     {
       "id": "scope-decision.0185",
       "ordinal": 184,
-      "source_node_id": "jsx.00393",
-      "reading_unit_id": "reading-unit.0144",
+      "source_node_id": "jsx.00392",
+      "reading_unit_id": "reading-unit.0145",
       "decision": {
         "status": "included",
         "class": "section_body",
@@ -2471,8 +2470,8 @@
     {
       "id": "scope-decision.0186",
       "ordinal": 185,
-      "source_node_id": "jsx.00395",
-      "reading_unit_id": "reading-unit.0145",
+      "source_node_id": "jsx.00394",
+      "reading_unit_id": "reading-unit.0146",
       "decision": {
         "status": "included",
         "class": "section_body",
@@ -2483,7 +2482,7 @@
       "id": "scope-decision.0187",
       "ordinal": 186,
       "source_node_id": "jsx.00397",
-      "reading_unit_id": "reading-unit.0146",
+      "reading_unit_id": "reading-unit.0148",
       "decision": {
         "status": "included",
         "class": "section_body",
@@ -2494,7 +2493,7 @@
       "id": "scope-decision.0188",
       "ordinal": 187,
       "source_node_id": "jsx.00399",
-      "reading_unit_id": "reading-unit.0147",
+      "reading_unit_id": "reading-unit.0149",
       "decision": {
         "status": "included",
         "class": "section_body",
@@ -2504,8 +2503,8 @@
     {
       "id": "scope-decision.0189",
       "ordinal": 188,
-      "source_node_id": "jsx.00402",
-      "reading_unit_id": "reading-unit.0149",
+      "source_node_id": "jsx.00401",
+      "reading_unit_id": "reading-unit.0150",
       "decision": {
         "status": "included",
         "class": "section_body",
@@ -2515,8 +2514,8 @@
     {
       "id": "scope-decision.0190",
       "ordinal": 189,
-      "source_node_id": "jsx.00404",
-      "reading_unit_id": "reading-unit.0150",
+      "source_node_id": "jsx.00403",
+      "reading_unit_id": "reading-unit.0151",
       "decision": {
         "status": "included",
         "class": "section_body",
@@ -2526,8 +2525,8 @@
     {
       "id": "scope-decision.0191",
       "ordinal": 190,
-      "source_node_id": "jsx.00406",
-      "reading_unit_id": "reading-unit.0151",
+      "source_node_id": "jsx.00405",
+      "reading_unit_id": "reading-unit.0152",
       "decision": {
         "status": "included",
         "class": "section_body",
@@ -2537,8 +2536,8 @@
     {
       "id": "scope-decision.0192",
       "ordinal": 191,
-      "source_node_id": "jsx.00408",
-      "reading_unit_id": "reading-unit.0152",
+      "source_node_id": "jsx.00407",
+      "reading_unit_id": "reading-unit.0153",
       "decision": {
         "status": "included",
         "class": "section_body",
@@ -2548,8 +2547,8 @@
     {
       "id": "scope-decision.0193",
       "ordinal": 192,
-      "source_node_id": "jsx.00410",
-      "reading_unit_id": "reading-unit.0153",
+      "source_node_id": "jsx.00409",
+      "reading_unit_id": "reading-unit.0154",
       "decision": {
         "status": "included",
         "class": "section_body",
@@ -2560,7 +2559,7 @@
       "id": "scope-decision.0194",
       "ordinal": 193,
       "source_node_id": "jsx.00412",
-      "reading_unit_id": "reading-unit.0154",
+      "reading_unit_id": "reading-unit.0156",
       "decision": {
         "status": "included",
         "class": "section_body",
@@ -2571,7 +2570,7 @@
       "id": "scope-decision.0195",
       "ordinal": 194,
       "source_node_id": "jsx.00414",
-      "reading_unit_id": "reading-unit.0155",
+      "reading_unit_id": "reading-unit.0157",
       "decision": {
         "status": "included",
         "class": "section_body",
@@ -2581,8 +2580,8 @@
     {
       "id": "scope-decision.0196",
       "ordinal": 195,
-      "source_node_id": "jsx.00417",
-      "reading_unit_id": "reading-unit.0157",
+      "source_node_id": "jsx.00416",
+      "reading_unit_id": "reading-unit.0158",
       "decision": {
         "status": "included",
         "class": "section_body",
@@ -2592,8 +2591,8 @@
     {
       "id": "scope-decision.0197",
       "ordinal": 196,
-      "source_node_id": "jsx.00419",
-      "reading_unit_id": "reading-unit.0158",
+      "source_node_id": "jsx.00418",
+      "reading_unit_id": "reading-unit.0159",
       "decision": {
         "status": "included",
         "class": "section_body",
@@ -2604,7 +2603,7 @@
       "id": "scope-decision.0198",
       "ordinal": 197,
       "source_node_id": "jsx.00421",
-      "reading_unit_id": "reading-unit.0159",
+      "reading_unit_id": "reading-unit.0161",
       "decision": {
         "status": "included",
         "class": "section_body",
@@ -2615,7 +2614,7 @@
       "id": "scope-decision.0199",
       "ordinal": 198,
       "source_node_id": "jsx.00423",
-      "reading_unit_id": "reading-unit.0160",
+      "reading_unit_id": "reading-unit.0162",
       "decision": {
         "status": "included",
         "class": "section_body",
@@ -2625,8 +2624,8 @@
     {
       "id": "scope-decision.0200",
       "ordinal": 199,
-      "source_node_id": "jsx.00426",
-      "reading_unit_id": "reading-unit.0162",
+      "source_node_id": "jsx.00425",
+      "reading_unit_id": "reading-unit.0163",
       "decision": {
         "status": "included",
         "class": "section_body",
@@ -2636,8 +2635,8 @@
     {
       "id": "scope-decision.0201",
       "ordinal": 200,
-      "source_node_id": "jsx.00428",
-      "reading_unit_id": "reading-unit.0163",
+      "source_node_id": "jsx.00427",
+      "reading_unit_id": "reading-unit.0164",
       "decision": {
         "status": "included",
         "class": "section_body",
@@ -2647,8 +2646,8 @@
     {
       "id": "scope-decision.0202",
       "ordinal": 201,
-      "source_node_id": "jsx.00430",
-      "reading_unit_id": "reading-unit.0164",
+      "source_node_id": "jsx.00429",
+      "reading_unit_id": "reading-unit.0165",
       "decision": {
         "status": "included",
         "class": "section_body",
@@ -2658,8 +2657,8 @@
     {
       "id": "scope-decision.0203",
       "ordinal": 202,
-      "source_node_id": "jsx.00432",
-      "reading_unit_id": "reading-unit.0165",
+      "source_node_id": "jsx.00431",
+      "reading_unit_id": "reading-unit.0166",
       "decision": {
         "status": "included",
         "class": "section_body",
@@ -2670,7 +2669,7 @@
       "id": "scope-decision.0204",
       "ordinal": 203,
       "source_node_id": "jsx.00434",
-      "reading_unit_id": "reading-unit.0166",
+      "reading_unit_id": "reading-unit.0168",
       "decision": {
         "status": "included",
         "class": "section_body",
@@ -2681,7 +2680,7 @@
       "id": "scope-decision.0205",
       "ordinal": 204,
       "source_node_id": "jsx.00436",
-      "reading_unit_id": "reading-unit.0167",
+      "reading_unit_id": "reading-unit.0169",
       "decision": {
         "status": "included",
         "class": "section_body",
@@ -2691,8 +2690,8 @@
     {
       "id": "scope-decision.0206",
       "ordinal": 205,
-      "source_node_id": "jsx.00439",
-      "reading_unit_id": "reading-unit.0169",
+      "source_node_id": "jsx.00438",
+      "reading_unit_id": "reading-unit.0170",
       "decision": {
         "status": "included",
         "class": "section_body",
@@ -2702,8 +2701,8 @@
     {
       "id": "scope-decision.0207",
       "ordinal": 206,
-      "source_node_id": "jsx.00441",
-      "reading_unit_id": "reading-unit.0170",
+      "source_node_id": "jsx.00440",
+      "reading_unit_id": "reading-unit.0171",
       "decision": {
         "status": "included",
         "class": "section_body",
@@ -2713,8 +2712,8 @@
     {
       "id": "scope-decision.0208",
       "ordinal": 207,
-      "source_node_id": "jsx.00443",
-      "reading_unit_id": "reading-unit.0171",
+      "source_node_id": "jsx.00442",
+      "reading_unit_id": "reading-unit.0172",
       "decision": {
         "status": "included",
         "class": "section_body",
@@ -2724,8 +2723,8 @@
     {
       "id": "scope-decision.0209",
       "ordinal": 208,
-      "source_node_id": "jsx.00445",
-      "reading_unit_id": "reading-unit.0172",
+      "source_node_id": "jsx.00444",
+      "reading_unit_id": "reading-unit.0173",
       "decision": {
         "status": "included",
         "class": "section_body",
@@ -2735,8 +2734,8 @@
     {
       "id": "scope-decision.0210",
       "ordinal": 209,
-      "source_node_id": "jsx.00447",
-      "reading_unit_id": "reading-unit.0173",
+      "source_node_id": "jsx.00446",
+      "reading_unit_id": "reading-unit.0174",
       "decision": {
         "status": "included",
         "class": "section_body",
@@ -2746,8 +2745,8 @@
     {
       "id": "scope-decision.0211",
       "ordinal": 210,
-      "source_node_id": "jsx.00449",
-      "reading_unit_id": "reading-unit.0174",
+      "source_node_id": "jsx.00448",
+      "reading_unit_id": "reading-unit.0175",
       "decision": {
         "status": "included",
         "class": "section_body",
@@ -2757,8 +2756,8 @@
     {
       "id": "scope-decision.0212",
       "ordinal": 211,
-      "source_node_id": "jsx.00451",
-      "reading_unit_id": "reading-unit.0175",
+      "source_node_id": "jsx.00450",
+      "reading_unit_id": "reading-unit.0176",
       "decision": {
         "status": "included",
         "class": "section_body",
@@ -2768,8 +2767,8 @@
     {
       "id": "scope-decision.0213",
       "ordinal": 212,
-      "source_node_id": "jsx.00453",
-      "reading_unit_id": "reading-unit.0176",
+      "source_node_id": "jsx.00452",
+      "reading_unit_id": "reading-unit.0177",
       "decision": {
         "status": "included",
         "class": "section_body",
@@ -2779,8 +2778,8 @@
     {
       "id": "scope-decision.0214",
       "ordinal": 213,
-      "source_node_id": "jsx.00455",
-      "reading_unit_id": "reading-unit.0177",
+      "source_node_id": "jsx.00454",
+      "reading_unit_id": "reading-unit.0178",
       "decision": {
         "status": "included",
         "class": "section_body",
@@ -2790,8 +2789,8 @@
     {
       "id": "scope-decision.0215",
       "ordinal": 214,
-      "source_node_id": "jsx.00457",
-      "reading_unit_id": "reading-unit.0178",
+      "source_node_id": "jsx.00456",
+      "reading_unit_id": "reading-unit.0179",
       "decision": {
         "status": "included",
         "class": "section_body",
@@ -2802,7 +2801,7 @@
       "id": "scope-decision.0216",
       "ordinal": 215,
       "source_node_id": "jsx.00459",
-      "reading_unit_id": "reading-unit.0179",
+      "reading_unit_id": "reading-unit.0181",
       "decision": {
         "status": "included",
         "class": "section_body",
@@ -2813,7 +2812,7 @@
       "id": "scope-decision.0217",
       "ordinal": 216,
       "source_node_id": "jsx.00461",
-      "reading_unit_id": "reading-unit.0180",
+      "reading_unit_id": "reading-unit.0182",
       "decision": {
         "status": "included",
         "class": "section_body",
@@ -2823,8 +2822,8 @@
     {
       "id": "scope-decision.0218",
       "ordinal": 217,
-      "source_node_id": "jsx.00464",
-      "reading_unit_id": "reading-unit.0182",
+      "source_node_id": "jsx.00463",
+      "reading_unit_id": "reading-unit.0183",
       "decision": {
         "status": "included",
         "class": "section_body",
@@ -2834,8 +2833,8 @@
     {
       "id": "scope-decision.0219",
       "ordinal": 218,
-      "source_node_id": "jsx.00466",
-      "reading_unit_id": "reading-unit.0183",
+      "source_node_id": "jsx.00465",
+      "reading_unit_id": "reading-unit.0184",
       "decision": {
         "status": "included",
         "class": "section_body",
@@ -2845,8 +2844,8 @@
     {
       "id": "scope-decision.0220",
       "ordinal": 219,
-      "source_node_id": "jsx.00468",
-      "reading_unit_id": "reading-unit.0184",
+      "source_node_id": "jsx.00467",
+      "reading_unit_id": "reading-unit.0185",
       "decision": {
         "status": "included",
         "class": "section_body",
@@ -2856,8 +2855,8 @@
     {
       "id": "scope-decision.0221",
       "ordinal": 220,
-      "source_node_id": "jsx.00470",
-      "reading_unit_id": "reading-unit.0185",
+      "source_node_id": "jsx.00469",
+      "reading_unit_id": "reading-unit.0186",
       "decision": {
         "status": "included",
         "class": "section_body",
@@ -2868,7 +2867,7 @@
       "id": "scope-decision.0222",
       "ordinal": 221,
       "source_node_id": "jsx.00472",
-      "reading_unit_id": "reading-unit.0186",
+      "reading_unit_id": "reading-unit.0188",
       "decision": {
         "status": "included",
         "class": "section_body",
@@ -2879,7 +2878,7 @@
       "id": "scope-decision.0223",
       "ordinal": 222,
       "source_node_id": "jsx.00474",
-      "reading_unit_id": "reading-unit.0187",
+      "reading_unit_id": "reading-unit.0189",
       "decision": {
         "status": "included",
         "class": "section_body",
@@ -2889,8 +2888,8 @@
     {
       "id": "scope-decision.0224",
       "ordinal": 223,
-      "source_node_id": "jsx.00477",
-      "reading_unit_id": "reading-unit.0189",
+      "source_node_id": "jsx.00476",
+      "reading_unit_id": "reading-unit.0190",
       "decision": {
         "status": "included",
         "class": "section_body",
@@ -2900,30 +2899,30 @@
     {
       "id": "scope-decision.0225",
       "ordinal": 224,
-      "source_node_id": "jsx.00479",
+      "source_node_id": "jsx.00478",
       "reading_unit_id": "reading-unit.0190",
       "decision": {
-        "status": "included",
-        "class": "section_body",
+        "status": "included_temporarily",
+        "class": "small_text",
         "authority": "user"
       }
     },
     {
       "id": "scope-decision.0226",
       "ordinal": 225,
-      "source_node_id": "jsx.00481",
-      "reading_unit_id": "reading-unit.0191",
+      "source_node_id": "jsx.00480",
+      "reading_unit_id": "reading-unit.0190",
       "decision": {
-        "status": "included",
-        "class": "section_body",
+        "status": "included_temporarily",
+        "class": "small_text",
         "authority": "user"
       }
     },
     {
       "id": "scope-decision.0227",
       "ordinal": 226,
-      "source_node_id": "jsx.00483",
-      "reading_unit_id": "reading-unit.0191",
+      "source_node_id": "jsx.00482",
+      "reading_unit_id": "reading-unit.0190",
       "decision": {
         "status": "included_temporarily",
         "class": "small_text",
@@ -2933,30 +2932,8 @@
     {
       "id": "scope-decision.0228",
       "ordinal": 227,
-      "source_node_id": "jsx.00485",
-      "reading_unit_id": "reading-unit.0191",
-      "decision": {
-        "status": "included_temporarily",
-        "class": "small_text",
-        "authority": "user"
-      }
-    },
-    {
-      "id": "scope-decision.0229",
-      "ordinal": 228,
-      "source_node_id": "jsx.00487",
-      "reading_unit_id": "reading-unit.0191",
-      "decision": {
-        "status": "included_temporarily",
-        "class": "small_text",
-        "authority": "user"
-      }
-    },
-    {
-      "id": "scope-decision.0230",
-      "ordinal": 229,
-      "source_node_id": "jsx.00489",
-      "reading_unit_id": "reading-unit.0191",
+      "source_node_id": "jsx.00484",
+      "reading_unit_id": "reading-unit.0190",
       "decision": {
         "status": "included",
         "class": "section_body",
@@ -2964,10 +2941,32 @@
       }
     },
     {
+      "id": "scope-decision.0229",
+      "ordinal": 228,
+      "source_node_id": "jsx.00486",
+      "reading_unit_id": "reading-unit.0191",
+      "decision": {
+        "status": "excluded",
+        "class": "jsx_whitespace",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0230",
+      "ordinal": 229,
+      "source_node_id": "jsx.00488",
+      "reading_unit_id": "reading-unit.0191",
+      "decision": {
+        "status": "excluded",
+        "class": "jsx_whitespace",
+        "authority": "user"
+      }
+    },
+    {
       "id": "scope-decision.0231",
       "ordinal": 230,
-      "source_node_id": "jsx.00491",
-      "reading_unit_id": "reading-unit.0192",
+      "source_node_id": "jsx.00490",
+      "reading_unit_id": "reading-unit.0191",
       "decision": {
         "status": "excluded",
         "class": "jsx_whitespace",
@@ -2977,30 +2976,8 @@
     {
       "id": "scope-decision.0232",
       "ordinal": 231,
-      "source_node_id": "jsx.00493",
-      "reading_unit_id": "reading-unit.0192",
-      "decision": {
-        "status": "excluded",
-        "class": "jsx_whitespace",
-        "authority": "user"
-      }
-    },
-    {
-      "id": "scope-decision.0233",
-      "ordinal": 232,
-      "source_node_id": "jsx.00495",
-      "reading_unit_id": "reading-unit.0192",
-      "decision": {
-        "status": "excluded",
-        "class": "jsx_whitespace",
-        "authority": "user"
-      }
-    },
-    {
-      "id": "scope-decision.0234",
-      "ordinal": 233,
-      "source_node_id": "jsx.00497",
-      "reading_unit_id": "reading-unit.0192",
+      "source_node_id": "jsx.00492",
+      "reading_unit_id": "reading-unit.0191",
       "decision": {
         "status": "excluded",
         "class": "structural_heading",
@@ -3009,10 +2986,32 @@
       }
     },
     {
+      "id": "scope-decision.0233",
+      "ordinal": 232,
+      "source_node_id": "jsx.00494",
+      "reading_unit_id": "reading-unit.0191",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0234",
+      "ordinal": 233,
+      "source_node_id": "jsx.00496",
+      "reading_unit_id": "reading-unit.0192",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
       "id": "scope-decision.0235",
       "ordinal": 234,
-      "source_node_id": "jsx.00499",
-      "reading_unit_id": "reading-unit.0192",
+      "source_node_id": "jsx.00498",
+      "reading_unit_id": "reading-unit.0193",
       "decision": {
         "status": "included",
         "class": "section_body",
@@ -3022,8 +3021,8 @@
     {
       "id": "scope-decision.0236",
       "ordinal": 235,
-      "source_node_id": "jsx.00501",
-      "reading_unit_id": "reading-unit.0193",
+      "source_node_id": "jsx.00500",
+      "reading_unit_id": "reading-unit.0194",
       "decision": {
         "status": "included",
         "class": "section_body",
@@ -3033,8 +3032,8 @@
     {
       "id": "scope-decision.0237",
       "ordinal": 236,
-      "source_node_id": "jsx.00503",
-      "reading_unit_id": "reading-unit.0194",
+      "source_node_id": "jsx.00502",
+      "reading_unit_id": "reading-unit.0195",
       "decision": {
         "status": "included",
         "class": "section_body",
@@ -3044,8 +3043,8 @@
     {
       "id": "scope-decision.0238",
       "ordinal": 237,
-      "source_node_id": "jsx.00505",
-      "reading_unit_id": "reading-unit.0195",
+      "source_node_id": "jsx.00504",
+      "reading_unit_id": "reading-unit.0196",
       "decision": {
         "status": "included",
         "class": "section_body",
@@ -3055,8 +3054,8 @@
     {
       "id": "scope-decision.0239",
       "ordinal": 238,
-      "source_node_id": "jsx.00507",
-      "reading_unit_id": "reading-unit.0196",
+      "source_node_id": "jsx.00506",
+      "reading_unit_id": "reading-unit.0197",
       "decision": {
         "status": "included",
         "class": "section_body",
@@ -3066,8 +3065,8 @@
     {
       "id": "scope-decision.0240",
       "ordinal": 239,
-      "source_node_id": "jsx.00509",
-      "reading_unit_id": "reading-unit.0197",
+      "source_node_id": "jsx.00508",
+      "reading_unit_id": "reading-unit.0198",
       "decision": {
         "status": "included",
         "class": "section_body",
@@ -3077,8 +3076,8 @@
     {
       "id": "scope-decision.0241",
       "ordinal": 240,
-      "source_node_id": "jsx.00511",
-      "reading_unit_id": "reading-unit.0198",
+      "source_node_id": "jsx.00510",
+      "reading_unit_id": "reading-unit.0199",
       "decision": {
         "status": "included",
         "class": "section_body",
@@ -3088,8 +3087,8 @@
     {
       "id": "scope-decision.0242",
       "ordinal": 241,
-      "source_node_id": "jsx.00513",
-      "reading_unit_id": "reading-unit.0199",
+      "source_node_id": "jsx.00512",
+      "reading_unit_id": "reading-unit.0200",
       "decision": {
         "status": "included",
         "class": "section_body",
@@ -3099,8 +3098,8 @@
     {
       "id": "scope-decision.0243",
       "ordinal": 242,
-      "source_node_id": "jsx.00515",
-      "reading_unit_id": "reading-unit.0200",
+      "source_node_id": "jsx.00514",
+      "reading_unit_id": "reading-unit.0201",
       "decision": {
         "status": "included",
         "class": "section_body",
@@ -3110,8 +3109,8 @@
     {
       "id": "scope-decision.0244",
       "ordinal": 243,
-      "source_node_id": "jsx.00517",
-      "reading_unit_id": "reading-unit.0201",
+      "source_node_id": "jsx.00516",
+      "reading_unit_id": "reading-unit.0202",
       "decision": {
         "status": "included",
         "class": "section_body",
@@ -3121,8 +3120,8 @@
     {
       "id": "scope-decision.0245",
       "ordinal": 244,
-      "source_node_id": "jsx.00519",
-      "reading_unit_id": "reading-unit.0202",
+      "source_node_id": "jsx.00518",
+      "reading_unit_id": "reading-unit.0203",
       "decision": {
         "status": "included",
         "class": "section_body",
@@ -3132,8 +3131,8 @@
     {
       "id": "scope-decision.0246",
       "ordinal": 245,
-      "source_node_id": "jsx.00521",
-      "reading_unit_id": "reading-unit.0203",
+      "source_node_id": "jsx.00520",
+      "reading_unit_id": "reading-unit.0204",
       "decision": {
         "status": "included",
         "class": "section_body",
@@ -3143,8 +3142,8 @@
     {
       "id": "scope-decision.0247",
       "ordinal": 246,
-      "source_node_id": "jsx.00523",
-      "reading_unit_id": "reading-unit.0204",
+      "source_node_id": "jsx.00522",
+      "reading_unit_id": "reading-unit.0205",
       "decision": {
         "status": "included",
         "class": "section_body",
@@ -3154,8 +3153,8 @@
     {
       "id": "scope-decision.0248",
       "ordinal": 247,
-      "source_node_id": "jsx.00525",
-      "reading_unit_id": "reading-unit.0205",
+      "source_node_id": "jsx.00524",
+      "reading_unit_id": "reading-unit.0206",
       "decision": {
         "status": "included",
         "class": "section_body",
@@ -3166,7 +3165,7 @@
       "id": "scope-decision.0249",
       "ordinal": 248,
       "source_node_id": "jsx.00527",
-      "reading_unit_id": "reading-unit.0206",
+      "reading_unit_id": "reading-unit.0208",
       "decision": {
         "status": "included",
         "class": "section_body",
@@ -3177,7 +3176,7 @@
       "id": "scope-decision.0250",
       "ordinal": 249,
       "source_node_id": "jsx.00529",
-      "reading_unit_id": "reading-unit.0207",
+      "reading_unit_id": "reading-unit.0209",
       "decision": {
         "status": "included",
         "class": "section_body",
@@ -3187,8 +3186,8 @@
     {
       "id": "scope-decision.0251",
       "ordinal": 250,
-      "source_node_id": "jsx.00532",
-      "reading_unit_id": "reading-unit.0209",
+      "source_node_id": "jsx.00531",
+      "reading_unit_id": "reading-unit.0210",
       "decision": {
         "status": "included",
         "class": "section_body",
@@ -3198,8 +3197,8 @@
     {
       "id": "scope-decision.0252",
       "ordinal": 251,
-      "source_node_id": "jsx.00534",
-      "reading_unit_id": "reading-unit.0210",
+      "source_node_id": "jsx.00533",
+      "reading_unit_id": "reading-unit.0211",
       "decision": {
         "status": "included",
         "class": "section_body",
@@ -3209,8 +3208,8 @@
     {
       "id": "scope-decision.0253",
       "ordinal": 252,
-      "source_node_id": "jsx.00536",
-      "reading_unit_id": "reading-unit.0211",
+      "source_node_id": "jsx.00535",
+      "reading_unit_id": "reading-unit.0212",
       "decision": {
         "status": "included",
         "class": "section_body",
@@ -3221,7 +3220,7 @@
       "id": "scope-decision.0254",
       "ordinal": 253,
       "source_node_id": "jsx.00538",
-      "reading_unit_id": "reading-unit.0212",
+      "reading_unit_id": "reading-unit.0214",
       "decision": {
         "status": "included",
         "class": "section_body",
@@ -3232,7 +3231,7 @@
       "id": "scope-decision.0255",
       "ordinal": 254,
       "source_node_id": "jsx.00540",
-      "reading_unit_id": "reading-unit.0213",
+      "reading_unit_id": "reading-unit.0215",
       "decision": {
         "status": "included",
         "class": "section_body",
@@ -3242,8 +3241,8 @@
     {
       "id": "scope-decision.0256",
       "ordinal": 255,
-      "source_node_id": "jsx.00543",
-      "reading_unit_id": "reading-unit.0215",
+      "source_node_id": "jsx.00542",
+      "reading_unit_id": "reading-unit.0216",
       "decision": {
         "status": "included",
         "class": "section_body",
@@ -3253,8 +3252,8 @@
     {
       "id": "scope-decision.0257",
       "ordinal": 256,
-      "source_node_id": "jsx.00545",
-      "reading_unit_id": "reading-unit.0216",
+      "source_node_id": "jsx.00544",
+      "reading_unit_id": "reading-unit.0217",
       "decision": {
         "status": "included",
         "class": "section_body",
@@ -3264,8 +3263,8 @@
     {
       "id": "scope-decision.0258",
       "ordinal": 257,
-      "source_node_id": "jsx.00547",
-      "reading_unit_id": "reading-unit.0217",
+      "source_node_id": "jsx.00546",
+      "reading_unit_id": "reading-unit.0218",
       "decision": {
         "status": "included",
         "class": "section_body",
@@ -3275,8 +3274,8 @@
     {
       "id": "scope-decision.0259",
       "ordinal": 258,
-      "source_node_id": "jsx.00549",
-      "reading_unit_id": "reading-unit.0218",
+      "source_node_id": "jsx.00548",
+      "reading_unit_id": "reading-unit.0219",
       "decision": {
         "status": "included",
         "class": "section_body",
@@ -3286,8 +3285,8 @@
     {
       "id": "scope-decision.0260",
       "ordinal": 259,
-      "source_node_id": "jsx.00551",
-      "reading_unit_id": "reading-unit.0219",
+      "source_node_id": "jsx.00550",
+      "reading_unit_id": "reading-unit.0220",
       "decision": {
         "status": "included",
         "class": "section_body",
@@ -3298,7 +3297,7 @@
       "id": "scope-decision.0261",
       "ordinal": 260,
       "source_node_id": "jsx.00553",
-      "reading_unit_id": "reading-unit.0220",
+      "reading_unit_id": "reading-unit.0222",
       "decision": {
         "status": "included",
         "class": "section_body",
@@ -3309,7 +3308,7 @@
       "id": "scope-decision.0262",
       "ordinal": 261,
       "source_node_id": "jsx.00555",
-      "reading_unit_id": "reading-unit.0221",
+      "reading_unit_id": "reading-unit.0223",
       "decision": {
         "status": "included",
         "class": "section_body",
@@ -3319,8 +3318,8 @@
     {
       "id": "scope-decision.0263",
       "ordinal": 262,
-      "source_node_id": "jsx.00558",
-      "reading_unit_id": "reading-unit.0223",
+      "source_node_id": "jsx.00557",
+      "reading_unit_id": "reading-unit.0224",
       "decision": {
         "status": "included",
         "class": "section_body",
@@ -3330,8 +3329,8 @@
     {
       "id": "scope-decision.0264",
       "ordinal": 263,
-      "source_node_id": "jsx.00560",
-      "reading_unit_id": "reading-unit.0224",
+      "source_node_id": "jsx.00559",
+      "reading_unit_id": "reading-unit.0225",
       "decision": {
         "status": "included",
         "class": "section_body",
@@ -3341,8 +3340,8 @@
     {
       "id": "scope-decision.0265",
       "ordinal": 264,
-      "source_node_id": "jsx.00562",
-      "reading_unit_id": "reading-unit.0225",
+      "source_node_id": "jsx.00561",
+      "reading_unit_id": "reading-unit.0226",
       "decision": {
         "status": "included",
         "class": "section_body",
@@ -3352,8 +3351,8 @@
     {
       "id": "scope-decision.0266",
       "ordinal": 265,
-      "source_node_id": "jsx.00564",
-      "reading_unit_id": "reading-unit.0226",
+      "source_node_id": "jsx.00563",
+      "reading_unit_id": "reading-unit.0227",
       "decision": {
         "status": "included",
         "class": "section_body",
@@ -3363,8 +3362,8 @@
     {
       "id": "scope-decision.0267",
       "ordinal": 266,
-      "source_node_id": "jsx.00566",
-      "reading_unit_id": "reading-unit.0227",
+      "source_node_id": "jsx.00565",
+      "reading_unit_id": "reading-unit.0228",
       "decision": {
         "status": "included",
         "class": "section_body",
@@ -3374,8 +3373,8 @@
     {
       "id": "scope-decision.0268",
       "ordinal": 267,
-      "source_node_id": "jsx.00568",
-      "reading_unit_id": "reading-unit.0228",
+      "source_node_id": "jsx.00567",
+      "reading_unit_id": "reading-unit.0229",
       "decision": {
         "status": "included",
         "class": "section_body",
@@ -3385,8 +3384,8 @@
     {
       "id": "scope-decision.0269",
       "ordinal": 268,
-      "source_node_id": "jsx.00570",
-      "reading_unit_id": "reading-unit.0229",
+      "source_node_id": "jsx.00569",
+      "reading_unit_id": "reading-unit.0230",
       "decision": {
         "status": "included",
         "class": "section_body",
@@ -3396,8 +3395,8 @@
     {
       "id": "scope-decision.0270",
       "ordinal": 269,
-      "source_node_id": "jsx.00572",
-      "reading_unit_id": "reading-unit.0230",
+      "source_node_id": "jsx.00571",
+      "reading_unit_id": "reading-unit.0231",
       "decision": {
         "status": "included",
         "class": "section_body",
@@ -3407,8 +3406,8 @@
     {
       "id": "scope-decision.0271",
       "ordinal": 270,
-      "source_node_id": "jsx.00574",
-      "reading_unit_id": "reading-unit.0231",
+      "source_node_id": "jsx.00573",
+      "reading_unit_id": "reading-unit.0232",
       "decision": {
         "status": "included",
         "class": "section_body",
@@ -3419,7 +3418,7 @@
       "id": "scope-decision.0272",
       "ordinal": 271,
       "source_node_id": "jsx.00576",
-      "reading_unit_id": "reading-unit.0232",
+      "reading_unit_id": "reading-unit.0234",
       "decision": {
         "status": "included",
         "class": "section_body",
@@ -3430,7 +3429,7 @@
       "id": "scope-decision.0273",
       "ordinal": 272,
       "source_node_id": "jsx.00578",
-      "reading_unit_id": "reading-unit.0233",
+      "reading_unit_id": "reading-unit.0235",
       "decision": {
         "status": "included",
         "class": "section_body",
@@ -3440,8 +3439,8 @@
     {
       "id": "scope-decision.0274",
       "ordinal": 273,
-      "source_node_id": "jsx.00581",
-      "reading_unit_id": "reading-unit.0235",
+      "source_node_id": "jsx.00580",
+      "reading_unit_id": "reading-unit.0236",
       "decision": {
         "status": "included",
         "class": "section_body",
@@ -3451,8 +3450,8 @@
     {
       "id": "scope-decision.0275",
       "ordinal": 274,
-      "source_node_id": "jsx.00583",
-      "reading_unit_id": "reading-unit.0236",
+      "source_node_id": "jsx.00582",
+      "reading_unit_id": "reading-unit.0237",
       "decision": {
         "status": "included",
         "class": "section_body",
@@ -3462,8 +3461,8 @@
     {
       "id": "scope-decision.0276",
       "ordinal": 275,
-      "source_node_id": "jsx.00585",
-      "reading_unit_id": "reading-unit.0237",
+      "source_node_id": "jsx.00584",
+      "reading_unit_id": "reading-unit.0238",
       "decision": {
         "status": "included",
         "class": "section_body",
@@ -3473,8 +3472,8 @@
     {
       "id": "scope-decision.0277",
       "ordinal": 276,
-      "source_node_id": "jsx.00587",
-      "reading_unit_id": "reading-unit.0238",
+      "source_node_id": "jsx.00586",
+      "reading_unit_id": "reading-unit.0239",
       "decision": {
         "status": "included",
         "class": "section_body",
@@ -3484,8 +3483,8 @@
     {
       "id": "scope-decision.0278",
       "ordinal": 277,
-      "source_node_id": "jsx.00589",
-      "reading_unit_id": "reading-unit.0239",
+      "source_node_id": "jsx.00588",
+      "reading_unit_id": "reading-unit.0240",
       "decision": {
         "status": "included",
         "class": "section_body",
@@ -3496,7 +3495,7 @@
       "id": "scope-decision.0279",
       "ordinal": 278,
       "source_node_id": "jsx.00591",
-      "reading_unit_id": "reading-unit.0240",
+      "reading_unit_id": "reading-unit.0242",
       "decision": {
         "status": "included",
         "class": "section_body",
@@ -3507,7 +3506,7 @@
       "id": "scope-decision.0280",
       "ordinal": 279,
       "source_node_id": "jsx.00593",
-      "reading_unit_id": "reading-unit.0241",
+      "reading_unit_id": "reading-unit.0243",
       "decision": {
         "status": "included",
         "class": "section_body",
@@ -3517,8 +3516,8 @@
     {
       "id": "scope-decision.0281",
       "ordinal": 280,
-      "source_node_id": "jsx.00596",
-      "reading_unit_id": "reading-unit.0243",
+      "source_node_id": "jsx.00595",
+      "reading_unit_id": "reading-unit.0244",
       "decision": {
         "status": "included",
         "class": "section_body",
@@ -3528,8 +3527,8 @@
     {
       "id": "scope-decision.0282",
       "ordinal": 281,
-      "source_node_id": "jsx.00598",
-      "reading_unit_id": "reading-unit.0244",
+      "source_node_id": "jsx.00597",
+      "reading_unit_id": "reading-unit.0245",
       "decision": {
         "status": "included",
         "class": "section_body",
@@ -3539,8 +3538,8 @@
     {
       "id": "scope-decision.0283",
       "ordinal": 282,
-      "source_node_id": "jsx.00600",
-      "reading_unit_id": "reading-unit.0245",
+      "source_node_id": "jsx.00599",
+      "reading_unit_id": "reading-unit.0246",
       "decision": {
         "status": "included",
         "class": "section_body",
@@ -3550,8 +3549,8 @@
     {
       "id": "scope-decision.0284",
       "ordinal": 283,
-      "source_node_id": "jsx.00602",
-      "reading_unit_id": "reading-unit.0246",
+      "source_node_id": "jsx.00601",
+      "reading_unit_id": "reading-unit.0247",
       "decision": {
         "status": "included",
         "class": "section_body",
@@ -3561,8 +3560,8 @@
     {
       "id": "scope-decision.0285",
       "ordinal": 284,
-      "source_node_id": "jsx.00604",
-      "reading_unit_id": "reading-unit.0247",
+      "source_node_id": "jsx.00603",
+      "reading_unit_id": "reading-unit.0248",
       "decision": {
         "status": "included",
         "class": "section_body",
@@ -3572,8 +3571,8 @@
     {
       "id": "scope-decision.0286",
       "ordinal": 285,
-      "source_node_id": "jsx.00606",
-      "reading_unit_id": "reading-unit.0248",
+      "source_node_id": "jsx.00605",
+      "reading_unit_id": "reading-unit.0249",
       "decision": {
         "status": "included",
         "class": "section_body",
@@ -3583,8 +3582,8 @@
     {
       "id": "scope-decision.0287",
       "ordinal": 286,
-      "source_node_id": "jsx.00608",
-      "reading_unit_id": "reading-unit.0249",
+      "source_node_id": "jsx.00607",
+      "reading_unit_id": "reading-unit.0250",
       "decision": {
         "status": "included",
         "class": "section_body",
@@ -3594,8 +3593,8 @@
     {
       "id": "scope-decision.0288",
       "ordinal": 287,
-      "source_node_id": "jsx.00610",
-      "reading_unit_id": "reading-unit.0250",
+      "source_node_id": "jsx.00609",
+      "reading_unit_id": "reading-unit.0251",
       "decision": {
         "status": "included",
         "class": "section_body",
@@ -3605,8 +3604,8 @@
     {
       "id": "scope-decision.0289",
       "ordinal": 288,
-      "source_node_id": "jsx.00612",
-      "reading_unit_id": "reading-unit.0251",
+      "source_node_id": "jsx.00611",
+      "reading_unit_id": "reading-unit.0252",
       "decision": {
         "status": "included",
         "class": "section_body",
@@ -3616,8 +3615,8 @@
     {
       "id": "scope-decision.0290",
       "ordinal": 289,
-      "source_node_id": "jsx.00614",
-      "reading_unit_id": "reading-unit.0252",
+      "source_node_id": "jsx.00613",
+      "reading_unit_id": "reading-unit.0253",
       "decision": {
         "status": "included",
         "class": "section_body",
@@ -3627,8 +3626,8 @@
     {
       "id": "scope-decision.0291",
       "ordinal": 290,
-      "source_node_id": "jsx.00616",
-      "reading_unit_id": "reading-unit.0253",
+      "source_node_id": "jsx.00615",
+      "reading_unit_id": "reading-unit.0254",
       "decision": {
         "status": "included",
         "class": "section_body",
@@ -3638,8 +3637,8 @@
     {
       "id": "scope-decision.0292",
       "ordinal": 291,
-      "source_node_id": "jsx.00618",
-      "reading_unit_id": "reading-unit.0254",
+      "source_node_id": "jsx.00617",
+      "reading_unit_id": "reading-unit.0255",
       "decision": {
         "status": "included",
         "class": "section_body",
@@ -3649,8 +3648,8 @@
     {
       "id": "scope-decision.0293",
       "ordinal": 292,
-      "source_node_id": "jsx.00620",
-      "reading_unit_id": "reading-unit.0255",
+      "source_node_id": "jsx.00619",
+      "reading_unit_id": "reading-unit.0256",
       "decision": {
         "status": "included",
         "class": "section_body",
@@ -3660,8 +3659,8 @@
     {
       "id": "scope-decision.0294",
       "ordinal": 293,
-      "source_node_id": "jsx.00622",
-      "reading_unit_id": "reading-unit.0256",
+      "source_node_id": "jsx.00621",
+      "reading_unit_id": "reading-unit.0257",
       "decision": {
         "status": "included",
         "class": "section_body",
@@ -3672,10 +3671,10 @@
       "id": "scope-decision.0295",
       "ordinal": 294,
       "source_node_id": "jsx.00624",
-      "reading_unit_id": "reading-unit.0257",
+      "reading_unit_id": "reading-unit.0259",
       "decision": {
-        "status": "included",
-        "class": "section_body",
+        "status": "excluded",
+        "class": "jsx_whitespace",
         "authority": "user"
       }
     },
@@ -3683,18 +3682,18 @@
       "id": "scope-decision.0296",
       "ordinal": 295,
       "source_node_id": "jsx.00626",
-      "reading_unit_id": "reading-unit.0258",
+      "reading_unit_id": "reading-unit.0259",
       "decision": {
-        "status": "included",
-        "class": "section_body",
+        "status": "excluded",
+        "class": "jsx_whitespace",
         "authority": "user"
       }
     },
     {
       "id": "scope-decision.0297",
       "ordinal": 296,
-      "source_node_id": "jsx.00629",
-      "reading_unit_id": "reading-unit.0260",
+      "source_node_id": "jsx.00628",
+      "reading_unit_id": "reading-unit.0259",
       "decision": {
         "status": "excluded",
         "class": "jsx_whitespace",
@@ -3704,30 +3703,8 @@
     {
       "id": "scope-decision.0298",
       "ordinal": 297,
-      "source_node_id": "jsx.00631",
-      "reading_unit_id": "reading-unit.0260",
-      "decision": {
-        "status": "excluded",
-        "class": "jsx_whitespace",
-        "authority": "user"
-      }
-    },
-    {
-      "id": "scope-decision.0299",
-      "ordinal": 298,
-      "source_node_id": "jsx.00633",
-      "reading_unit_id": "reading-unit.0260",
-      "decision": {
-        "status": "excluded",
-        "class": "jsx_whitespace",
-        "authority": "user"
-      }
-    },
-    {
-      "id": "scope-decision.0300",
-      "ordinal": 299,
-      "source_node_id": "jsx.00635",
-      "reading_unit_id": "reading-unit.0260",
+      "source_node_id": "jsx.00630",
+      "reading_unit_id": "reading-unit.0259",
       "decision": {
         "status": "excluded",
         "class": "structural_heading",
@@ -3736,10 +3713,32 @@
       }
     },
     {
+      "id": "scope-decision.0299",
+      "ordinal": 298,
+      "source_node_id": "jsx.00632",
+      "reading_unit_id": "reading-unit.0259",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0300",
+      "ordinal": 299,
+      "source_node_id": "jsx.00634",
+      "reading_unit_id": "reading-unit.0260",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
       "id": "scope-decision.0301",
       "ordinal": 300,
-      "source_node_id": "jsx.00637",
-      "reading_unit_id": "reading-unit.0260",
+      "source_node_id": "jsx.00636",
+      "reading_unit_id": "reading-unit.0261",
       "decision": {
         "status": "included",
         "class": "section_body",
@@ -3749,8 +3748,8 @@
     {
       "id": "scope-decision.0302",
       "ordinal": 301,
-      "source_node_id": "jsx.00639",
-      "reading_unit_id": "reading-unit.0261",
+      "source_node_id": "jsx.00638",
+      "reading_unit_id": "reading-unit.0262",
       "decision": {
         "status": "included",
         "class": "section_body",
@@ -3760,8 +3759,8 @@
     {
       "id": "scope-decision.0303",
       "ordinal": 302,
-      "source_node_id": "jsx.00641",
-      "reading_unit_id": "reading-unit.0262",
+      "source_node_id": "jsx.00640",
+      "reading_unit_id": "reading-unit.0263",
       "decision": {
         "status": "included",
         "class": "section_body",
@@ -3771,8 +3770,8 @@
     {
       "id": "scope-decision.0304",
       "ordinal": 303,
-      "source_node_id": "jsx.00643",
-      "reading_unit_id": "reading-unit.0263",
+      "source_node_id": "jsx.00642",
+      "reading_unit_id": "reading-unit.0264",
       "decision": {
         "status": "included",
         "class": "section_body",
@@ -3782,8 +3781,8 @@
     {
       "id": "scope-decision.0305",
       "ordinal": 304,
-      "source_node_id": "jsx.00645",
-      "reading_unit_id": "reading-unit.0264",
+      "source_node_id": "jsx.00644",
+      "reading_unit_id": "reading-unit.0265",
       "decision": {
         "status": "included",
         "class": "section_body",
@@ -3793,8 +3792,8 @@
     {
       "id": "scope-decision.0306",
       "ordinal": 305,
-      "source_node_id": "jsx.00647",
-      "reading_unit_id": "reading-unit.0265",
+      "source_node_id": "jsx.00646",
+      "reading_unit_id": "reading-unit.0266",
       "decision": {
         "status": "included",
         "class": "section_body",
@@ -3805,7 +3804,7 @@
       "id": "scope-decision.0307",
       "ordinal": 306,
       "source_node_id": "jsx.00649",
-      "reading_unit_id": "reading-unit.0266",
+      "reading_unit_id": "reading-unit.0268",
       "decision": {
         "status": "included",
         "class": "section_body",
@@ -3816,7 +3815,7 @@
       "id": "scope-decision.0308",
       "ordinal": 307,
       "source_node_id": "jsx.00651",
-      "reading_unit_id": "reading-unit.0267",
+      "reading_unit_id": "reading-unit.0269",
       "decision": {
         "status": "included",
         "class": "section_body",
@@ -3826,8 +3825,8 @@
     {
       "id": "scope-decision.0309",
       "ordinal": 308,
-      "source_node_id": "jsx.00654",
-      "reading_unit_id": "reading-unit.0269",
+      "source_node_id": "jsx.00653",
+      "reading_unit_id": "reading-unit.0270",
       "decision": {
         "status": "included",
         "class": "section_body",
@@ -3837,8 +3836,8 @@
     {
       "id": "scope-decision.0310",
       "ordinal": 309,
-      "source_node_id": "jsx.00656",
-      "reading_unit_id": "reading-unit.0270",
+      "source_node_id": "jsx.00655",
+      "reading_unit_id": "reading-unit.0271",
       "decision": {
         "status": "included",
         "class": "section_body",
@@ -3848,8 +3847,8 @@
     {
       "id": "scope-decision.0311",
       "ordinal": 310,
-      "source_node_id": "jsx.00658",
-      "reading_unit_id": "reading-unit.0271",
+      "source_node_id": "jsx.00657",
+      "reading_unit_id": "reading-unit.0272",
       "decision": {
         "status": "included",
         "class": "section_body",
@@ -3859,8 +3858,8 @@
     {
       "id": "scope-decision.0312",
       "ordinal": 311,
-      "source_node_id": "jsx.00660",
-      "reading_unit_id": "reading-unit.0272",
+      "source_node_id": "jsx.00659",
+      "reading_unit_id": "reading-unit.0273",
       "decision": {
         "status": "included",
         "class": "section_body",
@@ -3870,8 +3869,8 @@
     {
       "id": "scope-decision.0313",
       "ordinal": 312,
-      "source_node_id": "jsx.00662",
-      "reading_unit_id": "reading-unit.0273",
+      "source_node_id": "jsx.00661",
+      "reading_unit_id": "reading-unit.0274",
       "decision": {
         "status": "included",
         "class": "section_body",
@@ -3881,8 +3880,8 @@
     {
       "id": "scope-decision.0314",
       "ordinal": 313,
-      "source_node_id": "jsx.00664",
-      "reading_unit_id": "reading-unit.0274",
+      "source_node_id": "jsx.00663",
+      "reading_unit_id": "reading-unit.0275",
       "decision": {
         "status": "included",
         "class": "section_body",
@@ -3892,8 +3891,8 @@
     {
       "id": "scope-decision.0315",
       "ordinal": 314,
-      "source_node_id": "jsx.00666",
-      "reading_unit_id": "reading-unit.0275",
+      "source_node_id": "jsx.00665",
+      "reading_unit_id": "reading-unit.0276",
       "decision": {
         "status": "included",
         "class": "section_body",
@@ -3904,10 +3903,10 @@
       "id": "scope-decision.0316",
       "ordinal": 315,
       "source_node_id": "jsx.00668",
-      "reading_unit_id": "reading-unit.0276",
+      "reading_unit_id": "reading-unit.0278",
       "decision": {
-        "status": "included",
-        "class": "section_body",
+        "status": "excluded",
+        "class": "jsx_whitespace",
         "authority": "user"
       }
     },
@@ -3915,7 +3914,7 @@
       "id": "scope-decision.0317",
       "ordinal": 316,
       "source_node_id": "jsx.00670",
-      "reading_unit_id": "reading-unit.0277",
+      "reading_unit_id": "reading-unit.0279",
       "decision": {
         "status": "included",
         "class": "section_body",
@@ -3925,19 +3924,19 @@
     {
       "id": "scope-decision.0318",
       "ordinal": 317,
-      "source_node_id": "jsx.00673",
-      "reading_unit_id": "reading-unit.0279",
+      "source_node_id": "jsx.00672",
+      "reading_unit_id": "reading-unit.0280",
       "decision": {
-        "status": "excluded",
-        "class": "jsx_whitespace",
+        "status": "included",
+        "class": "section_body",
         "authority": "user"
       }
     },
     {
       "id": "scope-decision.0319",
       "ordinal": 318,
-      "source_node_id": "jsx.00675",
-      "reading_unit_id": "reading-unit.0280",
+      "source_node_id": "jsx.00674",
+      "reading_unit_id": "reading-unit.0281",
       "decision": {
         "status": "included",
         "class": "section_body",
@@ -3947,8 +3946,8 @@
     {
       "id": "scope-decision.0320",
       "ordinal": 319,
-      "source_node_id": "jsx.00677",
-      "reading_unit_id": "reading-unit.0281",
+      "source_node_id": "jsx.00676",
+      "reading_unit_id": "reading-unit.0282",
       "decision": {
         "status": "included",
         "class": "section_body",
@@ -3958,8 +3957,8 @@
     {
       "id": "scope-decision.0321",
       "ordinal": 320,
-      "source_node_id": "jsx.00679",
-      "reading_unit_id": "reading-unit.0282",
+      "source_node_id": "jsx.00678",
+      "reading_unit_id": "reading-unit.0283",
       "decision": {
         "status": "included",
         "class": "section_body",
@@ -3969,8 +3968,8 @@
     {
       "id": "scope-decision.0322",
       "ordinal": 321,
-      "source_node_id": "jsx.00681",
-      "reading_unit_id": "reading-unit.0283",
+      "source_node_id": "jsx.00680",
+      "reading_unit_id": "reading-unit.0284",
       "decision": {
         "status": "included",
         "class": "section_body",
@@ -3980,8 +3979,8 @@
     {
       "id": "scope-decision.0323",
       "ordinal": 322,
-      "source_node_id": "jsx.00683",
-      "reading_unit_id": "reading-unit.0284",
+      "source_node_id": "jsx.00682",
+      "reading_unit_id": "reading-unit.0285",
       "decision": {
         "status": "included",
         "class": "section_body",
@@ -3991,8 +3990,8 @@
     {
       "id": "scope-decision.0324",
       "ordinal": 323,
-      "source_node_id": "jsx.00685",
-      "reading_unit_id": "reading-unit.0285",
+      "source_node_id": "jsx.00684",
+      "reading_unit_id": "reading-unit.0286",
       "decision": {
         "status": "included",
         "class": "section_body",
@@ -4002,8 +4001,8 @@
     {
       "id": "scope-decision.0325",
       "ordinal": 324,
-      "source_node_id": "jsx.00687",
-      "reading_unit_id": "reading-unit.0286",
+      "source_node_id": "jsx.00686",
+      "reading_unit_id": "reading-unit.0287",
       "decision": {
         "status": "included",
         "class": "section_body",
@@ -4013,8 +4012,8 @@
     {
       "id": "scope-decision.0326",
       "ordinal": 325,
-      "source_node_id": "jsx.00689",
-      "reading_unit_id": "reading-unit.0287",
+      "source_node_id": "jsx.00688",
+      "reading_unit_id": "reading-unit.0288",
       "decision": {
         "status": "included",
         "class": "section_body",
@@ -4024,8 +4023,8 @@
     {
       "id": "scope-decision.0327",
       "ordinal": 326,
-      "source_node_id": "jsx.00691",
-      "reading_unit_id": "reading-unit.0288",
+      "source_node_id": "jsx.00690",
+      "reading_unit_id": "reading-unit.0289",
       "decision": {
         "status": "included",
         "class": "section_body",
@@ -4035,8 +4034,8 @@
     {
       "id": "scope-decision.0328",
       "ordinal": 327,
-      "source_node_id": "jsx.00693",
-      "reading_unit_id": "reading-unit.0289",
+      "source_node_id": "jsx.00692",
+      "reading_unit_id": "reading-unit.0290",
       "decision": {
         "status": "included",
         "class": "section_body",
@@ -4046,8 +4045,8 @@
     {
       "id": "scope-decision.0329",
       "ordinal": 328,
-      "source_node_id": "jsx.00695",
-      "reading_unit_id": "reading-unit.0290",
+      "source_node_id": "jsx.00694",
+      "reading_unit_id": "reading-unit.0291",
       "decision": {
         "status": "included",
         "class": "section_body",
@@ -4058,7 +4057,7 @@
       "id": "scope-decision.0330",
       "ordinal": 329,
       "source_node_id": "jsx.00697",
-      "reading_unit_id": "reading-unit.0291",
+      "reading_unit_id": "reading-unit.0293",
       "decision": {
         "status": "included",
         "class": "section_body",
@@ -4069,7 +4068,7 @@
       "id": "scope-decision.0331",
       "ordinal": 330,
       "source_node_id": "jsx.00699",
-      "reading_unit_id": "reading-unit.0292",
+      "reading_unit_id": "reading-unit.0294",
       "decision": {
         "status": "included",
         "class": "section_body",
@@ -4079,8 +4078,8 @@
     {
       "id": "scope-decision.0332",
       "ordinal": 331,
-      "source_node_id": "jsx.00702",
-      "reading_unit_id": "reading-unit.0294",
+      "source_node_id": "jsx.00701",
+      "reading_unit_id": "reading-unit.0295",
       "decision": {
         "status": "included",
         "class": "section_body",
@@ -4090,8 +4089,8 @@
     {
       "id": "scope-decision.0333",
       "ordinal": 332,
-      "source_node_id": "jsx.00704",
-      "reading_unit_id": "reading-unit.0295",
+      "source_node_id": "jsx.00703",
+      "reading_unit_id": "reading-unit.0296",
       "decision": {
         "status": "included",
         "class": "section_body",
@@ -4101,8 +4100,8 @@
     {
       "id": "scope-decision.0334",
       "ordinal": 333,
-      "source_node_id": "jsx.00706",
-      "reading_unit_id": "reading-unit.0296",
+      "source_node_id": "jsx.00705",
+      "reading_unit_id": "reading-unit.0297",
       "decision": {
         "status": "included",
         "class": "section_body",
@@ -4112,8 +4111,8 @@
     {
       "id": "scope-decision.0335",
       "ordinal": 334,
-      "source_node_id": "jsx.00708",
-      "reading_unit_id": "reading-unit.0297",
+      "source_node_id": "jsx.00707",
+      "reading_unit_id": "reading-unit.0298",
       "decision": {
         "status": "included",
         "class": "section_body",
@@ -4124,7 +4123,7 @@
       "id": "scope-decision.0336",
       "ordinal": 335,
       "source_node_id": "jsx.00710",
-      "reading_unit_id": "reading-unit.0298",
+      "reading_unit_id": "reading-unit.0300",
       "decision": {
         "status": "included",
         "class": "section_body",
@@ -4135,7 +4134,7 @@
       "id": "scope-decision.0337",
       "ordinal": 336,
       "source_node_id": "jsx.00712",
-      "reading_unit_id": "reading-unit.0299",
+      "reading_unit_id": "reading-unit.0301",
       "decision": {
         "status": "included",
         "class": "section_body",
@@ -4145,8 +4144,8 @@
     {
       "id": "scope-decision.0338",
       "ordinal": 337,
-      "source_node_id": "jsx.00715",
-      "reading_unit_id": "reading-unit.0301",
+      "source_node_id": "jsx.00714",
+      "reading_unit_id": "reading-unit.0302",
       "decision": {
         "status": "included",
         "class": "section_body",
@@ -4156,8 +4155,8 @@
     {
       "id": "scope-decision.0339",
       "ordinal": 338,
-      "source_node_id": "jsx.00717",
-      "reading_unit_id": "reading-unit.0302",
+      "source_node_id": "jsx.00716",
+      "reading_unit_id": "reading-unit.0303",
       "decision": {
         "status": "included",
         "class": "section_body",
@@ -4167,8 +4166,8 @@
     {
       "id": "scope-decision.0340",
       "ordinal": 339,
-      "source_node_id": "jsx.00719",
-      "reading_unit_id": "reading-unit.0303",
+      "source_node_id": "jsx.00718",
+      "reading_unit_id": "reading-unit.0304",
       "decision": {
         "status": "included",
         "class": "section_body",
@@ -4179,10 +4178,10 @@
       "id": "scope-decision.0341",
       "ordinal": 340,
       "source_node_id": "jsx.00721",
-      "reading_unit_id": "reading-unit.0304",
+      "reading_unit_id": "reading-unit.0306",
       "decision": {
-        "status": "included",
-        "class": "section_body",
+        "status": "excluded",
+        "class": "jsx_whitespace",
         "authority": "user"
       }
     },
@@ -4190,18 +4189,18 @@
       "id": "scope-decision.0342",
       "ordinal": 341,
       "source_node_id": "jsx.00723",
-      "reading_unit_id": "reading-unit.0305",
+      "reading_unit_id": "reading-unit.0306",
       "decision": {
-        "status": "included",
-        "class": "section_body",
+        "status": "excluded",
+        "class": "jsx_whitespace",
         "authority": "user"
       }
     },
     {
       "id": "scope-decision.0343",
       "ordinal": 342,
-      "source_node_id": "jsx.00726",
-      "reading_unit_id": "reading-unit.0307",
+      "source_node_id": "jsx.00725",
+      "reading_unit_id": "reading-unit.0306",
       "decision": {
         "status": "excluded",
         "class": "jsx_whitespace",
@@ -4211,30 +4210,8 @@
     {
       "id": "scope-decision.0344",
       "ordinal": 343,
-      "source_node_id": "jsx.00728",
-      "reading_unit_id": "reading-unit.0307",
-      "decision": {
-        "status": "excluded",
-        "class": "jsx_whitespace",
-        "authority": "user"
-      }
-    },
-    {
-      "id": "scope-decision.0345",
-      "ordinal": 344,
-      "source_node_id": "jsx.00730",
-      "reading_unit_id": "reading-unit.0307",
-      "decision": {
-        "status": "excluded",
-        "class": "jsx_whitespace",
-        "authority": "user"
-      }
-    },
-    {
-      "id": "scope-decision.0346",
-      "ordinal": 345,
-      "source_node_id": "jsx.00732",
-      "reading_unit_id": "reading-unit.0307",
+      "source_node_id": "jsx.00727",
+      "reading_unit_id": "reading-unit.0306",
       "decision": {
         "status": "excluded",
         "class": "structural_heading",
@@ -4243,9 +4220,20 @@
       }
     },
     {
-      "id": "scope-decision.0347",
-      "ordinal": 346,
-      "source_node_id": "jsx.00734",
+      "id": "scope-decision.0345",
+      "ordinal": 344,
+      "source_node_id": "jsx.00729",
+      "reading_unit_id": "reading-unit.0306",
+      "decision": {
+        "status": "included",
+        "class": "section_body",
+        "authority": "user"
+      }
+    },
+    {
+      "id": "scope-decision.0346",
+      "ordinal": 345,
+      "source_node_id": "jsx.00731",
       "reading_unit_id": "reading-unit.0307",
       "decision": {
         "status": "included",
@@ -4254,10 +4242,21 @@
       }
     },
     {
+      "id": "scope-decision.0347",
+      "ordinal": 346,
+      "source_node_id": "jsx.00733",
+      "reading_unit_id": "reading-unit.0307",
+      "decision": {
+        "status": "included_temporarily",
+        "class": "small_text",
+        "authority": "user"
+      }
+    },
+    {
       "id": "scope-decision.0348",
       "ordinal": 347,
-      "source_node_id": "jsx.00736",
-      "reading_unit_id": "reading-unit.0308",
+      "source_node_id": "jsx.00735",
+      "reading_unit_id": "reading-unit.0307",
       "decision": {
         "status": "included",
         "class": "section_body",
@@ -4267,19 +4266,19 @@
     {
       "id": "scope-decision.0349",
       "ordinal": 348,
-      "source_node_id": "jsx.00738",
+      "source_node_id": "jsx.00737",
       "reading_unit_id": "reading-unit.0308",
       "decision": {
-        "status": "included_temporarily",
-        "class": "small_text",
+        "status": "included",
+        "class": "section_body",
         "authority": "user"
       }
     },
     {
       "id": "scope-decision.0350",
       "ordinal": 349,
-      "source_node_id": "jsx.00740",
-      "reading_unit_id": "reading-unit.0308",
+      "source_node_id": "jsx.00739",
+      "reading_unit_id": "reading-unit.0309",
       "decision": {
         "status": "included",
         "class": "section_body",
@@ -4289,8 +4288,8 @@
     {
       "id": "scope-decision.0351",
       "ordinal": 350,
-      "source_node_id": "jsx.00742",
-      "reading_unit_id": "reading-unit.0309",
+      "source_node_id": "jsx.00741",
+      "reading_unit_id": "reading-unit.0310",
       "decision": {
         "status": "included",
         "class": "section_body",
@@ -4300,8 +4299,8 @@
     {
       "id": "scope-decision.0352",
       "ordinal": 351,
-      "source_node_id": "jsx.00744",
-      "reading_unit_id": "reading-unit.0310",
+      "source_node_id": "jsx.00743",
+      "reading_unit_id": "reading-unit.0311",
       "decision": {
         "status": "included",
         "class": "section_body",
@@ -4311,8 +4310,8 @@
     {
       "id": "scope-decision.0353",
       "ordinal": 352,
-      "source_node_id": "jsx.00746",
-      "reading_unit_id": "reading-unit.0311",
+      "source_node_id": "jsx.00745",
+      "reading_unit_id": "reading-unit.0312",
       "decision": {
         "status": "included",
         "class": "section_body",
@@ -4322,19 +4321,19 @@
     {
       "id": "scope-decision.0354",
       "ordinal": 353,
-      "source_node_id": "jsx.00748",
+      "source_node_id": "jsx.00747",
       "reading_unit_id": "reading-unit.0312",
       "decision": {
-        "status": "included",
-        "class": "section_body",
+        "status": "included_temporarily",
+        "class": "small_text",
         "authority": "user"
       }
     },
     {
       "id": "scope-decision.0355",
       "ordinal": 354,
-      "source_node_id": "jsx.00750",
-      "reading_unit_id": "reading-unit.0313",
+      "source_node_id": "jsx.00749",
+      "reading_unit_id": "reading-unit.0312",
       "decision": {
         "status": "included",
         "class": "section_body",
@@ -4344,19 +4343,19 @@
     {
       "id": "scope-decision.0356",
       "ordinal": 355,
-      "source_node_id": "jsx.00752",
+      "source_node_id": "jsx.00751",
       "reading_unit_id": "reading-unit.0313",
       "decision": {
-        "status": "included_temporarily",
-        "class": "small_text",
+        "status": "included",
+        "class": "section_body",
         "authority": "user"
       }
     },
     {
       "id": "scope-decision.0357",
       "ordinal": 356,
-      "source_node_id": "jsx.00754",
-      "reading_unit_id": "reading-unit.0313",
+      "source_node_id": "jsx.00753",
+      "reading_unit_id": "reading-unit.0314",
       "decision": {
         "status": "included",
         "class": "section_body",
@@ -4366,8 +4365,8 @@
     {
       "id": "scope-decision.0358",
       "ordinal": 357,
-      "source_node_id": "jsx.00756",
-      "reading_unit_id": "reading-unit.0314",
+      "source_node_id": "jsx.00755",
+      "reading_unit_id": "reading-unit.0315",
       "decision": {
         "status": "included",
         "class": "section_body",
@@ -4377,8 +4376,8 @@
     {
       "id": "scope-decision.0359",
       "ordinal": 358,
-      "source_node_id": "jsx.00758",
-      "reading_unit_id": "reading-unit.0315",
+      "source_node_id": "jsx.00757",
+      "reading_unit_id": "reading-unit.0316",
       "decision": {
         "status": "included",
         "class": "section_body",
@@ -4388,8 +4387,8 @@
     {
       "id": "scope-decision.0360",
       "ordinal": 359,
-      "source_node_id": "jsx.00760",
-      "reading_unit_id": "reading-unit.0316",
+      "source_node_id": "jsx.00759",
+      "reading_unit_id": "reading-unit.0317",
       "decision": {
         "status": "included",
         "class": "section_body",
@@ -4399,8 +4398,8 @@
     {
       "id": "scope-decision.0361",
       "ordinal": 360,
-      "source_node_id": "jsx.00762",
-      "reading_unit_id": "reading-unit.0317",
+      "source_node_id": "jsx.00761",
+      "reading_unit_id": "reading-unit.0318",
       "decision": {
         "status": "included",
         "class": "section_body",
@@ -4410,8 +4409,8 @@
     {
       "id": "scope-decision.0362",
       "ordinal": 361,
-      "source_node_id": "jsx.00764",
-      "reading_unit_id": "reading-unit.0318",
+      "source_node_id": "jsx.00763",
+      "reading_unit_id": "reading-unit.0319",
       "decision": {
         "status": "included",
         "class": "section_body",
@@ -4421,8 +4420,8 @@
     {
       "id": "scope-decision.0363",
       "ordinal": 362,
-      "source_node_id": "jsx.00766",
-      "reading_unit_id": "reading-unit.0319",
+      "source_node_id": "jsx.00765",
+      "reading_unit_id": "reading-unit.0320",
       "decision": {
         "status": "included",
         "class": "section_body",
@@ -4433,7 +4432,7 @@
       "id": "scope-decision.0364",
       "ordinal": 363,
       "source_node_id": "jsx.00768",
-      "reading_unit_id": "reading-unit.0320",
+      "reading_unit_id": "reading-unit.0322",
       "decision": {
         "status": "included",
         "class": "section_body",
@@ -4444,7 +4443,7 @@
       "id": "scope-decision.0365",
       "ordinal": 364,
       "source_node_id": "jsx.00770",
-      "reading_unit_id": "reading-unit.0321",
+      "reading_unit_id": "reading-unit.0323",
       "decision": {
         "status": "included",
         "class": "section_body",
@@ -4454,8 +4453,8 @@
     {
       "id": "scope-decision.0366",
       "ordinal": 365,
-      "source_node_id": "jsx.00773",
-      "reading_unit_id": "reading-unit.0323",
+      "source_node_id": "jsx.00772",
+      "reading_unit_id": "reading-unit.0324",
       "decision": {
         "status": "included",
         "class": "section_body",
@@ -4465,8 +4464,8 @@
     {
       "id": "scope-decision.0367",
       "ordinal": 366,
-      "source_node_id": "jsx.00775",
-      "reading_unit_id": "reading-unit.0324",
+      "source_node_id": "jsx.00774",
+      "reading_unit_id": "reading-unit.0325",
       "decision": {
         "status": "included",
         "class": "section_body",
@@ -4476,8 +4475,8 @@
     {
       "id": "scope-decision.0368",
       "ordinal": 367,
-      "source_node_id": "jsx.00777",
-      "reading_unit_id": "reading-unit.0325",
+      "source_node_id": "jsx.00776",
+      "reading_unit_id": "reading-unit.0326",
       "decision": {
         "status": "included",
         "class": "section_body",
@@ -4487,8 +4486,8 @@
     {
       "id": "scope-decision.0369",
       "ordinal": 368,
-      "source_node_id": "jsx.00779",
-      "reading_unit_id": "reading-unit.0326",
+      "source_node_id": "jsx.00778",
+      "reading_unit_id": "reading-unit.0327",
       "decision": {
         "status": "included",
         "class": "section_body",
@@ -4498,8 +4497,8 @@
     {
       "id": "scope-decision.0370",
       "ordinal": 369,
-      "source_node_id": "jsx.00781",
-      "reading_unit_id": "reading-unit.0327",
+      "source_node_id": "jsx.00780",
+      "reading_unit_id": "reading-unit.0328",
       "decision": {
         "status": "included",
         "class": "section_body",
@@ -4509,8 +4508,8 @@
     {
       "id": "scope-decision.0371",
       "ordinal": 370,
-      "source_node_id": "jsx.00783",
-      "reading_unit_id": "reading-unit.0328",
+      "source_node_id": "jsx.00782",
+      "reading_unit_id": "reading-unit.0329",
       "decision": {
         "status": "included",
         "class": "section_body",
@@ -4520,8 +4519,8 @@
     {
       "id": "scope-decision.0372",
       "ordinal": 371,
-      "source_node_id": "jsx.00785",
-      "reading_unit_id": "reading-unit.0329",
+      "source_node_id": "jsx.00784",
+      "reading_unit_id": "reading-unit.0330",
       "decision": {
         "status": "included",
         "class": "section_body",
@@ -4531,8 +4530,8 @@
     {
       "id": "scope-decision.0373",
       "ordinal": 372,
-      "source_node_id": "jsx.00787",
-      "reading_unit_id": "reading-unit.0330",
+      "source_node_id": "jsx.00786",
+      "reading_unit_id": "reading-unit.0331",
       "decision": {
         "status": "included",
         "class": "section_body",
@@ -4542,8 +4541,8 @@
     {
       "id": "scope-decision.0374",
       "ordinal": 373,
-      "source_node_id": "jsx.00789",
-      "reading_unit_id": "reading-unit.0331",
+      "source_node_id": "jsx.00788",
+      "reading_unit_id": "reading-unit.0332",
       "decision": {
         "status": "included",
         "class": "section_body",
@@ -4553,8 +4552,8 @@
     {
       "id": "scope-decision.0375",
       "ordinal": 374,
-      "source_node_id": "jsx.00791",
-      "reading_unit_id": "reading-unit.0332",
+      "source_node_id": "jsx.00790",
+      "reading_unit_id": "reading-unit.0333",
       "decision": {
         "status": "included",
         "class": "section_body",
@@ -4564,8 +4563,8 @@
     {
       "id": "scope-decision.0376",
       "ordinal": 375,
-      "source_node_id": "jsx.00793",
-      "reading_unit_id": "reading-unit.0333",
+      "source_node_id": "jsx.00792",
+      "reading_unit_id": "reading-unit.0334",
       "decision": {
         "status": "included",
         "class": "section_body",
@@ -4575,8 +4574,8 @@
     {
       "id": "scope-decision.0377",
       "ordinal": 376,
-      "source_node_id": "jsx.00795",
-      "reading_unit_id": "reading-unit.0334",
+      "source_node_id": "jsx.00794",
+      "reading_unit_id": "reading-unit.0335",
       "decision": {
         "status": "included",
         "class": "section_body",
@@ -4586,8 +4585,8 @@
     {
       "id": "scope-decision.0378",
       "ordinal": 377,
-      "source_node_id": "jsx.00797",
-      "reading_unit_id": "reading-unit.0335",
+      "source_node_id": "jsx.00796",
+      "reading_unit_id": "reading-unit.0336",
       "decision": {
         "status": "included",
         "class": "section_body",
@@ -4597,8 +4596,8 @@
     {
       "id": "scope-decision.0379",
       "ordinal": 378,
-      "source_node_id": "jsx.00799",
-      "reading_unit_id": "reading-unit.0336",
+      "source_node_id": "jsx.00798",
+      "reading_unit_id": "reading-unit.0337",
       "decision": {
         "status": "included",
         "class": "section_body",
@@ -4608,8 +4607,8 @@
     {
       "id": "scope-decision.0380",
       "ordinal": 379,
-      "source_node_id": "jsx.00801",
-      "reading_unit_id": "reading-unit.0337",
+      "source_node_id": "jsx.00800",
+      "reading_unit_id": "reading-unit.0338",
       "decision": {
         "status": "included",
         "class": "section_body",
@@ -4619,8 +4618,8 @@
     {
       "id": "scope-decision.0381",
       "ordinal": 380,
-      "source_node_id": "jsx.00803",
-      "reading_unit_id": "reading-unit.0338",
+      "source_node_id": "jsx.00802",
+      "reading_unit_id": "reading-unit.0339",
       "decision": {
         "status": "included",
         "class": "section_body",
@@ -4630,8 +4629,8 @@
     {
       "id": "scope-decision.0382",
       "ordinal": 381,
-      "source_node_id": "jsx.00805",
-      "reading_unit_id": "reading-unit.0339",
+      "source_node_id": "jsx.00804",
+      "reading_unit_id": "reading-unit.0340",
       "decision": {
         "status": "included",
         "class": "section_body",
@@ -4641,8 +4640,8 @@
     {
       "id": "scope-decision.0383",
       "ordinal": 382,
-      "source_node_id": "jsx.00807",
-      "reading_unit_id": "reading-unit.0340",
+      "source_node_id": "jsx.00806",
+      "reading_unit_id": "reading-unit.0341",
       "decision": {
         "status": "included",
         "class": "section_body",
@@ -4652,8 +4651,8 @@
     {
       "id": "scope-decision.0384",
       "ordinal": 383,
-      "source_node_id": "jsx.00809",
-      "reading_unit_id": "reading-unit.0341",
+      "source_node_id": "jsx.00808",
+      "reading_unit_id": "reading-unit.0342",
       "decision": {
         "status": "included",
         "class": "section_body",
@@ -4663,8 +4662,8 @@
     {
       "id": "scope-decision.0385",
       "ordinal": 384,
-      "source_node_id": "jsx.00811",
-      "reading_unit_id": "reading-unit.0342",
+      "source_node_id": "jsx.00810",
+      "reading_unit_id": "reading-unit.0343",
       "decision": {
         "status": "included",
         "class": "section_body",
@@ -4674,8 +4673,8 @@
     {
       "id": "scope-decision.0386",
       "ordinal": 385,
-      "source_node_id": "jsx.00813",
-      "reading_unit_id": "reading-unit.0343",
+      "source_node_id": "jsx.00812",
+      "reading_unit_id": "reading-unit.0344",
       "decision": {
         "status": "included",
         "class": "section_body",
@@ -4685,8 +4684,8 @@
     {
       "id": "scope-decision.0387",
       "ordinal": 386,
-      "source_node_id": "jsx.00815",
-      "reading_unit_id": "reading-unit.0344",
+      "source_node_id": "jsx.00814",
+      "reading_unit_id": "reading-unit.0345",
       "decision": {
         "status": "included",
         "class": "section_body",
@@ -4696,8 +4695,8 @@
     {
       "id": "scope-decision.0388",
       "ordinal": 387,
-      "source_node_id": "jsx.00817",
-      "reading_unit_id": "reading-unit.0345",
+      "source_node_id": "jsx.00816",
+      "reading_unit_id": "reading-unit.0346",
       "decision": {
         "status": "included",
         "class": "section_body",
@@ -4707,8 +4706,8 @@
     {
       "id": "scope-decision.0389",
       "ordinal": 388,
-      "source_node_id": "jsx.00819",
-      "reading_unit_id": "reading-unit.0346",
+      "source_node_id": "jsx.00818",
+      "reading_unit_id": "reading-unit.0347",
       "decision": {
         "status": "included",
         "class": "section_body",
@@ -4718,8 +4717,8 @@
     {
       "id": "scope-decision.0390",
       "ordinal": 389,
-      "source_node_id": "jsx.00821",
-      "reading_unit_id": "reading-unit.0347",
+      "source_node_id": "jsx.00820",
+      "reading_unit_id": "reading-unit.0348",
       "decision": {
         "status": "included",
         "class": "section_body",
@@ -4729,8 +4728,8 @@
     {
       "id": "scope-decision.0391",
       "ordinal": 390,
-      "source_node_id": "jsx.00823",
-      "reading_unit_id": "reading-unit.0348",
+      "source_node_id": "jsx.00822",
+      "reading_unit_id": "reading-unit.0349",
       "decision": {
         "status": "included",
         "class": "section_body",
@@ -4740,8 +4739,8 @@
     {
       "id": "scope-decision.0392",
       "ordinal": 391,
-      "source_node_id": "jsx.00825",
-      "reading_unit_id": "reading-unit.0349",
+      "source_node_id": "jsx.00824",
+      "reading_unit_id": "reading-unit.0350",
       "decision": {
         "status": "included",
         "class": "section_body",
@@ -4751,8 +4750,8 @@
     {
       "id": "scope-decision.0393",
       "ordinal": 392,
-      "source_node_id": "jsx.00827",
-      "reading_unit_id": "reading-unit.0350",
+      "source_node_id": "jsx.00826",
+      "reading_unit_id": "reading-unit.0351",
       "decision": {
         "status": "included",
         "class": "section_body",
@@ -4762,8 +4761,8 @@
     {
       "id": "scope-decision.0394",
       "ordinal": 393,
-      "source_node_id": "jsx.00829",
-      "reading_unit_id": "reading-unit.0351",
+      "source_node_id": "jsx.00828",
+      "reading_unit_id": "reading-unit.0352",
       "decision": {
         "status": "included",
         "class": "section_body",
@@ -4773,8 +4772,8 @@
     {
       "id": "scope-decision.0395",
       "ordinal": 394,
-      "source_node_id": "jsx.00831",
-      "reading_unit_id": "reading-unit.0352",
+      "source_node_id": "jsx.00830",
+      "reading_unit_id": "reading-unit.0353",
       "decision": {
         "status": "included",
         "class": "section_body",
@@ -4784,8 +4783,8 @@
     {
       "id": "scope-decision.0396",
       "ordinal": 395,
-      "source_node_id": "jsx.00833",
-      "reading_unit_id": "reading-unit.0353",
+      "source_node_id": "jsx.00832",
+      "reading_unit_id": "reading-unit.0354",
       "decision": {
         "status": "included",
         "class": "section_body",
@@ -4795,8 +4794,8 @@
     {
       "id": "scope-decision.0397",
       "ordinal": 396,
-      "source_node_id": "jsx.00835",
-      "reading_unit_id": "reading-unit.0354",
+      "source_node_id": "jsx.00834",
+      "reading_unit_id": "reading-unit.0355",
       "decision": {
         "status": "included",
         "class": "section_body",
@@ -4807,7 +4806,7 @@
       "id": "scope-decision.0398",
       "ordinal": 397,
       "source_node_id": "jsx.00837",
-      "reading_unit_id": "reading-unit.0355",
+      "reading_unit_id": "reading-unit.0357",
       "decision": {
         "status": "included",
         "class": "section_body",
@@ -4818,7 +4817,7 @@
       "id": "scope-decision.0399",
       "ordinal": 398,
       "source_node_id": "jsx.00839",
-      "reading_unit_id": "reading-unit.0356",
+      "reading_unit_id": "reading-unit.0358",
       "decision": {
         "status": "included",
         "class": "section_body",
@@ -4828,8 +4827,8 @@
     {
       "id": "scope-decision.0400",
       "ordinal": 399,
-      "source_node_id": "jsx.00842",
-      "reading_unit_id": "reading-unit.0358",
+      "source_node_id": "jsx.00841",
+      "reading_unit_id": "reading-unit.0359",
       "decision": {
         "status": "included",
         "class": "section_body",
@@ -4839,8 +4838,8 @@
     {
       "id": "scope-decision.0401",
       "ordinal": 400,
-      "source_node_id": "jsx.00844",
-      "reading_unit_id": "reading-unit.0359",
+      "source_node_id": "jsx.00843",
+      "reading_unit_id": "reading-unit.0360",
       "decision": {
         "status": "included",
         "class": "section_body",
@@ -4850,8 +4849,8 @@
     {
       "id": "scope-decision.0402",
       "ordinal": 401,
-      "source_node_id": "jsx.00846",
-      "reading_unit_id": "reading-unit.0360",
+      "source_node_id": "jsx.00845",
+      "reading_unit_id": "reading-unit.0361",
       "decision": {
         "status": "included",
         "class": "section_body",
@@ -4861,8 +4860,8 @@
     {
       "id": "scope-decision.0403",
       "ordinal": 402,
-      "source_node_id": "jsx.00848",
-      "reading_unit_id": "reading-unit.0361",
+      "source_node_id": "jsx.00847",
+      "reading_unit_id": "reading-unit.0362",
       "decision": {
         "status": "included",
         "class": "section_body",
@@ -4872,8 +4871,8 @@
     {
       "id": "scope-decision.0404",
       "ordinal": 403,
-      "source_node_id": "jsx.00850",
-      "reading_unit_id": "reading-unit.0362",
+      "source_node_id": "jsx.00849",
+      "reading_unit_id": "reading-unit.0363",
       "decision": {
         "status": "included",
         "class": "section_body",
@@ -4883,8 +4882,8 @@
     {
       "id": "scope-decision.0405",
       "ordinal": 404,
-      "source_node_id": "jsx.00852",
-      "reading_unit_id": "reading-unit.0363",
+      "source_node_id": "jsx.00851",
+      "reading_unit_id": "reading-unit.0364",
       "decision": {
         "status": "included",
         "class": "section_body",
@@ -4894,8 +4893,8 @@
     {
       "id": "scope-decision.0406",
       "ordinal": 405,
-      "source_node_id": "jsx.00854",
-      "reading_unit_id": "reading-unit.0364",
+      "source_node_id": "jsx.00853",
+      "reading_unit_id": "reading-unit.0365",
       "decision": {
         "status": "included",
         "class": "section_body",
@@ -4905,8 +4904,8 @@
     {
       "id": "scope-decision.0407",
       "ordinal": 406,
-      "source_node_id": "jsx.00856",
-      "reading_unit_id": "reading-unit.0365",
+      "source_node_id": "jsx.00855",
+      "reading_unit_id": "reading-unit.0366",
       "decision": {
         "status": "included",
         "class": "section_body",
@@ -4916,8 +4915,8 @@
     {
       "id": "scope-decision.0408",
       "ordinal": 407,
-      "source_node_id": "jsx.00858",
-      "reading_unit_id": "reading-unit.0366",
+      "source_node_id": "jsx.00857",
+      "reading_unit_id": "reading-unit.0367",
       "decision": {
         "status": "included",
         "class": "section_body",
@@ -4927,8 +4926,8 @@
     {
       "id": "scope-decision.0409",
       "ordinal": 408,
-      "source_node_id": "jsx.00860",
-      "reading_unit_id": "reading-unit.0367",
+      "source_node_id": "jsx.00859",
+      "reading_unit_id": "reading-unit.0368",
       "decision": {
         "status": "included",
         "class": "section_body",
@@ -4938,8 +4937,8 @@
     {
       "id": "scope-decision.0410",
       "ordinal": 409,
-      "source_node_id": "jsx.00862",
-      "reading_unit_id": "reading-unit.0368",
+      "source_node_id": "jsx.00861",
+      "reading_unit_id": "reading-unit.0369",
       "decision": {
         "status": "included",
         "class": "section_body",
@@ -4949,8 +4948,8 @@
     {
       "id": "scope-decision.0411",
       "ordinal": 410,
-      "source_node_id": "jsx.00864",
-      "reading_unit_id": "reading-unit.0369",
+      "source_node_id": "jsx.00863",
+      "reading_unit_id": "reading-unit.0370",
       "decision": {
         "status": "included",
         "class": "section_body",
@@ -4960,8 +4959,8 @@
     {
       "id": "scope-decision.0412",
       "ordinal": 411,
-      "source_node_id": "jsx.00866",
-      "reading_unit_id": "reading-unit.0370",
+      "source_node_id": "jsx.00865",
+      "reading_unit_id": "reading-unit.0371",
       "decision": {
         "status": "included",
         "class": "section_body",
@@ -4971,8 +4970,8 @@
     {
       "id": "scope-decision.0413",
       "ordinal": 412,
-      "source_node_id": "jsx.00868",
-      "reading_unit_id": "reading-unit.0371",
+      "source_node_id": "jsx.00867",
+      "reading_unit_id": "reading-unit.0372",
       "decision": {
         "status": "included",
         "class": "section_body",
@@ -4982,8 +4981,8 @@
     {
       "id": "scope-decision.0414",
       "ordinal": 413,
-      "source_node_id": "jsx.00870",
-      "reading_unit_id": "reading-unit.0372",
+      "source_node_id": "jsx.00869",
+      "reading_unit_id": "reading-unit.0373",
       "decision": {
         "status": "included",
         "class": "section_body",
@@ -4993,8 +4992,8 @@
     {
       "id": "scope-decision.0415",
       "ordinal": 414,
-      "source_node_id": "jsx.00872",
-      "reading_unit_id": "reading-unit.0373",
+      "source_node_id": "jsx.00871",
+      "reading_unit_id": "reading-unit.0374",
       "decision": {
         "status": "included",
         "class": "section_body",
@@ -5004,8 +5003,8 @@
     {
       "id": "scope-decision.0416",
       "ordinal": 415,
-      "source_node_id": "jsx.00874",
-      "reading_unit_id": "reading-unit.0374",
+      "source_node_id": "jsx.00873",
+      "reading_unit_id": "reading-unit.0375",
       "decision": {
         "status": "included",
         "class": "section_body",
@@ -5015,8 +5014,8 @@
     {
       "id": "scope-decision.0417",
       "ordinal": 416,
-      "source_node_id": "jsx.00876",
-      "reading_unit_id": "reading-unit.0375",
+      "source_node_id": "jsx.00875",
+      "reading_unit_id": "reading-unit.0376",
       "decision": {
         "status": "included",
         "class": "section_body",
@@ -5026,8 +5025,8 @@
     {
       "id": "scope-decision.0418",
       "ordinal": 417,
-      "source_node_id": "jsx.00878",
-      "reading_unit_id": "reading-unit.0376",
+      "source_node_id": "jsx.00877",
+      "reading_unit_id": "reading-unit.0377",
       "decision": {
         "status": "included",
         "class": "section_body",
@@ -5037,8 +5036,8 @@
     {
       "id": "scope-decision.0419",
       "ordinal": 418,
-      "source_node_id": "jsx.00880",
-      "reading_unit_id": "reading-unit.0377",
+      "source_node_id": "jsx.00879",
+      "reading_unit_id": "reading-unit.0378",
       "decision": {
         "status": "included",
         "class": "section_body",
@@ -5048,8 +5047,8 @@
     {
       "id": "scope-decision.0420",
       "ordinal": 419,
-      "source_node_id": "jsx.00882",
-      "reading_unit_id": "reading-unit.0378",
+      "source_node_id": "jsx.00881",
+      "reading_unit_id": "reading-unit.0379",
       "decision": {
         "status": "included",
         "class": "section_body",
@@ -5059,8 +5058,8 @@
     {
       "id": "scope-decision.0421",
       "ordinal": 420,
-      "source_node_id": "jsx.00884",
-      "reading_unit_id": "reading-unit.0379",
+      "source_node_id": "jsx.00883",
+      "reading_unit_id": "reading-unit.0380",
       "decision": {
         "status": "included",
         "class": "section_body",
@@ -5070,8 +5069,8 @@
     {
       "id": "scope-decision.0422",
       "ordinal": 421,
-      "source_node_id": "jsx.00886",
-      "reading_unit_id": "reading-unit.0380",
+      "source_node_id": "jsx.00885",
+      "reading_unit_id": "reading-unit.0381",
       "decision": {
         "status": "included",
         "class": "section_body",
@@ -5081,8 +5080,8 @@
     {
       "id": "scope-decision.0423",
       "ordinal": 422,
-      "source_node_id": "jsx.00888",
-      "reading_unit_id": "reading-unit.0381",
+      "source_node_id": "jsx.00887",
+      "reading_unit_id": "reading-unit.0382",
       "decision": {
         "status": "included",
         "class": "section_body",
@@ -5092,8 +5091,8 @@
     {
       "id": "scope-decision.0424",
       "ordinal": 423,
-      "source_node_id": "jsx.00890",
-      "reading_unit_id": "reading-unit.0382",
+      "source_node_id": "jsx.00889",
+      "reading_unit_id": "reading-unit.0383",
       "decision": {
         "status": "included",
         "class": "section_body",
@@ -5103,8 +5102,8 @@
     {
       "id": "scope-decision.0425",
       "ordinal": 424,
-      "source_node_id": "jsx.00892",
-      "reading_unit_id": "reading-unit.0383",
+      "source_node_id": "jsx.00891",
+      "reading_unit_id": "reading-unit.0384",
       "decision": {
         "status": "included",
         "class": "section_body",
@@ -5114,29 +5113,29 @@
     {
       "id": "scope-decision.0426",
       "ordinal": 425,
-      "source_node_id": "jsx.00894",
-      "reading_unit_id": "reading-unit.0384",
+      "source_node_id": "jsx.00893",
+      "reading_unit_id": null,
       "decision": {
-        "status": "included",
-        "class": "section_body",
+        "status": "excluded",
+        "class": "jsx_whitespace",
         "authority": "user"
       }
     },
     {
       "id": "scope-decision.0427",
       "ordinal": 426,
-      "source_node_id": "jsx.00896",
-      "reading_unit_id": "reading-unit.0385",
+      "source_node_id": "jsx.00895",
+      "reading_unit_id": null,
       "decision": {
-        "status": "included",
-        "class": "section_body",
+        "status": "excluded",
+        "class": "jsx_whitespace",
         "authority": "user"
       }
     },
     {
       "id": "scope-decision.0428",
       "ordinal": 427,
-      "source_node_id": "jsx.00898",
+      "source_node_id": "jsx.00897",
       "reading_unit_id": null,
       "decision": {
         "status": "excluded",
@@ -5147,29 +5146,7 @@
     {
       "id": "scope-decision.0429",
       "ordinal": 428,
-      "source_node_id": "jsx.00900",
-      "reading_unit_id": null,
-      "decision": {
-        "status": "excluded",
-        "class": "jsx_whitespace",
-        "authority": "user"
-      }
-    },
-    {
-      "id": "scope-decision.0430",
-      "ordinal": 429,
-      "source_node_id": "jsx.00902",
-      "reading_unit_id": null,
-      "decision": {
-        "status": "excluded",
-        "class": "jsx_whitespace",
-        "authority": "user"
-      }
-    },
-    {
-      "id": "scope-decision.0431",
-      "ordinal": 430,
-      "source_node_id": "jsx.00904",
+      "source_node_id": "jsx.00899",
       "reading_unit_id": null,
       "decision": {
         "status": "excluded",

@@ -120,8 +120,8 @@ const proof = {
   }),
   exactly_four_allowed_categories: segments.every((segment) => allowedCategories.has(segment.category))
     && new Set(segments.map((segment) => segment.category)).size === 4,
-  all_ninety_four_sealed_words_preserved_exactly_once: coveredWordIds.length === 94
-    && new Set(coveredWordIds).size === 94
+  all_ninety_one_sealed_words_preserved_exactly_once: coveredWordIds.length === 91
+    && new Set(coveredWordIds).size === 91
     && sealedWordIds.every((id) => coveredWordIds.includes(id)),
   no_new_words_or_candidates_emitted: sealedWordSegments.length === sealedWords.occurrences.length
     && segments.every((segment) => segment.category !== "sealed_word" || segment.sealed_word_occurrence_id !== null),

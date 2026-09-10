@@ -6,9 +6,9 @@
   "corpus_scope_status": "undecided",
   "source": {
     "file": "src/SeferYetzirah.tsx",
-    "sha256": "868e1cadf357fd6b868bfa14d9694e55623186354b1a456dd3a45bb48f4864dd",
-    "source_map_sha256": "1df99b7ecb4a3b38b46f849ff0a8239c89373195d8d04853efdc7425e2691949",
-    "text_projection_sha256": "ac34e732f36e13902ae919815e9c4fce61d4ea5183981f1a8d52dcca9e7efda8"
+    "sha256": "d568a1ab11859e04c5ed6292b0d8ad829885ecdb95fc19a9fb5273b269413024",
+    "source_map_sha256": "7239e3c5f436242514bbbd6b677cb4ad3b81960bb794311807191dc7cfa78eeb",
+    "text_projection_sha256": "6bf54a6d6491f9980b204dedca452ec8672ea9d35e9be90f6d5773e6ef2a74f8"
   },
   "rules": {
     "context": "literal_jsx_ancestor_stack",
@@ -24,14 +24,14 @@
     "every_projection_reference_resolves": true,
     "every_corpus_decision_remains_unset": true,
     "deterministic_output": true,
-    "text_node_count": 431,
-    "jsx_element_count": 44,
-    "whitespace_only_count": 42,
-    "inside_section_count": 417,
+    "text_node_count": 429,
+    "jsx_element_count": 43,
+    "whitespace_only_count": 41,
+    "inside_section_count": 415,
     "inside_h1_count": 1,
     "inside_h2_count": 6,
     "inside_h3_count": 20,
-    "inside_small_count": 9
+    "inside_small_count": 8
   },
   "elements": [
     {
@@ -39,10 +39,10 @@
       "tag_name": "main",
       "parent_element_id": null,
       "open_node_id": "jsx.00001",
-      "close_node_id": "jsx.00905",
+      "close_node_id": "jsx.00900",
       "source_code_unit_range": {
         "start": 95,
-        "end": 21094
+        "end": 21044
       }
     },
     {
@@ -72,10 +72,10 @@
       "tag_name": "article",
       "parent_element_id": "element.main.0001",
       "open_node_id": "jsx.00011",
-      "close_node_id": "jsx.00901",
+      "close_node_id": "jsx.00896",
       "source_code_unit_range": {
         "start": 174,
-        "end": 21060
+        "end": 21010
       }
     },
     {
@@ -86,7 +86,7 @@
       "close_node_id": "jsx.00252",
       "source_code_unit_range": {
         "start": 192,
-        "end": 5224
+        "end": 5217
       }
     },
     {
@@ -339,7 +339,7 @@
       "close_node_id": "jsx.00247",
       "source_code_unit_range": {
         "start": 5117,
-        "end": 5191
+        "end": 5184
       }
     },
     {
@@ -347,10 +347,10 @@
       "tag_name": "section",
       "parent_element_id": "element.article.0001",
       "open_node_id": "jsx.00254",
-      "close_node_id": "jsx.00382",
+      "close_node_id": "jsx.00377",
       "source_code_unit_range": {
-        "start": 5233,
-        "end": 7793
+        "start": 5226,
+        "end": 7743
       }
     },
     {
@@ -360,8 +360,8 @@
       "open_node_id": "jsx.00256",
       "close_node_id": "jsx.00258",
       "source_code_unit_range": {
-        "start": 5253,
-        "end": 5267
+        "start": 5246,
+        "end": 5260
       }
     },
     {
@@ -371,151 +371,140 @@
       "open_node_id": "jsx.00304",
       "close_node_id": "jsx.00307",
       "source_code_unit_range": {
-        "start": 6143,
-        "end": 6209
-      }
-    },
-    {
-      "id": "element.small.0004",
-      "tag_name": "small",
-      "parent_element_id": "element.section.0002",
-      "open_node_id": "jsx.00324",
-      "close_node_id": "jsx.00327",
-      "source_code_unit_range": {
-        "start": 6654,
-        "end": 6697
+        "start": 6136,
+        "end": 6202
       }
     },
     {
       "id": "element.section.0003",
       "tag_name": "section",
       "parent_element_id": "element.article.0001",
-      "open_node_id": "jsx.00384",
-      "close_node_id": "jsx.00492",
+      "open_node_id": "jsx.00379",
+      "close_node_id": "jsx.00487",
       "source_code_unit_range": {
-        "start": 7802,
-        "end": 10110
+        "start": 7752,
+        "end": 10060
       }
     },
     {
       "id": "element.h2.0003",
       "tag_name": "h2",
       "parent_element_id": "element.section.0003",
-      "open_node_id": "jsx.00386",
-      "close_node_id": "jsx.00388",
+      "open_node_id": "jsx.00381",
+      "close_node_id": "jsx.00383",
       "source_code_unit_range": {
-        "start": 7822,
-        "end": 7836
+        "start": 7772,
+        "end": 7786
+      }
+    },
+    {
+      "id": "element.small.0004",
+      "tag_name": "small",
+      "parent_element_id": "element.section.0003",
+      "open_node_id": "jsx.00477",
+      "close_node_id": "jsx.00483",
+      "source_code_unit_range": {
+        "start": 9962,
+        "end": 10033
       }
     },
     {
       "id": "element.small.0005",
       "tag_name": "small",
-      "parent_element_id": "element.section.0003",
-      "open_node_id": "jsx.00482",
-      "close_node_id": "jsx.00488",
+      "parent_element_id": "element.small.0004",
+      "open_node_id": "jsx.00479",
+      "close_node_id": "jsx.00481",
       "source_code_unit_range": {
-        "start": 10012,
-        "end": 10083
-      }
-    },
-    {
-      "id": "element.small.0006",
-      "tag_name": "small",
-      "parent_element_id": "element.small.0005",
-      "open_node_id": "jsx.00484",
-      "close_node_id": "jsx.00486",
-      "source_code_unit_range": {
-        "start": 10049,
-        "end": 10074
+        "start": 9999,
+        "end": 10024
       }
     },
     {
       "id": "element.section.0004",
       "tag_name": "section",
       "parent_element_id": "element.article.0001",
-      "open_node_id": "jsx.00494",
-      "close_node_id": "jsx.00630",
+      "open_node_id": "jsx.00489",
+      "close_node_id": "jsx.00625",
       "source_code_unit_range": {
-        "start": 10119,
-        "end": 13952
+        "start": 10069,
+        "end": 13902
       }
     },
     {
       "id": "element.h2.0004",
       "tag_name": "h2",
       "parent_element_id": "element.section.0004",
-      "open_node_id": "jsx.00496",
-      "close_node_id": "jsx.00498",
+      "open_node_id": "jsx.00491",
+      "close_node_id": "jsx.00493",
       "source_code_unit_range": {
-        "start": 10139,
-        "end": 10153
+        "start": 10089,
+        "end": 10103
       }
     },
     {
       "id": "element.section.0005",
       "tag_name": "section",
       "parent_element_id": "element.article.0001",
-      "open_node_id": "jsx.00632",
-      "close_node_id": "jsx.00727",
+      "open_node_id": "jsx.00627",
+      "close_node_id": "jsx.00722",
       "source_code_unit_range": {
-        "start": 13961,
-        "end": 17743
+        "start": 13911,
+        "end": 17693
       }
     },
     {
       "id": "element.h2.0005",
       "tag_name": "h2",
       "parent_element_id": "element.section.0005",
-      "open_node_id": "jsx.00634",
-      "close_node_id": "jsx.00636",
+      "open_node_id": "jsx.00629",
+      "close_node_id": "jsx.00631",
       "source_code_unit_range": {
-        "start": 13981,
-        "end": 13995
+        "start": 13931,
+        "end": 13945
       }
     },
     {
       "id": "element.section.0006",
       "tag_name": "section",
       "parent_element_id": "element.article.0001",
-      "open_node_id": "jsx.00729",
-      "close_node_id": "jsx.00899",
+      "open_node_id": "jsx.00724",
+      "close_node_id": "jsx.00894",
       "source_code_unit_range": {
-        "start": 17752,
-        "end": 21043
+        "start": 17702,
+        "end": 20993
       }
     },
     {
       "id": "element.h2.0006",
       "tag_name": "h2",
       "parent_element_id": "element.section.0006",
-      "open_node_id": "jsx.00731",
-      "close_node_id": "jsx.00733",
+      "open_node_id": "jsx.00726",
+      "close_node_id": "jsx.00728",
       "source_code_unit_range": {
-        "start": 17772,
-        "end": 17786
+        "start": 17722,
+        "end": 17736
+      }
+    },
+    {
+      "id": "element.small.0006",
+      "tag_name": "small",
+      "parent_element_id": "element.section.0006",
+      "open_node_id": "jsx.00732",
+      "close_node_id": "jsx.00734",
+      "source_code_unit_range": {
+        "start": 17820,
+        "end": 17838
       }
     },
     {
       "id": "element.small.0007",
       "tag_name": "small",
       "parent_element_id": "element.section.0006",
-      "open_node_id": "jsx.00737",
-      "close_node_id": "jsx.00739",
+      "open_node_id": "jsx.00746",
+      "close_node_id": "jsx.00748",
       "source_code_unit_range": {
-        "start": 17870,
-        "end": 17888
-      }
-    },
-    {
-      "id": "element.small.0008",
-      "tag_name": "small",
-      "parent_element_id": "element.section.0006",
-      "open_node_id": "jsx.00751",
-      "close_node_id": "jsx.00753",
-      "source_code_unit_range": {
-        "start": 18114,
-        "end": 18132
+        "start": 18064,
+        "end": 18082
       }
     }
   ],
@@ -4300,7 +4289,7 @@
       "projection_location": "reading_unit",
       "source_code_unit_range": {
         "start": 5124,
-        "end": 5183
+        "end": 5176
       },
       "immediate_parent_element_id": "element.small.0002",
       "ancestor_element_ids": [
@@ -4333,8 +4322,8 @@
       "reading_unit_id": "reading-unit.0077",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 5191,
-        "end": 5193
+        "start": 5184,
+        "end": 5186
       },
       "immediate_parent_element_id": "element.section.0001",
       "ancestor_element_ids": [
@@ -4365,8 +4354,8 @@
       "reading_unit_id": "reading-unit.0079",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 5205,
-        "end": 5214
+        "start": 5198,
+        "end": 5207
       },
       "immediate_parent_element_id": "element.section.0001",
       "ancestor_element_ids": [
@@ -4397,8 +4386,8 @@
       "reading_unit_id": "reading-unit.0079",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 5224,
-        "end": 5233
+        "start": 5217,
+        "end": 5226
       },
       "immediate_parent_element_id": "element.article.0001",
       "ancestor_element_ids": [
@@ -4427,8 +4416,8 @@
       "reading_unit_id": "reading-unit.0079",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 5242,
-        "end": 5253
+        "start": 5235,
+        "end": 5246
       },
       "immediate_parent_element_id": "element.section.0002",
       "ancestor_element_ids": [
@@ -4459,8 +4448,8 @@
       "reading_unit_id": "reading-unit.0079",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 5257,
-        "end": 5262
+        "start": 5250,
+        "end": 5255
       },
       "immediate_parent_element_id": "element.h2.0002",
       "ancestor_element_ids": [
@@ -4493,8 +4482,8 @@
       "reading_unit_id": "reading-unit.0079",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 5267,
-        "end": 5317
+        "start": 5260,
+        "end": 5310
       },
       "immediate_parent_element_id": "element.section.0002",
       "ancestor_element_ids": [
@@ -4525,8 +4514,8 @@
       "reading_unit_id": "reading-unit.0080",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 5323,
-        "end": 5349
+        "start": 5316,
+        "end": 5342
       },
       "immediate_parent_element_id": "element.section.0002",
       "ancestor_element_ids": [
@@ -4557,8 +4546,8 @@
       "reading_unit_id": "reading-unit.0081",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 5355,
-        "end": 5383
+        "start": 5348,
+        "end": 5376
       },
       "immediate_parent_element_id": "element.section.0002",
       "ancestor_element_ids": [
@@ -4589,8 +4578,8 @@
       "reading_unit_id": "reading-unit.0082",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 5389,
-        "end": 5433
+        "start": 5382,
+        "end": 5426
       },
       "immediate_parent_element_id": "element.section.0002",
       "ancestor_element_ids": [
@@ -4621,8 +4610,8 @@
       "reading_unit_id": "reading-unit.0084",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 5445,
-        "end": 5476
+        "start": 5438,
+        "end": 5469
       },
       "immediate_parent_element_id": "element.section.0002",
       "ancestor_element_ids": [
@@ -4653,8 +4642,8 @@
       "reading_unit_id": "reading-unit.0085",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 5482,
-        "end": 5501
+        "start": 5475,
+        "end": 5494
       },
       "immediate_parent_element_id": "element.section.0002",
       "ancestor_element_ids": [
@@ -4685,8 +4674,8 @@
       "reading_unit_id": "reading-unit.0086",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 5507,
-        "end": 5609
+        "start": 5500,
+        "end": 5602
       },
       "immediate_parent_element_id": "element.section.0002",
       "ancestor_element_ids": [
@@ -4717,8 +4706,8 @@
       "reading_unit_id": "reading-unit.0088",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 5621,
-        "end": 5665
+        "start": 5614,
+        "end": 5658
       },
       "immediate_parent_element_id": "element.section.0002",
       "ancestor_element_ids": [
@@ -4749,8 +4738,8 @@
       "reading_unit_id": "reading-unit.0089",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 5671,
-        "end": 5718
+        "start": 5664,
+        "end": 5711
       },
       "immediate_parent_element_id": "element.section.0002",
       "ancestor_element_ids": [
@@ -4781,8 +4770,8 @@
       "reading_unit_id": "reading-unit.0090",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 5724,
-        "end": 5748
+        "start": 5717,
+        "end": 5741
       },
       "immediate_parent_element_id": "element.section.0002",
       "ancestor_element_ids": [
@@ -4813,8 +4802,8 @@
       "reading_unit_id": "reading-unit.0091",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 5754,
-        "end": 5778
+        "start": 5747,
+        "end": 5771
       },
       "immediate_parent_element_id": "element.section.0002",
       "ancestor_element_ids": [
@@ -4845,8 +4834,8 @@
       "reading_unit_id": "reading-unit.0092",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 5784,
-        "end": 5804
+        "start": 5777,
+        "end": 5797
       },
       "immediate_parent_element_id": "element.section.0002",
       "ancestor_element_ids": [
@@ -4877,8 +4866,8 @@
       "reading_unit_id": "reading-unit.0093",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 5810,
-        "end": 5828
+        "start": 5803,
+        "end": 5821
       },
       "immediate_parent_element_id": "element.section.0002",
       "ancestor_element_ids": [
@@ -4909,8 +4898,8 @@
       "reading_unit_id": "reading-unit.0094",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 5834,
-        "end": 5866
+        "start": 5827,
+        "end": 5859
       },
       "immediate_parent_element_id": "element.section.0002",
       "ancestor_element_ids": [
@@ -4941,8 +4930,8 @@
       "reading_unit_id": "reading-unit.0096",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 5878,
-        "end": 5928
+        "start": 5871,
+        "end": 5921
       },
       "immediate_parent_element_id": "element.section.0002",
       "ancestor_element_ids": [
@@ -4973,8 +4962,8 @@
       "reading_unit_id": "reading-unit.0097",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 5934,
-        "end": 5962
+        "start": 5927,
+        "end": 5955
       },
       "immediate_parent_element_id": "element.section.0002",
       "ancestor_element_ids": [
@@ -5005,8 +4994,8 @@
       "reading_unit_id": "reading-unit.0098",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 5968,
-        "end": 5997
+        "start": 5961,
+        "end": 5990
       },
       "immediate_parent_element_id": "element.section.0002",
       "ancestor_element_ids": [
@@ -5037,8 +5026,8 @@
       "reading_unit_id": "reading-unit.0099",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 6003,
-        "end": 6031
+        "start": 5996,
+        "end": 6024
       },
       "immediate_parent_element_id": "element.section.0002",
       "ancestor_element_ids": [
@@ -5069,8 +5058,8 @@
       "reading_unit_id": "reading-unit.0100",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 6037,
-        "end": 6070
+        "start": 6030,
+        "end": 6063
       },
       "immediate_parent_element_id": "element.section.0002",
       "ancestor_element_ids": [
@@ -5101,8 +5090,8 @@
       "reading_unit_id": "reading-unit.0101",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 6076,
-        "end": 6119
+        "start": 6069,
+        "end": 6112
       },
       "immediate_parent_element_id": "element.section.0002",
       "ancestor_element_ids": [
@@ -5133,8 +5122,8 @@
       "reading_unit_id": "reading-unit.0103",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 6131,
-        "end": 6143
+        "start": 6124,
+        "end": 6136
       },
       "immediate_parent_element_id": "element.section.0002",
       "ancestor_element_ids": [
@@ -5165,8 +5154,8 @@
       "reading_unit_id": "reading-unit.0103",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 6150,
-        "end": 6195
+        "start": 6143,
+        "end": 6188
       },
       "immediate_parent_element_id": "element.small.0003",
       "ancestor_element_ids": [
@@ -5199,8 +5188,8 @@
       "reading_unit_id": "reading-unit.0106",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 6221,
-        "end": 6280
+        "start": 6214,
+        "end": 6273
       },
       "immediate_parent_element_id": "element.section.0002",
       "ancestor_element_ids": [
@@ -5231,8 +5220,8 @@
       "reading_unit_id": "reading-unit.0107",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 6286,
-        "end": 6356
+        "start": 6279,
+        "end": 6349
       },
       "immediate_parent_element_id": "element.section.0002",
       "ancestor_element_ids": [
@@ -5263,8 +5252,8 @@
       "reading_unit_id": "reading-unit.0108",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 6362,
-        "end": 6420
+        "start": 6355,
+        "end": 6413
       },
       "immediate_parent_element_id": "element.section.0002",
       "ancestor_element_ids": [
@@ -5295,8 +5284,8 @@
       "reading_unit_id": "reading-unit.0109",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 6426,
-        "end": 6485
+        "start": 6419,
+        "end": 6478
       },
       "immediate_parent_element_id": "element.section.0002",
       "ancestor_element_ids": [
@@ -5327,8 +5316,8 @@
       "reading_unit_id": "reading-unit.0110",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 6491,
-        "end": 6554
+        "start": 6484,
+        "end": 6547
       },
       "immediate_parent_element_id": "element.section.0002",
       "ancestor_element_ids": [
@@ -5359,8 +5348,8 @@
       "reading_unit_id": "reading-unit.0111",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 6560,
-        "end": 6631
+        "start": 6553,
+        "end": 6624
       },
       "immediate_parent_element_id": "element.section.0002",
       "ancestor_element_ids": [
@@ -5391,8 +5380,8 @@
       "reading_unit_id": "reading-unit.0113",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 6643,
-        "end": 6654
+        "start": 6636,
+        "end": 6649
       },
       "immediate_parent_element_id": "element.section.0002",
       "ancestor_element_ids": [
@@ -5406,7 +5395,7 @@
         "section"
       ],
       "context_flags": {
-        "whitespace_only": true,
+        "whitespace_only": false,
         "inside_section": true,
         "inside_h1": false,
         "inside_h2": false,
@@ -5419,25 +5408,23 @@
       }
     },
     {
-      "source_node_id": "jsx.00325",
-      "reading_unit_id": "reading-unit.0113",
+      "source_node_id": "jsx.00326",
+      "reading_unit_id": "reading-unit.0115",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
         "start": 6661,
-        "end": 6683
+        "end": 6711
       },
-      "immediate_parent_element_id": "element.small.0004",
+      "immediate_parent_element_id": "element.section.0002",
       "ancestor_element_ids": [
         "element.main.0001",
         "element.article.0001",
-        "element.section.0002",
-        "element.small.0004"
+        "element.section.0002"
       ],
       "ancestor_tags": [
         "main",
         "article",
-        "section",
-        "small"
+        "section"
       ],
       "context_flags": {
         "whitespace_only": false,
@@ -5445,7 +5432,7 @@
         "inside_h1": false,
         "inside_h2": false,
         "inside_h3": false,
-        "inside_small": true
+        "inside_small": false
       },
       "corpus_inclusion": {
         "status": "undecided",
@@ -5454,43 +5441,11 @@
     },
     {
       "source_node_id": "jsx.00328",
-      "reading_unit_id": "reading-unit.0114",
-      "projection_location": "reading_unit",
-      "source_code_unit_range": {
-        "start": 6697,
-        "end": 6699
-      },
-      "immediate_parent_element_id": "element.section.0002",
-      "ancestor_element_ids": [
-        "element.main.0001",
-        "element.article.0001",
-        "element.section.0002"
-      ],
-      "ancestor_tags": [
-        "main",
-        "article",
-        "section"
-      ],
-      "context_flags": {
-        "whitespace_only": false,
-        "inside_section": true,
-        "inside_h1": false,
-        "inside_h2": false,
-        "inside_h3": false,
-        "inside_small": false
-      },
-      "corpus_inclusion": {
-        "status": "undecided",
-        "authority": "requires_user_decision"
-      }
-    },
-    {
-      "source_node_id": "jsx.00331",
       "reading_unit_id": "reading-unit.0116",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 6711,
-        "end": 6761
+        "start": 6717,
+        "end": 6749
       },
       "immediate_parent_element_id": "element.section.0002",
       "ancestor_element_ids": [
@@ -5517,12 +5472,12 @@
       }
     },
     {
-      "source_node_id": "jsx.00333",
+      "source_node_id": "jsx.00330",
       "reading_unit_id": "reading-unit.0117",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 6767,
-        "end": 6799
+        "start": 6755,
+        "end": 6781
       },
       "immediate_parent_element_id": "element.section.0002",
       "ancestor_element_ids": [
@@ -5549,12 +5504,12 @@
       }
     },
     {
-      "source_node_id": "jsx.00335",
+      "source_node_id": "jsx.00332",
       "reading_unit_id": "reading-unit.0118",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 6805,
-        "end": 6831
+        "start": 6787,
+        "end": 6835
       },
       "immediate_parent_element_id": "element.section.0002",
       "ancestor_element_ids": [
@@ -5581,12 +5536,44 @@
       }
     },
     {
-      "source_node_id": "jsx.00337",
+      "source_node_id": "jsx.00334",
       "reading_unit_id": "reading-unit.0119",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 6837,
-        "end": 6885
+        "start": 6841,
+        "end": 6874
+      },
+      "immediate_parent_element_id": "element.section.0002",
+      "ancestor_element_ids": [
+        "element.main.0001",
+        "element.article.0001",
+        "element.section.0002"
+      ],
+      "ancestor_tags": [
+        "main",
+        "article",
+        "section"
+      ],
+      "context_flags": {
+        "whitespace_only": false,
+        "inside_section": true,
+        "inside_h1": false,
+        "inside_h2": false,
+        "inside_h3": false,
+        "inside_small": false
+      },
+      "corpus_inclusion": {
+        "status": "undecided",
+        "authority": "requires_user_decision"
+      }
+    },
+    {
+      "source_node_id": "jsx.00336",
+      "reading_unit_id": "reading-unit.0120",
+      "projection_location": "reading_unit",
+      "source_code_unit_range": {
+        "start": 6880,
+        "end": 6959
       },
       "immediate_parent_element_id": "element.section.0002",
       "ancestor_element_ids": [
@@ -5614,42 +5601,10 @@
     },
     {
       "source_node_id": "jsx.00339",
-      "reading_unit_id": "reading-unit.0120",
+      "reading_unit_id": "reading-unit.0122",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 6891,
-        "end": 6924
-      },
-      "immediate_parent_element_id": "element.section.0002",
-      "ancestor_element_ids": [
-        "element.main.0001",
-        "element.article.0001",
-        "element.section.0002"
-      ],
-      "ancestor_tags": [
-        "main",
-        "article",
-        "section"
-      ],
-      "context_flags": {
-        "whitespace_only": false,
-        "inside_section": true,
-        "inside_h1": false,
-        "inside_h2": false,
-        "inside_h3": false,
-        "inside_small": false
-      },
-      "corpus_inclusion": {
-        "status": "undecided",
-        "authority": "requires_user_decision"
-      }
-    },
-    {
-      "source_node_id": "jsx.00341",
-      "reading_unit_id": "reading-unit.0121",
-      "projection_location": "reading_unit",
-      "source_code_unit_range": {
-        "start": 6930,
+        "start": 6971,
         "end": 7009
       },
       "immediate_parent_element_id": "element.section.0002",
@@ -5677,12 +5632,12 @@
       }
     },
     {
-      "source_node_id": "jsx.00344",
+      "source_node_id": "jsx.00341",
       "reading_unit_id": "reading-unit.0123",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 7021,
-        "end": 7059
+        "start": 7015,
+        "end": 7044
       },
       "immediate_parent_element_id": "element.section.0002",
       "ancestor_element_ids": [
@@ -5709,12 +5664,12 @@
       }
     },
     {
-      "source_node_id": "jsx.00346",
+      "source_node_id": "jsx.00343",
       "reading_unit_id": "reading-unit.0124",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 7065,
-        "end": 7094
+        "start": 7050,
+        "end": 7081
       },
       "immediate_parent_element_id": "element.section.0002",
       "ancestor_element_ids": [
@@ -5741,12 +5696,12 @@
       }
     },
     {
-      "source_node_id": "jsx.00348",
+      "source_node_id": "jsx.00345",
       "reading_unit_id": "reading-unit.0125",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 7100,
-        "end": 7131
+        "start": 7087,
+        "end": 7116
       },
       "immediate_parent_element_id": "element.section.0002",
       "ancestor_element_ids": [
@@ -5773,12 +5728,12 @@
       }
     },
     {
-      "source_node_id": "jsx.00350",
+      "source_node_id": "jsx.00347",
       "reading_unit_id": "reading-unit.0126",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 7137,
-        "end": 7166
+        "start": 7122,
+        "end": 7152
       },
       "immediate_parent_element_id": "element.section.0002",
       "ancestor_element_ids": [
@@ -5805,12 +5760,12 @@
       }
     },
     {
-      "source_node_id": "jsx.00352",
+      "source_node_id": "jsx.00349",
       "reading_unit_id": "reading-unit.0127",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 7172,
-        "end": 7202
+        "start": 7158,
+        "end": 7188
       },
       "immediate_parent_element_id": "element.section.0002",
       "ancestor_element_ids": [
@@ -5837,12 +5792,44 @@
       }
     },
     {
-      "source_node_id": "jsx.00354",
+      "source_node_id": "jsx.00351",
       "reading_unit_id": "reading-unit.0128",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 7208,
-        "end": 7238
+        "start": 7194,
+        "end": 7243
+      },
+      "immediate_parent_element_id": "element.section.0002",
+      "ancestor_element_ids": [
+        "element.main.0001",
+        "element.article.0001",
+        "element.section.0002"
+      ],
+      "ancestor_tags": [
+        "main",
+        "article",
+        "section"
+      ],
+      "context_flags": {
+        "whitespace_only": false,
+        "inside_section": true,
+        "inside_h1": false,
+        "inside_h2": false,
+        "inside_h3": false,
+        "inside_small": false
+      },
+      "corpus_inclusion": {
+        "status": "undecided",
+        "authority": "requires_user_decision"
+      }
+    },
+    {
+      "source_node_id": "jsx.00353",
+      "reading_unit_id": "reading-unit.0129",
+      "projection_location": "reading_unit",
+      "source_code_unit_range": {
+        "start": 7249,
+        "end": 7281
       },
       "immediate_parent_element_id": "element.section.0002",
       "ancestor_element_ids": [
@@ -5870,11 +5857,11 @@
     },
     {
       "source_node_id": "jsx.00356",
-      "reading_unit_id": "reading-unit.0129",
+      "reading_unit_id": "reading-unit.0131",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 7244,
-        "end": 7293
+        "start": 7293,
+        "end": 7325
       },
       "immediate_parent_element_id": "element.section.0002",
       "ancestor_element_ids": [
@@ -5902,43 +5889,11 @@
     },
     {
       "source_node_id": "jsx.00358",
-      "reading_unit_id": "reading-unit.0130",
-      "projection_location": "reading_unit",
-      "source_code_unit_range": {
-        "start": 7299,
-        "end": 7331
-      },
-      "immediate_parent_element_id": "element.section.0002",
-      "ancestor_element_ids": [
-        "element.main.0001",
-        "element.article.0001",
-        "element.section.0002"
-      ],
-      "ancestor_tags": [
-        "main",
-        "article",
-        "section"
-      ],
-      "context_flags": {
-        "whitespace_only": false,
-        "inside_section": true,
-        "inside_h1": false,
-        "inside_h2": false,
-        "inside_h3": false,
-        "inside_small": false
-      },
-      "corpus_inclusion": {
-        "status": "undecided",
-        "authority": "requires_user_decision"
-      }
-    },
-    {
-      "source_node_id": "jsx.00361",
       "reading_unit_id": "reading-unit.0132",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 7343,
-        "end": 7375
+        "start": 7331,
+        "end": 7366
       },
       "immediate_parent_element_id": "element.section.0002",
       "ancestor_element_ids": [
@@ -5965,12 +5920,12 @@
       }
     },
     {
-      "source_node_id": "jsx.00363",
+      "source_node_id": "jsx.00360",
       "reading_unit_id": "reading-unit.0133",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 7381,
-        "end": 7416
+        "start": 7372,
+        "end": 7412
       },
       "immediate_parent_element_id": "element.section.0002",
       "ancestor_element_ids": [
@@ -5997,12 +5952,12 @@
       }
     },
     {
-      "source_node_id": "jsx.00365",
+      "source_node_id": "jsx.00362",
       "reading_unit_id": "reading-unit.0134",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 7422,
-        "end": 7462
+        "start": 7418,
+        "end": 7457
       },
       "immediate_parent_element_id": "element.section.0002",
       "ancestor_element_ids": [
@@ -6029,12 +5984,12 @@
       }
     },
     {
-      "source_node_id": "jsx.00367",
+      "source_node_id": "jsx.00364",
       "reading_unit_id": "reading-unit.0135",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 7468,
-        "end": 7507
+        "start": 7463,
+        "end": 7502
       },
       "immediate_parent_element_id": "element.section.0002",
       "ancestor_element_ids": [
@@ -6061,12 +6016,12 @@
       }
     },
     {
-      "source_node_id": "jsx.00369",
+      "source_node_id": "jsx.00366",
       "reading_unit_id": "reading-unit.0136",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 7513,
-        "end": 7552
+        "start": 7508,
+        "end": 7564
       },
       "immediate_parent_element_id": "element.section.0002",
       "ancestor_element_ids": [
@@ -6093,12 +6048,12 @@
       }
     },
     {
-      "source_node_id": "jsx.00371",
+      "source_node_id": "jsx.00368",
       "reading_unit_id": "reading-unit.0137",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 7558,
-        "end": 7614
+        "start": 7570,
+        "end": 7591
       },
       "immediate_parent_element_id": "element.section.0002",
       "ancestor_element_ids": [
@@ -6125,12 +6080,12 @@
       }
     },
     {
-      "source_node_id": "jsx.00373",
+      "source_node_id": "jsx.00370",
       "reading_unit_id": "reading-unit.0138",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 7620,
-        "end": 7641
+        "start": 7597,
+        "end": 7625
       },
       "immediate_parent_element_id": "element.section.0002",
       "ancestor_element_ids": [
@@ -6157,12 +6112,12 @@
       }
     },
     {
-      "source_node_id": "jsx.00375",
+      "source_node_id": "jsx.00372",
       "reading_unit_id": "reading-unit.0139",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 7647,
-        "end": 7675
+        "start": 7631,
+        "end": 7687
       },
       "immediate_parent_element_id": "element.section.0002",
       "ancestor_element_ids": [
@@ -6189,12 +6144,12 @@
       }
     },
     {
-      "source_node_id": "jsx.00377",
+      "source_node_id": "jsx.00374",
       "reading_unit_id": "reading-unit.0140",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 7681,
-        "end": 7737
+        "start": 7693,
+        "end": 7718
       },
       "immediate_parent_element_id": "element.section.0002",
       "ancestor_element_ids": [
@@ -6221,44 +6176,12 @@
       }
     },
     {
-      "source_node_id": "jsx.00379",
+      "source_node_id": "jsx.00376",
       "reading_unit_id": "reading-unit.0141",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 7743,
-        "end": 7768
-      },
-      "immediate_parent_element_id": "element.section.0002",
-      "ancestor_element_ids": [
-        "element.main.0001",
-        "element.article.0001",
-        "element.section.0002"
-      ],
-      "ancestor_tags": [
-        "main",
-        "article",
-        "section"
-      ],
-      "context_flags": {
-        "whitespace_only": false,
-        "inside_section": true,
-        "inside_h1": false,
-        "inside_h2": false,
-        "inside_h3": false,
-        "inside_small": false
-      },
-      "corpus_inclusion": {
-        "status": "undecided",
-        "authority": "requires_user_decision"
-      }
-    },
-    {
-      "source_node_id": "jsx.00381",
-      "reading_unit_id": "reading-unit.0142",
-      "projection_location": "reading_unit",
-      "source_code_unit_range": {
-        "start": 7774,
-        "end": 7783
+        "start": 7724,
+        "end": 7733
       },
       "immediate_parent_element_id": "element.section.0002",
       "ancestor_element_ids": [
@@ -6285,12 +6208,12 @@
       }
     },
     {
-      "source_node_id": "jsx.00383",
-      "reading_unit_id": "reading-unit.0142",
+      "source_node_id": "jsx.00378",
+      "reading_unit_id": "reading-unit.0141",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 7793,
-        "end": 7802
+        "start": 7743,
+        "end": 7752
       },
       "immediate_parent_element_id": "element.article.0001",
       "ancestor_element_ids": [
@@ -6315,12 +6238,12 @@
       }
     },
     {
-      "source_node_id": "jsx.00385",
-      "reading_unit_id": "reading-unit.0142",
+      "source_node_id": "jsx.00380",
+      "reading_unit_id": "reading-unit.0141",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 7811,
-        "end": 7822
+        "start": 7761,
+        "end": 7772
       },
       "immediate_parent_element_id": "element.section.0003",
       "ancestor_element_ids": [
@@ -6347,12 +6270,12 @@
       }
     },
     {
-      "source_node_id": "jsx.00387",
-      "reading_unit_id": "reading-unit.0142",
+      "source_node_id": "jsx.00382",
+      "reading_unit_id": "reading-unit.0141",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 7826,
-        "end": 7831
+        "start": 7776,
+        "end": 7781
       },
       "immediate_parent_element_id": "element.h2.0003",
       "ancestor_element_ids": [
@@ -6381,12 +6304,44 @@
       }
     },
     {
-      "source_node_id": "jsx.00389",
+      "source_node_id": "jsx.00384",
+      "reading_unit_id": "reading-unit.0141",
+      "projection_location": "reading_unit",
+      "source_code_unit_range": {
+        "start": 7786,
+        "end": 7818
+      },
+      "immediate_parent_element_id": "element.section.0003",
+      "ancestor_element_ids": [
+        "element.main.0001",
+        "element.article.0001",
+        "element.section.0003"
+      ],
+      "ancestor_tags": [
+        "main",
+        "article",
+        "section"
+      ],
+      "context_flags": {
+        "whitespace_only": false,
+        "inside_section": true,
+        "inside_h1": false,
+        "inside_h2": false,
+        "inside_h3": false,
+        "inside_small": false
+      },
+      "corpus_inclusion": {
+        "status": "undecided",
+        "authority": "requires_user_decision"
+      }
+    },
+    {
+      "source_node_id": "jsx.00386",
       "reading_unit_id": "reading-unit.0142",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 7836,
-        "end": 7868
+        "start": 7824,
+        "end": 7843
       },
       "immediate_parent_element_id": "element.section.0003",
       "ancestor_element_ids": [
@@ -6413,12 +6368,12 @@
       }
     },
     {
-      "source_node_id": "jsx.00391",
+      "source_node_id": "jsx.00388",
       "reading_unit_id": "reading-unit.0143",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 7874,
-        "end": 7893
+        "start": 7849,
+        "end": 7871
       },
       "immediate_parent_element_id": "element.section.0003",
       "ancestor_element_ids": [
@@ -6445,12 +6400,12 @@
       }
     },
     {
-      "source_node_id": "jsx.00393",
+      "source_node_id": "jsx.00390",
       "reading_unit_id": "reading-unit.0144",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 7899,
-        "end": 7921
+        "start": 7877,
+        "end": 7900
       },
       "immediate_parent_element_id": "element.section.0003",
       "ancestor_element_ids": [
@@ -6477,12 +6432,44 @@
       }
     },
     {
-      "source_node_id": "jsx.00395",
+      "source_node_id": "jsx.00392",
       "reading_unit_id": "reading-unit.0145",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 7927,
-        "end": 7950
+        "start": 7906,
+        "end": 7930
+      },
+      "immediate_parent_element_id": "element.section.0003",
+      "ancestor_element_ids": [
+        "element.main.0001",
+        "element.article.0001",
+        "element.section.0003"
+      ],
+      "ancestor_tags": [
+        "main",
+        "article",
+        "section"
+      ],
+      "context_flags": {
+        "whitespace_only": false,
+        "inside_section": true,
+        "inside_h1": false,
+        "inside_h2": false,
+        "inside_h3": false,
+        "inside_small": false
+      },
+      "corpus_inclusion": {
+        "status": "undecided",
+        "authority": "requires_user_decision"
+      }
+    },
+    {
+      "source_node_id": "jsx.00394",
+      "reading_unit_id": "reading-unit.0146",
+      "projection_location": "reading_unit",
+      "source_code_unit_range": {
+        "start": 7936,
+        "end": 7969
       },
       "immediate_parent_element_id": "element.section.0003",
       "ancestor_element_ids": [
@@ -6510,11 +6497,11 @@
     },
     {
       "source_node_id": "jsx.00397",
-      "reading_unit_id": "reading-unit.0146",
+      "reading_unit_id": "reading-unit.0148",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 7956,
-        "end": 7980
+        "start": 7981,
+        "end": 8012
       },
       "immediate_parent_element_id": "element.section.0003",
       "ancestor_element_ids": [
@@ -6542,43 +6529,11 @@
     },
     {
       "source_node_id": "jsx.00399",
-      "reading_unit_id": "reading-unit.0147",
-      "projection_location": "reading_unit",
-      "source_code_unit_range": {
-        "start": 7986,
-        "end": 8019
-      },
-      "immediate_parent_element_id": "element.section.0003",
-      "ancestor_element_ids": [
-        "element.main.0001",
-        "element.article.0001",
-        "element.section.0003"
-      ],
-      "ancestor_tags": [
-        "main",
-        "article",
-        "section"
-      ],
-      "context_flags": {
-        "whitespace_only": false,
-        "inside_section": true,
-        "inside_h1": false,
-        "inside_h2": false,
-        "inside_h3": false,
-        "inside_small": false
-      },
-      "corpus_inclusion": {
-        "status": "undecided",
-        "authority": "requires_user_decision"
-      }
-    },
-    {
-      "source_node_id": "jsx.00402",
       "reading_unit_id": "reading-unit.0149",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 8031,
-        "end": 8062
+        "start": 8018,
+        "end": 8041
       },
       "immediate_parent_element_id": "element.section.0003",
       "ancestor_element_ids": [
@@ -6605,12 +6560,12 @@
       }
     },
     {
-      "source_node_id": "jsx.00404",
+      "source_node_id": "jsx.00401",
       "reading_unit_id": "reading-unit.0150",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 8068,
-        "end": 8091
+        "start": 8047,
+        "end": 8076
       },
       "immediate_parent_element_id": "element.section.0003",
       "ancestor_element_ids": [
@@ -6637,12 +6592,12 @@
       }
     },
     {
-      "source_node_id": "jsx.00406",
+      "source_node_id": "jsx.00403",
       "reading_unit_id": "reading-unit.0151",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 8097,
-        "end": 8126
+        "start": 8082,
+        "end": 8120
       },
       "immediate_parent_element_id": "element.section.0003",
       "ancestor_element_ids": [
@@ -6669,12 +6624,12 @@
       }
     },
     {
-      "source_node_id": "jsx.00408",
+      "source_node_id": "jsx.00405",
       "reading_unit_id": "reading-unit.0152",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 8132,
-        "end": 8170
+        "start": 8126,
+        "end": 8158
       },
       "immediate_parent_element_id": "element.section.0003",
       "ancestor_element_ids": [
@@ -6701,12 +6656,44 @@
       }
     },
     {
-      "source_node_id": "jsx.00410",
+      "source_node_id": "jsx.00407",
       "reading_unit_id": "reading-unit.0153",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 8176,
-        "end": 8208
+        "start": 8164,
+        "end": 8211
+      },
+      "immediate_parent_element_id": "element.section.0003",
+      "ancestor_element_ids": [
+        "element.main.0001",
+        "element.article.0001",
+        "element.section.0003"
+      ],
+      "ancestor_tags": [
+        "main",
+        "article",
+        "section"
+      ],
+      "context_flags": {
+        "whitespace_only": false,
+        "inside_section": true,
+        "inside_h1": false,
+        "inside_h2": false,
+        "inside_h3": false,
+        "inside_small": false
+      },
+      "corpus_inclusion": {
+        "status": "undecided",
+        "authority": "requires_user_decision"
+      }
+    },
+    {
+      "source_node_id": "jsx.00409",
+      "reading_unit_id": "reading-unit.0154",
+      "projection_location": "reading_unit",
+      "source_code_unit_range": {
+        "start": 8217,
+        "end": 8244
       },
       "immediate_parent_element_id": "element.section.0003",
       "ancestor_element_ids": [
@@ -6734,11 +6721,11 @@
     },
     {
       "source_node_id": "jsx.00412",
-      "reading_unit_id": "reading-unit.0154",
+      "reading_unit_id": "reading-unit.0156",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 8214,
-        "end": 8261
+        "start": 8256,
+        "end": 8287
       },
       "immediate_parent_element_id": "element.section.0003",
       "ancestor_element_ids": [
@@ -6766,43 +6753,11 @@
     },
     {
       "source_node_id": "jsx.00414",
-      "reading_unit_id": "reading-unit.0155",
-      "projection_location": "reading_unit",
-      "source_code_unit_range": {
-        "start": 8267,
-        "end": 8294
-      },
-      "immediate_parent_element_id": "element.section.0003",
-      "ancestor_element_ids": [
-        "element.main.0001",
-        "element.article.0001",
-        "element.section.0003"
-      ],
-      "ancestor_tags": [
-        "main",
-        "article",
-        "section"
-      ],
-      "context_flags": {
-        "whitespace_only": false,
-        "inside_section": true,
-        "inside_h1": false,
-        "inside_h2": false,
-        "inside_h3": false,
-        "inside_small": false
-      },
-      "corpus_inclusion": {
-        "status": "undecided",
-        "authority": "requires_user_decision"
-      }
-    },
-    {
-      "source_node_id": "jsx.00417",
       "reading_unit_id": "reading-unit.0157",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 8306,
-        "end": 8337
+        "start": 8293,
+        "end": 8312
       },
       "immediate_parent_element_id": "element.section.0003",
       "ancestor_element_ids": [
@@ -6829,12 +6784,44 @@
       }
     },
     {
-      "source_node_id": "jsx.00419",
+      "source_node_id": "jsx.00416",
       "reading_unit_id": "reading-unit.0158",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 8343,
-        "end": 8362
+        "start": 8318,
+        "end": 8352
+      },
+      "immediate_parent_element_id": "element.section.0003",
+      "ancestor_element_ids": [
+        "element.main.0001",
+        "element.article.0001",
+        "element.section.0003"
+      ],
+      "ancestor_tags": [
+        "main",
+        "article",
+        "section"
+      ],
+      "context_flags": {
+        "whitespace_only": false,
+        "inside_section": true,
+        "inside_h1": false,
+        "inside_h2": false,
+        "inside_h3": false,
+        "inside_small": false
+      },
+      "corpus_inclusion": {
+        "status": "undecided",
+        "authority": "requires_user_decision"
+      }
+    },
+    {
+      "source_node_id": "jsx.00418",
+      "reading_unit_id": "reading-unit.0159",
+      "projection_location": "reading_unit",
+      "source_code_unit_range": {
+        "start": 8358,
+        "end": 8394
       },
       "immediate_parent_element_id": "element.section.0003",
       "ancestor_element_ids": [
@@ -6862,11 +6849,11 @@
     },
     {
       "source_node_id": "jsx.00421",
-      "reading_unit_id": "reading-unit.0159",
+      "reading_unit_id": "reading-unit.0161",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 8368,
-        "end": 8402
+        "start": 8406,
+        "end": 8437
       },
       "immediate_parent_element_id": "element.section.0003",
       "ancestor_element_ids": [
@@ -6894,43 +6881,11 @@
     },
     {
       "source_node_id": "jsx.00423",
-      "reading_unit_id": "reading-unit.0160",
-      "projection_location": "reading_unit",
-      "source_code_unit_range": {
-        "start": 8408,
-        "end": 8444
-      },
-      "immediate_parent_element_id": "element.section.0003",
-      "ancestor_element_ids": [
-        "element.main.0001",
-        "element.article.0001",
-        "element.section.0003"
-      ],
-      "ancestor_tags": [
-        "main",
-        "article",
-        "section"
-      ],
-      "context_flags": {
-        "whitespace_only": false,
-        "inside_section": true,
-        "inside_h1": false,
-        "inside_h2": false,
-        "inside_h3": false,
-        "inside_small": false
-      },
-      "corpus_inclusion": {
-        "status": "undecided",
-        "authority": "requires_user_decision"
-      }
-    },
-    {
-      "source_node_id": "jsx.00426",
       "reading_unit_id": "reading-unit.0162",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 8456,
-        "end": 8487
+        "start": 8443,
+        "end": 8463
       },
       "immediate_parent_element_id": "element.section.0003",
       "ancestor_element_ids": [
@@ -6957,12 +6912,12 @@
       }
     },
     {
-      "source_node_id": "jsx.00428",
+      "source_node_id": "jsx.00425",
       "reading_unit_id": "reading-unit.0163",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 8493,
-        "end": 8513
+        "start": 8469,
+        "end": 8506
       },
       "immediate_parent_element_id": "element.section.0003",
       "ancestor_element_ids": [
@@ -6989,12 +6944,12 @@
       }
     },
     {
-      "source_node_id": "jsx.00430",
+      "source_node_id": "jsx.00427",
       "reading_unit_id": "reading-unit.0164",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 8519,
-        "end": 8556
+        "start": 8512,
+        "end": 8549
       },
       "immediate_parent_element_id": "element.section.0003",
       "ancestor_element_ids": [
@@ -7021,12 +6976,44 @@
       }
     },
     {
-      "source_node_id": "jsx.00432",
+      "source_node_id": "jsx.00429",
       "reading_unit_id": "reading-unit.0165",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 8562,
-        "end": 8599
+        "start": 8555,
+        "end": 8591
+      },
+      "immediate_parent_element_id": "element.section.0003",
+      "ancestor_element_ids": [
+        "element.main.0001",
+        "element.article.0001",
+        "element.section.0003"
+      ],
+      "ancestor_tags": [
+        "main",
+        "article",
+        "section"
+      ],
+      "context_flags": {
+        "whitespace_only": false,
+        "inside_section": true,
+        "inside_h1": false,
+        "inside_h2": false,
+        "inside_h3": false,
+        "inside_small": false
+      },
+      "corpus_inclusion": {
+        "status": "undecided",
+        "authority": "requires_user_decision"
+      }
+    },
+    {
+      "source_node_id": "jsx.00431",
+      "reading_unit_id": "reading-unit.0166",
+      "projection_location": "reading_unit",
+      "source_code_unit_range": {
+        "start": 8597,
+        "end": 8658
       },
       "immediate_parent_element_id": "element.section.0003",
       "ancestor_element_ids": [
@@ -7054,11 +7041,11 @@
     },
     {
       "source_node_id": "jsx.00434",
-      "reading_unit_id": "reading-unit.0166",
+      "reading_unit_id": "reading-unit.0168",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 8605,
-        "end": 8641
+        "start": 8670,
+        "end": 8701
       },
       "immediate_parent_element_id": "element.section.0003",
       "ancestor_element_ids": [
@@ -7086,43 +7073,11 @@
     },
     {
       "source_node_id": "jsx.00436",
-      "reading_unit_id": "reading-unit.0167",
-      "projection_location": "reading_unit",
-      "source_code_unit_range": {
-        "start": 8647,
-        "end": 8708
-      },
-      "immediate_parent_element_id": "element.section.0003",
-      "ancestor_element_ids": [
-        "element.main.0001",
-        "element.article.0001",
-        "element.section.0003"
-      ],
-      "ancestor_tags": [
-        "main",
-        "article",
-        "section"
-      ],
-      "context_flags": {
-        "whitespace_only": false,
-        "inside_section": true,
-        "inside_h1": false,
-        "inside_h2": false,
-        "inside_h3": false,
-        "inside_small": false
-      },
-      "corpus_inclusion": {
-        "status": "undecided",
-        "authority": "requires_user_decision"
-      }
-    },
-    {
-      "source_node_id": "jsx.00439",
       "reading_unit_id": "reading-unit.0169",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 8720,
-        "end": 8751
+        "start": 8707,
+        "end": 8727
       },
       "immediate_parent_element_id": "element.section.0003",
       "ancestor_element_ids": [
@@ -7149,12 +7104,12 @@
       }
     },
     {
-      "source_node_id": "jsx.00441",
+      "source_node_id": "jsx.00438",
       "reading_unit_id": "reading-unit.0170",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 8757,
-        "end": 8777
+        "start": 8733,
+        "end": 8768
       },
       "immediate_parent_element_id": "element.section.0003",
       "ancestor_element_ids": [
@@ -7181,12 +7136,12 @@
       }
     },
     {
-      "source_node_id": "jsx.00443",
+      "source_node_id": "jsx.00440",
       "reading_unit_id": "reading-unit.0171",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 8783,
-        "end": 8818
+        "start": 8774,
+        "end": 8799
       },
       "immediate_parent_element_id": "element.section.0003",
       "ancestor_element_ids": [
@@ -7213,12 +7168,12 @@
       }
     },
     {
-      "source_node_id": "jsx.00445",
+      "source_node_id": "jsx.00442",
       "reading_unit_id": "reading-unit.0172",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 8824,
-        "end": 8849
+        "start": 8805,
+        "end": 8828
       },
       "immediate_parent_element_id": "element.section.0003",
       "ancestor_element_ids": [
@@ -7245,12 +7200,12 @@
       }
     },
     {
-      "source_node_id": "jsx.00447",
+      "source_node_id": "jsx.00444",
       "reading_unit_id": "reading-unit.0173",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 8855,
-        "end": 8878
+        "start": 8834,
+        "end": 8884
       },
       "immediate_parent_element_id": "element.section.0003",
       "ancestor_element_ids": [
@@ -7277,12 +7232,12 @@
       }
     },
     {
-      "source_node_id": "jsx.00449",
+      "source_node_id": "jsx.00446",
       "reading_unit_id": "reading-unit.0174",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 8884,
-        "end": 8934
+        "start": 8890,
+        "end": 8921
       },
       "immediate_parent_element_id": "element.section.0003",
       "ancestor_element_ids": [
@@ -7309,12 +7264,12 @@
       }
     },
     {
-      "source_node_id": "jsx.00451",
+      "source_node_id": "jsx.00448",
       "reading_unit_id": "reading-unit.0175",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 8940,
-        "end": 8971
+        "start": 8927,
+        "end": 8948
       },
       "immediate_parent_element_id": "element.section.0003",
       "ancestor_element_ids": [
@@ -7341,12 +7296,12 @@
       }
     },
     {
-      "source_node_id": "jsx.00453",
+      "source_node_id": "jsx.00450",
       "reading_unit_id": "reading-unit.0176",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 8977,
-        "end": 8998
+        "start": 8954,
+        "end": 8991
       },
       "immediate_parent_element_id": "element.section.0003",
       "ancestor_element_ids": [
@@ -7373,12 +7328,12 @@
       }
     },
     {
-      "source_node_id": "jsx.00455",
+      "source_node_id": "jsx.00452",
       "reading_unit_id": "reading-unit.0177",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 9004,
-        "end": 9041
+        "start": 8997,
+        "end": 9022
       },
       "immediate_parent_element_id": "element.section.0003",
       "ancestor_element_ids": [
@@ -7405,12 +7360,44 @@
       }
     },
     {
-      "source_node_id": "jsx.00457",
+      "source_node_id": "jsx.00454",
       "reading_unit_id": "reading-unit.0178",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 9047,
-        "end": 9072
+        "start": 9028,
+        "end": 9063
+      },
+      "immediate_parent_element_id": "element.section.0003",
+      "ancestor_element_ids": [
+        "element.main.0001",
+        "element.article.0001",
+        "element.section.0003"
+      ],
+      "ancestor_tags": [
+        "main",
+        "article",
+        "section"
+      ],
+      "context_flags": {
+        "whitespace_only": false,
+        "inside_section": true,
+        "inside_h1": false,
+        "inside_h2": false,
+        "inside_h3": false,
+        "inside_small": false
+      },
+      "corpus_inclusion": {
+        "status": "undecided",
+        "authority": "requires_user_decision"
+      }
+    },
+    {
+      "source_node_id": "jsx.00456",
+      "reading_unit_id": "reading-unit.0179",
+      "projection_location": "reading_unit",
+      "source_code_unit_range": {
+        "start": 9069,
+        "end": 9127
       },
       "immediate_parent_element_id": "element.section.0003",
       "ancestor_element_ids": [
@@ -7438,11 +7425,11 @@
     },
     {
       "source_node_id": "jsx.00459",
-      "reading_unit_id": "reading-unit.0179",
+      "reading_unit_id": "reading-unit.0181",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 9078,
-        "end": 9113
+        "start": 9139,
+        "end": 9170
       },
       "immediate_parent_element_id": "element.section.0003",
       "ancestor_element_ids": [
@@ -7470,43 +7457,11 @@
     },
     {
       "source_node_id": "jsx.00461",
-      "reading_unit_id": "reading-unit.0180",
-      "projection_location": "reading_unit",
-      "source_code_unit_range": {
-        "start": 9119,
-        "end": 9177
-      },
-      "immediate_parent_element_id": "element.section.0003",
-      "ancestor_element_ids": [
-        "element.main.0001",
-        "element.article.0001",
-        "element.section.0003"
-      ],
-      "ancestor_tags": [
-        "main",
-        "article",
-        "section"
-      ],
-      "context_flags": {
-        "whitespace_only": false,
-        "inside_section": true,
-        "inside_h1": false,
-        "inside_h2": false,
-        "inside_h3": false,
-        "inside_small": false
-      },
-      "corpus_inclusion": {
-        "status": "undecided",
-        "authority": "requires_user_decision"
-      }
-    },
-    {
-      "source_node_id": "jsx.00464",
       "reading_unit_id": "reading-unit.0182",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 9189,
-        "end": 9220
+        "start": 9176,
+        "end": 9214
       },
       "immediate_parent_element_id": "element.section.0003",
       "ancestor_element_ids": [
@@ -7533,12 +7488,12 @@
       }
     },
     {
-      "source_node_id": "jsx.00466",
+      "source_node_id": "jsx.00463",
       "reading_unit_id": "reading-unit.0183",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 9226,
-        "end": 9264
+        "start": 9220,
+        "end": 9271
       },
       "immediate_parent_element_id": "element.section.0003",
       "ancestor_element_ids": [
@@ -7565,12 +7520,12 @@
       }
     },
     {
-      "source_node_id": "jsx.00468",
+      "source_node_id": "jsx.00465",
       "reading_unit_id": "reading-unit.0184",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 9270,
-        "end": 9321
+        "start": 9277,
+        "end": 9315
       },
       "immediate_parent_element_id": "element.section.0003",
       "ancestor_element_ids": [
@@ -7597,12 +7552,44 @@
       }
     },
     {
-      "source_node_id": "jsx.00470",
+      "source_node_id": "jsx.00467",
       "reading_unit_id": "reading-unit.0185",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 9327,
-        "end": 9365
+        "start": 9321,
+        "end": 9359
+      },
+      "immediate_parent_element_id": "element.section.0003",
+      "ancestor_element_ids": [
+        "element.main.0001",
+        "element.article.0001",
+        "element.section.0003"
+      ],
+      "ancestor_tags": [
+        "main",
+        "article",
+        "section"
+      ],
+      "context_flags": {
+        "whitespace_only": false,
+        "inside_section": true,
+        "inside_h1": false,
+        "inside_h2": false,
+        "inside_h3": false,
+        "inside_small": false
+      },
+      "corpus_inclusion": {
+        "status": "undecided",
+        "authority": "requires_user_decision"
+      }
+    },
+    {
+      "source_node_id": "jsx.00469",
+      "reading_unit_id": "reading-unit.0186",
+      "projection_location": "reading_unit",
+      "source_code_unit_range": {
+        "start": 9365,
+        "end": 9392
       },
       "immediate_parent_element_id": "element.section.0003",
       "ancestor_element_ids": [
@@ -7630,11 +7617,11 @@
     },
     {
       "source_node_id": "jsx.00472",
-      "reading_unit_id": "reading-unit.0186",
+      "reading_unit_id": "reading-unit.0188",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 9371,
-        "end": 9409
+        "start": 9404,
+        "end": 9587
       },
       "immediate_parent_element_id": "element.section.0003",
       "ancestor_element_ids": [
@@ -7662,43 +7649,11 @@
     },
     {
       "source_node_id": "jsx.00474",
-      "reading_unit_id": "reading-unit.0187",
-      "projection_location": "reading_unit",
-      "source_code_unit_range": {
-        "start": 9415,
-        "end": 9442
-      },
-      "immediate_parent_element_id": "element.section.0003",
-      "ancestor_element_ids": [
-        "element.main.0001",
-        "element.article.0001",
-        "element.section.0003"
-      ],
-      "ancestor_tags": [
-        "main",
-        "article",
-        "section"
-      ],
-      "context_flags": {
-        "whitespace_only": false,
-        "inside_section": true,
-        "inside_h1": false,
-        "inside_h2": false,
-        "inside_h3": false,
-        "inside_small": false
-      },
-      "corpus_inclusion": {
-        "status": "undecided",
-        "authority": "requires_user_decision"
-      }
-    },
-    {
-      "source_node_id": "jsx.00477",
       "reading_unit_id": "reading-unit.0189",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 9454,
-        "end": 9637
+        "start": 9593,
+        "end": 9787
       },
       "immediate_parent_element_id": "element.section.0003",
       "ancestor_element_ids": [
@@ -7725,12 +7680,12 @@
       }
     },
     {
-      "source_node_id": "jsx.00479",
+      "source_node_id": "jsx.00476",
       "reading_unit_id": "reading-unit.0190",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 9643,
-        "end": 9837
+        "start": 9793,
+        "end": 9962
       },
       "immediate_parent_element_id": "element.section.0003",
       "ancestor_element_ids": [
@@ -7757,51 +7712,19 @@
       }
     },
     {
-      "source_node_id": "jsx.00481",
-      "reading_unit_id": "reading-unit.0191",
+      "source_node_id": "jsx.00478",
+      "reading_unit_id": "reading-unit.0190",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 9843,
-        "end": 10012
+        "start": 9969,
+        "end": 9999
       },
-      "immediate_parent_element_id": "element.section.0003",
-      "ancestor_element_ids": [
-        "element.main.0001",
-        "element.article.0001",
-        "element.section.0003"
-      ],
-      "ancestor_tags": [
-        "main",
-        "article",
-        "section"
-      ],
-      "context_flags": {
-        "whitespace_only": false,
-        "inside_section": true,
-        "inside_h1": false,
-        "inside_h2": false,
-        "inside_h3": false,
-        "inside_small": false
-      },
-      "corpus_inclusion": {
-        "status": "undecided",
-        "authority": "requires_user_decision"
-      }
-    },
-    {
-      "source_node_id": "jsx.00483",
-      "reading_unit_id": "reading-unit.0191",
-      "projection_location": "reading_unit",
-      "source_code_unit_range": {
-        "start": 10019,
-        "end": 10049
-      },
-      "immediate_parent_element_id": "element.small.0005",
+      "immediate_parent_element_id": "element.small.0004",
       "ancestor_element_ids": [
         "element.main.0001",
         "element.article.0001",
         "element.section.0003",
-        "element.small.0005"
+        "element.small.0004"
       ],
       "ancestor_tags": [
         "main",
@@ -7823,20 +7746,20 @@
       }
     },
     {
-      "source_node_id": "jsx.00485",
-      "reading_unit_id": "reading-unit.0191",
+      "source_node_id": "jsx.00480",
+      "reading_unit_id": "reading-unit.0190",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 10056,
-        "end": 10066
+        "start": 10006,
+        "end": 10016
       },
-      "immediate_parent_element_id": "element.small.0006",
+      "immediate_parent_element_id": "element.small.0005",
       "ancestor_element_ids": [
         "element.main.0001",
         "element.article.0001",
         "element.section.0003",
-        "element.small.0005",
-        "element.small.0006"
+        "element.small.0004",
+        "element.small.0005"
       ],
       "ancestor_tags": [
         "main",
@@ -7859,19 +7782,19 @@
       }
     },
     {
-      "source_node_id": "jsx.00487",
-      "reading_unit_id": "reading-unit.0191",
+      "source_node_id": "jsx.00482",
+      "reading_unit_id": "reading-unit.0190",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 10074,
-        "end": 10075
+        "start": 10024,
+        "end": 10025
       },
-      "immediate_parent_element_id": "element.small.0005",
+      "immediate_parent_element_id": "element.small.0004",
       "ancestor_element_ids": [
         "element.main.0001",
         "element.article.0001",
         "element.section.0003",
-        "element.small.0005"
+        "element.small.0004"
       ],
       "ancestor_tags": [
         "main",
@@ -7893,12 +7816,12 @@
       }
     },
     {
-      "source_node_id": "jsx.00489",
-      "reading_unit_id": "reading-unit.0191",
+      "source_node_id": "jsx.00484",
+      "reading_unit_id": "reading-unit.0190",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 10083,
-        "end": 10084
+        "start": 10033,
+        "end": 10034
       },
       "immediate_parent_element_id": "element.section.0003",
       "ancestor_element_ids": [
@@ -7925,12 +7848,12 @@
       }
     },
     {
-      "source_node_id": "jsx.00491",
-      "reading_unit_id": "reading-unit.0192",
+      "source_node_id": "jsx.00486",
+      "reading_unit_id": "reading-unit.0191",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 10090,
-        "end": 10100
+        "start": 10040,
+        "end": 10050
       },
       "immediate_parent_element_id": "element.section.0003",
       "ancestor_element_ids": [
@@ -7957,12 +7880,12 @@
       }
     },
     {
-      "source_node_id": "jsx.00493",
-      "reading_unit_id": "reading-unit.0192",
+      "source_node_id": "jsx.00488",
+      "reading_unit_id": "reading-unit.0191",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 10110,
-        "end": 10119
+        "start": 10060,
+        "end": 10069
       },
       "immediate_parent_element_id": "element.article.0001",
       "ancestor_element_ids": [
@@ -7987,12 +7910,12 @@
       }
     },
     {
-      "source_node_id": "jsx.00495",
-      "reading_unit_id": "reading-unit.0192",
+      "source_node_id": "jsx.00490",
+      "reading_unit_id": "reading-unit.0191",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 10128,
-        "end": 10139
+        "start": 10078,
+        "end": 10089
       },
       "immediate_parent_element_id": "element.section.0004",
       "ancestor_element_ids": [
@@ -8019,12 +7942,12 @@
       }
     },
     {
-      "source_node_id": "jsx.00497",
-      "reading_unit_id": "reading-unit.0192",
+      "source_node_id": "jsx.00492",
+      "reading_unit_id": "reading-unit.0191",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 10143,
-        "end": 10148
+        "start": 10093,
+        "end": 10098
       },
       "immediate_parent_element_id": "element.h2.0004",
       "ancestor_element_ids": [
@@ -8053,12 +7976,44 @@
       }
     },
     {
-      "source_node_id": "jsx.00499",
+      "source_node_id": "jsx.00494",
+      "reading_unit_id": "reading-unit.0191",
+      "projection_location": "reading_unit",
+      "source_code_unit_range": {
+        "start": 10103,
+        "end": 10143
+      },
+      "immediate_parent_element_id": "element.section.0004",
+      "ancestor_element_ids": [
+        "element.main.0001",
+        "element.article.0001",
+        "element.section.0004"
+      ],
+      "ancestor_tags": [
+        "main",
+        "article",
+        "section"
+      ],
+      "context_flags": {
+        "whitespace_only": false,
+        "inside_section": true,
+        "inside_h1": false,
+        "inside_h2": false,
+        "inside_h3": false,
+        "inside_small": false
+      },
+      "corpus_inclusion": {
+        "status": "undecided",
+        "authority": "requires_user_decision"
+      }
+    },
+    {
+      "source_node_id": "jsx.00496",
       "reading_unit_id": "reading-unit.0192",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 10153,
-        "end": 10193
+        "start": 10149,
+        "end": 10197
       },
       "immediate_parent_element_id": "element.section.0004",
       "ancestor_element_ids": [
@@ -8085,12 +8040,12 @@
       }
     },
     {
-      "source_node_id": "jsx.00501",
+      "source_node_id": "jsx.00498",
       "reading_unit_id": "reading-unit.0193",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 10199,
-        "end": 10247
+        "start": 10203,
+        "end": 10222
       },
       "immediate_parent_element_id": "element.section.0004",
       "ancestor_element_ids": [
@@ -8117,12 +8072,12 @@
       }
     },
     {
-      "source_node_id": "jsx.00503",
+      "source_node_id": "jsx.00500",
       "reading_unit_id": "reading-unit.0194",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 10253,
-        "end": 10272
+        "start": 10228,
+        "end": 10302
       },
       "immediate_parent_element_id": "element.section.0004",
       "ancestor_element_ids": [
@@ -8149,12 +8104,12 @@
       }
     },
     {
-      "source_node_id": "jsx.00505",
+      "source_node_id": "jsx.00502",
       "reading_unit_id": "reading-unit.0195",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 10278,
-        "end": 10352
+        "start": 10308,
+        "end": 10355
       },
       "immediate_parent_element_id": "element.section.0004",
       "ancestor_element_ids": [
@@ -8181,12 +8136,12 @@
       }
     },
     {
-      "source_node_id": "jsx.00507",
+      "source_node_id": "jsx.00504",
       "reading_unit_id": "reading-unit.0196",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 10358,
-        "end": 10405
+        "start": 10361,
+        "end": 10406
       },
       "immediate_parent_element_id": "element.section.0004",
       "ancestor_element_ids": [
@@ -8213,12 +8168,12 @@
       }
     },
     {
-      "source_node_id": "jsx.00509",
+      "source_node_id": "jsx.00506",
       "reading_unit_id": "reading-unit.0197",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 10411,
-        "end": 10456
+        "start": 10412,
+        "end": 10446
       },
       "immediate_parent_element_id": "element.section.0004",
       "ancestor_element_ids": [
@@ -8245,12 +8200,12 @@
       }
     },
     {
-      "source_node_id": "jsx.00511",
+      "source_node_id": "jsx.00508",
       "reading_unit_id": "reading-unit.0198",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 10462,
-        "end": 10496
+        "start": 10452,
+        "end": 10491
       },
       "immediate_parent_element_id": "element.section.0004",
       "ancestor_element_ids": [
@@ -8277,12 +8232,12 @@
       }
     },
     {
-      "source_node_id": "jsx.00513",
+      "source_node_id": "jsx.00510",
       "reading_unit_id": "reading-unit.0199",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 10502,
-        "end": 10541
+        "start": 10497,
+        "end": 10537
       },
       "immediate_parent_element_id": "element.section.0004",
       "ancestor_element_ids": [
@@ -8309,12 +8264,12 @@
       }
     },
     {
-      "source_node_id": "jsx.00515",
+      "source_node_id": "jsx.00512",
       "reading_unit_id": "reading-unit.0200",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 10547,
-        "end": 10587
+        "start": 10543,
+        "end": 10577
       },
       "immediate_parent_element_id": "element.section.0004",
       "ancestor_element_ids": [
@@ -8341,12 +8296,12 @@
       }
     },
     {
-      "source_node_id": "jsx.00517",
+      "source_node_id": "jsx.00514",
       "reading_unit_id": "reading-unit.0201",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 10593,
-        "end": 10627
+        "start": 10583,
+        "end": 10615
       },
       "immediate_parent_element_id": "element.section.0004",
       "ancestor_element_ids": [
@@ -8373,12 +8328,12 @@
       }
     },
     {
-      "source_node_id": "jsx.00519",
+      "source_node_id": "jsx.00516",
       "reading_unit_id": "reading-unit.0202",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 10633,
-        "end": 10665
+        "start": 10621,
+        "end": 10656
       },
       "immediate_parent_element_id": "element.section.0004",
       "ancestor_element_ids": [
@@ -8405,12 +8360,12 @@
       }
     },
     {
-      "source_node_id": "jsx.00521",
+      "source_node_id": "jsx.00518",
       "reading_unit_id": "reading-unit.0203",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 10671,
-        "end": 10706
+        "start": 10662,
+        "end": 10695
       },
       "immediate_parent_element_id": "element.section.0004",
       "ancestor_element_ids": [
@@ -8437,12 +8392,12 @@
       }
     },
     {
-      "source_node_id": "jsx.00523",
+      "source_node_id": "jsx.00520",
       "reading_unit_id": "reading-unit.0204",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 10712,
-        "end": 10745
+        "start": 10701,
+        "end": 10733
       },
       "immediate_parent_element_id": "element.section.0004",
       "ancestor_element_ids": [
@@ -8469,12 +8424,44 @@
       }
     },
     {
-      "source_node_id": "jsx.00525",
+      "source_node_id": "jsx.00522",
       "reading_unit_id": "reading-unit.0205",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 10751,
-        "end": 10783
+        "start": 10739,
+        "end": 10774
+      },
+      "immediate_parent_element_id": "element.section.0004",
+      "ancestor_element_ids": [
+        "element.main.0001",
+        "element.article.0001",
+        "element.section.0004"
+      ],
+      "ancestor_tags": [
+        "main",
+        "article",
+        "section"
+      ],
+      "context_flags": {
+        "whitespace_only": false,
+        "inside_section": true,
+        "inside_h1": false,
+        "inside_h2": false,
+        "inside_h3": false,
+        "inside_small": false
+      },
+      "corpus_inclusion": {
+        "status": "undecided",
+        "authority": "requires_user_decision"
+      }
+    },
+    {
+      "source_node_id": "jsx.00524",
+      "reading_unit_id": "reading-unit.0206",
+      "projection_location": "reading_unit",
+      "source_code_unit_range": {
+        "start": 10780,
+        "end": 10821
       },
       "immediate_parent_element_id": "element.section.0004",
       "ancestor_element_ids": [
@@ -8502,11 +8489,11 @@
     },
     {
       "source_node_id": "jsx.00527",
-      "reading_unit_id": "reading-unit.0206",
+      "reading_unit_id": "reading-unit.0208",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 10789,
-        "end": 10824
+        "start": 10833,
+        "end": 10873
       },
       "immediate_parent_element_id": "element.section.0004",
       "ancestor_element_ids": [
@@ -8534,43 +8521,11 @@
     },
     {
       "source_node_id": "jsx.00529",
-      "reading_unit_id": "reading-unit.0207",
-      "projection_location": "reading_unit",
-      "source_code_unit_range": {
-        "start": 10830,
-        "end": 10871
-      },
-      "immediate_parent_element_id": "element.section.0004",
-      "ancestor_element_ids": [
-        "element.main.0001",
-        "element.article.0001",
-        "element.section.0004"
-      ],
-      "ancestor_tags": [
-        "main",
-        "article",
-        "section"
-      ],
-      "context_flags": {
-        "whitespace_only": false,
-        "inside_section": true,
-        "inside_h1": false,
-        "inside_h2": false,
-        "inside_h3": false,
-        "inside_small": false
-      },
-      "corpus_inclusion": {
-        "status": "undecided",
-        "authority": "requires_user_decision"
-      }
-    },
-    {
-      "source_node_id": "jsx.00532",
       "reading_unit_id": "reading-unit.0209",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 10883,
-        "end": 10923
+        "start": 10879,
+        "end": 10931
       },
       "immediate_parent_element_id": "element.section.0004",
       "ancestor_element_ids": [
@@ -8597,12 +8552,12 @@
       }
     },
     {
-      "source_node_id": "jsx.00534",
+      "source_node_id": "jsx.00531",
       "reading_unit_id": "reading-unit.0210",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 10929,
-        "end": 10981
+        "start": 10937,
+        "end": 10995
       },
       "immediate_parent_element_id": "element.section.0004",
       "ancestor_element_ids": [
@@ -8629,12 +8584,44 @@
       }
     },
     {
-      "source_node_id": "jsx.00536",
+      "source_node_id": "jsx.00533",
       "reading_unit_id": "reading-unit.0211",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 10987,
-        "end": 11045
+        "start": 11001,
+        "end": 11041
+      },
+      "immediate_parent_element_id": "element.section.0004",
+      "ancestor_element_ids": [
+        "element.main.0001",
+        "element.article.0001",
+        "element.section.0004"
+      ],
+      "ancestor_tags": [
+        "main",
+        "article",
+        "section"
+      ],
+      "context_flags": {
+        "whitespace_only": false,
+        "inside_section": true,
+        "inside_h1": false,
+        "inside_h2": false,
+        "inside_h3": false,
+        "inside_small": false
+      },
+      "corpus_inclusion": {
+        "status": "undecided",
+        "authority": "requires_user_decision"
+      }
+    },
+    {
+      "source_node_id": "jsx.00535",
+      "reading_unit_id": "reading-unit.0212",
+      "projection_location": "reading_unit",
+      "source_code_unit_range": {
+        "start": 11047,
+        "end": 11087
       },
       "immediate_parent_element_id": "element.section.0004",
       "ancestor_element_ids": [
@@ -8662,11 +8649,11 @@
     },
     {
       "source_node_id": "jsx.00538",
-      "reading_unit_id": "reading-unit.0212",
+      "reading_unit_id": "reading-unit.0214",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 11051,
-        "end": 11091
+        "start": 11099,
+        "end": 11139
       },
       "immediate_parent_element_id": "element.section.0004",
       "ancestor_element_ids": [
@@ -8694,43 +8681,11 @@
     },
     {
       "source_node_id": "jsx.00540",
-      "reading_unit_id": "reading-unit.0213",
-      "projection_location": "reading_unit",
-      "source_code_unit_range": {
-        "start": 11097,
-        "end": 11137
-      },
-      "immediate_parent_element_id": "element.section.0004",
-      "ancestor_element_ids": [
-        "element.main.0001",
-        "element.article.0001",
-        "element.section.0004"
-      ],
-      "ancestor_tags": [
-        "main",
-        "article",
-        "section"
-      ],
-      "context_flags": {
-        "whitespace_only": false,
-        "inside_section": true,
-        "inside_h1": false,
-        "inside_h2": false,
-        "inside_h3": false,
-        "inside_small": false
-      },
-      "corpus_inclusion": {
-        "status": "undecided",
-        "authority": "requires_user_decision"
-      }
-    },
-    {
-      "source_node_id": "jsx.00543",
       "reading_unit_id": "reading-unit.0215",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 11149,
-        "end": 11189
+        "start": 11145,
+        "end": 11176
       },
       "immediate_parent_element_id": "element.section.0004",
       "ancestor_element_ids": [
@@ -8757,12 +8712,12 @@
       }
     },
     {
-      "source_node_id": "jsx.00545",
+      "source_node_id": "jsx.00542",
       "reading_unit_id": "reading-unit.0216",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 11195,
-        "end": 11226
+        "start": 11182,
+        "end": 11237
       },
       "immediate_parent_element_id": "element.section.0004",
       "ancestor_element_ids": [
@@ -8789,12 +8744,12 @@
       }
     },
     {
-      "source_node_id": "jsx.00547",
+      "source_node_id": "jsx.00544",
       "reading_unit_id": "reading-unit.0217",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 11232,
-        "end": 11287
+        "start": 11243,
+        "end": 11271
       },
       "immediate_parent_element_id": "element.section.0004",
       "ancestor_element_ids": [
@@ -8821,12 +8776,12 @@
       }
     },
     {
-      "source_node_id": "jsx.00549",
+      "source_node_id": "jsx.00546",
       "reading_unit_id": "reading-unit.0218",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 11293,
-        "end": 11321
+        "start": 11277,
+        "end": 11303
       },
       "immediate_parent_element_id": "element.section.0004",
       "ancestor_element_ids": [
@@ -8853,12 +8808,44 @@
       }
     },
     {
-      "source_node_id": "jsx.00551",
+      "source_node_id": "jsx.00548",
       "reading_unit_id": "reading-unit.0219",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 11327,
-        "end": 11353
+        "start": 11309,
+        "end": 11358
+      },
+      "immediate_parent_element_id": "element.section.0004",
+      "ancestor_element_ids": [
+        "element.main.0001",
+        "element.article.0001",
+        "element.section.0004"
+      ],
+      "ancestor_tags": [
+        "main",
+        "article",
+        "section"
+      ],
+      "context_flags": {
+        "whitespace_only": false,
+        "inside_section": true,
+        "inside_h1": false,
+        "inside_h2": false,
+        "inside_h3": false,
+        "inside_small": false
+      },
+      "corpus_inclusion": {
+        "status": "undecided",
+        "authority": "requires_user_decision"
+      }
+    },
+    {
+      "source_node_id": "jsx.00550",
+      "reading_unit_id": "reading-unit.0220",
+      "projection_location": "reading_unit",
+      "source_code_unit_range": {
+        "start": 11364,
+        "end": 11402
       },
       "immediate_parent_element_id": "element.section.0004",
       "ancestor_element_ids": [
@@ -8886,11 +8873,11 @@
     },
     {
       "source_node_id": "jsx.00553",
-      "reading_unit_id": "reading-unit.0220",
+      "reading_unit_id": "reading-unit.0222",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 11359,
-        "end": 11408
+        "start": 11414,
+        "end": 11454
       },
       "immediate_parent_element_id": "element.section.0004",
       "ancestor_element_ids": [
@@ -8918,43 +8905,11 @@
     },
     {
       "source_node_id": "jsx.00555",
-      "reading_unit_id": "reading-unit.0221",
-      "projection_location": "reading_unit",
-      "source_code_unit_range": {
-        "start": 11414,
-        "end": 11452
-      },
-      "immediate_parent_element_id": "element.section.0004",
-      "ancestor_element_ids": [
-        "element.main.0001",
-        "element.article.0001",
-        "element.section.0004"
-      ],
-      "ancestor_tags": [
-        "main",
-        "article",
-        "section"
-      ],
-      "context_flags": {
-        "whitespace_only": false,
-        "inside_section": true,
-        "inside_h1": false,
-        "inside_h2": false,
-        "inside_h3": false,
-        "inside_small": false
-      },
-      "corpus_inclusion": {
-        "status": "undecided",
-        "authority": "requires_user_decision"
-      }
-    },
-    {
-      "source_node_id": "jsx.00558",
       "reading_unit_id": "reading-unit.0223",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 11464,
-        "end": 11504
+        "start": 11460,
+        "end": 11494
       },
       "immediate_parent_element_id": "element.section.0004",
       "ancestor_element_ids": [
@@ -8981,12 +8936,12 @@
       }
     },
     {
-      "source_node_id": "jsx.00560",
+      "source_node_id": "jsx.00557",
       "reading_unit_id": "reading-unit.0224",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 11510,
-        "end": 11544
+        "start": 11500,
+        "end": 11523
       },
       "immediate_parent_element_id": "element.section.0004",
       "ancestor_element_ids": [
@@ -9013,12 +8968,12 @@
       }
     },
     {
-      "source_node_id": "jsx.00562",
+      "source_node_id": "jsx.00559",
       "reading_unit_id": "reading-unit.0225",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 11550,
-        "end": 11573
+        "start": 11529,
+        "end": 11560
       },
       "immediate_parent_element_id": "element.section.0004",
       "ancestor_element_ids": [
@@ -9045,12 +9000,12 @@
       }
     },
     {
-      "source_node_id": "jsx.00564",
+      "source_node_id": "jsx.00561",
       "reading_unit_id": "reading-unit.0226",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 11579,
-        "end": 11610
+        "start": 11566,
+        "end": 11595
       },
       "immediate_parent_element_id": "element.section.0004",
       "ancestor_element_ids": [
@@ -9077,12 +9032,12 @@
       }
     },
     {
-      "source_node_id": "jsx.00566",
+      "source_node_id": "jsx.00563",
       "reading_unit_id": "reading-unit.0227",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 11616,
-        "end": 11645
+        "start": 11601,
+        "end": 11633
       },
       "immediate_parent_element_id": "element.section.0004",
       "ancestor_element_ids": [
@@ -9109,12 +9064,12 @@
       }
     },
     {
-      "source_node_id": "jsx.00568",
+      "source_node_id": "jsx.00565",
       "reading_unit_id": "reading-unit.0228",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 11651,
-        "end": 11683
+        "start": 11639,
+        "end": 11663
       },
       "immediate_parent_element_id": "element.section.0004",
       "ancestor_element_ids": [
@@ -9141,12 +9096,12 @@
       }
     },
     {
-      "source_node_id": "jsx.00570",
+      "source_node_id": "jsx.00567",
       "reading_unit_id": "reading-unit.0229",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 11689,
-        "end": 11713
+        "start": 11669,
+        "end": 11698
       },
       "immediate_parent_element_id": "element.section.0004",
       "ancestor_element_ids": [
@@ -9173,12 +9128,12 @@
       }
     },
     {
-      "source_node_id": "jsx.00572",
+      "source_node_id": "jsx.00569",
       "reading_unit_id": "reading-unit.0230",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 11719,
-        "end": 11748
+        "start": 11704,
+        "end": 11732
       },
       "immediate_parent_element_id": "element.section.0004",
       "ancestor_element_ids": [
@@ -9205,12 +9160,44 @@
       }
     },
     {
-      "source_node_id": "jsx.00574",
+      "source_node_id": "jsx.00571",
       "reading_unit_id": "reading-unit.0231",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 11754,
-        "end": 11782
+        "start": 11738,
+        "end": 11768
+      },
+      "immediate_parent_element_id": "element.section.0004",
+      "ancestor_element_ids": [
+        "element.main.0001",
+        "element.article.0001",
+        "element.section.0004"
+      ],
+      "ancestor_tags": [
+        "main",
+        "article",
+        "section"
+      ],
+      "context_flags": {
+        "whitespace_only": false,
+        "inside_section": true,
+        "inside_h1": false,
+        "inside_h2": false,
+        "inside_h3": false,
+        "inside_small": false
+      },
+      "corpus_inclusion": {
+        "status": "undecided",
+        "authority": "requires_user_decision"
+      }
+    },
+    {
+      "source_node_id": "jsx.00573",
+      "reading_unit_id": "reading-unit.0232",
+      "projection_location": "reading_unit",
+      "source_code_unit_range": {
+        "start": 11774,
+        "end": 11836
       },
       "immediate_parent_element_id": "element.section.0004",
       "ancestor_element_ids": [
@@ -9238,11 +9225,11 @@
     },
     {
       "source_node_id": "jsx.00576",
-      "reading_unit_id": "reading-unit.0232",
+      "reading_unit_id": "reading-unit.0234",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 11788,
-        "end": 11818
+        "start": 11848,
+        "end": 12000
       },
       "immediate_parent_element_id": "element.section.0004",
       "ancestor_element_ids": [
@@ -9270,43 +9257,11 @@
     },
     {
       "source_node_id": "jsx.00578",
-      "reading_unit_id": "reading-unit.0233",
-      "projection_location": "reading_unit",
-      "source_code_unit_range": {
-        "start": 11824,
-        "end": 11886
-      },
-      "immediate_parent_element_id": "element.section.0004",
-      "ancestor_element_ids": [
-        "element.main.0001",
-        "element.article.0001",
-        "element.section.0004"
-      ],
-      "ancestor_tags": [
-        "main",
-        "article",
-        "section"
-      ],
-      "context_flags": {
-        "whitespace_only": false,
-        "inside_section": true,
-        "inside_h1": false,
-        "inside_h2": false,
-        "inside_h3": false,
-        "inside_small": false
-      },
-      "corpus_inclusion": {
-        "status": "undecided",
-        "authority": "requires_user_decision"
-      }
-    },
-    {
-      "source_node_id": "jsx.00581",
       "reading_unit_id": "reading-unit.0235",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 11898,
-        "end": 12050
+        "start": 12006,
+        "end": 12131
       },
       "immediate_parent_element_id": "element.section.0004",
       "ancestor_element_ids": [
@@ -9333,12 +9288,12 @@
       }
     },
     {
-      "source_node_id": "jsx.00583",
+      "source_node_id": "jsx.00580",
       "reading_unit_id": "reading-unit.0236",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 12056,
-        "end": 12181
+        "start": 12137,
+        "end": 12264
       },
       "immediate_parent_element_id": "element.section.0004",
       "ancestor_element_ids": [
@@ -9365,12 +9320,12 @@
       }
     },
     {
-      "source_node_id": "jsx.00585",
+      "source_node_id": "jsx.00582",
       "reading_unit_id": "reading-unit.0237",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 12187,
-        "end": 12314
+        "start": 12270,
+        "end": 12395
       },
       "immediate_parent_element_id": "element.section.0004",
       "ancestor_element_ids": [
@@ -9397,12 +9352,12 @@
       }
     },
     {
-      "source_node_id": "jsx.00587",
+      "source_node_id": "jsx.00584",
       "reading_unit_id": "reading-unit.0238",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 12320,
-        "end": 12445
+        "start": 12401,
+        "end": 12526
       },
       "immediate_parent_element_id": "element.section.0004",
       "ancestor_element_ids": [
@@ -9429,12 +9384,44 @@
       }
     },
     {
-      "source_node_id": "jsx.00589",
+      "source_node_id": "jsx.00586",
       "reading_unit_id": "reading-unit.0239",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 12451,
-        "end": 12576
+        "start": 12532,
+        "end": 12665
+      },
+      "immediate_parent_element_id": "element.section.0004",
+      "ancestor_element_ids": [
+        "element.main.0001",
+        "element.article.0001",
+        "element.section.0004"
+      ],
+      "ancestor_tags": [
+        "main",
+        "article",
+        "section"
+      ],
+      "context_flags": {
+        "whitespace_only": false,
+        "inside_section": true,
+        "inside_h1": false,
+        "inside_h2": false,
+        "inside_h3": false,
+        "inside_small": false
+      },
+      "corpus_inclusion": {
+        "status": "undecided",
+        "authority": "requires_user_decision"
+      }
+    },
+    {
+      "source_node_id": "jsx.00588",
+      "reading_unit_id": "reading-unit.0240",
+      "projection_location": "reading_unit",
+      "source_code_unit_range": {
+        "start": 12671,
+        "end": 12792
       },
       "immediate_parent_element_id": "element.section.0004",
       "ancestor_element_ids": [
@@ -9462,11 +9449,11 @@
     },
     {
       "source_node_id": "jsx.00591",
-      "reading_unit_id": "reading-unit.0240",
+      "reading_unit_id": "reading-unit.0242",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 12582,
-        "end": 12715
+        "start": 12804,
+        "end": 12833
       },
       "immediate_parent_element_id": "element.section.0004",
       "ancestor_element_ids": [
@@ -9494,43 +9481,11 @@
     },
     {
       "source_node_id": "jsx.00593",
-      "reading_unit_id": "reading-unit.0241",
-      "projection_location": "reading_unit",
-      "source_code_unit_range": {
-        "start": 12721,
-        "end": 12842
-      },
-      "immediate_parent_element_id": "element.section.0004",
-      "ancestor_element_ids": [
-        "element.main.0001",
-        "element.article.0001",
-        "element.section.0004"
-      ],
-      "ancestor_tags": [
-        "main",
-        "article",
-        "section"
-      ],
-      "context_flags": {
-        "whitespace_only": false,
-        "inside_section": true,
-        "inside_h1": false,
-        "inside_h2": false,
-        "inside_h3": false,
-        "inside_small": false
-      },
-      "corpus_inclusion": {
-        "status": "undecided",
-        "authority": "requires_user_decision"
-      }
-    },
-    {
-      "source_node_id": "jsx.00596",
       "reading_unit_id": "reading-unit.0243",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 12854,
-        "end": 12883
+        "start": 12839,
+        "end": 12866
       },
       "immediate_parent_element_id": "element.section.0004",
       "ancestor_element_ids": [
@@ -9557,12 +9512,12 @@
       }
     },
     {
-      "source_node_id": "jsx.00598",
+      "source_node_id": "jsx.00595",
       "reading_unit_id": "reading-unit.0244",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 12889,
-        "end": 12916
+        "start": 12872,
+        "end": 12925
       },
       "immediate_parent_element_id": "element.section.0004",
       "ancestor_element_ids": [
@@ -9589,12 +9544,12 @@
       }
     },
     {
-      "source_node_id": "jsx.00600",
+      "source_node_id": "jsx.00597",
       "reading_unit_id": "reading-unit.0245",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 12922,
-        "end": 12975
+        "start": 12931,
+        "end": 12977
       },
       "immediate_parent_element_id": "element.section.0004",
       "ancestor_element_ids": [
@@ -9621,12 +9576,12 @@
       }
     },
     {
-      "source_node_id": "jsx.00602",
+      "source_node_id": "jsx.00599",
       "reading_unit_id": "reading-unit.0246",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 12981,
-        "end": 13027
+        "start": 12983,
+        "end": 13044
       },
       "immediate_parent_element_id": "element.section.0004",
       "ancestor_element_ids": [
@@ -9653,12 +9608,12 @@
       }
     },
     {
-      "source_node_id": "jsx.00604",
+      "source_node_id": "jsx.00601",
       "reading_unit_id": "reading-unit.0247",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 13033,
-        "end": 13094
+        "start": 13050,
+        "end": 13104
       },
       "immediate_parent_element_id": "element.section.0004",
       "ancestor_element_ids": [
@@ -9685,12 +9640,12 @@
       }
     },
     {
-      "source_node_id": "jsx.00606",
+      "source_node_id": "jsx.00603",
       "reading_unit_id": "reading-unit.0248",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 13100,
-        "end": 13154
+        "start": 13110,
+        "end": 13171
       },
       "immediate_parent_element_id": "element.section.0004",
       "ancestor_element_ids": [
@@ -9717,12 +9672,12 @@
       }
     },
     {
-      "source_node_id": "jsx.00608",
+      "source_node_id": "jsx.00605",
       "reading_unit_id": "reading-unit.0249",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 13160,
-        "end": 13221
+        "start": 13177,
+        "end": 13245
       },
       "immediate_parent_element_id": "element.section.0004",
       "ancestor_element_ids": [
@@ -9749,12 +9704,12 @@
       }
     },
     {
-      "source_node_id": "jsx.00610",
+      "source_node_id": "jsx.00607",
       "reading_unit_id": "reading-unit.0250",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 13227,
-        "end": 13295
+        "start": 13251,
+        "end": 13363
       },
       "immediate_parent_element_id": "element.section.0004",
       "ancestor_element_ids": [
@@ -9781,12 +9736,12 @@
       }
     },
     {
-      "source_node_id": "jsx.00612",
+      "source_node_id": "jsx.00609",
       "reading_unit_id": "reading-unit.0251",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 13301,
-        "end": 13413
+        "start": 13369,
+        "end": 13422
       },
       "immediate_parent_element_id": "element.section.0004",
       "ancestor_element_ids": [
@@ -9813,12 +9768,12 @@
       }
     },
     {
-      "source_node_id": "jsx.00614",
+      "source_node_id": "jsx.00611",
       "reading_unit_id": "reading-unit.0252",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 13419,
-        "end": 13472
+        "start": 13428,
+        "end": 13496
       },
       "immediate_parent_element_id": "element.section.0004",
       "ancestor_element_ids": [
@@ -9845,12 +9800,12 @@
       }
     },
     {
-      "source_node_id": "jsx.00616",
+      "source_node_id": "jsx.00613",
       "reading_unit_id": "reading-unit.0253",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 13478,
-        "end": 13546
+        "start": 13502,
+        "end": 13574
       },
       "immediate_parent_element_id": "element.section.0004",
       "ancestor_element_ids": [
@@ -9877,12 +9832,12 @@
       }
     },
     {
-      "source_node_id": "jsx.00618",
+      "source_node_id": "jsx.00615",
       "reading_unit_id": "reading-unit.0254",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 13552,
-        "end": 13624
+        "start": 13580,
+        "end": 13622
       },
       "immediate_parent_element_id": "element.section.0004",
       "ancestor_element_ids": [
@@ -9909,12 +9864,12 @@
       }
     },
     {
-      "source_node_id": "jsx.00620",
+      "source_node_id": "jsx.00617",
       "reading_unit_id": "reading-unit.0255",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 13630,
-        "end": 13672
+        "start": 13628,
+        "end": 13706
       },
       "immediate_parent_element_id": "element.section.0004",
       "ancestor_element_ids": [
@@ -9941,12 +9896,44 @@
       }
     },
     {
-      "source_node_id": "jsx.00622",
+      "source_node_id": "jsx.00619",
       "reading_unit_id": "reading-unit.0256",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 13678,
-        "end": 13756
+        "start": 13712,
+        "end": 13795
+      },
+      "immediate_parent_element_id": "element.section.0004",
+      "ancestor_element_ids": [
+        "element.main.0001",
+        "element.article.0001",
+        "element.section.0004"
+      ],
+      "ancestor_tags": [
+        "main",
+        "article",
+        "section"
+      ],
+      "context_flags": {
+        "whitespace_only": false,
+        "inside_section": true,
+        "inside_h1": false,
+        "inside_h2": false,
+        "inside_h3": false,
+        "inside_small": false
+      },
+      "corpus_inclusion": {
+        "status": "undecided",
+        "authority": "requires_user_decision"
+      }
+    },
+    {
+      "source_node_id": "jsx.00621",
+      "reading_unit_id": "reading-unit.0257",
+      "projection_location": "reading_unit",
+      "source_code_unit_range": {
+        "start": 13801,
+        "end": 13870
       },
       "immediate_parent_element_id": "element.section.0004",
       "ancestor_element_ids": [
@@ -9974,75 +9961,11 @@
     },
     {
       "source_node_id": "jsx.00624",
-      "reading_unit_id": "reading-unit.0257",
+      "reading_unit_id": "reading-unit.0259",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 13762,
-        "end": 13845
-      },
-      "immediate_parent_element_id": "element.section.0004",
-      "ancestor_element_ids": [
-        "element.main.0001",
-        "element.article.0001",
-        "element.section.0004"
-      ],
-      "ancestor_tags": [
-        "main",
-        "article",
-        "section"
-      ],
-      "context_flags": {
-        "whitespace_only": false,
-        "inside_section": true,
-        "inside_h1": false,
-        "inside_h2": false,
-        "inside_h3": false,
-        "inside_small": false
-      },
-      "corpus_inclusion": {
-        "status": "undecided",
-        "authority": "requires_user_decision"
-      }
-    },
-    {
-      "source_node_id": "jsx.00626",
-      "reading_unit_id": "reading-unit.0258",
-      "projection_location": "reading_unit",
-      "source_code_unit_range": {
-        "start": 13851,
-        "end": 13920
-      },
-      "immediate_parent_element_id": "element.section.0004",
-      "ancestor_element_ids": [
-        "element.main.0001",
-        "element.article.0001",
-        "element.section.0004"
-      ],
-      "ancestor_tags": [
-        "main",
-        "article",
-        "section"
-      ],
-      "context_flags": {
-        "whitespace_only": false,
-        "inside_section": true,
-        "inside_h1": false,
-        "inside_h2": false,
-        "inside_h3": false,
-        "inside_small": false
-      },
-      "corpus_inclusion": {
-        "status": "undecided",
-        "authority": "requires_user_decision"
-      }
-    },
-    {
-      "source_node_id": "jsx.00629",
-      "reading_unit_id": "reading-unit.0260",
-      "projection_location": "reading_unit",
-      "source_code_unit_range": {
-        "start": 13932,
-        "end": 13942
+        "start": 13882,
+        "end": 13892
       },
       "immediate_parent_element_id": "element.section.0004",
       "ancestor_element_ids": [
@@ -10069,12 +9992,12 @@
       }
     },
     {
-      "source_node_id": "jsx.00631",
-      "reading_unit_id": "reading-unit.0260",
+      "source_node_id": "jsx.00626",
+      "reading_unit_id": "reading-unit.0259",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 13952,
-        "end": 13961
+        "start": 13902,
+        "end": 13911
       },
       "immediate_parent_element_id": "element.article.0001",
       "ancestor_element_ids": [
@@ -10099,12 +10022,12 @@
       }
     },
     {
-      "source_node_id": "jsx.00633",
-      "reading_unit_id": "reading-unit.0260",
+      "source_node_id": "jsx.00628",
+      "reading_unit_id": "reading-unit.0259",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 13970,
-        "end": 13981
+        "start": 13920,
+        "end": 13931
       },
       "immediate_parent_element_id": "element.section.0005",
       "ancestor_element_ids": [
@@ -10131,12 +10054,12 @@
       }
     },
     {
-      "source_node_id": "jsx.00635",
-      "reading_unit_id": "reading-unit.0260",
+      "source_node_id": "jsx.00630",
+      "reading_unit_id": "reading-unit.0259",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 13985,
-        "end": 13990
+        "start": 13935,
+        "end": 13940
       },
       "immediate_parent_element_id": "element.h2.0005",
       "ancestor_element_ids": [
@@ -10165,12 +10088,44 @@
       }
     },
     {
-      "source_node_id": "jsx.00637",
+      "source_node_id": "jsx.00632",
+      "reading_unit_id": "reading-unit.0259",
+      "projection_location": "reading_unit",
+      "source_code_unit_range": {
+        "start": 13945,
+        "end": 13986
+      },
+      "immediate_parent_element_id": "element.section.0005",
+      "ancestor_element_ids": [
+        "element.main.0001",
+        "element.article.0001",
+        "element.section.0005"
+      ],
+      "ancestor_tags": [
+        "main",
+        "article",
+        "section"
+      ],
+      "context_flags": {
+        "whitespace_only": false,
+        "inside_section": true,
+        "inside_h1": false,
+        "inside_h2": false,
+        "inside_h3": false,
+        "inside_small": false
+      },
+      "corpus_inclusion": {
+        "status": "undecided",
+        "authority": "requires_user_decision"
+      }
+    },
+    {
+      "source_node_id": "jsx.00634",
       "reading_unit_id": "reading-unit.0260",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 13995,
-        "end": 14036
+        "start": 13992,
+        "end": 14026
       },
       "immediate_parent_element_id": "element.section.0005",
       "ancestor_element_ids": [
@@ -10197,12 +10152,12 @@
       }
     },
     {
-      "source_node_id": "jsx.00639",
+      "source_node_id": "jsx.00636",
       "reading_unit_id": "reading-unit.0261",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 14042,
-        "end": 14076
+        "start": 14032,
+        "end": 14051
       },
       "immediate_parent_element_id": "element.section.0005",
       "ancestor_element_ids": [
@@ -10229,12 +10184,12 @@
       }
     },
     {
-      "source_node_id": "jsx.00641",
+      "source_node_id": "jsx.00638",
       "reading_unit_id": "reading-unit.0262",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 14082,
-        "end": 14101
+        "start": 14057,
+        "end": 14182
       },
       "immediate_parent_element_id": "element.section.0005",
       "ancestor_element_ids": [
@@ -10261,12 +10216,12 @@
       }
     },
     {
-      "source_node_id": "jsx.00643",
+      "source_node_id": "jsx.00640",
       "reading_unit_id": "reading-unit.0263",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 14107,
-        "end": 14232
+        "start": 14188,
+        "end": 14225
       },
       "immediate_parent_element_id": "element.section.0005",
       "ancestor_element_ids": [
@@ -10293,12 +10248,12 @@
       }
     },
     {
-      "source_node_id": "jsx.00645",
+      "source_node_id": "jsx.00642",
       "reading_unit_id": "reading-unit.0264",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 14238,
-        "end": 14275
+        "start": 14231,
+        "end": 14269
       },
       "immediate_parent_element_id": "element.section.0005",
       "ancestor_element_ids": [
@@ -10325,12 +10280,44 @@
       }
     },
     {
-      "source_node_id": "jsx.00647",
+      "source_node_id": "jsx.00644",
       "reading_unit_id": "reading-unit.0265",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 14281,
-        "end": 14319
+        "start": 14275,
+        "end": 14641
+      },
+      "immediate_parent_element_id": "element.section.0005",
+      "ancestor_element_ids": [
+        "element.main.0001",
+        "element.article.0001",
+        "element.section.0005"
+      ],
+      "ancestor_tags": [
+        "main",
+        "article",
+        "section"
+      ],
+      "context_flags": {
+        "whitespace_only": false,
+        "inside_section": true,
+        "inside_h1": false,
+        "inside_h2": false,
+        "inside_h3": false,
+        "inside_small": false
+      },
+      "corpus_inclusion": {
+        "status": "undecided",
+        "authority": "requires_user_decision"
+      }
+    },
+    {
+      "source_node_id": "jsx.00646",
+      "reading_unit_id": "reading-unit.0266",
+      "projection_location": "reading_unit",
+      "source_code_unit_range": {
+        "start": 14647,
+        "end": 14721
       },
       "immediate_parent_element_id": "element.section.0005",
       "ancestor_element_ids": [
@@ -10358,11 +10345,11 @@
     },
     {
       "source_node_id": "jsx.00649",
-      "reading_unit_id": "reading-unit.0266",
+      "reading_unit_id": "reading-unit.0268",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 14325,
-        "end": 14691
+        "start": 14733,
+        "end": 14773
       },
       "immediate_parent_element_id": "element.section.0005",
       "ancestor_element_ids": [
@@ -10390,43 +10377,11 @@
     },
     {
       "source_node_id": "jsx.00651",
-      "reading_unit_id": "reading-unit.0267",
-      "projection_location": "reading_unit",
-      "source_code_unit_range": {
-        "start": 14697,
-        "end": 14771
-      },
-      "immediate_parent_element_id": "element.section.0005",
-      "ancestor_element_ids": [
-        "element.main.0001",
-        "element.article.0001",
-        "element.section.0005"
-      ],
-      "ancestor_tags": [
-        "main",
-        "article",
-        "section"
-      ],
-      "context_flags": {
-        "whitespace_only": false,
-        "inside_section": true,
-        "inside_h1": false,
-        "inside_h2": false,
-        "inside_h3": false,
-        "inside_small": false
-      },
-      "corpus_inclusion": {
-        "status": "undecided",
-        "authority": "requires_user_decision"
-      }
-    },
-    {
-      "source_node_id": "jsx.00654",
       "reading_unit_id": "reading-unit.0269",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 14783,
-        "end": 14823
+        "start": 14779,
+        "end": 14813
       },
       "immediate_parent_element_id": "element.section.0005",
       "ancestor_element_ids": [
@@ -10453,12 +10408,12 @@
       }
     },
     {
-      "source_node_id": "jsx.00656",
+      "source_node_id": "jsx.00653",
       "reading_unit_id": "reading-unit.0270",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 14829,
-        "end": 14863
+        "start": 14819,
+        "end": 14871
       },
       "immediate_parent_element_id": "element.section.0005",
       "ancestor_element_ids": [
@@ -10485,12 +10440,12 @@
       }
     },
     {
-      "source_node_id": "jsx.00658",
+      "source_node_id": "jsx.00655",
       "reading_unit_id": "reading-unit.0271",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 14869,
-        "end": 14921
+        "start": 14877,
+        "end": 14900
       },
       "immediate_parent_element_id": "element.section.0005",
       "ancestor_element_ids": [
@@ -10517,12 +10472,12 @@
       }
     },
     {
-      "source_node_id": "jsx.00660",
+      "source_node_id": "jsx.00657",
       "reading_unit_id": "reading-unit.0272",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 14927,
-        "end": 14950
+        "start": 14906,
+        "end": 14951
       },
       "immediate_parent_element_id": "element.section.0005",
       "ancestor_element_ids": [
@@ -10549,12 +10504,12 @@
       }
     },
     {
-      "source_node_id": "jsx.00662",
+      "source_node_id": "jsx.00659",
       "reading_unit_id": "reading-unit.0273",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 14956,
-        "end": 15001
+        "start": 14957,
+        "end": 14995
       },
       "immediate_parent_element_id": "element.section.0005",
       "ancestor_element_ids": [
@@ -10581,12 +10536,12 @@
       }
     },
     {
-      "source_node_id": "jsx.00664",
+      "source_node_id": "jsx.00661",
       "reading_unit_id": "reading-unit.0274",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 15007,
-        "end": 15045
+        "start": 15001,
+        "end": 15059
       },
       "immediate_parent_element_id": "element.section.0005",
       "ancestor_element_ids": [
@@ -10613,12 +10568,44 @@
       }
     },
     {
-      "source_node_id": "jsx.00666",
+      "source_node_id": "jsx.00663",
       "reading_unit_id": "reading-unit.0275",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 15051,
-        "end": 15109
+        "start": 15065,
+        "end": 15168
+      },
+      "immediate_parent_element_id": "element.section.0005",
+      "ancestor_element_ids": [
+        "element.main.0001",
+        "element.article.0001",
+        "element.section.0005"
+      ],
+      "ancestor_tags": [
+        "main",
+        "article",
+        "section"
+      ],
+      "context_flags": {
+        "whitespace_only": false,
+        "inside_section": true,
+        "inside_h1": false,
+        "inside_h2": false,
+        "inside_h3": false,
+        "inside_small": false
+      },
+      "corpus_inclusion": {
+        "status": "undecided",
+        "authority": "requires_user_decision"
+      }
+    },
+    {
+      "source_node_id": "jsx.00665",
+      "reading_unit_id": "reading-unit.0276",
+      "projection_location": "reading_unit",
+      "source_code_unit_range": {
+        "start": 15174,
+        "end": 15565
       },
       "immediate_parent_element_id": "element.section.0005",
       "ancestor_element_ids": [
@@ -10646,75 +10633,11 @@
     },
     {
       "source_node_id": "jsx.00668",
-      "reading_unit_id": "reading-unit.0276",
+      "reading_unit_id": "reading-unit.0278",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 15115,
-        "end": 15218
-      },
-      "immediate_parent_element_id": "element.section.0005",
-      "ancestor_element_ids": [
-        "element.main.0001",
-        "element.article.0001",
-        "element.section.0005"
-      ],
-      "ancestor_tags": [
-        "main",
-        "article",
-        "section"
-      ],
-      "context_flags": {
-        "whitespace_only": false,
-        "inside_section": true,
-        "inside_h1": false,
-        "inside_h2": false,
-        "inside_h3": false,
-        "inside_small": false
-      },
-      "corpus_inclusion": {
-        "status": "undecided",
-        "authority": "requires_user_decision"
-      }
-    },
-    {
-      "source_node_id": "jsx.00670",
-      "reading_unit_id": "reading-unit.0277",
-      "projection_location": "reading_unit",
-      "source_code_unit_range": {
-        "start": 15224,
-        "end": 15615
-      },
-      "immediate_parent_element_id": "element.section.0005",
-      "ancestor_element_ids": [
-        "element.main.0001",
-        "element.article.0001",
-        "element.section.0005"
-      ],
-      "ancestor_tags": [
-        "main",
-        "article",
-        "section"
-      ],
-      "context_flags": {
-        "whitespace_only": false,
-        "inside_section": true,
-        "inside_h1": false,
-        "inside_h2": false,
-        "inside_h3": false,
-        "inside_small": false
-      },
-      "corpus_inclusion": {
-        "status": "undecided",
-        "authority": "requires_user_decision"
-      }
-    },
-    {
-      "source_node_id": "jsx.00673",
-      "reading_unit_id": "reading-unit.0279",
-      "projection_location": "reading_unit",
-      "source_code_unit_range": {
-        "start": 15627,
-        "end": 15638
+        "start": 15577,
+        "end": 15588
       },
       "immediate_parent_element_id": "element.section.0005",
       "ancestor_element_ids": [
@@ -10741,12 +10664,44 @@
       }
     },
     {
-      "source_node_id": "jsx.00675",
+      "source_node_id": "jsx.00670",
+      "reading_unit_id": "reading-unit.0279",
+      "projection_location": "reading_unit",
+      "source_code_unit_range": {
+        "start": 15594,
+        "end": 15607
+      },
+      "immediate_parent_element_id": "element.section.0005",
+      "ancestor_element_ids": [
+        "element.main.0001",
+        "element.article.0001",
+        "element.section.0005"
+      ],
+      "ancestor_tags": [
+        "main",
+        "article",
+        "section"
+      ],
+      "context_flags": {
+        "whitespace_only": false,
+        "inside_section": true,
+        "inside_h1": false,
+        "inside_h2": false,
+        "inside_h3": false,
+        "inside_small": false
+      },
+      "corpus_inclusion": {
+        "status": "undecided",
+        "authority": "requires_user_decision"
+      }
+    },
+    {
+      "source_node_id": "jsx.00672",
       "reading_unit_id": "reading-unit.0280",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 15644,
-        "end": 15657
+        "start": 15613,
+        "end": 15749
       },
       "immediate_parent_element_id": "element.section.0005",
       "ancestor_element_ids": [
@@ -10773,12 +10728,12 @@
       }
     },
     {
-      "source_node_id": "jsx.00677",
+      "source_node_id": "jsx.00674",
       "reading_unit_id": "reading-unit.0281",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 15663,
-        "end": 15799
+        "start": 15755,
+        "end": 15875
       },
       "immediate_parent_element_id": "element.section.0005",
       "ancestor_element_ids": [
@@ -10805,12 +10760,12 @@
       }
     },
     {
-      "source_node_id": "jsx.00679",
+      "source_node_id": "jsx.00676",
       "reading_unit_id": "reading-unit.0282",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 15805,
-        "end": 15925
+        "start": 15881,
+        "end": 16006
       },
       "immediate_parent_element_id": "element.section.0005",
       "ancestor_element_ids": [
@@ -10837,12 +10792,12 @@
       }
     },
     {
-      "source_node_id": "jsx.00681",
+      "source_node_id": "jsx.00678",
       "reading_unit_id": "reading-unit.0283",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 15931,
-        "end": 16056
+        "start": 16012,
+        "end": 16137
       },
       "immediate_parent_element_id": "element.section.0005",
       "ancestor_element_ids": [
@@ -10869,12 +10824,12 @@
       }
     },
     {
-      "source_node_id": "jsx.00683",
+      "source_node_id": "jsx.00680",
       "reading_unit_id": "reading-unit.0284",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 16062,
-        "end": 16187
+        "start": 16143,
+        "end": 16264
       },
       "immediate_parent_element_id": "element.section.0005",
       "ancestor_element_ids": [
@@ -10901,12 +10856,12 @@
       }
     },
     {
-      "source_node_id": "jsx.00685",
+      "source_node_id": "jsx.00682",
       "reading_unit_id": "reading-unit.0285",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 16193,
-        "end": 16314
+        "start": 16270,
+        "end": 16398
       },
       "immediate_parent_element_id": "element.section.0005",
       "ancestor_element_ids": [
@@ -10933,12 +10888,12 @@
       }
     },
     {
-      "source_node_id": "jsx.00687",
+      "source_node_id": "jsx.00684",
       "reading_unit_id": "reading-unit.0286",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 16320,
-        "end": 16448
+        "start": 16404,
+        "end": 16525
       },
       "immediate_parent_element_id": "element.section.0005",
       "ancestor_element_ids": [
@@ -10965,12 +10920,12 @@
       }
     },
     {
-      "source_node_id": "jsx.00689",
+      "source_node_id": "jsx.00686",
       "reading_unit_id": "reading-unit.0287",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 16454,
-        "end": 16575
+        "start": 16531,
+        "end": 16654
       },
       "immediate_parent_element_id": "element.section.0005",
       "ancestor_element_ids": [
@@ -10997,12 +10952,12 @@
       }
     },
     {
-      "source_node_id": "jsx.00691",
+      "source_node_id": "jsx.00688",
       "reading_unit_id": "reading-unit.0288",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 16581,
-        "end": 16704
+        "start": 16660,
+        "end": 16776
       },
       "immediate_parent_element_id": "element.section.0005",
       "ancestor_element_ids": [
@@ -11029,12 +10984,12 @@
       }
     },
     {
-      "source_node_id": "jsx.00693",
+      "source_node_id": "jsx.00690",
       "reading_unit_id": "reading-unit.0289",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 16710,
-        "end": 16826
+        "start": 16782,
+        "end": 16900
       },
       "immediate_parent_element_id": "element.section.0005",
       "ancestor_element_ids": [
@@ -11061,12 +11016,44 @@
       }
     },
     {
-      "source_node_id": "jsx.00695",
+      "source_node_id": "jsx.00692",
       "reading_unit_id": "reading-unit.0290",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 16832,
-        "end": 16950
+        "start": 16906,
+        "end": 17021
+      },
+      "immediate_parent_element_id": "element.section.0005",
+      "ancestor_element_ids": [
+        "element.main.0001",
+        "element.article.0001",
+        "element.section.0005"
+      ],
+      "ancestor_tags": [
+        "main",
+        "article",
+        "section"
+      ],
+      "context_flags": {
+        "whitespace_only": false,
+        "inside_section": true,
+        "inside_h1": false,
+        "inside_h2": false,
+        "inside_h3": false,
+        "inside_small": false
+      },
+      "corpus_inclusion": {
+        "status": "undecided",
+        "authority": "requires_user_decision"
+      }
+    },
+    {
+      "source_node_id": "jsx.00694",
+      "reading_unit_id": "reading-unit.0291",
+      "projection_location": "reading_unit",
+      "source_code_unit_range": {
+        "start": 17027,
+        "end": 17146
       },
       "immediate_parent_element_id": "element.section.0005",
       "ancestor_element_ids": [
@@ -11094,11 +11081,11 @@
     },
     {
       "source_node_id": "jsx.00697",
-      "reading_unit_id": "reading-unit.0291",
+      "reading_unit_id": "reading-unit.0293",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 16956,
-        "end": 17071
+        "start": 17158,
+        "end": 17185
       },
       "immediate_parent_element_id": "element.section.0005",
       "ancestor_element_ids": [
@@ -11126,43 +11113,11 @@
     },
     {
       "source_node_id": "jsx.00699",
-      "reading_unit_id": "reading-unit.0292",
-      "projection_location": "reading_unit",
-      "source_code_unit_range": {
-        "start": 17077,
-        "end": 17196
-      },
-      "immediate_parent_element_id": "element.section.0005",
-      "ancestor_element_ids": [
-        "element.main.0001",
-        "element.article.0001",
-        "element.section.0005"
-      ],
-      "ancestor_tags": [
-        "main",
-        "article",
-        "section"
-      ],
-      "context_flags": {
-        "whitespace_only": false,
-        "inside_section": true,
-        "inside_h1": false,
-        "inside_h2": false,
-        "inside_h3": false,
-        "inside_small": false
-      },
-      "corpus_inclusion": {
-        "status": "undecided",
-        "authority": "requires_user_decision"
-      }
-    },
-    {
-      "source_node_id": "jsx.00702",
       "reading_unit_id": "reading-unit.0294",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 17208,
-        "end": 17235
+        "start": 17191,
+        "end": 17224
       },
       "immediate_parent_element_id": "element.section.0005",
       "ancestor_element_ids": [
@@ -11189,12 +11144,12 @@
       }
     },
     {
-      "source_node_id": "jsx.00704",
+      "source_node_id": "jsx.00701",
       "reading_unit_id": "reading-unit.0295",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 17241,
-        "end": 17274
+        "start": 17230,
+        "end": 17278
       },
       "immediate_parent_element_id": "element.section.0005",
       "ancestor_element_ids": [
@@ -11221,12 +11176,12 @@
       }
     },
     {
-      "source_node_id": "jsx.00706",
+      "source_node_id": "jsx.00703",
       "reading_unit_id": "reading-unit.0296",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 17280,
-        "end": 17328
+        "start": 17284,
+        "end": 17310
       },
       "immediate_parent_element_id": "element.section.0005",
       "ancestor_element_ids": [
@@ -11253,12 +11208,44 @@
       }
     },
     {
-      "source_node_id": "jsx.00708",
+      "source_node_id": "jsx.00705",
       "reading_unit_id": "reading-unit.0297",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 17334,
-        "end": 17360
+        "start": 17316,
+        "end": 17346
+      },
+      "immediate_parent_element_id": "element.section.0005",
+      "ancestor_element_ids": [
+        "element.main.0001",
+        "element.article.0001",
+        "element.section.0005"
+      ],
+      "ancestor_tags": [
+        "main",
+        "article",
+        "section"
+      ],
+      "context_flags": {
+        "whitespace_only": false,
+        "inside_section": true,
+        "inside_h1": false,
+        "inside_h2": false,
+        "inside_h3": false,
+        "inside_small": false
+      },
+      "corpus_inclusion": {
+        "status": "undecided",
+        "authority": "requires_user_decision"
+      }
+    },
+    {
+      "source_node_id": "jsx.00707",
+      "reading_unit_id": "reading-unit.0298",
+      "projection_location": "reading_unit",
+      "source_code_unit_range": {
+        "start": 17352,
+        "end": 17392
       },
       "immediate_parent_element_id": "element.section.0005",
       "ancestor_element_ids": [
@@ -11286,11 +11273,11 @@
     },
     {
       "source_node_id": "jsx.00710",
-      "reading_unit_id": "reading-unit.0298",
+      "reading_unit_id": "reading-unit.0300",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 17366,
-        "end": 17396
+        "start": 17404,
+        "end": 17454
       },
       "immediate_parent_element_id": "element.section.0005",
       "ancestor_element_ids": [
@@ -11318,43 +11305,11 @@
     },
     {
       "source_node_id": "jsx.00712",
-      "reading_unit_id": "reading-unit.0299",
-      "projection_location": "reading_unit",
-      "source_code_unit_range": {
-        "start": 17402,
-        "end": 17442
-      },
-      "immediate_parent_element_id": "element.section.0005",
-      "ancestor_element_ids": [
-        "element.main.0001",
-        "element.article.0001",
-        "element.section.0005"
-      ],
-      "ancestor_tags": [
-        "main",
-        "article",
-        "section"
-      ],
-      "context_flags": {
-        "whitespace_only": false,
-        "inside_section": true,
-        "inside_h1": false,
-        "inside_h2": false,
-        "inside_h3": false,
-        "inside_small": false
-      },
-      "corpus_inclusion": {
-        "status": "undecided",
-        "authority": "requires_user_decision"
-      }
-    },
-    {
-      "source_node_id": "jsx.00715",
       "reading_unit_id": "reading-unit.0301",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 17454,
-        "end": 17504
+        "start": 17460,
+        "end": 17492
       },
       "immediate_parent_element_id": "element.section.0005",
       "ancestor_element_ids": [
@@ -11381,12 +11336,12 @@
       }
     },
     {
-      "source_node_id": "jsx.00717",
+      "source_node_id": "jsx.00714",
       "reading_unit_id": "reading-unit.0302",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 17510,
-        "end": 17542
+        "start": 17498,
+        "end": 17529
       },
       "immediate_parent_element_id": "element.section.0005",
       "ancestor_element_ids": [
@@ -11413,12 +11368,44 @@
       }
     },
     {
-      "source_node_id": "jsx.00719",
+      "source_node_id": "jsx.00716",
       "reading_unit_id": "reading-unit.0303",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 17548,
-        "end": 17579
+        "start": 17535,
+        "end": 17581
+      },
+      "immediate_parent_element_id": "element.section.0005",
+      "ancestor_element_ids": [
+        "element.main.0001",
+        "element.article.0001",
+        "element.section.0005"
+      ],
+      "ancestor_tags": [
+        "main",
+        "article",
+        "section"
+      ],
+      "context_flags": {
+        "whitespace_only": false,
+        "inside_section": true,
+        "inside_h1": false,
+        "inside_h2": false,
+        "inside_h3": false,
+        "inside_small": false
+      },
+      "corpus_inclusion": {
+        "status": "undecided",
+        "authority": "requires_user_decision"
+      }
+    },
+    {
+      "source_node_id": "jsx.00718",
+      "reading_unit_id": "reading-unit.0304",
+      "projection_location": "reading_unit",
+      "source_code_unit_range": {
+        "start": 17587,
+        "end": 17662
       },
       "immediate_parent_element_id": "element.section.0005",
       "ancestor_element_ids": [
@@ -11446,75 +11433,11 @@
     },
     {
       "source_node_id": "jsx.00721",
-      "reading_unit_id": "reading-unit.0304",
+      "reading_unit_id": "reading-unit.0306",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 17585,
-        "end": 17631
-      },
-      "immediate_parent_element_id": "element.section.0005",
-      "ancestor_element_ids": [
-        "element.main.0001",
-        "element.article.0001",
-        "element.section.0005"
-      ],
-      "ancestor_tags": [
-        "main",
-        "article",
-        "section"
-      ],
-      "context_flags": {
-        "whitespace_only": false,
-        "inside_section": true,
-        "inside_h1": false,
-        "inside_h2": false,
-        "inside_h3": false,
-        "inside_small": false
-      },
-      "corpus_inclusion": {
-        "status": "undecided",
-        "authority": "requires_user_decision"
-      }
-    },
-    {
-      "source_node_id": "jsx.00723",
-      "reading_unit_id": "reading-unit.0305",
-      "projection_location": "reading_unit",
-      "source_code_unit_range": {
-        "start": 17637,
-        "end": 17712
-      },
-      "immediate_parent_element_id": "element.section.0005",
-      "ancestor_element_ids": [
-        "element.main.0001",
-        "element.article.0001",
-        "element.section.0005"
-      ],
-      "ancestor_tags": [
-        "main",
-        "article",
-        "section"
-      ],
-      "context_flags": {
-        "whitespace_only": false,
-        "inside_section": true,
-        "inside_h1": false,
-        "inside_h2": false,
-        "inside_h3": false,
-        "inside_small": false
-      },
-      "corpus_inclusion": {
-        "status": "undecided",
-        "authority": "requires_user_decision"
-      }
-    },
-    {
-      "source_node_id": "jsx.00726",
-      "reading_unit_id": "reading-unit.0307",
-      "projection_location": "reading_unit",
-      "source_code_unit_range": {
-        "start": 17724,
-        "end": 17733
+        "start": 17674,
+        "end": 17683
       },
       "immediate_parent_element_id": "element.section.0005",
       "ancestor_element_ids": [
@@ -11541,12 +11464,12 @@
       }
     },
     {
-      "source_node_id": "jsx.00728",
-      "reading_unit_id": "reading-unit.0307",
+      "source_node_id": "jsx.00723",
+      "reading_unit_id": "reading-unit.0306",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 17743,
-        "end": 17752
+        "start": 17693,
+        "end": 17702
       },
       "immediate_parent_element_id": "element.article.0001",
       "ancestor_element_ids": [
@@ -11571,12 +11494,12 @@
       }
     },
     {
-      "source_node_id": "jsx.00730",
-      "reading_unit_id": "reading-unit.0307",
+      "source_node_id": "jsx.00725",
+      "reading_unit_id": "reading-unit.0306",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 17761,
-        "end": 17772
+        "start": 17711,
+        "end": 17722
       },
       "immediate_parent_element_id": "element.section.0006",
       "ancestor_element_ids": [
@@ -11603,12 +11526,12 @@
       }
     },
     {
-      "source_node_id": "jsx.00732",
-      "reading_unit_id": "reading-unit.0307",
+      "source_node_id": "jsx.00727",
+      "reading_unit_id": "reading-unit.0306",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 17776,
-        "end": 17781
+        "start": 17726,
+        "end": 17731
       },
       "immediate_parent_element_id": "element.h2.0006",
       "ancestor_element_ids": [
@@ -11637,13 +11560,111 @@
       }
     },
     {
-      "source_node_id": "jsx.00734",
+      "source_node_id": "jsx.00729",
+      "reading_unit_id": "reading-unit.0306",
+      "projection_location": "reading_unit",
+      "source_code_unit_range": {
+        "start": 17736,
+        "end": 17780
+      },
+      "immediate_parent_element_id": "element.section.0006",
+      "ancestor_element_ids": [
+        "element.main.0001",
+        "element.article.0001",
+        "element.section.0006"
+      ],
+      "ancestor_tags": [
+        "main",
+        "article",
+        "section"
+      ],
+      "context_flags": {
+        "whitespace_only": false,
+        "inside_section": true,
+        "inside_h1": false,
+        "inside_h2": false,
+        "inside_h3": false,
+        "inside_small": false
+      },
+      "corpus_inclusion": {
+        "status": "undecided",
+        "authority": "requires_user_decision"
+      }
+    },
+    {
+      "source_node_id": "jsx.00731",
       "reading_unit_id": "reading-unit.0307",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
         "start": 17786,
+        "end": 17820
+      },
+      "immediate_parent_element_id": "element.section.0006",
+      "ancestor_element_ids": [
+        "element.main.0001",
+        "element.article.0001",
+        "element.section.0006"
+      ],
+      "ancestor_tags": [
+        "main",
+        "article",
+        "section"
+      ],
+      "context_flags": {
+        "whitespace_only": false,
+        "inside_section": true,
+        "inside_h1": false,
+        "inside_h2": false,
+        "inside_h3": false,
+        "inside_small": false
+      },
+      "corpus_inclusion": {
+        "status": "undecided",
+        "authority": "requires_user_decision"
+      }
+    },
+    {
+      "source_node_id": "jsx.00733",
+      "reading_unit_id": "reading-unit.0307",
+      "projection_location": "reading_unit",
+      "source_code_unit_range": {
+        "start": 17827,
         "end": 17830
       },
+      "immediate_parent_element_id": "element.small.0006",
+      "ancestor_element_ids": [
+        "element.main.0001",
+        "element.article.0001",
+        "element.section.0006",
+        "element.small.0006"
+      ],
+      "ancestor_tags": [
+        "main",
+        "article",
+        "section",
+        "small"
+      ],
+      "context_flags": {
+        "whitespace_only": false,
+        "inside_section": true,
+        "inside_h1": false,
+        "inside_h2": false,
+        "inside_h3": false,
+        "inside_small": true
+      },
+      "corpus_inclusion": {
+        "status": "undecided",
+        "authority": "requires_user_decision"
+      }
+    },
+    {
+      "source_node_id": "jsx.00735",
+      "reading_unit_id": "reading-unit.0307",
+      "projection_location": "reading_unit",
+      "source_code_unit_range": {
+        "start": 17838,
+        "end": 17865
+      },
       "immediate_parent_element_id": "element.section.0006",
       "ancestor_element_ids": [
         "element.main.0001",
@@ -11669,12 +11690,12 @@
       }
     },
     {
-      "source_node_id": "jsx.00736",
+      "source_node_id": "jsx.00737",
       "reading_unit_id": "reading-unit.0308",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 17836,
-        "end": 17870
+        "start": 17871,
+        "end": 17922
       },
       "immediate_parent_element_id": "element.section.0006",
       "ancestor_element_ids": [
@@ -11701,12 +11722,140 @@
       }
     },
     {
-      "source_node_id": "jsx.00738",
-      "reading_unit_id": "reading-unit.0308",
+      "source_node_id": "jsx.00739",
+      "reading_unit_id": "reading-unit.0309",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 17877,
-        "end": 17880
+        "start": 17928,
+        "end": 17957
+      },
+      "immediate_parent_element_id": "element.section.0006",
+      "ancestor_element_ids": [
+        "element.main.0001",
+        "element.article.0001",
+        "element.section.0006"
+      ],
+      "ancestor_tags": [
+        "main",
+        "article",
+        "section"
+      ],
+      "context_flags": {
+        "whitespace_only": false,
+        "inside_section": true,
+        "inside_h1": false,
+        "inside_h2": false,
+        "inside_h3": false,
+        "inside_small": false
+      },
+      "corpus_inclusion": {
+        "status": "undecided",
+        "authority": "requires_user_decision"
+      }
+    },
+    {
+      "source_node_id": "jsx.00741",
+      "reading_unit_id": "reading-unit.0310",
+      "projection_location": "reading_unit",
+      "source_code_unit_range": {
+        "start": 17963,
+        "end": 17990
+      },
+      "immediate_parent_element_id": "element.section.0006",
+      "ancestor_element_ids": [
+        "element.main.0001",
+        "element.article.0001",
+        "element.section.0006"
+      ],
+      "ancestor_tags": [
+        "main",
+        "article",
+        "section"
+      ],
+      "context_flags": {
+        "whitespace_only": false,
+        "inside_section": true,
+        "inside_h1": false,
+        "inside_h2": false,
+        "inside_h3": false,
+        "inside_small": false
+      },
+      "corpus_inclusion": {
+        "status": "undecided",
+        "authority": "requires_user_decision"
+      }
+    },
+    {
+      "source_node_id": "jsx.00743",
+      "reading_unit_id": "reading-unit.0311",
+      "projection_location": "reading_unit",
+      "source_code_unit_range": {
+        "start": 17996,
+        "end": 18027
+      },
+      "immediate_parent_element_id": "element.section.0006",
+      "ancestor_element_ids": [
+        "element.main.0001",
+        "element.article.0001",
+        "element.section.0006"
+      ],
+      "ancestor_tags": [
+        "main",
+        "article",
+        "section"
+      ],
+      "context_flags": {
+        "whitespace_only": false,
+        "inside_section": true,
+        "inside_h1": false,
+        "inside_h2": false,
+        "inside_h3": false,
+        "inside_small": false
+      },
+      "corpus_inclusion": {
+        "status": "undecided",
+        "authority": "requires_user_decision"
+      }
+    },
+    {
+      "source_node_id": "jsx.00745",
+      "reading_unit_id": "reading-unit.0312",
+      "projection_location": "reading_unit",
+      "source_code_unit_range": {
+        "start": 18033,
+        "end": 18064
+      },
+      "immediate_parent_element_id": "element.section.0006",
+      "ancestor_element_ids": [
+        "element.main.0001",
+        "element.article.0001",
+        "element.section.0006"
+      ],
+      "ancestor_tags": [
+        "main",
+        "article",
+        "section"
+      ],
+      "context_flags": {
+        "whitespace_only": false,
+        "inside_section": true,
+        "inside_h1": false,
+        "inside_h2": false,
+        "inside_h3": false,
+        "inside_small": false
+      },
+      "corpus_inclusion": {
+        "status": "undecided",
+        "authority": "requires_user_decision"
+      }
+    },
+    {
+      "source_node_id": "jsx.00747",
+      "reading_unit_id": "reading-unit.0312",
+      "projection_location": "reading_unit",
+      "source_code_unit_range": {
+        "start": 18071,
+        "end": 18074
       },
       "immediate_parent_element_id": "element.small.0007",
       "ancestor_element_ids": [
@@ -11735,140 +11884,12 @@
       }
     },
     {
-      "source_node_id": "jsx.00740",
-      "reading_unit_id": "reading-unit.0308",
-      "projection_location": "reading_unit",
-      "source_code_unit_range": {
-        "start": 17888,
-        "end": 17915
-      },
-      "immediate_parent_element_id": "element.section.0006",
-      "ancestor_element_ids": [
-        "element.main.0001",
-        "element.article.0001",
-        "element.section.0006"
-      ],
-      "ancestor_tags": [
-        "main",
-        "article",
-        "section"
-      ],
-      "context_flags": {
-        "whitespace_only": false,
-        "inside_section": true,
-        "inside_h1": false,
-        "inside_h2": false,
-        "inside_h3": false,
-        "inside_small": false
-      },
-      "corpus_inclusion": {
-        "status": "undecided",
-        "authority": "requires_user_decision"
-      }
-    },
-    {
-      "source_node_id": "jsx.00742",
-      "reading_unit_id": "reading-unit.0309",
-      "projection_location": "reading_unit",
-      "source_code_unit_range": {
-        "start": 17921,
-        "end": 17972
-      },
-      "immediate_parent_element_id": "element.section.0006",
-      "ancestor_element_ids": [
-        "element.main.0001",
-        "element.article.0001",
-        "element.section.0006"
-      ],
-      "ancestor_tags": [
-        "main",
-        "article",
-        "section"
-      ],
-      "context_flags": {
-        "whitespace_only": false,
-        "inside_section": true,
-        "inside_h1": false,
-        "inside_h2": false,
-        "inside_h3": false,
-        "inside_small": false
-      },
-      "corpus_inclusion": {
-        "status": "undecided",
-        "authority": "requires_user_decision"
-      }
-    },
-    {
-      "source_node_id": "jsx.00744",
-      "reading_unit_id": "reading-unit.0310",
-      "projection_location": "reading_unit",
-      "source_code_unit_range": {
-        "start": 17978,
-        "end": 18007
-      },
-      "immediate_parent_element_id": "element.section.0006",
-      "ancestor_element_ids": [
-        "element.main.0001",
-        "element.article.0001",
-        "element.section.0006"
-      ],
-      "ancestor_tags": [
-        "main",
-        "article",
-        "section"
-      ],
-      "context_flags": {
-        "whitespace_only": false,
-        "inside_section": true,
-        "inside_h1": false,
-        "inside_h2": false,
-        "inside_h3": false,
-        "inside_small": false
-      },
-      "corpus_inclusion": {
-        "status": "undecided",
-        "authority": "requires_user_decision"
-      }
-    },
-    {
-      "source_node_id": "jsx.00746",
-      "reading_unit_id": "reading-unit.0311",
-      "projection_location": "reading_unit",
-      "source_code_unit_range": {
-        "start": 18013,
-        "end": 18040
-      },
-      "immediate_parent_element_id": "element.section.0006",
-      "ancestor_element_ids": [
-        "element.main.0001",
-        "element.article.0001",
-        "element.section.0006"
-      ],
-      "ancestor_tags": [
-        "main",
-        "article",
-        "section"
-      ],
-      "context_flags": {
-        "whitespace_only": false,
-        "inside_section": true,
-        "inside_h1": false,
-        "inside_h2": false,
-        "inside_h3": false,
-        "inside_small": false
-      },
-      "corpus_inclusion": {
-        "status": "undecided",
-        "authority": "requires_user_decision"
-      }
-    },
-    {
-      "source_node_id": "jsx.00748",
+      "source_node_id": "jsx.00749",
       "reading_unit_id": "reading-unit.0312",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 18046,
-        "end": 18077
+        "start": 18082,
+        "end": 18115
       },
       "immediate_parent_element_id": "element.section.0006",
       "ancestor_element_ids": [
@@ -11895,78 +11916,12 @@
       }
     },
     {
-      "source_node_id": "jsx.00750",
-      "reading_unit_id": "reading-unit.0313",
-      "projection_location": "reading_unit",
-      "source_code_unit_range": {
-        "start": 18083,
-        "end": 18114
-      },
-      "immediate_parent_element_id": "element.section.0006",
-      "ancestor_element_ids": [
-        "element.main.0001",
-        "element.article.0001",
-        "element.section.0006"
-      ],
-      "ancestor_tags": [
-        "main",
-        "article",
-        "section"
-      ],
-      "context_flags": {
-        "whitespace_only": false,
-        "inside_section": true,
-        "inside_h1": false,
-        "inside_h2": false,
-        "inside_h3": false,
-        "inside_small": false
-      },
-      "corpus_inclusion": {
-        "status": "undecided",
-        "authority": "requires_user_decision"
-      }
-    },
-    {
-      "source_node_id": "jsx.00752",
+      "source_node_id": "jsx.00751",
       "reading_unit_id": "reading-unit.0313",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
         "start": 18121,
-        "end": 18124
-      },
-      "immediate_parent_element_id": "element.small.0008",
-      "ancestor_element_ids": [
-        "element.main.0001",
-        "element.article.0001",
-        "element.section.0006",
-        "element.small.0008"
-      ],
-      "ancestor_tags": [
-        "main",
-        "article",
-        "section",
-        "small"
-      ],
-      "context_flags": {
-        "whitespace_only": false,
-        "inside_section": true,
-        "inside_h1": false,
-        "inside_h2": false,
-        "inside_h3": false,
-        "inside_small": true
-      },
-      "corpus_inclusion": {
-        "status": "undecided",
-        "authority": "requires_user_decision"
-      }
-    },
-    {
-      "source_node_id": "jsx.00754",
-      "reading_unit_id": "reading-unit.0313",
-      "projection_location": "reading_unit",
-      "source_code_unit_range": {
-        "start": 18132,
-        "end": 18165
+        "end": 18170
       },
       "immediate_parent_element_id": "element.section.0006",
       "ancestor_element_ids": [
@@ -11993,12 +11948,12 @@
       }
     },
     {
-      "source_node_id": "jsx.00756",
+      "source_node_id": "jsx.00753",
       "reading_unit_id": "reading-unit.0314",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 18171,
-        "end": 18220
+        "start": 18176,
+        "end": 18217
       },
       "immediate_parent_element_id": "element.section.0006",
       "ancestor_element_ids": [
@@ -12025,12 +11980,12 @@
       }
     },
     {
-      "source_node_id": "jsx.00758",
+      "source_node_id": "jsx.00755",
       "reading_unit_id": "reading-unit.0315",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 18226,
-        "end": 18267
+        "start": 18223,
+        "end": 18300
       },
       "immediate_parent_element_id": "element.section.0006",
       "ancestor_element_ids": [
@@ -12057,12 +12012,12 @@
       }
     },
     {
-      "source_node_id": "jsx.00760",
+      "source_node_id": "jsx.00757",
       "reading_unit_id": "reading-unit.0316",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 18273,
-        "end": 18350
+        "start": 18306,
+        "end": 18334
       },
       "immediate_parent_element_id": "element.section.0006",
       "ancestor_element_ids": [
@@ -12089,12 +12044,12 @@
       }
     },
     {
-      "source_node_id": "jsx.00762",
+      "source_node_id": "jsx.00759",
       "reading_unit_id": "reading-unit.0317",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 18356,
-        "end": 18384
+        "start": 18340,
+        "end": 18379
       },
       "immediate_parent_element_id": "element.section.0006",
       "ancestor_element_ids": [
@@ -12121,12 +12076,12 @@
       }
     },
     {
-      "source_node_id": "jsx.00764",
+      "source_node_id": "jsx.00761",
       "reading_unit_id": "reading-unit.0318",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 18390,
-        "end": 18429
+        "start": 18385,
+        "end": 18410
       },
       "immediate_parent_element_id": "element.section.0006",
       "ancestor_element_ids": [
@@ -12153,12 +12108,12 @@
       }
     },
     {
-      "source_node_id": "jsx.00766",
+      "source_node_id": "jsx.00763",
       "reading_unit_id": "reading-unit.0319",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 18435,
-        "end": 18460
+        "start": 18416,
+        "end": 18443
       },
       "immediate_parent_element_id": "element.section.0006",
       "ancestor_element_ids": [
@@ -12185,11 +12140,11 @@
       }
     },
     {
-      "source_node_id": "jsx.00768",
+      "source_node_id": "jsx.00765",
       "reading_unit_id": "reading-unit.0320",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 18466,
+        "start": 18449,
         "end": 18493
       },
       "immediate_parent_element_id": "element.section.0006",
@@ -12217,12 +12172,12 @@
       }
     },
     {
-      "source_node_id": "jsx.00770",
-      "reading_unit_id": "reading-unit.0321",
+      "source_node_id": "jsx.00768",
+      "reading_unit_id": "reading-unit.0322",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 18499,
-        "end": 18543
+        "start": 18505,
+        "end": 18533
       },
       "immediate_parent_element_id": "element.section.0006",
       "ancestor_element_ids": [
@@ -12249,12 +12204,12 @@
       }
     },
     {
-      "source_node_id": "jsx.00773",
+      "source_node_id": "jsx.00770",
       "reading_unit_id": "reading-unit.0323",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 18555,
-        "end": 18583
+        "start": 18539,
+        "end": 18573
       },
       "immediate_parent_element_id": "element.section.0006",
       "ancestor_element_ids": [
@@ -12281,12 +12236,12 @@
       }
     },
     {
-      "source_node_id": "jsx.00775",
+      "source_node_id": "jsx.00772",
       "reading_unit_id": "reading-unit.0324",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 18589,
-        "end": 18623
+        "start": 18579,
+        "end": 18610
       },
       "immediate_parent_element_id": "element.section.0006",
       "ancestor_element_ids": [
@@ -12313,12 +12268,12 @@
       }
     },
     {
-      "source_node_id": "jsx.00777",
+      "source_node_id": "jsx.00774",
       "reading_unit_id": "reading-unit.0325",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 18629,
-        "end": 18660
+        "start": 18616,
+        "end": 18650
       },
       "immediate_parent_element_id": "element.section.0006",
       "ancestor_element_ids": [
@@ -12345,12 +12300,12 @@
       }
     },
     {
-      "source_node_id": "jsx.00779",
+      "source_node_id": "jsx.00776",
       "reading_unit_id": "reading-unit.0326",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 18666,
-        "end": 18700
+        "start": 18656,
+        "end": 18681
       },
       "immediate_parent_element_id": "element.section.0006",
       "ancestor_element_ids": [
@@ -12377,12 +12332,12 @@
       }
     },
     {
-      "source_node_id": "jsx.00781",
+      "source_node_id": "jsx.00778",
       "reading_unit_id": "reading-unit.0327",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 18706,
-        "end": 18731
+        "start": 18687,
+        "end": 18722
       },
       "immediate_parent_element_id": "element.section.0006",
       "ancestor_element_ids": [
@@ -12409,12 +12364,12 @@
       }
     },
     {
-      "source_node_id": "jsx.00783",
+      "source_node_id": "jsx.00780",
       "reading_unit_id": "reading-unit.0328",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 18737,
-        "end": 18772
+        "start": 18728,
+        "end": 18758
       },
       "immediate_parent_element_id": "element.section.0006",
       "ancestor_element_ids": [
@@ -12441,12 +12396,12 @@
       }
     },
     {
-      "source_node_id": "jsx.00785",
+      "source_node_id": "jsx.00782",
       "reading_unit_id": "reading-unit.0329",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 18778,
-        "end": 18808
+        "start": 18764,
+        "end": 18791
       },
       "immediate_parent_element_id": "element.section.0006",
       "ancestor_element_ids": [
@@ -12473,12 +12428,12 @@
       }
     },
     {
-      "source_node_id": "jsx.00787",
+      "source_node_id": "jsx.00784",
       "reading_unit_id": "reading-unit.0330",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 18814,
-        "end": 18841
+        "start": 18797,
+        "end": 18826
       },
       "immediate_parent_element_id": "element.section.0006",
       "ancestor_element_ids": [
@@ -12505,12 +12460,12 @@
       }
     },
     {
-      "source_node_id": "jsx.00789",
+      "source_node_id": "jsx.00786",
       "reading_unit_id": "reading-unit.0331",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 18847,
-        "end": 18876
+        "start": 18832,
+        "end": 18861
       },
       "immediate_parent_element_id": "element.section.0006",
       "ancestor_element_ids": [
@@ -12537,12 +12492,12 @@
       }
     },
     {
-      "source_node_id": "jsx.00791",
+      "source_node_id": "jsx.00788",
       "reading_unit_id": "reading-unit.0332",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 18882,
-        "end": 18911
+        "start": 18867,
+        "end": 18890
       },
       "immediate_parent_element_id": "element.section.0006",
       "ancestor_element_ids": [
@@ -12569,12 +12524,12 @@
       }
     },
     {
-      "source_node_id": "jsx.00793",
+      "source_node_id": "jsx.00790",
       "reading_unit_id": "reading-unit.0333",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 18917,
-        "end": 18940
+        "start": 18896,
+        "end": 18919
       },
       "immediate_parent_element_id": "element.section.0006",
       "ancestor_element_ids": [
@@ -12601,12 +12556,12 @@
       }
     },
     {
-      "source_node_id": "jsx.00795",
+      "source_node_id": "jsx.00792",
       "reading_unit_id": "reading-unit.0334",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 18946,
-        "end": 18969
+        "start": 18925,
+        "end": 18962
       },
       "immediate_parent_element_id": "element.section.0006",
       "ancestor_element_ids": [
@@ -12633,12 +12588,12 @@
       }
     },
     {
-      "source_node_id": "jsx.00797",
+      "source_node_id": "jsx.00794",
       "reading_unit_id": "reading-unit.0335",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 18975,
-        "end": 19012
+        "start": 18968,
+        "end": 19008
       },
       "immediate_parent_element_id": "element.section.0006",
       "ancestor_element_ids": [
@@ -12665,12 +12620,12 @@
       }
     },
     {
-      "source_node_id": "jsx.00799",
+      "source_node_id": "jsx.00796",
       "reading_unit_id": "reading-unit.0336",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 19018,
-        "end": 19058
+        "start": 19014,
+        "end": 19051
       },
       "immediate_parent_element_id": "element.section.0006",
       "ancestor_element_ids": [
@@ -12697,12 +12652,12 @@
       }
     },
     {
-      "source_node_id": "jsx.00801",
+      "source_node_id": "jsx.00798",
       "reading_unit_id": "reading-unit.0337",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 19064,
-        "end": 19101
+        "start": 19057,
+        "end": 19095
       },
       "immediate_parent_element_id": "element.section.0006",
       "ancestor_element_ids": [
@@ -12729,12 +12684,12 @@
       }
     },
     {
-      "source_node_id": "jsx.00803",
+      "source_node_id": "jsx.00800",
       "reading_unit_id": "reading-unit.0338",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 19107,
-        "end": 19145
+        "start": 19101,
+        "end": 19149
       },
       "immediate_parent_element_id": "element.section.0006",
       "ancestor_element_ids": [
@@ -12761,12 +12716,12 @@
       }
     },
     {
-      "source_node_id": "jsx.00805",
+      "source_node_id": "jsx.00802",
       "reading_unit_id": "reading-unit.0339",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 19151,
-        "end": 19199
+        "start": 19155,
+        "end": 19178
       },
       "immediate_parent_element_id": "element.section.0006",
       "ancestor_element_ids": [
@@ -12793,12 +12748,12 @@
       }
     },
     {
-      "source_node_id": "jsx.00807",
+      "source_node_id": "jsx.00804",
       "reading_unit_id": "reading-unit.0340",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 19205,
-        "end": 19228
+        "start": 19184,
+        "end": 19219
       },
       "immediate_parent_element_id": "element.section.0006",
       "ancestor_element_ids": [
@@ -12825,12 +12780,12 @@
       }
     },
     {
-      "source_node_id": "jsx.00809",
+      "source_node_id": "jsx.00806",
       "reading_unit_id": "reading-unit.0341",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 19234,
-        "end": 19269
+        "start": 19225,
+        "end": 19264
       },
       "immediate_parent_element_id": "element.section.0006",
       "ancestor_element_ids": [
@@ -12857,12 +12812,12 @@
       }
     },
     {
-      "source_node_id": "jsx.00811",
+      "source_node_id": "jsx.00808",
       "reading_unit_id": "reading-unit.0342",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 19275,
-        "end": 19314
+        "start": 19270,
+        "end": 19317
       },
       "immediate_parent_element_id": "element.section.0006",
       "ancestor_element_ids": [
@@ -12889,12 +12844,12 @@
       }
     },
     {
-      "source_node_id": "jsx.00813",
+      "source_node_id": "jsx.00810",
       "reading_unit_id": "reading-unit.0343",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 19320,
-        "end": 19367
+        "start": 19323,
+        "end": 19353
       },
       "immediate_parent_element_id": "element.section.0006",
       "ancestor_element_ids": [
@@ -12921,12 +12876,12 @@
       }
     },
     {
-      "source_node_id": "jsx.00815",
+      "source_node_id": "jsx.00812",
       "reading_unit_id": "reading-unit.0344",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 19373,
-        "end": 19403
+        "start": 19359,
+        "end": 19390
       },
       "immediate_parent_element_id": "element.section.0006",
       "ancestor_element_ids": [
@@ -12953,12 +12908,12 @@
       }
     },
     {
-      "source_node_id": "jsx.00817",
+      "source_node_id": "jsx.00814",
       "reading_unit_id": "reading-unit.0345",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 19409,
-        "end": 19440
+        "start": 19396,
+        "end": 19426
       },
       "immediate_parent_element_id": "element.section.0006",
       "ancestor_element_ids": [
@@ -12985,12 +12940,12 @@
       }
     },
     {
-      "source_node_id": "jsx.00819",
+      "source_node_id": "jsx.00816",
       "reading_unit_id": "reading-unit.0346",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 19446,
-        "end": 19476
+        "start": 19432,
+        "end": 19463
       },
       "immediate_parent_element_id": "element.section.0006",
       "ancestor_element_ids": [
@@ -13017,12 +12972,12 @@
       }
     },
     {
-      "source_node_id": "jsx.00821",
+      "source_node_id": "jsx.00818",
       "reading_unit_id": "reading-unit.0347",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 19482,
-        "end": 19513
+        "start": 19469,
+        "end": 19499
       },
       "immediate_parent_element_id": "element.section.0006",
       "ancestor_element_ids": [
@@ -13049,12 +13004,12 @@
       }
     },
     {
-      "source_node_id": "jsx.00823",
+      "source_node_id": "jsx.00820",
       "reading_unit_id": "reading-unit.0348",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 19519,
-        "end": 19549
+        "start": 19505,
+        "end": 19546
       },
       "immediate_parent_element_id": "element.section.0006",
       "ancestor_element_ids": [
@@ -13081,12 +13036,12 @@
       }
     },
     {
-      "source_node_id": "jsx.00825",
+      "source_node_id": "jsx.00822",
       "reading_unit_id": "reading-unit.0349",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 19555,
-        "end": 19596
+        "start": 19552,
+        "end": 19583
       },
       "immediate_parent_element_id": "element.section.0006",
       "ancestor_element_ids": [
@@ -13113,12 +13068,12 @@
       }
     },
     {
-      "source_node_id": "jsx.00827",
+      "source_node_id": "jsx.00824",
       "reading_unit_id": "reading-unit.0350",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 19602,
-        "end": 19633
+        "start": 19589,
+        "end": 19632
       },
       "immediate_parent_element_id": "element.section.0006",
       "ancestor_element_ids": [
@@ -13145,12 +13100,12 @@
       }
     },
     {
-      "source_node_id": "jsx.00829",
+      "source_node_id": "jsx.00826",
       "reading_unit_id": "reading-unit.0351",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 19639,
-        "end": 19682
+        "start": 19638,
+        "end": 19688
       },
       "immediate_parent_element_id": "element.section.0006",
       "ancestor_element_ids": [
@@ -13177,12 +13132,12 @@
       }
     },
     {
-      "source_node_id": "jsx.00831",
+      "source_node_id": "jsx.00828",
       "reading_unit_id": "reading-unit.0352",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 19688,
-        "end": 19738
+        "start": 19694,
+        "end": 19732
       },
       "immediate_parent_element_id": "element.section.0006",
       "ancestor_element_ids": [
@@ -13209,12 +13164,12 @@
       }
     },
     {
-      "source_node_id": "jsx.00833",
+      "source_node_id": "jsx.00830",
       "reading_unit_id": "reading-unit.0353",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 19744,
-        "end": 19782
+        "start": 19738,
+        "end": 19779
       },
       "immediate_parent_element_id": "element.section.0006",
       "ancestor_element_ids": [
@@ -13241,12 +13196,44 @@
       }
     },
     {
-      "source_node_id": "jsx.00835",
+      "source_node_id": "jsx.00832",
       "reading_unit_id": "reading-unit.0354",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 19788,
-        "end": 19829
+        "start": 19785,
+        "end": 19831
+      },
+      "immediate_parent_element_id": "element.section.0006",
+      "ancestor_element_ids": [
+        "element.main.0001",
+        "element.article.0001",
+        "element.section.0006"
+      ],
+      "ancestor_tags": [
+        "main",
+        "article",
+        "section"
+      ],
+      "context_flags": {
+        "whitespace_only": false,
+        "inside_section": true,
+        "inside_h1": false,
+        "inside_h2": false,
+        "inside_h3": false,
+        "inside_small": false
+      },
+      "corpus_inclusion": {
+        "status": "undecided",
+        "authority": "requires_user_decision"
+      }
+    },
+    {
+      "source_node_id": "jsx.00834",
+      "reading_unit_id": "reading-unit.0355",
+      "projection_location": "reading_unit",
+      "source_code_unit_range": {
+        "start": 19837,
+        "end": 19877
       },
       "immediate_parent_element_id": "element.section.0006",
       "ancestor_element_ids": [
@@ -13274,11 +13261,11 @@
     },
     {
       "source_node_id": "jsx.00837",
-      "reading_unit_id": "reading-unit.0355",
+      "reading_unit_id": "reading-unit.0357",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 19835,
-        "end": 19881
+        "start": 19889,
+        "end": 19937
       },
       "immediate_parent_element_id": "element.section.0006",
       "ancestor_element_ids": [
@@ -13306,43 +13293,11 @@
     },
     {
       "source_node_id": "jsx.00839",
-      "reading_unit_id": "reading-unit.0356",
-      "projection_location": "reading_unit",
-      "source_code_unit_range": {
-        "start": 19887,
-        "end": 19927
-      },
-      "immediate_parent_element_id": "element.section.0006",
-      "ancestor_element_ids": [
-        "element.main.0001",
-        "element.article.0001",
-        "element.section.0006"
-      ],
-      "ancestor_tags": [
-        "main",
-        "article",
-        "section"
-      ],
-      "context_flags": {
-        "whitespace_only": false,
-        "inside_section": true,
-        "inside_h1": false,
-        "inside_h2": false,
-        "inside_h3": false,
-        "inside_small": false
-      },
-      "corpus_inclusion": {
-        "status": "undecided",
-        "authority": "requires_user_decision"
-      }
-    },
-    {
-      "source_node_id": "jsx.00842",
       "reading_unit_id": "reading-unit.0358",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 19939,
-        "end": 19987
+        "start": 19943,
+        "end": 19957
       },
       "immediate_parent_element_id": "element.section.0006",
       "ancestor_element_ids": [
@@ -13369,12 +13324,12 @@
       }
     },
     {
-      "source_node_id": "jsx.00844",
+      "source_node_id": "jsx.00841",
       "reading_unit_id": "reading-unit.0359",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 19993,
-        "end": 20007
+        "start": 19963,
+        "end": 19991
       },
       "immediate_parent_element_id": "element.section.0006",
       "ancestor_element_ids": [
@@ -13401,12 +13356,12 @@
       }
     },
     {
-      "source_node_id": "jsx.00846",
+      "source_node_id": "jsx.00843",
       "reading_unit_id": "reading-unit.0360",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 20013,
-        "end": 20041
+        "start": 19997,
+        "end": 20024
       },
       "immediate_parent_element_id": "element.section.0006",
       "ancestor_element_ids": [
@@ -13433,12 +13388,12 @@
       }
     },
     {
-      "source_node_id": "jsx.00848",
+      "source_node_id": "jsx.00845",
       "reading_unit_id": "reading-unit.0361",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 20047,
-        "end": 20074
+        "start": 20030,
+        "end": 20056
       },
       "immediate_parent_element_id": "element.section.0006",
       "ancestor_element_ids": [
@@ -13465,12 +13420,12 @@
       }
     },
     {
-      "source_node_id": "jsx.00850",
+      "source_node_id": "jsx.00847",
       "reading_unit_id": "reading-unit.0362",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 20080,
-        "end": 20106
+        "start": 20062,
+        "end": 20086
       },
       "immediate_parent_element_id": "element.section.0006",
       "ancestor_element_ids": [
@@ -13497,12 +13452,12 @@
       }
     },
     {
-      "source_node_id": "jsx.00852",
+      "source_node_id": "jsx.00849",
       "reading_unit_id": "reading-unit.0363",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 20112,
-        "end": 20136
+        "start": 20092,
+        "end": 20121
       },
       "immediate_parent_element_id": "element.section.0006",
       "ancestor_element_ids": [
@@ -13529,12 +13484,12 @@
       }
     },
     {
-      "source_node_id": "jsx.00854",
+      "source_node_id": "jsx.00851",
       "reading_unit_id": "reading-unit.0364",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 20142,
-        "end": 20171
+        "start": 20127,
+        "end": 20156
       },
       "immediate_parent_element_id": "element.section.0006",
       "ancestor_element_ids": [
@@ -13561,11 +13516,43 @@
       }
     },
     {
-      "source_node_id": "jsx.00856",
+      "source_node_id": "jsx.00853",
       "reading_unit_id": "reading-unit.0365",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 20177,
+        "start": 20162,
+        "end": 20186
+      },
+      "immediate_parent_element_id": "element.section.0006",
+      "ancestor_element_ids": [
+        "element.main.0001",
+        "element.article.0001",
+        "element.section.0006"
+      ],
+      "ancestor_tags": [
+        "main",
+        "article",
+        "section"
+      ],
+      "context_flags": {
+        "whitespace_only": false,
+        "inside_section": true,
+        "inside_h1": false,
+        "inside_h2": false,
+        "inside_h3": false,
+        "inside_small": false
+      },
+      "corpus_inclusion": {
+        "status": "undecided",
+        "authority": "requires_user_decision"
+      }
+    },
+    {
+      "source_node_id": "jsx.00855",
+      "reading_unit_id": "reading-unit.0366",
+      "projection_location": "reading_unit",
+      "source_code_unit_range": {
+        "start": 20192,
         "end": 20206
       },
       "immediate_parent_element_id": "element.section.0006",
@@ -13593,44 +13580,12 @@
       }
     },
     {
-      "source_node_id": "jsx.00858",
-      "reading_unit_id": "reading-unit.0366",
-      "projection_location": "reading_unit",
-      "source_code_unit_range": {
-        "start": 20212,
-        "end": 20236
-      },
-      "immediate_parent_element_id": "element.section.0006",
-      "ancestor_element_ids": [
-        "element.main.0001",
-        "element.article.0001",
-        "element.section.0006"
-      ],
-      "ancestor_tags": [
-        "main",
-        "article",
-        "section"
-      ],
-      "context_flags": {
-        "whitespace_only": false,
-        "inside_section": true,
-        "inside_h1": false,
-        "inside_h2": false,
-        "inside_h3": false,
-        "inside_small": false
-      },
-      "corpus_inclusion": {
-        "status": "undecided",
-        "authority": "requires_user_decision"
-      }
-    },
-    {
-      "source_node_id": "jsx.00860",
+      "source_node_id": "jsx.00857",
       "reading_unit_id": "reading-unit.0367",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 20242,
-        "end": 20256
+        "start": 20212,
+        "end": 20247
       },
       "immediate_parent_element_id": "element.section.0006",
       "ancestor_element_ids": [
@@ -13657,12 +13612,12 @@
       }
     },
     {
-      "source_node_id": "jsx.00862",
+      "source_node_id": "jsx.00859",
       "reading_unit_id": "reading-unit.0368",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 20262,
-        "end": 20297
+        "start": 20253,
+        "end": 20286
       },
       "immediate_parent_element_id": "element.section.0006",
       "ancestor_element_ids": [
@@ -13689,12 +13644,12 @@
       }
     },
     {
-      "source_node_id": "jsx.00864",
+      "source_node_id": "jsx.00861",
       "reading_unit_id": "reading-unit.0369",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 20303,
-        "end": 20336
+        "start": 20292,
+        "end": 20321
       },
       "immediate_parent_element_id": "element.section.0006",
       "ancestor_element_ids": [
@@ -13721,11 +13676,11 @@
       }
     },
     {
-      "source_node_id": "jsx.00866",
+      "source_node_id": "jsx.00863",
       "reading_unit_id": "reading-unit.0370",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 20342,
+        "start": 20327,
         "end": 20371
       },
       "immediate_parent_element_id": "element.section.0006",
@@ -13753,12 +13708,12 @@
       }
     },
     {
-      "source_node_id": "jsx.00868",
+      "source_node_id": "jsx.00865",
       "reading_unit_id": "reading-unit.0371",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
         "start": 20377,
-        "end": 20421
+        "end": 20403
       },
       "immediate_parent_element_id": "element.section.0006",
       "ancestor_element_ids": [
@@ -13785,12 +13740,12 @@
       }
     },
     {
-      "source_node_id": "jsx.00870",
+      "source_node_id": "jsx.00867",
       "reading_unit_id": "reading-unit.0372",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 20427,
-        "end": 20453
+        "start": 20409,
+        "end": 20448
       },
       "immediate_parent_element_id": "element.section.0006",
       "ancestor_element_ids": [
@@ -13817,12 +13772,12 @@
       }
     },
     {
-      "source_node_id": "jsx.00872",
+      "source_node_id": "jsx.00869",
       "reading_unit_id": "reading-unit.0373",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 20459,
-        "end": 20498
+        "start": 20454,
+        "end": 20486
       },
       "immediate_parent_element_id": "element.section.0006",
       "ancestor_element_ids": [
@@ -13849,11 +13804,11 @@
       }
     },
     {
-      "source_node_id": "jsx.00874",
+      "source_node_id": "jsx.00871",
       "reading_unit_id": "reading-unit.0374",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 20504,
+        "start": 20492,
         "end": 20536
       },
       "immediate_parent_element_id": "element.section.0006",
@@ -13881,12 +13836,12 @@
       }
     },
     {
-      "source_node_id": "jsx.00876",
+      "source_node_id": "jsx.00873",
       "reading_unit_id": "reading-unit.0375",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
         "start": 20542,
-        "end": 20586
+        "end": 20578
       },
       "immediate_parent_element_id": "element.section.0006",
       "ancestor_element_ids": [
@@ -13913,12 +13868,12 @@
       }
     },
     {
-      "source_node_id": "jsx.00878",
+      "source_node_id": "jsx.00875",
       "reading_unit_id": "reading-unit.0376",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 20592,
-        "end": 20628
+        "start": 20584,
+        "end": 20622
       },
       "immediate_parent_element_id": "element.section.0006",
       "ancestor_element_ids": [
@@ -13945,12 +13900,12 @@
       }
     },
     {
-      "source_node_id": "jsx.00880",
+      "source_node_id": "jsx.00877",
       "reading_unit_id": "reading-unit.0377",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 20634,
-        "end": 20672
+        "start": 20628,
+        "end": 20657
       },
       "immediate_parent_element_id": "element.section.0006",
       "ancestor_element_ids": [
@@ -13977,12 +13932,12 @@
       }
     },
     {
-      "source_node_id": "jsx.00882",
+      "source_node_id": "jsx.00879",
       "reading_unit_id": "reading-unit.0378",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 20678,
-        "end": 20707
+        "start": 20663,
+        "end": 20732
       },
       "immediate_parent_element_id": "element.section.0006",
       "ancestor_element_ids": [
@@ -14009,12 +13964,12 @@
       }
     },
     {
-      "source_node_id": "jsx.00884",
+      "source_node_id": "jsx.00881",
       "reading_unit_id": "reading-unit.0379",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 20713,
-        "end": 20782
+        "start": 20738,
+        "end": 20774
       },
       "immediate_parent_element_id": "element.section.0006",
       "ancestor_element_ids": [
@@ -14041,12 +13996,12 @@
       }
     },
     {
-      "source_node_id": "jsx.00886",
+      "source_node_id": "jsx.00883",
       "reading_unit_id": "reading-unit.0380",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 20788,
-        "end": 20824
+        "start": 20780,
+        "end": 20810
       },
       "immediate_parent_element_id": "element.section.0006",
       "ancestor_element_ids": [
@@ -14073,12 +14028,12 @@
       }
     },
     {
-      "source_node_id": "jsx.00888",
+      "source_node_id": "jsx.00885",
       "reading_unit_id": "reading-unit.0381",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 20830,
-        "end": 20860
+        "start": 20816,
+        "end": 20843
       },
       "immediate_parent_element_id": "element.section.0006",
       "ancestor_element_ids": [
@@ -14105,12 +14060,12 @@
       }
     },
     {
-      "source_node_id": "jsx.00890",
+      "source_node_id": "jsx.00887",
       "reading_unit_id": "reading-unit.0382",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 20866,
-        "end": 20893
+        "start": 20849,
+        "end": 20877
       },
       "immediate_parent_element_id": "element.section.0006",
       "ancestor_element_ids": [
@@ -14137,12 +14092,12 @@
       }
     },
     {
-      "source_node_id": "jsx.00892",
+      "source_node_id": "jsx.00889",
       "reading_unit_id": "reading-unit.0383",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 20899,
-        "end": 20927
+        "start": 20883,
+        "end": 20914
       },
       "immediate_parent_element_id": "element.section.0006",
       "ancestor_element_ids": [
@@ -14169,12 +14124,12 @@
       }
     },
     {
-      "source_node_id": "jsx.00894",
+      "source_node_id": "jsx.00891",
       "reading_unit_id": "reading-unit.0384",
       "projection_location": "reading_unit",
       "source_code_unit_range": {
-        "start": 20933,
-        "end": 20964
+        "start": 20920,
+        "end": 20968
       },
       "immediate_parent_element_id": "element.section.0006",
       "ancestor_element_ids": [
@@ -14201,44 +14156,12 @@
       }
     },
     {
-      "source_node_id": "jsx.00896",
-      "reading_unit_id": "reading-unit.0385",
-      "projection_location": "reading_unit",
-      "source_code_unit_range": {
-        "start": 20970,
-        "end": 21018
-      },
-      "immediate_parent_element_id": "element.section.0006",
-      "ancestor_element_ids": [
-        "element.main.0001",
-        "element.article.0001",
-        "element.section.0006"
-      ],
-      "ancestor_tags": [
-        "main",
-        "article",
-        "section"
-      ],
-      "context_flags": {
-        "whitespace_only": false,
-        "inside_section": true,
-        "inside_h1": false,
-        "inside_h2": false,
-        "inside_h3": false,
-        "inside_small": false
-      },
-      "corpus_inclusion": {
-        "status": "undecided",
-        "authority": "requires_user_decision"
-      }
-    },
-    {
-      "source_node_id": "jsx.00898",
+      "source_node_id": "jsx.00893",
       "reading_unit_id": null,
       "projection_location": "structural_tail",
       "source_code_unit_range": {
-        "start": 21024,
-        "end": 21033
+        "start": 20974,
+        "end": 20983
       },
       "immediate_parent_element_id": "element.section.0006",
       "ancestor_element_ids": [
@@ -14265,12 +14188,12 @@
       }
     },
     {
-      "source_node_id": "jsx.00900",
+      "source_node_id": "jsx.00895",
       "reading_unit_id": null,
       "projection_location": "structural_tail",
       "source_code_unit_range": {
-        "start": 21043,
-        "end": 21050
+        "start": 20993,
+        "end": 21000
       },
       "immediate_parent_element_id": "element.article.0001",
       "ancestor_element_ids": [
@@ -14295,12 +14218,12 @@
       }
     },
     {
-      "source_node_id": "jsx.00902",
+      "source_node_id": "jsx.00897",
       "reading_unit_id": null,
       "projection_location": "structural_tail",
       "source_code_unit_range": {
-        "start": 21060,
-        "end": 21067
+        "start": 21010,
+        "end": 21017
       },
       "immediate_parent_element_id": "element.main.0001",
       "ancestor_element_ids": [
@@ -14323,12 +14246,12 @@
       }
     },
     {
-      "source_node_id": "jsx.00904",
+      "source_node_id": "jsx.00899",
       "reading_unit_id": null,
       "projection_location": "structural_tail",
       "source_code_unit_range": {
-        "start": 21082,
-        "end": 21087
+        "start": 21032,
+        "end": 21037
       },
       "immediate_parent_element_id": "element.main.0001",
       "ancestor_element_ids": [
