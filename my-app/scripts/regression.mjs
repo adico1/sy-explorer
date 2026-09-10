@@ -22,6 +22,7 @@ const sealedWordUnits = JSON.parse(fs.readFileSync(new URL("../src/sy.sealed-wor
 const lexicalCoverage = JSON.parse(fs.readFileSync(new URL("../src/sy.lexical-coverage.json", import.meta.url), "utf8"));
 const hebrewGraphemes = JSON.parse(fs.readFileSync(new URL("../src/sy.hebrew-graphemes.json", import.meta.url), "utf8"));
 const orthographicStream = JSON.parse(fs.readFileSync(new URL("../src/sy.orthographic-stream.json", import.meta.url), "utf8"));
+const wordCandidateViews = JSON.parse(fs.readFileSync(new URL("../src/sy.word-candidate-views.json", import.meta.url), "utf8"));
 const failures = [];
 const requireInvariant = (condition, name) => {
   if (!condition) failures.push(name);
@@ -185,6 +186,22 @@ requireInvariant(orthographicStream.proof.every_word_child_is_fully_contained, "
 requireInvariant(orthographicStream.proof.only_five_declared_atom_kinds, "orthographic_stream_kinds");
 requireInvariant(orthographicStream.proof.no_words_candidates_normalization_or_interpretation_added, "orthographic_stream_no_new_semantics");
 requireInvariant(orthographicStream.proof.deterministic_output, "orthographic_stream_deterministic");
+requireInvariant(wordCandidateViews.source.sha256 === sourceHash, "word_candidate_views_source_hash");
+requireInvariant(wordCandidateViews.status === "sealed_derivation", "word_candidate_views_sealed");
+requireInvariant(wordCandidateViews.semantic_status === "candidates_only_no_new_words", "word_candidate_views_no_words");
+requireInvariant(wordCandidateViews.proof.exactly_two_parallel_views, "word_candidate_views_exactly_two");
+requireInvariant(wordCandidateViews.proof.neither_view_is_preferred, "word_candidate_views_no_preference");
+requireInvariant(wordCandidateViews.proof.every_view_covers_every_atom_exactly_once, "word_candidate_views_atom_coverage");
+requireInvariant(wordCandidateViews.proof.every_view_round_trips_exact_corpus, "word_candidate_views_round_trip");
+requireInvariant(wordCandidateViews.proof.every_view_segment_matches_source, "word_candidate_views_source_ranges");
+requireInvariant(wordCandidateViews.proof.no_view_segment_crosses_a_corpus_fragment, "word_candidate_views_fragment_boundaries");
+requireInvariant(wordCandidateViews.proof.all_sealed_words_preserved_in_both_views, "word_candidate_views_sealed_words");
+requireInvariant(wordCandidateViews.proof.every_candidate_contains_a_grapheme, "word_candidate_views_graphemes");
+requireInvariant(wordCandidateViews.proof.no_candidate_is_promoted_to_word, "word_candidate_views_candidate_status");
+requireInvariant(wordCandidateViews.proof.punctuation_role_remains_unknown, "word_candidate_views_punctuation_unknown");
+requireInvariant(wordCandidateViews.proof.every_difference_case_resolves_in_both_views, "word_candidate_views_difference_references");
+requireInvariant(wordCandidateViews.proof.no_normalization_prefix_analysis_or_interpretation, "word_candidate_views_no_semantics");
+requireInvariant(wordCandidateViews.proof.deterministic_output, "word_candidate_views_deterministic");
 requireInvariant(corpus.validation.valid, "corpus_validation");
 requireInvariant(corpus.input === sourceText, "lossless_source");
 requireInvariant(corpus.stats.occurrences === 1673, "occurrence_count");
