@@ -1,7 +1,7 @@
 {
   "$schema": "./sy.converter-spec.schema.json",
   "id": "sy.evidence-corpus",
-  "version": "0.12.13",
+  "version": "0.12.14",
   "language": "he",
   "source": {
     "authority": "sefaria_source",
@@ -148,6 +148,7 @@
     { "id": "lexicon.sealed_internal_quote_word_units", "status": "active", "artifact": "src/sy.internal-quote-units.json", "proof": "all_quote_marks_classified_and_internal_quotes_assigned_once" },
     { "id": "lexicon.unified_sealed_word_units", "status": "active", "artifact": "src/sy.sealed-word-units.json", "proof": "exact_union_of_previously_sealed_nonoverlapping_word_occurrences" },
     { "id": "lexicon.complete_coverage_map", "status": "active", "artifact": "src/sy.lexical-coverage.json", "proof": "every_corpus_code_unit_covered_exactly_once_without_new_words" },
+    { "id": "orthography.hebrew_letter_mark_units", "status": "active", "artifact": "src/sy.hebrew-graphemes.json", "proof": "every_hebrew_letter_and_combining_mark_assigned_exactly_once" },
     { "id": "corpus.name_occurrences", "status": "active" },
     { "id": "corpus.occurrence_counts", "status": "active" },
     { "id": "corpus.user_interpretations", "status": "active" },
@@ -266,6 +267,13 @@
         "statement": "Every corpus code unit is covered exactly once as a sealed word, Unicode whitespace, Unicode punctuation or symbol with unknown role, or unresolved text; the map preserves all 94 sealed words and creates no new words or candidates.",
         "authority": "deterministic_derivation",
         "artifact": "src/sy.lexical-coverage.json",
+        "status": "sealed"
+      },
+      {
+        "id": "orthography.hebrew_letter_mark_units",
+        "statement": "Every Hebrew letter is emitted once with all immediately following Unicode combining marks in exact source order; all 5,270 marks are attached, none is orphaned, and no word, normalization or interpretation is created.",
+        "authority": "deterministic_derivation",
+        "artifact": "src/sy.hebrew-graphemes.json",
         "status": "sealed"
       },
       {
