@@ -21,6 +21,7 @@ const internalQuoteUnits = JSON.parse(fs.readFileSync(new URL("../src/sy.interna
 const sealedWordUnits = JSON.parse(fs.readFileSync(new URL("../src/sy.sealed-word-units.json", import.meta.url), "utf8"));
 const lexicalCoverage = JSON.parse(fs.readFileSync(new URL("../src/sy.lexical-coverage.json", import.meta.url), "utf8"));
 const hebrewGraphemes = JSON.parse(fs.readFileSync(new URL("../src/sy.hebrew-graphemes.json", import.meta.url), "utf8"));
+const orthographicStream = JSON.parse(fs.readFileSync(new URL("../src/sy.orthographic-stream.json", import.meta.url), "utf8"));
 const failures = [];
 const requireInvariant = (condition, name) => {
   if (!condition) failures.push(name);
@@ -170,6 +171,20 @@ requireInvariant(hebrewGraphemes.proof.exact_corpus_round_trip_after_overlay_rem
 requireInvariant(hebrewGraphemes.proof.no_words_or_unpointed_word_forms_emitted, "hebrew_graphemes_no_words");
 requireInvariant(hebrewGraphemes.proof.no_semantic_interpretation_emitted, "hebrew_graphemes_no_interpretation");
 requireInvariant(hebrewGraphemes.proof.deterministic_output, "hebrew_graphemes_deterministic");
+requireInvariant(orthographicStream.source.sha256 === sourceHash, "orthographic_stream_source_hash");
+requireInvariant(orthographicStream.status === "sealed", "orthographic_stream_sealed");
+requireInvariant(orthographicStream.semantic_status === "ordered_orthographic_composition_only", "orthographic_stream_no_semantics");
+requireInvariant(orthographicStream.proof.every_corpus_code_unit_represented_exactly_once, "orthographic_stream_exact_coverage");
+requireInvariant(orthographicStream.proof.exact_corpus_stream_round_trip, "orthographic_stream_round_trip");
+requireInvariant(orthographicStream.proof.every_atom_matches_exact_source_range, "orthographic_stream_source_ranges");
+requireInvariant(orthographicStream.proof.atom_stream_is_gap_free_and_nonoverlapping_per_fragment, "orthographic_stream_no_gaps_or_overlap");
+requireInvariant(orthographicStream.proof.all_ninety_four_sealed_words_are_single_atoms, "orthographic_stream_words_atomic");
+requireInvariant(orthographicStream.proof.every_grapheme_represented_exactly_once_as_atom_or_word_child, "orthographic_stream_grapheme_coverage");
+requireInvariant(orthographicStream.proof.no_word_child_grapheme_is_a_top_level_atom, "orthographic_stream_no_child_duplication");
+requireInvariant(orthographicStream.proof.every_word_child_is_fully_contained, "orthographic_stream_children_contained");
+requireInvariant(orthographicStream.proof.only_five_declared_atom_kinds, "orthographic_stream_kinds");
+requireInvariant(orthographicStream.proof.no_words_candidates_normalization_or_interpretation_added, "orthographic_stream_no_new_semantics");
+requireInvariant(orthographicStream.proof.deterministic_output, "orthographic_stream_deterministic");
 requireInvariant(corpus.validation.valid, "corpus_validation");
 requireInvariant(corpus.input === sourceText, "lossless_source");
 requireInvariant(corpus.stats.occurrences === 1673, "occurrence_count");
