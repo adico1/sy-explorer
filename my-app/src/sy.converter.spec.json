@@ -1,7 +1,7 @@
 {
   "$schema": "./sy.converter-spec.schema.json",
   "id": "sy.evidence-corpus",
-  "version": "0.12.14",
+  "version": "0.12.15",
   "language": "he",
   "source": {
     "authority": "sefaria_source",
@@ -149,6 +149,7 @@
     { "id": "lexicon.unified_sealed_word_units", "status": "active", "artifact": "src/sy.sealed-word-units.json", "proof": "exact_union_of_previously_sealed_nonoverlapping_word_occurrences" },
     { "id": "lexicon.complete_coverage_map", "status": "active", "artifact": "src/sy.lexical-coverage.json", "proof": "every_corpus_code_unit_covered_exactly_once_without_new_words" },
     { "id": "orthography.hebrew_letter_mark_units", "status": "active", "artifact": "src/sy.hebrew-graphemes.json", "proof": "every_hebrew_letter_and_combining_mark_assigned_exactly_once" },
+    { "id": "orthography.ordered_atom_stream", "status": "active", "artifact": "src/sy.orthographic-stream.json", "proof": "exact_nonoverlapping_composition_of_words_graphemes_and_technical_atoms" },
     { "id": "corpus.name_occurrences", "status": "active" },
     { "id": "corpus.occurrence_counts", "status": "active" },
     { "id": "corpus.user_interpretations", "status": "active" },
@@ -274,6 +275,13 @@
         "statement": "Every Hebrew letter is emitted once with all immediately following Unicode combining marks in exact source order; all 5,270 marks are attached, none is orphaned, and no word, normalization or interpretation is created.",
         "authority": "deterministic_derivation",
         "artifact": "src/sy.hebrew-graphemes.json",
+        "status": "sealed"
+      },
+      {
+        "id": "orthography.ordered_atom_stream",
+        "statement": "The entire corpus is represented once as an ordered, gap-free stream of sealed words, standalone Hebrew graphemes, whitespace, punctuation or symbols, and other characters; graphemes inside words are child references and are not duplicated at the top level.",
+        "authority": "deterministic_composition_of_sealed_layers",
+        "artifact": "src/sy.orthographic-stream.json",
         "status": "sealed"
       },
       {
