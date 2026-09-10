@@ -1,7 +1,7 @@
 {
   "$schema": "./sy.converter-spec.schema.json",
   "id": "sy.evidence-corpus",
-  "version": "0.12.16",
+  "version": "0.12.17",
   "language": "he",
   "source": {
     "authority": "sefaria_source",
@@ -151,6 +151,7 @@
     { "id": "orthography.hebrew_letter_mark_units", "status": "active", "artifact": "src/sy.hebrew-graphemes.json", "proof": "every_hebrew_letter_and_combining_mark_assigned_exactly_once" },
     { "id": "orthography.ordered_atom_stream", "status": "active", "artifact": "src/sy.orthographic-stream.json", "proof": "exact_nonoverlapping_composition_of_words_graphemes_and_technical_atoms" },
     { "id": "lexicon.parallel_word_candidate_views", "status": "active", "artifact": "src/sy.word-candidate-views.json", "proof": "two_complete_nonpreferred_candidate_partitions_preserving_punctuation_uncertainty" },
+    { "id": "orthography.trailing_apostrophe_unknown_cases", "status": "active", "artifact": "src/sy.trailing-apostrophe-cases.json", "proof": "all_33_noninternal_quotes_structurally_classified_without_role_inference" },
     { "id": "corpus.name_occurrences", "status": "active" },
     { "id": "corpus.occurrence_counts", "status": "active" },
     { "id": "corpus.user_interpretations", "status": "active" },
@@ -290,6 +291,13 @@
         "statement": "Two equally non-authoritative candidate views partition the full atom stream: one bounded by whitespace and one bounded by whitespace or punctuation. Both preserve 94 sealed words, label every new sequence as candidate-not-word, retain punctuation uncertainty and reconstruct the corpus exactly.",
         "authority": "deterministic_parallel_derivation",
         "artifact": "src/sy.word-candidate-views.json",
+        "status": "sealed"
+      },
+      {
+        "id": "orthography.trailing_apostrophe_unknown_cases",
+        "statement": "All 33 previously unresolved quote marks are exact trailing ASCII-apostrophe cases: 30 follow one Hebrew letter and 3 follow multiple Hebrew letters. Their word, number, abbreviation and punctuation roles remain unknown.",
+        "authority": "deterministic_structural_derivation",
+        "artifact": "src/sy.trailing-apostrophe-cases.json",
         "status": "sealed"
       },
       {
