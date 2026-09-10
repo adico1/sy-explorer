@@ -1,7 +1,7 @@
 {
   "$schema": "./sy.converter-spec.schema.json",
   "id": "sy.evidence-corpus",
-  "version": "0.12.19",
+  "version": "0.12.20",
   "language": "he",
   "source": {
     "authority": "sefaria_source",
@@ -146,6 +146,7 @@
     { "id": "source.authoritative_br_boundaries", "status": "active" },
     { "id": "source.commentator_attributions_removed", "status": "active", "proof": "two_user_authorized_attribution_expressions_absent_from_local_edition" },
     { "id": "source.editorial_addition_candidate_inventory", "status": "active", "artifact": "src/sy.editorial-candidate-inventory.json", "proof": "all_small_square_bracket_and_parenthesis_structures_inventoried_without_corpus_decision" },
+    { "id": "source.editorial_manual_review_queue", "status": "active", "artifact": "src/sy.editorial-review-cases.json", "proof": "23_observations_consolidated_into_14_nonoverlapping_manual_cases_with_clear_labels_first" },
     { "id": "source.lossless_jsx_map", "status": "active", "artifact": "src/sy.source-map.json", "proof": "exact_main_root_round_trip" },
     { "id": "reading.lossless_br_units", "status": "active", "artifact": "src/sy.reading-units.json", "proof": "exact_br_partition_round_trip" },
     { "id": "structure.jsx_reading_hierarchy", "status": "active", "artifact": "src/sy.reading-hierarchy.json", "proof": "exact_jsx_context_assignment" },
@@ -193,6 +194,13 @@
         "statement": "All seven small elements, nine square-bracket pairs and seven parenthesis pairs are recorded as 23 structural candidates with exact source context. Marker presence alone does not establish that any candidate is an editorial addition or outside the corpus.",
         "authority": "deterministic_structural_observation",
         "artifact": "src/sy.editorial-candidate-inventory.json",
+        "status": "sealed"
+      },
+      {
+        "id": "source.editorial_manual_review_queue",
+        "statement": "The 23 structural observations are consolidated into 14 non-overlapping manual review cases. Six cases containing explicit textual labels are ordered first; corpus cleaning is stopped and no case is changed until a user decision is recorded.",
+        "authority": "user_workflow_decision_and_deterministic_consolidation",
+        "artifact": "src/sy.editorial-review-cases.json",
         "status": "sealed"
       },
       {
