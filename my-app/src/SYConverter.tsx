@@ -63,6 +63,12 @@ function interpretationStatus(interpretation?: Partial<Interpretation>): Interpr
     : "draft";
 }
 
+function relationshipStatus(relationship?: Partial<UserRelationship>): InterpretationStatus {
+  return ["draft", "accepted", "rejected", "unresolved"].includes(relationship?.status || "")
+    ? relationship!.status as InterpretationStatus
+    : "draft";
+}
+
 function loadInterpretations(): Interpretations {
   try {
     const value = JSON.parse(localStorage.getItem(storageKey) || "{}");
@@ -156,11 +162,14 @@ export function SYConverterWorkbench() {
     value.interpretations.entries = interpretations;
     value.interpretations.accepted_entries = Object.fromEntries(Object.entries(interpretations).filter(([, interpretation]) => interpretationStatus(interpretation) === "accepted"));
     value.interpretations.relationships = relationships;
+    value.interpretations.accepted_relationships = relationships.filter((relationship) => relationshipStatus(relationship) === "accepted" && relationship.evidence_occurrence_ids?.length);
     value.stats.interpreted_names = Object.keys(interpretations).length;
     value.stats.accepted_interpretations = interpretationCounts.accepted;
     value.stats.draft_interpretations = interpretationCounts.draft;
     value.stats.unresolved_interpretations = interpretationCounts.unresolved;
     value.stats.rejected_interpretations = interpretationCounts.rejected;
+    value.stats.accepted_relationships = value.interpretations.accepted_relationships.length;
+    value.stats.relationships_in_review = relationships.filter((relationship) => ["draft", "unresolved"].includes(relationshipStatus(relationship))).length;
     value.stats.uninterpreted_names = value.stats.names - value.stats.interpreted_names;
     value.evidence.names = value.evidence.names.map((name: any) => ({
       ...name,
@@ -260,12 +269,24 @@ export function SYConverterWorkbench() {
       })) as ApostropheDecisions;
       setApostropheDecisions(nextApostropheDecisions);
       localStorage.setItem(apostropheStorageKey, JSON.stringify(nextApostropheDecisions));
-      const nextRelationships = (Array.isArray(backup.relationships) ? backup.relationships : []).filter((item: Partial<UserRelationship>) =>
-        typeof item.id === "string"
-        && knownIds.has(item.from_name_id)
-        && knownIds.has(item.to_name_id)
-        && typeof item.relation === "string"
-        && typeof item.note === "string");
+      const nextRelationships = (Array.isArray(backup.relationships) ? backup.relationships : []).flatMap((item: Partial<UserRelationship>) => {
+        if (typeof item.id !== "string"
+          || !knownIds.has(item.from_name_id)
+          || !knownIds.has(item.to_name_id)
+          || typeof item.relation !== "string"
+          || typeof item.note !== "string") return [];
+        const sourceOccurrences = occurrenceIdsByName.get(item.from_name_id!) as Set<string>;
+        const targetOccurrences = occurrenceIdsByName.get(item.to_name_id!) as Set<string>;
+        const validOccurrenceIds = new Set([...sourceOccurrences, ...targetOccurrences]);
+        const createdAt = typeof item.created_at === "string" ? item.created_at : new Date().toISOString();
+        return [{
+          ...item,
+          status: relationshipStatus(item),
+          evidence_occurrence_ids: (Array.isArray(item.evidence_occurrence_ids) ? item.evidence_occurrence_ids : []).filter((occurrenceId) => validOccurrenceIds.has(occurrenceId)),
+          created_at: createdAt,
+          updated_at: typeof item.updated_at === "string" ? item.updated_at : createdAt,
+        } as UserRelationship];
+      });
       setRelationships(nextRelationships);
       localStorage.setItem(relationshipStorageKey, JSON.stringify(nextRelationships));
       setStorageMessage(`שוחזרו ${Object.keys(next).length} פירושים, ${nextRelationships.length} קשרים ו־${Object.keys(nextApostropheDecisions).length} הכרעות כתיב${backup.corpus_version === corpus.version ? "" : " מגרסת קורפוס אחרת"}.`);
@@ -319,7 +340,7 @@ export function SYConverterWorkbench() {
         <button aria-pressed={view === "reading"} onClick={() => setView("reading")}>אפיון הקריאה</button>
         <button aria-pressed={view === "names"} onClick={() => setView("names")}>שמות ומופעים</button>
         <button aria-pressed={view === "relations"} onClick={() => setView("relations")}>קשרים</button>
-        <button aria-pressed={view === "review"} onClick={() => setView("review")}>ביקורת הקורפוס</button>
+        <button aria-pressed={view === "review"} onClick={() => setView("review")}>תור וביקורת</button>
         <button aria-pressed={view === "patterns"} onClick={() => setView("patterns")}>ניסוי 0.11 שנדחה</button>
       </nav>
 
@@ -436,7 +457,18 @@ export function SYConverterWorkbench() {
       )}
       {view === "review" && (
         <CorpusReview
+          corpus={corpus}
+          interpretations={interpretations}
+          relationships={relationships}
           apostropheDecisions={apostropheDecisions}
+          onOpenInterpretation={(id) => {
+            setSelectedId(id);
+            setView("names");
+          }}
+          onOpenRelationship={(id) => {
+            setSelectedId(id);
+            setView("relations");
+          }}
           onDecide={(id, role) => {
             const next = {
               ...apostropheDecisions,
@@ -451,15 +483,75 @@ export function SYConverterWorkbench() {
   );
 }
 
-function CorpusReview({ apostropheDecisions, onDecide }: { apostropheDecisions: ApostropheDecisions; onDecide: (id: string, role: string) => void }) {
+function CorpusReview({ corpus, interpretations, relationships, apostropheDecisions, onOpenInterpretation, onOpenRelationship, onDecide }: {
+  corpus: any;
+  interpretations: Interpretations;
+  relationships: UserRelationship[];
+  apostropheDecisions: ApostropheDecisions;
+  onOpenInterpretation: (id: string) => void;
+  onOpenRelationship: (id: string) => void;
+  onDecide: (id: string, role: string) => void;
+}) {
   const actionLabels: Record<string, string> = {
     remove_entire_case: "הוסר במלואו",
     remove_structural_markup_retain_text: "הוסרה עטיפה, התוכן נשמר",
     retain_entire_case: "נשמר במלואו",
   };
   const resolvedCount = Object.values(apostropheDecisions).filter((item) => item.role !== "unknown").length;
+  const nameById = new Map<string, string>(corpus.evidence.names.map((name: any) => [name.id, name.normalized]));
+  const interpretationQueue = Object.entries(interpretations).filter(([, interpretation]) => {
+    const status = interpretationStatus(interpretation);
+    return ["draft", "unresolved"].includes(status) || (status === "accepted" && !interpretation.evidence_occurrence_ids?.length);
+  });
+  const relationshipQueue = relationships.filter((relationship) => {
+    const status = relationshipStatus(relationship);
+    return ["draft", "unresolved"].includes(status) || (status === "accepted" && !relationship.evidence_occurrence_ids?.length);
+  });
+  const apostropheQueue = trailingApostropheCases.cases.filter((item) => !apostropheDecisions[item.id] || apostropheDecisions[item.id].role === "unknown");
+  const queueCount = interpretationQueue.length + relationshipQueue.length + apostropheQueue.length;
   return (
     <div className="corpus-review">
+      <section className="review-queue">
+        <h3>תור העבודה</h3>
+        <p>טיוטות, מקרים לא מוכרעים וטענות חסרות ראיה מרוכזים כאן. פריטים שנדחו נשמרים בהיסטוריה אך אינם דורשים פעולה.</p>
+        <div className="review-queue__summary">
+          <span><b>{interpretationQueue.length}</b> פירושים</span>
+          <span><b>{relationshipQueue.length}</b> קשרים</span>
+          <span><b>{apostropheQueue.length}</b> מקרי כתיב</span>
+        </div>
+        {!queueCount && <p className="review-queue__empty">אין כרגע פריטים הממתינים לביקורת.</p>}
+        <div className="review-queue__list">
+          {interpretationQueue.map(([id, interpretation]) => {
+            const status = interpretationStatus(interpretation);
+            const reason = status === "accepted" && !interpretation.evidence_occurrence_ids?.length ? "מאושר ללא ראיה" : statusLabels[status];
+            return (
+              <article key={`interpretation:${id}`}>
+                <span className="review-kind">פירוש</span>
+                <div><strong>{nameById.get(id) || id}</strong><small>{reason} · {interpretation.evidence_occurrence_ids?.length || 0} ראיות</small></div>
+                <button onClick={() => onOpenInterpretation(id)}>פתח</button>
+              </article>
+            );
+          })}
+          {relationshipQueue.map((relationship) => {
+            const status = relationshipStatus(relationship);
+            const reason = status === "accepted" && !relationship.evidence_occurrence_ids?.length ? "מאושר ללא ראיה" : statusLabels[status];
+            return (
+              <article key={`relationship:${relationship.id}`}>
+                <span className="review-kind">קשר</span>
+                <div><strong>{nameById.get(relationship.from_name_id)} ← {relationship.relation} ← {nameById.get(relationship.to_name_id)}</strong><small>{reason} · {relationship.evidence_occurrence_ids?.length || 0} ראיות</small></div>
+                <button onClick={() => onOpenRelationship(relationship.from_name_id)}>פתח</button>
+              </article>
+            );
+          })}
+          {apostropheQueue.map((item) => (
+            <article key={`apostrophe:${item.id}`}>
+              <span className="review-kind">כתיב</span>
+              <div><strong>{item.raw}</strong><small>טרם הוכרע</small></div>
+              <button onClick={() => document.getElementById("apostrophe-review")?.scrollIntoView({ behavior: "smooth" })}>פתח</button>
+            </article>
+          ))}
+        </div>
+      </section>
       <section className="review-summary">
         <h3>מצב ביקורת הקורפוס</h3>
         <div>
@@ -468,7 +560,7 @@ function CorpusReview({ apostropheDecisions, onDecide }: { apostropheDecisions: 
           <span><b>{resolvedCount}/{trailingApostropheCases.cases.length}</b> מקרי גרש הוכרעו</span>
         </div>
       </section>
-      <section className="review-section">
+      <section className="review-section" id="apostrophe-review">
         <h3>היסטוריית העריכה</h3>
         <p>כל שינוי או שימור מוצג עם הנוסח המקורי והכרעת המשתמש.</p>
         <div className="decision-grid">
