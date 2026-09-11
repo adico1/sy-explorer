@@ -1,4 +1,6 @@
 import { useEffect, useMemo, useRef, useState } from "react";
+import { InterpretationForm } from "./InterpretationForm";
+import { RelationshipWorkspace, type UserRelationship } from "./RelationshipWorkspace";
 import sourceText from "./SeferYetzirah.tsx?raw";
 import editorialDecisions from "./sy.editorial-decisions.json";
 import spec from "./sy.converter.spec.json";
@@ -8,16 +10,21 @@ import { createConverter } from "./converter-engine.mjs";
 const convert = createConverter(spec);
 const storageKey = `sy-explorer:user-interpretations:${spec.version}`;
 const apostropheStorageKey = `sy-explorer:apostrophe-decisions:${spec.version}`;
+const relationshipStorageKey = `sy-explorer:user-relationships:${spec.version}`;
 
 type Interpretation = {
   role: string;
   meaning: string;
   note: string;
+  fields?: Record<string, string>;
+  status: InterpretationStatus;
+  evidence_occurrence_ids: string[];
   authority: "user_interpretation";
   updated_at: string;
 };
 
 type Interpretations = Record<string, Interpretation>;
+type InterpretationStatus = "draft" | "accepted" | "rejected" | "unresolved";
 type ApostropheDecision = {
   role: string;
   note: string;
@@ -25,8 +32,8 @@ type ApostropheDecision = {
   updated_at: string;
 };
 type ApostropheDecisions = Record<string, ApostropheDecision>;
-type Filter = "all" | "repeated" | "single" | "interpreted" | "uninterpreted";
-type View = "reading" | "names" | "review" | "patterns";
+type Filter = "all" | "repeated" | "single" | "interpreted" | "uninterpreted" | InterpretationStatus;
+type View = "reading" | "names" | "relations" | "review" | "patterns";
 
 const roleLabels: Record<string, string> = {
   name: "שם",
@@ -42,6 +49,19 @@ const roleLabels: Record<string, string> = {
   controller: "בקר",
   value: "ערך",
 };
+
+const statusLabels: Record<InterpretationStatus, string> = {
+  draft: "טיוטה",
+  accepted: "מאושר",
+  rejected: "נדחה",
+  unresolved: "לא הוכרע",
+};
+
+function interpretationStatus(interpretation?: Partial<Interpretation>): InterpretationStatus {
+  return ["draft", "accepted", "rejected", "unresolved"].includes(interpretation?.status || "")
+    ? interpretation!.status as InterpretationStatus
+    : "draft";
+}
 
 function loadInterpretations(): Interpretations {
   try {
@@ -61,6 +81,15 @@ function loadApostropheDecisions(): ApostropheDecisions {
   }
 }
 
+function loadRelationships(): UserRelationship[] {
+  try {
+    const value = JSON.parse(localStorage.getItem(relationshipStorageKey) || "[]");
+    return Array.isArray(value) ? value : [];
+  } catch {
+    return [];
+  }
+}
+
 function highlightedText(text: string, surface: string) {
   const index = text.indexOf(surface);
   if (index < 0) return text;
@@ -75,6 +104,7 @@ export function SYConverterWorkbench() {
   const [corpus] = useState<any>(() => convert(sourceText));
   const [interpretations, setInterpretations] = useState<Interpretations>(loadInterpretations);
   const [apostropheDecisions, setApostropheDecisions] = useState<ApostropheDecisions>(loadApostropheDecisions);
+  const [relationships, setRelationships] = useState<UserRelationship[]>(loadRelationships);
   const [selectedId, setSelectedId] = useState<string>(() => corpus.evidence.names[0]?.id || "");
   const [query, setQuery] = useState("");
   const [filter, setFilter] = useState<Filter>("all");
@@ -105,6 +135,7 @@ export function SYConverterWorkbench() {
         if (filter === "single") return name.occurrence_count === 1;
         if (filter === "interpreted") return Boolean(interpretations[name.id]);
         if (filter === "uninterpreted") return !interpretations[name.id];
+        if (["draft", "accepted", "rejected", "unresolved"].includes(filter)) return interpretationStatus(interpretations[name.id]) === filter && Boolean(interpretations[name.id]);
         return true;
       })
       .sort((a: any, b: any) => b.occurrence_count - a.occurrence_count || a.normalized.localeCompare(b.normalized, "he"));
@@ -115,11 +146,21 @@ export function SYConverterWorkbench() {
   const occurrences = selected
     ? selected.occurrence_ids.map((id: string) => corpus.evidence.occurrences.find((item: any) => item.id === id))
     : [];
+  const interpretationCounts = useMemo(() => Object.values(interpretations).reduce((counts, interpretation) => {
+    counts[interpretationStatus(interpretation)] += 1;
+    return counts;
+  }, { draft: 0, accepted: 0, rejected: 0, unresolved: 0 } as Record<InterpretationStatus, number>), [interpretations]);
 
   const exportedCorpus = useMemo(() => {
     const value = structuredClone(corpus);
     value.interpretations.entries = interpretations;
+    value.interpretations.accepted_entries = Object.fromEntries(Object.entries(interpretations).filter(([, interpretation]) => interpretationStatus(interpretation) === "accepted"));
+    value.interpretations.relationships = relationships;
     value.stats.interpreted_names = Object.keys(interpretations).length;
+    value.stats.accepted_interpretations = interpretationCounts.accepted;
+    value.stats.draft_interpretations = interpretationCounts.draft;
+    value.stats.unresolved_interpretations = interpretationCounts.unresolved;
+    value.stats.rejected_interpretations = interpretationCounts.rejected;
     value.stats.uninterpreted_names = value.stats.names - value.stats.interpreted_names;
     value.evidence.names = value.evidence.names.map((name: any) => ({
       ...name,
@@ -129,16 +170,12 @@ export function SYConverterWorkbench() {
       },
     }));
     return value;
-  }, [corpus, interpretations]);
+  }, [corpus, interpretationCounts, interpretations, relationships]);
 
-  function saveInterpretation(event: React.FormEvent<HTMLFormElement>) {
-    event.preventDefault();
+  function saveInterpretation(value: Pick<Interpretation, "role" | "meaning" | "note" | "fields" | "status" | "evidence_occurrence_ids">) {
     if (!selected) return;
-    const data = new FormData(event.currentTarget);
     const entry: Interpretation = {
-      role: String(data.get("role") || "name"),
-      meaning: String(data.get("meaning") || "").trim(),
-      note: String(data.get("note") || "").trim(),
+      ...value,
       authority: "user_interpretation",
       updated_at: new Date().toISOString(),
     };
@@ -176,6 +213,7 @@ export function SYConverterWorkbench() {
       exported_at: new Date().toISOString(),
       interpretations,
       apostrophe_decisions: apostropheDecisions,
+      relationships,
     };
     const blob = new Blob([JSON.stringify(backup, null, 2) + "\n"], { type: "application/json;charset=utf-8" });
     const url = URL.createObjectURL(blob);
@@ -200,10 +238,17 @@ export function SYConverterWorkbench() {
         throw new Error("invalid_format");
       }
       const knownIds = new Set(corpus.evidence.names.map((name: any) => name.id));
-      const next = Object.fromEntries(Object.entries(importedInterpretations).filter(([id, entry]) => {
-        if (!knownIds.has(id) || typeof entry !== "object" || !entry) return false;
+      const occurrenceIdsByName = new Map(corpus.evidence.names.map((name: any) => [name.id, new Set(name.occurrence_ids)]));
+      const next = Object.fromEntries(Object.entries(importedInterpretations).flatMap(([id, entry]) => {
+        if (!knownIds.has(id) || typeof entry !== "object" || !entry) return [];
         const value = entry as Partial<Interpretation>;
-        return typeof value.role === "string" && typeof value.meaning === "string" && typeof value.note === "string";
+        if (typeof value.role !== "string" || typeof value.meaning !== "string" || typeof value.note !== "string") return [];
+        const validOccurrenceIds = occurrenceIdsByName.get(id) as Set<string>;
+        return [[id, {
+          ...value,
+          status: interpretationStatus(value),
+          evidence_occurrence_ids: (Array.isArray(value.evidence_occurrence_ids) ? value.evidence_occurrence_ids : []).filter((occurrenceId) => validOccurrenceIds.has(occurrenceId)),
+        }]];
       })) as Interpretations;
       setInterpretations(next);
       localStorage.setItem(storageKey, JSON.stringify(next));
@@ -215,7 +260,15 @@ export function SYConverterWorkbench() {
       })) as ApostropheDecisions;
       setApostropheDecisions(nextApostropheDecisions);
       localStorage.setItem(apostropheStorageKey, JSON.stringify(nextApostropheDecisions));
-      setStorageMessage(`שוחזרו ${Object.keys(next).length} פירושים ו־${Object.keys(nextApostropheDecisions).length} הכרעות כתיב${backup.corpus_version === corpus.version ? "" : " מגרסת קורפוס אחרת"}.`);
+      const nextRelationships = (Array.isArray(backup.relationships) ? backup.relationships : []).filter((item: Partial<UserRelationship>) =>
+        typeof item.id === "string"
+        && knownIds.has(item.from_name_id)
+        && knownIds.has(item.to_name_id)
+        && typeof item.relation === "string"
+        && typeof item.note === "string");
+      setRelationships(nextRelationships);
+      localStorage.setItem(relationshipStorageKey, JSON.stringify(nextRelationships));
+      setStorageMessage(`שוחזרו ${Object.keys(next).length} פירושים, ${nextRelationships.length} קשרים ו־${Object.keys(nextApostropheDecisions).length} הכרעות כתיב${backup.corpus_version === corpus.version ? "" : " מגרסת קורפוס אחרת"}.`);
     } catch {
       setStorageMessage("הקובץ אינו גיבוי פירושים תקין.");
     }
@@ -253,16 +306,19 @@ export function SYConverterWorkbench() {
       <div className="name-stats">
         <span><b>{corpus.stats.names}</b> שמות</span>
         <span><b>{corpus.stats.occurrences}</b> מופעים</span>
-        <span><b>{Object.keys(interpretations).length}</b> פורשו</span>
+        <span><b>{interpretationCounts.accepted}</b> אושרו</span>
+        <span><b>{interpretationCounts.draft}</b> טיוטות</span>
+        <span><b>{interpretationCounts.unresolved}</b> לא הוכרעו</span>
         <span><b>{corpus.stats.names - Object.keys(interpretations).length}</b> ממתינים</span>
       </div>
-      <div className="interpretation-progress" aria-label={`${Object.keys(interpretations).length} מתוך ${corpus.stats.names} שמות פורשו`}>
-        <span style={{ width: `${Object.keys(interpretations).length / corpus.stats.names * 100}%` }} />
+      <div className="interpretation-progress" aria-label={`${interpretationCounts.accepted} מתוך ${corpus.stats.names} פירושים אושרו`}>
+        <span style={{ width: `${interpretationCounts.accepted / corpus.stats.names * 100}%` }} />
       </div>
 
       <nav className="mode-tabs">
         <button aria-pressed={view === "reading"} onClick={() => setView("reading")}>אפיון הקריאה</button>
         <button aria-pressed={view === "names"} onClick={() => setView("names")}>שמות ומופעים</button>
+        <button aria-pressed={view === "relations"} onClick={() => setView("relations")}>קשרים</button>
         <button aria-pressed={view === "review"} onClick={() => setView("review")}>ביקורת הקורפוס</button>
         <button aria-pressed={view === "patterns"} onClick={() => setView("patterns")}>ניסוי 0.11 שנדחה</button>
       </nav>
@@ -277,6 +333,10 @@ export function SYConverterWorkbench() {
           <option value="single">מופע יחיד</option>
           <option value="interpreted">פירשתי</option>
           <option value="uninterpreted">טרם פירשתי</option>
+          <option value="draft">טיוטות</option>
+          <option value="accepted">מאושרים</option>
+          <option value="unresolved">לא הוכרעו</option>
+          <option value="rejected">נדחו</option>
         </select>
       </div>
 
@@ -286,7 +346,7 @@ export function SYConverterWorkbench() {
             <button key={name.id} className={selected?.id === name.id ? "is-selected" : ""} onClick={() => setSelectedId(name.id)}>
               <span>{name.normalized}</span>
               <small>{name.occurrence_count} {name.occurrence_count === 1 ? "מופע" : "מופעים"}</small>
-              {interpretations[name.id] && <i>פורש</i>}
+              {interpretations[name.id] && <i className={`interpretation-status interpretation-status--${interpretationStatus(interpretations[name.id])}`}>{statusLabels[interpretationStatus(interpretations[name.id])]}</i>}
             </button>
           ))}
           {!names.length && <p>לא נמצאו שמות מתאימים.</p>}
@@ -299,7 +359,10 @@ export function SYConverterWorkbench() {
                 <small>{selected.id}</small>
                 <h3>{selected.normalized}</h3>
               </div>
-              <span className="essential-badge">שם מהותי</span>
+              <div className="name-detail__badges">
+                {selectedInterpretation && <span className={`workflow-badge workflow-badge--${interpretationStatus(selectedInterpretation)}`}>{statusLabels[interpretationStatus(selectedInterpretation)]}</span>}
+                <span className="essential-badge">שם מהותי</span>
+              </div>
             </header>
 
             <dl className="name-facts">
@@ -308,27 +371,22 @@ export function SYConverterWorkbench() {
               <div><dt>בסיס החשיבות</dt><dd>הפירוש שלך: כל שם במערכת המזערית הוא מהותי</dd></div>
             </dl>
 
-            <form className="interpretation-form" key={selected.id} onSubmit={saveInterpretation}>
-              <h4>הפירוש שלי</h4>
-              <label>
-                תפקיד במערכת
-                <select name="role" defaultValue={selectedInterpretation?.role || "name"}>
-                  {spec.interpretation.roles.map((role) => <option key={role} value={role}>{roleLabels[role] || role}</option>)}
-                </select>
-              </label>
-              <label>
-                משמעות
-                <textarea name="meaning" defaultValue={selectedInterpretation?.meaning || ""} placeholder="מה משמעות השם לפי פירושך?" />
-              </label>
-              <label>
-                הערה או כלל גזירה
-                <textarea name="note" defaultValue={selectedInterpretation?.note || ""} placeholder="על מה מבוסס הפירוש ומה נגזר ממנו?" />
-              </label>
-              <div>
-                <button className="converter__primary" type="submit">שמור כפירוש שלי</button>
-                {selectedInterpretation && <button type="button" onClick={clearInterpretation}>מחק פירוש</button>}
-              </div>
-            </form>
+            <InterpretationForm
+              key={selected.id}
+              roles={spec.interpretation.roles}
+              roleLabels={roleLabels}
+              evidenceOptions={occurrences.map((occurrence: any) => {
+                const unit = corpus.units.find((item: any) => item.id === occurrence.unit_id);
+                return {
+                  id: occurrence.id,
+                  label: `${unit?.chapter_label || ""} · ${unit?.unit_label || occurrence.unit_id}`,
+                  text: unit?.source.text || "",
+                };
+              })}
+              value={selectedInterpretation}
+              onSave={saveInterpretation}
+              onClear={clearInterpretation}
+            />
 
             <section className="occurrences">
               <h4>כל המופעים בטקסט</h4>
@@ -360,6 +418,22 @@ export function SYConverterWorkbench() {
       </>}
 
       {view === "patterns" && <PatternExplorer corpus={corpus} />}
+      {view === "relations" && (
+        <RelationshipWorkspace
+          key={selectedId}
+          corpus={corpus}
+          selectedNameId={selectedId}
+          relationships={relationships}
+          onChange={(next) => {
+            setRelationships(next);
+            localStorage.setItem(relationshipStorageKey, JSON.stringify(next));
+          }}
+          onSelectName={(id) => {
+            setSelectedId(id);
+            setView("names");
+          }}
+        />
+      )}
       {view === "review" && (
         <CorpusReview
           apostropheDecisions={apostropheDecisions}
