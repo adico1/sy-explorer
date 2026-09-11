@@ -1,11 +1,14 @@
+import { ReaderPane } from "./ReaderPane";
 import { SeferYetzirah } from "./SeferYetzirah";
-import { SYConverter } from "./SYConverter";
+import { SYConverterWorkbench } from "./SYConverter";
 
 export default function App() {
   return (
     <div className="app-shell" dir="rtl">
-      <SeferYetzirah />
-      <SYConverter />
+      <ReaderPane>
+        <SeferYetzirah />
+      </ReaderPane>
+      <SYConverterWorkbench />
     </div>
   );
 }
