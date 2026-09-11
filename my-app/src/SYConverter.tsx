@@ -3,6 +3,7 @@ import { ComparisonWorkspace } from "./ComparisonWorkspace";
 import { InterpretationForm } from "./InterpretationForm";
 import { RelationshipWorkspace, type UserRelationship } from "./RelationshipWorkspace";
 import { RevisionHistory, type WorkspaceRevision } from "./RevisionHistory";
+import { SevenDoublesWorkspace } from "./SevenDoublesWorkspace";
 import { ThreeMothersWorkspace } from "./ThreeMothersWorkspace";
 import sourceText from "./SeferYetzirah.tsx?raw";
 import editorialDecisions from "./sy.editorial-decisions.json";
@@ -37,7 +38,7 @@ type ApostropheDecision = {
 };
 type ApostropheDecisions = Record<string, ApostropheDecision>;
 type Filter = "all" | "repeated" | "single" | "interpreted" | "uninterpreted" | InterpretationStatus;
-type View = "reading" | "mothers" | "names" | "compare" | "relations" | "review" | "history" | "patterns";
+type View = "reading" | "mothers" | "doubles" | "names" | "compare" | "relations" | "review" | "history" | "patterns";
 
 const roleLabels: Record<string, string> = {
   name: "שם",
@@ -429,6 +430,7 @@ export function SYConverterWorkbench() {
       <nav className="mode-tabs">
         <button aria-pressed={view === "reading"} onClick={() => setView("reading")}>אפיון הקריאה</button>
         <button aria-pressed={view === "mothers"} onClick={() => setView("mothers")}>שלוש האמות</button>
+        <button aria-pressed={view === "doubles"} onClick={() => setView("doubles")}>שבע הכפולות</button>
         <button aria-pressed={view === "names"} onClick={() => setView("names")}>שמות ומופעים</button>
         <button aria-pressed={view === "compare"} onClick={() => setView("compare")}>השוואה</button>
         <button aria-pressed={view === "relations"} onClick={() => setView("relations")}>קשרים</button>
@@ -439,6 +441,7 @@ export function SYConverterWorkbench() {
 
       {view === "reading" && <ReadingSpecification corpus={corpus} />}
       {view === "mothers" && <ThreeMothersWorkspace corpus={corpus} />}
+      {view === "doubles" && <SevenDoublesWorkspace corpus={corpus} />}
       {view === "names" && <>
       <div className="name-toolbar">
         <input value={query} onChange={(event) => setQuery(event.target.value)} placeholder="חיפוש שם…" aria-label="חיפוש שם" />
