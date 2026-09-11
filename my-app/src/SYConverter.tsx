@@ -1,6 +1,9 @@
 import { useEffect, useMemo, useRef, useState } from "react";
+import { ComparisonWorkspace } from "./ComparisonWorkspace";
 import { InterpretationForm } from "./InterpretationForm";
 import { RelationshipWorkspace, type UserRelationship } from "./RelationshipWorkspace";
+import { RevisionHistory, type WorkspaceRevision } from "./RevisionHistory";
+import { ThreeMothersWorkspace } from "./ThreeMothersWorkspace";
 import sourceText from "./SeferYetzirah.tsx?raw";
 import editorialDecisions from "./sy.editorial-decisions.json";
 import spec from "./sy.converter.spec.json";
@@ -11,6 +14,7 @@ const convert = createConverter(spec);
 const storageKey = `sy-explorer:user-interpretations:${spec.version}`;
 const apostropheStorageKey = `sy-explorer:apostrophe-decisions:${spec.version}`;
 const relationshipStorageKey = `sy-explorer:user-relationships:${spec.version}`;
+const revisionStorageKey = `sy-explorer:revision-history:${spec.version}`;
 
 type Interpretation = {
   role: string;
@@ -33,7 +37,7 @@ type ApostropheDecision = {
 };
 type ApostropheDecisions = Record<string, ApostropheDecision>;
 type Filter = "all" | "repeated" | "single" | "interpreted" | "uninterpreted" | InterpretationStatus;
-type View = "reading" | "names" | "relations" | "review" | "patterns";
+type View = "reading" | "mothers" | "names" | "compare" | "relations" | "review" | "history" | "patterns";
 
 const roleLabels: Record<string, string> = {
   name: "שם",
@@ -96,6 +100,15 @@ function loadRelationships(): UserRelationship[] {
   }
 }
 
+function loadRevisionHistory(): WorkspaceRevision[] {
+  try {
+    const value = JSON.parse(localStorage.getItem(revisionStorageKey) || "[]");
+    return Array.isArray(value) ? value : [];
+  } catch {
+    return [];
+  }
+}
+
 function highlightedText(text: string, surface: string) {
   const index = text.indexOf(surface);
   if (index < 0) return text;
@@ -111,6 +124,7 @@ export function SYConverterWorkbench() {
   const [interpretations, setInterpretations] = useState<Interpretations>(loadInterpretations);
   const [apostropheDecisions, setApostropheDecisions] = useState<ApostropheDecisions>(loadApostropheDecisions);
   const [relationships, setRelationships] = useState<UserRelationship[]>(loadRelationships);
+  const [revisionHistory, setRevisionHistory] = useState<WorkspaceRevision[]>(loadRevisionHistory);
   const [selectedId, setSelectedId] = useState<string>(() => corpus.evidence.names[0]?.id || "");
   const [query, setQuery] = useState("");
   const [filter, setFilter] = useState<Filter>("all");
@@ -163,6 +177,7 @@ export function SYConverterWorkbench() {
     value.interpretations.accepted_entries = Object.fromEntries(Object.entries(interpretations).filter(([, interpretation]) => interpretationStatus(interpretation) === "accepted"));
     value.interpretations.relationships = relationships;
     value.interpretations.accepted_relationships = relationships.filter((relationship) => relationshipStatus(relationship) === "accepted" && relationship.evidence_occurrence_ids?.length);
+    value.interpretations.revision_history = revisionHistory;
     value.stats.interpreted_names = Object.keys(interpretations).length;
     value.stats.accepted_interpretations = interpretationCounts.accepted;
     value.stats.draft_interpretations = interpretationCounts.draft;
@@ -179,7 +194,22 @@ export function SYConverterWorkbench() {
       },
     }));
     return value;
-  }, [corpus, interpretationCounts, interpretations, relationships]);
+  }, [corpus, interpretationCounts, interpretations, relationships, revisionHistory]);
+
+  function recordRevision(revision: Omit<WorkspaceRevision, "id" | "created_at">) {
+    const entry: WorkspaceRevision = {
+      ...revision,
+      id: `revision.${crypto.randomUUID()}`,
+      created_at: new Date().toISOString(),
+      before: revision.before ? structuredClone(revision.before) : null,
+      after: revision.after ? structuredClone(revision.after) : null,
+    };
+    setRevisionHistory((current) => {
+      const next = [entry, ...current].slice(0, 1000);
+      localStorage.setItem(revisionStorageKey, JSON.stringify(next));
+      return next;
+    });
+  }
 
   function saveInterpretation(value: Pick<Interpretation, "role" | "meaning" | "note" | "fields" | "status" | "evidence_occurrence_ids">) {
     if (!selected) return;
@@ -188,6 +218,13 @@ export function SYConverterWorkbench() {
       authority: "user_interpretation",
       updated_at: new Date().toISOString(),
     };
+    recordRevision({
+      entity_type: "interpretation",
+      entity_id: selected.id,
+      action: selectedInterpretation ? "update" : "create",
+      before: selectedInterpretation || null,
+      after: entry,
+    });
     const next = { ...interpretations, [selected.id]: entry };
     setInterpretations(next);
     localStorage.setItem(storageKey, JSON.stringify(next));
@@ -195,10 +232,54 @@ export function SYConverterWorkbench() {
 
   function clearInterpretation() {
     if (!selected) return;
+    const previous = interpretations[selected.id];
+    if (!previous) return;
     const next = { ...interpretations };
     delete next[selected.id];
     setInterpretations(next);
     localStorage.setItem(storageKey, JSON.stringify(next));
+    recordRevision({ entity_type: "interpretation", entity_id: selected.id, action: "delete", before: previous, after: null });
+  }
+
+  function saveRelationships(next: UserRelationship[]) {
+    const previousById = new Map(relationships.map((relationship) => [relationship.id, relationship]));
+    const nextById = new Map(next.map((relationship) => [relationship.id, relationship]));
+    const ids = new Set([...previousById.keys(), ...nextById.keys()]);
+    for (const id of ids) {
+      const before = previousById.get(id) || null;
+      const after = nextById.get(id) || null;
+      if (JSON.stringify(before) === JSON.stringify(after)) continue;
+      recordRevision({
+        entity_type: "relationship",
+        entity_id: id,
+        action: !before ? "create" : !after ? "delete" : "update",
+        before,
+        after,
+      });
+    }
+    setRelationships(next);
+    localStorage.setItem(relationshipStorageKey, JSON.stringify(next));
+  }
+
+  function rollbackRevision(revision: WorkspaceRevision) {
+    if (revision.entity_type === "interpretation") {
+      const current = interpretations[revision.entity_id] || null;
+      const target = revision.before as Interpretation | null;
+      const next = { ...interpretations };
+      if (target) next[revision.entity_id] = target;
+      else delete next[revision.entity_id];
+      setInterpretations(next);
+      localStorage.setItem(storageKey, JSON.stringify(next));
+      recordRevision({ entity_type: "interpretation", entity_id: revision.entity_id, action: "rollback", before: current, after: target, rollback_of: revision.id });
+      return;
+    }
+    const current = relationships.find((relationship) => relationship.id === revision.entity_id) || null;
+    const target = revision.before as UserRelationship | null;
+    const next = relationships.filter((relationship) => relationship.id !== revision.entity_id);
+    if (target) next.push(target);
+    setRelationships(next);
+    localStorage.setItem(relationshipStorageKey, JSON.stringify(next));
+    recordRevision({ entity_type: "relationship", entity_id: revision.entity_id, action: "rollback", before: current, after: target, rollback_of: revision.id });
   }
 
   function downloadJSON() {
@@ -223,6 +304,7 @@ export function SYConverterWorkbench() {
       interpretations,
       apostrophe_decisions: apostropheDecisions,
       relationships,
+      revision_history: revisionHistory,
     };
     const blob = new Blob([JSON.stringify(backup, null, 2) + "\n"], { type: "application/json;charset=utf-8" });
     const url = URL.createObjectURL(blob);
@@ -289,7 +371,15 @@ export function SYConverterWorkbench() {
       });
       setRelationships(nextRelationships);
       localStorage.setItem(relationshipStorageKey, JSON.stringify(nextRelationships));
-      setStorageMessage(`שוחזרו ${Object.keys(next).length} פירושים, ${nextRelationships.length} קשרים ו־${Object.keys(nextApostropheDecisions).length} הכרעות כתיב${backup.corpus_version === corpus.version ? "" : " מגרסת קורפוס אחרת"}.`);
+      const nextRevisionHistory = (Array.isArray(backup.revision_history) ? backup.revision_history : revisionHistory).filter((item: Partial<WorkspaceRevision>) =>
+        typeof item.id === "string"
+        && ["interpretation", "relationship"].includes(item.entity_type || "")
+        && typeof item.entity_id === "string"
+        && ["create", "update", "delete", "rollback"].includes(item.action || "")
+        && typeof item.created_at === "string");
+      setRevisionHistory(nextRevisionHistory);
+      localStorage.setItem(revisionStorageKey, JSON.stringify(nextRevisionHistory));
+      setStorageMessage(`שוחזרו ${Object.keys(next).length} פירושים, ${nextRelationships.length} קשרים, ${nextRevisionHistory.length} גרסאות ו־${Object.keys(nextApostropheDecisions).length} הכרעות כתיב${backup.corpus_version === corpus.version ? "" : " מגרסת קורפוס אחרת"}.`);
     } catch {
       setStorageMessage("הקובץ אינו גיבוי פירושים תקין.");
     }
@@ -338,13 +428,17 @@ export function SYConverterWorkbench() {
 
       <nav className="mode-tabs">
         <button aria-pressed={view === "reading"} onClick={() => setView("reading")}>אפיון הקריאה</button>
+        <button aria-pressed={view === "mothers"} onClick={() => setView("mothers")}>שלוש האמות</button>
         <button aria-pressed={view === "names"} onClick={() => setView("names")}>שמות ומופעים</button>
+        <button aria-pressed={view === "compare"} onClick={() => setView("compare")}>השוואה</button>
         <button aria-pressed={view === "relations"} onClick={() => setView("relations")}>קשרים</button>
         <button aria-pressed={view === "review"} onClick={() => setView("review")}>תור וביקורת</button>
+        <button aria-pressed={view === "history"} onClick={() => setView("history")}>היסטוריה</button>
         <button aria-pressed={view === "patterns"} onClick={() => setView("patterns")}>ניסוי 0.11 שנדחה</button>
       </nav>
 
       {view === "reading" && <ReadingSpecification corpus={corpus} />}
+      {view === "mothers" && <ThreeMothersWorkspace corpus={corpus} />}
       {view === "names" && <>
       <div className="name-toolbar">
         <input value={query} onChange={(event) => setQuery(event.target.value)} placeholder="חיפוש שם…" aria-label="חיפוש שם" />
@@ -439,22 +533,33 @@ export function SYConverterWorkbench() {
       </>}
 
       {view === "patterns" && <PatternExplorer corpus={corpus} />}
-      {view === "relations" && (
-        <RelationshipWorkspace
+      {view === "compare" && (
+        <ComparisonWorkspace
           key={selectedId}
           corpus={corpus}
-          selectedNameId={selectedId}
+          interpretations={interpretations}
           relationships={relationships}
-          onChange={(next) => {
-            setRelationships(next);
-            localStorage.setItem(relationshipStorageKey, JSON.stringify(next));
-          }}
+          selectedNameId={selectedId}
           onSelectName={(id) => {
             setSelectedId(id);
             setView("names");
           }}
         />
       )}
+      {view === "relations" && (
+        <RelationshipWorkspace
+          key={selectedId}
+          corpus={corpus}
+          selectedNameId={selectedId}
+          relationships={relationships}
+          onChange={saveRelationships}
+          onSelectName={(id) => {
+            setSelectedId(id);
+            setView("names");
+          }}
+        />
+      )}
+      {view === "history" && <RevisionHistory corpus={corpus} revisions={revisionHistory} onRollback={rollbackRevision} />}
       {view === "review" && (
         <CorpusReview
           corpus={corpus}
