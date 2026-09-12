@@ -24,6 +24,9 @@ export type CreationTrace = {
   result: string;
   sourceId: string;
   certainty: Certainty;
+  claim: string;
+  evidenceNote: string;
+  limitation?: string;
 };
 
 export const depths: Depth[] = [
@@ -78,9 +81,9 @@ export const letters: LetterModel[] = rawLetters.map((item) => ({
 }));
 
 export const controllers = [
-  { domain: "עולם", controller: "תלי", image: "כמלך על כיסאו" },
-  { domain: "שנה", controller: "גלגל", image: "כמלך במדינה" },
-  { domain: "נפש", controller: "לב", image: "כמלך במלחמה" },
+  { domain: "עולם", controller: "תלי", image: "כמלך על כיסאו", sourceId: "sy.0048" },
+  { domain: "שנה", controller: "גלגל", image: "כמלך במדינה", sourceId: "sy.0048" },
+  { domain: "נפש", controller: "לב", image: "כמלך במלחמה", sourceId: "sy.0048" },
 ] as const;
 
 export const chapterRoles = [
@@ -109,9 +112,9 @@ function resolveMediator(letter: LetterModel, partner: LetterModel) {
 }
 
 function activeLaw(letter: LetterModel) {
-  if (letter.family === "אמות") return { title: "חוק השלושה", value: letter.principle!, family: letter.family };
-  if (letter.family === "כפולות") return { title: "חוק השבעה", value: letter.transformation!, family: letter.family };
-  return { title: "חוק השנים־עשר", value: `${letter.faculty} · גבול ${letter.boundary}`, family: letter.family };
+  if (letter.family === "אמות") return { title: "חוק השלושה", value: letter.principle!, family: letter.family, sourceId: "sy.0032" };
+  if (letter.family === "כפולות") return { title: "חוק השבעה", value: letter.transformation!, family: letter.family, sourceId: "sy.0036" };
+  return { title: "חוק השנים־עשר", value: `${letter.faculty} · גבול ${letter.boundary}`, family: letter.family, sourceId: "sy.0042" };
 }
 
 export function buildCreationRun(input: { letter: string; partner: string; depth: string }) {
@@ -124,19 +127,19 @@ export function buildCreationRun(input: { letter: string; partner: string; depth
   const reverse = `${partner.letter}${letter.letter}`;
   const law = activeLaw(letter);
   const seal = mediator.resolved
-    ? { status: "supported" as const, label: "מוכן לחתימה", explanation: "הצמד כולל קטבים ומכריע המוגדרים במפורש במקור." }
-    : { status: "open" as const, label: "נחתם כמקרה פתוח", explanation: "הצירוף נשמר, אך משמעותו אינה מוכרעת ללא יחס מתווך מבוסס." };
+    ? { status: "supported" as const, label: "מוכן לחתימה", explanation: "הצמד כולל קטבים ומכריע המוגדרים במפורש במקור.", sourceId: "sy.0049" }
+    : { status: "open" as const, label: "נחתם כמקרה פתוח", explanation: "הצירוף נשמר, אך משמעותו אינה מוכרעת ללא יחס מתווך מבוסס.", sourceId: "sy.0049" };
   const trace: CreationTrace[] = [
-    { key: "measure", verb: "מדד", chapter: 1, action: "מקם את ההרצה בתוך זוג עומקים", result: `${depth.label} ↔ ${oppositeDepth.label}`, sourceId: "sy.0005", certainty: "explicit" },
-    { key: "voice", verb: "רוח וקול", chapter: 1, action: "העמד מצע קולי שעדיין אינו אות מסוימת", result: "אפשרות קולית", sourceId: "sy.0010", certainty: "explicit" },
-    { key: "engrave", verb: "חקק", chapter: 2, action: "קבע את האות כיחידה נבדלת", result: `${letter.letter} · ${letter.name}`, sourceId: "sy.0023", certainty: "explicit" },
-    { key: "hew", verb: "חצב", chapter: 2, action: "הבחן את מקום הפקת האות", result: letter.articulation, sourceId: "sy.0024", certainty: "derived" },
-    { key: "weigh", verb: "שקל", chapter: 3, action: "העמד את שתי האותיות ואת המכריע ביניהן", result: `${letter.letter} ← ${mediator.value} → ${partner.letter}`, sourceId: mediator.sourceId, certainty: mediator.resolved ? "explicit" : "unresolved" },
-    { key: "combine", verb: "צרף", chapter: 2, action: "בנה שער בשני כיוונים", result: `${forward} ↔ ${reverse}`, sourceId: "sy.0027", certainty: "explicit" },
-    { key: "transform", verb: "המיר", chapter: letter.family === "כפולות" ? 4 : 5, action: `הפעל את ${law.title}`, result: law.value, sourceId: letter.family === "כפולות" ? "sy.0036" : letter.family === "פשוטות" ? "sy.0042" : "sy.0032", certainty: letter.family === "אמות" ? "explicit" : "derived" },
-    { key: "form", verb: "צר", chapter: letter.family === "פשוטות" ? 5 : letter.family === "כפולות" ? 4 : 3, action: "הקרן את אותה אות בשלושת המישורים", result: `${letter.world} · ${letter.year} · ${letter.soul}`, sourceId: letter.sourceId, certainty: "explicit" },
-    { key: "govern", verb: "נהג", chapter: 6, action: "העבר את התוצאה דרך בקרי עולם–שנה–נפש", result: "תלי · גלגל · לב", sourceId: "sy.0048", certainty: "explicit" },
-    { key: "seal", verb: "חתם", chapter: 6, action: "שמור את התוצאה עם מקורות ומצב הכרעה", result: seal.label, sourceId: "sy.0049", certainty: mediator.resolved ? "derived" : "unresolved" },
+    { key: "measure", verb: "מדד", chapter: 1, action: "מקם את ההרצה בתוך זוג עומקים", result: `${depth.label} ↔ ${oppositeDepth.label}`, sourceId: "sy.0005", certainty: "explicit", claim: "עשרת העומקים מסודרים בחמישה זוגות ניגודיים.", evidenceNote: "היחידה מונה במפורש את עשרת העומקים כראשית–אחרית, טוב–רע, רום–תחת וארבעת הכיוונים." },
+    { key: "voice", verb: "רוח וקול", chapter: 1, action: "העמד מצע קולי שעדיין אינו אות מסוימת", result: "אפשרות קולית", sourceId: "sy.0010", certainty: "explicit", claim: "קול, רוח ודיבור קודמים לעיצוב האות המסוימת.", evidenceNote: "המקור מצמיד במפורש רוח, קול ודיבור; סדר הפעולה במנוע הוא קריאה מערכתית של הרשימה.", limitation: "המקור אינו משתמש במונח „אפשרות קולית”; זהו שם תפעולי בממשק." },
+    { key: "engrave", verb: "חקק", chapter: 2, action: "קבע את האות כיחידה נבדלת", result: `${letter.letter} · ${letter.name}`, sourceId: "sy.0023", certainty: "explicit", claim: "חקיקה היא אחת הפעולות המופעלות על עשרים ושתיים האותיות.", evidenceNote: "היחידה מונה במפורש את חקק, חצב, שקל, המיר, צרף וצר ביחס לעשרים ושתיים האותיות." },
+    { key: "hew", verb: "חצב", chapter: 2, action: "הבחן את מקום הפקת האות", result: letter.articulation, sourceId: "sy.0024", certainty: "derived", claim: "האות שייכת לאחד מחמשת מקומות ההפקה בפה.", evidenceNote: "המקור מונה חמש קבוצות אותיות הקבועות בפה; שיוך מקום ההפקה לשלב „חצב” הוא היסק של המודל.", limitation: "הטקסט מחבר את חמשת המקומות לאותיות, אך אינו מגדיר אותם כתוצאת החציבה לבדה." },
+    { key: "weigh", verb: "שקל", chapter: 3, action: "העמד את שתי האותיות ואת המכריע ביניהן", result: `${letter.letter} ← ${mediator.value} → ${partner.letter}`, sourceId: mediator.sourceId, certainty: mediator.resolved ? "explicit" : "unresolved", claim: mediator.resolved ? "אוויר/רוח מכריע בין אש למים." : "לצמד הנבחר נדרש יחס מכריע שאינו מפורש בקורפוס.", evidenceNote: mediator.explanation, limitation: mediator.resolved ? undefined : "המנוע אינו ממציא מכריע כאשר היחס אינו נאמר במפורש." },
+    { key: "combine", verb: "צרף", chapter: 2, action: "בנה שער בשני כיוונים", result: `${forward} ↔ ${reverse}`, sourceId: "sy.0027", certainty: "explicit", claim: "כל אות מצטרפת עם כולן בשני סדרים.", evidenceNote: "המקור אומר אלף עם כולן וכולן עם אלף, בית עם כולן וכולן עם בית, וחוזר חלילה." },
+    { key: "transform", verb: "המיר", chapter: letter.family === "כפולות" ? 4 : 5, action: `הפעל את ${law.title}`, result: law.value, sourceId: law.sourceId, certainty: letter.family === "אמות" ? "explicit" : "derived", claim: `האות פועלת בתוך ${law.title}.`, evidenceNote: `המקור מגדיר את משפחת ${letter.family} ואת מערך היחסים שלה; הפעלתו כשלב בהרצה היא היסק תפעולי.` },
+    { key: "form", verb: "צר", chapter: letter.family === "פשוטות" ? 5 : letter.family === "כפולות" ? 4 : 3, action: "הקרן את אותה אות בשלושת המישורים", result: `${letter.world} · ${letter.year} · ${letter.soul}`, sourceId: letter.sourceId, certainty: "explicit", claim: `האות ${letter.letter} ממופה במקביל לעולם, לשנה ולנפש.`, evidenceNote: "שלוש ההקרנות מופיעות יחד ביחידת המקור של משפחת האות." },
+    { key: "govern", verb: "נהג", chapter: 6, action: "העבר את התוצאה דרך בקרי עולם–שנה–נפש", result: "תלי · גלגל · לב", sourceId: "sy.0048", certainty: "explicit", claim: "תלי, גלגל ולב הם בקרי עולם, שנה ונפש.", evidenceNote: "המקור מציב במפורש תלי בעולם, גלגל בשנה ולב בנפש, כל אחד בדימוי מלכות משלו." },
+    { key: "seal", verb: "חתם", chapter: 6, action: "שמור את התוצאה עם מקורות ומצב הכרעה", result: seal.label, sourceId: "sy.0049", certainty: mediator.resolved ? "interpretive" : "unresolved", claim: "תוצאה נשמרת רק לאחר צפייה, חקירה, הבנה והפעלה.", evidenceNote: "פרק 6 מתאר את אברהם צופה, חוקר, מבין, חקק, חצב, צירף וצר עד שעלתה בידו.", limitation: "„חתימת הרצה” היא מנגנון ביקורת של הממשק, לא פעולה המתוארת כך ביחידת המקור." },
   ];
   return { depth, oppositeDepth, letter, partner, forward, reverse, mediator, activeLaw: law, controllers, trace, seal };
 }

@@ -16,6 +16,10 @@ const certaintyLabels: Record<Certainty, string> = {
   unresolved: "פתוח",
 };
 
+function sourceLocation(unit: any, sourceId: string) {
+  return unit ? `${unit.chapter_label} · ${unit.unit_label} · ${sourceId}` : `מקור חסר · ${sourceId}`;
+}
+
 function validLetter(value: string | null, fallback: string) {
   return letters.some((item) => item.letter === value) ? value! : fallback;
 }
@@ -42,9 +46,11 @@ export function CreationEngineWorkspace({ corpus }: { corpus: any }) {
   const [partnerValue, setPartnerValue] = useState(() => validLetter(initialURL.pair, "ש"));
   const [depthValue, setDepthValue] = useState(() => validDepth(initialURL.depth));
   const [stageIndex, setStageIndex] = useState(() => validStage(initialURL.step, 10));
-  const units = useMemo(() => new Map(corpus.units.map((unit: any) => [unit.id, unit])), [corpus]);
+  const units = useMemo(() => new Map<string, any>(corpus.units.map((unit: any) => [unit.id, unit])), [corpus]);
   const run = buildCreationRun({ letter: letterValue, partner: partnerValue, depth: depthValue });
   const stage = run.trace[stageIndex];
+  const activeEvidence = units.get(stage.sourceId);
+  const missingEvidence = run.trace.filter((item) => !units.has(item.sourceId));
 
   useEffect(() => {
     function restoreEngine() {
@@ -94,7 +100,7 @@ export function CreationEngineWorkspace({ corpus }: { corpus: any }) {
         </div>
         <div className="creation-system-health" data-valid={creationSystemValidation.valid}>
           <b>{creationSystemValidation.valid ? "המבנה תקין" : "נמצאה שגיאת מבנה"}</b>
-          <span>10 עומקים · 22 אותיות · 3–7–12 · 3 בקרים</span>
+          <span>10 עומקים · 22 אותיות · 3–7–12 · {run.trace.length - missingEvidence.length}/{run.trace.length} מקורות זמינים</span>
         </div>
       </header>
 
@@ -132,10 +138,10 @@ export function CreationEngineWorkspace({ corpus }: { corpus: any }) {
       </section>
 
       <section className="creation-system-state">
-        <article><small>מידה · 10</small><b>{run.depth.label}</b><span>לעומת {run.oppositeDepth.label}</span></article>
-        <article data-resolved={run.mediator.resolved}><small>מכריע · 3</small><b>{run.mediator.value}</b><span>{run.mediator.explanation}</span></article>
-        <article><small>{run.activeLaw.title}</small><b>{run.activeLaw.value}</b><span>{run.activeLaw.family}</span></article>
-        <article data-status={run.seal.status}><small>מצב חתימה</small><b>{run.seal.label}</b><span>{run.seal.explanation}</span></article>
+        <article><small>מידה · 10</small><b>{run.depth.label}</b><span>לעומת {run.oppositeDepth.label}</span><button className="creation-source-link" onClick={() => navigateToUnit(units.get("sy.0005"))}>מקור · sy.0005</button></article>
+        <article data-resolved={run.mediator.resolved}><small>מכריע · 3</small><b>{run.mediator.value}</b><span>{run.mediator.explanation}</span><button className="creation-source-link" onClick={() => navigateToUnit(units.get(run.mediator.sourceId))}>מקור · {run.mediator.sourceId}</button></article>
+        <article><small>{run.activeLaw.title}</small><b>{run.activeLaw.value}</b><span>{run.activeLaw.family}</span><button className="creation-source-link" onClick={() => navigateToUnit(units.get(run.activeLaw.sourceId))}>מקור · {run.activeLaw.sourceId}</button></article>
+        <article data-status={run.seal.status}><small>מצב חתימה</small><b>{run.seal.label}</b><span>{run.seal.explanation}</span><button className="creation-source-link" onClick={() => navigateToUnit(units.get(run.seal.sourceId))}>מקור · {run.seal.sourceId}</button></article>
       </section>
 
       <nav className="creation-pipeline creation-pipeline--system" aria-label="שלבי מכונת ספר יצירה">
@@ -161,12 +167,43 @@ export function CreationEngineWorkspace({ corpus }: { corpus: any }) {
         </footer>
       </section>
 
+      <section className="creation-evidence" data-missing={!activeEvidence}>
+        <header>
+          <div><small>עדות לשלב הפעיל</small><h3>{sourceLocation(activeEvidence, stage.sourceId)}</h3></div>
+          <span className={`certainty certainty--${stage.certainty}`}>{certaintyLabels[stage.certainty]}</span>
+        </header>
+        <h4>{stage.claim}</h4>
+        <blockquote>{activeEvidence?.source.text || "יחידת המקור אינה קיימת בקורפוס הנוכחי."}</blockquote>
+        <div className="creation-evidence__assessment">
+          <p><b>מה העדות תומכת בו</b>{stage.evidenceNote}</p>
+          {stage.limitation && <p><b>גבול הטענה</b>{stage.limitation}</p>}
+        </div>
+        <footer><button disabled={!activeEvidence} onClick={() => navigateToUnit(activeEvidence)}>פתח בתוך הטקסט המלא</button></footer>
+      </section>
+
+      <section className="creation-evidence-map">
+        <header><h3>מפת הראיות של ההרצה</h3><small>כל טענה מחוברת ליחידת מקור ולרמת ודאות</small></header>
+        <div>
+          {run.trace.map((item, index) => {
+            const unit = units.get(item.sourceId);
+            return (
+              <button key={item.key} aria-current={stageIndex === index ? "true" : undefined} data-missing={!unit} onClick={() => moveToStage(index)}>
+                <span><b>{index + 1}. {item.verb}</b><em className={`certainty certainty--${item.certainty}`}>{certaintyLabels[item.certainty]}</em></span>
+                <strong>{sourceLocation(unit, item.sourceId)}</strong>
+                <p>{item.claim}</p>
+                <small>{unit?.source.text || "המקור חסר"}</small>
+              </button>
+            );
+          })}
+        </div>
+      </section>
+
       <section className="creation-output" aria-live="polite">
         <header><h3>עולם–שנה–נפש תחת בקרה</h3><span className="certainty certainty--explicit">המלכות ובקרים מפורשים</span></header>
         <div>
           {run.controllers.map((controller) => {
             const value = controller.domain === "עולם" ? run.letter.world : controller.domain === "שנה" ? run.letter.year : run.letter.soul;
-            return <article key={controller.domain}><small>{controller.domain} · {controller.controller}</small><strong>{value}</strong><span>{controller.image}</span></article>;
+            return <article key={controller.domain}><small>{controller.domain} · {controller.controller}</small><strong>{value}</strong><span>{controller.image}</span><button className="creation-source-link" onClick={() => navigateToUnit(units.get(controller.sourceId))}>מקור · {controller.sourceId}</button></article>;
           })}
         </div>
         <footer>
