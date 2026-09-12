@@ -7,6 +7,7 @@ export type ExplorerURLState = {
   letter: string | null;
   pair: string | null;
   step: string | null;
+  depth: string | null;
   sourceHidden: boolean;
 };
 
@@ -21,6 +22,7 @@ export function readExplorerURL(): ExplorerURLState {
     letter: params.get("letter"),
     pair: params.get("pair"),
     step: params.get("step"),
+    depth: params.get("depth"),
     sourceHidden: params.get("source") === "hidden",
   };
 }
