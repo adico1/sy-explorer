@@ -16,6 +16,7 @@ import editorialDecisions from "./sy.editorial-decisions.json";
 import spec from "./sy.converter.spec.json";
 import trailingApostropheCases from "./sy.trailing-apostrophe-cases.json";
 import { createConverter } from "./converter-engine.mjs";
+import { copyExplorerURL, pushExplorerURL, readExplorerURL } from "./url-state";
 
 const convert = createConverter(spec);
 const storageKey = `sy-explorer:user-interpretations:${spec.version}`;
@@ -45,6 +46,12 @@ type ApostropheDecision = {
 type ApostropheDecisions = Record<string, ApostropheDecision>;
 type Filter = "all" | "repeated" | "single" | "interpreted" | "uninterpreted" | InterpretationStatus;
 type View = "reading" | "synthesis" | "paths" | "sefirot" | "atlas" | "gates" | "mothers" | "doubles" | "simples" | "names" | "compare" | "relations" | "review" | "history" | "patterns";
+const views: View[] = ["reading", "synthesis", "paths", "sefirot", "atlas", "gates", "mothers", "doubles", "simples", "names", "compare", "relations", "review", "history", "patterns"];
+
+function initialView(): View {
+  const value = readExplorerURL().view;
+  return views.includes(value as View) ? value as View : "reading";
+}
 
 const roleLabels: Record<string, string> = {
   name: "שם",
@@ -132,13 +139,44 @@ export function SYConverterWorkbench({ sourceVisible, onToggleSource }: { source
   const [apostropheDecisions, setApostropheDecisions] = useState<ApostropheDecisions>(loadApostropheDecisions);
   const [relationships, setRelationships] = useState<UserRelationship[]>(loadRelationships);
   const [revisionHistory, setRevisionHistory] = useState<WorkspaceRevision[]>(loadRevisionHistory);
-  const [selectedId, setSelectedId] = useState<string>(() => corpus.evidence.names[0]?.id || "");
+  const [selectedId, setSelectedId] = useState<string>(() => {
+    const urlName = readExplorerURL().name;
+    return corpus.evidence.names.some((name: any) => name.id === urlName) ? urlName! : corpus.evidence.names[0]?.id || "";
+  });
   const [query, setQuery] = useState("");
   const [filter, setFilter] = useState<Filter>("all");
-  const [view, setView] = useState<View>("reading");
+  const [view, setView] = useState<View>(initialView);
   const [storageMessage, setStorageMessage] = useState("");
+  const [linkMessage, setLinkMessage] = useState("");
   const importRef = useRef<HTMLInputElement>(null);
   const focusView = ["synthesis", "paths", "sefirot", "atlas", "gates", "mothers", "doubles", "simples"].includes(view);
+
+  function openView(nextView: View, nameId?: string) {
+    setView(nextView);
+    if (nameId) setSelectedId(nameId);
+    const keepsName = ["names", "compare", "relations"].includes(nextView);
+    pushExplorerURL({ view: nextView, name: keepsName ? nameId || selectedId || null : null });
+  }
+
+  async function copyShareLink() {
+    try {
+      await copyExplorerURL();
+      setLinkMessage("הקישור הועתק");
+    } catch {
+      setLinkMessage("לא ניתן היה להעתיק");
+    }
+    window.setTimeout(() => setLinkMessage(""), 1800);
+  }
+
+  useEffect(() => {
+    function restoreWorkspace() {
+      const urlState = readExplorerURL();
+      if (views.includes(urlState.view as View)) setView(urlState.view as View);
+      if (corpus.evidence.names.some((name: any) => name.id === urlState.name)) setSelectedId(urlState.name!);
+    }
+    window.addEventListener("popstate", restoreWorkspace);
+    return () => window.removeEventListener("popstate", restoreWorkspace);
+  }, [corpus]);
 
   useEffect(() => {
     function selectName(event: Event) {
@@ -149,6 +187,7 @@ export function SYConverterWorkbench({ sourceVisible, onToggleSource }: { source
       setQuery("");
       setFilter("all");
       setView("names");
+      pushExplorerURL({ view: "names", name: name.id });
     }
     window.addEventListener("sy:select-name", selectName);
     return () => window.removeEventListener("sy:select-name", selectName);
@@ -401,10 +440,12 @@ export function SYConverterWorkbench({ sourceVisible, onToggleSource }: { source
           <h2>שמות ומופעים בספר יצירה</h2>
         </div>
         <div className="converter__header-actions">
+          <button className="share-link" onClick={copyShareLink}>העתק קישור</button>
           <button className="layout-toggle" aria-pressed={!sourceVisible} onClick={onToggleSource}>{sourceVisible ? "הרחב סביבת עבודה" : "הצג מקור לצד העבודה"}</button>
           <span className={corpus.validation.valid ? "converter__valid" : "converter__invalid"}>
             {corpus.validation.valid ? "המקור נשמר בשלמותו" : "נמצאה שגיאת מקור"}
           </span>
+          {linkMessage && <span className="share-message" role="status">{linkMessage}</span>}
         </div>
       </header>
 
@@ -438,27 +479,27 @@ export function SYConverterWorkbench({ sourceVisible, onToggleSource }: { source
       </div>
 
       <nav className="mode-tabs">
-        <button aria-pressed={view === "reading"} onClick={() => setView("reading")}>אפיון הקריאה</button>
-        <button aria-pressed={view === "synthesis"} onClick={() => setView("synthesis")}>סינתזת פרק 6</button>
-        <button aria-pressed={view === "paths"} onClick={() => setView("paths")}>ל״ב הנתיבות</button>
-        <button aria-pressed={view === "sefirot"} onClick={() => setView("sefirot")}>עשר הספירות</button>
-        <button aria-pressed={view === "atlas"} onClick={() => setView("atlas")}>מפת 22 האותיות</button>
-        <button aria-pressed={view === "gates"} onClick={() => setView("gates")}>רל״א השערים</button>
-        <button aria-pressed={view === "mothers"} onClick={() => setView("mothers")}>שלוש האמות</button>
-        <button aria-pressed={view === "doubles"} onClick={() => setView("doubles")}>שבע הכפולות</button>
-        <button aria-pressed={view === "simples"} onClick={() => setView("simples")}>י״ב הפשוטות</button>
-        <button aria-pressed={view === "names"} onClick={() => setView("names")}>שמות ומופעים</button>
-        <button aria-pressed={view === "compare"} onClick={() => setView("compare")}>השוואה</button>
-        <button aria-pressed={view === "relations"} onClick={() => setView("relations")}>קשרים</button>
-        <button aria-pressed={view === "review"} onClick={() => setView("review")}>תור וביקורת</button>
-        <button aria-pressed={view === "history"} onClick={() => setView("history")}>היסטוריה</button>
-        <button aria-pressed={view === "patterns"} onClick={() => setView("patterns")}>ניסוי 0.11 שנדחה</button>
+        <button aria-pressed={view === "reading"} onClick={() => openView("reading")}>אפיון הקריאה</button>
+        <button aria-pressed={view === "synthesis"} onClick={() => openView("synthesis")}>סינתזת פרק 6</button>
+        <button aria-pressed={view === "paths"} onClick={() => openView("paths")}>ל״ב הנתיבות</button>
+        <button aria-pressed={view === "sefirot"} onClick={() => openView("sefirot")}>עשר הספירות</button>
+        <button aria-pressed={view === "atlas"} onClick={() => openView("atlas")}>מפת 22 האותיות</button>
+        <button aria-pressed={view === "gates"} onClick={() => openView("gates")}>רל״א השערים</button>
+        <button aria-pressed={view === "mothers"} onClick={() => openView("mothers")}>שלוש האמות</button>
+        <button aria-pressed={view === "doubles"} onClick={() => openView("doubles")}>שבע הכפולות</button>
+        <button aria-pressed={view === "simples"} onClick={() => openView("simples")}>י״ב הפשוטות</button>
+        <button aria-pressed={view === "names"} onClick={() => openView("names")}>שמות ומופעים</button>
+        <button aria-pressed={view === "compare"} onClick={() => openView("compare")}>השוואה</button>
+        <button aria-pressed={view === "relations"} onClick={() => openView("relations")}>קשרים</button>
+        <button aria-pressed={view === "review"} onClick={() => openView("review")}>תור וביקורת</button>
+        <button aria-pressed={view === "history"} onClick={() => openView("history")}>היסטוריה</button>
+        <button aria-pressed={view === "patterns"} onClick={() => openView("patterns")}>ניסוי 0.11 שנדחה</button>
       </nav>
 
       {view === "reading" && <ReadingSpecification corpus={corpus} />}
-      {view === "synthesis" && <ChapterSixSynthesisWorkspace corpus={corpus} onOpenWorkspace={setView} />}
-      {view === "paths" && <ThirtyTwoPathsWorkspace corpus={corpus} onOpenWorkspace={setView} />}
-      {view === "sefirot" && <TenSefirotWorkspace corpus={corpus} onOpenPaths={() => setView("paths")} />}
+      {view === "synthesis" && <ChapterSixSynthesisWorkspace corpus={corpus} onOpenWorkspace={openView} />}
+      {view === "paths" && <ThirtyTwoPathsWorkspace corpus={corpus} onOpenWorkspace={openView} />}
+      {view === "sefirot" && <TenSefirotWorkspace corpus={corpus} onOpenPaths={() => openView("paths")} />}
       {view === "atlas" && <LettersAtlasWorkspace corpus={corpus} />}
       {view === "gates" && <GatesWorkspace corpus={corpus} />}
       {view === "mothers" && <ThreeMothersWorkspace corpus={corpus} />}
@@ -483,7 +524,7 @@ export function SYConverterWorkbench({ sourceVisible, onToggleSource }: { source
       <div className="name-workspace">
         <nav className="name-list" aria-label="רשימת שמות">
           {names.map((name: any) => (
-            <button key={name.id} className={selected?.id === name.id ? "is-selected" : ""} onClick={() => setSelectedId(name.id)}>
+            <button key={name.id} className={selected?.id === name.id ? "is-selected" : ""} onClick={() => openView("names", name.id)}>
               <span>{name.normalized}</span>
               <small>{name.occurrence_count} {name.occurrence_count === 1 ? "מופע" : "מופעים"}</small>
               {interpretations[name.id] && <i className={`interpretation-status interpretation-status--${interpretationStatus(interpretations[name.id])}`}>{statusLabels[interpretationStatus(interpretations[name.id])]}</i>}
@@ -566,8 +607,7 @@ export function SYConverterWorkbench({ sourceVisible, onToggleSource }: { source
           relationships={relationships}
           selectedNameId={selectedId}
           onSelectName={(id) => {
-            setSelectedId(id);
-            setView("names");
+            openView("names", id);
           }}
         />
       )}
@@ -579,8 +619,7 @@ export function SYConverterWorkbench({ sourceVisible, onToggleSource }: { source
           relationships={relationships}
           onChange={saveRelationships}
           onSelectName={(id) => {
-            setSelectedId(id);
-            setView("names");
+            openView("names", id);
           }}
         />
       )}
@@ -592,12 +631,10 @@ export function SYConverterWorkbench({ sourceVisible, onToggleSource }: { source
           relationships={relationships}
           apostropheDecisions={apostropheDecisions}
           onOpenInterpretation={(id) => {
-            setSelectedId(id);
-            setView("names");
+            openView("names", id);
           }}
           onOpenRelationship={(id) => {
-            setSelectedId(id);
-            setView("relations");
+            openView("relations", id);
           }}
           onDecide={(id, role) => {
             const next = {

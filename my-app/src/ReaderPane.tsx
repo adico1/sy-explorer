@@ -1,10 +1,15 @@
 import { useEffect, useMemo, useRef, useState, type MouseEvent, type ReactNode } from "react";
+import { pushExplorerURL, readExplorerURL } from "./url-state";
 
 type Heading = {
   id: string;
   label: string;
-  element: HTMLHeadingElement;
+  element: HTMLElement;
   chapterId: string;
+};
+
+type ReadingUnit = Heading & {
+  marker: HTMLSpanElement;
 };
 
 const letterPattern = /[א-ת\u0591-\u05C7״׳"']/;
@@ -41,8 +46,9 @@ function textRangeAtPoint(event: MouseEvent) {
 export function ReaderPane({ children }: { children: ReactNode }) {
   const rootRef = useRef<HTMLDivElement>(null);
   const [chapters, setChapters] = useState<Heading[]>([]);
-  const [verses, setVerses] = useState<Heading[]>([]);
+  const [units, setUnits] = useState<ReadingUnit[]>([]);
   const [chapterId, setChapterId] = useState("");
+  const [unitId, setUnitId] = useState("");
 
   useEffect(() => {
     const root = rootRef.current;
@@ -53,42 +59,96 @@ export function ReaderPane({ children }: { children: ReactNode }) {
       element.id = id;
       return { id, label: element.textContent?.trim() || `פרק ${index + 1}`, element, chapterId: id };
     });
-    const nextVerses = [...root.querySelectorAll<HTMLHeadingElement>("h3")].map((element, index) => {
-      const section = element.closest("section");
-      const chapter = nextChapters.find((item) => item.element.closest("section") === section);
-      const id = `reader-verse-${index + 1}`;
-      element.id = id;
-      return { id, label: element.textContent?.trim() || `פסוק ${index + 1}`, element, chapterId: chapter?.id || "" };
+    const nextUnits = nextChapters.flatMap((chapter) => {
+      const section = chapter.element.closest("section");
+      if (!section) return [];
+      const chapterNodes = [...section.childNodes];
+      const chapterHeadingIndex = chapterNodes.indexOf(chapter.element);
+      const found: ReadingUnit[] = [];
+      let breakCount = 2;
+      chapterNodes.slice(chapterHeadingIndex + 1).forEach((node) => {
+        if (node instanceof HTMLBRElement) {
+          breakCount += 1;
+          return;
+        }
+        if (node.nodeType === Node.TEXT_NODE && !node.textContent?.trim()) return;
+        if (breakCount >= 2) {
+          const number = found.length + 1;
+          const id = `${chapter.id}-unit-${number}`;
+          const marker = document.createElement("span");
+          marker.id = id;
+          marker.className = "reader-unit-anchor";
+          node.parentNode?.insertBefore(marker, node);
+          found.push({
+            id,
+            label: node instanceof HTMLHeadingElement && node.tagName === "H3" ? node.textContent?.trim() || `יחידה ${number}` : `יחידה ${number}`,
+            element: marker,
+            marker,
+            chapterId: chapter.id,
+          });
+        }
+        breakCount = 0;
+      });
+      return found;
     });
+    const urlState = readExplorerURL();
+    const urlChapter = nextChapters.find((item) => item.id === urlState.chapter);
+    const activeChapter = urlChapter || nextChapters[0];
+    const urlUnit = nextUnits.find((item) => item.id === urlState.unit && item.chapterId === activeChapter?.id);
     setChapters(nextChapters);
-    setVerses(nextVerses);
-    setChapterId(nextChapters[0]?.id || "");
+    setUnits(nextUnits);
+    setChapterId(activeChapter?.id || "");
+    setUnitId(urlUnit?.id || "");
+    (urlUnit || urlChapter)?.element.scrollIntoView({ block: "start" });
+    return () => nextUnits.forEach((unit) => unit.marker.remove());
   }, []);
 
   useEffect(() => {
     function navigateToUnit(event: Event) {
       const detail = (event as CustomEvent<{ chapterLabel: string; unitLabel: string }>).detail;
       const chapter = chapters.find((item) => normalize(item.label) === normalize(detail.chapterLabel));
-      const verse = verses.find((item) => item.chapterId === chapter?.id && normalize(item.label) === normalize(detail.unitLabel));
-      const target = verse || chapter;
+      const unit = units.find((item) => item.chapterId === chapter?.id && normalize(item.label) === normalize(detail.unitLabel));
+      const target = unit || chapter;
       if (!target) return;
       setChapterId(target.chapterId);
+      setUnitId(unit?.id || "");
+      pushExplorerURL({ chapter: target.chapterId, unit: unit?.id || null, source: "visible" });
       target.element.scrollIntoView({ behavior: "smooth", block: "start" });
       target.element.classList.add("reader-target");
       window.setTimeout(() => target.element.classList.remove("reader-target"), 1800);
     }
     window.addEventListener("sy:navigate-unit", navigateToUnit);
     return () => window.removeEventListener("sy:navigate-unit", navigateToUnit);
-  }, [chapters, verses]);
+  }, [chapters, units]);
 
-  const chapterVerses = useMemo(
-    () => verses.filter((verse) => verse.chapterId === chapterId),
-    [chapterId, verses],
+  useEffect(() => {
+    function restoreReaderLocation() {
+      const urlState = readExplorerURL();
+      const chapter = chapters.find((item) => item.id === urlState.chapter) || chapters[0];
+      const unit = units.find((item) => item.id === urlState.unit && item.chapterId === chapter?.id);
+      const target = unit || chapter;
+      if (!target) return;
+      setChapterId(target.chapterId);
+      setUnitId(unit?.id || "");
+      target.element.scrollIntoView({ block: "start" });
+    }
+    window.addEventListener("popstate", restoreReaderLocation);
+    return () => window.removeEventListener("popstate", restoreReaderLocation);
+  }, [chapters, units]);
+
+  const chapterUnits = useMemo(
+    () => units.filter((unit) => unit.chapterId === chapterId),
+    [chapterId, units],
   );
 
   function jump(id: string) {
-    const target = [...chapters, ...verses].find((item) => item.id === id);
-    target?.element.scrollIntoView({ behavior: "smooth", block: "start" });
+    const target = [...chapters, ...units].find((item) => item.id === id);
+    if (!target) return;
+    const isUnit = units.some((unit) => unit.id === target.id);
+    setChapterId(target.chapterId);
+    setUnitId(isUnit ? target.id : "");
+    pushExplorerURL({ chapter: target.chapterId, unit: isUnit ? target.id : null });
+    target.element.scrollIntoView({ behavior: "smooth", block: "start" });
   }
 
   function selectWord(event: MouseEvent) {
@@ -109,15 +169,15 @@ export function ReaderPane({ children }: { children: ReactNode }) {
       <nav className="reader-navigator" aria-label="ניווט בספר">
         <label>
           פרק
-          <select value={chapterId} onChange={(event) => { setChapterId(event.target.value); jump(event.target.value); }}>
+          <select value={chapterId} onChange={(event) => jump(event.target.value)}>
             {chapters.map((chapter) => <option key={chapter.id} value={chapter.id}>{chapter.label}</option>)}
           </select>
         </label>
         <label>
-          פסוק
-          <select defaultValue="" onChange={(event) => jump(event.target.value)}>
-            <option value="" disabled>בחר פסוק</option>
-            {chapterVerses.map((verse) => <option key={verse.id} value={verse.id}>{verse.label}</option>)}
+          יחידה
+          <select value={unitId} onChange={(event) => jump(event.target.value)}>
+            <option value="" disabled>בחר יחידה</option>
+            {chapterUnits.map((unit) => <option key={unit.id} value={unit.id}>{unit.label}</option>)}
           </select>
         </label>
         <span>לחיצה על מילה פותחת את כל מופעיה</span>
