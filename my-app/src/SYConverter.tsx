@@ -1,5 +1,6 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import { ComparisonWorkspace } from "./ComparisonWorkspace";
+import { GatesWorkspace } from "./GatesWorkspace";
 import { InterpretationForm } from "./InterpretationForm";
 import { LettersAtlasWorkspace } from "./LettersAtlasWorkspace";
 import { RelationshipWorkspace, type UserRelationship } from "./RelationshipWorkspace";
@@ -40,7 +41,7 @@ type ApostropheDecision = {
 };
 type ApostropheDecisions = Record<string, ApostropheDecision>;
 type Filter = "all" | "repeated" | "single" | "interpreted" | "uninterpreted" | InterpretationStatus;
-type View = "reading" | "atlas" | "mothers" | "doubles" | "simples" | "names" | "compare" | "relations" | "review" | "history" | "patterns";
+type View = "reading" | "atlas" | "gates" | "mothers" | "doubles" | "simples" | "names" | "compare" | "relations" | "review" | "history" | "patterns";
 
 const roleLabels: Record<string, string> = {
   name: "שם",
@@ -432,6 +433,7 @@ export function SYConverterWorkbench() {
       <nav className="mode-tabs">
         <button aria-pressed={view === "reading"} onClick={() => setView("reading")}>אפיון הקריאה</button>
         <button aria-pressed={view === "atlas"} onClick={() => setView("atlas")}>מפת 22 האותיות</button>
+        <button aria-pressed={view === "gates"} onClick={() => setView("gates")}>רל״א השערים</button>
         <button aria-pressed={view === "mothers"} onClick={() => setView("mothers")}>שלוש האמות</button>
         <button aria-pressed={view === "doubles"} onClick={() => setView("doubles")}>שבע הכפולות</button>
         <button aria-pressed={view === "simples"} onClick={() => setView("simples")}>י״ב הפשוטות</button>
@@ -445,6 +447,7 @@ export function SYConverterWorkbench() {
 
       {view === "reading" && <ReadingSpecification corpus={corpus} />}
       {view === "atlas" && <LettersAtlasWorkspace corpus={corpus} />}
+      {view === "gates" && <GatesWorkspace corpus={corpus} />}
       {view === "mothers" && <ThreeMothersWorkspace corpus={corpus} />}
       {view === "doubles" && <SevenDoublesWorkspace corpus={corpus} />}
       {view === "simples" && <TwelveSimplesWorkspace corpus={corpus} />}
