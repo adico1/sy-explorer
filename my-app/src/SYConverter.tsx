@@ -126,7 +126,7 @@ export function SYConverter() {
   return null;
 }
 
-export function SYConverterWorkbench() {
+export function SYConverterWorkbench({ sourceVisible, onToggleSource }: { sourceVisible: boolean; onToggleSource: () => void }) {
   const [corpus] = useState<any>(() => convert(sourceText));
   const [interpretations, setInterpretations] = useState<Interpretations>(loadInterpretations);
   const [apostropheDecisions, setApostropheDecisions] = useState<ApostropheDecisions>(loadApostropheDecisions);
@@ -138,6 +138,7 @@ export function SYConverterWorkbench() {
   const [view, setView] = useState<View>("reading");
   const [storageMessage, setStorageMessage] = useState("");
   const importRef = useRef<HTMLInputElement>(null);
+  const focusView = ["synthesis", "paths", "sefirot", "atlas", "gates", "mothers", "doubles", "simples"].includes(view);
 
   useEffect(() => {
     function selectName(event: Event) {
@@ -393,15 +394,18 @@ export function SYConverterWorkbench() {
   }
 
   return (
-    <section className="converter name-explorer" dir="rtl" aria-label="SY Evidence Corpus">
+    <section className={`converter name-explorer${focusView ? " converter--focus" : ""}`} dir="rtl" aria-label="SY Evidence Corpus">
       <header className="converter__header">
         <div>
           <small>SY EVIDENCE CORPUS · v{corpus.version}</small>
           <h2>שמות ומופעים בספר יצירה</h2>
         </div>
-        <span className={corpus.validation.valid ? "converter__valid" : "converter__invalid"}>
-          {corpus.validation.valid ? "המקור נשמר בשלמותו" : "נמצאה שגיאת מקור"}
-        </span>
+        <div className="converter__header-actions">
+          <button className="layout-toggle" aria-pressed={!sourceVisible} onClick={onToggleSource}>{sourceVisible ? "הרחב סביבת עבודה" : "הצג מקור לצד העבודה"}</button>
+          <span className={corpus.validation.valid ? "converter__valid" : "converter__invalid"}>
+            {corpus.validation.valid ? "המקור נשמר בשלמותו" : "נמצאה שגיאת מקור"}
+          </span>
+        </div>
       </header>
 
       <div className="source-authority">
