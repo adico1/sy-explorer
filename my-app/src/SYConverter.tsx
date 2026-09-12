@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import { ComparisonWorkspace } from "./ComparisonWorkspace";
 import { ChapterSixSynthesisWorkspace } from "./ChapterSixSynthesisWorkspace";
+import { CreationEngineWorkspace } from "./CreationEngineWorkspace";
 import { GatesWorkspace } from "./GatesWorkspace";
 import { InterpretationForm } from "./InterpretationForm";
 import { LettersAtlasWorkspace } from "./LettersAtlasWorkspace";
@@ -45,8 +46,8 @@ type ApostropheDecision = {
 };
 type ApostropheDecisions = Record<string, ApostropheDecision>;
 type Filter = "all" | "repeated" | "single" | "interpreted" | "uninterpreted" | InterpretationStatus;
-type View = "reading" | "synthesis" | "paths" | "sefirot" | "atlas" | "gates" | "mothers" | "doubles" | "simples" | "names" | "compare" | "relations" | "review" | "history" | "patterns";
-const views: View[] = ["reading", "synthesis", "paths", "sefirot", "atlas", "gates", "mothers", "doubles", "simples", "names", "compare", "relations", "review", "history", "patterns"];
+type View = "engine" | "reading" | "synthesis" | "paths" | "sefirot" | "atlas" | "gates" | "mothers" | "doubles" | "simples" | "names" | "compare" | "relations" | "review" | "history" | "patterns";
+const views: View[] = ["engine", "reading", "synthesis", "paths", "sefirot", "atlas", "gates", "mothers", "doubles", "simples", "names", "compare", "relations", "review", "history", "patterns"];
 
 function initialView(): View {
   const value = readExplorerURL().view;
@@ -149,7 +150,7 @@ export function SYConverterWorkbench({ sourceVisible, onToggleSource }: { source
   const [storageMessage, setStorageMessage] = useState("");
   const [linkMessage, setLinkMessage] = useState("");
   const importRef = useRef<HTMLInputElement>(null);
-  const focusView = ["synthesis", "paths", "sefirot", "atlas", "gates", "mothers", "doubles", "simples"].includes(view);
+  const focusView = ["engine", "synthesis", "paths", "sefirot", "atlas", "gates", "mothers", "doubles", "simples"].includes(view);
 
   function openView(nextView: View, nameId?: string) {
     setView(nextView);
@@ -479,6 +480,7 @@ export function SYConverterWorkbench({ sourceVisible, onToggleSource }: { source
       </div>
 
       <nav className="mode-tabs">
+        <button aria-pressed={view === "engine"} onClick={() => openView("engine")}>מנוע היצירה</button>
         <button aria-pressed={view === "reading"} onClick={() => openView("reading")}>אפיון הקריאה</button>
         <button aria-pressed={view === "synthesis"} onClick={() => openView("synthesis")}>סינתזת פרק 6</button>
         <button aria-pressed={view === "paths"} onClick={() => openView("paths")}>ל״ב הנתיבות</button>
@@ -496,6 +498,7 @@ export function SYConverterWorkbench({ sourceVisible, onToggleSource }: { source
         <button aria-pressed={view === "patterns"} onClick={() => openView("patterns")}>ניסוי 0.11 שנדחה</button>
       </nav>
 
+      {view === "engine" && <CreationEngineWorkspace corpus={corpus} />}
       {view === "reading" && <ReadingSpecification corpus={corpus} />}
       {view === "synthesis" && <ChapterSixSynthesisWorkspace corpus={corpus} onOpenWorkspace={openView} />}
       {view === "paths" && <ThirtyTwoPathsWorkspace corpus={corpus} onOpenWorkspace={openView} />}
