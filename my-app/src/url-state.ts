@@ -4,10 +4,6 @@ export type ExplorerURLState = {
   chapter: string | null;
   unit: string | null;
   source: string | null;
-  letter: string | null;
-  pair: string | null;
-  step: string | null;
-  depth: string | null;
   sourceHidden: boolean;
 };
 
@@ -19,10 +15,6 @@ export function readExplorerURL(): ExplorerURLState {
     chapter: params.get("chapter"),
     unit: params.get("unit"),
     source: params.get("source"),
-    letter: params.get("letter"),
-    pair: params.get("pair"),
-    step: params.get("step"),
-    depth: params.get("depth"),
     sourceHidden: params.get("source") === "hidden",
   };
 }
