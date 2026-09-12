@@ -1,5 +1,6 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import { ComparisonWorkspace } from "./ComparisonWorkspace";
+import { ChapterSixSynthesisWorkspace } from "./ChapterSixSynthesisWorkspace";
 import { GatesWorkspace } from "./GatesWorkspace";
 import { InterpretationForm } from "./InterpretationForm";
 import { LettersAtlasWorkspace } from "./LettersAtlasWorkspace";
@@ -43,7 +44,7 @@ type ApostropheDecision = {
 };
 type ApostropheDecisions = Record<string, ApostropheDecision>;
 type Filter = "all" | "repeated" | "single" | "interpreted" | "uninterpreted" | InterpretationStatus;
-type View = "reading" | "paths" | "sefirot" | "atlas" | "gates" | "mothers" | "doubles" | "simples" | "names" | "compare" | "relations" | "review" | "history" | "patterns";
+type View = "reading" | "synthesis" | "paths" | "sefirot" | "atlas" | "gates" | "mothers" | "doubles" | "simples" | "names" | "compare" | "relations" | "review" | "history" | "patterns";
 
 const roleLabels: Record<string, string> = {
   name: "שם",
@@ -434,6 +435,7 @@ export function SYConverterWorkbench() {
 
       <nav className="mode-tabs">
         <button aria-pressed={view === "reading"} onClick={() => setView("reading")}>אפיון הקריאה</button>
+        <button aria-pressed={view === "synthesis"} onClick={() => setView("synthesis")}>סינתזת פרק 6</button>
         <button aria-pressed={view === "paths"} onClick={() => setView("paths")}>ל״ב הנתיבות</button>
         <button aria-pressed={view === "sefirot"} onClick={() => setView("sefirot")}>עשר הספירות</button>
         <button aria-pressed={view === "atlas"} onClick={() => setView("atlas")}>מפת 22 האותיות</button>
@@ -450,6 +452,7 @@ export function SYConverterWorkbench() {
       </nav>
 
       {view === "reading" && <ReadingSpecification corpus={corpus} />}
+      {view === "synthesis" && <ChapterSixSynthesisWorkspace corpus={corpus} onOpenWorkspace={setView} />}
       {view === "paths" && <ThirtyTwoPathsWorkspace corpus={corpus} onOpenWorkspace={setView} />}
       {view === "sefirot" && <TenSefirotWorkspace corpus={corpus} onOpenPaths={() => setView("paths")} />}
       {view === "atlas" && <LettersAtlasWorkspace corpus={corpus} />}
