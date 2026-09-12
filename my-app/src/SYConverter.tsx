@@ -8,6 +8,7 @@ import { RevisionHistory, type WorkspaceRevision } from "./RevisionHistory";
 import { SevenDoublesWorkspace } from "./SevenDoublesWorkspace";
 import { ThreeMothersWorkspace } from "./ThreeMothersWorkspace";
 import { TwelveSimplesWorkspace } from "./TwelveSimplesWorkspace";
+import { ThirtyTwoPathsWorkspace } from "./ThirtyTwoPathsWorkspace";
 import sourceText from "./SeferYetzirah.tsx?raw";
 import editorialDecisions from "./sy.editorial-decisions.json";
 import spec from "./sy.converter.spec.json";
@@ -41,7 +42,7 @@ type ApostropheDecision = {
 };
 type ApostropheDecisions = Record<string, ApostropheDecision>;
 type Filter = "all" | "repeated" | "single" | "interpreted" | "uninterpreted" | InterpretationStatus;
-type View = "reading" | "atlas" | "gates" | "mothers" | "doubles" | "simples" | "names" | "compare" | "relations" | "review" | "history" | "patterns";
+type View = "reading" | "paths" | "atlas" | "gates" | "mothers" | "doubles" | "simples" | "names" | "compare" | "relations" | "review" | "history" | "patterns";
 
 const roleLabels: Record<string, string> = {
   name: "שם",
@@ -432,6 +433,7 @@ export function SYConverterWorkbench() {
 
       <nav className="mode-tabs">
         <button aria-pressed={view === "reading"} onClick={() => setView("reading")}>אפיון הקריאה</button>
+        <button aria-pressed={view === "paths"} onClick={() => setView("paths")}>ל״ב הנתיבות</button>
         <button aria-pressed={view === "atlas"} onClick={() => setView("atlas")}>מפת 22 האותיות</button>
         <button aria-pressed={view === "gates"} onClick={() => setView("gates")}>רל״א השערים</button>
         <button aria-pressed={view === "mothers"} onClick={() => setView("mothers")}>שלוש האמות</button>
@@ -446,6 +448,7 @@ export function SYConverterWorkbench() {
       </nav>
 
       {view === "reading" && <ReadingSpecification corpus={corpus} />}
+      {view === "paths" && <ThirtyTwoPathsWorkspace corpus={corpus} onOpenWorkspace={setView} />}
       {view === "atlas" && <LettersAtlasWorkspace corpus={corpus} />}
       {view === "gates" && <GatesWorkspace corpus={corpus} />}
       {view === "mothers" && <ThreeMothersWorkspace corpus={corpus} />}
